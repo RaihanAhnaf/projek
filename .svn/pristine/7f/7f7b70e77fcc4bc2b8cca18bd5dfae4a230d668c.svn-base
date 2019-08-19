@@ -1,0 +1,431 @@
+<script type="text/javascript">
+   var userinfo = {
+      usernameh: ko.observable('{{.Username}}'),
+      menunameh: ko.observable('{{.Menuname}}'),
+      rolenameh: ko.observable('{{.Rolename}}'),
+   }
+</script>
+<!--  Js switch  -->
+<script src="{{BaseUrl}}res/switch-js/bootstrap-switch.js"></script>
+<script src="{{BaseUrl}}res/switch-js/highlight.js"></script>
+<script src="{{BaseUrl}}res/switch-js/main.js"></script>
+<!-- Js switch  -->
+<!-- switch Bootstrap CSS  -->
+<!-- <link href="{{BaseUrl}}res/switch-css/bootstrap-switch.min.css" rel="stylesheet"> -->
+<link href="{{BaseUrl}}res/switch-css/bootstrap-switch.css" rel="stylesheet">
+<!-- switch Bootstrap CSS -->
+<script src="{{BaseUrl}}res/main/js/basic.js" type="text/javascript"></script>
+<script src="{{BaseUrl}}res/main/js/transaction-purchaseinvoice.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/invoice.css">
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/transaction.css">
+<script type="text/html" id="tableRow">
+   <tr>
+      {{UnescapeHTML "<!-- ko if:typeof CodeItem != 'undefined' -->" }}
+       <td class="invhide">
+           <input id="codeitem" name="codeitem" disabled="disabled" type="text" class="formInput form-control input-md invhide" data-bind="value:CodeItem,attr: {id: 'codeitem_' + $index() }">
+       </td>
+      {{UnescapeHTML "<!-- /ko -->" }}
+       <td>
+           <input id="item" name="item" disabled="disabled" type="text" class="formInput form-control input-md" data-bind="value:Item,attr: {id: 'item_' + $index() }">
+       </td>
+       <td align="center">
+           <input id="qty" name="qty" type="number" class="formInput form-control input-md" data-bind="value:Qty,attr: {id: 'qty_' + $index() }">
+       </td>
+      <!--  <td>
+           <input id="priceUSD" disabled="disabled" name="priceUSD" type="text" class="formInput form-control input-md priceusd currency" data-bind="value:PriceUSD, attr: {id: 'priceUSD_' + $index() }">
+       </td> -->
+       <td>
+           <input id="priceIDR" disabled="disabled" name="priceIDR" type="text" class="formInput form-control input-md priceidr currency" data-bind="value:PriceIDR, attr: {id: 'priceIDR_' + $index() }">
+       </td>
+      <!--  <td>
+           <input id="amountUSD"  name="amountUSD" class="Amount form-control input-md currency" data-bind="value:AmountUSD, attr: {id: 'amountUSD_' + $index() }">
+   
+       </td> -->
+       <td>
+           <input id="amountIDR" name="amountIDR" class="Amount form-control input-md currency" data-bind="value:AmountIDR, attr: {id: 'amountIDR_' + $index() }">
+       </td>
+   </tr>
+</script>
+<script type="text/html" id="tableRowAsset">
+   <tr>
+       <td data-bind="attr: {id: 'tdcategory' + $index()}">
+           <input  type="text" name="category" class="formInput form-control input-md categoryPI" data-bind="kendoDropDownList: { data: purchaseinvoice.dataMasterCategory, dataValueField: 'code', dataTextField: 'name', value: Category, optionLabel:'Select one', change: function(e){purchaseinvoice.changeFuncCategory(e.sender._old,$index())}},attr: {id: 'category' + $index() }"></input>
+           <!-- <input id="category" name="category" type="text" class="formInput form-control input-md" data-bind="value:SumMonthDepreciation, attr: {id: 'month' + $index() }"> -->
+       </td>
+       <td data-bind="attr: {id: 'tdmonth' + $index() }">
+           <input id="assetMonth" name="assetMonth" type="number" class="formInput form-control input-md" data-bind="value:SumMonthDepreciation, attr: {id: 'month' + $index()},event:{blur:function(){purchaseinvoice.blurMD(SumMonthDepreciation(),$index())}}" required >
+       </td>
+   </tr>
+</script>
+<div class="page-bar">
+   <ul class="page-breadcrumb">
+      <li>
+         <span class="bar">Transaction</span>
+         <i class="fa fa-circle"></i>
+      </li>
+      <li>
+         <a href="/transaction/purchaseinvoice">Purchase Invoice</a>
+      </li>
+   </ul>
+   <div class="page-toolbar">
+      <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+         <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+         <span class="thin uppercase hidden-xs font2" data-bind="text:purchaseinvoice.DatePageBar"></span>&nbsp;
+      </div>
+   </div>
+</div>
+<div class="row">
+   <div class="col-md-12 panel-content">
+      <div class="portlet box twis">
+         <div class="portlet-title">
+            <div class="caption">
+               Purchase Invoice &nbsp;
+            </div>
+            <div>
+               <button type="button" id="noninv" class="btn btn-sm btn-success btn-flat"
+                  onclick="purchaseinvoice.choose('ACTIVA')" data-toggle="modal" data-target="#AddNewModal"><i
+                     class="fa fa-plus"></i>&nbsp;Invoice Non Inventory</button>
+               <button type="button" id="inv" class="btn btn-sm btn-success btn-flat"
+                  onclick="purchaseinvoice.choose('IVENTORY')" data-toggle="modal" data-target="#AddNewModal"><i
+                     class="fa fa-plus"></i>&nbsp;Invoice Inventory </button>
+            </div>
+         </div>
+         <div class="portlet-body">
+            <div class="row">
+               <div class="col-md-12" id="tabs">
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li role="presentation" class="active tab1"><a href="#listinvoice" aria-controls="List" role="tab"
+                           data-toggle="tab" onclick="purchaseinvoice.search('tab')">List Purchase Invoice <span
+                              data-bind="text:purchaseinvoice.names"></span></a></li>
+                     <li role="presentation"><a href="#createinvoice" class="" aria-controls="Create" role="tab"
+                           data-toggle="tab" onclick="purchaseinvoice.formCreated()">Create Purchase Invoice <span
+                              data-bind="text:purchaseinvoice.names"></span></a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <!--panel list-->
+                     <div role="tabpanel" class="tab-pane active" id="listinvoice">
+                        <div class="tab-pane-content">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <label>Supplier :</label>
+                                 <select name="Site" style="width:200px" class="full-width filter-space"
+                                    data-bind="kendoDropDownList: { data: purchaseinvoice.dataDropDownSupplierFilter, dataValueField: 'Kode', dataTextField: 'Name',optionLabel:'Select one',filter: 'contains'},value: purchaseinvoice.textSupplierSearch"></select>
+                                 <label>From :</label>
+                                 <input type="text" id="dateStart"
+                                    data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}"
+                                    class="filter-space" />
+                                 <label>To :</label>
+                                 <input type="text" id="dateEnd"
+                                    data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}"
+                                    class="filter-space" />
+                                 <button type="button" onclick="purchaseinvoice.search('search')"
+                                    class="btn btn-sm btn-refresh"><i class="fa fa-search"></i> Search</button>
+                                 <button onclick="purchaseinvoice.exportExcel()" type="button"
+                                    class="btn btn-sm btn-outline green"><i class="fa fa-file-excel-o"></i>&nbsp;Export
+                                    To Excel</button>
+                              </div>
+                              <br><br>
+                              <div class="col-md-12" data-bind="visible: !model.Processing()">
+                                 <div id="gridListInvoice" class="margin15">
+                                 </div>
+                              </div>
+                              {{template "_loader2.html"}}
+                           </div>
+                        </div>
+                     </div>
+                     <!--panel Create-->
+                     <div role="tabpanel" class="tab-pane " id="createinvoice">
+                        <div class="tab-pane-content" data-bind="visible:!purchaseinvoice.editingMode()">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <label>From :</label>
+                                 <input type="text" id="dateStartE"
+                                    data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}"
+                                    class="filter-space" />
+                                 <label>To :</label>
+                                 <input type="text" id="dateEndE"
+                                    data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}"
+                                    class="filter-space" />
+                                 <button type="button" onclick="purchaseinvoice.searchOrder()"
+                                    class="btn btn-sm btn-refresh"><i class="fa fa-search"></i> Search</button>
+                              </div>
+                              <br><br>
+                              <div class="col-md-12" data-bind="visible: !model.Processing()">
+                                 <div id="gridEditInvoice" class="margin15">
+                                 </div>
+                              </div>
+                              {{template "_loader2.html"}}
+                           </div>
+                        </div>
+                        <div data-bind="visible:purchaseinvoice.editingMode()">
+                           <div class="tab-pane-content padding-right" data-bind="with:purchaseinvoice.record">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="col-md-12" data-bind="with:purchaseinvoice.record">
+                                       <div class="">
+                                          <div class="row">
+                                             <div class="col-md-12 titleformpo"><span
+                                                   data-bind="text:purchaseinvoice.text"></span>&nbsp;<span
+                                                   data-bind="text:purchaseinvoice.names"></span></div>
+                                          </div>
+                                          <div class="row">
+                                             <!-- <div class="row bottom-padding">
+                                                <label class="col-md-12" style="padding-top: 8px;">Department</label>
+                                                <div class="col-md-12">
+                                                   <input id="departmenDropdown" data-bind="value:Department"/>
+                                                   
+                                                </div>
+                                                </div> -->
+                                             <div class="row">
+                                                <div class="col-sm-3 padding-left-0px">
+                                                   <label class="col-md-12" style="padding-top: 8px;">Date Order</label>
+                                                   <div class="col-md-12">
+                                                      <input type="text" class="" name="date" id="dateinvoice"
+                                                         data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'},value:DatePosting"
+                                                         style="width: 185px">
+                                                      <span class="k-invalid-msg" data-for="customername"></span>
+                                                   </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                   <label class="col-md-12" style="padding-top: 8px">Supplier Code</label>
+                                                   <div class="col-md-12">
+                                                      <input type="text" disabled name="suppliercode" id="suppliercode"
+                                                         class="input-sm" placeholder="Supplier Code"
+                                                         data-bind="value:SupplierCode" />
+                                                      <!-- <span class="k-invalid-msg" data-for="suppliercode"></span> -->
+                                                   </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                   <label class="col-md-12" style="padding-top: 8px">Supplier Name</label>
+                                                   <div class="col-md-12">
+                                                      <input type="text" disabled name="customername" id="customername"
+                                                         class="input-sm" placeholder="Supplier Name"
+                                                         data-bind="value:SupplierName" />
+                                                      <span class="k-invalid-msg" data-for="customername"></span>
+                                                   </div>
+                                                </div>
+                                                <div class="col-sm-3 ">
+                                                   <label class="col-md-12 invhide" style="padding-top: 15px">Sales
+                                                      Code</label>
+                                                   <div class="col-md-12 invhide">
+                                                      <input name="salesCode" type="text" id="salesCode"
+                                                         data-bind="value:SalesCode" class="input-sm " disabled />
+                                                   </div>
+                                                </div>
+                                                <div class="col-sm-3 noninv">
+                                                   <label class="col-md-12" style="padding-top: 8px">Account
+                                                      Code<br /></label>
+                                                   <div class="col-md-12">
+                                                      <select id="accountcode"
+                                                         data-bind="kendoDropDownList: {data: purchaseinvoice.dataDropDownAccount, dataValueField:'ACC_Code', dataTextField:'CodeName',filter: 'contains', optionLabel:'Select Account Code', value: AccountCode}"
+                                                         name="accountcode" class="select form-control">
+                                                      </select>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-sm-3 padding-left-0px">
+                                                   <label class="col-md-12" style="padding-top: 15px">Purchase No</label>
+                                                   <div class="col-md-12" id="purchasenodropdown">
+                                                      <select id="purchasenumber"
+                                                         data-bind="kendoDropDownList: {data: purchaseinvoice.dataDropDownPO, dataValueField: 'DocumentNumber',dataTextField: 'DocumentNumber', optionLabel: 'Select Code..', filter: 'contains', change: function(e){purchaseinvoice.onChangePoNumber(e.sender._old)},value:DocumentNumber}"
+                                                         name="documentno" class="select form-control">
+                                                      </select>
+                                                   </div>
+                                                   <div class="col-md-12" style="display:none" id="labelPurchaseNo">
+                                                      <input type="text" name="" id="labelPurchaseNoInput"
+                                                         data-bind="value:DocumentNumber" disabled>
+                                                   </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                   <label class="col-md-12" style="padding-top: 15px;">Date Posting</label>
+                                                   <div class="col-md-12">
+                                                      <input type="text" class="" name="date" id="dateposting"
+                                                         data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'},value:DatePostingPI"
+                                                         style="width: 185px">
+                                                      <span class="k-invalid-msg" data-for="dateposting"></span>
+                                                   </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                   <label class="col-md-12" style="padding-top: 15px">
+                                                      VAT
+                                                   </label>
+                                                   <div class="col-md-12">
+                                                      <input type="checkbox" name="my-checkbox" id="my-checkbox">
+                                                   </div>
+                                                </div>
+                                                <!--             <div class="col-md-3">
+                                                   <label class="col-md-12" style="padding-top: 15px">Rate</label>
+                                                   <div class="col-md-12">
+                                                      <input type="text" disabled name="rate" id="rate" class="currency input-sm" placeholder="Supplier Name" data-bind="value:Rate" />
+                                                      <span class="k-invalid-msg" data-for="rate"></span>
+                                                   </div>
+                                                   </div> -->
+                                                <div class="col-sm-3">
+                                                   <label class="col-md-12" style="padding-top: 15px">Down Payment
+                                                      (%)</label>
+                                                   <div class="col-md-12">
+                                                      <input name="downPayment" type="text" id="downPayment"
+                                                         data-bind="value:DownPayment" class="input-sm currency"
+                                                         disabled />
+                                                      <!-- <input type="text" disabled name="downPayment" id="downPayment" class="currency input-sm" placeholder="Supplier Name" data-bind="value:DownPayment" /> -->
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="row bottom-padding">
+                                                <div class="col-sm-3">
+                                                   <label class="col-md-12 padding-left-0px"
+                                                      style="padding-top: 8px;">Department</label>
+                                                   <div class="col-md-12 padding-left-0px">
+                                                      <input id="departmenDropdown" data-bind="value:Department" />
+                                                   </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                   <label class="col-md-12" style="padding-top: 15px">
+                                                      INV CMI
+                                                   </label>
+                                                   <div class="col-sm-12">
+                                                      <input type="checkbox" name="cx-cmi" id="cx-cmi">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="panel panel-default">
+                                             <div class="panel-body" style="padding:35px">
+                                                <div class="table-responsive">
+                                                   <div class="row">
+                                                      <div class="col-md-12" id="tableListDetail">
+                                                         <table class="table table-bordered">
+                                                            <thead>
+                                                               <tr>
+                                                                  <th class="invhide" width="200px" rowspan="2"
+                                                                     style="vertical-align:middle;text-align:center ">Code
+                                                                  </th>
+                                                                  <th class="" width="200px" rowspan="2"
+                                                                     style="vertical-align:middle;text-align:center ">Item
+                                                                  </th>
+                                                                  <th class="" width="50px" rowspan="2"
+                                                                     style="vertical-align:middle;text-align:center">
+                                                                     Quantity</th>
+                                                                  <th class="" width="100px" style="text-align: center;">
+                                                                     Price</th>
+                                                                  <th class="" width="100px" style="text-align: center;">
+                                                                     Amount</th>
+   
+                                                               </tr>
+                                                               <tr>
+                                                                  <!-- <td class="" width="100px" style="text-align: center;">USD</td> -->
+                                                                  <td class="" width="100px" style="text-align: center;">
+                                                                     IDR</td>
+                                                                  <!-- <td class="" width="100px" style="text-align: center;">USD</td> -->
+                                                                  <td class="" width="100px" style="text-align: center;">
+                                                                     IDR</td>
+                                                               </tr>
+                                                            </thead>
+                                                            <tbody
+                                                               data-bind="template:{name:'tableRow', foreach:purchaseinvoice.record.ListDetail}">
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                      <div class="col-md-3 noninv" id="tableAsset"
+                                                         data-bind="visible:purchaseinvoice.showAssetTable()">
+                                                         <table class="table table-bordered">
+                                                            <thead>
+                                                               <tr>
+                                                                  <th class="style-th-center" width="100px" colspan="2">
+                                                                     Asset</th>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td class="style-th-center" width="100px">Category</td>
+                                                                  <td class="style-th-center" width="100px">Month</td>
+                                                               </tr>
+                                                            </thead>
+                                                            <tbody
+                                                               data-bind="template:{name:'tableRowAsset', foreach:purchaseinvoice.dataAssetDepreciation}">
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                   <table class="table borderless totaltext" border="0" data-bind="">
+                                                      <tr>
+                                                         <td class="thick-line" colspan="2" rowspan="5">
+                                                            <strong>Remark</strong>
+                                                            <textarea readonly id="remark" rows="5" cols="50"
+                                                               class="input-sm form-control formInput"
+                                                               placeholder="Describe Description here"
+                                                               data-bind="{value:Remark}">
+                                                            </textarea>
+                                                         </td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td class="thick-line text-right"><strong>TOTAL</strong></td>
+                                                         <td class="thick-line text-right">
+                                                            <span data-bind="text:Total"></span>
+                                                         </td>
+                                                         <td class="thick-line text-right"></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td class=" text-right"><strong>DISCOUNT</strong></td>
+                                                         <td class=" text-right"> <span data-bind="text:Discount"
+                                                               class="currency"></span> %</td>
+                                                      </tr>
+                                                      <tr data-bind="visible:purchaseinvoice.BoolVat">
+                                                            <td class=" text-right"><strong>VAT 10%</strong></td>
+                                                            <td class=" text-right"> <span data-bind="text:VAT"
+                                                                  class="currency"></span></td>
+                                                         </tr>
+                                                      <tr>
+                                                         <td class="no-line text-right"><strong>GRAND TOTAL</strong></td>
+                                                         <td class="no-line text-right"> <span
+                                                               data-bind="text:GrandTotal"></span></td>
+                                                         <td class="no-line"></td>
+                                                      </tr>
+                                                   </table>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row bottom-padding no-left-padding">
+                                          <div class="col-md-12 align-right padding-right-0px ">
+                                             <button type="button" id="btnSave"
+                                                class="btn btn-success btn-flat space style-button style-button-save"
+                                                onclick="purchaseinvoice.saveSwitch()"
+                                                data-bind="visible:purchaseinvoice.showCreate"><i
+                                                   class="fa fa-floppy-o"></i> Save</button>
+                                             <button type="button" id="btnReset"
+                                                class="btn btn-danger btn-sm btn-danger btn-flat"
+                                                onclick="purchaseinvoice.reset()"
+                                                data-bind="visible:purchaseinvoice.showCreate"><i class="fa fa-repeat"></i>
+                                                Reset</button>
+                                             <button type="button" id="btnSave"
+                                                class="btn btn-sm btn-color-posting btn-flat"
+                                                onclick="purchaseinvoice.printToPdf()"
+                                                data-bind="visible:purchaseinvoice.showPrint"><i class="fa fa-print"></i>
+                                                Print</button>
+                                             <div class="col-md-12 align-right top-margin-10px padding-right-0px ">
+                                                <button stytype="button" data-bind="  visible:purchaseinvoice.backToList"
+                                                   onclick="purchaseinvoice.backList()" id="btnBack"
+                                                   class="btn btn-sm btn-default btn-flat btn-backlist"><i
+                                                      class="fa fa-mail-reply"></i> Back To List</button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--panel Draft-->
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>

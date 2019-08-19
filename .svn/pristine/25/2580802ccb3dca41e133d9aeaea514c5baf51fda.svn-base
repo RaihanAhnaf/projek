@@ -1,0 +1,136 @@
+package controllers
+
+import (
+	"strconv"
+	"strings"
+	"time"
+
+	. "eaciit/proactive-inv/helpers"
+	. "eaciit/proactive-inv/library/strformat"
+	. "eaciit/proactive-inv/models"
+
+	"github.com/eaciit/dbox"
+	db "github.com/eaciit/dbox"
+	"github.com/eaciit/knot/knot.v1"
+)
+
+/*
+	TransactionOrder controller
+	/getdatamasterlocation - Gets a list of all master locations
+	/getdatamasterinventory - Gets a list of master inventory (filtered)
+
+	Functions:
+	generateNewSequence(colname string) - Generates a new sequence number based on colname
+	generateNewDocumentNumber(format string, storehouse string, subgroup string)
+		- Generates a new document number based on format
+
+*/
+const (
+	// DocumentNumberSequenceGroup the group id of the sequence number based on date, y: reset every year, yM: reset every month, M: will continue sequence of previous years' month sequence
+	DocumentNumberSequenceGroup = "y"
+	// DocumentNumberFormatShipment custom format for document number
+	// variables:
+	// %date(yMd)% - will be replaced in current date (UTC) formatted as yMd {y: year, M: month, d: date, H: 24h hour, h: 12h hour, i: minute, s: second, a: AM/PM}
+	// %seq% - will be replaced by sequence number, please note that if this is not specified, sequence number will not be increased
+	// %storehouse% - will output LocationID (4 digits integer) of respective store house provided to generateNewDocumentNumber
+	// Example: DOC/%date(yMd)%/%seq%/ will resulting in something like: DOC/20190218/0002
+	DocumentNumberFormatShipment = "TS/%storehouse%/%date(dMy)%/%seq%"
+	DocumentNumberFormatReceipt  = "TR/%storehouse%/%date(dMy)%/%seq%"
+)
+
+// "github.com/eaciit/dbox"
+
+func (c *TransferOrderController) GetDataMasterLocation(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+
+	csr, e := c.Ctx.Connection.NewQuery().From("Location").Cursor(nil)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	defer csr.Close()
+	results := make([]LocationModel, 0)
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+
+	return c.SetResultInfo(false, "Success", results)
+}
+
+func (c *TransferOrderController) GetMasterInventory(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+
+	f := struct {
+		LocationID int
+		Filter     bool
+	}{}
+	err := k.GetPayload(&f)
+	if err != nil {
+		return c.ErrorResultInfo(err.Error(), nil)
+	}
+
+	filter := []*dbox.Filter{}
+	if f.Filter {
+		filter = append(filter, dbox.Eq("StoreLocation", f.LocationID))
+	}
+
+	crs, e := c.Ctx.Connection.NewQuery().From("Inventory").Select().Where(filter...).Cursor(nil)
+	defer crs.Close()
+	results := make([]InventoryModel, 0)
+	e = crs.Fetch(&results, 0, false)
+	if e != nil {
+		CreateResult(false, nil, e.Error())
+	}
+	return c.SetResultInfo(false, "Success", results)
+}
+
+func (c *TransferOrderController) generateNewSequence(colname string) (int, error) {
+	crs, e := c.Ctx.Connection.NewQuery().From("SequenceCustomer").Select().Where(db.Eq("collname", colname)).Cursor(nil)
+	defer crs.Close()
+
+	result := []SequenceCustomerModel{}
+	e = crs.Fetch(&result, 0, false)
+	if e != nil {
+		return 0, e
+	}
+
+	if len(result) == 0 {
+		model := NewSequenceCustomerModel()
+		model.Collname = colname
+		model.Lastnumber = 1
+		e = c.Ctx.Save(model)
+		return 1, nil
+	}
+	sec := result[0]
+	sec.Lastnumber++
+	err := c.Ctx.Save(&sec)
+	if err != nil {
+		return 0, err
+	}
+	return sec.Lastnumber, nil
+}
+
+func (c *TransferOrderController) generateNewDocumentNumber(format string, storehouse string, subgroup string) string {
+	var strfmt = StringFormatter{
+		UseCustomTime: true,
+		CustomTime:    time.Now().UTC(),
+	}
+	strfmt.Init()
+
+	var group = subgroup + "/" + strfmt.FormatString("%date("+DocumentNumberSequenceGroup+")%") + "/" + storehouse
+
+	strfmt.CustomFormat["%seq%"] = func(str string) string {
+		var seq, e = c.generateNewSequence(group)
+		if e != nil {
+			return str
+		}
+		var strSeq = PadLeft(strconv.Itoa(seq), "0", 4)
+		return strings.Replace(str, "%seq%", strSeq, 1)
+	}
+
+	strfmt.CustomFormat["%storehouse%"] = func(str string) string {
+		return strings.Replace(str, "%storehouse%", storehouse, 1)
+	}
+
+	return strfmt.FormatString(format)
+}

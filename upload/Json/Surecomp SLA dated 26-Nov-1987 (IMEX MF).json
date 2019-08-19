@@ -1,0 +1,29 @@
+{
+   "effectivedate": [
+      {
+         "data-eaciit-id": "910",
+         "data-eaciit-end": "910",
+         "common-ancestor-id": "909",
+         "end-offset": "6157",
+         "clause": "effectivedate",
+         "data-eaciit-start": "910",
+         "contentfromsystem": "\n    IN WITNESS WHEREOF, the Parties have caused this Agreement to be executed by their duly authorized representatives as of the\u00a0year and date first above written.\n   ",
+         "confidence": 0.79,
+         "start-offset": "6131"
+      }
+   ],
+   "word-count": 11629,
+   "documenttitle": [
+      {
+         "data-eaciit-id": "16",
+         "data-eaciit-end": "16",
+         "common-ancestor-id": "15",
+         "end-offset": "93",
+         "clause": "documenttitle",
+         "data-eaciit-start": "16",
+         "contentfromsystem": "\n    SURECOMP INC., a corporation incorporated, organized and existing under the laws of the Province of Ontario (Canada\n    \n     )\n    \n    ,\u00a0having its head office at 1 Yorkdale Road, Suite 404, Toronto,\u00a0Province of Ontario, Canada (hereinafter referred to as \"the\u00a0Licensor\") of the first part, and STANDARD CHARTERED BANK, a\u00a0bank incorporated, organized and existing under the laws of\u00a0England, having its registered office at 38 Bishopsgate,\u00a0London, England (hereinafter referred to as \"the Customer\"), of\u00a0the second part.\n   ",
+         "confidence": 0.5,
+         "start-offset": "15"
+      }
+   ]
+}

@@ -1,0 +1,1026 @@
+SCB China ... Scopo China. Proceulng Strvlcu Agreemtnt
+DATED 2012
+(1) STANDARD CHARTERED BANK (CHINA) LIMITED and
+(2) SCOPE INTERNATIONAL (CHINA) CO. LIMITED
+INTERNAL SOURCING PROCESSING SERVICES AGREEMENT
+CONTENTS PAGE
+lndOJt Page
+1.    DEFrNmONS AND IHTERPAETATIOH    2
+2.    COMMENCEMENT AND TE:R.llf OF AGREEMENT AHO SLAS    8
+3.    SCOPE OF THE AGIU:EM.EHl    8
+4.    SLA.S AND EN'TIRE AGREEMENT    8
+5.    REGULATORY APPROVAi.    9
+8.    VARIAliON AHO PERNITI£0 CHANGE CONTROL    9
+7.    RESIDUAL RISK MAN.AGEN.EHT AND SUO.CONlRACllNO    9
+8.    8ANKING SECRECY ANO COUNTRY REGULATORY AEOUtREMEHTS    10
+9.    PROVISION Of SERVICES    11
+10.    fGS 08.LIOATIONS    11
+11.    SC&c 08UGATION$    12
+12.    WARRA!fflES    12
+13.    UA81UTY    13
+, •.    $TAFF    13
+15.    FEES    14
+16.    EXCEPTION ,MONITORING AN.0 PROCESS RISK ANALYSIS    15
+17.    RfPORTING SERVICE REVIIEW MEETINGS ANO ESCAL.ATION    15
+18.    ONGOING RISK ASSURANCE    16
+19.    COHTJHO(NCY PLAHNING AHO fORC:E MAJEURE    18
+20.    TERMINA1ION    16
+21.    CONFIDENTIALITY    18
+22.    DATA PROTECTK>H AHO rNFORMATIOH SECURrTY    19
+23.    AUDfT    21
+24.    DISPUTES    21
+25.    OWNERSHIP o, SOFlWARe AHO EQUIPMENT    22
+26.    RECOVERY AND RESOLUTION Pl.ANNING AHO A$5IGHMfHT    22
+27.    HO PARTNERSHIP/ AGEHCY    23
+28.    WAJVER    24
+29.    SEVERAWLITY    24
+30.    HO THIAO PARTY RIGHTS    24
+31.    COUNTfRPARTS    24
+32.    FURTHER 4$$URAHCE:    24
+33.    NOTICES    24
+34.    GOVERNJNG LAW ANO JURISCMCTION    25
+35.    IHSURAHCE    25
+SC'HEOUt.E: 1    26
+PRO-FORMA SLA FOR. PROCfSSIHG SERVtCES    26
+SCHEOUlE2    37
+PEHMITTEO CHANGE PROCEDURE FOR SlAS    37
+SCHEDULE3    40
+COUHTRY REGUI..ATOR't REOUJREN-EHTS    40
+SCB China -- Scope China • Procuslng Services
+SCOPE CHINA MASTER PROCESSING SERVICES AGREEMENT THIS AGREEMENT is made U,e    2012
+BETWEEN.
+(1)    Standard Chortored Bank (China) Limited. o company incorpora1ed In !ho
+People's Republic of China (PRC). registered number 31000040DM7918 (SHI JU)
+having its regl$leTed office a1 S18ndard Charte1ed Tower, 201 Ce.nlury Avenue, Pudong, Shangtlal. 200120, ('SCBC1, and
+(2)    Scope lnlomollonol (Chino) Co. Limited, a a,mpany .-pora!ed In U,e PRC whose registered offioe i$ located at No. 35, Xinhuanbei Road, TEOA, Tianjin, 300457; ("lnlr.laGn>up Supplier' Of 1GS1
+WHEREAS:
+(A)    SCBC LS a member of the see Group and ca,ri&s on banking and other financial business in the PRC.
+(B)    The IGS is a wholly owned subslciary wilhln 11\e SCB Gn,up and p,ov>des, among other lhings. ope1111ioos proCQssing services
+(C)    SCBC wishes 10 engage 11\e IGS lo provide opc,atlons processing services upon 1he terms set out in this Agreement
+IT IS HEREBY AGREEO as follows
+1.    DEFINITIONS AHO INTERPfl£TATK>H
+1.1 Unless the oontexl Olhervnse requires, tho fotlow1n9 capitahsed words and expressions when used in this Agreement Of any SLA sha1I have the lollowing mear.ngs.
+• Approvod Contracf
+
+•Auditor"
+
+'Billing Period"'
+
+"Business Day"
+
+means an agreement as identified in the Internal Soorc,ng Procedures tor engaging certain see Group companies to provide seMCeS 10 other sea Group companies:
+means any person (whOlher an external adviser or employees within the see Groop) appoin1ed by SCBC or a Regulalory AuthOrity lo conduct 800111, asses1ments or in.speci,ons of any pert the ooslness or operations ol seee "'arr, part ot tho SCB Group
+means In relot,on to any type of SeNices pro,,ded by the IGS to SCBC pursuanl lo !he SL.A. a calendar month. or SUCh ot.het period as may be agreed by lhe IGS and SCBe,
+meMs a day on whJch bunks in the relevant location are orchnc1ri'ly aper, tor business;
+
+'Commencement Date" means 15 September 2012,
+'Confidential information'    means all information Of maiehs! (whether
+commercial, nnandal. leChnltal or otherwise) m whatever form (whether 0'81, in writing, electroncaay recorded, mactune readable or otherwise) wtuch (1) by 11s nature should be treated as secret and confidential and which scec desues to f)<oted against unrestrieled disclosure or oompetrtlve use. or (2) which is designated as such, induding:
+a)    Customer ()eta;
+b)    inlormalion relating directly Of indirectly to SCBC's business or that of any other
+member of rho SCB Group. including
+delails of trade secrets, know-how,
+slrolegies, k1eas. operations. p,oe&sses. metl'lodologlcs and practices;
+c)    mlorms1lon relating direclty or lndlfeCUy 1o
+SCBC's plans, intentions, knowhow,
+mal1<el oppo<tumtJes and buSUle$S olfa.rs or thOse or any othe, member of the see Group or ils cus1omers (indudmg potential customers) ond clients;
+d) work5 of authorship, products and materials written and p<epared by SCBC or ot any othef member of the see Group in relation to lhe sut>tect matter of the SLAs lndudmg to computer programs, data, diagrams, charts reports, specifications. sketches. inventions and working papers or similar materials of whatever nature or on whatev«,r media relating thereto, and
+any information resulting d1rectty or m<firectty from
+the discussions or negotiations relating to the
+subject matte, of the SLAs and a!I copes, notes,
+records and all related information (in any fonn) generated by th<! tGS. SCBC or any o<her
+l1Mlfl'lbe( of the SCB Group based on or arising from any d1Scfo$ures in relabon to the sut,fect matte< of the SLAs,
+•Contingency Event*    means the occurrence of any evenl (whether
+wUhin or beyond lhe reasonable control of the IGS and induding any FOfce Majeure Event)
+wtl,ch prevents or interferes in the provislOl'I of the
+Services in the norm.at manner or impairs the
+quatily of the Se<vf<les being pe<fonned by tGS
+"Contingency Plan"    means any plan., pr^^dure or aaangement winch
+is destgned to be implemented fellowing a
+Cormngency E-t ,nc:1uc1,ng plans called Business Cont1nully Plans (or BCPs}. Oisas1e-r Rwovety (ot DRs) or Business R^»vety Plans;
+"Country Regulatory Requirements" means the specific and unique country laws and
+/or regulo«ons pertaining to Scee that the IGS needs to comply wilh when performing the Service$ for SCeC which are ove, and above the gene,,c regl.Qtory requirements t ke banking secrecy. data protection and privacy. The Country Reg!Jato,y Requirements 8le set out in Schtldule 3:
+MCU9tomor Data"    means any lnfonnation or data of My kind
+(whet.her h8d in paper, elect.ronk: or other form)
+"Data Protection Laws"
+
+"Force Majeure'
+
+"IGS Equlpmonl'
+
+'1GS Representative"
+
+•1Gs Software'
+
+relsfing to any customer of SCBC and lhal
+cuSlomer"s ecx:ounts or transactions:
+means: au stcitutes. fcrws, secondary leglslat!on. regulat.ons, guodelines and Industry slandarc!s appl/eable 10 see Group pertaining to privacy.
+confidential,ty, and/o, Iha protec1ion of Personal Oala °' corporate data;
+means any cause beyond tho reasonable control of the IGS Including any act of God, wa,, nOIS,
+acts or the publlc enemy. fires. strikes. labour disputes, accidents, or any act in consequence of
+COf"rlpUance with any order of any govenvnent or govemmentat avthor'i1y;
+means any equipment owned or leased from lime to line by the IGS which is uhlisod by tho IGS in
+providing operations processing services,
+in re&aoon to each lntemal Sourcing Arrangement, me.ons the per$0n named (n the SLA to euthori!e any Permh'led Change under, and to act as the
+flllmaty contact/liaison of lhe IGS a1 tho Service Review Meetings. in conneciiOn with. that SlA.
+""""1s any sonwore <7'ffled from lime to t,mo by
+tho IGS which Is trtlllsod by the IGS In provlchng operatlOf'ls processing seMCes:
+
+"Internal Sourcing Arrangemonts" moans any Services or activities to bo performed and/0< prOYlded by 111e tGS 10 scec:
+--internal Sourcing Procedures"    fOf the purposes o1 this Agreement moans the
+Internal Sourcing Prooectures fof Processing S8f'Vicos and P,ocessing Services Manual wtldl are part of lhe SOB Group Otrtsourcil11J Policy and Procedures;
+’Key Employee'
+
+’New Services" also referred to as
+•New    fntomal    Sourcing
+Arrangements" m the Intemal Sourcing
+Proccdures
+
+means any pe.- employed 0< engaged by tl>o IGS as may be notified lo lhe lGS by SCBC from time tohmo,
+means
+a newt dlffe1ent lype of service provided by the IGS 10 SCBC
+• services prtMded lo suppo,t a produd/ service no« arready suppQrted by the IGS for SCBC
+•    an expansion of scope of a seMcc the IGS is
+already providing An ‘expansion of scope1
+means inc'Tease in data fields: increase in
+risks: or a change in 1echnology.
+•    SCBC wishes 10 replace an entire exi$lJng
+functior\/ taam with services to be provided by lhelGS.
+mean, !he IGS and SCBC.
+‘Permitted Chango1    has the meaning given to it m Paragraph I of
+Schedule 2 - Pe<mittcd Change conuol
+PrOcedure;
+"Porson,1 Data'"    means any data. records or information {in any
+form):
+a)    re&at1ng <11rectly or ,ndirectty to a person (including but no1 l&lnited to past, piesenl anclfor turure personnel, customefS, 5'JJll)llers and third party asoocialo of SC6C),
+b)    from wtuch i1 is prad!C8ble for the idenbly of the person to be dlreclly ot 1ndireetty ascertained:
+"Regul11ory Authorily"    means any central bank, goVetnment department
+or agency. or other authori.ty which has lhe
+responslb1lity of supervising and/or regulating scec and ocher banks and financial lnSlltutlons in tho country generally;
+•Rf;-si(iua< Risk Management1 or means the transfer of Services from the IGS to anothe< Scope Company. The rules and conditions under which a RRM can take place a,e set out In the Internal Sourcing Ptooedures. For the purposes of this Agreement, RRM is not aul> oontrading;
+“SCB Group'    at any point, means Standard Chattered PLC. a
+company Incorporated in England and Wales, and all llS subsidiaries existing at that point;
+•SCB Group information Security means the lechnieal and organisational security Policy’    standards, requirements and poboes of SCB
+Gtoup:
+Procedurest
+Commiuce (er its succes10f) of the SC8 Group lor the - o/ reg'*1t<lg and governing .. lntemaf Sourcing Atrangoments entored Into by any membef of the see G<cup The lntetnal Sourcing Procedures .. a part of the see G<oup Ou1sourc:ffl9 f><,jicy and Prooedures;
+'SCBC Representative*
+mrelaliOTio eaclilnlernal^urcing^rangoment.
+means the person named in the SLA to authorise any Penrutted Chonge IJnder. and to ad as the pm,a,y -son of SCBC at the 5eMce RevieW Meetings in oonnect1on with that SLA:
+•'Scope Company"
+means a ^wholly owned no^tenktng ^bsidiaty of Standard Chanered PtC which is lncorporaled fo< the purposes of p,CMCl<ng processing end rr servas be(;. 10 the SCB Gloop;
+Services'
+means the ope,allcns p,oc:esslng services when
+ron^ttute ihe Inters Sourang ^rangements
+being outsourced from SCBC 10 IGS;
+'Service Fees"
+,s asdeflnedln dause 15,
+"Service Levols"
+means the pertonnance and quaUty criteria flllClud,ng those relating IO V<llurnoo, turnaround tme and error rates) as contained m ar,y SLA;
+'SI.A'
+means a seMCe level agreemenl wtlich may be ente<ed inlO IIOm trno to "'110 by ihe IGS and SCBC documenting Ille specific iyp6 or
+orations pr^^sing    tobepovided by
+theIGS 10 SCBC in IICCO!danoewith clause 4
+-Standard Chartentd Equipment'
+means any equ pment owned er leased by SCBC which ihe fGS may be aUlhonsed IIOm time to time by SCBC to use fo, the SOie purpose of prow,,ng the-.
+"Standard Chartered Software"
+means any software owned or flcensed by SCBC
+which the IGS may be authorised IIOm lime to !me by SCBC 10 use lor the scle purpose of provid1t1g lhe Services;
+"System"
+means the ope,a6oo er configuration ca,_
+all computer and other etecrronh: equipment and
+software (onducmg 3l'l'f Standard Chartered Eqwmont and any Standard OhaM<ed
+Software) which is 10 be utiiised by the lGS In
+"Third Party Software"
+
+"Transition Out Assistance”
+
+"'Tran1ltlon Out Period"'
+
+"Transition Out Plan'
+
+l)<OYid,ng tl1e -.C
+means any software licensed frcm lime to lime by a third par1y to the IGS which is utilised by the
+!GS in. prowdingi o^ra lions praising sera^:
+means. ,n retation to a SLA the assistance and related servk::es to be provided t>y the IGS on termination of that SLA (1ndud1ng where such is due to tetminatlon of this Agreement), as set out In any Transition Ou1 Pfa.n, SLA or as required by SCBC,
+means the period from the 1enninatlon date or a SLA during which Translt,on Out AsstStance is to be provided 1)1' tl1e IGS In relabon lo the Service in that SLA until such Service has been tranSilJC>flfld out, as specified in the relevant Transllon Oul Plan or as sliputated by SCBC,
+means the plan developed by SCBC (if any) detailing how a transrtion out Js lo be calTied out. asset out in a SI.A or as 1oqulrod by SC8C;
+
+1.2    Unlessollle,w,se eXl)<essly provided, In lhls AQreement and any SI.A:
+(a)    references 10 1his ,Aqee.moot. any SLA o, any other document shall include referencM to th,s Agreement. that SLA °' suctl other document a, amended. varied, supplemented. replaced and/or restated in any manner from timo to
+time;
+(b)    references to clauses and sctiedules shOtl be construed es references 10 ctauses of, and schedules to. this Agreement;
+(c)    referencesto any enactment. s.1atuto or legislation shall be deemed to include references to such enactment. sta1ute cw tegisfation as r&-enaeted, amended orexseoded and any subordinate legislation mpde undmii;
+(d)    headings and subheadings are insertedi for convenience ionly and shall be
+ignored In construing this Ag.reement and any SLA,    2    2
+(e)    references to "including' and 'include’ shall nol be construed lestridiveiy but shall mean "including without limitation* or 'induding without prejudico to the generality of the locoing" and "include ^wrthO<Jt limitation’ res^^ively; and i 2
+1 3 In the event of a conn.tt between • te,m of 1l1ls Agreemenl and a lerm of any CChef SLA. this A,greement sha" prevai 10 thee.tent of lhe con.'lld. unleSS Olllefwlse expressly agreed byIlle relevant Parties
+2    COIIM.£.NCDtEHT AHO TERI& OF AGRfEll£NT AHO SLAS
+2 1 This Agreement 5hall come ,mo effect on lhe Commencement Date and s:halJ ""'1llnUe unu terminated in accordanQO with clause 20.
+2 2 A SlA •hall come into effea on lhe EffedNe Date of lhal stA and c:ontinue for a period of 1 yea, unless it Is termmated ear1ier in accorC1at1ce wrth clause 20
+(wtlidleve< ,s lhe eartief) Upon eact, an.......a,y of Ile Effew,,e Dale lor !hat SI.A.
+SCBC shaN carry out its annual ,- as requ,n,d unoe< the Internal Sc<,tcing Procedures and may renew Ille SlA ror a furthe< penod 1 year.
+2 3 SCBC agrees lllal any SeMces which 11 - Ille IGS 10 perlorn, as o1 Ille Ccrnmencernent Date mus.t be doeumented through a SLA prescribed under this A9<eemen«. and not imer a SlA o, StJ,N under any 04Mf 11g1- t>e<ween lhe SCBC and lhe IGS or any Olher-airon-.
+3 SCOPE OF fflE AGREEltEHT
+3.1 This Agreement it the Approved Cortlnld tor engag,ng Sa,po !Nern...,.,.. (China) Co. Um.led to provide any Ol)Or8lion1 processing ser;ic:es to SCBC.
+3 2 Thrs Ag,eeme,,t does not cover lhe provJwn of IT serv,ces. oontaa c:erire S8MOl!S °' daUI centre servk:es, fo, which thefe are sepanne Approved Controcts.
+3.3 The Parlies agree that they may not expand (lie    o,    the appl^alion, of this
+Agreemtmt In such a wai, as to be inc:ons1sten1 or conflid wrth the tenns of 1he fnte,nal Sourc:ing Procedurn.
+4    SLAs AND EKTIRE AGREEMENT
+4.1    In order to Inti.ate any Services. SCBC and Ilie IGS mUsl execute the 8jl!Jr0pnate SlA In lhe 1orm prescribed ,n Schedule t.
+4.2    Eac:h category or bundle of Services or any New Services to Ile pn>nded by lhe IGS to SCBC must be i^umented ,n a «berate SlA.
+4.3    The Parties agree chat a!I SLAs wi:I const.1ute sepera&e incfMdual eot111ads and c:onlbtute the ents"e agreement as between them. and supersede alt previous agr^CTents be^en (he^elres Each Party acknowlbe^s that 4 has not relied on or been induced lo enter into this Agreement Of eny SlA t,J a representafion of the o<ho<s. Nolhing in u,;, Agreement shal affect a Party's liability in respect of any frauduter4 rn,s,epreseru,oon
+5    R£0\JLAlOAY APPROVAL
+5 1 SCBC ^rees that all SlAs and Seheces to be provided shall only cornm^ce once
+SCBC has nollfied the Regulatory Authorl.ty, 1ecelved the relevanl regulalory approval ot non±objectten and has otherwise fulfined the necessary regurato,y condtii ons to engage lhe IGS tt ,s nol the responsibility of the IGS to ensure 11\ot regu&atcwy approval or non-Objection or ony other regulatory condihons have been met before the commencement of the SeMCes.
+s 2    The IGS shell co-operate end provide such 1nforrnatt0n as is necessa,y to a$$1st
+SCBC to nolily or ^k approval from the RegutaiOly Authority.
+5    3    If the Regulatory Authonty does nol gMO its app«,val for, or objects to, the
+engagement of the IGS to provide any Services to SCBC, Scee shall have the r19ht 10 1errnlnele the relevant SlA forthwith on wntten no6ce to the IGS.
+6    VAA:IAllON AHO PERMITTED CHANGE CONTROL
+6 1 Aft vanabona 10 tM Genera, Tenns of this Agreement must be signed by an authorised •lgnatory of SCBC and the Chief Executive Officer (or equivalent) of the tGS.
+6    2 Any Penn,tted Change to a SlA mu1t comply with the proce<fure laid out 1n Schedule
+2 Ariy Pemiitied Change to a SLA shall be executed by SCBC and the IGS. The
+SlA identifies tho representat!ve for SCOC and the tGS 10 act lor 1111d on ils bel\alll reapect1vety ,n relation to such Pennrtted Change.
+6.3    Any other ehenge to the SlA Othet than a PollTllHod Change is deemed to be a Now SeMCe for wtlich a new SLA needs 10 be entE!fed Into.
+6.4    Any other purported change to the SlA that Is not a Pe,mltted Change is null and vole!.
+7    RESIDUAL RISK MA.NAQEMEHT AHO Sue-COHTRAcnNG
+7 1 The lnlomal Sourcing Proce<1u= sets out hew Residual Risl< Managemen1 (RRM) or rwt><:ontract,ng can be underlaken by the IGS. The Parties ogree to comply with
+such requirements and IGS agrees not to undertake any RRM or sub-c:ontrc,ctJng contrary to auc:f'I requirements.
+12 The IGS may carry out RRM l'1 respect of any s.,...ices l'1 11\e manraer permitted in lhe lnlemal Sourcing Procedures and the requirement& of lhe relevant SLA..
+7.3 The tGS agrees that it may not sub-contract the performance of part of the Servoes
+unless It first obtains the written consent of scec. SCBC shaft be resc,onstble for obtaining the roqui$1le regut.atory approval Of non..objection for any such sub-conltBCllng
+7.4    If SCBC permi1s 1he IGS 10 svb,oon!tad,
+(a)    The !GS shall ensure that i1 Is entitled to assign and transfer all its rlghls and
+obllgations under any sub-contract 10 SCBC. that no conditions are attached lo such entitlement an<! that, following any such assignment or transfer,
+SCBC shall be entitled to make reasonable use of the subject.matte, of the sub-contract for their respective benefit
+(b)    If, in the reasonable opinion of SCBC, any of the obligations of the IGS whch
+have been subcontracted are not be-mg perfonned in accordance with the SLA, that SCBC may withdraw it.s consent, and the IGS shall perform the relevant obligations itself immediatety; and
+(c)    the IGS shaU remain tesponsible to SCBC for the performance and
+observance of all i1s obligatioinsunder the reJevant Sl.A.,
+(d)    the sut,..controctor shall have no employment relationship with SCBC; and
+{e)    the IGS' con1ract with the sub--contractors will:
+(i) contain terms at least as stn.ngent as those set out in this Agreement and the relevant SLA; and
+(ii) ensure that SCBC and its Regulatory Authority will have direct audit r.ghts against the sulH:ontractor.
+7 .5    No1hing in this dause 7 ptevents or piohlbits the fGS from engaging third party
+setvioes providers for the provision of services whk:h are incidental (but not core) to
+the IGS's business and operations provided that such third party service provide.rs do nol perfonn any aspects of lhe Services themselves or have ttccess to any Customer Oa1a.
+8    BANKING SECRECY AND COUN1RY REGULATORY REQUIREMENTS
+8. 1 The IGS acti;oowtedges and agrees that SCBC Js bound by banking secrecy laws In the country in which it is op,eraling The IGS shall comply with such banking sectecy laws and shall not take any step which might cause SCBC to oontravene any such
+laws.
+82 Without prejudice to the requirements latd down in clause 22, the IGS agrees that it may only access, process anct otherwise deal with any Customer Oata and/or personaJ data in me manner allowed under each SLA and as directed by SCBC from
+time to lime. No other use or processing of Customer Oa1a and/or personal data is alowed,
+8.3    Without prejudice to generality of clauses 8. 1 to 8.3 the IGS undertakes to oomply
+with the Country Regulatory Requirements.
+8.4    Schedule 3 sets out the Country Regulatory Requirements.
+8.5 Each Party to this Agreement agrees that the Country Regulatory Requirements may
+be amended unltateralty by scec notifying the IGS. The changes to the requirements will be effective as ot the date of such notification.
+8.6 F0< convenience, the Parties atso agree that the Country Regulatory Requirements wiU be uploaded and maintained c11 a see Group Shal'epoint site for lntemal Sourcing.
+6.7 The IGS shall ensure that all Customer Data that is stored Of atchived by the IGS
+shall be cegregated by countryterr'rtory and by members of SCB Group.
+8.8 Nothing In this Agreement w1U operate to prevent SCBC fron, disclosing any information concerning its operations and customers {including any Services provided to it hereunder) to its Regulatory Authority.
+9    PROVISION OF SERVICES
+9.1    The IGS shaU provide the Services to SCBC in aocordance with the terms, standards, Service Levels, processes and procedures of this Agreement. and th.e relevant SLA.
+10 IGS 0Bl.lGATIONS
+10.1 The IGS shall at its own cost:
+(•) establish a.nd maintain al all times during lhA term of this Agreement all premises, facilities. equipment, resources and liechnicaJ expertise necessary for the effective conduct. management and futfitment of its obligations under
+the SLAs;
+(b) provide au Services with all due skill and earn and to at least as high a standard as that achieved by SCBC on handing over the Services to the IGS;
+{c) establish and maintain such safety and physical security aqulpment and procedures as are necessary to comply with any safety and security requirements oontained in the SLAs;
+(d)    maintain at all times a register of oontrac1s. whether cur-rent or expired.
+between it and any third parties ,-elating in any way to the provision of the Services, and sh-all upon request make the register of contracts available to
+SCBC for inspection orcopying;
+(e)    oompty in au respects wrth any policies. procedures or practices of the see Group in existet1ce from time to time which may be relevant to the operatiot'I of its business ot the performance of its Obligations under the SLAs;
+{f) take an reasonable measures to protect. to the extent that they are within the IGS's control. SCBC's records, data, infonnation and programs against loss. damage or corruption by making adequate and timely back-up of the records, data. information and programs and maintaining these in a safe and secure manner.
+(g)    take all steps to maintain its status and/or registration under any technology
+pa.rk Of corridor and any other preferential or favourable corporate. tax Of other status which it may currently enjoy;
+notwilhstandin9 any other term of the SLAs. promptly and fully comply with any request or instruction made by SCBC from time to time in relation to any aspect of !he SLAs and/or th& piovision of the Services and/or otherwise in relation to any of the subject matter of the SLAs: and
+(i)    ensure the efficient use of resources and that the Setvices are provided in an
+efficient and timety fashion.
+10.2 The IGS shall also observe and maintain standards of professional ethics and conduct which would reasonabty be expected from a member of the SCB Group including those which may be contained in any see Group cOde of conduct or other SCB Group policies from time to lime.
+11 SCBC OBLIGATIONS
+11.1 SCBC s.ha:JI glvQ such assistance and support 10 the IGS as SCBC reasonably
+considers necessary to enable the IGS to dettver the Services.
+12 WARRANTIES
+12.1 The iGS represents and warrants to SCBC that:
+(a)    it is a company duty incorporated, validly existing and has the corporate power and necessary governmental and other consents, approvals, licences and authorities under the laws of the country in whtch It ls operating to own its assets and carry on its business;
+(b)    ii has l)OW'er lo enter into, exercise its rights and perform and comply with its obligations contained In the SLAs, and no limits on its corporate powers will
+be exceeded by executing this Agreement;
+(c)    all actions, conditions a.nd things require<! to be taken, fulfilled and done (Including 100 obtaining of any necessary consents bul not the Regulatory Approvals under clause 5) in order to enable it lawfully to enter into, exercise its rights and perform and comply with ifs obltgations conta ned In the SLAs, and to ensure thal those obtigatlons are legalty binding and enforceable, have been taken, futfiUed and done;
+(d)    all contracts. licences, consenls and authorisalions (indudlng licences of the appropriate governmental and other authOfittes in the country in which it Is operating) necessary for the carrying on by the IGS of its business as lhe
+same is currenuy carried on have been obtained and an such contracts, licences, consents and authotisa.tions are in full force and effect; and
+(e)    ti has the necessary licences to use any Third Party Software for the purpose of p<ovidlng the Servloos and for the benefit of SCBC and ensure that SCBC will not need any addllional 11cences, permissions, authorisations or any
+consent 10 receive the Services whiCh are performed using such Thitd Party Software.
+(f)    11 will comply wilh all appticabJB local laws in the place of its incotporation and
+operation.
+13    LIABIUTY
+13,1 Nothing in this Agreement e,:cludes or limlts the liability of a Patty in respect of
+(a)    death or personal injury caused by its negtlgence:
+(b) fraudulent misrepresentation;
+(c)    gross neghgence, wilful misconduct or fraudulent act or omission of its staff:
+(d) any breaches of clauses 8 (Banking Secrecy and Country Regulatory Requirements), 21 (Confidentiality) and 22 (Oa1a Protection); and
+(e)    hability which may not otherwise be limited or excluded under applicable law.
+13.2 Subject to clause 13.1 above, in no event will either party be liable to the other for:
+(a)    any loss of business, profits. operational k>sses, goodwill, reputation. possible
+or expected investment or capital expenditure, or abillly to write down assets; and
+(b)    Indirect or consequential or special or punitive damages arising out of or in
+connection with this Agreement;
+13.3 Subject lo clauses 13.1 and 13.2 above. the liability of the IGS to SCBC arising out of or in connection with this Agreement and any SLA between them. whether arising
+from contract. tort, negligence or otherwise shall be limited to an amount equal to the Service fees payable by SCBC to the IGS under au $LAS between them tor the relevant calendar year.
+13.4 Sut,jecno clauses 13.1 and 13.2 above, the liability of SCBC to the IGS arising oot of or in connecUon with each SLA between them, whether arising from contract. tort, negligence or otheMse shall be limited to the Service Fees due and payable under such SLA.
+14 STAFF
+14.1 The IGS shall ensure that an ot its staff shall be suitably qualified and skilled for tho purposes of carrying out the Services.
+14.2 TOO IGS agrees and acknowtedges that all staff of the IGS ate emptoyees or contractors of the IGS and under the IGS' soie management control, and such staff
+have no employment relationship with SCBC.
+14.3 The IGS shall ensure that all its staff are informed that none of them has any ciaim whatsoever on SCBC c1nd chat none of them is entltled to raise any industrial dispute, either dlrectty or indirectly. with or against SCSC in respect of work condiUons or
+otherwise or otherwise claim to be empk)ye<f by SCBC.
+14,4 The IGS shall comply with au applicable labour or empJoyment lav,s in Its country of operations.
+14 .5    'rhe IGS shall, if required by SCBC from timo to time, cec1se with immediate effect
+the lnvo1vemoo1 of any employee of the IGS in the provision or any Services as
+specified by SCBC The lGS shall as soon as practicable replace any individual excluded from invofvemenl in the provision of any Services under this clause with a
+suitably qualified and skilled substitute.
+15 Fees
+15.1 SCBC shall pay the IGS the Service Foes as set out in each SLA which must be ascerta1oed in accordance with the principk}s laid out in the Internal Soutcing Ptocedures.
+15.2 All Servioe Fees and invoices shall be denominated in Chinese Yuan.
+15.3 The IGS shall within 30 days of each Billing Period deliver to SCBC and the SCBC Representative an invoice for the relevant Service Fees and each invoice sh.alf become due and payable ono (1) month flom the dafe of the invoice.
+15.4 The lnternaJ Sourcing Procedures sets out tho pnncipfes for dealing wrth any withhafding tax that may be applicable on any Se-Mee Fees and the Parties agree to compty with this.
+15.5 Unless otherwise agreed between the Parties, if it Is determined that payment ot the Service Fees is subject by raw lo any withholding tax on the payee's Income, the payer shall make payment to the payee at the amount owing, less a deduction fot such withholding tax and shall account to the relevant tax authority for the withholding tax provided always that the payer has possession, as fumfshed by the payee, of declaration(s) of tax residence on the prescribed forms and oettifteation of
+the relevant taxation authorities which are current and accurate in order to confirm the applicabitlty and availabtllty of any reduced rate of withholding tax under the p,-ovisions or the relevant double taxation convention c1nd/or treaty. The amount of
+withholding tax deducted will be caJcu1aled by the payer in accordance with any appropriate double taxabon convention c1nd/or treaty between the states in which !he payer and the payee respectively reside. The payee shall fomish declaration or lax residence on the prescribed forms a.nd obtain the certification of the relevant taxation authodues in order that the payer rnay confirm the applicability and availability of any reduced rate of wilhholding tax under the provisiOns of the relevant double taxation convention and/or treaty as envisaged above.
+15.6 SCBC shall, in addition to the Se1Vice Fees, pay all taxes (including any goods and services tax) which may be levied from time to time on the SeNice Fees and/or In
+relation to any Services and which, as a matter of law, scec Is required to pay or the IGS is required to collect from SCBC.
+16 E,XCEPTION MONITORING ANO PROCESS RISK ANALYSIS
+16.1 For the duration of each SLA, the IGS shall perform testing on key controls ancs exception monitOJing in accordance with the mandate controls and exception monitoring requirements notified to it by SCBC and the SCB Group's RMF.
+16.2    The IGS shall also carry out a Process Risk Analyss fOf each SLA within 6 months of
+the commencement of that SI.A. Thereafter, the Process Risk Analysis must be
+repeated annualty for any material Internal Sourcing Arrangements and biennially (once every 2 years} for non-material Internal Sourcing Arrangements.
+17    REPORTING SERVICE REVIEW MEETINGS ANO ESCALATIOH
+17.1    The IGS shall provide the management information and reporting in accoidance with
+the specific provisions of the ,erevant SLA.
+17.2    The Parties shall conduct the Service review meetings in the manner required under
+the relevant SLA The Servioe review mcotings must cover the entire scope of the Internal Sourtir,g Alrangement entered into between SCBC and the IGS including any that is the subject of a RRM transfer to a secondary IGS or sub-contracted to a
+sub-contractor.
+17 .3    The SCBC's Representative and the IGS' Representative are permanent members of
+such Service review meetings.
+17 4 The IGS shall, as soon as practicable foOowing a request by SCBC, provide directly to the Regulatory Authority any information requested by the Regulatory Authority including information relating to the performance by the IGS of tt.s obligations under the SLA
+17.5    The IGS shall immediately inform SCBC upon it becoming aware of:
+(a)    any disclosure of any Confidential Information wtiich has been made, or may have been made, In breach of the provisions of clause 21: or
+(b)    any breach of secufity or any unauthorised access by any person to the IGS System, the Confidential Information or the tGS's premises,
+17.6    The IGS shall Immediately infonn SCBC in the event that any person (including any governmental agency or department, regulatory authority, police or other criminal investigation agency, court, judge or othef judiciat officer) requesls or requires the IGS to disclose: any Confidential tnfotmation or other Information to any person conc.ecnlng its business or the provision of the Services, provided that no applicable law prohibits the IGS from so lnfonning SCBC. In such circumstances, the IGS shall provide full details on an ongoing basis of all contact with such person and information furnished. and comply with any Instructions given by SCBC in relation
+the<eto The IGS shan notofy SCBC os soon os Is practicable (and in any event within two Businoss Days) of any such request that is received &od shall. to the extenl re.asonat>ty practJcable. wffllhokl from any disdosure until SCBC has respond&d 10 the IGS WY1h its views. The IGS shall comply with any reasonable lnslluci,ons given by SCBC in ttws rega,d
+17.7 The IGS shall promplfy provide ony information which SCBC may at any time request including intonnation in rdation to the serw:es. ano any aspect of 1he subject matter of tho SLAs.
+18 ONGOING RISK ASSURANCE
+18.1 The IGS shall provide such lnformahon as is reasonabfy necessary to enable SCBC 10 porfomi the Rlsk Reviews a'1d Ongoing Supplier Management and Risl<
+A.sses.sment tasks under the SCB Group Outsourcmg Policy and Procedures,
+18.2 The IGS shall po,torrn testing oo the key controls and exception moMoring requirements in relation to each SLA in accordance with the SCB Group Risk Management Framework.
+19 COHTIHGEHCV PLN4NIHG AHO FORCE MAJEURE
+19 1 The IGS undertakes and warrants to SCBC lllat It has In place comprehensive Conbngertq Pl;irJS 10 deal with the rekl\lant Conting&ncy ovent.
+19.2    Upon the occurrence of a Contingent Event, the tGS shall activate the relevant Contj^ency Plan to ensure minimal disruption of the Services 10 SCBC.
+19.3    The !GS shat olsdose and make available 10 SCBC the dctans of such Contingency Plans to enable SCBC to cva1ua10 the risk of such contingency planning by the IGS and lo prepare their "l)lll,c8tion klr regulatory 8l)llf0Valsl nc4ificatlon. The IGS shall updato SCBC as and when lhese Contingency Plans are revised or amended.
+194 Notwithstanding clause 19.1, w11ere a Force Majeure Event occurs which Is not cove1od by o Contingency Plan, lhe IGS shalJ use its best endeavours to festore the 5.,.,,._ 10 such level as may be agreed Wllh SCBC at that tlfTle. Upon such a Force Majeure Event occurring. 1he IGS shall infonn $CBC immediately,
+20 TERMINATION
+20.1    SCBC may by giving written nollce terminate (1) its par1,cipation of this Agreornent
+and all SLAs intheir entirety. or (2) any SLA In wh<lle or in pall. wtth lmmeciate effect upon the oc:anence of any of the following events.
+(a) the IGS comm,ts a material breach ol eny ol ots obligations under the
+Agreement and/or any SLA. provided Iha! If In the roasonat»e opinion of
+SCBC, such a breach is capable of remedy the IGS shall be given30 (lhirfy) days lo remedy the - to the reasonable satisfaction of SCBC Such
+grace period and any subsequent remedy of the ,elevant breach by the IGS shall be v1ithout prejudice to SCBC's right to claim damages or other remedies In relation to any breach of contr&Cl by the IGS; ()(
+(b) the suspenS.on or the thfeatened suspension of all Of a substantial part of the IGS' operations; or
+(c)    a liquidator. receiver, trustee, administtator or a similar official is appointed 01
+propQSed to be appointed in respect of the IGS Ot over any of the IGS assets;
+(d) tile IGS enters into a oomposition, compromise or other voluntary or involuntary arrangement vMh its creditors;
+(e)    a meeting is oonvened, a petition Is presented or an order is made, or a
+resolution is passed for ttie winding-up ot the IGS; or
+(f)    the IGS ceases or suspends generally payment of Its debts (or announces an intentk>n to do so) or Is unable to pay its debts or is deemed unable to pay ,ts debt.;:
+(g)    it beoom.es unlawful fOC' tile IGS to perform any of its obilgations under any SLA; or
+(h) any SLA ls not or c.eases to be legal, valid and binding on the IGS: or
+(i)
+0)
+(k)
+
+if the Regutatoty Autholity so requires SCBC to terminate part or all of any SLA or its part!cipaflon in this Agreement: or
+continuation SCBC to be
+
+of me fulfitmoot of this Agreement or any SLA would cause
+ln breach ot any lawsl or regulatory requirements to which It is
+subject; Of
+
+the 1GS cea'S,eS to be a member of the SCB Group: or
+(1) any event occurs whleh, under the applicable law of any relevant jurisdiction,
+has an analogous or equivalent effect to any of the evenls mentioned in this
+clause 20.1.
+20.2
+
+SCBC may tenn1nate (1) its participation of this Agreement and awtl riSttLeAnsnoInticethetior eSnCtBireCtym, oar (2) any SLA in whole or in part at any time upon giving written notice to the IGS.
+20.3    The IGS may terminate any SLA:
+(a)    upon giving SCBC twelve months prior written notice; or
+(b)    on 90 days’ written notice if SCBC has failed to pay Servce Fees for the
+relevant SLA by tts due date.
+20.4 Termination of this Agreement and/or any SLA .shall not affect those rights and obligations whlch may have accrued on Of befOl'e the date of termination.
+20.5    On any termination of a SLA (howsoever caused, and whether due to termination of this Agreement or otherwise). the IGS shall supply the Ttansition Out Assistance for
+th.at SLA during the Transition Out Peciod.
+20.6 Notwithstanding any tennination of a SLA. during the Transition Out Period, !he fGS shall continue to provide the Servtce in that SLA, observe and perform that SLA. and
+SCBC shall, subject to lhe terms and conditions of that SLA, continue to pay the Set'Vlce Fees as set out in that SI.A
+20.7 Upon any not;ce of termination being served pursuant to clauses 20, the IGS shall (both before and after termination) but subject to the irans!tion Out Assistance:
+(a)    co-operate fully with SCBC or any replacement service provider to enStJre lhe
+smooth. efficient an(f expedient transition to SCBC andlor the replacement service provider (as the case rnay be): and
+(b)    ensure that at the request of SCBC any contract or other arrangenlent
+entered into by IGS with a third party is assigned to SCBC and/or any
+repfacement servioe provider.
+20.B Upon tcf'minatlo11 or where appficable at the end of the Transition Out Period, the IGS shall al the request of SCBC:
+(a)    return au Confidential Information held by the IGS and/or destroy or
+permanentty erase all of lhe copies of Confidential lnfonnation made or hold by lhe IGS. The IGS shalf provide upon request written confirmalion to
+SCBC that it no tonger holds any such Confidential lnfocmation; and
+(b)    return all Standard Chartered Equi pment and Standard Chartered Software.
+209. Clauses 1, 4.3, 8, 12, 13, 20.4 to 20.8, 2110 24, and 27 10 34 shall continue in full force end effect notwithstanding termfnation of this Agreement
+21
+
+CONFIDEHTIALITY
+
+21.1
+
+CSConBfCideanntidalthlneforrnIGS shall keep secret and treat in strictest and utrnost confidence any "'CDoinsfcidloesnitniagl lnPfaorrnrtya"lioinn obtained by it (the "Recipient Party") fromcothnefidoethnocre (at.hney C"'Doinsfcidloesnitniagl Party") in connection with this Agreement and will not use (t.thhee Confidential Information other than for the purposes of:    the
+(a)
+(b)
+
+the proper performance of its obligations under this Agreement and each SLA;
+(dwishcilcohsisnhg such Confidential lnforrnaHon to Its Staff or professional advisers (kwnohiwch shall inciude, lawyers. accountants and auditors) who have a need tros
+know -Such ConfldentiaJ Information for the propet performance of their duties in connection with this Agreement;    heir duties
+21.2 The IGS shall additionally:
+(a) use and lake utmost care and au necessary measures to protect the confldenliality of the ConfidenttaJ tnformation using not less than the standard of ca.re as i1 applies to i1s own Conl'idential Information
+(b) ensure that its Staff keep all Confidentiaf Information secret and treated in strict and utmos1 confidentiaHty;
+(c) ensure: that all of its Staff execute such confidentiahty undertakings dhectly w;th the IGS or SCBC as SCBC may require fonn time to time; anel
+(d)    ensure that any subcontracior which the IGS may engage pursuant to clause
+7.3 executes confidentiality undertakings in favour of the IGS similar in substance to the ronfidentiality undertakings imposed by this Agreemeot upon the IGS, and ensure that any such subeontractors shall keep all Confidential Information secret and treated with utmost confidence;
+21.3 The obligations in dause 21.1 shall not apply to any Confidential Information (other than Customer Data) wtikh the Recipient Pany can ptove:
+(a) was already known to it prioi to its receipt thereof fr(l(l'l the Disclosing Party: or
+(b) was svbs.equently disclosed to it lawfully by a Third Piarty who did not obtain the same (whether directly or indirectly) from the D sclosing Par1y without confidentiality obligation; or
+(c) was in the public knowledge at the time of receipt by the Recipient Party or has subsequentty entered into the public domain other than by reason of the breach of the p,ovisions of this clause or any obligations of confidence ov,ed by the Recipient Party to the Disclosing Party; Of
+(d) in the case of the IGS, it Is required to be disclosed by law. regulation, order or regulators provided that the IGS notifies scec of such disdosure as soon as it becomes aware: of the same and Is lawfully pem,itted to do so and
+provide$ $CBC with all reasonable assistance in appealing against such a
+disclosure Of seeking a redaction of the information to be so disclosed.
+21.4    IGS acknowledges that damages may not be: an adequate remedy to, any breacti of clause 8.1 and this clause 21 and that SCBC shall be entitled to seek injunctive or other equitable telief in connection with any svch breach. The IGS waives any ,ight to objeC1 or assert any defence In relation lo any such daim. achoo or proceedings to
+obtain such relief.
+21.5    N04withstand1ng any other proV1sloo in this Agreement, the IGS Is not enlttled to disclose Customer Oata belonging to SCBC to another member of SCB Group or that member's regulatory authority.
+21.6    Nollllng in this Agreement shall operate to prevent or limit SCBC's right to disclose Its own Confidential Information (indvdlng any Customer Data) to its Regulatory Autllonty.
+22    DATA PROTECTION ANO INFORMATION SECURITY
+22.1 The IGS shall in respect of Personal Data processed pursuant to this Agreement and each SLA: l
+(a) take alJ app,opriate teetmical and organisa1tona1 sec.urity measures and
+observe good industry practice to ensure that Personal Data is l)fotected
+againsl unauthorised oc accidental loss, destruction, damage. access, processing, erasure, transfer, use, modification, disclosure or other mjsuse;
+(b) oompty with the SCB Group Information Security Policy; and
+(c) permit SCBC to monitor the IGS's compliance wdh its obllgalions under this clause and shan cooperate with any invesligaUon relating to security of
+PersonaJ Data related to this Agreement.
+22.2 The IGS Shall in respect of Personal Oat.a processed pursuant to this Agreement
+(a) not process any Personal Data as part of the Services except in accordance with each SLA and/or acting on the express instructions of SCBC; and
+(b)    use Personal Data only for the purpose of fulfilli ng its obligations under lhis
+Agreement and each SLA; and
+(c) not retain Potsonal Data for any longer than is necessary for the purpose of fulfilling its obligations under this Agreement and each SLA; and
+(d) not disclose Personal Data without the written authority of SCBC (except for the purposes of fulfilling its obligations uncles this Agreement and each SLA or pursuant to a requesl by the Regulatory Authority af1er notifying the relevant SCB Entity): and
+(e) ensure that all reasonable steps arn taken to ensure the reliability of the personnel wh!dl wilr have access to Personal Data and limtt aocess to those personnel which have a MW to know the Personal Data for the purposes of
+providing lhe Services undereach SLA: and
+(f) not by any act or omission cause SC.BC to breach any Data Protection Laws:
+and
+(g)    consider a11 recommendations by SCBC to ensure that the level of protection
+provided for Personal Data is in accotdance with !Ms Agreement and to implement the changes suggested.
+22.3 The IGS shall immediately inform SCBC in writing when it becomes aware:
+(a)    of a breach of any provision of this clause 22;
+(b) of any breach or attempted breach of security relating to the Services and report on the cause of thobreach and planned corrective action:
+(c) that a disclosure of Personal Data Is requ red by applicable law.
+22.4 The IGS shall not without SCBC's ptlOf written consent do or omit 10 do anything which would cause any Personal Data to be accessed from or to be transferred lo
+anolher country (a 'Third Country’)
+22.5    The Supplier acknowledges that any unauthorised access, disclosure, destruction.
+alteration, addition or Impediment to access or use of Pe<sonal Data when stOfed In any computer. or the publication or communicallon of any part or documenl by a person which has come to his knowledge or into his possession or custody by vir1ue
+22.6
+23
+23.1
+
+23.2
+23.3
+23.4
+
+23.5
+
+of the perfOlmance of lhis Agreement (other than to a person to whom the Supplier is authorised to publish or disclose the face or document) may be a criminat off'ence.
+On request by SCBC. the IGS shall promptly provide informaUon regarding or return 10 SCBC Personal Dala oblained !Tom SCBC.
+AUDIT
+SCBC and Its internal and external auditors. inspectors, Regulatory Au1honty a.nd
+such other representatives as scec rnay designalt':! from time to time (the "Audit
+Representatives") Ynll liave , upon providing the IGS reasonable advance notice, the
+right to perform audits and inspections of lhe IGS to:
+(a)    verify the make up and accumcy of all charges and invoices; and
+(b)    verify the IGS compiiance with the terms of lhis Agreemen1. the SLA and the Country Regulatory Requirements and examine the systems and oontrols
+which are used to ensure such compliance; and
+(c)    examine the IGS' periformance of the Services induding verifying COl'Opliance with applicable Service Levete and performing audits of the IGS‘ practices and procedures, th.e IGS' systems, and the Contingency Plaos.
+The IGS will (at no additional cos! lo SCBC) give SCBC and ils Audi! Representatives reasonable aocess during v/Ofking hovrs 10 the premises at which or from which the IGS supplies 1he Services, including those facilities where any Staff, equipment, software. data, fecords and systems relating 10 the Services are located. The IGS will provide full co-operation with the relevant Audit Representatives.
+Nothing in this dause 23 shall require (or permt) the audit, assessment or inspection
+by: i
+(a) SCBC of Customer Data relating to customers who are not custorners of
+SCBC;or
+{b) an Audit Representative of Customer Data relating to customers ,vtio a,e not customers of SCBC of vJhich it is the Audrtor. or
+(c) a Regulatory Authority of Customer Data relating to customers who are not customers of SCBC which it supervises or reguta.tes.
+If any such audit, assessment or inspection resutts in the IGS being notified th.at it is in breach of any audit requirement Ol Country Regulatory Requiremenl or any regulatory ,equirement oc law applicable to the IGS and/or SCSC in relation to me pro\llsion of the Services, the IGS shall, within the period of time specified in the relevant notice, take steps to comply with s1.1ch requirements or law.
+24
+
+DLSPUTES
+
+24.1    If there is a dispute between SCBC and the IGS in relation to any Services under a
+SLA, the mattor shall be referred to the Outsourcing Owner Identified in the SLA and the Head of the Unit In the IGS providing th& SeMCes.
+24.2    If the dispute cannot be resolved pursuant to clause 24.1 wilhin 10 Business Days In
+the locatfon of the IGS, the matter shall be referred to the CEO of the IGS and the Head of the Bustness Unit of SCBC tdenlitied in the SLA
+24.3 Nothing in this clause 24 shall prevent or restrict a Party's right and ability to obtain injunctive or Other emergency relief or remedy from any competent court or tribunal.
+25    OWNERSHIP OF SOFTWARE AND EQUIPMENT
+25.1    The IGS ackoowtedges that no tlUe or interest passes to the IGS in relation to the
+Slandard Chartered Equipment. The IGS shall:
+(a) keep the Standard Chartered Equipment in gOOd working order (provided d
+was supplied to the IGS in good working order), subject to reasonable fair wear and tear;
+(b)    ensure thal the Standard Chartered Equipment is not modified;
+(c) comply with the reasonable Instructions of SCBC in relallon to the use. and operation of the Standard Chartered Equipment.
+25.2    The IGS further acknowledges thal no title or interest passes to the IGS In relation to
+any Slandard Chartered Software or tho System.
+25.3    The IGS shall ensure that the current source code and object code of the Standard Chartered Software. to the extent that it has been mOdified by the IGS, is made
+available to SCBC at all times during lhe term of this Agreement and is delivered to SCBC forthwith when requested by SCBC. The IGS hereby assigns to SCBC andfor
+such other member of SCB Group as nominated by SCBC with full title guarantee and free from all encumbrances and 1hird party rights all intelledual property rights to any customisations. enhancements, changes, adaptations or other mOdifications to the Standard Chartered Software it makes in connection with the provision of the Setvices o, performing its obligations under the Agreement andlor any SLA.
+26    Recovery and Resolution Planning ano Assignment
+26.1    Each SLA that is che<:ked against the Critical Functions section (Section 14 of the
+SLA) is a "R..erve<f SL.A".
+26.2    Without prejudice lo the generality of the above, SCBC is entitled, at any point in time, to designate the Services (or any portion the.reof) under a SLA as "Ring Fenced Services" on noUce to the IGS.
+26.3    The IGS s-hall continue to perform the Ring Fenced Services and any Reserved
+SLAs so long as SCBC (which shall indude any administrator. liquidator, official assignee or anarogous per-sons authorised by law. governmental authonty or a court
+of competent jurisdicton) continues to pay the Service Fees for the provision of sueh Ring Fenced Services or those Servioos under a Reserved SLA.
+26.4 lhe Parties agree that the IGS' rights to terminate or suspend this Agreement or a SLA, whether pursuant to this Agreement or under general law, does no! apply to the Ring Fenced Services or a Reseived SLA so long as SCBC is able to pay fol' such services.
+26.5 Notwithstanding any other provision under this Agreement, the IGS may not terminate or suspend, or purport 10 terminate or suspend:
+(a) this Agreement or a SLA on the grounds of SCBC's lnsol11ency (or an analogous event) without notifying SCBC In writing cf its intent to so terminate or suspend. U SCBC does not designate any Services as Ring Fenced Services within S Business Oays (in the location of the IGS) of written
+original notice from the IGS. then the tGS may p,oceed to tenninate the Agreement Cl the SLA on such grounds
+(b) Any Reserved SLA for any reasons without SCBC's consent
+26.6 At the request of SCSC (which shall include any administrator. hquidator, official assignee or analogous persons authorised by law, governmental authority or a cour1 of C()f"l'lpetent jurisdiction), the IGS shall:
+{a)    vary such existing SLA.s, or enter Into new SLAs as is deslrable {in the
+opnion of SCBC) so that the Ring Fenced Services can be identified clearly;
+and/or
+(b)    remove or terminate any part of any Reserved SLA or to re.organise any Resetved SLA in any way lhat SCBC seesfit; and/Of
+(c)    enter into such novation/ transfer agreement as is required (in the opinion of SCBC) to novate/ transfer the Ring Fenced Services or any Reserved SLA or pan thereof to such SCBC successor.
+26.7    The IGS may not assign or transfer, or purport to assign Of transfer any of its rights or obligations under thts Agreement or under a SLA without the prior written consent of SCBC in this relation to this Agreement or a SI.A
+26.8    SCBC may assign its benefits under this Agreement and each SLA to such successor company on written notice to the IGS.
+27    No PARTNERSHIP/ AGENCY
+27.1    Nothing in this Agteernent shall be construed as constituting a partnership or joint
+venture between the Parties or as constituting any Party as the agent of any other for any purpose whatsoever except as expressly set out by the terms and conditions of any SLA.
+27.2    The Parties acknowledge and agree that this Agreement and any SLA do not create and shall oot be deemed to create any employer-employee relationship.
+27 .3 Neither the IGS nor any member of its Staff is entitled to, by act, wo(d, deed or
+otherwise, make any statement on behalf orSCBC, in any manner bind (or purpon to bind) SCBC or hold out or represent that the IGS or a member of its staff is representing or acting as an agent of SCBC.
+28 WAIVER
+28.1 Fa!lure by any Party to exercise or enforce any rights avaUable to that Party or the
+giving of any forbearance, delay or indulgence by any Party shall not be construed as a waiver of that Party's rights under this Agreement.
+28.2    No provision of this Agreement shall be waived unless such waiver is made in writing
+and signecl by an authorised representative of the Party against which enforcement of the waiver is sought. A waiver shall not constitute a consent to, or waiver of any subsequent breach of any provision of the same or different nature.
+29 SEVERABILITY
+29.1 If the provision of any Services under a SLA. or any clause in this Agreement, is held to be illegal, invaltd or unenforceable in whole or In part that SlA or this Agreement (as the case may be) shall continue to be valid as to its other provisions and the
+remainder of the affected provision,
+30    No THIRD PAAfY RIGHTS
+30.1    A person who is not a Party shall have no right undec general I.aw or otherwise to enf01ce or to enjoy the benefit of any term of this Agreement or any SLA.
+31 COUNTERPARTS
+31.1    This Agreement {but not an SLA) may be executed in any number of counterparts, each of which When executed and delivered shall be an original. but all of which when laken together shall constilule a single instrument and agreement between the Parties.
+32 FURTHER ASSURANCE
+32.1 l=ach Party shall to the ex1ent that 11 Is reasonably able lo do so execute all documents and do all acis and thfngs reasonably required by another Party to give effect to the terms of any SLA and/or this Aareemenl.
+33 NOTICES
+33.1 Any notice, consent, approvaJ Of other communication required or permrtted to be given by SCBC lo the tGS (or vice versa} under this Agreement or aoy SLA must be signed by or on behalf of the Party giving It. addressed to the Party to wflom ii i$ given and
+{a} delivered to that Party's address; or;
+{b)    transrr1itt&d by fax tothat Party's fax number, with a transmission report
+retained.
+Each Party's address is as set out in the beginning of this Agreement.
+33.2 Any such not.tee, consent, appcoval or other oommunication Shall be deemed to have been given and received:
+(a) if dellve<ed to the recipient Party's address. on the day of dehvery If a Business Day in location of such address. otherwise on lhe next Business Day; or
+(b)    If transmitted by fax to the recipient Party's tax number and a correct and
+complete transmission report ls oblalned by the sending Party. on the day of
+transmission if a Business Day In location of such fax number, otherwise on lhe next Busness Day.
+33.3 Without prejudice to the other provisions of this clause 33, the Parties recognise th.at their officers and employees will and may communicate on a day-to-day basis by
+means other than by post and fax, including by email.
+3,4    GOVERNING LAW ANO JURISDICTION
+34.1 This Agreement and each SLA, and any matters relating 10 this Agreement and each
+SIA, shall be governed by and oonstrued in accordance with the laws of the People's
+Republic of China.
+34,2 The parties sutwnit and agree to the jurisdiction of the courts of Shanghai.
+35 INSURAHCE
+35.1 The IGS shall maintain appropriate fire or proper1y damage, ftdefity an-d pubhc liability Insurances f0< the duration of the Temi.
+SCHEDULE 1
+PRO-FORMA SLA FOR PROCESSING SERVICES
+SERVICE LEVEL AGREEMENT FOR PROCESSING SERVICES FOR SCOPE CHINA
+SLA DETAILS
+Short    description    ol
+Processing Service covered by this SLA
+
+Dale of SLA
+
+SLA Reference Number
+
+Version
+
+Author
+
+SL.A Rovision Record
+• This section must be completed w/Nn varying an SL.A
+"Seo paragraph 10.10 of Proceuing Services Manual for when an SLA un be varied.
+• Seo paragraph 10.11 of Proceuing Services Manual for the procus of varying an SLA.
+Reference nurnber ot original
+SLA
+
+Date of o^inal SLA
+
+Dates of ModiffCaton Nates
+under originaJ SLAs (rf any)
+
+Date of lhis revised SLA
+
+Aultlor
+- -- - -
+
+PART I: LEGAL REQUIREMENTS - PARTIES TO THE SLA/ SIGN. OFF
+LEGAL INFORMATION
+This 1$ a Service Level Agreement for Proce-S;S!ng Services uncl'er lhe Approv ed Contract
+between Scope International (China) Co. Limited and Standard Chartered Bank (China)
+Limited dated _November 2012 rMastet Services Agreement'), and is govemed by the terms and conditions of the Master Services Ag,eement
+1.1 DETA./LS OF BUSINESS UNIT WANTING TO USE SCOPE
+Legal Name of Scee
+St.andard Chartered Bank (China) Limited
+Name/ Designation of Internal
+Sourcing Owner
+
+Name/ Oes,gnation of Heaa of
+
+I Bus1ness Unit
+GTO exst,ng PAR la'INW approval process priortocouniry WB UC apptovip •    V.'l'iere oiriSOwang is lflibafed by rntn-C(Hjnty WBO ti^&ons, f9\'i0w and Sli)n-otl ffOAi relevant Wl.:I GTO
+He9d (ord6s19m.1fe) is also roqwred
+
+1.2 DETAILSOFIGS
+Name of IGS:
+Scope lnternationJI {China) Co. Limited f'SCOPE1
+Name of contact per&On in
+SCOPE oroviding the seMCeS:
+
+Name and designation of Head
+of Unit In SCOPE providing the servtees:
+
+1.3 DETAIL S OF AUTHORISED R
+EPRESENTATIVES FOR AMENDING/ REVISING THIS SLA
+Name and OesignabOn of SCBC
+authorised representativ&:
+
+Name and designation of SCOPE
+authorised representative:
+
+1.4 DISTRIBUTION LIST 'SCB onl)"
+Name
+OesiQ.nation
+
+(•choose* CORC, BORC. BOARD ere per
+intemal process for Internal Sou1cing apnroval)
+
+Country Head of CQmpUance
+
+For    multi-countries    internal    Sourcing
+AiiMgemonts - Group, W6 or ca Heads of
+COmp1iance (as relevant)
+
+
+Nott, For Y/8 - Ada    roquretmen a^^^g lo Vl8 Project Management Offloe (PMO)
+marrix.
+• Fo \.'VQ GTO intb«fOO Rlf-showig proje&s, lh/8(kXumntdb crxttf)m:ed m aMitiOt to the WB
+1.5 EFFECTIVE DATE
+State the date wtten SCSC witl stsrt us«>g the SCOPE. This should be s rum date ond not just a
+propoMI. This dote csn only be changed following the use of o Modification Note and the nroc6SS set out In paflfotapf1 10. 11 of too Proc;es.$//'tg Services-Manual.
+1.6 DETAILS OF PRIMARY LOCATION WHERE SERVICES WILL BE PERFORMED
+State tho primary location only; vou need not list all locations.
+HTF SIGN-OFF (EXECUTION^)
+Name/ O.slgnation
+Signature
+Dito
+(Insert name and designabon of SCB Head in SCSC authotlsmg
+Ihg    Internal    Sourcing
+Arrangement)
+
+
+
+
+(Insert na-m& and desfgnation of
+head cf 1,mit In SCOPE agreeing to    provide    the services
+described in thjs SlAJ
+
+
+PART 11: BUSINESS REQUIREMENTS FOR PROCESSING SERVICES UNDER THIS SLA
+1. DESCRIPTION OF INTERNAL SOURCING ARRANGEMENT FOR PROCESSING SERVICES
+Explain the purpose of the Internal Sourcing Arrangement and how thiS changes lhe cum,nt
+ststus' and explain what tile differMca wovld b9 after the lntemaJ Soutc.lng .Ammgement ;s implementerJ. OR attoch the business case you have prepored as part of tho Project Approval Requirement (PAR) aroc,,ss.
+1.1 Glo&uryl Oefintdon
+DtJllno the meMings of key terms and abbrovi.atJons used in this SLA. For instance, FMOCC
+means Fktanc.fal Marl<sts Oper,tions- Client Coverage.
+1.2 Division of Roles and Respon&lblllties between SCBC bu&lnen unit and SCOPE
+Man engaging SCOPE, SCBC busfness unit must temember that it wfl still be held responsible
+(by customer.s and regulato(S) If SCOPE:'s perfonnonce Is not up to ma1k. As such, the SCBC
+bus/ne$$ unit must iBtaln adequate oversight of the outswrncd activity. Briefly describe the
+,oles and responsibffJtios between 1118 SCBC busfnes-s un# and SCOPE after the et>gogement of SCOPE.. Nole that In the si,rvice I0\181 ogreement, you win need lo set out the role d SCOPE in a Jot mon, detail.
+Roles & Responslblllty of SCBC Busine&S
+unit
+Rolet & Rnponslbility of SCOPE
+
+
+
+
+
+
+HOT USED
+1.4 Delegation of (transaction not financial) SIGNING authority
+If (. briefly ®scribe any document containing signing authority that the SCBC businoss
+unit. Is delegalltlg to SCOPE. Ensure thal tho SCBC business unit (Q ntst 1'18s the detogated
+autb^fy Hu,N and (i) is slowed to deklgate it to SCOPE.
+1.5 Duration of Outsourced Amangement
+State whether th& se,vices are exf)(Jcted lo bo performod UN the SLA is terminated OR Ille
+number of vea,s servicos are neOOOd for
+1.6 Service Levels
+State the service levels expected from SCOPE
+1.7 M.anagemont Information
+State the Ml repons required from SCOPE and the freqooncy ot which such reports should bo
+sent
+2. MATERIALITY OF INTERNAL SOURCING ARRANGEMENT
+The lntemol Sourcing Proce<Jums for Processing Servk'os end Processing services Manual
+require the /rltemal So<,n;fng Owner lo undertake- a matorialify assessment al
+zo!M!1. x b.n§.^ e &lol otbvm^^.t^ nts/Tools2f:20and2' WTemata toO&O S2'2Q Mole/tAl!t}(;%20A§:S:o^wenl%ttTenUJlQl9%^1.Q.K.ls
+Form ulti-countries Internal Sourdng AfT8ngtJments, please lnsort the SCfXB from tho country thst scored tho highe.st.
+Matetlalily sco,e of Internal Sourcing Arrangement:
+3. SUPPLIER EVALUATION-BUSINESS SPECIFIC REVIEW BEFORE USING SCOPE
+E:1ploin why SCOPE was selected. Yo(I GOUid consider the followitrg faci()(S -Does SCOPE hevo
+the required e1<pertise? Wtll the sorvioes provided bo Slsble, sc4/ab.ie 8!1d hove rea.sonsb/e resilience & recoverability to foreseeable disruption scenarios? Do I/lo cost savings jvstlfy lho us,, of SCOPE?
+4, INTERNAL SOURCING RISK ASSESSMENT
+4.1 Is tnere e current Process Risk Analysts for the Pf'Oeessing Services to be migrated? If yes. pleBS& embed current process <Jocvmenl.
+4.2 Usl the Incremental key dsks relating to ,he tntemsl Sourcing Arrongement and provide a
+summary of the rlsl< mitigation plan. lrttemat Sourcing Risk Assessment mvSl be revalidated annually on the Effeclive Date (set out in Perl I, paragroph 1.5 obove). RiSks mvs.t be recorded end esceJated scccrding to the Operation Risk Management Framewotf<..
+Key rlska
+Mitigating Controls
+Risk: of impaWment or compromis&s in fulfilling the existing banking obligations imposed by the bankmg laws and statutory requirements
+
+Risk. of not being able to protect SCSC'a and tls customer"s interest due to l.mciear roles & responsibilities, problems - products, services, technok>gy, processes or delivery
+channels used by SCOPE do not fi1 with
+SCBC's systems , internal controls arid
+capacity requirements
+1
+
+
+4.3 Internal Soutcing Owner to complete t.M following table to provide an overview of me current
+stote of process risks and controls employed.
+• If SCOPE Is carrying out a totolly now process fot lhe SCBC business unil (that is, not a process that is being migrated from SCBC to SCOPE). SCOPE to complele thlS section.
+Name KEY process s/ep ret a ling to lntamal Sourcing Arrangement
+Identify points of
+faHure relating to process step
+State ertect of
+faifut'O
+Du.sc,Joe
+c-urrenl <;Olllrols
+If available,
+state
+current OpS Risk
+assessment risl< grading (very H. H. M, L)
+5. IMPLEMENTATION PLAN
+State the key mi.le-stone actMty for thil Jntcmal Sourci.rlg Arrengemont and also I.ho final implementation date. For example, UAT . MARS etc
+No.
+Activity
+Target Date
+Responsibility
+
+
+
+
+2
+
+
+
+3
+
+
+
+4
+
+
+
+6. COST PROJECTIONS
+Provide details of costs rolating to Internal Sourcing Arrangement. Such costs csn be the details
+of cuaent staff and/or related costs vs estimated Internal Sourcing costs. If cost-benefit analysis
+Is availsble in a PAR or a buslnoss justification docvment p/eas,o roproduce rolovant pottfons.
+For other lnt&rn.al Sourcing Arrangements. oost deteumination must be In line with Group
+Recharge.Policy . on. lntra-Gtsi:yp Services and
+Under exceptfonaJ oiretimstanoes costs may be management reallocated as detaded in Item 3.1
+In Gutietines on flowable Management Regllroations
+6.1 State the relevant cost recharge methodology: Volume (i.e. pay per transaction cost); FTE (I.e. pay per head count); Fixed cost (plu.s mark up)
+7. HUMAN RESOURCE
+State t.h<J HR impact of the lntemaJ Soutting Arrangement
+7 1 FiE lmcact
+Current FTE in SCBC
+business unit in-cot.1nlry
+
+Numbor of FTE in
+SCBC business tJr'lll in-
+cot.1nliy after migration
+
+Number    ot    FTE
+requited in SCOPE suppocting this Proceu Service
+
+(\IVhere ie-levant) IO!al
+number ol FTE In SCOPE suppoiting this P,ocessing SefVl<:.e
+
+7.2 Existing Organisation Structure In-country
+7.2.1 Fulure (afte, Internal Sourcing Arrangemenl) Organisation Structure fn-country
+ 
+7 .3 Current Organis.atlon Structure m SCOPE
+7.3.1 Fvture (after Internal Sowcing Arrangement) Organisation Sbvcture in SCOPE 7.4 Skill Requirements Oefinttion
+8. TRAINING
+A$ lhe Internal Sourcing QWl)Cr, yov need to enwn, that cfther (i) SCOPE can deliver your
+training requlf8ments: or (ii) you deliver lh& necessary trainl.ng to the staff of SCOPE
+8.1 Scope and oojective of training
+8.2 Approachl Environment of training 8i3 Personf enti: responsible for delivering the training 8.4 Nature of training materials which lntema1 Sourcing Own.er will be providing (if applicable)
+9. PRODUCTION VERIFICATION EXERCISE (PVE) (which indude& data migration, appltcatlons aoc:eptanee & sect1rity testing, lnfrasirudure integration testing, oR plan/Recovery Time Ob1__.,. e/Fail-over testino crior to the actua1 production launchl
+When PVE will be done:
+How PVE win be done: 'v\l'ho is signing off on PVE:
+How would you evaluate the success of the PVE:
+Insert Business Impact Analysis (if awnabie}
+10, BUSINESS CONTINUITY PLAN
+Note: The BCP ,equfrf'Jments tor this S(lction roJt)tos to (he SCBC business vml's overall 8CP framework whlcll is over and aixwe SCOPE'S contingency plann111g (eg BCP, Disaster Recovery etc) that II hss in plac&.
+10.1 BCP In lnstence wh&re the mi.fin site for SCOPE fails but BCP site if tunclionir,g. Describe
+the $(Jc1f1c premises and technology requiremenls (over and above the generic contingency planning already adopted by SCOPE) to execute this pl8n. Please attach plan,
+10.2 The SCOPE sis and the de!;/gneted BCP sie fails Describe the specific premises and
+technology requirements (over and above the generic contingency plannln,g alrNdy adopted by SCOPE) to exec.ulo this plan. Please attocJt p/tJn.
+10.3 Cross boroer BCP situation or 'meftcJown sctJnario' where there is o complete lo.ss of
+procossing captJbilities et thO primary SCOPE processing centre incJudlng 'Toss' of poopltl'. The seNlcos are moved back to the SCB 8(/.Sir)ess Unil in countJy PVM. Describe the specif,c premises and techOOIOgy requireroonts (over and above the generic contingency planning atroady adoptod by SCOPE) to exec.vu, lhis plan. PIOase attach pltJn.
+10.4 Has the BCP been testod by SCOPE? Yes or No?
+10.5 Residual Rl&k Managoment
+•    Applicable to SCOPE Companies only. Refer to paragraphs 11. 1 and 11.2 of tho Processing Sotvices Manual for when RRM is alloYitJd and the prt,.con<Jif.ions for RRM.
+•    Ate the services to be provided by SCOPE capabfo of being provided for by anoth9r SCOPE
+Company (Secoodary InlteGroup Supplier (IGS))? If yes, please state tho name of the
+Secondary IGS.
+• List the condition$ that must be met bofore setvicas can be lrensferrod from SCOPE to t.he Secondary tGS
+• Lisi the responsibility of SCOPE in cJoatlng with the &condary /GS on b6hal! of the SCB
+business unJt:
+• List the setvice leWJfs expected of the Secondary !GS
+11. REGULATORY REQUIREMENTS
+11. 1 List significant rogulatory reqvfromoms that impoct th& $9rvices lo be performOd by SCOPE.
+For examp/0: date will 00 used for regulatory reporting; issuance of remittance certificates;
+update of customer information (for periocHc. revlows) 11.2 Does the SCBC business unit requite regulato,y approval or just regulatory notir,c;alion
+beforo migration? If yes. please embed letters to and from reg1llators.
+12. SERVICE REVIEW MEETINGS
+Frequency:
+
+Mandatory attendees;
+Agenda items: (Slate additiona agenda items. The fo!lowin.g are mandatory)
+•
+Volumes
+•
+Productivity
+•
+SLA Performance
+•
+Changes to regulatory requirement$ and impect to the Internal Sourcing Agreement (If any)
+•
+Resourang l8\lel$
+•
+Attrition
+•
+KCSA exceptions
+•
+Cross bOrder capability metrics {If applicable)
+•
+Compliance breaches/ Incidents/ issues
+•
+Risk reviews conducted since las.t meeting
+•
+lntem81 Sourcing Atrangementl se-rvic&S: risks (including results of p,o;ect risk analyais) i
+•
+Comphance with oonditionS: imposed by re9ulators (d any)
+•
+Update on mandatory or necessary training conducted (if any)
+•
+Res.ulla of service review meetings with the Secondary IGS {where there is RRM)
+•
+Result$ of service review meetings wrlh sub-Contractor (where relevant)
+
+Resutts of BCP test conducted
+13. (ONLY IF REQUIRED) POST TERMINATION TASKS/ TRANSITION OUT STRATEGY
+Slate eny    post tennrnetNJn task that SCOPE is expected to perfonn
+14. RECOVERY & RESOLUTION PLAN (RRP)
+Indicate 'if the Procossing SeNices under the SLA affects one of the follo,ving actlvNles. (Pleose
+put a X against relevant activities)
+BAG
+Corporate
+
+BAG
+Oertvatlvu
+
+2
+and
+
+BAG 3:
+Payments •nd
+
+BAG
+(Individual)
+
+BAG 5:
+Current
+
+(SME)
+
+Lending and Corporate Oeposas
+Clearfng
+Settlemonts
+Current
+Account & Savings Accounts/ Unsecured
+lending
+Ac.count &
+Savings
+Accounttl
+Uneecurod
+Lending
+
+
+
+
+
+SCHEDULE 2
+PERMITTED CHANGE PROCEDURE FOR SLAs
+This Permitted Change Procedure only allow Permitted Changes to be made to;
+a Change of Effective Date of SLA; b increase in volume;
+c lnctease in the number of FTE (headcount) required;
+d revision In Service Levels; e change in any MIS requirements;
+f change in billing methodology and
+g enhancement to an existing Service {‘Permitted Changes').
+2.    AU other changes or veriaHons to the SLA cannot be effected through this Permitted Change Procedure and must be effected lhl'Ough entering into a new SLA in
+compliance wTth lhe SCB Group Outsourcing Policy and Internal Sourcing Prooedures for Processing Services. Any purported altempt to make any change or variation olher than a Permitted Change lo the SLA is null and void,
+3.    In relation lo any Permitte<I Change proposed by lhe IGS or SCBC, the Parties shall follow the consullatiOn procedures set out in this Schedule 2 using Ille Modification Nole template In Appendix 1 of this Schedule 2.
+4.    SCBC and IGS will use reasonable endeavours lo agme any proposed Permitted Changes and lhe tlmeframe within whtCh the Permitted Changes should be implemented
+5.    Agreed Pennitled Changes should be ck>curnen1ed In lhe Modification Note which
+must be signed by the authonsed representalives of the IGS and SCBC. The auth(l(ised representatives are named in lhe original SLA.
+6.    V\lhere the implementalion of a Permitted Change is likely to tQqulre lhe IGS lo Increase lhe number of staff, lhe IGS shall be given a reasonable period In which to implement lhe Permitted Change in order lo allow lhe IGS lo recruit and train new
+staff.
+7.    •important ... ihe Internal Sourcing Owner must ensure Iha! the original SLA is amended to reflect the Permitted Changes in lhe Modificalion Note (the .. Revised SLA'"). The Revised SLA must slale the date of the original SLA and will superse<le all prior SLAs.
+APPENDIX 1
+MODIFICATION NOTE -PROCESSING SERVICES SLA
+SLA Revision Record
+Rererence number of o,igina1
+SLA
+
+Date of original SLA
+
+Details of Modification Note
+. - -
+Dale
+
+Author
+
+Reuona for varying/ a.mending SLA
+S$lcct_one of lho feiowi;.... p-rmitted roasons for va—’ir—SLA.
+., Change or Effeci,ive Date ofSLA
+b)    increase 1n volume
+c)    i:ncreaso in the number of FTE (headcounl) required
+d)    revision m Service levels
+C) change MIS requirements
+ij change in billing methodology
+g) enhancement to an existing Service
+fStale Details of Permitted Change;
+J State R&asons for Permitted Change
+Staro Impact of Pennine<! Change:
+Oesc,ibe Acceptance Procedures:
+ 
+Set out the cost for implementing the Permitted Change
+Namel designation of person
+originating    the Permitted
+Change
+• Must    be    authorised
+representstiv& under SL.A
+
+Signature of person orjginating
+the Perm'rtted Change
+
+Name/ designation of person
+accepting    the    Permitted
+Change
+• Mvst    ""    authorised
+representative under SLA
+
+Signature of person accepting
+the Permitted Change
+
+Embed Revised SLA updated to reftecl the Permitted Changes made as a 1esutt of this Modification Note.
+SCHEOULE3
+COUNTRY REGULATORY REQUIREMENTS
+*
+EXECUTION PAGE
+For and oo behaff of
+Standard Chartered Bank (China) Umlted
+ 
+Namo: Lim Cheng Teck
+Position: Chief Exocutfvo Officer Date:
+For anc1 on behall of
+Scope International (China) Co. limited
+Namoal un ah
+Position. C iof Exoc:utive Offieer Date:
+
+
+1
+SCB Group Outaourcing Policy and means the glides and procedures approved and adopted by the Group Operational Risk
+2
+any consent. approvot Of other permissLon required in this Agreement oratry SIA to be given 1)1' SCBC sl1all, ur,Jess otherwisie Speelfled, be given, de2ayed. withheld or refused In SCSC's obsotute discletK>n

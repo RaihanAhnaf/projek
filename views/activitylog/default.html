@@ -1,0 +1,101 @@
+<script type="text/javascript">
+   var userinfo ={
+       usernameh: ko.observable('{{.Username}}'),
+       menunameh: ko.observable('{{.Menuname}}'),
+       rolenameh :ko.observable('{{.Rolename}}'),
+   }
+</script>
+
+<script src="{{BaseUrl}}res/main/js/activitylog.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/activitylog.css">
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+          <span class="bar">Administration</span>
+          <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <a href="/activitylog/default">Activity Log</a>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span class="thin uppercase hidden-xs font2" data-bind="text:activitylog.DatePageBar"></span>
+        </div>
+    </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h1 >Activity Log Calendar View</h1>  
+  </div>
+  <div class="panel-body">
+    <div class="row hide">
+      <div class="control-input col-sm-12">
+          <label class="space">Period :</label>
+          <input type="text" id="dateStart" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}" class="filter-space" />
+          To: 
+          <input type="text" id="dateEnd" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}"  class="filter-space" />
+          <button type="button" onclick="activitylog.refresh()" class="btn btn-sm btn-refresh space"><i class="fa fa-search"></i> Search</button>
+          <button type="button" data-bind="visible:activitylog.role" onclick="activitylog.deleteActivityLog()" class="btn btn-sm btn-danger pull-right button-position"><i class="fa fa-times"></i>&nbsp;Delete</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id='calendarLog'></div>
+      </div>
+    </div>
+    <div class="row hide">
+      <div class="col-md-12">
+        <div class="panel-heading">
+          <div id="gridLog"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="panel">
+   <div class="row">
+      <div class="col-md-12">
+          <div class="portlet box twis">
+             <div class="portlet-title ">
+                <div class="caption padd-text">
+                    Activity Log
+                </div>
+              </div>
+            <div class="portlet-body">
+              <div class="row">
+                <div class="control-input col-sm-12">
+                    <label class="space">Period :</label>
+                    <input type="text" id="dateStart" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}" class="filter-space" />
+                    To: 
+                    <input type="text" id="dateEnd" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}"  class="filter-space" />
+                    <button type="button" onclick="activitylog.refresh()" class="btn btn-sm btn-refresh space"><i class="fa fa-search"></i> Search</button>
+                    <button type="button" data-bind="visible:activitylog.role" onclick="activitylog.deleteActivityLog()" class="btn btn-sm btn-danger pull-right button-position"><i class="fa fa-times"></i>&nbsp;Delete</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h1 >Activity Log Calendar View</h1>  
+                </div>
+                <div class="panel-body">
+                  <div id='calendarLog'></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="panel-heading">
+                  <div id="gridLogTimeLine" class="padding-grid"></div>
+                  <div id="gridLog" class="padding-grid"></div>
+                  <div id="LogTimeLine" class="padding-grid"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>   
+  </div>
+</div> -->

@@ -1,0 +1,42 @@
+{
+   "word-count": 64497,
+   "governinglaw": [
+      {
+         "start-offset": "2344",
+         "end-offset": "2358",
+         "confidence": 0.51,
+         "data-eaciit-id": "321",
+         "clause": "governinglaw",
+         "contentfromsystem": "\n    all in accordance with the provisions of this Agreement and applicable laws and regulations.\n   ",
+         "data-eaciit-start": "321",
+         "common-ancestor-id": "320",
+         "data-eaciit-end": "321"
+      }
+   ],
+   "effectivedate": [
+      {
+         "start-offset": "1344",
+         "end-offset": "1375",
+         "confidence": 0.9,
+         "data-eaciit-id": "202",
+         "clause": "effectivedate",
+         "contentfromsystem": "\n    (a) any person, body corporate, partnership, firm or other entity in which on or\u00a0after the Effective Date (as defined in Clause 4) from time to time SCB directly\u00a0or indirectly:\n   ",
+         "data-eaciit-start": "202",
+         "common-ancestor-id": "201",
+         "data-eaciit-end": "202"
+      }
+   ],
+   "documenttitle": [
+      {
+         "start-offset": "53",
+         "end-offset": "105",
+         "confidence": 0.67,
+         "data-eaciit-id": "52",
+         "clause": "documenttitle",
+         "contentfromsystem": "\n    (1) Standard Chartered Bank incorporated in England and Wales with limited liability by Royal Charter 1853 reference number ZC 18 whose principal office in England is at 1\u00a0Aldermanbury Square London EC2V ?SB and having a branch office in Hong Kong\u00a0at Standard Chartered Building, 4-4A Des Voeux Road, Central, Hong Kong\n   ",
+         "data-eaciit-start": "52",
+         "common-ancestor-id": "51",
+         "data-eaciit-end": "52"
+      }
+   ]
+}

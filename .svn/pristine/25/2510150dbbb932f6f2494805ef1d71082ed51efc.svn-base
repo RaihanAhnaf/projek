@@ -1,0 +1,42 @@
+{
+   "governinglaw": [
+      {
+         "end-offset": "4060",
+         "data-eaciit-start": "201",
+         "start-offset": "4043",
+         "data-eaciit-end": "201",
+         "contentfromsystem": "\n    This Agreement shall be construed and enforced under the substantive laws of the State of New York.\n   ",
+         "clause": "governinglaw",
+         "data-eaciit-id": "201",
+         "common-ancestor-id": "200",
+         "confidence": 0.54
+      }
+   ],
+   "documenttitle": [
+      {
+         "end-offset": "5246",
+         "data-eaciit-start": "395",
+         "start-offset": "5242",
+         "data-eaciit-end": "395",
+         "contentfromsystem": "\n     AMERICAN EXPRESS BANK LIMITED\n    ",
+         "clause": "documenttitle",
+         "data-eaciit-id": "395",
+         "common-ancestor-id": "393",
+         "confidence": 0.47
+      }
+   ],
+   "word-count": 9427,
+   "effectivedate": [
+      {
+         "end-offset": "18",
+         "data-eaciit-start": "9",
+         "start-offset": "7",
+         "data-eaciit-end": "9",
+         "contentfromsystem": "\n    Master Agreement No.: CW92368 Master Agreement Effective Date: I March 2008\n   ",
+         "clause": "effectivedate",
+         "data-eaciit-id": "9",
+         "common-ancestor-id": "7",
+         "confidence": 0.88
+      }
+   ]
+}

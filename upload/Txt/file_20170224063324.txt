@@ -1,0 +1,431 @@
+MASTER AGREEMENT FOR CONSULTING SERVICES
+Consultant Master Agreement No.: CW92368 Master Agreement Effective Date: I March 2008
+Infosys Technologies Limited
+Electronics City, Hosur Road, Bangalore 561 229, India
+This Master Agreement for Consulting Services ("Agreement") is made and entered into as of the
+Effective Date above, by and between American Express Bank, having an office at American Express
+Tower, World Financial Center, New York, NY 10285, USA ("Amexco"), and the Consultant specified above.
+1. Scope of Services:
+Consultant shall provide, under the provisions of this Agreement, the services that are mutually agreed upon and described on attachments to this Agreement, substantially in the form of the attached Exhibit l - ("Schedule"). Each Schedule shall be effective, incorporated into and form a part of this Agreement when duly executed by both parties. If there is a conflict between this Agreement and any Schedule, the terms of the Schedule shall govern the provision of the services involved.
+2. Schedules:
+Both time and materials and fixed price Schedules may be entered into hereunder. Schedules should be numbered for identification and must include a complete description of services to be performed, deliverables or other materials to be produced, the schedule for completion of each of the foregoing, the applicable fixed price or time and materials charges, and any additional terms the parties mutually agree to include. Amexco, its parent, subsidiaries and affiliated companies (each, an "Amexco Entity") may enter into Schedules with Consultant and for purposes of any such Schedule shall be considered "Amexco" as that term is used herein.
+3. Work Policy/Personnel:
+3.1 For each Schedule, each party shall designate a Project Manager to serve as the main contact between them. The scope and specific conduct of Consultant's services, consistent with the Schedule, must be coordinated with Amcxco's Project Manager at all times. Consultant shall use its best efforts to ensure the continuity of Consultant's employees assigned to perform services under any
+Schedule. There shall be no charge to Amexco for any replacement personnel assigned by Consultant until Amexco and Consultant agree that each such replacement has acquired the necessary orientation and background to make a productive contribution.
+3.2 On a periodic basis, as specified on the Schedule, Consultant shall submit written status reports describing its activities during the preceding period, including: the current status of activities
+(with an explanatory na1rntive when appropriate); resources used since the last report, with a cumulative total to date; and identification of any problems and actions taken to resolve them. Upon request, Consultant shall meet with Amcxco management to review the status of Consultant's activities.
+3.3 Consultant personnel shall observe and comply with Amexco's security procedures, rules, regulations, policies, working hours and holiday schedules provided to Consultant in writing. Consultant shall use its best efforts to minimize any disruption to Amexco's normal business operations at all times. Amexco shall only provide working space, resources and materials if specified on the Schedule. If any Consultant employee performing services is found to be unacceptable to Amexco for any reason, Amexco shall notify Consultant and Consultant shall immediately take appropriate corrective action. Amexco shall be the sole judge as to performance capability hereunder.
+3.4 Unless otherwise agreed to in writing, neither party shall hire or solicit the employment of the other party's personnel during the term of each Schedule and for a period of six (6) months thereafter.
+3.5 Consultant agrees and represents that it is an independent contractor and its personnel are not Amexco's agents or employees for federal tax purposes or any other purposes whatsoever, and are not entitled to any Amexco employee benefits. Consultant assumes sole and full responsibility for their acts and Consultant and its personnel have no authority to make commitments or enter into contracts on behalf of, bind or otherwise obligate Amexco in any manner whatsoever. Consultant, and not Amexco, is solely responsible for the compensation of personnel assigned to perform services hereunder, and payment of worker's compensation, disability and other income and other similar benefits, unemployment and other similar insurance and for withholding income and other taxes and social security.
+4. Acceptance:
+Unless otherwise specified in the applicable Schedule, each deliverable shall be subject to a verification of acceptability by Amexco to ensure that such deliverable conforms with the requirements set forth in the applicable Schedule. Unless otherwise specified on the Schedule, the acceptability of any deliverable shall be based on such deliverable's conformance with the requirements of this Agreement and the applicable Schedule. If any deliverable is not acceptable, Amexco shall notify Consultant specifying its reasons in reasonable detail, and Consultant shall, at no additional cost, conform such deliverable to the applicable requirements. If, within thirty (30) days of such Amexco notification, any deliverable is still not acceptable, Amexco may at any time thereafter, at its option and without obligation or liability of any kind, terminate the Schedule involved. When any deliverable is acceptable to Amexco, Amexco shall promptly notify Consultant in writing of its acceptance. Each Schedule shall state the acceptance period within which Amexco shall provide notice of acceptance.
+5. Ownership:
+5.1 Consultant shall promptly make a complete written disclosure to Amexco of each invention, technique, device, discovery or procedure, whether patentable or not (hereinafter referred to as a "Disclosed Subject"), conceived or first actually reduced to practice, solely or jointly by Consultant and/or Amexco and/or their respective employees and agents, as a result of services performed hereunder. As to each Disclosed Subject, Consultant shall specifically point out the features or concepts that Consultant believes to be new or different.
+5 .2    Consultant acknowledges that Amcxco shall have exclusive, unlimited ownership rights to
+all works performed under each Schedule and all materials, infonnation and/or deliverables prepared hereunder or developed as a result of services performed hereunder, both as individual items and/or a combination of components and whether or not the Schedule is completed, including, without limitation, any Disclosed Subject. All of the foregoing shall be deemed to be work made for hire and made in the course of services rendered and shall belong exclusively to Amexco, with Amexco having the sole right to obtain, hold and renew, in its own name and/or for its own benefit, patents, copyrights, registrations and/or other appropriate protection. To the extent that exclusive title and/or ownership
+rights may not originally vest in Amexco as contemplated hereunder (e.g., may not be deemed works made for hire), Consultant hereby agrees to irrevocably assign, transfer and convey to Amexco all right, title and interest therein. Consultant and its personnel shall give Amexco, and/or any Amexco designee, all reasonable assistance and execute all documents necessary to assist and/or enable Amexco to perfect, preserve, register and/or record its rights in any such work, materials, information and/or deliverable. Consultant shall, immediately upon request of Amexco, or upon the termination, cancellation or expiration of each Schedule or this Agreement, turn over to Amexco all materials, information and deliverables prepared or developed as a result of this Agreement and/or any Schedule, and any Amexco documents or other materials held by or on behalf of Consultant, together with all
+copies thereof.
+5.3 Nothing herein shall be construed to restrict, impair or deprive Consultant of any of its rights or proprietary interest in technology, methods or products (collectively "Consultant IP") that existed prior to and independent of the performance of services or provision of materials under this Agreement or any Schedule. In the event that any Consultant IP is incorporated into the Amexco
+deliverables, Consultant hereby grants to Amexco a non-exclusive, irrevocable, pe1petual, fully-paid, unlimited, worldwide license to use Consultant IP to enable Amexco's use of such deliverables.
+6. Charges and Terms of Payment:
+6.1 The applicable fixed prices and/or time and materials charges shall be specified on the Schedule. In no event shall any charges exceed Consultant's applicable standard published rates. For services performed on a time and materials basis any hours worked in excess of eight (8) in any one day or on Saturdays, Sundays or holidays, shall be at no additional cost unless specifically authorized in advance. Amexco also agrees to pay for reasonable out-of-pocket costs and expenses required and actually incurred in performing services, provided that Consultant has: (i) obtained Amexco's prior written consent; (ii) detailed them on a form acceptable to Amexco and approved them in accordance with Amexco's own expense policies; and (iii) submitted supporting documentation satisfactory to
+Amexco.
+6.2 Amexco shall pay all taxes levied against or upon the services provided hereunder, or arising out of this Agreement, , including but not limited VAT, GST and Sales Taxes, exclusive, however, of taxes based on Consultant's income, which shall be paid by Consultant. Amexco agrees to pay directly any tax for which it is responsible or shall reimburse Consultant as applicable. Consultant shall clearly and separately state any applicable taxes on the invoice to Amexco for corresponding services. Amexco may provide Consultant with a certificate acceptable to the taxing authorities and to the reasonable satisfaction of Consultant exempting Amexco from payment of these taxes. Consultant shall pay all taxes collected from Customer to the appropriate taxing authority. In the event that Consultant does not charge the taxes and the tax authorities (other than tax authorities in India) subsequently determine that Consultant should have charged taxes for the services rendered by Consultant, Amexco would make payment for such taxes to the extent specifically required by the authorities provided that: (i) Consultant should not have reasonably been aware that the taxes should have been charged; (ii) the notification to SCB that a tax authorities has determined that taxes should have been charged is given not more than 5 years from the date of the relevant invoice; and (iii) no
+interest or penalties on such amount shall be payable by Amexco.
+6.3 Unless other payment terms are specified on the Schedule, Consultant shall invoice Amexco: (i) upon Amexco's written acceptance of any deliverables, products or work performed on a fixed price basis; or (ii) monthly in arrears, for services provided on a time and materials basis and for out-of-pocket expenses. All invoices, except for amounts disputed by Amexco, shall be payable within thirty (30) days of receipt. Any disputed amounts shall not affect payment of non-disputed charges
+and expenses.
+6.4 Consultant shall maintain complete and accurate accounting records in connection with services performed and materials provided hereunder, in accordance with generally accepted accounting principles, to substantiate its charges. Consultant shall provide Amexco access to such
+records for audit purposes for one (l) year from the date of final payment under each Schedule.
+6.5 In the event that any payment to be made in respect of any invoice is subject by law to any withholding tax, the payer shall make payment to the payee of the amount owing, less a deduction for such withholding tax and shall account to the relevant tax authority for the withholding tax. In the event payee submits a certificate of exemption to payer that are valid as per applicable tax laws/ treaties, Payer shall make payments to payee without
+withholding any taxes. Payer shall remit the taxes to the appropriate authorities and shall provide a certificate of withholding for the amounts withheld in such format that enable the payee to claim a tax credit. Payment of such net sum to the payee and to the relevant tax
+authority of the said withholding tax shall, for the purposes of this Agreement, constitute full settlement of the sums owing under the relevant invoice.
+6.6    Interest and penalties charged on any taxes shall be borne by the party that is liable for
+payment of the original tax on which such interest and penalties have been imposed.
+7. Warranties: 7.1 Consultant warrants that: (i) it has the authority and the right to enter into this Agreement and each Schedule, to perfonn services and provide materials, information and deliverables hereunder, and that its obligations hereunder are not in conflict with any other Consultant obligations; (ii) each of
+its employees has the proper skill, training and background necessary to accomplish their assigned tasks; (iii) all services shall be performed in a competent and professional manner, by qualified personnel and shall conform to the requirements hereunder and in the applicable Schedule; (iv) neither any deliverables, information, or materials, nor the performance of any services by Consultant infringe upon or violate the rights of any third party; provided that such warranty shall not extend to any actual claim of infringement to the extent that such claim arises as a result of Amexco's specifications;
+modification of the deliverables, information or materials unless made by Consultant; and use or
+incorporation of the deliverables, information or materials in a manner for which they were not designed; and except as otherwise set forth in Section 5.3, Amcxco shall receive free and clear title to all works, materials, information and deliverables prepared and/or developed in connection with this
+Agreement; (v) subject to Section 5.3, above, Amcxco shall have the right to use for its own purposes, any ideas, methods, techniques, materials and information provided to or otherwise obtained by Amexco as a result of this Agreement, without restriction, liability or obligation, except as may be specified herein; and (v) unless otherwise set forth in the applicable Schedule, at the time of
+acceptance, each deliverable shall conform to its specifications and Amcxco's requirements and that for ninety (90) days following Amcxco's acceptance, Consultant shall correct and repair, at no cost to
+Amcxco, any defect, malfunction or non-conformity that prevents such deliverable from conforming and performing as warranted. Amcxco warrants that it has the authority and right to enter into this Agreement and each Schedule.
+7.2    To the extent that Consultant licenses to and/or develops software for Amcxco, Consultant
+further warrants that the software has been tested and is fully capable of providing accurate results using data having date ranges spanning the twentieth (20th) and twenty first (21st) centuries (e.g., years
+1900-2100). Without limiting the generality of the foregoing, Consultant wan-ants that all software licensed from and/or developed by Consultant shall (a) manage and manipulate data involving all dates from the 20th and 21 st centuries without functional or data abnormality related to such dates; (b) manage and manipulate data involving all dates from the 20th and 21st centuries without inaccurate results related to such dates; (c) have user interfaces and data fields formatted to distinguish between dates from the 20th and 21st centuries; and (d) represent all data related to include indications of the millennium, century, and decade as well as the actual year.
+7.3 If required in the Statement of Work, Consultant further warrants that Consultant's work product shall be tested and shall be fully capable of providing accurate results using data having date ranges spanning the twentieth (20th) and twenty first (21st) centuries (e.g., years 1900-2100). Without limiting the generality of the foregoing, Consultant wan-ants that all systems that arc worked on by Consultant shall (a) manage and manipulate data involving all dates from the 20th and 21st centuries without functional or data abnormality related to such dates; (b) manage and manipulate data involving all dates from the 20th and 21st centuries without inaccurate results related to such dates; (c) have user interfaces and data fields formatted to distinguish between dates from the 20th and 21st centuries; and (d) represent all data related to include indications of the millennium, century, and decade as well as the actual year.
+7.4 Consultant shall ensure adequate Anti-Virus software is installed to prevent damages to Amexco. Consultant has not and shall not insert any code which would have the affect of disabling or otherwise shutting down all or any portion of any program or network of Amcxco. Consultant shall use its best cffo1ts to ensure that no viruses or similar items arc coded or introduced in any program or network of the Amexco.
+7.5 EXCEPT AS SPECIFICALLY PROVIDED IN THIS AGREEMENT, THERE ARE NO OTHER WARRANTIES, EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+8. General
+MASTER AGREEMENT FOR CONSULTING SERVICES
+8.1 Term & Termination:
+This Agreement shall commence as of the Effective Date and shall continue in full force and effect thereafter unless and until terminated as provided hereunder. Notwithstanding anything herein to the contrary, Amexco may terminate this Agreement and/or any Schedule upon thirty (30) days written
+notice. Amexco agrees to pay Consultant for services performed up to the effective date of termination, at the agreed upon rates. Notice of termination of any Schedule shall not be considered notice of termination of this Agreement unless specifically stated in the notice.
+8.2 Material Breach:
+Subject to the above termination language, in the event of any material breach of this Agreement by one party, the other party may (reserving cumulatively all other remedies and rights under this Agreement and in law and in equity) terminate the Sehedule(s) involved, in whole or in part, by giving thirty (30) days' written notice thereof; provided, however, that any such termination shall not be effective if the party in breach has cured the breach of which it has been notified prior to the expiration of said thirty (30) days.
+8.3 Limitation of Liability:
+In no event shall either Party be liable, one to the other, for any indirect, special, exemplary, punitive or consequential damages arising out of or in connection with this Agreement including but not limited to business interruption, loss of profits, business opportunities, or good will even if notified of the possibility of such damage, and notwithstanding the failure of essential purpose of any remedy.
+Except for Consultant's liability arising from (i) its gross negligence; (ii) death, bodily injury or tangible property damage caused by Consultant; (iii) indemnification obligations under Section 8.13.5 and 8.4, including, but not limited to, infringement for which Consultant is responsible under this Agreement; (iv) Consultant's failure to meet any of its obligations under the Confidential Information sections of this Agreement; and or (v) any willful misconduct or malicious acts, Consultant's total,
+cumulative liability (whether in contract, in tort or by statute or otherwise) to Amexco concerning performance or non-performance by Consultant in any manner related to this Agreement shall not exceed four (4) million dollars (US).
+8.4    Intellectual Property Infringement:
+Consultant, at its own expense, shall defend and/or handle any claim or action against any Amexco Entity for actual or alleged infringement of any patent, copyright, intellectual or industrial property right or any other similar right (including, but not limited to, misappropriation of trade secrets) based on any deliverables, information, materials and/or any services furnished to or obtained by Amexco or
+the use thereof by Amexco. Consultant agrees to give Amexco prompt written notice of any threat, warning or notice of any such claim or action that could have an adverse impact on Amexco's use or possession of same. Consultant shall have the right to conduct the defense of any such claim or action and consistent with Amexco's rights hereunder, all negotiations for its settlement; provided, however, that Amexco may participate in such defense or negotiations to protect its interests.
+Consultant further agrees to indemnify and hold each Amexco Entity harmless from and against any and all liabilities, losses, damages, costs and expenses (including reasonable attorneys' fees) associated with any such claim or action.
+The indemnity set fo1th in this Section 8.4 shall not extend to any actual claim of infringement to the extent that such claim arises as a result of Amcxco's specifications; modification of the deliverables, information or materials unless made by Consultant; and use or incorporation of the deliverables, information or materials in a manner for which they were not designed.
+8.5 Confidential Information:
+8.5.1 The receiving party agrees to regard and preserve as confidential all information related to the business and activities of the disclosing party, their clients, suppliers and other entities with whom the disclosing party does business, that may be obtained by the receiving party from any source or may be developed as a result of this Agreement. The receiving party agrees to hold such information in trust and confidence for the disclosing party and not to disclose such information to any person, firm or enterprise, or use (directly or indirectly) any such information for its own benefit or the benefit of any other party, unless authorized by the disclosing party in writing, and even then, to limit access to and disclosure of such confidential information to the receiving party's employees on a "need to know" basis only. Information shall not be considered confidential to the extent, but only to the extent, that such information is: (i) already known to the receiving party free of any restriction at the time it is
+obtained from the other party; (ii) subsequently learned from an independent third party free of any restriction and without breach of this Agreement; (iii) is or becomes publicly available through no wrongful act of either party; (iv) is independently developed by one party without reference to any Confidential Information of the other; or (v) required to be disclosed pursuant to a requirement of a governmental agency or law so long as the parties provide each other with timely written prior notice of such requirements.
+8.5.2 To the extent this prov1s10n is applicable to and specified on a Schedule, Consultant acknowledges that services performed for Amcxco may relate to past, present or future strategics, plans, business activities, methods, processes and/or information which afford Amexco certain competitive or strategic advantages. To further ensure the protection of Amexco's interests in this regard, and to be mutually agreed upon by the parties hereto on a Schedule by Schedule bases, Consultant agrees that during the term of any assigned individual's service under a Schedule and for a period of six (6) months thereafter (unless a shorter time period is mutually agreed upon and specified on the applicable Schedule), Consultant shall not assign or utilize any individual assigned to perform services for Amexco in connection with any Schedule hereunder, for or in support of any Competitive Project. For purposes of this Section, "Competitive Project" is defined as any task or work effort by any person, firm or enterprise conducting a business or providing or supporting a product or service in the payment instrument (including charge card, credit and debt card), consumer lending, travelers
+cheques or travel related business whose intent or result is or will be substantially similar to any contemplated by such Schedule that the individual provided services under. If there is any doubt whether any task or work effort is deemed a "Competitive Project," Consultant shall obtain Amexco's advance written approval (not to be unreasonably withheld), which decision shall be deemed final and controlling for all purposes hereunder.
+8.5.3 Consultant shall, in advance, require each employee assigned to perform services under
+any Schedule and each employee who obtains or is in a position to obtain any Amexco information or materials required by the terms of this Agreement to be kept confidential, to execute a Non-Disclosure Agreement in the form attached hereto as Exhibit 2, which forms a part hereof. Consultant shall provide Amexco with a true copy of each such Agreement upon request.
+Consultant further agrees to take any other steps reasonably required and/or appropriate to ensure compliance with the obligations set forth herein.
+8.5.4 The receiving party acknowledges and agrees that, in the event of a breach or threatened breach of any of the foregoing provisions, the disclosing party shall have no adequate remedy in damages and, accordingly, shall be entitled to seek injunctive relief against such breach or threatened breach; provided, however, that no specification of a particular legal or equitable remedy shall be construed as a waiver, prohibition or limitation of any legal or equitable remedies in the event of a breach hereof.
+8.6 Excusable Delay:
+Neither party shall be liable to the other for any delay or failure to perform due to causes beyond its control and without its fault or negligence.
+8.7 Advertising:
+Neither party shall use the other party's name or marks, refer to or identify the other party in any advertising or publicity releases or promotional or marketing correspondence to others without such other party's written approval.
+8.8 Governing Law & Interpretation:
+This Agreement shall be construed and enforced under the substantive laws of the State of New York.
+Headlines arc for reference only and shall not affect the meaning of any terms. If any provision of this
+Agreement is held invalid, illegal or unenforceable, the remaining provisions shall continue unimpaired.
+8.9 Insurance:
+8.9.1 Throughout the te1m of this Agreement and Schedules thereto, Consultant must maintain adequate workers compensation, liability, disability, unemployment and, automobile insurance as required under law for the Consultant and each of its employees performing Services under this
+Agreement and any Schedules.
+8.9.2 Consultant must also maintain throughout the term of this Agreement and any Schedules thereto, the following types of insurance coverage at, or above the minimum policy amounts set out below. All insurance companies must have and maintain an AM Best rating of A- or better.
+8.9.3 The Consultant shall provide verification of its insurance coverage by providing a valid certificate of insurance to Amexeo upon request. All certificates of insurance must provide that
+Amexco and Consultant Confidential Page 8 of 17
+Amexco shall be notified thirty (30) days before cancellation. Consultant's insurance shall be primary and non-contributory with any insurance maintained by Amcxeo.
+8.9.4
+Amexco as
+Type of coverage Coverage as Policy Minimums Additional broad as insured
+Workers Compensation
+Statut01y Requirements
+Statutory requirements
+No
+Employers' Liability
+Combined with workers compensation policy
+Each accident, $1,000,000
+Disease police limit, $1,000,000 Disease each emolovee, $1,000,000
+No
+Commercial General Liability and Personal
+Injury
+ISO Form CGOOOl
+General aggregate, $2,000,000 Completed ops products, $2,000,000
+Each occurrence, $2,000,000 Personal iniurv, $2,000,000
+Yes
+Commercial Auto, Including Employer's Non-Owned auto
+ISO Form CAOOOl
+Combined single limit, $2,000,000
+No
+Commercial Umbrella Liability
+Underlying EL, GL and
+Auto
+May, if necessary, be used in any combination with the primary policy
+limit to fulfill the above limit reauirements.
+Yes
+Professional Liability
+NIA
+Minimum policy limits of $1,000,000. Increased amounts subiect to Amexco's discretion
+Yes
+8.10 Assignment:
+Neither party shall assign, transfer or subcontract the performance of its services, or any of its rights and/or obligations, without the other party's prior written consent, and any attempt to do so shall be void. Amexco may assign this Agreement, any Schedule and/or any of its rights or obligations to any Amexco Entity, without Consultant's consent and upon written notice to Consultant.
+8.11 Subcontracting:
+Consultant may subcontract its responsibilities and obligations under this Agreement upon first obtaining Amexco's written consent to do so and to specific finns or entities mutually agreed upon by the parties; consent not to be unreasonably withheld. Consultant shall require its subcontractors
+performing services for Amexco hereunder to execute the Non-Disclosure Agreement in the form attached hereto as Exhibit 2. Consultant shall be solely responsible for all its obligations and responsibilities hereunder notwithstanding such subcontracting.
+8.12 Background Checks:
+8.12.1    Consultant agrees, in accordance with applicable law, to perform background checks on all
+of its employees assigned to Amexco under this Agreement. Consultant also is responsible for assuring that any sub-contractors it utilizes to perform work under this Agreement undergo background checks. All of Consultant's employees and subcontractors assigned to perform work for Amexco under this Agreement must undergo the following background checks in advance of assignment with Amexco:
+8.12.2 Criminal Check:
+8.12.2.1 Criminal records checks for all felony and misdemeanor convictions other than minor traffic violations in all counties where the individual has lived during at least the last seven years (subject to applicable state laws) to include picas of guilty and nolo contendre, regardless of whether adjudication has been withheld.
+8.12.2.2 Consultant agrees to assign to Amexco only individuals who have no felony convictions, regardless of whether adjudication has been withheld. Consultant also agrees to contact local Amexco Security regarding individuals who have any misdemeanor convictions and obtain Amcxco approval prior to assigning them to the Amexco account.
+8.12.3 Drug Screening:
+8.12.3. l    Consultant agrees to have all employees and subcontractors of Consultant assigned to
+Amexco tested for the presence of the following substances prior to assignment. The test required under this policy shall consist of NIDA 5 Panel:
+» Amphetamines
+» Cocaine
+» Marijuana » Opiates » Phencyclidinc
+8.12.3.2 Consultant agrees not to assign to Amexco those individuals who test positive for controlled substances not lawfully prescribed or for misuse of a lawfully prescribed controlled substance.
+8.12.4 Amcxco reserves the right to audit Consultant's background check/drug screening files and Consultant agrees to make these files available to Amexco within five business days of Amexco's request.
+8.13 Export Control Notice:
+8.13.1 In the event that any of the deliverables (or any component thereof) contains encryption, Consultant shall provide the information set forth in "Exhibit 3" to the applicable Schedule to this
+Agreement.
+8.13.2 Consultant represents that it has complied with, and shall continue to comply with, all applicable laws, rules and regulations of the United States or any foreign countries with respect to the exportation or importation of the deliverables, any modifications, enhancements or updates thereto,
+and any technical data derived therefrom, outside of the United States or into the United States or into another country, including, but not limited to obtaining any necessary consents and requesting or filing any documents with the Bureau of Export Administration of the U.S. Department of Commerce ("BXA").
+8.13.4 Unless the parties otherwise agree in writing, Consultant shall have the responsibility under this Agreement to obtain approvals, consents, licenses, and/or permits required for any export or import of the deliverables, including, but not limited to making the appropriate filings with BXA, and shall be solely responsible for all costs associated therewith Each party shall reasonably cooperate with the other in making the appropriate filings with BXA and any applicable foreign authority and shall provide any information, certificates or documents as are reasonably requested.
+8.13.5 Consultant shall defend, indemnify and hold Amcxco harmless from and against any and all claims, judgments, costs, awards, expenses (including reasonable attorneys' fees) and liability of any kind arising out of Consultant's non-compliance with applicable governmental regulations, statute, decree, or other obligation with respect to the exportation of the deliverables outside of the United States or into the United States or into another country.
+8.14 Notices:
+All notices shall be in writing and delivered personally or properly mailed, first class mail, to the addresses of the parties set forth at the beginning of this Agreement, to the attention of the undersigned, and, as to any Schedule, with a copy to the signatories of the Schedule involved, at the same address, or to such other address or addressee as either party may designate by written notice.
+Any such notice shall be deemed given on the date delivered or when placed in the mails as specified.
+8.15 Entirety:
+This Agreement, together with the Exhibits, Schedules and attachments hereto, contains the entire agreement between the parties and supersedes any prior or inconsistent agreements, negotiations, representations and promises, written or oral. No modification to this Agreement nor any failure or delay in enforcing any term, exercising any option or requiring performance shall be binding or construed as a waiver unless agreed to in writing by the parties hereto.
+IN WITNESS WHEREOF, the Parties hereto have duly executed this Agreement as of the day, month
+and year last written below.
+
+AMERICAN EXPRESS BANK LIMITED
+i Orf Z?
+
+INFOSYS TECHNOLOGIES LIMITED
+
+
+
+Authoriz d Signature
+
+Name
+
+lfOf-111rt1l/ C.,:;,1 ( /,..Cl/1../.\T
+
+
+
+Authorized Signature
+
+Dated
+
+
+
+Name
+
+American Express Bank Limited
+American Express Tower World Financial Center
+New York, NY 10285
+
+Dated
+
+
+
+Infosys Technologies Limited Electronics City, Hosur Road Bangalore 561 229, India
+
+Shaji Farooq, Ph.D.
+Vice President
+Infosys Teehnologies Limited
+EXHIBIT 2 - NON-DISCLOSURE AGREEMENT
+Agreement Number:
+Schedule Number:
+I, __________, am aware that American Express Travel Related Services Company, Inc.
+("Amexco") and my employer, Infosys Technologies Limited ("Consultant") have entered into an Master Agreement for Consulting Services ("Agreement") and I fully understand that it imposes certain obligations on Consultant, some of which arc specifically set forth below. I further understand
+that as a part of its obligations under the Agreement, Consultant is required to obtain this written agreement from certain employees, including myself, to further ensure understanding and compliance with these obligations.
+In consideration of my future assignment and/or responsibilities in connection with Consultant's performance under the Agreement, I hereby acknowledge, represent and confim1 to Consultant and Amcxco as follows: (a) I have read the provisions of the Non-Disclosure Agreement, understand each of them, agree to them, and know of no agreements, obligations or restrictions that prevent or prohibit me from complying with them; (b) I shall receive and maintain all Amcxco information, perform services and conduct myself, in all respects during the term of the Agreement and any Schedules and
+for the requisite periods thereafter, in a manner consistent with these obligations; and (c) I agree not to directly or indirectly, engage in or assist others to engage in, any activity or conduct that violates the provisions of this Non-Disclosure Agreement.
+"Confidential Information: Consultant agrees to regard and preserve as confidential all information related to the business and activities of the Amexco Entities, their clients, suppliers and other entities with whom the Amexco Entities do business, that may be obtained by Consultant form any source or may be developed as a result of this Agreement. Consultant agrees to hold such information in tJust and confidence for Amexco and not to disclose such information to any person, firm or enterprise, or use any such information for its own benefit or the benefit of any other party, unless authorized by Amexco in writing, and even then, to limit access to and disclosure of such confidential information to Consultant's employees on a "need to know" basis only. Information shall not be considered confidential to the extent, but only to the extent, that such information is: (i) already known free of any restriction at the time it is obtained; (ii) subsequently learned from an independent third party free
+of any restriction; or (iii) available publicly."
+To the extent this provision is applicable to and specified on a Schedule, Consultant acknowledges that services performed for Amexco may relate to past, present or future strategies, plans, business activities, methods, processes and/or information which afford Amexco certain competitive or strategic advantages. To further ensure the protection of Amcxco's interests in this regard, and to be mutually agreed upon by the parties hereto on a Schedule by Schedule bases, Consultant agrees that during the term of any assigned individual's service under a schedule and for a period of six (6) months thereafter (unless a shorter time period is mutually agreed upon and specified on the applicable Schedule), Consultant shall not assign or utilize any individual assigned to perform services for Amexco in connection with any Schedule hereunder, for or in support of any Competitive Project. For purposes
+of this Section, "Competitive Project" is defined as any task or work effort by any person, firm or enterprise conducting a business or providing or supporting a product or service in the payment
+Amexco and Consultant Confidential Page 13 of 17
+MASTER AGREEMENT FOR CONSULTING SERVICES
+instrument (including charge card, credit and debt card), consumer lending, travelers cheques or travel
+related business whose intent or result is or will be substantially similar to any contemplated by such
+Schedule that the individual provided services under. If there is any doubt whether any task or work effort is deemed a "Competitive Project," Consultant shall obtain Amexco's advance written approval (not to be unreasonably withheld), which decision shall be deemed final and controlling for all purposes hereunder.
+"Consultant shall, in advance, require each employee assigned to perform services under any Schedule and each employee who obtains or is in a position to obtain any Amexco information or materials required by the terms of this Agreement to be kept confidential, to execute a Non-Disclosure Agreement in the form attached hereto as Exhibit 2, which forms a part hereof. Consultant shall provide Amexco with a true copy of each such Agreement upon request. Consultant further agrees to
+take any other steps reasonably required and/or appropriate to ensure compliance with the obligations set forth herein." "Consultant acknowledges and agrees that, in the event of a breach or threatened breach of any of the foregoing provisions, Amexco shall have no adequate remedy in damages and, accordingly, shall be
+entitled to injunctive relief against such breach or threatened breach; provided, however, that no specification of a particular legal or equitable remedy shall be construed as a waiver, prohibition or limitation of any legal or equitable remedies in the event ofa breach hereof."
+I understand that if I threaten to or actually breach or fail to observe any of the obligations set forth in this Non-Disclosure Agreement, Amexco and Consultant shall be subject to irreparable harm, which shall not be adequately satisfied by damages. I therefore agree that Consultant or Amexco shall be entitled to injunctive relief and/or any other remedies permitted, to ensure and enforce my compliance with these obligations in the unlikely event I do not comply with them; provided, however, that no
+specification herein of any a particular legal or equitable remedy shall be construed as a waiver, prohibition or limitation of any legal or equitable remedies.
+By: ______
+Name: _______
+(Type or Print)
+Title: ______
+Witness: _____ Date: _______
+EXHIBIT 3
+DELIVERABLE ENCRYPTION INFORMATION I. Encryption Information
+Identify each hardware and software component of each of the Products having encryption capability by its respective unbundled part number and level ofencryption.
+Product Component(s)
+Unbundled Part Number
+Level of Encryption(e.g.
+40 bit, 56 bit, 128 bit etc.)
+Type (e.g. DES, Blowfis RC2, CAST etc.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Export License Information
+Indicate in connection with each part number for each component the Commodity Classification or
+Export License or License Exception granted - for example, "Mass Market License Exception, TSU"
+Or "License Exception, ENC" by the US Department ofCommerce, Bureau of Export Administration, providing in each case the Export Control Classification Number (and Paragraph, if applicable), -- and the date of the US DOC/BXA finding in each case.
+Product
+Component
+(s)
+Unbundle
+d
+Part
+Number
+Export Control Classification Number
+Card Paragraph, If Applicable
+Did you Receive A Commodity Classificatio n?
+Did
+you
+Receiv
+C an Expmt Licens e?
+Did you Receive a License Exception
+ENC? Provide Applicable Regulation e.g., 15 CFR 742.15/b)/4)
+USDOC/
+BXA
+Date of Finding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. Licensor's Contact
+Identify Licensor's export manager or contact responsible for filing or obtaining tbe export licenses or license exceptions for the Products.
+Name:
+Address:
+Telephone Number:
+4. Import License Information
+Indicate in connection with each part number for each component whether any import license was applied for, granted or rejected, the name of the country granting the license, and whether or not the license extends to Licensor's customers.
+,,
+
+Product
+Component(s)
+Unbundled
+Part
+Number
+Import
+License
+Date Applied For
+Import License Granted or Rejected
+License
+Number
+Indicated
+Indicate if License to Impo1t
+Extends to SAP's Customer?
+Country
+Granting
+Impo1t
+License
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. Identify your Company's Web Site, if any, where information can be found relating to the technical specifications and export or import of the Products.
+Amexco and Consultant Confidential
+Page 17 of 17

@@ -1,0 +1,383 @@
+package controllers
+
+import (
+	"eaciit/proactive-inv/helpers"
+	. "eaciit/proactive-inv/models"
+	"os"
+	"strconv"
+	"time"
+
+	db "github.com/eaciit/dbox"
+	knot "github.com/eaciit/knot/knot.v1"
+	tk "github.com/eaciit/toolkit"
+	"github.com/jung-kurt/gofpdf"
+)
+
+func (c *ReportController) GetDataItem(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	var pipes []tk.M
+	pipes = append(pipes, tk.M{"$group": tk.M{
+		"_id": tk.M{
+			"INVID":   "$INVID",
+			"INVDesc": "$INVDesc",
+		},
+	}})
+	pipes = append(pipes, tk.M{"$project": tk.M{
+		"INVID":   "$_id.INVID",
+		"INVDesc": "$_id.INVDesc",
+	}})
+	csr, e := c.Ctx.Connection.NewQuery().Select().From(NewInventoryModel().TableName()).Command("pipe", pipes).Cursor(nil)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	defer csr.Close()
+	results := []tk.M{}
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	return c.SetResultInfo(false, "Success", results)
+}
+func (c *ReportController) GetDataLocationTracking(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	locationid := k.Session("locationid").(int)
+	mainfilter := new(db.Filter)
+	if locationid != 1000 {
+		filter := []*db.Filter{}
+		if locationid%1000 == 0 {
+			lastLocationCode := locationid + 1000
+			filter = append(filter, db.Gte("LocationID", locationid))
+			filter = append(filter, db.Lt("LocationID", lastLocationCode))
+			mainfilter = db.And(filter...)
+		} else {
+			filter = append(filter, db.Eq("LocationID", locationid))
+			filter = append(filter, db.Eq("Main_LocationID", locationid))
+			mainfilter = db.Or(filter...)
+		}
+	} else {
+		mainfilter = db.Ne("LocationID", 0)
+	}
+
+	csr, e := c.Ctx.Connection.NewQuery().Select().From(NewLocationModel().TableName()).Where(mainfilter).Cursor(nil)
+	defer csr.Close()
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	results := []LocationModel{}
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	return c.SetResultInfo(false, "Success", results)
+}
+func (c *ReportController) GetDataTrackingItem(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	p := struct {
+		DateStart    string
+		DateEnd      string
+		ItemCode     string
+		LocationCode int
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	dateStart, _ := time.Parse("2006-01-02", p.DateStart)
+	dateEnd, _ := time.Parse("2006-01-02", p.DateEnd)
+	dateEnd = dateEnd.AddDate(0, 0, 1)
+	filter := []*db.Filter{}
+	filter = append(filter, db.Gte("date", dateStart))
+	filter = append(filter, db.Lte("date", dateEnd))
+	filter = append(filter, db.Eq("codeitem", p.ItemCode))
+
+	if p.LocationCode == 0 {
+		locationUser := k.Session("locationid").(int)
+		mainfilter := new(db.Filter)
+		if locationUser != 1000 {
+			filter := []*db.Filter{}
+			if locationUser%1000 == 0 {
+				lastLocationCode := locationUser + 1000
+				filter = append(filter, db.Gte("storehouseid", locationUser))
+				filter = append(filter, db.Lt("storehouseid", lastLocationCode))
+				mainfilter = db.And(filter...)
+			} else {
+				filterLoc := []*db.Filter{}
+				filterLoc = append(filterLoc, db.Eq("LocationID", locationUser))
+				filterLoc = append(filterLoc, db.Eq("Main_LocationID", locationUser))
+				mainfilterLoc := new(db.Filter)
+				mainfilterLoc = db.Or(filterLoc...)
+				csr, e := c.Ctx.Connection.NewQuery().Select().From(NewLocationModel().TableName()).Where(mainfilterLoc).Cursor(nil)
+				defer csr.Close()
+				if e != nil {
+					return c.SetResultInfo(true, e.Error(), nil)
+				}
+				resultsLoc := []LocationModel{}
+				e = csr.Fetch(&resultsLoc, 0, false)
+				if e != nil {
+					return c.SetResultInfo(true, e.Error(), nil)
+				}
+				var locCodes []interface{}
+				for _, each := range resultsLoc {
+					locCodes = append(locCodes, each.LocationID)
+				}
+				filter = append(filter, db.In("storehouseid", locCodes...))
+			}
+		} else {
+			mainfilter = db.Ne("storehouseid", 0)
+		}
+		filter = append(filter, mainfilter)
+	} else {
+		filter = append(filter, db.Eq("storehouseid", p.LocationCode))
+	}
+	// tk.Println(tk.JsonString(filter))
+	csr, e := c.Ctx.Connection.NewQuery().Select().From(NewLogInventoryModel().TableName()).Where(filter...).Cursor(nil)
+	defer csr.Close()
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	results := []LogInventoryModel{}
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	return c.SetResultInfo(false, "Ssuccess", results)
+}
+func (c *ReportController) ExportTrackingItemToPdf(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	p := struct {
+		DateStart    string
+		DateEnd      string
+		ItemCode     string
+		ItemName     string
+		LocationCode int
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		return c.SetResultFile(true, e.Error(), "")
+	}
+	dateStart, _ := time.Parse("2006-01-02", p.DateStart)
+	dateEnd, _ := time.Parse("2006-01-02", p.DateEnd)
+	dateEndDb := dateEnd.AddDate(0, 0, 1)
+	filter := []*db.Filter{}
+	filter = append(filter, db.Gte("date", dateStart))
+	filter = append(filter, db.Lte("date", dateEndDb))
+	filter = append(filter, db.Eq("codeitem", p.ItemCode))
+
+	if p.LocationCode == 0 {
+		locationUser := k.Session("locationid").(int)
+		mainfilter := new(db.Filter)
+		if locationUser != 1000 {
+			filter := []*db.Filter{}
+			if locationUser%1000 == 0 {
+				lastLocationCode := locationUser + 1000
+				filter = append(filter, db.Gte("storehouseid", locationUser))
+				filter = append(filter, db.Lt("storehouseid", lastLocationCode))
+				mainfilter = db.And(filter...)
+			} else {
+				filterLoc := []*db.Filter{}
+				filterLoc = append(filterLoc, db.Eq("LocationID", locationUser))
+				filterLoc = append(filterLoc, db.Eq("Main_LocationID", locationUser))
+				mainfilterLoc := new(db.Filter)
+				mainfilterLoc = db.Or(filterLoc...)
+				csr, e := c.Ctx.Connection.NewQuery().Select().From(NewLocationModel().TableName()).Where(mainfilterLoc).Cursor(nil)
+				defer csr.Close()
+				if e != nil {
+					return c.SetResultInfo(true, e.Error(), nil)
+				}
+				resultsLoc := []LocationModel{}
+				e = csr.Fetch(&resultsLoc, 0, false)
+				if e != nil {
+					return c.SetResultInfo(true, e.Error(), nil)
+				}
+				var locCodes []interface{}
+				for _, each := range resultsLoc {
+					locCodes = append(locCodes, each.LocationID)
+				}
+				filter = append(filter, db.In("storehouseid", locCodes...))
+			}
+		} else {
+			mainfilter = db.Ne("storehouseid", 0)
+		}
+		filter = append(filter, mainfilter)
+	} else {
+		filter = append(filter, db.Eq("storehouseid", p.LocationCode))
+	}
+	// tk.Println(p.DateStart, dateStart, p.DateEnd, dateEnd, p.ItemCode, NewLogInventoryModel().TableName())
+	csr, e := c.Ctx.Connection.NewQuery().Select().From(NewLogInventoryModel().TableName()).Where(filter...).Cursor(nil)
+	defer csr.Close()
+	if e != nil {
+		return c.SetResultFile(true, e.Error(), "")
+	}
+	results := []LogInventoryModel{}
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		return c.SetResultFile(true, e.Error(), "")
+	}
+	corp, e := helpers.GetDataCorporateJson()
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	pdf := gofpdf.New("L", "mm", "A4", c.FontPath)
+	pdf.AddFont("Century_Gothic", "", "Century_Gothic.json")
+	pdf.AddFont("Century_Gothicb", "B", "Century_Gothicb.json")
+	pdf.AddPage()
+	pdf.SetXY(10, 5)
+	pdf.SetFont("Century_Gothic", "", 12)
+	// pdf.Image(c.LogoFile+"eaciit-logo.png", 12, 10, 17, 17, false, "", 0, "")
+	pdf.Ln(2)
+	y1 := pdf.GetY()
+	pdf.SetY(y1 + 4)
+	pdf.SetX(11.5)
+	pdf.CellFormat(0, 12, corp.Name, "", 0, "L", false, 0, "")
+	pdf.SetY(y1 + 10)
+	pdf.SetX(11.5)
+	pdf.SetFont("Century_Gothic", "", 11)
+	pdf.CellFormat(0, 15, corp.Address, "", 0, "L", false, 0, "")
+	pdf.SetX(200)
+	pdf.SetFont("Century_Gothicb", "B", 16)
+	pdf.CellFormat(0, 15, "Tracking Item", "", 0, "L", false, 0, "")
+
+	pdf.SetY(y1 + 17)
+	pdf.SetX(11.5)
+	pdf.SetFont("Century_Gothic", "", 11)
+	pdf.CellFormat(0, 12, corp.City+"-"+corp.Country, "", 0, "L", false, 0, "")
+	pdf.SetX(11.5)
+	// pdf.Ln(1)
+
+	pdf.SetY(y1 + 23)
+	pdf.SetX(11.5)
+	pdf.SetFont("Century_Gothic", "", 11)
+	pdf.CellFormat(0, 12, corp.NoTelp, "", 0, "L", false, 0, "")
+	pdf.SetX(6)
+
+	y2 := pdf.GetY()
+	pdf.SetY(y2 + 2)
+
+	pdf.Line(pdf.GetX()+3, pdf.GetY()+9, 280, pdf.GetY()+9)
+	pdf.SetFont("Century_Gothic", "", 9)
+	pdf.Ln(8)
+	pdf.GetY()
+	pdf.SetX(12)
+	pdf.CellFormat(15, 10, "Date Periode  ", "", 0, "L", false, 0, "")
+	pdf.CellFormat(8, 10, "", "", 0, "L", false, 0, "")
+	pdf.CellFormat(80, 10, ": "+dateStart.Format("02 January 2006")+" - "+dateEnd.Format("02 January 2006"), "", 0, "L", false, 0, "")
+	pdf.SetX(230)
+	pdf.CellFormat(15, 10, "Date Created  ", "", 0, "L", false, 0, "")
+	pdf.CellFormat(8, 10, "", "", 0, "L", false, 0, "")
+	pdf.CellFormat(80, 10, ": "+time.Now().Format("02 January 2006"), "", 0, "L", false, 0, "")
+	pdf.Ln(5)
+	pdf.SetX(12)
+	pdf.CellFormat(15, 10, "Item Code  ", "", 0, "L", false, 0, "")
+	pdf.CellFormat(8, 10, "", "", 0, "L", false, 0, "")
+	pdf.CellFormat(80, 10, ": "+p.ItemCode, "", 0, "L", false, 0, "")
+	pdf.Ln(5)
+	pdf.SetX(12)
+	pdf.CellFormat(15, 10, "Item Name  ", "", 0, "L", false, 0, "")
+	pdf.CellFormat(8, 10, "", "", 0, "L", false, 0, "")
+	pdf.CellFormat(80, 10, ": "+p.ItemName, "", 0, "L", false, 0, "")
+	pdf.Ln(8)
+	gridHead := []string{"No. ", "Date", "Description", "Location", "Type", "Stock", "Increment", "Decrement", "Total"}
+	widthHead := []float64{10, 30.0, 45.0, 55.0, 30.0, 30.0, 20.0, 20.0, 30.0}
+	y0 := pdf.GetY()
+	for i, head := range gridHead {
+		pdf.SetY(y0)
+		x := 12.0
+		for y, z := range widthHead {
+			if i > y {
+				x += z
+			} else {
+				x += 0.0
+			}
+		}
+		pdf.SetX(x)
+		if i == 0 {
+			pdf.MultiCell(widthHead[i], 10, head, "1", "C", false)
+		} else {
+			pdf.MultiCell(widthHead[i], 10, head, "1", "C", false)
+		}
+
+	}
+	pdf.SetFont("Century_Gothic", "", 7)
+	y0 = pdf.GetY()
+	pdf.SetY(y0)
+	lastlineYborder := 0.0
+	lastlineXborder := 0.0
+	for i, each := range results {
+		y1 = pdf.GetY()
+		pdf.SetY(y1)
+		x := 12.0
+		pdf.SetX(x)
+		pdf.MultiCell(widthHead[0], 8, strconv.Itoa(i+1), "L", "C", false)
+		a0 := pdf.GetY()
+		x += widthHead[0]
+		pdf.SetXY(x, y1)
+		pdf.MultiCell(widthHead[1], 8, each.Date.Format("02 January 2006"), "L", "L", false)
+		a1 := pdf.GetY()
+		x += widthHead[1]
+		pdf.SetXY(x, y1)
+		pdf.MultiCell(widthHead[2], 8, each.Description, "L", "L", false)
+		a2 := pdf.GetY()
+		x += widthHead[2]
+		pdf.SetXY(x, y1)
+		pdf.MultiCell(widthHead[3], 8, each.StoreHouseName, "L", "L", false)
+		a3 := pdf.GetY()
+		x += widthHead[3]
+		pdf.SetXY(x, y1)
+		pdf.MultiCell(widthHead[4], 8, each.TypeTransaction, "L", "L", false)
+		a4 := pdf.GetY()
+		x += widthHead[4]
+		pdf.SetXY(x, y1)
+		pdf.MultiCell(widthHead[5], 8, strconv.Itoa(each.StockUnit), "L", "C", false)
+		a5 := pdf.GetY()
+		x += widthHead[5]
+		pdf.SetXY(x, y1)
+		pdf.MultiCell(widthHead[6], 8, strconv.Itoa(each.Increment), "L", "C", false)
+		a6 := pdf.GetY()
+		x += widthHead[6]
+		pdf.SetXY(x, y1)
+		pdf.MultiCell(widthHead[7], 8, strconv.Itoa(each.Decrement), "L", "C", false)
+		a7 := pdf.GetY()
+		x += widthHead[7]
+		pdf.SetXY(x, y1)
+		pdf.MultiCell(widthHead[8], 8, strconv.Itoa(each.TotalSaldo), "LR", "C", false)
+		a8 := pdf.GetY()
+		allA := []float64{a0, a1, a2, a3, a4, a5, a6, a7, a8}
+		var n, biggest float64
+		for _, v := range allA {
+			if v > n {
+				n = v
+				biggest = n
+			}
+		}
+		x += widthHead[8]
+		if biggest >= 268.0 {
+			pdf.Line(12.0, biggest, x, biggest)
+			//this for after first page
+			pdf.AddPage()
+			pdf.SetY(15.0)
+		} else {
+			pdf.SetY(biggest)
+		}
+		y0 = pdf.GetY()
+		lastlineYborder = biggest
+		lastlineXborder = x
+	}
+	pdf.Line(12.0, lastlineYborder, lastlineXborder, lastlineYborder)
+	e = os.RemoveAll(c.PdfPath + "/report/pdf")
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), "")
+	}
+	e = os.MkdirAll(c.PdfPath+"/report/pdf", 0777)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), "")
+	}
+	namepdf := "-trackingitem.pdf"
+	FixName := time.Now().Format("2006-01-02T150405") + namepdf
+	fileName := FixName
+	location := c.PdfPath + "/report/pdf"
+	e = pdf.OutputFileAndClose(location + "/" + fileName)
+	if e != nil {
+		return c.SetResultFile(true, e.Error(), "")
+	}
+	return c.SetResultFile(false, "success", fileName)
+}

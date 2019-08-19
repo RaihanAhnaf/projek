@@ -1,0 +1,42 @@
+{
+   "effectivedate": [
+      {
+         "clause": "effectivedate",
+         "common-ancestor-id": "604",
+         "contentfromsystem": "\n    12.3 As at the Effective Date, each Parties' respective Authorised Representative is identified in\n    \n     Schedule 2\n    \n    (\n   ",
+         "start-offset": "3431",
+         "end-offset": "3448",
+         "confidence": 0.91,
+         "data-eaciit-id": "606",
+         "data-eaciit-end": "606",
+         "data-eaciit-start": "606"
+      }
+   ],
+   "governinglaw": [
+      {
+         "clause": "governinglaw",
+         "common-ancestor-id": "2899",
+         "contentfromsystem": "\n    (c) The governing law and jurisdiction of any Local Agreement shall be the governing\u00a0law and exclusive jurisdiction of the Agreement unless otherwise required by\u00a0applicable Laws of the Country.\n   ",
+         "start-offset": "26602",
+         "end-offset": "26632",
+         "confidence": 0.78,
+         "data-eaciit-id": "2900",
+         "data-eaciit-end": "2900",
+         "data-eaciit-start": "2900"
+      }
+   ],
+   "documenttitle": [
+      {
+         "clause": "documenttitle",
+         "common-ancestor-id": "10",
+         "contentfromsystem": "\n    Standard Chartered Bank\n   ",
+         "start-offset": "7",
+         "end-offset": "10",
+         "confidence": 0.64,
+         "data-eaciit-id": "11",
+         "data-eaciit-end": "11",
+         "data-eaciit-start": "11"
+      }
+   ],
+   "word-count": 55422
+}

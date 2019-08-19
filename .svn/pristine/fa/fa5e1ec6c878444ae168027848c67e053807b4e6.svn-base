@@ -1,0 +1,117 @@
+<script type="text/javascript">
+var userinfo ={
+    usernameh: ko.observable('{{.Username}}'),
+    menunameh: ko.observable('{{.Menuname}}'),
+}
+</script>
+<script type="text/javascript" src="{{BaseUrl}}res/core/js/menusetting.js"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/administration.css">
+<!--  Js switch  -->
+<script src="{{BaseUrl}}res/switch-js/bootstrap-switch.js"></script>
+<script src="{{BaseUrl}}res/switch-js/highlight.js"></script>
+<script src="{{BaseUrl}}res/switch-js/main.js"></script>
+<!-- Js switch  -->
+
+<!-- switch Bootstrap CSS  -->
+<link href="{{BaseUrl}}res/switch-css/bootstrap-switch.css" rel="stylesheet">
+<!-- switch Bootstrap CSS -->
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+          <span class="bar">Administration</span>
+          <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <a href="/menusetting/default">Menu</a>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+            <span class="thin uppercase hidden-xs font2" data-bind="text:menusett.DatePageBar"></span>&nbsp;
+        </div>
+    </div>
+</div>
+<div class="row clearfix">
+  <div id="menusett">
+    <div class="col-md-9 panel-content">
+      <div class="portlet box twis">
+        <div class="portlet-title">
+          <div class="caption">
+            Menu Entry
+          </div>
+          <div class="tools style-edit">
+            <button data-bind="click:menusett.saveAppmenu, visible:menusett.saveData" id= "save" class="btn btn-sm btn-success width"><i class="fa fa-floppy-o"></i> Save</button>
+
+            <span data-bind="visible: menusett.select">
+                <button  data-bind="click:menusett.updateAppmenu, visible:menusett.updateData" id= "update" class="btn btn-sm btn-update-color blue width" > <i class="fa fa-floppy-o"></i> Update</button>
+                <button  data-bind="click:menusett.resetAppMenu" class="btn btn-sm btn-reset-color red width"><i class="fa fa-repeat "></i> Reset</button>
+                <button  data-bind="click:menusett.editdataMenulist" class="btn btn btn-sm btn-primary width"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
+                <button  data-bind="click:menusett.deleteMunulist" class="btn btn-sm btn-remove-color red"><i class="fa fa-times-circle-o "></i> Remove</button>
+            </span>
+            <button id="buttonAdd" class="btn btn-sm btn-success btn-flat" data-bind="click:menusett.newdataMenulist"><i class="fa fa-plus"></i><span data-bind="text:menusett.btnNewData"></span></button>
+          </div>
+        </div>
+        <div class="portlet-body form">
+        <form id="AppMenu">
+          <div class="form-body">
+            <div class="form-group">
+              <label>Parent *</label>
+              <input type="text" class="form-control k-dropdown" id="parent" name="parent" tabindex="-1" validationMessage="Parent required" readonly data-bind="kendoDropDownList:{value: ddparentVM.Parent, 
+              data: ddparentVM.listMenu,
+              dataValueField: 'Id', 
+              dataTextField: 'title',
+              valuePrimitive: true,
+              optionLabel: 'Select parent...'}"/>
+
+            </div>
+            <div class="form-group">
+              <label>Title *</label>
+              <input id="title" type="text" name="title" required="" class="form-control" data-bind="value:menusett.Title" readonly/>
+            </div>
+            <div class="form-group">
+              <label>URL *</label>
+              <input id="Url" name="mm" required="" type="text" class="form-control" placeholder="Input Format: /folder/default" data-bind="value:menusett.Url" readonly/>
+            </div>
+            <div class="form-group">
+              <label>Icon *</label>
+              <input id="Icon" name="Icon" required="" type="text" class="form-control" placeholder="Input Format: fa fa-home" data-bind="value:menusett.Icon" readonly/>
+            </div>
+            <div class="form-group">
+              <label>Index *</label>
+              <input type="text" data-bind="value: menusett.IndexMenu" name="IndexMenu" id="IndexMenu" validationMessage="Index Menu required" required="" readonly class="k-dropdown-height" />
+            </div>
+            <div class="form-group">
+              <label>Enable *</label></br>
+              <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-on bootstrap-switch-animate">
+                <div class="bootstrap-switch-container">
+                  <input id="Enable" type="checkbox" class="make-switch" data-size="small" checked readonly>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 panel-filter">
+      <div class="portlet box twis filter">
+        <div class="portlet-title">
+          <div class="caption">
+            Menu List
+          </div>
+        </div>
+        <div class="portlet-body form">
+          <script id="menulist-template" type="text/kendo-ui-template">
+              <input type="hidden" value="#:item._id#" />
+              <span class="glyphicon glyphicon-credit-card"></span>&nbsp;#: item.title #
+          </script>
+          <div class="menu-list">
+              <ul id="menu-list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

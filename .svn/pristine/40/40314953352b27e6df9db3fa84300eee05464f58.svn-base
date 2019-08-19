@@ -1,0 +1,146 @@
+<script type="text/javascript">
+var userinfo ={
+    usernameh: ko.observable('{{.Username}}'),
+    menunameh: ko.observable('{{.Menuname}}'),
+}
+</script>
+
+<style>
+#gridOpex .k-grid-content
+{
+    min-height: 100px;
+    max-height: 490px;
+}
+</style>
+<script src="{{BaseUrl}}res/main/js/report-opex.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/report.css">
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+          <span class="bar">Report</span>
+          <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <a href="/report/opex">Operating Expenses</a>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+            <span class="thin hidden-xs font2" data-bind="text:opex.DatePageBar"></span>&nbsp;
+        </div>
+    </div>
+</div>
+<div class="panel" data-bind="visible:!model.Processing()">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="portlet box twis">
+                <div class="portlet-title">
+                    <div class="caption1" data-bind="text:opex.titleOpex()"></div>
+                    <div class="caption2" data-bind="visible: opex.visibleSummary()">
+                    <button type="button" onclick="opex.goToSummary()" class="btnnew" data-toggle="tab" href="#summary"><i class="fa fa-chevron-right"></i></button>
+                        <!-- <a class="btnnew" href="#"><i class="fa fa-share"></i></a> -->
+                    </div>
+                    <div class="caption2" data-bind="visible: !opex.visibleSummary()">
+                        <button type="button" onclick="opex.goToChart()" class="btnnew" data-toggle="tab" href="#chartOpex"><i class="fa fa-chevron-left"></i></button>
+                    </div>
+                    <div class="tools tool-padding" data-bind="visible: !opex.visibleSummary()">
+                        <button type="button" onclick="opex.ExportToPdf()" class="btn btn-sm red btn-outline btn-flat"><i class="fa fa-file-pdf-o"></i>&nbsp;Export To PDF</button>
+                        <button onclick="opex.dowloadExcel()" value="Export to excel" type="button" id="#grid" class="btn btn-sm btn-outline green" data-toggle="modal"><i class="fa fa-file-excel-o"></i>&nbsp;Export To Excel </button>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- <label>From :</label>
+                            <input type="text" id="dateStart" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}" class="filter-space" />
+                            <label >To :</label>
+                            <input type="text" id="dateEnd" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}" class="filter-space" /> -->
+
+                            <label>From :</label>
+                            <input type="text" id="dateStart" data-bind="kendoDatePicker:{value:opex.DateStart,format:'dd-MMM-yyyy',change: function(e){opex.onChangeDateStart(e.sender._old)}}" class="filter-space" />
+                            <label>To :</label>
+                            <input type="text" id="dateEnd" data-bind="kendoDatePicker:{value:opex.DateEnd,format:'dd-MMM-yyyy', min:opex.DateStart}" class="filter-space" />
+
+                            <label>Department :</label>
+                            <select id="departmenDropdown" style="width: 200px;"></select>
+                            <label>Sales :</label>
+                            <select id="salesDropdown" style="width: 200px;"></select>
+                            <label>Filter By :</label>
+                            <input id="filterBy" />
+                            <button type="button" onclick="opex.refreshGrid()" class="btn btn-sm btn-refresh"><i class="fa fa-search"></i> Search</button>
+                            <button type="button" onclick="opex.selectedDepartment()" class="btn btn-sm btn-danger"><i class="fa fa-refresh"></i> Clear Selected Filter</button>
+                        </div>
+                    </div>
+                        <br>
+                <!-- <div class="portlet-body"> -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade active in" id="chartOpex">
+                            <div class="tab-pane-content">
+                                <div class= "col-md-12" data-bind="visible: !model.Processing()">
+                                   <div class="col-md-6 top">
+                                        <div class="portlet light">
+                                            <div class="portlet-title">
+                                                <div class="caption">
+                                                    <span class="caption-subject font-dark bold uppercase sizeTopTen">Top 10 Operating Expenses
+                                                </div>                                    
+                                            </div>
+                                            <div class="portlet-body">
+                                                <div class="panel-heading">
+                                                    <div class="row">
+                                                        <div id="TopTenOpexPie"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-6 top">
+                                        <div class="portlet light">
+                                            <div class="portlet-title">
+                                                <div class="caption">
+                                                    <span class="caption-subject font-dark bold uppercase sizeTopTen">Detail Top 10 Operating Expenses 
+                                                </div>                                    
+                                            </div>
+                                            <div class="portlet-body">
+                                                <div class="panel-heading">
+                                                    <div class="row">
+                                                        <div id="TopTenOpexGrid"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class= "col-md-12" data-bind="visible: !model.Processing()">
+                                    <div class="portlet light">
+                                        <div class="portlet-title">
+                                            <div class="caption">
+                                                <span class="caption-subject font-dark bold uppercase sizeTopTen">Annual Operating Expense
+                                            </div>                                    
+                                        </div>
+                                        <div class="portlet-body">
+                                            <div class="panel-heading">
+                                                <div class="row">
+                                                    <div id="TopTenOpexColumn"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="summary">
+                            <div class="tab-pane-content">
+                                <div class= "col-md-12" data-bind="visible: !model.Processing()">
+                                    <div id="gridOpex"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                {{template "_loader2.html"}}
+            </div>
+        </div>
+    </div>
+</div>
+</div>

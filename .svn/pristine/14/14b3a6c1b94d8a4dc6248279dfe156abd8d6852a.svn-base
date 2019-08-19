@@ -1,0 +1,18 @@
+# pack-refs with: peeled fully-peeled 
+da1d296f9780af84bd86bc4a61f47ebd25af1a8c refs/remotes/origin/fix-styles
+a8490cf686defe538b45b05af838d9eeb7d8fe64 refs/remotes/origin/master
+66d64e463ff453ab5723abb76362e5592ea9308d refs/tags/go.go1
+^f864c307ed5488c3759ce6977ec5b3b400e648fa
+9a2a5aab1953cea8f400787329f95937d36ce1b1 refs/tags/go.r59
+^abbe40bca7f65a68f0c8a4410aba36b9aa000dcc
+1cd8cb3d038e4753786dddd64d7b9966a0c21fdf refs/tags/go1.1
+2342eef9692fc50a4e048433610a27206ccb4143 refs/tags/go1.1.1
+d910f0af6051e2aa3f0bb1746ad79c359c1c03bd refs/tags/go1.1.2
+^586a318b19587da79b69f1c7a379c03a654d6e31
+79e9601b0e7d74906e8e2d261357a469f0c4b25f refs/tags/v0.01
+^c0c95c0ddbafd1819ebcf5e5f0280dd4d0fa8890
+26850843f5c6526a993044c3f4da974837c5a04d refs/tags/v0.02
+^c365aeeec4e0df372081609ffb5471494f85bf30
+5914d6ecbc9674c8e0ddaeebccd16fea2d22db20 refs/tags/v0.03
+f2538a69e9389938cfaf88fb9195d5d6a2b2d04a refs/tags/v0.04
+^abbe40bca7f65a68f0c8a4410aba36b9aa000dcc

@@ -1,0 +1,142 @@
+<script type="text/javascript">
+	var userinfo = {
+		usernameh: ko.observable('{{.Username}}'),
+		menunameh: ko.observable('{{.Menuname}}'),
+	}
+</script>
+<script src="{{BaseUrl}}res/main/js/financial-trialbalance.js" type="text/javascript"></script>
+<script src="{{BaseUrl}}res/main/js/financial-trialbalance-PeriodVer.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/financial.css">
+<div class="page-bar">
+	<ul class="page-breadcrumb">
+		<li>
+			<span class="bar">Financial Statement</span>
+			<i class="fa fa-circle"></i>
+		</li>
+		<li>
+			<a href="/financial/trialbalance">Trial Balance</a>
+		</li>
+	</ul>
+	<div class="page-toolbar">
+		<div class="pull-right tooltips btn" data-container="body" data-placement="bottom"
+			data-original-title="date now">
+			<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+			<span class="thin uppercase hidden-xs font2" data-bind="text:trial.DatePageBar"></span>&nbsp;
+		</div>
+	</div>
+</div>
+<div class="panel">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="portlet box twis">
+				<div class="portlet-title">
+					<div class="caption">
+						Trial Balance
+					</div>
+				</div>
+				<div class="portlet-body">
+					<div class="row">
+						<div class="col-md-12">
+							<label>From :</label>
+							<input type="text" id="dateStart"
+								data-bind="kendoDatePicker:{value:trial.dateStart,format:'dd-MMM-yyyy', change: function(e){trial.onChangeDateStart(e.sender._old)}}"
+								class="filter-space" />
+							<label>To :</label>
+							<input type="text" id="dateEnd"
+								data-bind="kendoDatePicker:{value:trial.dateEnd,format:'dd-MMM-yyyy', min:trial.dateStart}"
+								class="filter-space" />
+							<label>Filter By : </label>
+							<input id="filterBy"/>
+							<button type="button" onclick="trial.refreshGrid()" class="btn btn-sm btn-refresh"><i
+									class="fa fa-search"></i> Search</button>
+						</div>
+					</div>
+					<br>
+
+					<div class="portlet-body">
+						<div class="">
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active tab1"><a href="#BalanceSheet"
+										aria-controls="BalanceSheet" role="tab" data-toggle="tab">Balance Sheet</a></li>
+								<li role="presentation"><a href="#Income" class="tabTitle" aria-controls="Income"
+										role="tab" data-toggle="tab">Income Statement</a></li>
+							</ul>
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="BalanceSheet">
+									<div class="tab-pane-content">
+										<div class="panelTrialBalance">
+											<div class="portlet box twis">
+												<div class="portlet-title">
+													<div class="caption">
+														Balance Sheet
+													</div>
+												</div>
+												<div class="portlet-body">
+													<div class="fontweight">
+														AKTIVA
+													</div>
+													<div class="marginBottom" id="gridActiva"></div>
+													<div class="fontweight">
+														PASIVA
+													</div>
+													<div id="gridPasiva"></div>
+												</div>
+												{{template "_loader2.html"}}
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="Income">
+									<div class="tab-pane-content">
+										<div class="panelTrialBalance">
+											<div class="portlet box twis">
+												<div class="portlet-title tabbable-line">
+													<div class="caption incomeTitle">
+														Income Statement
+													</div>
+													<ul class="nav nav-tabs">
+														<li class="active">
+															<a onclick="trial.goIncomegrid(1)" href="#"
+																data-toggle="tab" aria-expanded="true"> Sales And
+																Revenue </a>
+														</li>
+														<li class="">
+															<a onclick="trial.goIncomegrid(2)" href="#"
+																data-toggle="tab" aria-expanded="false"> Operating
+																Expenses </a>
+														</li>
+														<li class="">
+															<a onclick="trial.goIncomegrid(3)" href="#"
+																data-toggle="tab" aria-expanded="false"> Pengahasilan
+																Lain- Lain</a>
+														</li>
+														<li class="">
+															<a onclick="trial.goIncomegrid(4)" href="#"
+																data-toggle="tab" aria-expanded="false"> Beban Lain-Lain
+															</a>
+														</li>
+													</ul>
+												</div>
+												<div class="portlet-body">
+													<div>
+
+													</div>
+													<div id="gridIncomeStatement1"></div>
+													<div id="gridIncomeStatement1retur"></div>
+													<div id="gridIncomeStatement1hpp"></div>
+													<div id="gridIncomeStatement2"></div>
+													<div id="gridIncomeStatement3"></div>
+													<div id="gridIncomeStatement4"></div>
+													<div id="gridTAX"></div>
+												</div>
+												{{template "_loader2.html"}}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>

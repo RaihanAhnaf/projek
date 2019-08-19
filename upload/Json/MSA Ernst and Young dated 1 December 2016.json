@@ -1,0 +1,42 @@
+{
+   "documenttitle": [
+      {
+         "contentfromsystem": "\n    (1) \u00a0\u00a0\u00a0STANDARD CHARTERED BANK incorporated in England and Wales with limited\u00a0liability by Royal Charter 1853 reference number ZC 18 and whose principal office in\u00a0England is at 1 Basinghall Avenue, London, EC2V 5DD\n   ",
+         "data-eaciit-id": "34",
+         "clause": "documenttitle",
+         "data-eaciit-end": "34",
+         "data-eaciit-start": "34",
+         "start-offset": "39",
+         "confidence": 0.67,
+         "end-offset": "73",
+         "common-ancestor-id": "33"
+      }
+   ],
+   "word-count": 51967,
+   "effectivedate": [
+      {
+         "contentfromsystem": "\n    the parties hereto, through their duly authorized officers, have executed this Statement of Work to the Agreement as of the Effective Date.\n   ",
+         "data-eaciit-id": "2213",
+         "clause": "effectivedate",
+         "data-eaciit-end": "2213",
+         "data-eaciit-start": "2213",
+         "start-offset": "17669",
+         "confidence": 0.93,
+         "end-offset": "17691",
+         "common-ancestor-id": "2211"
+      }
+   ],
+   "governinglaw": [
+      {
+         "contentfromsystem": "\n    24.15.1 This Agreement, any Statement of Work and the Services and any\u00a0matters relating thereto shall be governed by and construed in accordance with\u00a0the laws of England.\n   ",
+         "data-eaciit-id": "1042",
+         "clause": "governinglaw",
+         "data-eaciit-end": "1042",
+         "data-eaciit-start": "1042",
+         "start-offset": "14289",
+         "confidence": 0.65,
+         "end-offset": "14317",
+         "common-ancestor-id": "1041"
+      }
+   ]
+}

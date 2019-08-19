@@ -1,0 +1,1319 @@
+package controllers
+
+import (
+	. "../helpers"
+	. "../models"
+
+	"os"
+	"strconv"
+	"time"
+
+	"github.com/eaciit/dbox"
+	knot "github.com/eaciit/knot/knot.v1"
+	tk "github.com/eaciit/toolkit"
+	"github.com/jung-kurt/gofpdf"
+	"gopkg.in/mgo.v2/bson"
+)
+
+func (c *TransactionController) GetSupplier(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	crs, e := c.Ctx.Connection.NewQuery().From("Customer").Select().Where(dbox.Eq("Type", "SUPPLIER")).Cursor(nil)
+	defer crs.Close()
+	results := make([]CustomerModel, 0)
+	e = crs.Fetch(&results, 0, false)
+	if e != nil {
+		CreateResult(false, nil, e.Error())
+	}
+	return c.SetResultInfo(false, "Success", results)
+}
+
+// func (c *TransactionController) GetLastNumberpo(k *knot.WebContext) interface{} {
+// 	k.Config.OutputType = knot.OutputJson
+// 	m := time.Now().UTC().Month()
+// 	y := time.Now().UTC().Year()
+// 	crs, e := c.Ctx.Connection.NewQuery().From("SequencePO").Select().Where(dbox.And(dbox.Eq("collname", "purchaseorder"),
+// 		dbox.Eq("month", int(m)), dbox.Eq("year", y))).Cursor(nil)
+
+// 	defer crs.Close()
+// 	result := []SequencePOModel{}
+// 	e = crs.Fetch(&result, 0, false)
+// 	if e != nil {
+// 		return c.SetResultInfo(true, e.Error(), nil)
+// 	}
+// 	data := struct {
+// 		Number int
+// 		Msg    string
+// 	}{
+// 		Number: 0,
+// 		Msg:    "",
+// 	}
+// 	if len(result) == 0 {
+// 		model := NewSequencePOModel()
+// 		model.Collname = "purchaseorder"
+// 		model.TypePo = "purchaseorder"
+// 		model.Lastnumber = 0
+// 		model.Month = int(m) + 1
+// 		model.Year = y
+// 		// e = c.Ctx.Save(model)
+// 		data.Number = 1
+// 		data.Msg = "Success"
+// 		return data
+// 	}
+// 	sec := result[0]
+// 	sec.Lastnumber = sec.Lastnumber + 1
+// 	data.Number = sec.Lastnumber
+// 	data.Msg = "Success"
+
+// 	return data
+// }
+func (c *TransactionController) GetDataPurchaseOrder(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	p := struct {
+		SupplierCode string
+		TextSearch   string
+		DateStart    string
+		DateEnd      string
+		Filter       bool
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+
+	dateStart, _ := time.Parse("2006-01-02", p.DateStart)
+	End, _ := time.Parse("2006-01-02", p.DateEnd)
+	dateEnd := End.AddDate(0, 0, 1)
+	filter := []*dbox.Filter{}
+	filter = append(filter, dbox.Eq("Status", "PO"))
+	if p.Filter == true {
+		filter = append(filter, dbox.Gte("DatePosting", dateStart))
+		filter = append(filter, dbox.Lt("DatePosting", dateEnd))
+		/*if p.TextSearch != "" {
+			filter = append(filter, dbox.Contains("Remark", p.TextSearch))
+			//filter = append(filter, dbox.Or(dbox.Contains("DocumentNumber", p.TextSearch), dbox.Contains("SupplierName", p.TextSearch), dbox.Contains("Remark", p.TextSearch)))
+		}*/
+		if p.SupplierCode != "" {
+			filter = append(filter, dbox.Eq("SupplierCode", p.SupplierCode))
+		}
+	} else {
+		filter = append(filter, dbox.Gte("DatePosting", dateStart))
+		filter = append(filter, dbox.Lt("DatePosting", dateEnd))
+	}
+	csr, e := c.Ctx.Connection.NewQuery().Select().From("PurchaseOrder").Where(filter...).Cursor(nil)
+
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	defer csr.Close()
+
+	results := []PurchaseOrder{}
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	if p.Filter && len(results) == 0 {
+		return c.SetResultInfo(true, "Please refine your search", nil)
+	}
+
+	return c.SetResultInfo(false, "Success", results)
+}
+func (c *TransactionController) GetDataPurchaseOrderStateless(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	p := struct {
+		SupplierCode string
+		TextSearch   string
+		DateStart    string
+		DateEnd      string
+		Filter       bool
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+
+	dateStart, _ := time.Parse("2006-01-02", p.DateStart)
+	End, _ := time.Parse("2006-01-02", p.DateEnd)
+	dateEnd := End.AddDate(0, 0, 1)
+	filter := []*dbox.Filter{}
+	if p.Filter == true {
+		filter = append(filter, dbox.Gte("DatePosting", dateStart))
+		filter = append(filter, dbox.Lt("DatePosting", dateEnd))
+		/*if p.TextSearch != "" {
+			filter = append(filter, dbox.Contains("Remark", p.TextSearch))
+			//filter = append(filter, dbox.Or(dbox.Contains("DocumentNumber", p.TextSearch), dbox.Contains("SupplierName", p.TextSearch), dbox.Contains("Remark", p.TextSearch)))
+		}*/
+		if p.SupplierCode != "" {
+			filter = append(filter, dbox.Eq("SupplierCode", p.SupplierCode))
+		}
+	} else {
+		filter = append(filter, dbox.Gte("DatePosting", dateStart))
+		filter = append(filter, dbox.Lt("DatePosting", dateEnd))
+	}
+	csr, e := c.Ctx.Connection.NewQuery().Select().From("PurchaseOrder").Where(filter...).Cursor(nil)
+
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	defer csr.Close()
+
+	results := []PurchaseOrder{}
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	if p.Filter && len(results) == 0 {
+		return c.SetResultInfo(true, "Please refine your search", nil)
+	}
+
+	return c.SetResultInfo(false, "Success", results)
+}
+
+func (c *TransactionController) InsertDraftPurchaseOrder(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	t := struct {
+		Data       PurchaseOrder
+		LastNumber int
+	}{}
+
+	err := k.GetPayload(&t)
+	if err != nil {
+		return c.ErrorResultInfo(err.Error(), nil)
+	}
+
+	p := t.Data
+
+	// if p.ID == "" {
+	// 	model.ID = bson.NewObjectId()
+	// 	m := time.Now().UTC().Month()
+	// 	y := time.Now().UTC().Year()
+	// 	crs, e := c.Ctx.Connection.NewQuery().From("SequencePO").Select().Where(dbox.And(dbox.Eq("collname", "purchaseorder"),
+	// 		dbox.Eq("month", int(m)), dbox.Eq("year", y))).Cursor(nil)
+
+	// 	defer crs.Close()
+	// 	result := []SequencePOModel{}
+	// 	e = crs.Fetch(&result, 0, false)
+	// 	if e != nil {
+	// 		return c.SetResultInfo(true, e.Error(), nil)
+	// 	}
+
+	// 	sec := result[0]
+	// 	sec.Lastnumber = t.LastNumber
+	// 	c.Ctx.Save(&sec)
+	// } else {
+	// 	model.ID = p.ID
+
+	// }
+	// m := time.Now().UTC().Month()
+	y := time.Now().UTC().Year()
+	crs, e := c.Ctx.Connection.NewQuery().From("SequencePO").Select().Where(dbox.And(dbox.Eq("collname", "purchaseorder"),
+		dbox.Eq("year", y))).Cursor(nil)
+
+	defer crs.Close()
+	result := []SequencePOModel{}
+	e = crs.Fetch(&result, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	secPO := 0
+	if len(result) == 0 {
+		mod := NewSequencePOModel()
+		mod.Collname = "purchaseorder"
+		mod.TypePo = "purchaseorder"
+		mod.Lastnumber = 1
+		mod.Month = 0
+		mod.Year = y
+		e = c.Ctx.Save(mod)
+		secPO = 1
+	} else {
+		sec := result[0]
+		if p.ID == "" {
+			secPO = sec.Lastnumber
+			sec.Lastnumber = sec.Lastnumber + 1
+			c.Ctx.Save(&sec)
+			secPO = sec.Lastnumber
+		}
+	}
+	strNum := ""
+	if secPO < 10 {
+		strNum = "000"
+	} else if secPO >= 10 && secPO < 100 {
+		strNum = "00"
+	} else if secPO >= 100 && secPO < 1000 {
+		strNum = "0"
+	}
+	model := NewPurchaseOrder()
+	model.ID = p.ID
+	model.DocumentNumber = p.DocumentNumber
+	model.DatePosting = p.DatePosting
+	if p.ID == "" {
+		model.ID = bson.NewObjectId()
+		dateFormat := model.DatePosting.Format("02012006")
+		model.DocumentNumber = "PO/" + dateFormat + "/" + strNum + strconv.Itoa(secPO)
+	}
+	model.Status = p.Status
+	model.AccountCode = p.AccountCode
+	model.DateStr = model.DatePosting.Format("02-Jan-2006")
+	// model.DocumentNumber = "PO/" + dateFormat + "/" + strNum + strconv.Itoa(secPO)
+	model.SupplierCode = p.SupplierCode
+	model.SupplierName = p.SupplierName
+	model.Payment = p.Payment
+	model.Type = p.Type
+	model.TotalIDR = p.TotalIDR
+	model.TotalUSD = p.TotalUSD
+	model.Discount = p.Discount
+	model.VAT = p.VAT
+	model.GrandTotalIDR = p.GrandTotalIDR
+	model.GrandTotalUSD = p.GrandTotalUSD
+	model.Rate = p.Rate
+	model.User = k.Session("username").(string)
+	model.Currency = p.Currency
+	model.DownPayment = p.DownPayment
+
+	crs, e = c.Ctx.Connection.NewQuery().From("Location").Select().Where(dbox.Eq("LocationID", 1000)).Cursor(nil)
+	defer crs.Close()
+	resLoc := []LocationModel{}
+	e = crs.Fetch(&resLoc, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	model.LocationID = 1000
+	model.LocationName = "PUSAT"
+	if len(resLoc) > 0 {
+		model.LocationName = resLoc[0].LocationName
+	}
+
+	// model.StatusPayment = p.StatusPayment
+	if p.ListDetail[0].Id == "" {
+		for key, _ := range p.ListDetail {
+			p.ListDetail[key].Id = bson.NewObjectId()
+		}
+	}
+
+	model.ListDetail = p.ListDetail
+	model.Remark = p.Remark
+	c.Ctx.Save(model)
+	history := HistoryTrackPurchase{}
+	history.Id = bson.NewObjectId()
+	history.DocumentNumber = model.DocumentNumber
+	history.DateCreated = p.DatePosting
+	history.DateStr = model.DateStr
+	history.DatePO = model.DatePosting
+	history.Status = "PO"
+	history.Remark = model.Remark
+	history.SupplierCode = model.SupplierCode
+	history.SupplierName = model.SupplierName
+	crs, e = c.Ctx.Connection.NewQuery().Select().Where(dbox.Eq("DocumentNumber", model.DocumentNumber)).From("TrackingPurchase").Cursor(nil)
+	defer crs.Close()
+	if crs.Count() == 0 {
+		po := NewTrackPurchaseModel()
+		po.ID = bson.NewObjectId()
+		po.DocumentNumber = model.DocumentNumber
+		po.DateCreated = p.DatePosting
+		po.DateStr = model.DateStr
+		po.DatePO = model.DatePosting
+		po.Status = "PO"
+		po.Remark = model.Remark
+		po.SupplierCode = model.SupplierCode
+		po.SupplierName = model.SupplierName
+		po.History = append(po.History, history)
+		c.Ctx.Save(po)
+	} else {
+		resultPO := []TrackPurchaseModel{}
+		e = crs.Fetch(&resultPO, 0, false)
+		if e != nil {
+			return c.SetResultInfo(true, e.Error(), nil)
+		}
+		mod := resultPO[0]
+		po := TrackPurchaseModel{}
+		po.ID = mod.ID
+		po.DocumentNumber = model.DocumentNumber
+		po.DateCreated = p.DatePosting
+		po.DateStr = model.DateStr
+		po.DatePO = model.DatePosting
+		po.Status = "PO"
+		po.Remark = model.Remark
+		po.SupplierCode = model.SupplierCode
+		po.SupplierName = model.SupplierName
+		po.History = append(po.History, history)
+		c.Ctx.Save(&po)
+	}
+
+	if p.ID == "" {
+		c.LogActivity("Purchase Order", "Insert Purchaseorder", p.DocumentNumber, k)
+	} else {
+		c.LogActivity("Purchase Order", "Update Purchaseorder", p.DocumentNumber, k)
+	}
+
+	return c.SetResultOK(nil)
+}
+func (c *TransactionController) InsertDraftPurchaseOrderInventory(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	t := struct {
+		Data       PurchaseInventory
+		LastNumber int
+	}{}
+
+	err := k.GetPayload(&t)
+	if err != nil {
+		return c.ErrorResultInfo(err.Error(), nil)
+	}
+
+	p := t.Data
+
+	m := time.Now().UTC().Month()
+	y := time.Now().UTC().Year()
+	crs, e := c.Ctx.Connection.NewQuery().From("SequencePO").Select().Where(dbox.And(dbox.Eq("collname", "purchaseorderinventory"),
+		dbox.Eq("month", int(m)), dbox.Eq("year", y))).Cursor(nil)
+
+	defer crs.Close()
+	result := []SequencePOModel{}
+	e = crs.Fetch(&result, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	secPO := 0
+	if len(result) == 0 {
+		mod := NewSequencePOModel()
+		mod.Collname = "purchaseorderinventory"
+		mod.TypePo = "purchaseorderinventory"
+		mod.Lastnumber = 1
+		mod.Month = int(m)
+		mod.Year = y
+		e = c.Ctx.Save(mod)
+		secPO = 1
+	} else {
+		sec := result[0]
+		if p.ID == "" {
+			secPO = sec.Lastnumber
+			sec.Lastnumber = sec.Lastnumber + 1
+			c.Ctx.Save(&sec)
+			secPO = sec.Lastnumber
+		}
+	}
+	strNum := ""
+	if secPO < 10 {
+		strNum = "000"
+	} else if secPO >= 10 && secPO < 100 {
+		strNum = "00"
+	} else if secPO >= 100 && secPO < 1000 {
+		strNum = "0"
+	}
+	model := NewPurchaseInventory()
+	model.ID = p.ID
+	model.DocumentNumber = p.DocumentNumber
+	model.DatePosting = p.DatePosting
+	if p.ID == "" {
+		model.ID = bson.NewObjectId()
+		dateFormat := model.DatePosting.Format("02012006")
+		model.DocumentNumber = "POINV/" + dateFormat + "/" + strNum + strconv.Itoa(secPO)
+	}
+	model.Status = p.Status
+	model.AccountCode = p.AccountCode
+	model.DateStr = model.DatePosting.Format("02-Jan-2006")
+	// model.DocumentNumber = "PO/" + dateFormat + "/" + strNum + strconv.Itoa(secPO)
+	model.SupplierCode = p.SupplierCode
+	model.SupplierName = p.SupplierName
+	model.Payment = p.Payment
+	model.Type = p.Type
+	model.TotalIDR = p.TotalIDR
+	model.TotalUSD = p.TotalUSD
+	model.Discount = p.Discount
+	model.VAT = p.VAT
+	model.GrandTotalIDR = p.GrandTotalIDR
+	model.GrandTotalUSD = p.GrandTotalUSD
+	model.Rate = p.Rate
+	model.User = k.Session("username").(string)
+	model.Currency = p.Currency
+	model.DownPayment = p.DownPayment
+	model.SalesCode = p.SalesCode
+	model.SalesName = p.SalesName
+
+	crs, e = c.Ctx.Connection.NewQuery().From("Location").Select().Where(dbox.Eq("LocationID", 1000)).Cursor(nil)
+	defer crs.Close()
+	resLoc := []LocationModel{}
+	e = crs.Fetch(&resLoc, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	model.LocationID = 1000
+	model.LocationName = "PUSAT"
+	if len(resLoc) > 0 {
+		model.LocationName = resLoc[0].LocationName
+	}
+
+	// model.StatusPayment = p.StatusPayment
+	if p.ListDetail[0].Id == "" {
+		for key, _ := range p.ListDetail {
+			p.ListDetail[key].Id = bson.NewObjectId()
+		}
+	}
+
+	model.ListDetail = p.ListDetail
+	model.Remark = p.Remark
+	c.Ctx.Save(model)
+
+	history := HistoryTrackPurchaseInventory{}
+	history.Id = bson.NewObjectId()
+	history.DocumentNumber = model.DocumentNumber
+	history.DateCreated = p.DatePosting
+	history.DateStr = model.DateStr
+	history.DatePO = model.DatePosting
+	history.Status = "PO"
+	history.Remark = model.Remark
+	history.SupplierCode = model.SupplierCode
+	history.SupplierName = model.SupplierName
+	crs, e = c.Ctx.Connection.NewQuery().Select().Where(dbox.Eq("DocumentNumber", model.DocumentNumber)).From("TrackingPurchaseInventory").Cursor(nil)
+	defer crs.Close()
+	if crs.Count() == 0 {
+		po := NewTrackPurchaseInventoryModel()
+		po.ID = bson.NewObjectId()
+		po.DocumentNumber = model.DocumentNumber
+		po.DateCreated = p.DatePosting
+		po.DateStr = model.DateStr
+		po.DatePO = model.DatePosting
+		po.Status = "PO"
+		po.Remark = model.Remark
+		po.SupplierCode = model.SupplierCode
+		po.SalesCode = model.SalesCode
+		po.SupplierName = model.SupplierName
+		po.History = append(po.History, history)
+		c.Ctx.Save(po)
+	} else {
+		resultPO := []TrackPurchaseInventoryModel{}
+		e = crs.Fetch(&resultPO, 0, false)
+		if e != nil {
+			return c.SetResultInfo(true, e.Error(), nil)
+		}
+		mod := resultPO[0]
+		po := TrackPurchaseInventoryModel{}
+		po.ID = mod.ID
+		po.DocumentNumber = model.DocumentNumber
+		po.DateCreated = p.DatePosting
+		po.DateStr = model.DateStr
+		po.DatePO = model.DatePosting
+		po.Status = "PO"
+		po.Remark = model.Remark
+		po.SupplierCode = model.SupplierCode
+		po.SupplierName = model.SupplierName
+		po.SalesCode = model.SalesCode
+		po.History = append(po.History, history)
+		c.Ctx.Save(&po)
+	}
+
+	if p.ID == "" {
+		c.LogActivity("Purchase Order Inventory", "Insert Purchaseorder Inventory", p.DocumentNumber, k)
+	} else {
+		c.LogActivity("Purchase Order Inventory", "Update Purchaseorder Inventory", p.DocumentNumber, k)
+	}
+
+	return c.SetResultOK(nil)
+}
+func (c *TransactionController) DeleteDraft(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+
+	p := struct {
+		Id             bson.ObjectId
+		DocumentNumber string
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		c.WriteLog(e)
+	}
+
+	result := new(PurchaseOrder)
+	e = c.Ctx.GetById(result, p.Id)
+	if e != nil {
+		c.WriteLog(e)
+	}
+	e = c.Ctx.Delete(result)
+	crs, e := c.Ctx.Connection.NewQuery().Select().Where(dbox.Eq("DocumentNumber", p.DocumentNumber)).From("TrackingPurchase").Cursor(nil)
+	defer crs.Close()
+	resultPO := []TrackPurchaseModel{}
+	e = crs.Fetch(&resultPO, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	mod := resultPO[0]
+	e = c.Ctx.Delete(&mod)
+	c.LogActivity("Purchase Order", "Delete purchase order draft", p.DocumentNumber, k)
+	return c.SetResultInfo(false, "OK", nil)
+}
+
+func (c *TransactionController) ExportToPdfPurchaseOrder(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	p := struct {
+		Id bson.ObjectId
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		c.WriteLog(e)
+	}
+
+	csr, e := c.Ctx.Connection.NewQuery().Select().From("PurchaseOrder").Where(dbox.Eq("_id", p.Id)).Cursor(nil)
+	if e != nil {
+		tk.Println("query", e.Error())
+	}
+	defer csr.Close()
+	results := []PurchaseOrder{}
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		tk.Println("fetch", e.Error())
+	}
+	DATA := results[0]
+	// tk.Println(DATA)
+
+	if DATA.Currency == "USD" {
+		for i, _ := range DATA.ListDetail {
+			DATA.ListDetail[i].PriceIDR = 0
+			DATA.ListDetail[i].AmountIDR = 0
+		}
+		// discount = DATA.Discount
+	} else {
+		for i, _ := range DATA.ListDetail {
+			DATA.ListDetail[i].PriceUSD = 0
+			DATA.ListDetail[i].AmountUSD = 0
+		}
+	}
+
+	csr, e = c.Ctx.Connection.NewQuery().Select().From("Customer").Where(dbox.Eq("Kode", DATA.SupplierCode)).Cursor(nil)
+	if e != nil {
+		tk.Println("query", e.Error())
+	}
+	defer csr.Close()
+	resultsSupp := []CustomerModel{}
+	e = csr.Fetch(&resultsSupp, 0, false)
+	if e != nil {
+		tk.Println("fetch", e.Error())
+	}
+	supp := resultsSupp[0]
+	//user
+	csr, e = c.Ctx.Connection.NewQuery().Select().From("SysUsers").Where(dbox.Eq("username", DATA.User)).Cursor(nil)
+	if e != nil {
+		tk.Println("query", e.Error())
+	}
+	defer csr.Close()
+	User := SysUserModel{}
+	e = csr.Fetch(&User, 1, false)
+	if e != nil {
+		tk.Println("fetch", e.Error())
+	}
+	pdf := gofpdf.New("L", "mm", "A5", c.FontPath)
+	pdf.SetDrawColor(2, 2, 2)
+	pdf.AddFont("Century_Gothic", "", "Century_Gothic.json")
+	pdf.AddFont("Century_Gothicb", "B", "Century_Gothicb.json")
+	pdf.AddPage()
+	x_defaulft := 10.0
+	pdf.SetFont("Century_Gothicb", "B", 15)
+	pdf.SetXY(79, 10)
+	pdf.CellFormat(0, 12, "PURCHASE ORDER", "", 0, "L", false, 0, "")
+	pdf.Ln(5)
+	pdf.SetX(85)
+
+	pdf.SetFont("Century_Gothicb", "B", 10)
+	pdf.CellFormat(0, 12, DATA.DocumentNumber, "", 0, "L", false, 0, "")
+	pdf.SetFont("Century_Gothic", "", 8)
+	y0 := pdf.GetY() + 5
+	//
+	pdf.SetXY(x_defaulft, y0)
+	pdf.MultiCell(80, 3, supp.Kode, "", "L", false) // customer name
+	pdf.SetXY(140, y0)
+	pdf.MultiCell(20, 3, "Date", "", "L", false) // date
+	date := DATA.DatePosting.Format("January 02, 2006")
+	pdf.SetXY(160, y0)
+	pdf.MultiCell(40, 3, ": "+date, "", "L", false) // date
+	pdf.Ln(1)
+	//
+	y0 = pdf.GetY()
+	pdf.SetXY(x_defaulft, y0)
+	pdf.MultiCell(80, 3, supp.Name, "", "L", false) // customer name
+	pdf.SetXY(140, y0)
+	pdf.MultiCell(20, 3, "Due Date", "", "L", false) // date
+	dueDate := DATA.DatePosting.AddDate(0, 0, supp.TrxCode).Format("January 02, 2006")
+	pdf.SetXY(160, y0)
+	pdf.MultiCell(40, 3, ": "+dueDate, "", "L", false) // date
+	pdf.Ln(1)
+	//
+	y0 = pdf.GetY()
+	pdf.SetXY(x_defaulft, y0)
+	pdf.MultiCell(80, 3, "Phone : "+supp.NoTelp, "", "L", false) // phone
+	pdf.SetXY(30, y0)
+	pdf.MultiCell(0, 3, "", "", "L", false) //phone
+	pdf.SetXY(140, y0)
+	pdf.MultiCell(20, 3, "DOC No.", "", "L", false) // DocumentNo
+	pdf.SetXY(160, y0)
+	pdf.MultiCell(40, 3, ": "+DATA.DocumentNumber, "", "L", false) // DocumentNo
+	pdf.Ln(1)
+	//
+	y0 = pdf.GetY()
+	pdf.SetXY(x_defaulft, y0)
+	pdf.MultiCell(80, 3, supp.Address, "", "L", false) // address
+	pdf.SetXY(140, y0)
+	// pdf.MultiCell(20, 3, "Sales", "", "L", false) // sales
+	// pdf.SetXY(160, y0)
+	// pdf.MultiCell(40, 3, ": "+DATA.SalesName, "", "L", false) // sales
+	pdf.SetY(pdf.GetY())
+	pdf.Ln(9)
+	//
+	y0 = pdf.GetY()
+	pdf.SetXY(x_defaulft, y0)
+	pdf.MultiCell(20, 3, "Rek Bank :", "", "L", false) // rek bank
+	pdf.SetXY(30, y0)
+	if supp.Bank != "" && supp.AccountNo != "" {
+		pdf.MultiCell(60, 3, supp.Bank+"-"+supp.AccountNo, "", "L", false) //rek bank
+	} else {
+		pdf.MultiCell(60, 3, "", "", "L", false) //rek bank
+	}
+	pdf.Ln(1)
+	//
+	y0 = pdf.GetY()
+	invHead := []string{"No", "", "Item", "Qty", "Price", "Disc. Amount", "Amount"}
+	widHead := []float64{10.0, 0.0, 80.0, 10.0, 30.0, 30.0, 30.0}
+	for i, head := range invHead {
+		pdf.SetY(y0)
+		x := x_defaulft
+		for j, w := range widHead {
+			if i > j {
+				x += w
+			} else {
+				x += 0.0
+			}
+		}
+		pdf.SetX(x)
+
+		pdf.MultiCell(widHead[i], 4, head, "TB", "C", false)
+	}
+	// grid
+	y0 = pdf.GetY()
+	lastbigest := y0
+	for i, list := range DATA.ListDetail {
+		yg := pdf.GetY()
+		x := x_defaulft
+		pdf.SetX(x)
+		number := i + 1
+		numberstr := strconv.Itoa(number)
+		pdf.MultiCell(widHead[0], 4, numberstr, "", "C", false)
+		pdf.SetY(yg)
+		x += widHead[0]
+		pdf.SetX(x)
+		a0 := pdf.GetY()
+		pdf.MultiCell(widHead[1], 4, "", "", "L", false)
+		pdf.SetY(yg)
+		x += widHead[1]
+		pdf.SetX(x)
+		a1 := pdf.GetY()
+		pdf.MultiCell(widHead[2], 4, list.Item, "", "L", false)
+		pdf.SetY(yg)
+		x += widHead[2]
+		pdf.SetX(x)
+		a2 := pdf.GetY()
+		pdf.MultiCell(widHead[3], 4, strconv.Itoa(list.Qty), "", "L", false)
+		pdf.SetY(yg)
+		x += widHead[3]
+		pdf.SetX(x)
+		a3 := pdf.GetY()
+		priceidr := tk.Sprintf("%.2f", list.PriceIDR)
+		pdf.MultiCell(widHead[4], 4, c.ConvertToCurrency(priceidr), "", "R", false)
+		pdf.SetY(yg)
+		x += widHead[4]
+		pdf.SetX(x)
+		a4 := pdf.GetY()
+		pdf.MultiCell(widHead[5], 4, "-", "", "C", false)
+		pdf.SetY(yg)
+		x += widHead[5]
+		pdf.SetX(x)
+		a5 := pdf.GetY()
+		amount := tk.Sprintf("%.2f", list.AmountIDR)
+		pdf.MultiCell(widHead[6], 4, c.ConvertToCurrency(amount), "", "R", false)
+		a6 := pdf.GetY()
+		allA := []float64{a0, a1, a2, a3, a4, a5, a6}
+		var n, biggest float64
+		for _, v := range allA {
+			if v > n {
+				n = v
+				biggest = n
+			}
+		}
+		pdf.SetY(biggest)
+		lastbigest = biggest
+	}
+	y0 = lastbigest
+	// if y0 < 80 {
+	pdf.Line(x_defaulft, 80, 200, 80)
+	y0 = 80.0
+	// } else {
+	// 	pdf.Line(x_defaulft, y0, 200, y0)
+	// }
+	pdf.SetY(y0)
+	pdf.Ln(2)
+	y0 = pdf.GetY()
+	pdf.SetY(y0)
+	pdf.MultiCell(20, 3, "Remarks :", "", "L", false) // Remark
+	pdf.SetXY(30, y0)
+	pdf.MultiCell(40, 3, DATA.Remark, "", "L", false) // Remark
+	pdf.Ln(5)
+	//
+	y0 = pdf.GetY()
+	pdf.SetY(y0)
+	yTotal := pdf.GetY()
+	headBottom := []string{"Prepared by :", "Approved by", "Finance", ""}
+	widthBottom := []float64{40.0, 30.0, 30.0, 30.0}
+	for i, head := range headBottom {
+		pdf.SetY(y0)
+		x := x_defaulft
+		for j, w := range widthBottom {
+			if i > j {
+				x += w
+			} else {
+				x += 0.0
+			}
+		}
+		pdf.SetX(x)
+		if i == 0 {
+			pdf.MultiCell(widthBottom[i], 4, head, "", "L", false)
+		} else {
+			pdf.MultiCell(widthBottom[i], 4, head, "", "C", false)
+		}
+	}
+	pdf.Ln(15)
+	yB := pdf.GetY()
+	xx := x_defaulft
+	pdf.SetX(xx)
+	pdf.SetY(yB)
+	pdf.MultiCell(widthBottom[0], 4, User.Fullname, "", "L", false)
+	b0 := pdf.GetY()
+	xx += widthBottom[0]
+	pdf.SetXY(xx, yB)
+	pdf.MultiCell(widthBottom[1], 4, "(                          )", "", "C", false)
+	b1 := pdf.GetY()
+	xx += widthBottom[1]
+	pdf.SetXY(xx, yB)
+	pdf.MultiCell(widthBottom[2], 4, "(                          )", "", "C", false)
+	b2 := pdf.GetY()
+	// xx += widthBottom[2]
+	// pdf.SetXY(xx, yB)
+	// pdf.MultiCell(widthBottom[3], 4, "(                          )", "", "C", false)
+	b3 := pdf.GetY()
+	allB := []float64{b0, b1, b2, b3}
+	var n, biggestB float64
+	for _, v := range allB {
+		if v > n {
+			n = v
+			biggestB = n
+		}
+	}
+	lastY := biggestB
+	// total etc
+	xtotal := 150.0
+	yTotal += 0.7
+	pdf.SetXY(xtotal, yTotal)
+	pdf.MultiCell(20, 3, "Total ", "", "L", false) // Total
+	pdf.SetXY(170, yTotal)
+	total := tk.Sprintf("%.2f", DATA.TotalIDR)
+	pdf.MultiCell(30, 3, c.ConvertToCurrency(total), "", "R", false) // Total
+	pdf.Ln(1)
+	//
+	yTotal = pdf.GetY()
+	pdf.SetXY(xtotal, yTotal)
+	pdf.MultiCell(20, 3, "Discount ", "", "L", false) // discount
+	pdf.SetXY(170, yTotal)
+	valuediscount := DATA.Discount / 100 * DATA.TotalIDR
+	discount := tk.Sprintf("%.2f", valuediscount)
+	pdf.MultiCell(30, 3, c.ConvertToCurrency(discount), "", "R", false) // discount
+	pdf.Ln(1)
+	//
+	yTotal = pdf.GetY()
+	pdf.SetXY(xtotal, yTotal)
+	pdf.MultiCell(20, 3, "VAT 10% ", "", "L", false) // vat
+	pdf.SetXY(170, yTotal)
+	vat := tk.Sprintf("%.2f", DATA.VAT)
+	pdf.MultiCell(30, 3, c.ConvertToCurrency(vat), "", "R", false) // vat
+	pdf.Ln(1)
+	//grantototal
+	yB += 0.7
+	pdf.SetFont("Century_Gothicb", "B", 8)
+	pdf.SetXY(xtotal, yB)
+	pdf.MultiCell(20, 4, "Grand Total ", "TB", "L", false) // grandtotal
+	pdf.SetXY(170, yB)
+	grandTotal := tk.Sprintf("%.2f", DATA.GrandTotalIDR)
+	pdf.MultiCell(30, 4, c.ConvertToCurrency(grandTotal), "TB", "R", false) // grandtotal
+	pdf.Ln(1)
+	// end bottom
+	y0 = lastY
+	pdf.SetY(y0)
+	pdf.Ln(2)
+	// y0 = pdf.GetY()
+	pdf.SetFont("Century_Gothic", "", 8)
+	// pdf.SetXY(30, y0)
+	// pdf.MultiCell(150, 3, "Barang yang sudah dibeli tidak bisa di kembalikan / di tukar dengan uang", "", "L", false) // alert
+	// pdf.Ln(2)
+	y0 = pdf.GetY()
+	pdf.SetXY(10, y0)
+	pdf.MultiCell(20, 3, "Print Date :", "", "L", false)
+	pdf.SetXY(30, y0)
+	datenow := time.Now().Format("January 02, 2006")
+	pdf.MultiCell(150, 3, datenow, "", "L", false) // date print
+	e = os.RemoveAll(c.PdfPath + "/purchaseorder")
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), "")
+	}
+	e = os.MkdirAll(c.PdfPath+"/purchaseorder", 0777)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), "")
+	}
+	namepdf := "-purchaseorder.pdf"
+	FixName := time.Now().Format("2006-01-02T150405") + namepdf
+	fileName := FixName
+	location := c.PdfPath + "/purchaseorder"
+	e = pdf.OutputFileAndClose(location + "/" + fileName)
+
+	if e != nil {
+		// e.Error()
+		return c.SetResultInfo(true, e.Error(), "")
+	}
+	return fileName
+}
+func (c *TransactionController) ExportToPdfPurchaseOrderInventory(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	p := struct {
+		Id bson.ObjectId
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		c.WriteLog(e)
+	}
+
+	csr, e := c.Ctx.Connection.NewQuery().Select().From("PurchaseInventory").Where(dbox.Eq("_id", p.Id)).Cursor(nil)
+	if e != nil {
+		tk.Println("query", e.Error())
+	}
+	defer csr.Close()
+	results := []PurchaseInventory{}
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		tk.Println("fetch", e.Error())
+	}
+	DATA := results[0]
+
+	if DATA.Currency == "USD" {
+		for i, _ := range DATA.ListDetail {
+			DATA.ListDetail[i].PriceIDR = 0
+			DATA.ListDetail[i].AmountIDR = 0
+		}
+		// discount = DATA.Discount
+	} else {
+		for i, _ := range DATA.ListDetail {
+			DATA.ListDetail[i].PriceUSD = 0
+			DATA.ListDetail[i].AmountUSD = 0
+		}
+	}
+	csr, e = c.Ctx.Connection.NewQuery().Select().From("Customer").Where(dbox.Eq("Kode", DATA.SupplierCode)).Cursor(nil)
+	if e != nil {
+		tk.Println("query", e.Error())
+	}
+	defer csr.Close()
+	resultsSupp := []CustomerModel{}
+	e = csr.Fetch(&resultsSupp, 0, false)
+	if e != nil {
+		tk.Println("fetch", e.Error())
+	}
+	supp := resultsSupp[0]
+	//user
+	csr, e = c.Ctx.Connection.NewQuery().Select().From("SysUsers").Where(dbox.Eq("username", DATA.User)).Cursor(nil)
+	if e != nil {
+		tk.Println("query", e.Error())
+	}
+	defer csr.Close()
+	User := SysUserModel{}
+	e = csr.Fetch(&User, 1, false)
+	if e != nil {
+		tk.Println("fetch", e.Error())
+	}
+	pdf := gofpdf.New("L", "mm", "A5", c.FontPath)
+	pdf.SetDrawColor(2, 2, 2)
+	pdf.AddFont("Century_Gothic", "", "Century_Gothic.json")
+	pdf.AddFont("Century_Gothicb", "B", "Century_Gothicb.json")
+	pdf.AddPage()
+	x_defaulft := 10.0
+	pdf.SetFont("Century_Gothicb", "B", 15)
+	pdf.SetXY(82, 10)
+	pdf.CellFormat(0, 12, "PURCHASE ORDER", "", 0, "L", false, 0, "")
+	pdf.Ln(5)
+	pdf.SetX(85)
+
+	pdf.SetFont("Century_Gothicb", "B", 10)
+	pdf.CellFormat(0, 12, DATA.DocumentNumber, "", 0, "L", false, 0, "")
+	pdf.SetFont("Century_Gothic", "", 8)
+	y0 := pdf.GetY() + 5
+	//
+	pdf.SetXY(x_defaulft, y0)
+	pdf.MultiCell(80, 3, supp.Kode, "", "L", false) // customer name
+	pdf.SetXY(140, y0)
+	pdf.MultiCell(20, 3, "Date", "", "L", false) // date
+	date := DATA.DatePosting.Format("January 02, 2006")
+	pdf.SetXY(160, y0)
+	pdf.MultiCell(40, 3, ": "+date, "", "L", false) // date
+	pdf.Ln(1)
+	//
+	y0 = pdf.GetY()
+	pdf.SetXY(x_defaulft, y0)
+	pdf.MultiCell(80, 3, supp.Name, "", "L", false) // customer name
+	pdf.SetXY(140, y0)
+	pdf.MultiCell(20, 3, "Due Date", "", "L", false) // date
+	dueDate := DATA.DatePosting.AddDate(0, 0, 30).Format("January 02, 2006")
+	pdf.SetXY(160, y0)
+	pdf.MultiCell(40, 3, ": "+dueDate, "", "L", false) // date
+	pdf.Ln(1)
+	//
+	y0 = pdf.GetY()
+	pdf.SetXY(x_defaulft, y0)
+	pdf.MultiCell(20, 3, "Phone :", "", "L", false) // phone
+	pdf.SetXY(30, y0)
+	pdf.MultiCell(60, 3, supp.NoTelp, "", "L", false) //phone
+	pdf.SetXY(140, y0)
+	pdf.MultiCell(20, 3, "DOC No.", "", "L", false) // DocumentNo
+	pdf.SetXY(160, y0)
+	pdf.MultiCell(40, 3, ": "+DATA.DocumentNumber, "", "L", false) // DocumentNo
+	pdf.Ln(1)
+	//
+	y0 = pdf.GetY()
+	pdf.SetXY(x_defaulft, y0)
+	pdf.MultiCell(80, 3, supp.Address, "", "L", false) // address
+	pdf.SetXY(140, y0)
+	pdf.MultiCell(20, 3, "Sales", "", "L", false) // sales
+	pdf.SetXY(160, y0)
+	pdf.MultiCell(40, 3, ": "+DATA.SalesName, "", "L", false) // sales
+	pdf.Ln(5)
+	//
+	y0 = pdf.GetY()
+	pdf.SetXY(x_defaulft, y0)
+	pdf.MultiCell(20, 3, "Rek Bank :", "", "L", false) // rek bank
+	pdf.SetXY(30, y0)
+	if supp.Bank != "" && supp.AccountNo != "" {
+		pdf.MultiCell(60, 3, supp.Bank+"-"+supp.AccountNo, "", "L", false) //rek bank
+	} else {
+		pdf.MultiCell(60, 3, "", "", "L", false) //rek bank
+	}
+	pdf.Ln(1)
+	//
+	y0 = pdf.GetY()
+	invHead := []string{"No", "Code Item", "Item", "Qty", "Price", "Disc. Amount", "Amount"}
+	widHead := []float64{10.0, 30.0, 50.0, 10.0, 30.0, 30.0, 30.0}
+	for i, head := range invHead {
+		pdf.SetY(y0)
+		x := x_defaulft
+		for j, w := range widHead {
+			if i > j {
+				x += w
+			} else {
+				x += 0.0
+			}
+		}
+		pdf.SetX(x)
+
+		pdf.MultiCell(widHead[i], 4, head, "TB", "C", false)
+	}
+	// grid
+	y0 = pdf.GetY()
+	lastbigest := y0
+	for i, list := range DATA.ListDetail {
+		yg := pdf.GetY()
+		x := x_defaulft
+		pdf.SetX(x)
+		number := i + 1
+		numberstr := strconv.Itoa(number)
+		pdf.MultiCell(widHead[0], 4, numberstr, "", "C", false)
+		pdf.SetY(yg)
+		x += widHead[0]
+		pdf.SetX(x)
+		a0 := pdf.GetY()
+		pdf.MultiCell(widHead[1], 4, list.CodeItem, "", "L", false)
+		pdf.SetY(yg)
+		x += widHead[1]
+		pdf.SetX(x)
+		a1 := pdf.GetY()
+		pdf.MultiCell(widHead[2], 4, list.Item, "", "L", false)
+		pdf.SetY(yg)
+		x += widHead[2]
+		pdf.SetX(x)
+		a2 := pdf.GetY()
+		pdf.MultiCell(widHead[3], 4, strconv.Itoa(list.Qty), "", "L", false)
+		pdf.SetY(yg)
+		x += widHead[3]
+		pdf.SetX(x)
+		a3 := pdf.GetY()
+		priceidr := tk.Sprintf("%.2f", list.PriceIDR)
+		pdf.MultiCell(widHead[4], 4, c.ConvertToCurrency(priceidr), "", "R", false)
+		pdf.SetY(yg)
+		x += widHead[4]
+		pdf.SetX(x)
+		a4 := pdf.GetY()
+		pdf.MultiCell(widHead[5], 4, "-", "", "C", false)
+		pdf.SetY(yg)
+		x += widHead[5]
+		pdf.SetX(x)
+		a5 := pdf.GetY()
+		amount := tk.Sprintf("%.2f", list.AmountIDR)
+		pdf.MultiCell(widHead[6], 4, c.ConvertToCurrency(amount), "", "R", false)
+		a6 := pdf.GetY()
+		allA := []float64{a0, a1, a2, a3, a4, a5, a6}
+		var n, biggest float64
+		for _, v := range allA {
+			if v > n {
+				n = v
+				biggest = n
+			}
+		}
+		pdf.SetY(biggest)
+		lastbigest = biggest
+	}
+	y0 = lastbigest
+	// if y0 < 80 {
+	pdf.Line(x_defaulft, 80, 200, 80)
+	y0 = 80.0
+	// } else {
+	// 	pdf.Line(x_defaulft, y0, 200, y0)
+	// }
+	pdf.SetY(y0)
+	pdf.Ln(2)
+	y0 = pdf.GetY()
+	pdf.SetY(y0)
+	pdf.MultiCell(20, 3, "Remarks :", "", "L", false) // Remark
+	pdf.SetXY(30, y0)
+	pdf.MultiCell(40, 3, DATA.Remark, "", "L", false) // Remark
+	pdf.Ln(5)
+	//
+	y0 = pdf.GetY()
+	pdf.SetY(y0)
+	yTotal := pdf.GetY()
+	headBottom := []string{"Prepared by :", "Approved by", "Finance", ""}
+	widthBottom := []float64{40.0, 30.0, 30.0, 30.0}
+	for i, head := range headBottom {
+		pdf.SetY(y0)
+		x := x_defaulft
+		for j, w := range widthBottom {
+			if i > j {
+				x += w
+			} else {
+				x += 0.0
+			}
+		}
+		pdf.SetX(x)
+		if i == 0 {
+			pdf.MultiCell(widthBottom[i], 4, head, "", "L", false)
+		} else {
+			pdf.MultiCell(widthBottom[i], 4, head, "", "C", false)
+		}
+	}
+	pdf.Ln(15)
+	yB := pdf.GetY()
+	xx := x_defaulft
+	pdf.SetX(xx)
+	pdf.SetY(yB)
+	pdf.MultiCell(widthBottom[0], 4, User.Fullname, "", "L", false)
+	b0 := pdf.GetY()
+	xx += widthBottom[0]
+	pdf.SetXY(xx, yB)
+	pdf.MultiCell(widthBottom[1], 4, "(                          )", "", "C", false)
+	b1 := pdf.GetY()
+	xx += widthBottom[1]
+	pdf.SetXY(xx, yB)
+	pdf.MultiCell(widthBottom[2], 4, "(                          )", "", "C", false)
+	b2 := pdf.GetY()
+	// xx += widthBottom[2]
+	// pdf.SetXY(xx, yB)
+	// pdf.MultiCell(widthBottom[3], 4, "(                          )", "", "C", false)
+	b3 := pdf.GetY()
+	allB := []float64{b0, b1, b2, b3}
+	var n, biggestB float64
+	for _, v := range allB {
+		if v > n {
+			n = v
+			biggestB = n
+		}
+	}
+	lastY := biggestB
+	// total etc
+	xtotal := 150.0
+	yTotal += 0.7
+	pdf.SetXY(xtotal, yTotal)
+	pdf.MultiCell(20, 3, "Total ", "", "L", false) // Total
+	pdf.SetXY(170, yTotal)
+	total := tk.Sprintf("%.2f", DATA.TotalIDR)
+	pdf.MultiCell(30, 3, c.ConvertToCurrency(total), "", "R", false) // Total
+	pdf.Ln(1)
+	//
+	yTotal = pdf.GetY()
+	pdf.SetXY(xtotal, yTotal)
+	pdf.MultiCell(20, 3, "Discount ", "", "L", false) // discount
+	pdf.SetXY(170, yTotal)
+	valuediscount := DATA.Discount / 100 * DATA.TotalIDR
+	discount := tk.Sprintf("%.2f", valuediscount)
+	pdf.MultiCell(30, 3, c.ConvertToCurrency(discount), "", "R", false) // discount
+	pdf.Ln(1)
+	//
+	yTotal = pdf.GetY()
+	pdf.SetXY(xtotal, yTotal)
+	pdf.MultiCell(20, 3, "VAT 10% ", "", "L", false) // vat
+	pdf.SetXY(170, yTotal)
+	vat := tk.Sprintf("%.2f", DATA.VAT)
+	pdf.MultiCell(30, 3, c.ConvertToCurrency(vat), "", "R", false) // vat
+	pdf.Ln(1)
+	//grantototal
+	yB += 0.7
+	pdf.SetFont("Century_Gothicb", "B", 8)
+	pdf.SetXY(xtotal, yB)
+	pdf.MultiCell(20, 4, "Grand Total ", "TB", "L", false) // grandtotal
+	pdf.SetXY(170, yB)
+	grandTotal := tk.Sprintf("%.2f", DATA.GrandTotalIDR)
+	pdf.MultiCell(30, 4, c.ConvertToCurrency(grandTotal), "TB", "R", false) // grandtotal
+	pdf.Ln(1)
+	// end bottom
+	y0 = lastY
+	pdf.SetY(y0)
+	pdf.Ln(2)
+	// y0 = pdf.GetY()
+	pdf.SetFont("Century_Gothic", "", 8)
+	// pdf.SetXY(30, y0)
+	// pdf.MultiCell(150, 3, "Barang yang sudah dibeli tidak bisa di kembalikan / di tukar dengan uang", "", "L", false) // alert
+	// pdf.Ln(2)
+	y0 = pdf.GetY()
+	pdf.SetXY(10, y0)
+	pdf.MultiCell(20, 3, "Print Date :", "", "L", false)
+	pdf.SetXY(30, y0)
+	datenow := time.Now().Format("January 02, 2006")
+	pdf.MultiCell(150, 3, datenow, "", "L", false) // date print
+	e = os.RemoveAll(c.PdfPath + "/purchaseorder")
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), "")
+	}
+	e = os.MkdirAll(c.PdfPath+"/purchaseorder", 0777)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), "")
+	}
+	namepdf := "-purchaseorder.pdf"
+	FixName := time.Now().Format("2006-01-02T150405") + namepdf
+	fileName := FixName
+	location := c.PdfPath + "/purchaseorder"
+	e = pdf.OutputFileAndClose(location + "/" + fileName)
+
+	if e != nil {
+		// e.Error()
+		return c.SetResultInfo(true, e.Error(), "")
+	}
+	return fileName
+}
+func (c *TransactionController) GetTypePurchase(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	crs, e := c.Ctx.Connection.NewQuery().From("TypePurchase").Cursor(nil)
+	defer crs.Close()
+	results := make([]TypePurchaseModel, 0)
+	e = crs.Fetch(&results, 0, false)
+	if e != nil {
+		CreateResult(false, nil, e.Error())
+	}
+	return c.SetResultInfo(false, "Success", results)
+}
+
+// Purchase Inventory on Purchase Order
+
+func (c *TransactionController) GetDataPurchaseInventory(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	p := struct {
+		SupplierCode string
+		TextSearch   string
+		DateStart    string
+		DateEnd      string
+		Filter       bool
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+
+	dateStart, _ := time.Parse("2006-01-02", p.DateStart)
+	End, _ := time.Parse("2006-01-02", p.DateEnd)
+	dateEnd := End.AddDate(0, 0, 1)
+	filter := []*dbox.Filter{}
+	filter = append(filter, dbox.Eq("Status", "PO"))
+	if p.Filter == true {
+		filter = append(filter, dbox.Gte("DatePosting", dateStart))
+		filter = append(filter, dbox.Lt("DatePosting", dateEnd))
+		/*if p.TextSearch != "" {
+			filter = append(filter, dbox.Contains("Remark", p.TextSearch))
+			filter = append(filter, dbox.Or(dbox.Contains("DocumentNumber", p.TextSearch), dbox.Contains("SupplierName", p.TextSearch), dbox.Contains("Remark", p.TextSearch)))
+		}*/
+		if p.SupplierCode != "" {
+			filter = append(filter, dbox.Eq("SupplierCode", p.SupplierCode))
+		}
+	} else {
+		filter = append(filter, dbox.Gte("DatePosting", dateStart))
+		filter = append(filter, dbox.Lt("DatePosting", dateEnd))
+	}
+	csr, e := c.Ctx.Connection.NewQuery().Select().From("PurchaseInventory").Where(filter...).Cursor(nil)
+
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	defer csr.Close()
+
+	results := []PurchaseInventory{}
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	if p.Filter && len(results) == 0 {
+		return c.SetResultInfo(true, "Please refine your search", nil)
+	}
+
+	return c.SetResultInfo(false, "Success", results)
+}
+func (c *TransactionController) GetDataPurchaseInventoryStateless(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	p := struct {
+		SupplierCode string
+		TextSearch   string
+		DateStart    string
+		DateEnd      string
+		Filter       bool
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+
+	dateStart, _ := time.Parse("2006-01-02", p.DateStart)
+	End, _ := time.Parse("2006-01-02", p.DateEnd)
+	dateEnd := End.AddDate(0, 0, 1)
+	filter := []*dbox.Filter{}
+	if p.Filter == true {
+		filter = append(filter, dbox.Gte("DatePosting", dateStart))
+		filter = append(filter, dbox.Lt("DatePosting", dateEnd))
+		/*if p.TextSearch != "" {
+			filter = append(filter, dbox.Contains("Remark", p.TextSearch))
+			filter = append(filter, dbox.Or(dbox.Contains("DocumentNumber", p.TextSearch), dbox.Contains("SupplierName", p.TextSearch), dbox.Contains("Remark", p.TextSearch)))
+		}*/
+		if p.SupplierCode != "" {
+			filter = append(filter, dbox.Eq("SupplierCode", p.SupplierCode))
+		}
+	} else {
+		filter = append(filter, dbox.Gte("DatePosting", dateStart))
+		filter = append(filter, dbox.Lt("DatePosting", dateEnd))
+	}
+	csr, e := c.Ctx.Connection.NewQuery().Select().From("PurchaseInventory").Where(filter...).Cursor(nil)
+
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	defer csr.Close()
+
+	results := []PurchaseInventory{}
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	if p.Filter && len(results) == 0 {
+		return c.SetResultInfo(true, "Please refine your search", nil)
+	}
+
+	return c.SetResultInfo(false, "Success", results)
+}

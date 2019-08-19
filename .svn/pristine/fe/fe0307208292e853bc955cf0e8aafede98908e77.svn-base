@@ -1,0 +1,117 @@
+package controllers
+
+import (
+	. "eaciit/proactive-inv/models"
+	"sort"
+	"strings"
+
+	db "github.com/eaciit/dbox"
+	"github.com/eaciit/knot/knot.v1"
+	tk "github.com/eaciit/toolkit"
+)
+
+type SearchController struct {
+	*BaseController
+}
+type KeywordStruct struct {
+	Id         string
+	Keyword    string
+	ParentInfo string
+	Score      int
+}
+
+type ListKey []KeywordStruct
+
+func (l ListKey) Len() int { return len(l) }
+func (l ListKey) Less(i, j int) bool {
+	return l[i].Keyword < l[j].Keyword
+}
+func (l ListKey) Swap(i, j int) { l[i], l[j] = l[j], l[i] }
+
+func (c *SearchController) GetResult(k *knot.WebContext) interface{} {
+	//	c.LoadBase(k)
+	k.Config.OutputType = knot.OutputJson
+	frm := struct {
+		Keyword string
+	}{}
+	err := k.GetPayload(&frm)
+	if err != nil {
+		return c.SetResultInfo(true, err.Error(), nil)
+	}
+	frm.Keyword = strings.ToLower(frm.Keyword)
+
+	ret := ResultInfo{}
+	qryClause := tk.M{}.Set("where",
+		db.Or(
+			db.Contains("contractname", frm.Keyword),
+			db.Contains("contractmanager", frm.Keyword),
+			db.Contains("metadata.governinglaw.contentfromuserdesc", frm.Keyword),
+		))
+	crs, err := c.Ctx.Find(NewFileUpload(), qryClause)
+	defer crs.Close()
+	if err != nil {
+		return c.ErrorResultInfo(err.Error(), nil)
+	}
+	data := make([]FileUpload, 0)
+	err = crs.Fetch(&data, 0, false)
+	if err != nil {
+		return c.ErrorResultInfo(err.Error(), nil)
+	}
+
+	// tk.Println("-----", frm.Keyword, data)
+
+	dataMapCN := make(map[string]KeywordStruct, 0)
+	dataMapCM := make(map[string]KeywordStruct, 0)
+	dataMapGL := make(map[string]KeywordStruct, 0)
+	for _, dt := range data {
+		score, val := c.getScore(dt.ContractName, frm.Keyword)
+		if score > 0 {
+			dataMapCN[dt.Id.Hex()] = KeywordStruct{Id: dt.Id.Hex(), Keyword: val, Score: score}
+		}
+		score, val = c.getScore(dt.ContractManager, frm.Keyword)
+		if score > 0 {
+			dataMapCM[dt.Id.Hex()] = KeywordStruct{Id: dt.Id.Hex(), Keyword: val, ParentInfo: dt.ContractName, Score: score}
+		}
+		for _, atFN := range dt.Metadata.GoverningLaw {
+			score, val = c.getScore(atFN.ContentFromUserDesc, frm.Keyword)
+			if score > 0 {
+				dataMapGL[dt.Id.Hex()] = KeywordStruct{Id: dt.Id.Hex(), Keyword: val, ParentInfo: dt.ContractName, Score: score}
+			}
+
+		}
+	}
+	dataListCN := c.rankAutoComplete(dataMapCN)
+	dataListCM := c.rankAutoComplete(dataMapCM)
+	dataListGL := c.rankAutoComplete(dataMapGL)
+
+	ret.Data = tk.M{}.
+		Set("Keyword", frm.Keyword).
+		Set("ContractName", dataListCN).
+		Set("ContractManager", dataListCM).
+		Set("GoverningLaw", dataListGL)
+
+	return ret
+}
+
+func (c *SearchController) getScore(val, search string) (int, string) {
+	tval := strings.ToLower(val)
+	score := 0
+	if strings.Contains(tval, search) {
+		score += 5
+		if strings.HasPrefix(tval, search) {
+			score += 3
+		}
+	}
+	return score, val
+}
+
+func (c *SearchController) rankAutoComplete(dataMap map[string]KeywordStruct) ListKey {
+	ret := make(ListKey, len(dataMap))
+	cx := 0
+	for key := range dataMap {
+		ret[cx] = dataMap[key]
+		cx++
+	}
+	sort.Sort(sort.Reverse(ret))
+	return ret
+}

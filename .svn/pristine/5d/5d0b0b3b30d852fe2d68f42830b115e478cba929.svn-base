@@ -1,0 +1,210 @@
+package controllers
+
+import (
+	. "eaciit/proactive-inv/models"
+	db "github.com/eaciit/dbox"
+	"github.com/eaciit/knot/knot.v1"
+	// tk "github.com/eaciit/toolkit"
+	"gopkg.in/mgo.v2/bson"
+)
+
+type BalanceSheetSettingController struct {
+	*BaseController
+}
+
+func (c *BalanceSheetSettingController) BalanceSheetSetting(k *knot.WebContext) interface{} {
+	access := c.LoadBase(k)
+	if access == nil {
+		return nil
+	}
+
+	k.Config.NoLog = true
+	k.Config.OutputType = knot.OutputTemplate
+	k.Config.IncludeFiles = []string{"_loader.html", "_loader2.html", "_head.html"}
+
+	DataAccess := c.GetDataAccess(access)
+	return DataAccess
+}
+func (c *BalanceSheetSettingController) GetListAktiva(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	p := struct {
+		Category string
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	csr, e := c.Ctx.Connection.NewQuery().From("AccountForBL").Where(db.Eq("type", "AKTIVA")).Cursor(nil)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	defer csr.Close()
+	results := []AccountBLModel{}
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+
+	if len(results) == 0 {
+		csrr, e := c.Ctx.Connection.NewQuery().From("Coa").Where(db.And(db.Eq("category", p.Category), db.Gte("acc_code", 1000),
+			db.Lt("acc_code", 3000), db.Ne("main_acc_code", 0))).Cursor(nil)
+		if e != nil {
+			return c.SetResultInfo(true, e.Error(), nil)
+		}
+		defer csrr.Close()
+		resultCOA := []CoaModel{}
+		e = csrr.Fetch(&resultCOA, 0, false)
+		if e != nil {
+			return c.SetResultInfo(true, e.Error(), nil)
+		}
+		for _, each := range resultCOA {
+			mod := AccountBLModel{}
+			mod.ID = bson.NewObjectId()
+			mod.ACC_Code = each.ACC_Code
+			mod.Account_Name = each.Account_Name
+			mod.Active = true
+			mod.Type = "AKTIVA"
+			results = append(results, mod)
+		}
+	}
+	var account []interface{}
+	for _, each := range results {
+		account = append(account, each.ACC_Code)
+	}
+	csr, e = c.Ctx.Connection.NewQuery().From("Coa").Where(db.And(db.Eq("category", p.Category), db.Gte("acc_code", 1000),
+		db.Lt("acc_code", 3000), db.Ne("main_acc_code", 0), db.Nin("acc_code", account...))).Cursor(nil)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	defer csr.Close()
+	resultNew := []CoaModel{}
+	e = csr.Fetch(&resultNew, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	// tk.Println(resultNew, "-----")
+	if len(resultNew) != 0 {
+		for _, each := range resultNew {
+			mod := AccountBLModel{}
+			mod.ID = bson.NewObjectId()
+			mod.ACC_Code = each.ACC_Code
+			mod.Account_Name = each.Account_Name
+			mod.Active = false
+			mod.Type = "AKTIVA"
+			results = append(results, mod)
+		}
+	}
+	return c.SetResultInfo(false, "Success", results)
+}
+func (c *BalanceSheetSettingController) GetListPassiva(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	p := struct {
+		Category string
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	csr, e := c.Ctx.Connection.NewQuery().From("AccountForBL").Where(db.Eq("type", "PASSIVA")).Cursor(nil)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	defer csr.Close()
+	results := []AccountBLModel{}
+	e = csr.Fetch(&results, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	if len(results) == 0 {
+		csrr, e := c.Ctx.Connection.NewQuery().From("Coa").Where(db.And(db.Eq("category", p.Category), db.Gte("acc_code", 3000),
+			db.Ne("main_acc_code", 0))).Cursor(nil)
+		if e != nil {
+			return c.SetResultInfo(true, e.Error(), nil)
+		}
+		defer csrr.Close()
+		resultCOA := []CoaModel{}
+		e = csrr.Fetch(&resultCOA, 0, false)
+		if e != nil {
+			return c.SetResultInfo(true, e.Error(), nil)
+		}
+		for _, each := range resultCOA {
+			mod := AccountBLModel{}
+			mod.ID = bson.NewObjectId()
+			mod.ACC_Code = each.ACC_Code
+			mod.Account_Name = each.Account_Name
+			mod.Active = true
+			mod.Type = "PASSIVA"
+			results = append(results, mod)
+		}
+	}
+	var account []interface{}
+	for _, each := range results {
+		account = append(account, each.ACC_Code)
+	}
+	csr, e = c.Ctx.Connection.NewQuery().From("Coa").Where(db.And(db.Eq("category", p.Category), db.Gte("acc_code", 3000),
+		db.Ne("main_acc_code", 0), db.Nin("acc_code", account...))).Cursor(nil)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	defer csr.Close()
+	resultNew := []CoaModel{}
+	e = csr.Fetch(&resultNew, 0, false)
+	if e != nil {
+		return c.SetResultInfo(true, e.Error(), nil)
+	}
+	// tk.Println(resultNew, "-----")
+	if len(resultNew) != 0 {
+		for _, each := range resultNew {
+			mod := AccountBLModel{}
+			mod.ID = bson.NewObjectId()
+			mod.ACC_Code = each.ACC_Code
+			mod.Account_Name = each.Account_Name
+			mod.Active = false
+			mod.Type = "PASSIVA"
+			results = append(results, mod)
+		}
+	}
+	return c.SetResultInfo(false, "Success", results)
+}
+func (c *BalanceSheetSettingController) SaveDataAccountBLAktiva(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	p := struct {
+		Data []AccountBLModel
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		c.SetResultInfo(true, e.Error(), nil)
+	}
+	for _, each := range p.Data {
+		mod := new(AccountBLModel)
+		mod.ID = each.ID
+		mod.ACC_Code = each.ACC_Code
+		mod.Account_Name = each.Account_Name
+		mod.Active = each.Active
+		mod.Type = each.Type
+		e = c.Ctx.Save(mod)
+		c.LogActivity("Balance Sheet Setting", "Save Data Account BL Aktiva", mod.ID.Hex(), k)
+	}
+	return c.SetResultInfo(false, "Success", nil)
+}
+func (c *BalanceSheetSettingController) SaveDataAccountBLPassiva(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	p := struct {
+		Data []AccountBLModel
+	}{}
+	e := k.GetPayload(&p)
+	if e != nil {
+		c.SetResultInfo(true, e.Error(), nil)
+	}
+	for _, each := range p.Data {
+		mod := new(AccountBLModel)
+		mod.ID = each.ID
+		mod.ACC_Code = each.ACC_Code
+		mod.Account_Name = each.Account_Name
+		mod.Active = each.Active
+		mod.Type = each.Type
+		e = c.Ctx.Save(mod)
+		c.LogActivity("Balance Sheet Setting", "Save Data Account BL Passiva", mod.ID.Hex(), k)
+	}
+	return c.SetResultInfo(false, "Success", nil)
+}

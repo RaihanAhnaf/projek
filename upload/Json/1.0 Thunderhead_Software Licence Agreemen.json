@@ -1,0 +1,42 @@
+{
+   "governinglaw": [
+      {
+         "data-eaciit-start": "931",
+         "confidence": 0.69,
+         "clause": "governinglaw",
+         "common-ancestor-id": "929",
+         "data-eaciit-id": "931",
+         "end-offset": "10746",
+         "start-offset": "10725",
+         "data-eaciit-end": "931",
+         "contentfromsystem": "\n    This Agreement and any matters relating to this Agreement shall be governe.\"\"\"\"=--by and construed in accordance with the laws of England.\n   "
+      }
+   ],
+   "effectivedate": [
+      {
+         "data-eaciit-start": "134",
+         "confidence": 0.9,
+         "clause": "effectivedate",
+         "common-ancestor-id": "133",
+         "data-eaciit-id": "134",
+         "end-offset": "739",
+         "start-offset": "737",
+         "data-eaciit-end": "134",
+         "contentfromsystem": "\n    \"Effective Date\"\n   "
+      }
+   ],
+   "documenttitle": [
+      {
+         "data-eaciit-start": "17",
+         "confidence": 0.64,
+         "clause": "documenttitle",
+         "common-ancestor-id": "15",
+         "data-eaciit-id": "17",
+         "end-offset": "10",
+         "start-offset": "7",
+         "data-eaciit-end": "17",
+         "contentfromsystem": "\n    Standard Chartered Bank\n   "
+      }
+   ],
+   "word-count": 23031
+}

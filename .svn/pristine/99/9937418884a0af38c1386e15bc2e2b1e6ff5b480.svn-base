@@ -1,0 +1,42 @@
+{
+   "effectivedate": [
+      {
+         "clause": "effectivedate",
+         "common-ancestor-id": "46",
+         "contentfromsystem": "\n    (\"Effective Date\")\n   ",
+         "data-eaciit-start": "47",
+         "start-offset": "61",
+         "confidence": 0.9,
+         "data-eaciit-end": "47",
+         "end-offset": "63",
+         "data-eaciit-id": "47"
+      }
+   ],
+   "word-count": 20319,
+   "documenttitle": [
+      {
+         "clause": "documenttitle",
+         "common-ancestor-id": "15",
+         "contentfromsystem": "\n    Standard Chartered Bank\n   ",
+         "data-eaciit-start": "17",
+         "start-offset": "7",
+         "confidence": 0.64,
+         "data-eaciit-end": "17",
+         "end-offset": "10",
+         "data-eaciit-id": "17"
+      }
+   ],
+   "governinglaw": [
+      {
+         "clause": "governinglaw",
+         "common-ancestor-id": "831",
+         "contentfromsystem": "\n    (a) This Agreement and any matters relating to this Agreement shall be governed by and construed in accordance with the laws of Singapore.\n   ",
+         "data-eaciit-start": "832",
+         "start-offset": "8876",
+         "confidence": 0.67,
+         "data-eaciit-end": "832",
+         "end-offset": "8899",
+         "data-eaciit-id": "832"
+      }
+   ]
+}

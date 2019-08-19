@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ProAcctife</title>
+        <link rel="shortcut icon" href="{{BaseUrl}}res/img/favicon.ico" type="image/x-icon" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>-->
+        <link href="{{BaseUrl}}res/metronic/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="{{BaseUrl}}res/metronic/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="{{BaseUrl}}res/metronic/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+        <link href="{{BaseUrl}}res/metronic/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
+        <link href="{{BaseUrl}}res/metronic/global/plugins/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css"/>
+        <!-- <link rel='stylesheet' href='{{BaseUrl}}res/fullcalendar/fullcalendar-3.6.2/fullcalendar.css' /> -->
+        <link href="{{BaseUrl}}res/metronic/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css"/>
+        <!-- END PAGE LEVEL PLUGIN STYLES -->
+        <!-- BEGIN PAGE STYLES -->
+        <link href="{{BaseUrl}}res/metronic/admin/pages/css/tasks.css" rel="stylesheet" type="text/css"/>
+        <!-- END PAGE STYLES -->
+        <!-- BEGIN THEME STYLES -->
+        <link href="{{BaseUrl}}res/metronic/global/css/components.css" rel="stylesheet" type="text/css"/>
+        <link href="{{BaseUrl}}res/metronic/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+        <link href="{{BaseUrl}}res/metronic/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="{{BaseUrl}}res/metronic/admin/layout/css/layout.min.css" rel="stylesheet" type="text/css"/>
+        <link href="{{BaseUrl}}res/metronic/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+        <link href="{{BaseUrl}}res/metronic/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+        <link href="{{BaseUrl}}res/core/css/custom.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="{{BaseUrl}}res/core/css/loader1.css">
+        <!-- <link rel=" stylesheet" type="text/css" href="{{BaseUrl}}res/main/css/searchtext.css"> -->
+        <!-- END THEME STYLES -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+
+        <link rel="stylesheet" href="{{BaseUrl}}res/unslider/dist/css/unslider.css">
+        <!-- C3js -->
+        <!-- <link rel="stylesheet" href="{{BaseUrl}}res/c3/c3.css"> -->
+        <!-- <script src="{{BaseUrl}}res/c3/d3.v3.min.js"></script> -->
+        <!-- <script src="{{BaseUrl}}res/c3/c3.js"></script> -->
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="{{BaseUrl}}res/font-awesome/css/font-awesome.css">
+        <!-- SWEETALERT -->
+        <script src="{{BaseUrl}}res/swal/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="{{BaseUrl}}res/swal/sweetalert.css">
+        <!-- <link rel="stylesheet" href="{{BaseUrl}}res/core/css/font-awesome.min.css"> -->
+        
+        <!-- BEGIN CORE PLUGINS -->
+        <!--[if lt IE 9]>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/respond.min.js"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/excanvas.min.js"></script> 
+        <![endif]-->
+        <script src="{{BaseUrl}}res/jquery/jquery-2.1.0.min.js"></script>
+        <!-- <script src="{{BaseUrl}}res/metronic/global/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script> -->
+        <!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+        <!-- <script src="{{BaseUrl}}res/metronic/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script> -->
+        <script src="{{BaseUrl}}res/metronic/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jquery-slimscroll/jquery.slimscroll.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+
+
+        <!-- KENDO UI 2017 FIXED -->
+        <link href="{{BaseUrl}}res/kendo-ui-2017/styles/kendo.common.min.css" rel="stylesheet">
+        <link href="{{BaseUrl}}res/kendo-ui-2017/styles/kendo.default.min.css" rel="stylesheet">
+        <link href="{{BaseUrl}}res/kendo-ui-2017/styles/kendo.metro.mobile.min.css" rel="stylesheet">
+        <link href="{{BaseUrl}}res/kendo-ui-2017/styles/kendo.default.mobile.min.css" rel="stylesheet">
+        <link href="{{BaseUrl}}res/kendo-ui-2017/styles/kendo.bootstrap.min.css" rel="stylesheet">
+        <!-- <link href="/static/asset/kendo-ui/styles/kendo.custom.min.css" rel="stylesheet"> -->
+        <link href="{{BaseUrl}}res/kendo-ui-2017/styles/kendo.dataviz.min.css" rel="stylesheet">
+        <link href="{{BaseUrl}}res/kendo-ui-2017/styles/kendo.dataviz.default.min.css" rel="stylesheet">
+        <script src="{{BaseUrl}}res/kendo-ui-2017/js/kendo.all.min.js"></script>
+        <script src="{{BaseUrl}}res/kendo-ui-2017/js/jszip.min.js"></script>
+
+
+        <script src="{{BaseUrl}}res/js/knockout-3.1.0.js"></script>
+        <script src="{{BaseUrl}}res/js/knockout-kendo.js"></script>
+        <script src="{{BaseUrl}}res/js/knockout-kendo.min.js"></script>
+        <script src="{{BaseUrl}}res/js/knockout.mapping-latest.js"></script> 
+
+        <script src="{{BaseUrl}}res/js/linq.js"></script>
+        <script src="{{BaseUrl}}res/js/ecis_config.js"></script>
+        <script src="{{BaseUrl}}res/js/jquery.maskMoney.js" type="text/javascript"></script>
+        <!-- <script src="{{BaseUrl}}res/autonumeric/autoNumeric.js" type="text/javascript"></script> -->
+        <script src="{{BaseUrl}}res/js/jquery.maskMoney.min.js" type="text/javascript"></script>        
+        <script src="{{BaseUrl}}res/jquery/jquery.mask.min.js"></script>
+        <script src="{{BaseUrl}}res/inputmask/js/inputmask.js" type="text/javascript"></script> 
+        <script src="{{BaseUrl}}res/inputmask/js/inputmask.extensions.js" type="text/javascript"></script> 
+        <script src="{{BaseUrl}}res/inputmask/js/jquery.inputmask.js" type="text/javascript"></script> 
+        <script src="{{BaseUrl}}res/inputmask/js/inputmask.numeric.extensions.js" type="text/javascript"></script> 
+        <script src="{{BaseUrl}}res/js/ecis_start.js"></script>
+        
+        <script src="{{BaseUrl}}res/js/lodash.js"></script>
+        <script src="{{BaseUrl}}res/moment/moment.js"></script>
+
+        <script src="{{BaseUrl}}res/fuzzysearch/fuzzysearch.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="{{BaseUrl}}res/tooltipster/dist/css/tooltipster.bundle.min.css" />
+        <script src="{{BaseUrl}}res/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+
+        <!-- material-switch -->
+       <!--  <script src="{{BaseUrl}}res/switch-js/bootstrap-switch.js"></script>
+        <script src="{{BaseUrl}}res/switch-js/highlight.js"></script>
+        <script src="{{BaseUrl}}res/switch-js/main.js"></script> -->
+        <!-- Js switch  -->
+
+        <!-- switch Bootstrap CSS  -->
+        <link href="{{BaseUrl}}res/switch-css/bootstrap-switch.min.css" rel="stylesheet">
+       <!--  <link href="{{BaseUrl}}res/switch-css/bootstrap-switch.css" rel="stylesheet"> -->
+        <!-- END CORE PLUGINS -->
+
+        <!-- Main Css Website -->
+        <link rel="stylesheet" href="{{BaseUrl}}res/main/css/main.css">
+
+        <script src="{{BaseUrl}}res/main/js/basic.js"></script>
+        <!-- <script src="{{BaseUrl}}res/js/jquery.mask.js"></script> -->
+
+        <!-- Application Config and Utility Script-->
+        <script src="{{BaseUrl}}res/main/js/proactive.js"></script>
+
+        <!-- Theme Related -->
+        <!-- NOTE: You can select the theme by giving the body tag a class which is the theme name. Example <body class="alice"> ... </body> -->
+        <script src="{{BaseUrl}}res/main/js/theme.js"></script>
+        <link rel="stylesheet" href="{{BaseUrl}}res/main/css/theme-alice.css" class="custom-theme" data-theme-name="alice" data-theme-color="#06F">
+        <link rel="stylesheet" href="{{BaseUrl}}res/main/css/theme-junko.css" class="custom-theme" data-theme-name="junko" data-theme-color="#333">
+        <link rel="stylesheet" href="{{BaseUrl}}res/main/css/theme-erza.css" class="custom-theme" data-theme-name="erza" data-theme-color="#F00">
+        <!--link rel="stylesheet" href="{{BaseUrl}}res/main/css/theme-murasaki.css" class="custom-theme" data-theme-name="murasaki" data-theme-color="#FF0"-->
+
+<style type="text/css">
+
+bootstrap.min.css:7
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+financial.css:65
+.nav-tabs>li>a {
+    background-color: #375879;
+    border: 1px solid #b2b2b2;
+}
+components.css:3921
+.nav-tabs > li > a, .nav-pills > li > a {
+    font-size: 14px;
+}
+bootstrap.min.css:7
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+bootstrap.min.css:7
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+components.css:172
+a {
+    text-shadow: none;
+    color: #ffffff;
+}
+components.css:97
+div, input, select, textarea, span, img, table, label, td, th, p, a, button, ul, code, pre, li {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+bootstrap.min.css:7
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+bootstrap.min.css:7
+a {
+    background: 0 0;
+}
+trialbalance:878
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+trialbalance:758
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+bootstrap.min.css:7
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: auto;
+    text-decoration: underline;
+}
+Inherited from li.active.tab1
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.nav.nav-tabs
+bootstrap.min.css:7
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from body.page-header-fixed
+trialbalance:668
+body {
+    font-family: Helvetica;
+}
+components.css:8
+body {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 13px;
+    direction: ltr;
+}
+bootstrap.min.css:7
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+Inherited from html.k-webkit.k-webkit60
+bootstrap.min.css:7
+html {
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+bootstrap.min.css:7
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+Pseudo ::before element
+bootstrap.min.css:7
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Pseudo ::after element
+bootstrap.min.css:7
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Pseudo ::scrollbar element
+components.css:51
+::-webkit-scrollbar {
+    width: 12px;
+}
+Pseudo ::scrollbar-thumb element
+components.css:74
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+}
+components.css:60
+::-webkit-scrollbar-thumb {
+    background-color: #cecece;
+}
+Pseudo ::scrollbar-track element
+components.css:68
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+}
+components.css:55
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #cecece;
+}
+
+bootstrap.min.css:7
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+financial.css:65
+.nav-tabs>li>a {
+    background-color: #375879;
+    border: 1px solid #b2b2b2;
+}
+components.css:3921
+.nav-tabs > li > a, .nav-pills > li > a {
+    font-size: 14px;
+}
+bootstrap.min.css:7
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+bootstrap.min.css:7
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+components.css:172
+a {
+    text-shadow: none;
+    color: #ffffff;
+}
+components.css:97
+div, input, select, textarea, span, img, table, label, td, th, p, a, button, ul, code, pre, li {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+bootstrap.min.css:7
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+bootstrap.min.css:7
+a {
+    background: 0 0;
+}
+trialbalance:878
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+trialbalance:758
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+bootstrap.min.css:7
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: auto;
+    text-decoration: underline;
+}
+Inherited from li.active.tab1
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.nav.nav-tabs
+bootstrap.min.css:7
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from body.page-header-fixed
+trialbalance:668
+body {
+    font-family: Helvetica;
+}
+components.css:8
+body {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 13px;
+    direction: ltr;
+}
+bootstrap.min.css:7
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+Inherited from html.k-webkit.k-webkit60
+bootstrap.min.css:7
+html {
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+bootstrap.min.css:7
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+Pseudo ::before element
+bootstrap.min.css:7
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Pseudo ::after element
+bootstrap.min.css:7
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Pseudo ::scrollbar element
+components.css:51
+::-webkit-scrollbar {
+    width: 12px;
+}
+Pseudo ::scrollbar-thumb element
+components.css:74
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+}
+components.css:60
+::-webkit-scrollbar-thumb {
+    background-color: #cecece;
+}
+Pseudo ::scrollbar-track element
+components.css:68
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+}
+components.css:55
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #cecece;
+}
+
+           .nav-tabs>li.active {
+            background: 0 0;
+            border-bottom: 4px solid #f4222d;
+            position: relative;
+            }
+            html .k-grid tr:hover {
+              background: #2c3e50;
+            }
+
+            html .k-grid tr.k-alt:hover {
+              background: white;
+            }
+
+            html .k-grid table tr:hover td{
+                background: #2c3e50;
+            }
+
+            html .k-widget table tr:hover td{
+                color: white;
+            }
+/*halo*/
+            html .k-grid-content tr:hover {
+              color: white;
+            }
+            /*.page-container-bg-solid .page-content {
+                background: #eef1f5;
+            }*/
+            /*.page-sidebar-menu{
+                background-color: #ffffff;
+            }*/
+            p {
+            margin-top: 2px;
+            margin-left: 9px;
+            font-size: 140%;
+            }
+            .adminphoto {
+            width: 64px;
+            height: 40px;
+            margin-top: 8px;
+            margin-right: -10px
+            /*border-radius: 50% !important;
+            background-size: 32px 35px;
+            background-position: center center;
+            vertical-align: middle;
+            line-height: 32px;
+            box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+            margin: 10px;*/
+            }
+
+            /*search box*/
+            /*#searchh:{transition-timing-function: linear;
+                width: 300px;
+            }*/
+
+            .custom-search-form{
+            border-bottom: 1px solid #0076af;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: #0076af;
+            margin-left:198px; 
+            margin-top: -33px;
+            width: 250px;
+         
+            transition: width 2s;
+            }
+            .button-inside-box {
+            padding-bottom: 3px;
+            margin-top: 1px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            z-index: 3;
+            border-radius: 5% !important;
+            }
+            /*#searchbox {
+            background: white;
+            width: 208px;
+            height: 29px;
+            margin-left:177px; 
+            margin-top:-43px;
+            }
+            input:focus::-webkit-input-placeholder {
+            color: transparent;
+            }
+            input:focus:-moz-placeholder {
+            color: transparent;
+            }
+            input:focus::-moz-placeholder {
+            color: transparent;
+            }
+            #searchbox input {
+            outline: none;
+            }
+            #searchbox input[type="text"] {
+            background: transparent;
+            margin: -1px 0px 0px 20px;
+            padding: 5px 0px 5px 0px;
+            border-width: 0px;
+            font-family: Arial,Helvetica,Sans-serif;
+            font-size: 14px;
+            color: black;
+            width: 70%;
+            display: inline-table;
+            vertical-align: top;
+            }
+            #button-submit {
+            background: url(http://4.bp.blogspot.com/-OcDQ6Z9ojlQ/VD1KnwJjFOI/AAAAAAAAAgs/cu_pKN6bpL8/s1600/magnifier.png) no-repeat;
+            border-width: 0px;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-top: 4px;
+            width: 21px;
+            height: 22px;
+            }
+            #button-submit:hover {
+            background: url(http://2.bp.blogspot.com/-4-xFDFGKJrA/VD1Kn04f9TI/AAAAAAAAAgw/2ta84QY1x9A/s1600/magnifier-hover.png) no-repeat;
+            }
+            #button-submit:active {
+            background: url(http://2.bp.blogspot.com/-4-xFDFGKJrA/VD1Kn04f9TI/AAAAAAAAAgw/2ta84QY1x9A/s1600/magnifier-hover.png) no-repeat;
+            outline: none;
+            }
+            #button-submit::-moz-focus-inner {
+            border: 0;
+            }*/
+            .blue{
+                background-color: #0076af;
+                color: white;
+                border-style: none;
+                font-size: 13px;
+                width: 75px
+            }
+            /*input[type=text] {
+              width: 150px;
+              -webkit-transition: width .35s ease-in-out;
+              transition: width .35s ease-in-out;
+            }
+            input[type=text]:focus {
+               
+                width: 300px;
+            }*/
+           /* .page-content-wrapper{
+                background-color: #2c3e50 !important;
+            }*/
+            .page-footer{
+                background-color: #0076af  !important;
+            }
+            .page-sidebar.navbar-collapse.collapse{
+                background-color:#2f99cc;
+            }
+            /*change COlor */
+            @media (min-width: 992px){
+                .page-content-wrapper .page-content {
+                    padding: 0px 0px 0px !important;
+                    margin-left: 211px;
+                }
+                .page-sidebar {
+                    width: 210px;
+                }    
+            }
+            .page-header.navbar .page-logo {
+                width: 500px;
+            }
+            .page-bar{
+                background-color: #ffffff;
+                border-bottom: 1px solid rgb(238, 238, 238);
+                    margin-bottom: 0px;
+                /*box-shadow: 0px 1px 10px #c7c7d0;*/
+            }
+            .page-conte.page-bar .page-breadcrumb>li>a, .page-bar .page-breadcrumb>li>spannt-white.page-content.page-bar {
+                border-bottom: 1px solid #1a3a5a;
+            }
+           /* .page-content {
+                background-color: #e8e8e8;
+            }*/
+            .portlet.box.twist{
+                background-color: #ffffff !important;
+                border: 1px solid #efefef !important;
+                margin:15px;
+          
+            }
+            .portlet.box.twist.main{
+                background-color: #ffffff !important;
+                border: 1px solid #efefef !important;
+                margin-left: 13px;
+                margin-right: 13px;
+            }
+            /**/
+            .grid-select {
+                text-shadow: none;
+                color: #333333;
+            }
+            .title-logo {
+                padding-top: 10px;
+                display: inline-block;
+            }
+            .title-logo > a {
+                text-decoration: none;
+                font-size: 20px
+            }
+            .title-logo1 {
+                padding-top: 10px;
+                display: inline-block;
+            }
+            .title-logo1 > a {
+                text-decoration: none;
+                font-size: 20px
+            }
+            .portlet.bordered {
+                border-left: 0px solid #e6e9ec !important;
+            }
+            .page-content{
+                padding-top: 0px !important
+            }
+            .page-breadcrumb.breadcrumb{
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            .bredkram{
+                margin-bottom: 10px
+            }
+            .bredkram > div{
+                padding: 0px
+            }
+            .bredkram > div > div{
+                margin-bottom: 25px
+            }
+
+            .col-centered{
+                float: none;
+                margin: 0 auto;
+            }
+
+            .logo-sidebar{
+                margin-left: 15px;
+                margin-top: 20px;
+            }
+            .logo-sidebar.hide {
+                display: none
+            }
+
+            .no-padding{
+              padding: 0px;
+            }
+            .search-custom, .search-custom:focus{
+                width: 1000px; 
+                border-color: #e5e5e5!important;
+                background-color: #e5e5e5!important;
+            }
+            .mgTop8{
+                margin-top: 8px;
+            }
+            .mgRight15{
+                margin-right: 15px;
+            }
+
+            #modal-loading .modal-content{
+                border-radius: 7px !important;
+                background-color: #adb9ca;
+                border-color: transparent!important;
+                color: #fff;
+            }
+            #modal-loading .loading-container {
+                height: 700px;
+            }
+            #modal-loading .loading-container .loading-content{
+                width: 500px;
+                height: 500px;
+                position:absolute;
+                left:0; right:0;
+                top:0; bottom:0;
+                margin:auto;
+
+                max-width:100%;
+                max-height:100%;
+                overflow:auto;
+            }
+
+            .clickable{
+                cursor: pointer;
+            }
+            .statuslarge{
+                margin-left: 5%
+            }
+            .statussmall{
+                margin-left: 22px;
+            }
+            #sr-data a{
+                text-decoration: none;
+                color: #000;
+            }
+            @media(max-width: 992px){
+              #pagedislay{
+                display: none;
+              }
+            }
+            @media(max-width: 992px){
+                #titlelogo2{
+                    display: inline-block !important;
+                }
+            }
+            @media(min-width: 992px){
+               
+                #titlelogo2{
+                    display: none !important;
+                }
+            } 
+            @media(max-width: 992px){
+                 #responsiveLogo{
+                    display: none !important;
+                }
+            }
+            @media(min-width: 992px){
+                .page-sidebar-wrapper.fixed{
+                    position: fixed;
+                }
+            }
+            .page-sidebar .page-sidebar-menu>li>a>i{
+                font-size: 13px;
+            }
+            .breadcrumb-section {
+                margin-top: -15px;
+                text-align: right;
+            }
+            .breadcrumb {
+                background: transparent;
+                margin-bottom: 0px;
+                margin-top: -16px;
+            }
+            .breadcrumb li.youare {
+                background: transparent;
+            }
+
+            .breadcrumb a { color: #f0f0f0; background: #909090; padding: 5px 15px; border-radius: 15px; }
+            .breadcrumb a:hover { background: rgb(193, 53, 1); color: #ffffff; text-decoration: none; }
+            .breadcrumb a.active { background: #e84303; color: #ffffff; cursor: default; }
+            .breadcrumb a.active:hover { text-decoration: none; }
+            .breadcrumb > li:first-child + li::before {
+                padding: 0px;
+                color: #CCC;
+                content: "";
+                background-color: #f0f3f4;
+            }
+            .breadcrumb a.youare { background: transparent; color: #333; cursor: default; }
+            .breadcrumb a.youare:hover { text-decoration: none; }
+            .breadcrumb a:hover { background: rgb(193, 53, 1); color: #ffffff; text-decoration: none; }
+            .tittleheader{
+                color: #e6e6e6;
+                margin-top: -2px;
+                margin-left: 8px;
+            }
+
+            .k-grid-header, .k-grid-header .k-header {
+                background-color: #ffffff;
+                font-weight: 600 !important;
+                font-size: 14px;
+            }
+            .searchmenu{
+                margin-left:-1420px;
+                margin-top:10px;
+                color: black;
+                width:100%;
+            }
+            .hide{
+                display: none;
+            }
+            
+            .change::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: white !important;
+            }
+            .page-sidebar-closed .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu:hover .sub-menu, .page-sidebar-closed .page-sidebar .page-sidebar-menu:hover .sub-menu {
+                background-color: #0076af   !important;
+            }
+            .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu, .page-sidebar .page-sidebar-menu{
+              background-color: #0076af    !important;
+            }
+            .dev-version{
+                display: inline-block;
+                padding-top: 0px;
+            }
+            .dev-Text {
+                color: white;
+                font-size: xx-large;
+            }
+            .dev-Text0 {
+                color: white;
+                font-size: 37px;
+            }
+            .deversion{
+                position: fixed;
+                z-index: 100;
+                font-size: 100px;
+                color: #8e8e8e61;
+                transform: rotate(-20deg);
+                top: 35%;
+                left: 35%;
+            }
+            .search {
+                outline: none;
+            }
+            .search {
+                -webkit-appearance: textfield;
+                -webkit-box-sizing: content-box;
+                font-family: inherit;
+                font-size: 100%;
+            }
+            input::-webkit-search-decoration,
+            input::-webkit-search-cancel-button {
+                display: none; 
+            }
+
+
+            .search {
+                background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+                border: solid 1px #ccc;
+                padding: 4px 10px 4px 32px;
+                width: 200px;
+                
+                -webkit-border-radius: 10em !important;
+                -moz-border-radius: 10em !important;
+                border-radius: 10em !important;
+                
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                transition: all .5s;
+            }
+            .search:focus {
+                width: 230px;
+                background-color: #fff;
+                border-color:rgb(214, 214, 214);
+                
+                -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+                -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+                box-shadow: 0 0 5px rgba(109,207,246,.5);
+            }
+
+
+            input:-moz-placeholder {
+                color: rgb(255, 255, 255);
+            }
+            input::-webkit-input-placeholder {
+                color: rgb(255, 255, 255);
+            }
+            #return-to-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: rgb(0, 0, 0);
+                background: rgba(12, 75, 105, 0.67);
+                width: 50px;
+                height: 50px;
+                display: block;
+                text-decoration: none;
+                -webkit-border-radius: 35px;
+                -moz-border-radius: 35px;
+                border-radius: 35px !important;
+                display: none;
+                -webkit-transition: all 0.3s linear;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+            #return-to-top i {
+                color: #fff;
+                margin: 0;
+                position: relative;
+                left: 16px;
+                top: 13px;
+                font-size: 19px;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+            #return-to-top:hover {
+                background:rgba(2, 74, 109, 0.92)
+            }
+            #return-to-top:hover i {
+                color: #fff;
+                top: 5px;
+            }
+        </style>
+
+        <script type="text/javascript">
+        var createCookie = function(name, value, days) {
+            days = days || 365;
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+              var expires = "; expires=" + date.toGMTString();
+            } else
+              var expires = "";
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+
+        var readCookie = function(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ')
+                c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0)
+                return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function eraseCookie(name) {
+            createCookie(name, "", -1);
+        }
+
+        var GridColumn = function (id, userId, gridId) {
+            this.Name = id + "_" + userId + "_" + gridId;
+            this.GridId = gridId;
+            this.Init = function () {
+              var grid = $('#' + this.GridId).data('kendoGrid');
+
+              var gridCols = grid.columns;
+              var datas = readCookie(this.Name);
+              if (datas == null) {
+                var visibleCols = [];
+                jQuery.each(gridCols, function (index) {
+                  if (!this.hidden) {
+                    visibleCols.push(this.field);
+                  }
+                });
+                createCookie(this.Name, visibleCols.join('|'));
+              } else {
+                var showColumns = datas.split('|');
+                jQuery.each(gridCols, function (index) {
+                  if (showColumns.indexOf(this.field) < 0) {
+                    grid.hideColumn(this.field);
+                  }
+                });
+              }
+            };
+            this.GetColumns = function () {
+              return readCookie(this.Name);
+            };
+            this.AddColumn = function (columnName) {
+              var datas = this.GetColumns();
+              var cols = [];
+              if (datas != null) {
+                cols = datas.split('|');
+                if (cols.indexOf(columnName) < 0) {
+                  cols.push(columnName);
+                }
+              }
+
+              eraseCookie(this.Name);
+              createCookie(this.Name, cols.join('|'));
+            };
+            this.RemoveColumn = function (columnName) {
+              var datas = this.GetColumns();
+              var cols = [];
+              if (datas != null) {
+                cols = datas.split('|');
+                if (cols.indexOf(columnName) > -1) {
+                  jQuery.each(cols, function (index) {
+                    if (cols[index] == columnName) {
+                      cols.splice(index, 1);
+                    }
+                  });
+                }
+              }
+
+              eraseCookie(this.Name);
+              createCookie(this.Name, cols.join('|'));
+            };
+        }
+        var model ={
+            BreadCrumbs : ko.observableArray([]),
+            MenuTitle : ko.observable(''),
+            Processing : ko.observable(false)
+            // SubmenuTitle : ko.observable()
+        }
+        // model.BreadCrumbs = ko.observableArray([]);
+        function BreadCrumb(id, title, url, cssClass, action) {
+            var obj = {
+                _id: ko.observable(id),
+                Title: ko.observable(title == undefined ? id : title),
+                Url: url,
+                Action: action,
+                CssClass: cssClass
+            };
+            return obj;
+        }
+        
+        </script>
+        <script>
+            model.BreadCrumbs.push(new BreadCrumb("Youare", "You are here : ", "#", "youare"));
+        </script>
+        <script id="breadcrumbTemplate" type="text/html">
+            <li data-bind="attr:{class:CssClass}"><a data-bind="text: Title(), attr:{href:Url, class:CssClass, onclick: (Action!=undefined?Action:'')}"></a></li>
+        </script>
+    </head>
+    <!-- <body class="page-header-fixed page-sidebar-closed-hide-logo page-sidebar-closed"> -->
+    <body class="page-header-fixed page-sidebar-fixed page-footer-fixed">
+        <!-- BEGIN HEADER --> 
+        <div class="page-header navbar navbar-fixed-top col-md-12" id="myheadbar">
+            <!-- BEGIN HEADER INNER -->
+            <div class="page-header-inner">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo" id="pagedislay">
+                    <div class="menu-toggler sidebar-toggler" style="color: white">
+                        <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+                    </div>
+                    <div id="logoForHeader" class="title-logo2 hide">
+                        <a href="{{BaseUrl}}dashboard/default"><img src="{{BaseUrl}}res/img/accgo-white.png" style="width: 145px;margin-left: 8px;margin-top: 8px;" /></a>
+                    </div>
+                    <div id="titlelogo1" class="title-logo1 hide">
+                        <p><b><span data-bind="text:userinfo.menunameh()" class style="color:white; margin-bottom:50px"></span></b></p>
+                        
+                        <!--search box-->
+                        <!-- <h2 class="tittleheader">Professional Accounting & Finance</h2> -->
+                        <!-- <img src="{{BaseUrl}}res/img/LeftPanelLogo.png" width="100px"/> -->
+                        <!-- <a href="{{BaseUrl}}dashboard/default"><img src="{{BaseUrl}}res/img/accgo-white.png" style="width: 150px;margin-left: 6px;margin-top: -7px;" /></a> -->
+                    </div>
+                    <!-- <div class="input-group custom-search-form" id="searchh">
+                        <input id="textSearch" type="text" size="15" placeholder="search..." class="form-control blue change" style="position: relative;left: 10%" />
+                        <span class="input-group-btn">
+                        <button class="button-inside-box blue" id="button-submit" onclick="searchGlobal()">
+                        <i class="glyphicon glyphicon-search "></i>
+                        </button>
+                    </div> -->
+                </div>
+                <!-- <div class="dev-version">
+                    <span class="dev-Text0">|</span>
+                    <span class="dev-Text">DEV VERSION</span>                    
+                </div> -->
+                <!-- <script type="text/javascript">
+                $(document).ready(function() {
+                    document.getElementById("textSearch").addEventListener("keydown", function (e) {
+                        if (e.keyCode === 13) { 
+                                searchGlobal()
+                        }
+                    }) 
+                })             
+                </script> -->
+                <!-- END LOGO -->               
+                <div id="titlelogo2" class="title-logo 2" >
+                    <a href="{{BaseUrl}}dashboard/default"><img src="{{BaseUrl}}res/img/accgo-white.png" style="width: 150px;margin-left: 6px;margin-top: -7px;" /></a>
+                </div>
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <div class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                        <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+                </div>
+                <!-- <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> 
+                </a> -->
+                <!-- END RESPONSIVE MENU TOGGLER -->
+
+                <!-- BEGIN HEADER SEARCH BOX -->
+                <!-- <form class="search-form search-form-expanded" action="extra_search.html" method="GET">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search..." name="query">
+                        <span class="input-group-btn">
+                        <input class="btn submit" type="button" type="button" value=" "/>
+                        </span>
+                    </div>
+                </form> -->
+                <!-- END HEADER SEARCH BOX -->
+
+                <!-- BEGIN TOP NAVIGATION MENU -->
+                <div class="top-menu">
+                <input id="textSearch" type="search" style="display:inline-block" placeholder="Search" class="search"  onkeypress="searchGlobal(event)">
+                <!--widget user info right top menu-->
+                <!-- <img src="{{BaseUrl}}res/img/logoeaciit4.png" class="adminphoto"> -->
+                <img src="{{BaseUrl}}res/img/userlogo.png" class="adminphoto" style="margin-bottom:5px; display:inline-block;">
+                    <ul class="nav navbar-nav pull-right">
+                        <!-- BEGIN USER LOGIN DROPDOWN -->
+                        <li class="dropdown dropdown-user" id="loggedinuserinfo" style="display:inline-block">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <!-- <img alt="" class="img-circle" src="../../assets/admin/layout/img/avatar3_small.jpg"/> -->
+                            <span class="username" data-bind="text: userinfo.usernameh"></span>
+                            <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/userprofile/profile">
+                                    <i class="fa fa-user-o"></i> User Profile </a>
+                                </li>
+                                <li>
+                                    <a onClick="Logout()">
+                                    <i class="fa fa-key"></i> Log Out </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- END USER LOGIN DROPDOWN -->
+                        <!-- END USER LOGIN DROPDOWN -->
+                    </ul>
+                    <!-- <ul class="searchmenu"> 
+                    <input type="text" value="Search...">
+                   
+                   </ul>  -->
+                </div>
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+            <!-- END HEADER INNER -->
+        </div>
+        <!-- END HEADER -->
+        <div class="clearfix">
+        </div>
+        <!-- BEGIN CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper">
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <div id="thissidebar" class="page-sidebar navbar-collapse collapse" style="max-height:300px;">
+                    <div class="logo-sidebar responsiveLogo" id="responsiveLogo">
+                        <a href="{{BaseUrl}}dashboard/default"><img src="{{BaseUrl}}res/img/accgo-white01.png" style="width: 180px;margin-left: -2px;margin-top: 0px;" /></a>
+                        <h6 style="color: #fff; "> Professional Accounting & Finance </h6>
+                        <!-- <img src="{{BaseUrl}}res/img/LeftPanelLogo.png" width="200px"/> -->
+                    </div>
+
+                    <script id="sidebarTemplate" type="text/html">
+                        <li class="start" onclick="doSidebar()" data-bind="css: { active: isActive }">
+                            <a data-bind="attr: { href: Url }">
+                            <i data-bind="attr: { class: Icon }"></i>
+                            <span style="font-size: 13px" class="title" data-bind="text: Title"></span>
+                                {{UnescapeHTML "<!-- ko if: $data.children != undefined  -->"}}
+                                    <span class="arrow "></span>
+                                {{UnescapeHTML "<!-- /ko -->"}}
+                                {{UnescapeHTML "<!-- ko if: $data.children == undefined  -->"}}
+                                    <!-- <span class="selected"></span> -->
+                                {{UnescapeHTML "<!-- /ko -->"}}
+                            </a>
+                            {{UnescapeHTML "<!-- ko if: $data.children != undefined  -->"}}
+                                <ul class="sub-menu" data-bind="template:{name: 'sidebarTemplate',foreach: children}"></ul>
+                            {{UnescapeHTML "<!-- /ko -->"}}
+                        </li>
+                    </script>
+                    <!-- <script id="sidebarTemplate" type="text/html"> -->
+
+                    <!-- BEGIN SIDEBAR MENU -->
+                    <ul id="mysidebarmenu" class="page-sidebar-menu" data-auto-scroll="false" data-auto-speed="100" style="margin-top: 10px;" data-bind="template:{name: 'sidebarTemplate',foreach: sidebarMenu.menu}"></ul>
+                    
+                    <!-- END SIDEBAR MENU -->
+
+                    <!-- </script> -->
+                </div>
+            </div>
+            <!-- END SIDEBAR -->
+            
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <div class="page-content" style="min-height: 100px;">
+                    <!-- <span class="deversion" >DEV VERSION</span> -->
+                    <!-- BEGIN PAGE HEADER-->
+                   <!--  <div class="row bredkram" id="bredkram">
+                        <div class="col-md-12">
+                            <ul class="page-breadcrumb breadcrumb" style="background-color: #e5e5e5; border: none; margin: 0 -5px 0 -5px;">
+                                <li>
+                                    <div class="input-icon no-margin-breadcrumb">
+                                        <i class="fa fa-search mgTop8"></i>
+                                        <input id="src" type="text" class="form-control search-custom" placeholder="Search for something" data-bind="events: { keypress: keypressed }">
+                                    </div>
+                                </li>
+                                <li class="pull-to-right mgRight15">
+                                    <ol class="breadcrumb" data-bind="template:{name:'breadcrumbTemplate', foreach:model.BreadCrumbs}"></ol>
+                                    <a href="#">Dashboard</a><i class="fa fa-angle-right"></i>My Data
+                                    <span data-bind= "text : model.MenuTitle"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <!-- END PAGE HEADER-->
+
+                    {{.Content}}
+
+                    
+                    <div style="position:relative">
+                        <div id="thisfooter" style="background:  #0076af;
+                                                                    position: fixed;
+                                                                    right: 0;
+                                                                    bottom: 0;
+                                                                    height: 35px;
+                                                                    width: 100%;
+                                                                    padding-top: 9px;
+                                                                    ">
+                            <span style="color: #cecece; margin-left: 10px; margin-top: 9px;">© 2017 EACIIT Pte Ltd</span>
+                            <div id="themeselector"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Return to Top -->
+            <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        <!-- END CONTAINER -->
+        <script>
+            window.onresize = function () {
+                doSidebar()
+                doFooter()
+            }
+        </script>
+        <!-- BEGIN FOOTER -->
+        <!-- <div id="caontainer" style="position: relative;"> -->
+                <!-- Other elements here -->
+                <!-- <div class="page-footer pull-right" id="thisfooter" style="position: relative; bottom:0; right:0; width:800px;">
+                    <div class="page-footer-inner">© 2017 EACIIT Pte Ltd</div>
+                    <div class="page-footer-tools">
+                        <span class="go-top">
+                            <i class="fa fa-angle-up"></i>
+                        </span>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+    <!-- END FOOTER -->
+        
+        <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jquery.pulsate.min.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/bootstrap-daterangepicker/moment.min.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+
+        <!-- IMPORTANT! fullcalendar depends on jquery-ui-1.10.3.custom.min.js for drag & drop support -->
+        <script src="{{BaseUrl}}res/metronic/global/plugins/fullcalendar/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+        <!-- <script src="{{BaseUrl}}res/fullcalendar/fullcalendar-3.6.2/fullcalendar.js" type="text/javascript"></script> -->
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="{{BaseUrl}}res/metronic/global/scripts/metronic.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/admin/layout/scripts/layout.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/admin/pages/scripts/index.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/metronic/admin/pages/scripts/tasks.js" type="text/javascript"></script>
+
+        <script src="{{BaseUrl}}res/unslider/src/js/unslider.js" type="text/javascript"></script>
+
+        <script src="{{BaseUrl}}res/core/js/models.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/core/js/helper.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/core/js/layout.js" type="text/javascript"></script>
+        <script src="{{BaseUrl}}res/core/js/search.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+
+        <script>
+        var toggleSidebarLogo = function(b=1){
+            var show = function(){ $(".logo-sidebar").removeClass("hide") }
+            var hide = function(){ $(".logo-sidebar").addClass("hide") }
+            var show2 = function(){ $(".title-logo1").removeClass("hide") }
+            var hide2 = function(){ $(".title-logo1").addClass("hide") }
+            var showLogo = function(){ $(".title-logo2").removeClass("hide") }
+            var hideLogo =  function(){ $(".title-logo2").addClass("hide") }
+            // var barstatuslarge = function(){$(".applicationStatusGood").css('margin-left','5%')}
+            // var barstatussmall = function(){$(".applicationStatusGood").css('margin-left',22)}
+
+            var a = $(".page-sidebar-menu-closed").length
+            // console.log(a,b)
+            if(a == 1)
+                if(b == 1){
+                    show()
+                    show2()
+                    hideLogo()           
+                    // barstatussmall()
+                }else{
+                    hide()
+                    hide2() 
+                    showLogo()
+                    // barstatuslarge()
+                }
+            else if (a == 0)
+                if (b == 1){
+                    hide()
+                    hide2()
+                    showLogo()
+                    // barstatuslarge()
+                }else{
+                    show()
+                    show2()
+                    hideLogo()
+                    // barstatussmall()
+                }
+            // var showLogo = function(){ $("#titlelogo2").removeClass("hide") }
+            // var hideLogo =  function(){ $("#titlelogo2").addClass("hide") }
+            // if(a==1){
+            //     if(b == 1){
+            //         hideLogo()           
+            //     }else{
+            //         showLogo()
+            //     }
+            // }else if(a == 0){
+            //     if (b == 1){
+            //         showLogo()
+            //     }else{
+            //         hideLogo()
+            //     }
+            // }
+        }
+        // var TitleVisible = ko.observable(true)
+        // var toggleSidebarLogo = function(b = 1){
+        //     var a = $(".page-sidebar-menu-closed").length
+        //     var show = function(){ $(".logo-sidebar").removeClass("hide") }
+        //     var hide = function(){ $(".logo-sidebar").addClass("hide") }
+        //     // var barstatuslarge = function(){$(".applicationStatusGood").css('margin-left','5%')}
+        //     // var barstatussmall = function(){$(".applicationStatusGood").css('margin-left',22)}
+
+        //     // var showTitle = function(){ $("#titlelogo2").removeClass("hide") }
+        //     // var hideTitle = function(){ $("#titlelogo2").addClass("hide") }
+
+        //     // var showTitleSideBar = function(){ $("#titlelogo1").removeClass("hide") }
+        //     // var hideTitleSideBar = function(){ $("#titlelogo1").addClass("hide") }
+        //     if(a == 1)
+        //         if(b == 1){
+        //             show()
+        //             // showTitleSideBar()
+        //             // hideTitle()
+        //             // barstatussmall()
+        //         }else{
+        //             hide()
+        //             // showTitle()
+        //             // hideTitleSideBar()
+        //             // barstatuslarge()
+        //         }
+        //     else if (a == 0)
+        //         if (b == 1){
+        //             hide()
+        //             // showTitle()
+        //             // hideTitleSideBar()
+        //             // barstatuslarge()
+        //         }else{
+        //             show()
+        //             // showTitleSideBar()
+        //             // hideTitle()
+        //             // TitleVisible(false)
+        //             // barstatussmall()
+        //         }
+        // }
+        function searchui() {
+            $("#src").focus(
+            function() {
+            $(this).css({"background-color":"#fff"});
+            $(this).css({"border-color":"#e5e5e5"});
+            });
+            $("#src").focusout(
+            function() {
+            $(this).css({"background-color":"#e5e5e5"});
+            });
+        }
+        function div (t,o){
+         if(t == 0 || o == 0) return 0; 
+         return t/o
+        }
+        
+        function searchGlobal(e){
+            if (e.keyCode ==13 && e !=undefined){
+                e.preventDefault();
+                var search = $('#textSearch').val()
+                if (userinfo.menunameh() == "COA") {
+                    mCoa.textSearch(search)
+                    mCoa.search(search)
+                }
+                if (userinfo.menunameh() == "Category Asset") {
+                    category.search(search)
+                    return
+                }
+                if (userinfo.menunameh() == "Invoice Category") {
+                    invcategory.search(search)
+                    return
+                }
+                if (userinfo.menunameh() == "Customer") {
+                    customer.dataSearch(search)
+                    customer.search()
+                    return
+                }
+                if (userinfo.menunameh()== "Type Purchase") {
+                    typepurchase.dataSearch(search)
+                    typepurchase.search()
+                    return
+                }
+                if (userinfo.menunameh()== "Asset") {
+                    asset.textSearch(search)
+                    asset.search(search)
+                }
+                if (userinfo.menunameh()== "Purchase Payment") {
+                    //purchasepayment.search(search)
+                }
+                if (userinfo.menunameh()== "Invoice") {
+                    invoice.textSearch(search)
+                    invoice.search(search)
+                }
+                if (userinfo.menunameh()== "Purchase Order") {
+                    //purchaseorder.textSearch(search)
+                    //purchaseorder.search(search)
+                }
+                if (userinfo.menunameh()== "Roles") {
+                    msFilterRoleVM.filterRole(search)
+                    rolesett.Search()
+                }
+                if (userinfo.menunameh()== "Journal") {
+                    journal.textSearch(search)
+                    journal.refreshall(search)
+                }
+                if (userinfo.menunameh()== "Sales Payment") {
+                    salespayment.textSearch(search)
+                    salespayment.search(search)
+                }
+                if (userinfo.menunameh()== "Sales Credit Memo") {
+                    salescreditmemo.textSearch(search)
+                    salescreditmemo.search(search)
+                }
+                if (userinfo.menunameh()== "Inventory") {
+                    inventory.textSearch(search)
+                    inventory.search(search)
+                }
+                if (userinfo.menunameh()== "Purchase Invoice") {
+                    //purchaseinvoice.textSearch(search)
+                    //purchaseinvoice.search(search)
+                }
+                if (userinfo.menunameh()== "Purchase Credit Memo") {
+                    purchasecreditmemo.textSearch(search)
+                    purchasecreditmemo.search(search)
+                }
+                if (userinfo.menunameh()== "Closing") {
+                    closing.textSearch(search)
+                    closing.search(search)
+                }
+                if (userinfo.menunameh()== "General Ledger") {
+                    generalLedger.textSearch(search)
+                    generalLedger.search(search)
+                }
+                if (userinfo.menunameh()== "Ledger") {
+                    ledger.textSearch(search)
+                    ledger.search(search)
+                }
+                if (userinfo.menunameh()== "OPEX") {
+                    opex.textSearch(search)
+                    opex.refreshGrid()
+                }
+                if (userinfo.menunameh()== "PO/ Invoice Summary") {
+                    summary.textSearch(search)
+                    summary.search()
+                }
+                if (userinfo.menunameh()== "Transfer Shipment") {
+                    // Using global function, so textSearch is not needed
+                    //transfershipment.textSearch(search)
+                    // We don't want a call to backend
+                    //transfershipment.search()
+                }
+                if (userinfo.menunameh()== "Transfer Receipt") {
+                    // Using global function, so textSearch is not needed
+                    //transferreceipt.textSearch(search)
+                    // We don't want a call to backend
+                    //transferreceipt.search()
+                }
+            }
+        }
+        // userinfo.menunameh.subscribe(function(e) {
+        //     $('#textSearch').val("")
+        // })
+        $(document).ready(function() { 
+            // $(".start").on('click', function(event){
+            //     event.stopPropagation();
+            //     event.stopImmediatePropagation();
+            //     //(... rest of your JS code)
+                
+            // });
+            doFooter()
+            doSidebar()
+            Metronic.init();
+            Layout.init();
+            toggleSidebarLogo(1);
+            var a = $(".page-sidebar-menu-closed").length
+            // console.log(a)
+            if (a==1){
+                $(".logo-sidebar").addClass("hide")
+                $(".title-logo1").addClass("hide")
+                $(".title-logo2").removeClass("hide")
+                // $("#titlelogo1").addClass("hide")
+            } else{
+                $(".logo-sidebar").removeClass("hide")
+                $(".title-logo1").removeClass("hide")
+                $(".title-logo2").addClass("hide")
+                // $("#titlelogo1").removeClass("hide")
+            }
+            // TitleVisible(true)
+            // toggleSidebarTitle(-1);
+            searchui()
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                    } else {
+                        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                    }
+                });
+                $('#return-to-top').click(function() {      // When arrow is clicked
+                    console.log("top")
+                    $('body,html').animate({
+                        scrollTop : 0                       // Scroll to top of body
+                    }, 500);
+                });
+            });
+
+            function doSidebar() {
+                setTimeout(function () {
+                    $('.page-sidebar-menu').css({ "height": "77%" });
+                    $('.slimScrollDiv').css({ "background": "#0076af" });
+                }, 500);
+                return
+            }
+
+            function doFooter() {
+                widthSidebar = document.getElementById("thissidebar").offsetWidth
+                widthHeadbar = document.getElementById("myheadbar").offsetWidth
+
+                if (widthSidebar == 0 || undefined) {
+                    document.getElementById("thisfooter").style.width = "100%";
+                } else {
+                    selisih = window.innerWidth - widthSidebar-10
+                    $("#thisfooter").width(selisih);
+                }
+            }
+
+        $(".menu-toggler.sidebar-toggler").click(function() {
+            toggleSidebarLogo(1)
+            // toggleSidebarTitle();
+        })
+        function Logout() {
+            localStorage.clear();
+            window.location.href = "/logout/do";
+        }
+        ko.applyBindings(model);
+        </script>
+        <!-- END JAVASCRIPTS -->
+
+        <style type="text/css">
+            #sr-data li span{
+                text-align: left;
+            }
+
+            #search-form .k-header{
+                background-color: #398ABF;
+                color: white;
+            }
+            
+        </style>
+
+        <div class="modal fade modal-fade-in-scale-up modalInput" id="search-result" aria-hidden="true"  data-backdrop="static" data-bind="with:search">
+            <div id="search-form" class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                     <h4 class="modal-title">Search Result</h4>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="sr-data"></ul>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="text-right">
+                            <button class="btn btn-sm blue" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+               </div>
+            </div>
+
+        </div>
+
+    </body>
+    <!-- END BODY -->
+</html>

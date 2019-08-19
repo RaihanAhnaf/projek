@@ -1,0 +1,53 @@
+<script type="text/javascript">
+   var userinfo ={
+       usernameh: ko.observable('{{.Username}}'),
+       menunameh: ko.observable('{{.Menuname}}'),
+   }
+</script>
+<script src="{{BaseUrl}}res/main/js/closing.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/closing.css">
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+          <a href="/closing/default" class="bar">Closing</a>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+            <span class="thin uppercase hidden-xs font2" data-bind="text:closing.DatePageBar"></span>&nbsp;
+        </div>
+    </div>
+</div>
+<div class="panel" data-bind="visible:!model.Processing()">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="portlet box twis">
+                <div class="portlet-title">
+                    <div class="caption">
+                        Closing
+                    </div>
+                    <div class="tools style-closing">
+                        <button type="button" class="btn btn-sm btn-warning " data-bind="click:closing.closedprocess"><i class="fa fa-book"></i>&nbsp;Closing</button>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <label>Period: </label>
+                            <input type="text" id="dateClosing" data-bind="kendoDatePicker:{value:new Date(),format:'MMM-yyyy',start:'year', depth: 'year',min : closing.lastDate}" />
+                            <button type="button" class="btn btn-sm btn-refresh" data-bind="click:closing.refresh"><i class="fa fa-search"></i> Search</button>
+                            </div>
+                            </div>
+                            <br>
+
+                <div class="portlet-body">
+                    <div id="gridClosing" class="padding-grid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" data-bind="visible: model.Processing()">
+   {{template "_loader2.html"}}
+</div>

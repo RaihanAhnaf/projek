@@ -1,0 +1,40 @@
+<script type="text/javascript">
+var userinfo ={
+    usernameh: ko.observable('{{.Username}}'),
+    menunameh: ko.observable('{{.Menuname}}'),
+}
+</script>
+<script src="{{BaseUrl}}res/main/js/report-glusdmandiri.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/report.css">
+<div class="panel" data-bind="visible:!model.Processing()">
+	<div class="row">
+	   	<div class="col-md-12">
+	   		<div class="panel-heading">
+		        <h4>General Ledger USD Mandiri</h4>
+		        <div class="row">
+		            <label class="control-label boldleft col-md-1">Period :</label>
+		            <div class="col-md-10">
+		              	<input type="text" id="dateStart" data-bind="kendoDatePicker:{value: new Date, format:'dd-MMM-yyyy'}" />
+		                 &nbsp;to&nbsp;
+		                 <input type="text" id="dateEnd" data-bind="kendoDatePicker:{value:new Date,format:'dd-MMM-yyyy'}" />
+		                 <button type="button" onclick="glusdmandiri.refreshGrid()" class="btn btn-sm btn-info"><i class="fa fa-refresh"></i>&nbsp;Refresh</button>
+		              </div>
+		        </div>
+		        <div class="row">
+		        	<label class="control-label boldleft col-sm-1">Account Code:</label>
+		        	<label class="control-label left col-sm-3">1121</label>
+		        </div>
+		        <div class="row">
+		        	<label class="control-label boldleft col-sm-1">Account Name:</label>
+		        	<label class="control-label left col-sm-3">USD MANDIRI</label>
+		        </div>
+		    </div>
+		    <div class="panel-body">
+		    	<div id="gridGLUSDMandiri"></div>
+		    </div>
+	     </div>
+	</div>
+</div>
+<div class="row" data-bind="visible: model.Processing()">
+   {{template "_loader2.html"}}
+</div>

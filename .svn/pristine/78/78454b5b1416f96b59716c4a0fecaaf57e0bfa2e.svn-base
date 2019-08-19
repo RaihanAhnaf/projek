@@ -1,0 +1,909 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8"/><meta name="generator" content="ABBYY FineReader 14"/><link rel="stylesheet" href="1.0 Thunderhead_Software Licence Agreement_files/1.0 Thunderhead_Software Licence Agreement.css" type="text/css"/>
+</head>
+<body><a name="caption1"></a><h1><a name="bookmark0"></a><span class="font7">Standard&quot;</span></h1><h1><a name="bookmark1"></a><span class="font7">Chartered</span></h1>
+<p><span class="font5">SOFTWARE LICENCE AGREEMENT</span></p>
+<p><span class="font4">BETWEEN</span></p><h2><a name="bookmark2"></a><span class="font6" style="font-weight:bold;">Standard Chartered Bank</span></h2>
+<p><span class="font5">AND</span></p><h2><a name="bookmark3"></a><span class="font6" style="font-weight:bold;">Thunderhead Limited</span></h2><h3><a name="bookmark4"></a><span class="font4" style="font-weight:bold;">for the provision of software products</span></h3><h3><a name="bookmark5"></a><span class="font4" style="font-weight:bold;">SCB Contract Reference: SG/AGM/102739/0/2009</span></h3>
+<p><span class="font4" style="text-decoration:underline;">Prepared by:</span></p>
+<p><span class="font4">Jason Foo</span></p>
+<p><span class="font4">7 Changi Business Park Crescent Singapore 189554&nbsp;Tel: 65 6596 1124</span></p>
+<p><span class="font4">Fax: 65 6446 7838 E-mail: <a href="mailto:jason.foo@sc.com">jason.foo@sc.com</a></span></p><div><img src="1.0 Thunderhead_Software Licence Agreement_files/1.0 Thunderhead_Software Licence Agreement-1.jpg" style="width:54pt;height:54pt;"/></div><br clear="all"/>
+<p><span class="font3" style="font-weight:bold;">Software Licence Agreement</span></p>
+<p><span class="font3">This Agreement is made on 31</span><span class="font1"><sup>st</sup> </span><span class="font3">day of March 2010</span></p>
+<p><span class="font3" style="font-weight:bold;">Between:</span></p>
+<p><span class="font3">(1) &nbsp;&nbsp;&nbsp;</span><span class="font3" style="font-weight:bold;">STANDARD CHARTERED BANK </span><span class="font3">incorporated in England and Wales with limited</span></p>
+<p><span class="font3">liability by Royal Charter 1853 reference number ZC 18 and whose principal office in England is at 1 Aldermanbury Square London EC2V 7SB </span><span class="font3" style="font-weight:bold;">(&quot;SCB&quot;);</span></p>
+<p><span class="font3">(2) </span><span class="font3" style="font-weight:bold;">THUNDERHEAD LIMITED </span><span class="font3">a company registered in England and Wales with registered number 4303041 whose registered office is at Catalyst House 720&nbsp;Centennial Court, Centennial Park, Elstree, Herts. WD6 3SY. (the </span><span class="font3" style="font-weight:bold;">&quot;Supplier&quot;).</span></p>
+<p><span class="font3" style="font-weight:bold;">Recitals:</span></p>
+<p><span class="font3">A. SCB wishes to procure a license to use certain software from the Supplier. The Supplier is able to provide such software and associated implementation services to&nbsp;SCB. The parties have therefore agreed that the Supplier shall supply SCB with&nbsp;software in accordance with the terms and conditions of this Agreement.</span></p>
+<p><span class="font3">B. The parties agree that a consulting services plan in respect of associated implementation services will be developed separately and following execution of this&nbsp;Agreement.</span></p>
+<p><span class="font3">IT IS AGREED:</span></p>
+<p><span class="font3" style="font-weight:bold;">1 Definitions</span></p>
+<p><span class="font3">1.1 In this Agreement, unless inconsistent with the context or otherwise specified, the following words shall have the following meanings:</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Agreement&quot; </span><span class="font3">means this Agreement as may be varied or amended from time to time in accordance with this Agreement including any Schedules attached;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Authorised Representative&quot; </span><span class="font3">means in respect of each party the person described in Schedule 4; of this Agreement (or his or her successor or superior notified in&nbsp;writing to the other party);</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Business Purposes&quot; </span><span class="font3">means the generation of any documents irrespective of the originating source of the transaction, providing the underlying products to which the&nbsp;documents relate originate from within the Wholesale Bank division of SCB and not&nbsp;from any other division in particular SCB's Private, Commercial and Retail banking&nbsp;divisions;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Completion Date&quot; </span><span class="font3">means in relation to the Software, the date (if any) specified in this Agreement by which the Software may be downloaded in accordance with this</span></p>
+<p><span class="font3">Agreement;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Confidential Information&quot; </span><span class="font3">means all proprietary and confidential information or</span></p>
+<p><span class="font3">Personal Data of the parties and those of their customers, clients or suppliers whether commercial, financial, technical or otherwise (whether oral, in writing,&nbsp;machine readable or in any other form) and material (whether electronically recorded,&nbsp;in writing or otherwise) which by its very nature should obviously be treated as secret&nbsp;and confidential and which the parties desire to protect against unrestricte r </span><span class="font0" style="font-weight:bold;">’&nbsp;</span><span class="font14"><sub>!</sub></span></p><div>
+<p><span class="font3" style="font-weight:bold;">1l.</span></p></div><br clear="all"/><div>
+<p><span class="font3" style="font-weight:bold;">PVM</span></p></div><br clear="all"/>
+<p><span class="font4">disclosure or competitive use or which is designated as such, including without limitation:</span></p>
+<p><span class="font4">(a) information relating directly or indirectly to SCB Group's business, including&nbsp;but not limited to details of trade secrets, know-how, strategies, ideas,&nbsp;operations, compliance information, processes, methodologies and practices;&nbsp;and</span></p>
+<p><span class="font4">(b) information supplied to SCB Group by suppliers which SCB is authorised to&nbsp;disclose; and</span></p>
+<p><span class="font4">(c) information relating directly or indirectly to SCB Group's plans, intentions,&nbsp;know-how, market opportunities and business affairs or those of its suppliers,&nbsp;customers (including potential customers) and clients; and</span></p>
+<p><span class="font4">(d) works of authorship, products and materials written and prepared by SCB or&nbsp;another member of SCB Group in relation to this Agreement including but not&nbsp;limited to computer programs, data, diagrams, charts, reports, specifications,</span></p>
+<p><span class="font4">sketches, inventions and working papers or similar materials of whatever nature or on whatever media relating thereto; and</span></p>
+<p><span class="font4">(e) any information resulting directly or indirectly from the discussions or&nbsp;negotiations relating to this Agreement and all copies, notes, records and all</span></p>
+<p><span class="font4">related information (in any form) generated by SCB or another member of SCB Group based on or arising from any disclosures for this Agreement; and</span></p>
+<p><span class="font4">(f) &nbsp;&nbsp;&nbsp;the terms of any agreement reached by the parties or proposed by either</span></p>
+<p><span class="font4">party (whether agreed or not) in connection with the Agreement;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Contract Price&quot; </span><span class="font4">means the total license fees and any training specified in Schedule 2 Part 1;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Data Protection Laws&quot; </span><span class="font4">means all applicable statutes, laws, secondary legislation or regulations pertaining to privacy, confidentiality and/or the protection of Personal&nbsp;Data or corporate data, including, without limitation, the Data Protection Act 1998&nbsp;(UK), the Telecommunications (Data Protection and Privacy) Regulations 1999&nbsp;(UK),the Personal Data (Privacy) Ordinance ((Hong Kong));</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Documentation&quot; </span><span class="font4">means information supplied by Supplier concerning functionality and/or performance of the Software in electronic format which may be updated by&nbsp;Thunderhead from time to time;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Effective Date&quot; </span><span class="font4">means </span><span class="font3">31'<sup>1</sup> </span><span class="font4">March </span><span class="font3">2010.</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Enterprise Period&quot; </span><span class="font4">means the period specified in Clause 6.5 which may be extended under Clause 6.15 or shortened under Clause 6.9 during which SCB may&nbsp;Use the Software on an unlimited number of servers by an unlimited number of&nbsp;users;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Intellectual Property Rights&quot; </span><span class="font4">means all current and future copyright, patents, trade marks or rights in databases, inventions or trade secrets, know-how, rights in&nbsp;designs, topographies, trade and business names, domain names, marks and&nbsp;devices (whether or not registered) and all other intellectual property rights and&nbsp;applications for any of those rights (where such applications can be made) capable of&nbsp;protection in any relevant country of the world;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Licences&quot; </span><span class="font4">means the licences required to be granted under this Agreement by the Supplier or in respect of which the Supplier is required to procure the grant&nbsp;concerning the Software;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Maintenance Agreement&quot; </span><span class="font4">means an agreement of even date between the Parties for maintenance and support of the Software;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Personal Data&quot; </span><span class="font4">means any data or information which relates to an individual (including but not limited to SCB Group Staff and customers) and which is held by or&nbsp;is under the control of any member of SCB's Group and, to the extent the Data&nbsp;Protection Laws apply to data or information which relates to a corporate entity,&nbsp;&quot;Personal Data&quot; shall include such data and information;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Premises&quot; </span><span class="font4">means the respective place or places where the Software is to be downloaded as specified in Schedule 1;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Project Manager'' </span><span class="font4">means the person described as a Project Manager in Schedule 4 or his or her successor or superior notified in writing to the other party;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Regulatory Authority&quot; </span><span class="font4">means in relation to SCB Group, any body (including without limitation any central bank, government department or agency, or other authority in&nbsp;any part of the world) which has the responsibility of supervising and/or regulating&nbsp;banks and other financial institutions generally including SCB Group and any branch</span></p>
+<p><span class="font4">or representative office of SCB Group;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;SCB Group&quot; </span><span class="font4">means SCB and</span></p>
+<p><span class="font4">(a) any person, body corporate, partnership, firm or other entity in which on or&nbsp;(subject to clause 6) after the Effective Date from time to time SCB directly or&nbsp;indirectly:</span></p>
+<p><span class="font4">i. &nbsp;&nbsp;&nbsp;owns more than half the capital or business assets; or</span></p>
+<p><span class="font4">ii. &nbsp;&nbsp;&nbsp;has the power to exercise fifty percent (50%) or more of the voting</span></p>
+<p><span class="font4">rights in such entity; or</span></p>
+<p><span class="font4">iii. has the legal power to direct or cause the direction or general management or&nbsp;affairs of the entity in question; or</span></p>
+<p><span class="font4">iv. has the power to appoint more than half the members of the supervisory&nbsp;board, board of directors or bodies legally representing such entity; or</span></p>
+<p><span class="font4">v. has the right to manage the business of such entity;</span></p>
+<p><span class="font4">(b) any person, body corporate, partnership, firm or other entity which directly or&nbsp;indirectly has in or over SCB the rights or powers listed in (a) above </span><span class="font3" style="font-weight:bold;">(&quot;a&nbsp;Controller&quot;); </span><span class="font4">and</span></p>
+<p><span class="font4">(c) any person, body corporate, partnership, firm or other entity in which a&nbsp;Controller directly or indirectly has the rights or powers listed in (a) above;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;SCB Service Provider&quot; </span><span class="font4">means any service provider, contractor or other third party who is engaged by or who contracts with SCB or another member of SCB Group to&nbsp;provide, operate or otherwise manage services for the benefit of any member of SCB</span></p>
+<p><span class="font4">Group and/or third party customers of SCB Group;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Software&quot; </span><span class="font4">means the software, the tools and languages specified in Schedule 1;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Source Materials&quot; </span><span class="font4">means in relation to an item of software, all materials and documents necessary to enable a reasonably skilled programmer to understand,&nbsp;maintain, amend and enhance the software in question without reference to any&nbsp;other person or document and whether in eye-readable or machine readable form&nbsp;including, without limitation, the source code listing of such computer software and all&nbsp;normally available programmer's comments;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Staff' </span><span class="font4">means in respect of either party any staff engaged by such party (including employees as well as any agents and sub-contractors) in connection with this</span></p>
+<p><span class="font4">Agreement;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Use&quot; </span><span class="font4">means to install, access, load, store, copy, transmit and run (including but not limited to testing and back-up purposes) for Business Purposes;</span></p>
+<p><span class="font3" style="font-weight:bold;">&quot;Working Days&quot; or &quot;Working Hours&quot; </span><span class="font4">means 09h00 to 17h00 GMT Monday to Friday excluding UK Bank and Statutory holidays;</span></p>
+<p><span class="font3" style="font-weight:bold;">2 Interpretation</span></p>
+<p><span class="font4">2.1 Clause headings are for ease of reference only and are not intended to be part of or&nbsp;to affect the meaning, interpretation or construction of any of the terms and&nbsp;conditions of this Agreement.</span></p>
+<p><span class="font4">2.2 References to any gender includes any other gender, the plural shall include the&nbsp;singular and bodies corporate shall include unincorporated bodies and (in each case)&nbsp;vice versa.</span></p>
+<p><span class="font4">2.3 &nbsp;&nbsp;&nbsp;Reference to any statute, enactment, ordinance, order, regulation or other similar</span></p>
+<p><span class="font4">instrument shall be construed to include a reference to the statute, enactment, ordinance, order, regulation or instrument as from time to time amended, extended,&nbsp;re-enacted or consolidated; and all statutory instruments, orders, regulations or&nbsp;instruments made pursuant to it.</span></p>
+<p><span class="font4">2.4 Unless the context otherwise requires those provisions contained in this Agreement&nbsp;which relate to any subject matter of which there are more than one shall apply&nbsp;severally to each.</span></p>
+<p><span class="font4">2.5 Clauses, Sections, Pages, and the Schedules referenced by name shall refer to the&nbsp;Clause, Section, Page, or the Schedule having the title referred to.</span></p>
+<p><span class="font4">2.6 References to currency in this Agreement, denoted by &quot;$SGD&quot; are references to&nbsp;Singapore Dollars.</span></p>
+<p><span class="font3" style="font-weight:bold;">3 Precedence</span></p>
+<p><span class="font4">If there is any conflict or inconsistency between the terms in the various parts of this Agreement, the Clauses in the body of the Agreement i.e. clauses 1 to 24 (inclusive)&nbsp;will prevail over those in the Schedules.</span></p>
+<p><span class="font3" style="font-weight:bold;">4 Term</span></p>
+<p><span class="font4">This Agreement is deemed to take effect from the Effective Date and shall continue until terminated in accordance with this Agreement.</span></p>
+<p><span class="font3" style="font-weight:bold;">5 &nbsp;&nbsp;&nbsp;Supplier's Obligations</span></p>
+<p><span class="font4">5.1 &nbsp;&nbsp;&nbsp;The Supplier warrants and undertakes:</span></p>
+<p><span class="font4">(a) to allow the Software to be downloaded at the Premises</span></p>
+<p><span class="font4">(b) to allow a copy of the Documentation to be downloaded at the Premises in&nbsp;electronic format within 30 days of the Effective Date</span></p>
+<p><span class="font4">(c) allow the Software to be downloaded immediately after the Effective Date</span></p>
+<p><span class="font4">(d) to grant (or procure the grant of) the Licences to SCB in accordance with the&nbsp;terms set out in Clause 6</span></p>
+<p><span class="font4">all in accordance with the provisions of this Agreement and applicable laws and regulations.</span></p>
+<p><span class="font4">Risk and property in the media on which the Software is supplied shall pass to SCB or to a member of SCB Group as SCB shall specify in writing on delivery of the&nbsp;relevant media.</span></p>
+<p><span class="font4">Should any copy of the Software or Software Documentation be lost or destroyed the</span></p>
+<p><span class="font4">Supplier will supply to SCB a replacement copy of the same at the reasonable cost only of the media on which the same is supplied.</span></p>
+<p><span class="font4">Except as specified in Schedule 1 the Supplier shall be responsible for obtaining at the Supplier's own expense any third party licences or consents necessary for the&nbsp;Use of the Software by SCB, the members of SCB Group and SCB Service Providers&nbsp;as licensed under this Agreement.</span></p><h3><a name="bookmark6"></a><span class="font4" style="font-weight:bold;">Licence and scope of unlimited rights of Use</span></h3>
+<p><span class="font4">The Supplier hereby grants or shall procure the grant to SCB a non-exclusive, nontransferable world-wide licence to Use and have used by each member of SCB</span></p>
+<p><span class="font4">Group and their Staff, the Software and Software Documentation (for the full term of the copyright and any other Intellectual Property Rights therein) for the Business</span></p>
+<p><span class="font4">Purposes subject to any limitations set out in this clause and Schedule 1.</span></p>
+<p><span class="font4">The Supplier hereby grants or shall procure the grant to SCB a non-exclusive, nontransferable world-wide licence (for no additional charge and for the full term of the copyright and any other Intellectual Property Rights therein) to Use and have used by&nbsp;each member of SCB Group and their Staff all work, materials, upgrades,</span></p>
+<p><span class="font4">enhancements, new versions, new releases, patches and items (if any) </span><span class="font4" style="font-weight:bold;">(&quot;Software</span></p>
+<p><span class="font4" style="font-weight:bold;">Materials&quot;) </span><span class="font4">provided or to be provided to SCB or any other member of SCB Group pursuant to the Maintenance Agreement which require a licence and which are not&nbsp;covered by the provisions of Clause 6.1 above.</span></p>
+<p><span class="font4">SCB and any other member of SCB Group may permit SCB Service Providers and customers to Use the Software, Documentation and Software Materials within the&nbsp;scope of the permissions under this Agreement provided that SCB will be liable for&nbsp;such Use by SCB Service Providers and customers as if SCB had Used the&nbsp;Software, Documentation and Software Materials itself.</span></p>
+<p><span class="font4">The Licence shall commence on the Effective Date and continue until terminated in accordance with the provisions of this Agreement.</span></p>
+<p><span class="font4">Supplier agrees for the fixed 3 year period beginning on the Effective Date and ending 31<sup>st</sup> March 2013, that the Software (which expressly excludes any new&nbsp;modules which may be created by Supplier since the Effective Date) may be&nbsp;deployed on an unlimited number of servers and Used by an unlimited number of&nbsp;users for in all cases the Business Purposes. Upon and after the 31<sup>st</sup> March 2013 the</span></p>
+<p><span class="font4">usage shall become fixed and limited to the levels determined in accordance with the remaining provisions of this Clause 6.</span></p>
+<p><span class="font4">6.6 SCB shall upon request in writing provide the Supplier with details of the number and&nbsp;type of servers (Production or Non-Production) which utilize the third party software&nbsp;product known as ChartFX (also known as the Dynamic Charting Module). The</span></p>
+<p><span class="font4">Supplier requires this information on an annual basis to ensure the correct license fees are paid to the owners of Chart FX.</span></p>
+<p><span class="font4">6.7 Actual levels of Usage and deployment of the Software hereunder shall be accurately&nbsp;measured and recorded by SCB over the 30 day period ending on the 31'<sup>1</sup> March&nbsp;2013 (the &quot;Enterprise Audit&quot;) from which information average levels of usage and&nbsp;deployment and revised fees due under the Maintenance Agreement will be&nbsp;determined. SCB shall supply Supplier with a written report detailing the actual levels&nbsp;of use recorded by the Enterprise Audit and the resulting average levels of usage&nbsp;and deployment and revised fees due under the Maintenance Agreement. Supplier&nbsp;will assess the report and its results and will within 10 Working Days of its receipt of&nbsp;the same either:</span></p>
+<p><span class="font4">(a) Notify SCB that it agrees with the report and its results in which case the average level of usage and deployment of the Software revealed by the&nbsp;Enterprise Audit shall become the fixed levels of usage and deployment for&nbsp;the remainder of the term of the Agreement and the revised fees due under&nbsp;the Maintenance Agreement shall be applied; or</span></p>
+<p><span class="font4">(b) Notify SCB that it disputes the report and or the results in which case Supplier shall have the right to gain access to SCB's computer systems upon which&nbsp;the Software is installed for the limited purpose of verifying the actual levels of&nbsp;usage and deployment of the Software (&quot;Verification&quot;)</span></p>
+<p><span class="font4">6.8 In the event of Supplier notifying SCB pursuant to Clause 6.7 (b) SCB undertakes to&nbsp;co-operate with Supplier in the performance of the Verification. The Verification will&nbsp;be restricted in scope, manner and duration to that reasonably necessary to achieve&nbsp;the purposes stated in Clause 6. 7 above. Should following the Verification Supplier&nbsp;and SCB still fail to agree upon the level of usage and deployment or revised fees&nbsp;due under the Maintenance Agreement the matter shall be referred to an&nbsp;independent expert the identity of whom to be agreed between the parties and in</span></p>
+<p><span class="font4">default of agreement nominated by the President of the British Computer Society. The Parties agree to accept the decision of such independent expert as final and&nbsp;binding upon the parties who shall act as an expert rather than an arbitrator. The&nbsp;parties agree that for the revised fee due under the Maintenance Agreement shall be&nbsp;calculated at the rate of 20%of the attached price list of the Software actually used or&nbsp;otherwise deployed provided that such maintenance fees shall not be less than&nbsp;$409,816SGD.</span></p>
+<p><span class="font4">6.9 In the event of there being a change of control of SCB (as the term is defined by</span></p>
+<p><span class="font4">Clause 840 of the Income and Corporations Taxes Act 1988-as amended) prior to the 31<sup>st</sup> March 2013 then the definition of SCB Group shall be restricted to those&nbsp;subsidiary and holding companies of SCB which exist immediately before the change&nbsp;of control and in such event SCB agrees, at the request of Supplier, to carry out the</span></p>
+<p><span class="font4">Enterprise Audit to determine the levels of usage and deployment as prevail immediately before the change of control, for which purpose the provisions of&nbsp;Clauses 6.7 and 6.8 shall apply notwithstanding it may be before the 31'<sup>1</sup> March&nbsp;2013.</span></p>
+<p><span class="font4">6.10 In the event of any member of the SCB Group or any business division or department&nbsp;thereof (&quot;Divested Unit&quot;) ceasing to be part of the SCB Group, SCB or relevant SCB</span></p>
+<p><span class="font4">Group member may nevertheless either continue to process data for such Divested Unit or allow the Divested Unit to continue using the Software for its internal business&nbsp;purposes whilst it makes alternative arrangements to acquire its own licence or&nbsp;cease use of the Software in all cases for a period of up to six (6) months from the&nbsp;date it ceased to be a member of the SCB Group.</span></p>
+<p><span class="font4">6.11 In the event that prior to the 31 '<sup>t</sup> March 2013 SCB or a member of the SCB Group&nbsp;acquires another company or business (&quot;New Entity&quot;) the New Entity shall subject to&nbsp;Clauses 6.12 and 6.13 be entitled to all rights conferred on a SCB Group member&nbsp;under this Agreement.</span></p>
+<p><span class="font4">6.12 If such New Entity already has a licence to use Supplier software (&quot;Entity Licence&quot;)&nbsp;then SCB shall within 90 days of being notified by Supplier of the details of any&nbsp;licences between Supplier and the New Entity, notify Supplier as to whether:</span></p>
+<p><span class="font4">(a) the New Entity shall continue with its Entity Licence in accordance with its&nbsp;terms and so not use the Software licensed hereunder; or</span></p>
+<p><span class="font4">(b) that the New Entity shall terminate its Entity Licence in order to use the&nbsp;Software under this Agreement.</span></p>
+<p><span class="font4">6.13 If the New Entity terminates its Entity Licence prior to 31 </span><span class="font1"><sup>st</sup> </span><span class="font4">March 2013 SCB shall&nbsp;procure that the New Entity pays Supplier the fees for support (and any unpaid&nbsp;licence fees) which Supplier would have received from the New Entity had it not&nbsp;terminated its Entity Licence to benefit from the terms of this Agreement.</span></p>
+<p><span class="font4">6.14 If the New Entity or series of connected New Entities joining the SCB Group results in&nbsp;the levels of usage and or deployment of the Software to increase by more than 35%&nbsp;over the levels of usage and or deployment which prevail immediately before the&nbsp;New Entity or connected New Entities joined the SCB Group, SCB shall require the&nbsp;prior written consent of Supplier before such New Entity or series of connected New</span></p>
+<p><span class="font4">Entities may Use the Software. Should the parties disagree over whether the levels of usage and or deployment of the Software have increased by more than 35% either&nbsp;party can initiate the Enterprise Audit to determine the levels of usage and&nbsp;deployment as prevail immediately before and after the New Entity or connected New&nbsp;Entities joined the SCB Group, for which purpose the provisions of Clauses 6.7 and</span></p>
+<p><span class="font4">6.8 shall apply notwithstanding it may be before the 31<sup>st</sup> March 2013.</span></p>
+<p><span class="font4">6.15 SCB has the right exercisable at any time before the 31'</span><span class="font12"><sup>1</sup> </span><span class="font4">March 2013 and upon&nbsp;payment to the Supplier of $500,000SGD, to extend the period during which the&nbsp;Software may be deployed on an unlimited number of servers by an unlimited&nbsp;number of users until 31<sup>st</sup> March 2014.</span></p>
+<p><span class="font4">6.16 SCB has the right exercisable at any time before the 31 </span><span class="font1"><sup>st</sup> </span><span class="font4">August 2011 and upon&nbsp;payment to the Supplier of $2,000,000SGD, to extend the scope of Use to all&nbsp;business divisions of SCB.</span></p>
+<p><span class="font4">6.17 Upon expiry of the Enterprise Period should SCB wish to acquire additional Software&nbsp;the Supplier agrees to use the price list for such Software in Schedule 1 (less 40%&nbsp;discount), for a period of 24 months from expiry of the Enterprise Period.</span></p>
+<p><span class="font4">6.18 Should SCB wish to acquire new modules created by the Supplier after the Effective&nbsp;Date the Supplier agrees to make such new modules available to SCB at published</span></p>
+<p><span class="font4">retail list price less 40% discount.</span></p><img src="1.0 Thunderhead_Software Licence Agreement_files/1.0 Thunderhead_Software Licence Agreement-2.jpg" style="width:55pt;height:54pt;"/><h3><a name="bookmark7"></a><span class="font4" style="font-weight:bold;">7 &nbsp;&nbsp;&nbsp;Delivery and Installation of Software</span></h3>
+<p><span class="font4">7.1 The Supplier shall allow to be downloaded to the Premises:</span></p>
+<p><span class="font4">(a) the Software in machine executable object code form on such medium or format as specified in Schedule 1 ; and</span></p>
+<p><span class="font4">(b) &nbsp;&nbsp;&nbsp;one copy of the Documentation in legible eye readable electronic format;</span></p><h3><a name="bookmark8"></a><span class="font4" style="font-weight:bold;">8 Operating Manuals and Training</span></h3>
+<p><span class="font4">8.1 SCB and other members of SCB Group may copy the Software Documentation or&nbsp;parts or excerpts thereof as it may require for operational Use of the Software and&nbsp;may modify or adapt the whole or any part of the Documentation or copies thereof or</span></p>
+<p><span class="font4">combine the same with any other documentation for operational Use of the Software.</span></p>
+<p><span class="font4">8.2 The Supplier undertakes to provide training in the Use of the Software for SCB's (or&nbsp;any other members of SCB Group's) Staff in accordance with the training plan to be&nbsp;agreed.</span></p><h3><a name="bookmark9"></a><span class="font4" style="font-weight:bold;">9 Software Maintenance</span></h3>
+<p><span class="font4">The parties hereto agree to enter into the Maintenance Agreement. The charges payable under the Maintenance Agreement shall be as specified in the Maintenance</span></p>
+<p><span class="font4">Agreement.</span></p><h3><a name="bookmark10"></a><span class="font4" style="font-weight:bold;">10 Supervision</span></h3>
+<p><span class="font4">10.1 The Supplier's and SC B's Project Managers shall each nominate in writing from time&nbsp;to time one or more representatives who shall be responsible for:</span></p>
+<p><span class="font4">(a) organising regular meetings at which they or any representative nominated in writing by them shall review progress; and</span></p>
+<p><span class="font4">(b) &nbsp;&nbsp;&nbsp;providing (subject to the provisions in respect of confidentiality set out in</span></p>
+<p><span class="font4">Clause 19) all information and documentation reasonably required by the Supplier and/or SCB, as the case may be, for the performance of their&nbsp;respective duties under this Agreement or as otherwise expressly required&nbsp;under this Agreement.</span></p>
+<p><span class="font4">10.2 Any representative nominated by any party shall be subject to such reasonable&nbsp;security arrangements as are notified in writing to that representative whenever such&nbsp;representative attends at the other party's premises.</span></p>
+<p><span class="font4">10.3 The Supplier agrees to follow SCB's applicable codes of conduct as notified by SCB&nbsp;to the Supplier from time to time.</span></p><h3><a name="bookmark11"></a><span class="font4" style="font-weight:bold;">11 Staff</span></h3>
+<p><span class="font4">11.1 All Supplier's employees and consultants shall be properly trained and competent,&nbsp;fully supervised at all times and shall possess suitable skills and experience for the&nbsp;performance of their obligations.</span></p>
+<p><span class="font4">11.2 The Supplier shall ensure that its Staff comply with all reasonable security and other&nbsp;office procedures and regulations (including without limitation health and safety&nbsp;policies) implemented by SCB and/or any member of the SCB Group (as the case&nbsp;may be), at any of their premises at which work is required to be carried out, which&nbsp;are notified to the Supplier from time to time.</span></p><div><img src="1.0 Thunderhead_Software Licence Agreement_files/1.0 Thunderhead_Software Licence Agreement-3.jpg" style="width:53pt;height:53pt;"/></div><br clear="all"/>
+<p><span class="font4">11.3 SCB shall permit the Supplier's Staff to gain such access on reasonable prior notice&nbsp;at all reasonable times during Working Hours to SCB's and/or any other member of&nbsp;SCB Group's premises as is reasonably necessary to enable any work to be carried&nbsp;out in accordance with this Agreement, save that SCB may refuse entry to or eject&nbsp;any member of the Supplier's Staff who does not comply with SCB's site or security&nbsp;regulations or who otherwise appears unfit to undertake work for SCB in accordance&nbsp;with the provisions of this Agreement.</span></p>
+<p><span class="font4">11.4 The Supplier shall at the reasonable request of SCB replace any employees or&nbsp;consultants with another or others of equal status and knowledge approved in&nbsp;advance in writing by SCB. SCB shall under no circumstances be liable to the&nbsp;Supplier or to any employee or consultant referred to in this Clause in respect of any</span></p>
+<p><span class="font4">liability, loss or damage occasioned by such replacement and the Supplier shall indemnify SCB and keep SCB indemnified against any claim, demand or action&nbsp;made or brought by any such employee or consultant.</span></p>
+<p><span class="font4">11.5 The Supplier warrants, represents and undertakes that if any member of its Staff is&nbsp;subject to immigration control that:</span></p>
+<p><span class="font4">(a) the relevant member of Staff has valid and subsisting leave, permit or visa to&nbsp;enter or remain in the country where the services are to be provided and to&nbsp;undertake the Implementation Services there; and</span></p>
+<p><span class="font4">(b) the relevant member of Staff is not subject to any conditions (in relation to&nbsp;such leave, permit or visa) which may affect the Supplier's obligations under&nbsp;this Agreement.</span></p><h3><a name="bookmark12"></a><span class="font4" style="font-weight:bold;">12 Charges and Payment</span></h3>
+<p><span class="font4">12.1 Except as otherwise specified herein SCB shall pay the charges for the items&nbsp;specified in Schedule 2 in accordance with the payment profile set out in Schedule 2.&nbsp;Such charges as are due and payable under this Agreement shall be payable by&nbsp;SCB in SGD.</span></p>
+<p><span class="font4">12.2 All charges and expenses quoted in this Agreement are exclusive of Goods and&nbsp;Services Tax or equivalent goods sales tax which shall also be paid by SCB but&nbsp;which shall only be paid if a receipt which is valid for such tax purposes is given to&nbsp;SCB. All other taxes and charges are included in the stated Contract Price. All&nbsp;invoices submitted will be marked clearly with SCB's contract reference and marked&nbsp;for the attention of the relevant Project Manager.</span></p>
+<p><span class="font4">12.3 Invoices shall describe the Software, services and any other products supplied in&nbsp;sufficient detail so that tax (e.g. import or custom duties, sales tax or withholding tax)&nbsp;is not charged incorrectly. Any withholding tax shall be paid in accordance with&nbsp;Clause 24.4.</span></p>
+<p><span class="font4">12.4 If any sum due and payable under this Agreement is not paid by the party liable to&nbsp;make such payment within 30 days after receipt of the relevant invoice or demand,&nbsp;the party to whom such money is owed shall be entitled (without prejudice to any of&nbsp;its other rights) following receipt by the party in default, of written notice from it, to&nbsp;charge interest at the rate of 2 per cent above the base rate of Standard Chartered&nbsp;Bank from time to time in force from the date of such notice until the date of actual&nbsp;payment. Such interest shall accrue from day-to-day and be payable after as well as&nbsp;before any judgment. Interest shall not accrue or be payable on any monies or&nbsp;payment withheld, deducted or suspended pursuant to Clauses 12.5, 12.7 or 12.8&nbsp;below.</span></p>
+<p><span class="font8" style="font-style:italic;">$</span></p>
+<p><span class="font4">ft</span></p>
+<p><span class="font4">lo</span></p>
+<p><span class="font4">12.5 SCB may withhold payment against any invoice which is not submitted in accordance&nbsp;with this Agreement or which covers or relates to any goods or services which have&nbsp;not been provided in accordance with this Agreement and shall notify the Supplier in&nbsp;writing accordingly.</span></p>
+<p><span class="font4">12.6 Any payment made by SCB shall not imply acceptance by SCB of the Software or&nbsp;any part thereof.</span></p>
+<p><span class="font4">12. 7 SCB shall after giving notice to the Supplier have the right to deduct from any payment due under a valid invoice any agreed sums owed to it by the Supplier.</span></p>
+<p><span class="font4">12.8 SCB may suspend the payment of any sums due or falling due to the Supplier where&nbsp;the Supplier is in breach of its obligation(s) to SCB under this Agreement and such&nbsp;payment or sums relate to the obligation(s) in respect of which the Supplier is in&nbsp;breach.</span></p>
+<p><span class="font4">12.9 The Supplier may suspend the performance of the Implementation Services if SCB is&nbsp;in breach of its obligation(s) to Supplier under this Clause 12.</span></p><h3><a name="bookmark13"></a><span class="font4" style="font-weight:bold;">13 Late Completion</span></h3>
+<p><span class="font4">13.1 The Supplier shall, subject to any amendments to the Completion Date made&nbsp;pursuant to Clause 12, install the Software on or before the relevant Completion</span></p>
+<p><span class="font4">Date. Failure to install the Software in accordance with this Agreement on or before the Completion Date shall be a material breach by the Supplier of a condition of this</span></p>
+<p><span class="font4">Agreement and provided such failure has not been caused or contributed to by the acts or omissions of SCB, shall entitle SCB without prejudice to its other rights and&nbsp;remedies at any time thereafter to terminate this Agreement forthwith on 21 days&nbsp;written notice to the Supplier (and this Agreement shall terminate upon expiry of such&nbsp;notice period unless such breach, if capable of remedy, is remedied within such&nbsp;period) and claim damages in contract and/or tort for loss or damage which it has&nbsp;suffered or may incur.</span></p>
+<p><span class="font4">13.2 If the Supplier fails to install the Software in accordance with this Agreement on or&nbsp;before the relevant Completion Date the Supplier shall provided such failure has not&nbsp;been caused or contributed to by the acts or omissions of SCB, pay SCB an amount&nbsp;by way of liquidated damages calculated in accordance with the provisions of&nbsp;Schedule 2 Part 2. Without prejudice to SCB's rights under Clause 13.1 above and&nbsp;provided the liquidated damages are paid in accordance with this Clause and the&nbsp;said Schedule the liquidated damages shall be the sole remedy of SCB for such&nbsp;delay but not any further delay or non-delivery. SCB may, after giving notice to the&nbsp;Supplier, pursuant to Clause 13.3 at its entire discretion deduct such liquidated&nbsp;damages payable from any monies due to the Supplier under this Agreement and/or&nbsp;recover all or any part thereof as a debt then instantly due and payable by the&nbsp;Supplier.</span></p>
+<p><span class="font4">13.3 SCB shall notify the Supplier if it considers that it is entitled to liquidated damages in&nbsp;accordance with Clause 13.2. Failure by SCB to so notify the Supplier shall not in&nbsp;any way affect the rights or remedies of SCB or the accrual of liquidated damages.</span></p><h3><a name="bookmark14"></a><span class="font4" style="font-weight:bold;">14 Limitation of Liability</span></h3>
+<p><span class="font4">14.1 Nothing in this Agreement excludes or limits the liability of either party in respect of:</span></p>
+<p><span class="font4">(a) death or personal injury caused by its negligence (including negligence by&nbsp;Supplier Staff);</span></p>
+<p><span class="font16">(b) </span><span class="font4">the indemnity given in Clause 15 of this Agreement;</span></p>
+<p><span class="font4">(c) dishonesty, or the tort of deceit, or wilful neglect by its employees, agents or&nbsp;contractors;</span></p>
+<p><span class="font4">(d) fraudulent misrepresentation;</span></p>
+<p><span class="font4">(e) liability which may not otherwise be limited or excluded under applicable law;&nbsp;and.</span></p>
+<p><span class="font4">(f) Infringement of one party's Intellectual Property Rights by the other party.</span></p>
+<p><span class="font4">14.2 Subject to Clause 14.1 above, in no event will either party be liable to the other for&nbsp;indirect, special, incidental or consequential damages or loss of business, profits,&nbsp;revenue, interest, goodwill or anticipated savings, or loss or corruption of data arising&nbsp;out of or in connection with this Agreement. or for any damages or sums paid by SCB&nbsp;to a third party, even if Supplier has been advised of the possibility of such damages&nbsp;or payments.</span></p>
+<p><span class="font4">14.3 Subject to Clauses 14.1 and 14.2 above, the aggregate liability of each party to the&nbsp;other arising out of or in connection with this Agreement whether arising from&nbsp;contract, tort, negligence or otherwise shall be limited as follows:</span></p>
+<p><span class="font4">(a) for loss of or damage to physical property, the limit shall be $ 5,000,000SGD&nbsp;or if ascertainable and if greater, 150% of the total amount of the Contract</span></p>
+<p><span class="font4">Price which would have been payable (had this Agreement been fully and properly performed) to the Supplier by SCB under this Agreement;</span></p>
+<p><span class="font4">(b) for any other liability, the aggregate liability shall be limited to&nbsp;$3,000,000.00SGD or if ascertainable and if greater 150% of the total amount</span></p>
+<p><span class="font4">of the Contract Price which would have been payable (had this Agreement been fully and properly performed) to the Supplier by SCB under this</span></p>
+<p><span class="font4">Agreement..</span></p>
+<p><span class="font4">14.4 SCB may recover directly from the Supplier any damages (subject to the limitations&nbsp;and exclusions in this Clause 14) suffered by other members of SCB Group as a&nbsp;result of any failure of the Supplier to comply with the terms of this Agreement or at&nbsp;SCB's election require that such damages be paid direct to the relevant member of&nbsp;SCB Group.</span></p>
+<p><span class="font4">14.5 SCB shall procure that all members of the SCB Group which derive any benefit from&nbsp;this Agreement will comply with the terms and conditions of this Agreement as if they&nbsp;had signed this Agreement themselves and in the event of any failure by any&nbsp;member of the SCB Group to so comply SCB agrees that it will be liable subject to&nbsp;the limitations and exclusions in this Clause 14 for such acts or omissions of any&nbsp;member of the SCB Group as if SCB had committed the acts or omissions itself.</span></p><h3><a name="bookmark15"></a><span class="font4" style="font-weight:bold;">15 Intellectual Property Rights Indemnity</span></h3>
+<p><span class="font4">15.1 The Supplier shall indemnify SCB and keep SCB fully and effectively indemnified on&nbsp;demand (and shall pay such sums to SCB as would indemnify and keep indemnified&nbsp;each member of SCB Group) against any and all loss, damage, claims, demands,&nbsp;actions, costs (including legal/attorney fees), charges, expenses and liabilities of</span></p>
+<p><span class="font4">whatsoever nature incurred by SCB and/or any member of SCB Group arising directly or indirectly out of or in connection with materials (including Deliverables and&nbsp;Software) provided by the Supplier to SCB or any other member of SCB Group&nbsp;pursuant to this Agreement containing material in respect of which any Intellectual</span></p>
+<p><span class="font4">Property Rights or proprietary rights belong to any third party or any claim that the possession or Use by SCB and/or any other member of SCB Group of the Software&nbsp;the Software Documentation and any other specification, information, goods, se</span></p><h1><a name="bookmark16"></a><span class="font21">&quot;'</span></h1><div>
+<p><span class="font3" style="font-weight:bold;">i3 PVM </span><span class="font14"><sup>0</sup></span></p></div><br clear="all"/>
+<p><span class="font4">or material produced or supplied by the Supplier under or pursuant to this Agreement infringes at any time the Intellectual Property Rights of any third party wheresoever&nbsp;and howsoever arising </span><span class="font3" style="font-weight:bold;">(&quot;Intellectual Property Infringement&quot;).</span></p>
+<p><span class="font4">15.2 SCB shall give the Supplier exclusive conduct of the defence to any claim or action in&nbsp;respect of any Intellectual Property Infringement and shall not) at any time admit&nbsp;liability or otherwise attempt to settle the said claim or action subject to the Supplier&nbsp;providing to SCB's reasonable satisfaction security for any costs or liabilities SCB&nbsp;may incur by reason of the Supplier's conduct of such defence.</span></p>
+<p><span class="font4">15.3 In the event of any Intellectual Property Infringement the Supplier shall at SCB's&nbsp;option procure for SCB and/or any other member of the SCB Group the right to&nbsp;continue its Use of such infringing items free of charge on the terms of this&nbsp;Agreement or forthwith make without charge to SCB such alterations, modification or&nbsp;adjustments to such infringing items (without reducing or adversely affecting the&nbsp;functionality or performance thereof) as shall be necessary and acceptable to SCB to&nbsp;make them non-infringing.</span></p>
+<p><span class="font4">15.4 Without prejudice to the other provisions of this Clause 15, any Intellectual Property&nbsp;Infringement in respect of any Deliverables and/or Software shall be deemed to be a&nbsp;material breach of a condition of this Agreement and shall entitle SCB to terminate</span></p>
+<p><span class="font4">this Agreement forthwith upon written notice to the Supplier.</span></p>
+<p><span class="font4">15.5 Supplier shall not have any liability under the indemnity given in this Clause 15 if (i)&nbsp;such claim arises from an intentional tortious act or the negligence of SCB, (ii) such&nbsp;claim is based upon the use of the Software by SCB in an application or environment&nbsp;for which the Software was not designed or contemplated, (iii) such claim arise as a&nbsp;result of modifications and/or improvements of the Software introduced or made by&nbsp;SCB, (iv) such claim arises as a result of the use of a version of the Software which&nbsp;has been superseded by a newer version and if such infringement would have been&nbsp;avoided by use of the newer version and (v) such claim arises as a result of the use&nbsp;of the Software in combination with any equipment or computer programs not&nbsp;supplied or approved by Supplier.</span></p>
+<p><span class="font3" style="font-weight:bold;">16 &nbsp;&nbsp;&nbsp;Warranties Representations and Undertakings</span></p>
+<p><span class="font4">The Supplier hereby gives the representations, warranties and undertakings and remedies set out in Schedule 3.</span></p>
+<p><span class="font3" style="font-weight:bold;">17 Termination</span></p>
+<p><span class="font4">17.1 SCB shall have the right to terminate this Agreement with immediate effect by written&nbsp;notice to the Supplier (without entitling the Supplier to receive any compensation in&nbsp;respect of the termination of this Agreement) if without SCB's prior written consent&nbsp;the Supplier is the subject of a takeover, merger, acquisition or other form of change&nbsp;in majority voting control (either at shareholder meetings or meetings of the board of</span></p>
+<p><span class="font4">directors) (&quot;Change of Control&quot;). SCB agrees that this right shall cease to have effect 60 days after the date of the Change of Control</span></p>
+<p><span class="font4">17.2 This Agreement may be terminated forthwith by either party </span><span class="font3" style="font-weight:bold;">(&quot;the first party&quot;) </span><span class="font4">by&nbsp;written notice to the other in the event of one or more of the following:</span></p>
+<p><span class="font4">(a) if the other ceases to carry on business or goes into liquidation (other than&nbsp;voluntary liquidation for the purpose of a bona fide solvent reconstruction or</span></p>
+<p><span class="font4">amalgamation the terms of which have been approved in advance by the first party in writing) or is dissolved or struck off;</span></p>
+<p><span class="font4">(b) if the other is unable to pay its debts as they mature or suffers the&nbsp;appointment of a receiver, administrative receiver or administrator (or any&nbsp;similar official or process under the law of its domicile or place of&nbsp;incorporation) of the whole or any part of its assets or is the subject of any&nbsp;bankruptcy proceedings;</span></p>
+<p><span class="font4">(c) if the other is in breach of any provisions of this Agreement and fails to&nbsp;remedy such breach (where it is capable of being remedied) within 30 days of&nbsp;notice from the first party specifying such breach.</span></p>
+<p><span class="font4">17.3 SCB may terminate this Agreement at any time (without liability and without entitling&nbsp;the Supplier to receive any compensation in respect of the termination of this&nbsp;Agreement) by giving at least thirty (30) days prior written notice to the Supplier.</span></p>
+<p><span class="font4">17.4 In the event that a Regulatory Authority of SCB directs, or instructs SCB to terminate&nbsp;this Agreement and/or continuation of this Agreement would cause SCB or any other&nbsp;member of SCB Group to be in breach of any laws or regulatory requirements to&nbsp;which it is subject, SCB shall be entitled to terminate this Agreement immediately&nbsp;without entitling the Supplier to receive any compensation in respect of the&nbsp;termination of this Agreement.</span></p>
+<p><span class="font4">17.5 The Supplier shall immediately notify SCB if the Supplier is in breach of this&nbsp;Agreement, there is any material alteration to the ownership or control of the</span></p>
+<p><span class="font4">Supplier, the management of the Supplier is devolved to a third party company or any of the events referred to in Clause 17.2 above occurs to it.</span></p><h3><a name="bookmark17"></a><span class="font4" style="font-weight:bold;">18 Effect of Termination</span></h3>
+<p><span class="font4">18.1 At the request and expense of SCB, the Supplier shall following termination of this&nbsp;Agreement co-operate with and assist SCB in order to ensure that such termination&nbsp;and its consequences cause the minimum disruption to SCB's business and affairs&nbsp;and the performance of its responsibilities.</span></p>
+<p><span class="font4">18.2 Termination of this Agreement shall be without prejudice to any rights of either party&nbsp;which may have accrued up to the date of such termination and the rights to&nbsp;terminate this Agreement are not intended to be exclusive but shall be in addition to&nbsp;every other remedy or right now or hereafter existing including the right to recover&nbsp;damages and to a decree requiring any appropriate performance required by this&nbsp;Agreement. Termination of this Agreement shall not entitle SCB to any refund of&nbsp;moneys paid hereunder and shall also not affect the payment of any moneys due but&nbsp;unpaid at the time of termination.</span></p>
+<p><span class="font4">18.3 Upon any termination of this Agreement of the rights of SCB to Use the Software&nbsp;shall cease.</span></p>
+<p><span class="font4">18.4 The provisions of Clause 1, Clause 14, Clause 15, Clause 18, Clause 19, Clause 20,&nbsp;Clause 22, Clause 23, and Clause 24 shall survive any termination of this Agreement&nbsp;and continue indefinitely.</span></p>
+<p><span class="font4">18.5 In the event that this Agreement is terminated each party undertakes within 1</span><span class="font21">o&nbsp;</span><span class="font4">Working Days of receipt of a written request from the other party to:</span></p>
+<p><span class="font4">(a) &nbsp;&nbsp;&nbsp;return all property in its possession or under its control that belongs to the</span></p>
+<p><span class="font4">other;</span></p>
+<p><span class="font4">(b) return all Confidential Information in its possession together with all copies&nbsp;thereof;</span></p>
+<p><span class="font4">(c) destroy all Confidential Information in its possession by shredding or&nbsp;incineration of all documents and other materials in its possession, custody or&nbsp;control and/or irretrievably delete the same if stored on electronic or magnetic&nbsp;media and certify that this has been done.</span></p><h3><a name="bookmark18"></a><span class="font4" style="font-weight:bold;">19 Confidentiality</span></h3>
+<p><span class="font4">19.1 Subject to Clauses 19.2 and 19.3 below and save as otherwise expressly provided in&nbsp;this Agreement, neither party shall during the term of this Agreement or thereafter&nbsp;disclose to any person or use for any purpose any Confidential Information obtained&nbsp;by it (the </span><span class="font4" style="font-weight:bold;">&quot;Recipient Party&quot;) </span><span class="font4">from the other (the </span><span class="font4" style="font-weight:bold;">&quot;Disclosing Party&quot;) </span><span class="font4">in connection&nbsp;with this Agreement but the Recipient Party may:</span></p>
+<p><span class="font4">(a) disclose Confidential Information to such of its Staff or SCB's professional&nbsp;advisers (which shall include, lawyers, accountants and auditors) who require&nbsp;such disclosure where bona fide necessary for the proper performance of&nbsp;their duties provided that the Recipient Party has given prior written&nbsp;instructions to Staff and SCB professional advisors as to the restrictions on&nbsp;use and disclosure contained in this Agreement and without prejudice to the&nbsp;foregoing SCB may disclose the Supplier's Confidential Information where</span></p>
+<p><span class="font4">necessary for the proper exercise of any licences granted to SCB hereunder;</span></p>
+<p><span class="font4">(b) use Confidential Information in the proper exercise of its rights and the&nbsp;performance of its obligations under this Agreement.</span></p>
+<p><span class="font4">19.2 The Recipient Party shall use its reasonable endeavours to minimise the risk of&nbsp;unauthorised disclosure or use and undertakes to take proper care and all&nbsp;reasonable measures to protect the confidentiality of the Confidential Information</span></p>
+<p><span class="font4">using not less than the standard of care as it applies to its own Confidential</span></p>
+<p><span class="font3">Information and in no event less than a reasonable standard of care.</span></p>
+<p><span class="font4">19.3 The restrictions on use and disclosure of Confidential Information under Clause 19.1&nbsp;shall not apply to any Confidential Information which the Recipient Party can prove:</span></p>
+<p><span class="font4">(a) was already known to it prior to its receipt thereof from the Disclosing Party; or</span></p>
+<p><span class="font4">(b) was subsequently disclosed to it lawfully by a third party who did not obtain the same (whether directly or indirectly) from the Disclosing Party; or</span></p>
+<p><span class="font4">(c) was in the public domain at the time of receipt by the Recipient Party or has&nbsp;subsequently entered into the public domain other than by reason of the&nbsp;breach of the provisions of this Clause or any obligations of confidence owed</span></p>
+<p><span class="font4">by the Recipient Party to the Disclosing Party; or</span></p>
+<p><span class="font4">(d) it is required to be disclosed by law, regulation, order or regulators.</span></p>
+<p><span class="font4">19.4 Confidential Information shall be subject to the obligations of confidence in this</span></p>
+<p><span class="font4">Clause, irrespective of whether communicated orally or in writing by the Disclosing</span></p>
+<p><span class="font4">Party or its representatives or obtained through observations made by representatives of the Recipient Party at the premises of the Disclosing Party.</span></p>
+<p><span class="font4">19.5 Confidential Information shall not be exempted under Clause 19.1 above from&nbsp;restriction under this Agreement by reason only that:</span></p>
+<p><span class="font4">(a) some or all of its features (but not the combination and/or principle thereof)&nbsp;are or become public knowledge or are in the possession of or become&nbsp;available to the Recipient Party as mentioned in Clause 19.3; or</span></p><div>
+<p><span class="font4">c,</span><span class="font1">&gt;I</span></p>
+<p><span class="font21">.,. &nbsp;&nbsp;&nbsp;</span><span class="font23">&quot;'</span></p>
+<p><span class="font19" style="font-style:italic;">i</span><span class="font4"> PVM &quot;</span></p>
+<p><span class="font14" style="font-weight:bold;"><sub>6,.</sub> &nbsp;&nbsp;&nbsp;,J:,.<sup>o,</sup></span></p></div><br clear="all"/>
+<p><span class="font4">(b) &nbsp;&nbsp;&nbsp;such information could be derived or obtained from information which is or</span></p>
+<p><span class="font4">becomes public knowledge or is in the possession of or becomes available to the Recipient Party as mentioned in Clause 19.3 if so to obtain or derive it&nbsp;would require substantial skill, labour or expense.</span></p>
+<p><span class="font4">19.6 This Clause 19 shall survive termination of the Licence or this Agreement.</span></p><h3><a name="bookmark19"></a><span class="font4" style="font-weight:bold;">20 Data Protection</span></h3>
+<p><span class="font4">20.1 In addition to and notwithstanding any other right or obligation arising under this&nbsp;Agreement, the Supplier shall (and shall ensure that its sub-contractors shall) take all&nbsp;appropriate technical and organisational security measures to ensure that Personal</span></p>
+<p><span class="font4">Data which is under the Supplier's possession or control is protected against loss, destruction and damage, and against unauthorised access, use, modification,&nbsp;disclosure or other misuse, and that only personnel authorised by SCB under Clause</span></p>
+<p><span class="font4">11 have access to Personal Data.</span></p>
+<p><span class="font4">20.2 The Supplier shall (and shall ensure that its employees, agents and subcontractors&nbsp;shall) in respect of Personal Data in its possession or under its control:</span></p>
+<p><span class="font4">(a) &nbsp;&nbsp;&nbsp;comply with any request made or direction given by any member of SCB's</span></p>
+<p><span class="font4">Group in connection with the requirements of any Data Protection Laws; and</span></p>
+<p><span class="font4">(b) &nbsp;&nbsp;&nbsp;not do or permit anything to be done which might jeopardise or contravene</span></p>
+<p><span class="font4">the terms of any registration, notification or authorisation under any Data</span></p>
+<p><span class="font4">Protection Laws of any member of SCB's Group; and</span></p>
+<p><span class="font4">(c) &nbsp;&nbsp;&nbsp;not process any Personal Data (including personal or private information of</span></p>
+<p><span class="font4">personnel, clients or customers of any member of SCB's Group) as part of the Implementation Services unless it is acting on the express instructions of a&nbsp;member of SCB's Group, and such Personal Data shall be treated as&nbsp;Confidential Information of the relevant member of SCB Group for the</span></p>
+<p><span class="font4">purpose of this Agreement; and</span></p>
+<p><span class="font4">(d) use Personal Data only for the purposes of fulfilling its obligations under this&nbsp;Agreement and to comply with instructions of a member of SCB's Group from&nbsp;time to time in connection with use of such Personal Data, and not retain</span></p>
+<p><span class="font4">Personal Data for any longer than is necessary for these purposes; and</span></p>
+<p><span class="font4">(e) not disclose Personal Data without the written authority of the relevant&nbsp;member of SCB's Group (except for the purposes of fulfilling its obligations&nbsp;under this Agreement), and immediately notify such member where it&nbsp;becomes aware that a disclosure of Personal Data may be required by law;&nbsp;and</span></p>
+<p><span class="font4">(f) &nbsp;&nbsp;&nbsp;not transfer Personal Data which has been obtained by or made available to</span></p>
+<p><span class="font4">the Supplier within one country outside that country, or allow persons outside that country to have access to it, without the prior written approval of the&nbsp;relevant member of SCB's Group; and</span></p>
+<p><span class="font4"><sub>(g</sub>) observe the provisions of, and comply with any request made or direction&nbsp;given by any member of SCB's Group in connection with, any Data Protection&nbsp;Laws; and</span></p>
+<p><span class="font4">(h) take all reasonable steps to ensure the reliability of the personnel which will&nbsp;have access to any Personal Data and ensure that any employee of the&nbsp;Supplier (or of any of the Supplier's sub-contractors) requiring access to any&nbsp;Personal Data gives a written undertaking not to access, use, disclose</span></p>
+<p><span class="font4">retain Personal Data except in performing their duties of employment and is informed that failure to comply with this undertaking may be a criminal offence&nbsp;and may also lead the Supplier (or, as the case may be, sub-contractor) to&nbsp;take disciplinary action against the employee; and</span></p>
+<p><span class="font4">(i) &nbsp;&nbsp;&nbsp;consider all suggestions by SCB Group personnel to ensure that the level of</span></p>
+<p><span class="font4">protection provided for Personal Data is in accordance with this Agreement and to make the changes suggested (at the Supplier's cost) unless the&nbsp;Supplier can prove to the relevant member of SCB's Group reasonable&nbsp;satisfaction that they are not necessary or desirable to ensure ongoing&nbsp;compliance with this Clause; and</span></p>
+<p><span class="font4"><sub>U</sub>) &nbsp;&nbsp;&nbsp;immediately notify SCB and each affected member of SCB's Group when it</span></p>
+<p><span class="font4">becomes aware of a breach of this Clause.</span></p>
+<p><span class="font4">20.3 The Supplier acknowledges that any unauthorised access, destruction, alteration,&nbsp;addition or impediment to access or use of that Personal Data when stored in any&nbsp;computer, or the publication or communication of any part or document by a person&nbsp;which has come to his knowledge or into his possession or custody by virtue of the&nbsp;performance of this Agreement (other than to a person to whom the Supplier is&nbsp;authorised to publish or disclose the fact or document) may be a criminal offence.</span></p>
+<p><span class="font4">20.4 The Supplier shall indemnify SCB and keep SCB fully and effectively indemnified on&nbsp;demand (and shall pay such sums to SCB as would indemnify and keep indemnified&nbsp;each member of SCB Group) in respect of any type of liability, loss, damage, claims,&nbsp;demands, actions, charges, costs (including legal/attorney fees) and expenses&nbsp;arising out of or in connection with any wrongful disclosure or misuse of Personal</span></p>
+<p><span class="font4">Data as a result of a breach of this Clause 20.</span></p><h3><a name="bookmark20"></a><span class="font4" style="font-weight:bold;">21 &nbsp;&nbsp;&nbsp;Title and Risk</span></h3>
+<p><span class="font4">21.1 The Software and the Documentation contains confidential information of Supplier&nbsp;and/or its suppliers and represents and embodies valuable proprietary information&nbsp;and trade secrets and all copyright, patents, trade marks, service marks, database&nbsp;right and other intellectual property rights therein are and shall remain the exclusive&nbsp;property of Supplier and/or its suppliers, the owners of the Software. All right title&nbsp;and interest in and to any modifications to the Software undertaken by Supplier&nbsp;whether or not at SCB's request shall belong to Supplier and/or its suppliers (as&nbsp;determined by Supplier) and shall be included in the definition of Software (as the&nbsp;case may be) for all purposes of this Agreement.</span></p><h3><a name="bookmark21"></a><span class="font4" style="font-weight:bold;">22 Audit</span></h3>
+<p><span class="font4">22.1 The Supplier will maintain a complete audit trail and maintain records and supporting&nbsp;documentation of all financial and non-financial transactions relating to this</span></p>
+<p><span class="font4">Agreement.</span></p>
+<p><span class="font4">22.2 The Supplier agrees to comply with the audit policies set out in Schedule 4.</span></p>
+<p><span class="font4">22.3 SCB and its internal and external auditors, inspectors, regulators and such other&nbsp;representatives as SCB may designate from time to time will have the right to&nbsp;perform audits and inspections of the Supplier and its sub-contractors to:</span></p>
+<p><span class="font4">(a) &nbsp;&nbsp;&nbsp;verify the make up and accuracy of all charges and invoices;</span></p>
+<p><span class="font4">(b) &nbsp;&nbsp;&nbsp;to the extent that the Supplier processes Personal Data verify the integrity of</span></p>
+<p><span class="font4">Personal Data and examine the systems that process, store, support transmit Personal Data;</span></p><div>
+<p><span class="font4">22.4</span></p>
+<p><span class="font4">22.5</span></p>
+<p><span class="font4">22.6</span></p>
+<p><span class="font4" style="font-weight:bold;">23</span></p>
+<p><span class="font4">23.1</span></p>
+<p><span class="font4">23.2</span></p>
+<p><span class="font4">23.3</span></p>
+<p><span class="font4">23.4</span></p>
+<p><span class="font4" style="font-weight:bold;">24</span></p>
+<p><span class="font4">24.1</span></p>
+<p><span class="font4">24.2</span></p></div><br clear="all"/>
+<p><span class="font4">(c) examine the Supplier's performance of all work undertaken by the Supplier&nbsp;including verifying compliance with applicable service levels and performing&nbsp;audits of Supplier's practices and procedures, Supplier's systems, Supplier's</span></p>
+<p><span class="font4">general controls and security practices and procedures, Supplier's disaster recovery and back-up procedures and contingency plans and Supplier's&nbsp;compliance with all applicable regulatory requirements, in particular relating to&nbsp;all equipment and services supplied to SCB or other members of SCB Group.</span></p>
+<p><span class="font4">The Supplier will (at no additional cost to SCB) give SCB and its audit representatives full access at all reasonable times and on reasonable notice to the&nbsp;premises at which or from which the Supplier supplies the work including those&nbsp;facilities where any Supplier Staff, equipment, software, data, records and systems&nbsp;are located. . Without limiting the generality of the foregoing, SCB and its audit&nbsp;representatives may from lime to time examine the Supplier's disaster recover and&nbsp;back-up procedures and contingency plans.</span></p>
+<p><span class="font4">The Supplier must make available promptly to SCB, at no additional charge, the results of any internal or external review or audit conducted by the Supplier or its&nbsp;contractors, agents or representatives, relating to the Supplier's operating practices&nbsp;and procedures to the extent relevant to the work provided by the Supplier under this&nbsp;Agreement.</span></p>
+<p><span class="font4">For the purposes of complying with this Clause 22, the Supplier will provide full cooperation to SCB and its internal and external auditors, inspectors, regulators and representatives.</span></p><h3><a name="bookmark22"></a><span class="font4" style="font-weight:bold;">Exit Management</span></h3>
+<p><span class="font4">The Supplier shall at the request and expense of SCB in conjunction with SCB maintain an exit management plan throughout the term of this Agreement so that it&nbsp;can be implemented immediately, if required.</span></p>
+<p><span class="font4">Maintenance of the exit management plan shall be at no extra charge to SCB.</span></p>
+<p><span class="font4">At the termination of this Agreement the Supplier shall at the request and expense of</span></p>
+<p><span class="font4">SCB co-operate with SCB or any SCB Service Provider to assist with the migration of</span></p>
+<p><span class="font4">SCB from using the Software to that of another supplier.</span></p>
+<p><span class="font4">The Supplier shall use all reasonable endeavours to procure the assignment or novation of any third party contracts and other contracts entered into by the Supplier&nbsp;for the purposes of this Agreement subject to any third party agreement or such other&nbsp;agreement to SCB or to such third party as SCB shall nominate.</span></p><h3><a name="bookmark23"></a><span class="font4" style="font-weight:bold;">General Terms Provision of Information</span></h3>
+<p><span class="font4">The Supplier shall provide at SCB's reasonable request, project, financial, management, business and/or any other reasonable information related to this&nbsp;Agreement, which is normally recorded in any form in the Supplier's business&nbsp;environment such as details of SCB's spend profile with the Supplier (excluding any&nbsp;trade secret information). The Supplier shall (where relevant) supply on request from&nbsp;SCB all reasonable data required by SCB to support the revision of the measures&nbsp;used to gauge performance standards. This information shall be provided at no&nbsp;additional cost promptly to SCB and in any event within 7 days of request from SCB&nbsp;and where relevant shall be subject to Clause 19.</span></p><h3><a name="bookmark24"></a><span class="font4" style="font-weight:bold;">Publicity</span></h3>
+<p><span class="font4">The Supplier shall not publicise (for example by making press statements or by issuing press releases) or release any information in relation to or about this&nbsp;Agreement except with SCB's prior written consent. Notwithstanding the foregoing&nbsp;prohibition, SCB confirms that it will co-operate in the Supplier's production of a case&nbsp;study that the Supplier may use as part of its promotional materials.</span></p>
+<p><span class="font4">24.3 </span><span class="font4" style="font-weight:bold;">Insurance</span></p>
+<p><span class="font4">(a) The Supplier warrants that ii has in effect and will maintain in effect suitable&nbsp;and sufficient insurance with a reputable insurance company (approved by&nbsp;SCB) for the minimum cover specified in Schedule 4.</span></p>
+<p><span class="font4">(b) The Supplier shall maintain the insurance policy referred to above until the&nbsp;number of years specified in Schedule 4 after completion of all of the</span></p>
+<p><span class="font4">Supplier's obligations under this Agreement.</span></p>
+<p><span class="font4">(c) Upon request from SCB the Supplier will produce to SCB adequate proof of&nbsp;insurance cover in respect of its entire liability under this Agreement which&nbsp;shall include copies of the Supplier's policies of insurance and the receipt for&nbsp;the last premium.</span></p><h3><a name="bookmark25"></a><span class="font4">24.4 </span><span class="font4" style="font-weight:bold;">Withholding Tax</span></h3>
+<p><span class="font4">(a) In the event that any payment to be made in respect of any invoice is subject by law to any withholding tax, the payer shall make payment to the payee of&nbsp;the amount owing, less a deduction for such withholding tax and shall account&nbsp;to the relevant tax authority for the withholding tax. Provided always that the&nbsp;payer has possession, as furnished by the payee, of declaration(s) of tax&nbsp;residence on the prescribed forms and certification of the Singapore (or other&nbsp;as relevant) taxation authorities which are current and accurate in order to&nbsp;confirm the applicability and availability of any reduced rate of withholding tax&nbsp;under the provisions of the relevant double taxation convention and/or treaty,&nbsp;the amount of withholding tax deducted will be calculated by the payer in&nbsp;accordance with any appropriate double taxation convention and/or treaty&nbsp;between the states in which the payer and the payee respectively reside. The&nbsp;payee shall furnish declaration(s) of tax residence on the prescribed forms&nbsp;and obtain certification of the Singapore (or other as relevant) taxation&nbsp;authorities in order that the payer may confirm the applicability and availability&nbsp;of any reduced rate of withholding tax under the provisions of the relevant&nbsp;double taxation convention and/or treaty as envisaged above. Payment of&nbsp;such net sum to the payee and to the relevant tax authority of the said&nbsp;withholding tax shall, for the purposes of this Agreement, constitute full&nbsp;settlement of the sums owing under the relevant invoice.</span></p>
+<p><span class="font4">Without prejudice to payment in accordance with Clause 12 constituting full settlement of the sums owing under the relevant invoice, the payer shall obtain and&nbsp;provide to the payee evidence from the relevant local tax authority of the payment of&nbsp;the said withholding tax (including, where available, tax deduction certificates or the&nbsp;equivalent thereof). Where the payer is not able to obtain such evidence (having&nbsp;used reasonable endeavours), the payer will provide written confirmation itself to the&nbsp;payee of the payment of said withholding tax.</span></p><h3><a name="bookmark26"></a><span class="font4">24.5 </span><span class="font4" style="font-weight:bold;">Force Majeure</span></h3>
+<p><span class="font4">If either party fails to perform its obligations under this Agreement due to causes beyond its reasonable control including but not limited to war, fire, blockade, strikes</span></p>
+<p><span class="font4">(excluding strikes by its own personnel) or natural catastrophe, then that party shall <sub>\\AA</sub></span></p>
+<p><span class="font4">not be held responsible for any loss or damage which may be incurred by the othe </span><span class="font14"><sub>&quot;'</sub>&quot;' <sup>c. </span><span class="font4">A</sup>,.&lt;&quot;</span><span class="font1">'l'</span><span class="font14"><sub>&quot;' </span><span class="font3" style="font-weight:bold;"></sub>;§ PVM </span><span class="font10"><sup>&quot;'</sup>0</span></p>
+<p><span class="font4">party as a result of such failure provided that, if the performance by the Supplier of its duties is substantially prevented for a continuous period of fifteen days (or more than&nbsp;fifteen separate days in any period of thirty days}, SCB may, on thirty days written&nbsp;notice, terminate this Agreement or any part affected by such cause. Each party will&nbsp;give notice to the other as soon as possible upon becoming aware of an event that&nbsp;may lead to the invocation of this Clause.</span></p><h3><a name="bookmark27"></a><span class="font4">24.6 </span><span class="font4" style="font-weight:bold;">Relationship</span></h3>
+<p><span class="font4">Nothing in this Agreement creates a joint venture, relationship of partnership or agency between the parties. Accordingly, except as expressly authorised under this&nbsp;Agreement neither party has authority to pledge the credit of or make any&nbsp;representation or give any authority to contract on behalf of another party. No&nbsp;Supplier Staff shall be construed as being an employee of SCB by virtue only of this</span></p>
+<p><span class="font4">Agreement or the performance of the Supplier's obligations under this Agreement.</span></p>
+<p><span class="font4">24. 7 </span><span class="font4" style="font-weight:bold;">Waivers</span></p>
+<p><span class="font4">No forbearance, delay or indulgence by either party in enforcing the provisions of this</span></p>
+<p><span class="font4">Agreement shall prejudice or restrict the rights of that party nor shall any waiver of its rights in relation to a breach of this Agreement operate as a waiver of any&nbsp;subsequent breach and no right, power or remedy given to or reserved to either party&nbsp;under this Agreement is exclusive of any other right, power or remedy available to&nbsp;that party and each such right, power or remedy shall be cumulative.</span></p><h3><a name="bookmark28"></a><span class="font4">24.8 </span><span class="font4" style="font-weight:bold;">Assignment and Sub-Contracting</span></h3>
+<p><span class="font4">(a) Subject to (b) below, neither party may assign or sub-contract any of its rights or obligations under this Agreement to any other third party without first&nbsp;obtaining the express written consent of the other party (such consent not to&nbsp;be unreasonably withheld or delayed).</span></p>
+<p><span class="font4">(b) SCB may on written notice, without prior consent from the Supplier, transfer, assign or sub-license the benefit of the whole of its obligations and rights&nbsp;under this Agreement to any member of SCB Group.</span></p>
+<p><span class="font4">(c) Supplier may on written notice, without prior consent from SCB, transfer,&nbsp;assign or sub-license the benefit of the whole or any part of its obligations and&nbsp;rights under this Agreement to any its affiliates or any successor of all or part&nbsp;of the Supplier's business. SCB reserve right to terminate this Agreement if&nbsp;the assignment is to any SCB's competitor.</span></p>
+<p><span class="font4">(d) &nbsp;&nbsp;&nbsp;In the event that SCB permits the Supplier to sub-contract any of its</span></p>
+<p><span class="font4">obligations under this Agreement, the Supplier shall remain fully responsible for the performance of its obligations under this Agreement and the Supplier&nbsp;shall procure that the sub-contractor complies with the obligations of the&nbsp;Supplier under this Agreement as if it were a party to this Agreement. The&nbsp;Supplier shall contractually impose no less onerous terms, than those&nbsp;contained in this Agreement, in its agreement with its permitted sub-contractor(s).</span></p>
+<p><span class="font4">(e) &nbsp;&nbsp;&nbsp;In the event that SCB sub-contracts any of its obligations under this</span></p>
+<p><span class="font4">Agreement (whether or not to a SCB Service Provider}, SCB shall remain fully responsible for the performance of its obligations under this Agreement and</span></p>
+<p><span class="font4">SCB shall procure that the sub-contractor complies with the obligations of SCB under this Agreement as if it were a party to this Agreement. SCB shall&nbsp;contractually impose no less onerous terms, than those contained in this</span></p>
+<p><span class="font4">Agreement, in its agreement with its permitted sub-contractor(s).</span></p>
+<p><span class="font4">24. 9 </span><span class="font3" style="font-weight:bold;">Severability</span></p>
+<p><span class="font4">Notwithstanding that the whole or any part of any provision of this Agreement may prove to be illegal or unenforceable the other provisions of this Agreement and the&nbsp;remainder of the provision in question shall remain in full force and effect.</span></p>
+<p><span class="font4">24.10 </span><span class="font3" style="font-weight:bold;">Variations</span></p>
+<p><span class="font4">(a) Any terms of the Supplier or any third party purporting to vary this Agreement shall be of no effect unless the provisions of this Clause have been followed.</span></p>
+<p><span class="font4">(b) This Agreement may only be changed or added to by a written variation referencing this Clause, agreed and signed by both parties' Authorised&nbsp;Representatives.</span></p>
+<p><span class="font4">(c) The parties' Authorised Representatives as at the date of this Agreement are&nbsp;set out in Schedule 4.</span></p>
+<p><span class="font4">24.11 </span><span class="font3" style="font-weight:bold;">Notices</span></p>
+<p><span class="font4">(a) Addresses for notices or other communications under this Agreement are set out in Schedule 4 under the heading &quot;Notices&quot;.</span></p>
+<p><span class="font4">(b) Any notice required under this Agreement shall be given in writing and in the English language and sent to the address of the party for which it is intended&nbsp;to be given, or such other address as shall have been notified to the other&nbsp;party in accordance with this Clause and be sent by registered post or</span></p>
+<p><span class="font4">equivalent, facsimile, courier or other electronic transmission; and</span></p>
+<p><span class="font4">(i) if posted, shall be deemed to have been received three Working Days&nbsp;after the date of posting or, in the case of a notice to an addressee not&nbsp;in the country of the sender, ten Working Days after the date of&nbsp;posting; or</span></p>
+<p><span class="font4">(ii) in the case of facsimile or other electronic transmission, upon&nbsp;confirmation of complete receipt being given by the intended recipient&nbsp;party; or</span></p>
+<p><span class="font4">(iii) if couriered, on delivery.</span></p>
+<p><span class="font4">24.12 </span><span class="font3" style="font-weight:bold;">Third Party Rights</span></p>
+<p><span class="font4">(a) This Agreement does not create or confer any rights or benefits enforceable by any person not a party to it (within the meaning of the Contracts (Rights of&nbsp;Third Parties) Act 1999) except:</span></p>
+<p><span class="font4">(i) a member of SCB Group shall subject to its compliance with the relevant obligations under the Agreement as if it were SCB have the&nbsp;right to enforce any rights or benefits in this Agreement;</span></p>
+<p><span class="font4">(ii) a member of SCB Group shall subject to its compliance with the&nbsp;relevant obligations under the Agreement as if it were SCB have the&nbsp;right to enforce the rights or benefits of any indemnity, limitation and/or</span></p>
+<p><span class="font4">exclusion of liability in this Agreement;</span></p>
+<p><span class="font4">(iii) a person who is a permitted successor or assignee under Clause 24.8</span></p>
+<p><span class="font4">of the rights or benefits of this Agreement may enforce such rights or benefits.</span></p>
+<p><span class="font4">(b) No consent from the persons referred to in this Clause is required for the parties to vary or rescind this Agreement (whether or not in a way that varies&nbsp;or extinguishes rights or benefits in favour of such third parties).</span></p>
+<p><span class="font4">24.13 </span><span class="font3" style="font-weight:bold;">Contingency Planning</span></p>
+<p><span class="font4">(a) &nbsp;&nbsp;&nbsp;The Supplier must maintain adequate disaster recovery and back-up</span></p>
+<p><span class="font4">procedures and contingency plans to ensure the Supplier's business continuity and that the Supplier is able to perform this Agreement without&nbsp;interruption.</span></p>
+<p><span class="font4">(b) The Supplier must test, and permit SCB to inspect the results of such tests or to carry out its own tests upon, the procedures and plans referred to in&nbsp;paragraph (a) to verify they serve the purpose described in paragraph (a).&nbsp;Such tests shall be carried out bi-annually or more frequently as agreed by&nbsp;the parties.</span></p>
+<p><span class="font4">24.14 </span><span class="font3" style="font-weight:bold;">Entire Agreement</span></p>
+<p><span class="font4">This Agreement constitutes the entire agreement and understanding between the parties relating to the subject matter. Except as may be expressly stated in this&nbsp;Agreement, it supersedes and cancels all prior agreements, statements,&nbsp;representations, understandings, negotiations and discussions, whether oral or&nbsp;written, between the parties. Each of the parties acknowledges and agrees that in&nbsp;entering into this Agreement it does not rely on any statement, representation,&nbsp;warranty or understanding made prior to this Agreement save to the extent that such&nbsp;statement, representation, warranty or understanding is incorporated into this&nbsp;Agreement. Each of the parties acknowledges and agrees that in entering into this&nbsp;Agreement it has not relied on (or has been induced to enter into this Agreement by)&nbsp;any statement, representation, warranty or understanding made prior to this</span></p>
+<p><span class="font4">Agreement.</span></p>
+<p><span class="font4">24.15 </span><span class="font3" style="font-weight:bold;">Dispute Resolution</span></p>
+<p><span class="font4">(a) A party shall not commence court proceedings (except proceedings seeking interlocutory relief) in respect of a dispute arising out of this Agreement unless&nbsp;it has complied with this Clause.</span></p>
+<p><span class="font4">(b) A party claiming that a dispute has arisen in relation to this Agreement shall notify the Authorised Representative of the other party to the dispute giving&nbsp;details of the dispute.</span></p>
+<p><span class="font4">(c) If any dispute under this Agreement remains unresolved for 5 Working Days&nbsp;from the date on which notice setting out the nature of the dispute is served&nbsp;by one party on the other, either party may request a meeting within a further&nbsp;5 Working Days between senior personnel (as notified by each party to the&nbsp;other for this purpose) who shall have power to resolve the dispute. In the&nbsp;event that the dispute is not resolved under this procedure either party shall&nbsp;be free to commence court proceedings in respect of that dispute.</span></p>
+<p><span class="font4">24.16 </span><span class="font3" style="font-weight:bold;">Applicable Law and Jurisdiction</span></p>
+<p><span class="font16">(a) </span><span class="font4">This Agreement and any matters relating to this Agreement shall be governe.&quot;&quot;&quot;&quot;=--by and construed in accordance with the laws of England.</span></p>
+<p><span class="font24">! </span><span class="font3" style="font-weight:bold;">PVM ':!, </span><span class="font12">1,,&nbsp;&nbsp;&nbsp;&nbsp;;,,.<sup>°'</sup></span></p>
+<p><span class="font20" style="font-style:italic;">*</span><span class="font12"> i-?'</span></p>
+<p><span class="font3">(b) The parties submit and agree to the non-exclusive jurisdiction of the English Courts.</span></p>
+<p><span class="font3">24.17 </span><span class="font3" style="font-weight:bold;">Counterparts</span></p>
+<p><span class="font3">This Agreement may be executed in counterparts, all of which shall constitute one agreement between the parties.</span></p>
+<p><span class="font3">We accept the terms and conditions set out in this Agreement.</span></p>
+<p><span class="font3">Signed for and on behalf of </span><span class="font3" style="font-weight:bold;">Standard Cha red Bank </span><span class="font3">by:</span></p><div style="border-bottom:solid;"><img src="1.0 Thunderhead_Software Licence Agreement_files/1.0 Thunderhead_Software Licence Agreement-4.jpg" style="width:185pt;height:77pt;"/></div><br clear="all"/>
+<p><span class="font3">Signature:</span></p>
+<p><span class="font3">Name (Block Letters):</span></p>
+<p><span class="font3">Position:</span></p>
+<p><span class="font3">Date:</span></p>
+<p><span class="font3">Signed for and on behalf of </span><span class="font3" style="font-weight:bold;">Thunderhead .Limited </span><span class="font3">by:</span></p>
+<p><span class="font3">Signature: &nbsp;&nbsp;&nbsp;------</span><span class="font22" style="font-style:italic;">U'./,o</span><span class="font17" style="font-style:italic;"><sup>k</sup>---- tybocbo-</span></p>
+<p><span class="font3">(Authorised Signature)</span></p>
+<p><span class="font3"><sub>Name (Block Letters):</sub> ______</span><span class="font14"><sup>M ._ L-</span><span class="font12" style="font-style:italic;">0</span><span class="font14"> C. IL.IC-_ -------------- </span><span class="font14" style="font-style:italic;">M. L-oc.&quot;&quot;-£</span></sup></p>
+<p><span class="font3"><sub>Position:</sub> &nbsp;&nbsp;&nbsp;</span><span class="font14"><sup>C C:-o</sup>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="font16" style="font-style:italic;">c i=--o</span></p>
+<p><span class="font3">Date: &nbsp;&nbsp;&nbsp;-----------------------------------------------------</span></p><div>
+<p><span class="font3" style="font-weight:bold;">Licence</span></p></div><br clear="all"/>
+<p><span class="font3" style="font-weight:bold;">List of Software</span></p>
+<table border="1">
+<tr><td style="vertical-align:bottom;">
+<p><span class="font14" style="font-weight:bold;">Co/i'iponenT '■</span><span class="font1" style="font-weight:bold;">gS/C'$</span></p></td><td colspan="2">
+<p></p></td><td colspan="2">
+<p></p></td><td colspan="2">
+<p></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Thunderhead NOW Communication Engine (Production}</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">600.000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">360 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">72000</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Thunderhead NOW Communication Engine (Template Management)</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">36O 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">216 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">43-200</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Thunderhead NOW Communication Engine (Testing Environment)</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font14">s</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">240 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">144 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">28.800</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Thunderhead NOW Communicatl on Engine (Disaster Recoverv-Col d)</span></p></td><td colspan="2">
+<p><span class="font0" style="font-weight:bold;">NO COST</span></p></td><td colspan="2">
+<p><span class="font0" style="font-weight:bold;">NO COST</span></p></td><td colspan="2">
+<p><span class="font0" style="font-weight:bold;">NO COST</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Server Extension for A--rove NOW</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">57 600</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">34 560</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">6.912</span></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font1" style="font-weight:bold;">Server Extension for Contribute NOW</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">90 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">54 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font14">s</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">10.800</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Server Extension for Corresnond NOW</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">150 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">90.000</span></p></td><td style="vertical-align:middle;">
+<p><span class="font17" style="font-weight:bold;">s</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">18.000</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Server Extension for Interview NOW</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">150 000</span></p></td><td style="vertical-align:middle;">
+<p><span class="font16">&lt;</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">90.000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">18.000</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Server Extension for Review NOW</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">150 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">90.000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">18.000</span></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font1" style="font-weight:bold;">Thunderhead NOW Business Content Studio</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">40 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">24 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">4.800</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Thunderhead NOW Business Obie ct Studio</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">25 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">15 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">3.000</span></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font1" style="font-weight:bold;">Annrove NOW</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">1000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">600</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">120</span></p></td></tr>
+<tr><td>
+<p><span class="font1" style="font-weight:bold;">Contribute NOW</span></p></td><td style="vertical-align:middle;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td>
+<p><span class="font0" style="font-weight:bold;">15,000</span></p></td><td style="vertical-align:middle;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">9 000</span></p></td><td style="vertical-align:middle;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">1800</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Corresnond NOW</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">$</span></p></td><td>
+<p><span class="font0" style="font-weight:bold;">1.500</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">900</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">180</span></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font1" style="font-weight:bold;">Interview NOW</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td>
+<p><span class="font0" style="font-weight:bold;">1-000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">600</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">120</span></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font1" style="font-weight:bold;">Review NOW</span></p></td><td style="vertical-align:middle;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">1500</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">900</span></p></td><td style="vertical-align:middle;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">180</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Anal\&quot;'e NOW Designer</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">6 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">3,600</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">720</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">AnalV7e NOW Viewer</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">1,500</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">900</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font16">&lt;</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">180</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Thunderhead NOW D11namicCharting Module (Production)</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">60 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">36 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">7,200</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Thunderhead NOW D&quot;namic Charting Module (Non-Production)</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">27,000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">16 200</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">3 240</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Thunderhead NOW DTCC Derlv/SERV XML Adaoter</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">150 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">90 000</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">18000</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">Thuhderhe a d'i'J o)lll' Sii bscfiptio i, !or: DTCO D.erlvf/S EBY'- (-Cred i),lk.i~; &nbsp;&nbsp;&nbsp;</span><span class="font21">.</span></p></td><td colspan="2" style="vertical-align:bottom;">
+<p><span class="font14" style="font-style:italic;">$</span><span class="font18"> :, 1s Mo,,</span></p></td><td colspan="2" style="vertical-align:bottom;">
+<p><span class="font11">&lt;..l75iO0O:l</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font13" style="font-style:italic;">-</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">Thunderhead.NQW-.SUbscri.ptionr.for'DTCC ■Qeri.v/SERV'(Equiti.es )■■&quot;. .. ' </span><span class="font11">'</span></p></td><td colspan="2" style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">.'. .</span><span class="font14" style="font-style:italic;">7&amp;0</span><span class="font0" style="font-weight:bold;">W-</span></p></td><td colspan="2" style="vertical-align:bottom;">
+<p><span class="font11">&gt;S; ■ &nbsp;&nbsp;&nbsp;75',ooo</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font13" style="font-style:italic;">-</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">Thu n'd’e.rhead-: NQW.Subsc'riipttonfor. </span><span class="font14">oTCC.</span><span class="font11">Deriv/.S</span><span class="font1" style="font-weight:bold;">ERV (-Interest ' R ates)</span></p></td><td colspan="2" style="vertical-align:bottom;">
+<p><span class="font0" style="font-weight:bold;">.$.'?-..750DO'</span></p></td><td colspan="2" style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$, . </span><span class="font0" style="font-weight:bold;">7500il'</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font1" style="font-weight:bold;">$</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font14" style="font-style:italic;"><sup>-</sup></span></p></td></tr>
+</table>
+<p><span class="font1" style="font-weight:bold;">&quot;Subscriptions are not products and cannot be discounted</span></p>
+<p><span class="font3" style="font-weight:bold;">Limitations on Licence of Software:</span></p>
+<p><span class="font4">The grant of the Software licence in the Agreement is subject to the following limitations indicated below:</span></p><div>
+<table border="1">
+<tr><td style="vertical-align:middle;">
+<p><span class="font4">Limited by number of users</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font4">Number of users will be: unlimited for the Enterprise Period</span></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font4">Limited by number of named users</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font4">Number of named users will be: unlimited for the Enterprise Period</span></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font4">Limited by number of concurrent users</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font4">Number of concurrent users will be: unlimited for the Enterprise Period</span></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font4">Limited by number of PCs</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font4">Number of PCs will be: unlimited for the Enterprise Period</span></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font4">Limited by number of sites</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font4">Number of sites will be: unlimited for the Enterprise Period</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font16" style="font-weight:bold;">A </span><span class="font4">licence only to named SCB Group Company</span></p></td><td style="vertical-align:middle;">
+<p><span class="font4">Name is: SCB Group member</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font4">Limited by countries, regions, sites</span></p></td><td style="vertical-align:middle;">
+<p><span class="font4">Countries/regions/sites will be: unlimited for.</span></p></td></tr>
+</table></div><br clear="all"/><div>
+<p><span class="font4">-nARZ^</span></p>
+<p><span class="font3" style="font-weight:bold;">I<sup>PVM</sup> I</span></p></div><br clear="all"/>
+<table border="1">
+<tr><td>
+<p></p></td><td style="vertical-align:bottom;">
+<p><span class="font4">the Enterprise Period</span></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font4">Special use limitation</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font4">Special use will be limited to: Use for Business Purposes</span></p></td></tr>
+<tr><td style="vertical-align:bottom;">
+<p><span class="font4">Limited by number of years</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font4">Number of years will be: 70 years</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Any other limitations</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font4">Use does not extend to SCB's Private, Commercial or Retail banking divisions&nbsp;(subject to Clause 6.15)</span></p></td></tr>
+</table>
+<p><span class="font3" style="font-weight:bold;">Premises</span></p>
+<p><span class="font4">The Software is to be downloaded to the following Premises:</span></p><img src="1.0 Thunderhead_Software Licence Agreement_files/1.0 Thunderhead_Software Licence Agreement-5.jpg" style="width:443pt;height:22pt;"/>
+<p><span class="font4">The Software can be downloaded from Supplier's </span><span class="font3" style="font-weight:bold;">FTP </span><span class="font4">site immediately following the Effective Date. The download details will be forwarded to Stuart Ballard, 7 Changi</span></p>
+<p><span class="font4">Business Park Crescent, Singapore via email: <a href="mailto:Stuart.Ballard@sc.com">Stuart.Ballard@sc.com</a>.</span></p>
+<p><span class="font4">Also note that all Documentation (in PDF format) is contained on the downloadable ISO image along with the Software itself.</span></p><h3><a name="bookmark29"></a><span class="font4" style="font-weight:bold;">Financial</span></h3><h3><a name="bookmark30"></a><span class="font4" style="font-weight:bold;">The Contract Price</span></h3>
+<p><span class="font3">The Contract Price is set out in this Part 1:</span></p>
+<p><span class="font4" style="font-weight:bold;">$2,049,0SOSGD</span></p><h3><a name="bookmark31"></a><span class="font4" style="font-weight:bold;">Software Licence Fee</span></h3><h3><a name="bookmark32"></a><span class="font4" style="font-weight:bold;">$2,049,0SOSGD</span></h3>
+<p><span class="font3">Payments of Software License Fee shall be as follows:</span></p>
+<table border="1">
+<tr><td style="vertical-align:bottom;">
+<p><span class="font3">1. 40%</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font3">819,632</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font3">3T^March 2010</span></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font3">40%</span></p></td><td style="vertical-align:middle;">
+<p><span class="font3">819,632</span></p></td><td style="vertical-align:middle;">
+<p><span class="font3">30 June 2010</span></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font3">3. 20%</span></p></td><td style="vertical-align:middle;">
+<p><span class="font3">409,816</span></p></td><td style="vertical-align:middle;">
+<p><span class="font3">30 September 2010</span></p></td></tr>
+</table>
+<p><span class="font3">Provided that if SCB default on the payment of any of the above installments SCB agrees to pay the aggregate Software License Fee on demand net only of payments of any of the&nbsp;above instalments already made.</span></p><h3><a name="bookmark33"></a><span class="font4" style="font-weight:bold;text-decoration:underline;">Part 2</span></h3><h3><a name="bookmark34"></a><span class="font4" style="font-weight:bold;">Liquidated Damages Formula</span></h3>
+<p><span class="font3">$1,000SGD per week of delay up to a maximum of fifteen weeks</span></p><h3><a name="bookmark35"></a><span class="font4" style="font-weight:bold;">Warranties and Undertakings</span></h3>
+<p><span class="font3">1. The Supplier represents, warrants and undertakes now and hereafter that:</span></p><div>
+<p><span class="font3">(a)</span></p>
+<p><span class="font3">(b)</span></p>
+<p><span class="font3">(c)</span></p>
+<p><span class="font3">{d)</span></p>
+<p><span class="font3">(e)</span></p>
+<p><span class="font3">(f)</span></p>
+<p><span class="font3">(g)</span></p>
+<p><span class="font3">(h)</span></p>
+<p><span class="font3">(i)</span></p>
+<p><span class="font3">(j)</span></p>
+<p><span class="font3">(k)</span></p>
+<p><span class="font3">(I)</span></p></div><br clear="all"/><div>
+<p><span class="font3">(a)</span></p>
+<p><span class="font3">(b)</span></p>
+<p><span class="font3">(c)</span></p>
+<p><span class="font3">{d)</span></p>
+<p><span class="font3">(e)</span></p>
+<p><span class="font3">(f)</span></p>
+<p><span class="font3">(g)</span></p>
+<p><span class="font3">(h)</span></p>
+<p><span class="font3">(i)</span></p>
+<p><span class="font3">(j)</span></p>
+<p><span class="font3">(k)</span></p>
+<p><span class="font3">(I)</span></p></div><br clear="all"/>
+<p><span class="font3">the Software will on delivery be free from all viruses and other contaminants including but not limited to any codes or instructions that may or will be used&nbsp;to access, modify, delete or damage any data files or other computer&nbsp;programs used by SCB and that for this purpose the Supplier warrants that it&nbsp;has prior to the installation of the Software used the most comprehensive and&nbsp;up to date virus checker available;</span></p>
+<p><span class="font3">Supplier has not knowingly introduced any disabling programs or devices in the Software and nor will the Supplier knowingly introduce any at any time;</span></p>
+<p><span class="font3">for the period of 90 days from the Effective Date the Software shall provide the facilities and functions and perform in accordance with the</span></p>
+<p><span class="font3">Documentation;</span></p>
+<p><span class="font3">the Documentation is a full and accurate description of the operation, features, functionality and performance of the Software which is available&nbsp;without any customisation;</span></p>
+<p><span class="font3">tapes, diskettes or other media provided by the Supplier will be free of defects in workmanship and material during normal use on the relevant delivery date&nbsp;and shall remain so from such date until the expiry of a period of six months;</span></p>
+<p><span class="font3">it is authorised and has full right title and interest to grant or procure the grant of the licences of Software to be granted under this Agreement;</span></p>
+<p><span class="font3">the Software will, in so far as it does not comprise material originating from</span></p>
+<p><span class="font3">SCB be an original work of authorship and the Use or possession thereof by</span></p>
+<p><span class="font3">SCB will not be subject or give rise to any claim for infringement of any Intellectual Property Rights of any third parties;</span></p>
+<p><span class="font3">the Documentation comprises all documentation which the Supplier normally makes available to its customers;</span></p>
+<p><span class="font3">the Source Materials in relation to the Software shall be sufficient to enable a reasonably skilled programmer to understand, use, maintain and enhance the&nbsp;Software without reference to any other documents or person;</span></p>
+<p><span class="font3">the Software will conform to the applicable regulations and statutes of the</span></p>
+<p><span class="font3">United Kingdom;</span></p>
+<p><span class="font3">the Documentation shall provide adequate instruction for reasonably competent personnel of SCB (or any member of the SCB Group) to secure&nbsp;the satisfactory operation of the Software and that the Documentation is a full&nbsp;and accurate description of the operation, features, functionality and&nbsp;performance of the Software;</span></p>
+<p><span class="font3">for the period of 90 days from the Effective Date the Software when used by SCB or any member of SCB Group in accordance with the Documentation</span></p>
+<p><span class="font3">shall perform and have the response times as specified in the Documentation.</span></p>
+<p><span class="font3">If the Supplier shall be in breach of this warranty then without prejudice t c</span></p>
+<p><span class="font4">SCB's other rights and remedies the Supplier shall investigate the reason therefor forthwith on notice from SCB. The Supplier shall report to SCB on&nbsp;the results of such investigation within thirty Working Days of such notice.&nbsp;The Supplier shall as soon as reasonably possible, free of charge, carry out&nbsp;and perform all such services and work as may be required in order to rectify&nbsp;such breach;</span></p>
+<p><span class="font4">(m) it has not accepted consulting work or entered into a contract or accepted an&nbsp;obligation which may prevent the Supplier from performing or in any material&nbsp;respect adversely affect the performance of its obligations under this&nbsp;Agreement and that it shall not do so during the period of the performance of&nbsp;such work;</span></p>
+<p><span class="font4">(n) all goods and materials employed in any work undertaken by the Supplier&nbsp;shall be of an appropriate and sufficient quality and standard and that all&nbsp;services shall be properly and efficiently provided with all reasonable due&nbsp;care and skill and in accordance with good computer industry practice;</span></p>
+<p><span class="font4">(o) &nbsp;&nbsp;&nbsp;it is of good financial standing, able to pay its debts as they fall due and</span></p>
+<p><span class="font4">perform its obligations hereunder, not in breach of any covenants to its several creditors and none of the events specified in Clauses 17.2(a) and</span></p>
+<p><span class="font4">17.2(b) of the Agreement has occurred or is likely to occur in relation to it;</span></p>
+<p><span class="font4">(p) &nbsp;&nbsp;&nbsp;any work undertaken by the Supplier shall be performed in compliance with</span></p>
+<p><span class="font4">all applicable laws, enactments, orders, regulations and other similar instruments in force from time to time;</span></p>
+<p><span class="font4">(<sub>q</sub>) &nbsp;&nbsp;&nbsp;the Supplier is and shall continue to be in a position to support the Software</span></p>
+<p><span class="font4">for a period of not less than 5 years from the Effective Date thereof; and</span></p>
+<p><span class="font4">(r) &nbsp;&nbsp;&nbsp;the Software and each part thereof (to the extent that they process, record,</span></p>
+<p><span class="font4">manipulate, relate to or deal with units of currency) will recognise and process data denominated in the Euro and manage all single and multiple currency&nbsp;changes necessitated by the implementation of European Monetary Union&nbsp;and the Euro and will correctly implement all conversion, rounding,&nbsp;triangulation and other technical requirements as laid down by European&nbsp;Union law.</span></p>
+<p><span class="font4">2. Each of the warranties and undertakings on the part of the Supplier set out in this part of the Schedule shall be read separately from and without prejudice to and&nbsp;without derogation from the others. The parties agree that paragraphs 1(c}, U) and (h)&nbsp;shall have the status of conditions.</span></p>
+<p><span class="font4">3. If there is any failure to conform to any of the warranties set out above and the failure is not caused by any act or omission of SCB or its Staff. SCB may elect (without&nbsp;prejudice to any other remedies it may have) one or more of the following:</span></p>
+<p><span class="font4">(a) the Supplier promptly rectifies any non-conformance of the Software at the&nbsp;Supplier's own expense;</span></p>
+<p><span class="font4">(b) &nbsp;&nbsp;&nbsp;the Supplier promptly replaces the non-conforming Software at the Supplier's</span></p>
+<p><span class="font4">own expense;</span></p>
+<p><span class="font4">(c) SCB or a third party remedies the non-conforming Software and the Supplier&nbsp;will pay all reasonable costs incurred by SCB in remedying such nonconformance</span></p><h3><a name="bookmark36"></a><span class="font4" style="font-weight:bold;">Contract Details</span></h3><h3><a name="bookmark37"></a><span class="font4" style="font-weight:bold;">1 Authorised Representatives</span></h3><div>
+<p><span class="font4" style="font-weight:bold;">2 Project Managers</span></p><img src="1.0 Thunderhead_Software Licence Agreement_files/1.0 Thunderhead_Software Licence Agreement-6.jpg" style="width:447pt;height:35pt;"/>
+<p><span class="font4">Name:</span></p>
+<p><span class="font4">Stuart Ballard</span></p></div><br clear="all"/>
+<p></p>
+<p><span class="font4">Name:</span></p>
+<p><span class="font4">Stuart Ballard</span></p>
+<table border="1">
+<tr><td>
+<p><span class="font4">Address:</span></p></td><td>
+<p><span class="font4">7 Changi Business Park Crescent, Singapore</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Office Phone:</span></p></td><td>
+<p><span class="font4">+65 6596 2311</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Mobile Phone:</span></p></td><td>
+<p><span class="font4">+65 9784 8477</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Fax:</span></p></td><td>
+<p><span class="font4">+65 6336 7026</span></p></td></tr>
+<tr><td>
+<p><span class="font4">E-mail:</span></p></td><td>
+<p><span class="font4"><a href="mailto:Stuart.Ballard@sc.com">Stuart.Ballard@sc.com</a></span></p></td></tr>
+</table><img src="1.0 Thunderhead_Software Licence Agreement_files/1.0 Thunderhead_Software Licence Agreement-7.jpg" style="width:447pt;height:33pt;"/>
+<table border="1">
+<tr><td>
+<p><span class="font4">Name:</span></p></td><td>
+<p><span class="font4">David McCahery</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Address:</span></p></td><td>
+<p><span class="font4">Suite 62, Level 8, 99 York Street, Sydney, NSW 2000 AUSTRALIA</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Office Phone:</span></p></td><td>
+<p><span class="font4">+61 2 9299 4560</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Mobile Phone:</span></p></td><td>
+<p><span class="font4">+61 4 3704 5122</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Fax:</span></p></td><td>
+<p><span class="font4">+61 2 9299 4561</span></p></td></tr>
+<tr><td>
+<p><span class="font4">E-mail:</span></p></td><td>
+<p><span class="font4"><a href="mailto:dmccahery@thunderhead.com">dmccahery@thunderhead.com</a></span></p></td></tr>
+</table><div>
+<p><span class="font4">Address:</span></p></div><br clear="all"/>
+<p><span class="font4">7 Changi Business Park Crescent, Singapore</span></p>
+<table border="1">
+<tr><td>
+<p><span class="font4">Office Phone:</span></p></td><td>
+<p><span class="font4">+65 6596 2311</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Mobile Phone:</span></p></td><td>
+<p><span class="font4">+65 9784 8477</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Fax:</span></p></td><td>
+<p><span class="font4">+65 6336 7026</span></p></td></tr>
+<tr><td>
+<p><span class="font4">E-mail:</span></p></td><td>
+<p><span class="font4"><a href="mailto:Stuart.Ballard@sc.com">Stuart.Ballard@sc.com</a></span></p></td></tr>
+</table><img src="1.0 Thunderhead_Software Licence Agreement_files/1.0 Thunderhead_Software Licence Agreement-8.jpg" style="width:447pt;height:34pt;"/>
+<table border="1">
+<tr><td>
+<p><span class="font4">Name:</span></p></td><td>
+<p><span class="font4">Tim Hoare</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Address:</span></p></td><td>
+<p><span class="font4">Suite 62, Level 8, 99 York Street, Sydney, NSW 2000 AUSTRALIA</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Office Phone:</span></p></td><td>
+<p><span class="font4">+61 2 9299 4560</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Mobile Phone:</span></p></td><td>
+<p><span class="font4">+614 0517 7153</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Fax:</span></p></td><td>
+<p><span class="font4">+61 2 92994561</span></p></td></tr>
+<tr><td>
+<p><span class="font4">E-mail:</span></p></td><td>
+<p><span class="font4"><a href="mailto:thoare@thunderhead.com">thoare@thunderhead.com</a></span></p></td></tr>
+</table><h3><a name="bookmark38"></a><span class="font4" style="font-weight:bold;">3 Legal Notices</span></h3>
+<p><span class="font4">All notices to or by the respective parties shall be addressed as follows:</span></p>
+<table border="1">
+<tr><td>
+<p></p></td><td>
+<p></p></td></tr>
+<tr><td style="vertical-align:middle;">
+<p><span class="font4">Name:</span></p></td><td>
+<p><span class="font4">SCB Head of Legal</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Address:</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font4">Group Legal</span></p>
+<p><span class="font4">Standard Chartered Bank</span></p>
+<p><span class="font4">7/F Basinghall</span></p>
+<p><span class="font4">1 Basinghall Avenue</span></p>
+<p><span class="font4">London</span></p>
+<p><span class="font4">EC2V5DD</span></p></td></tr>
+</table>
+<table border="1">
+<tr><td colspan="2">
+<p><span class="font4" style="font-weight:bold;">With a copy to SCB Procurement and Vendor Management</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Name:</span></p></td><td>
+<p><span class="font4">SCB Head of Procurement and Vendor Management</span></p></td></tr>
+<tr><td>
+<p><span class="font4">Address:</span></p></td><td style="vertical-align:bottom;">
+<p><span class="font4">Standard Chartered Bank</span></p>
+<p><span class="font4">51 Bras Basah Road #10-00 Plaza by the Park</span></p>
+<p><span class="font4">Singapore 189554</span></p></td></tr>
+</table><div>
+<p><span class="font4">Name:</span></p></div><br clear="all"/><div>
+<p><span class="font4">Thunderhead Pty Ltd</span></p></div><br clear="all"/><div>
+<p><span class="font4">Address:</span></p></div><br clear="all"/>
+<p><span class="font4">Suite 62, Level 8, 99 York Street, Sydney, NSW 2000 AUSTRALIA</span></p><h3><a name="bookmark39"></a><span class="font4" style="font-weight:bold;">4 Insurance Cover</span></h3>
+<p><span class="font4">Insurance Cover to be maintained:</span></p>
+<p><span class="font4">(a) &nbsp;&nbsp;&nbsp;Public and product liability covering legal liability in respect of any bodily injury</span></p>
+<p><span class="font4">and property damage claims arising from or related to this Agreement: equivalent to$ 5,000,000SGD;</span></p>
+<p><span class="font4">(b) Professional Indemnity covering SCB Group's potential financial loss and&nbsp;damage as a result of any breach, error or omission by the Supplier under&nbsp;this Agreement: equivalent to$ 2,000,000SGD;</span></p>
+<p><span class="font4">(c) &nbsp;&nbsp;&nbsp;All risks insurance (including but not limited to fire liability) for any of SCB's on</span></p>
+<p><span class="font4">loan goods, tools, equipment or other property whilst they are in the Supplier's possession for their full replacement &quot;as new&quot; value as notified to&nbsp;the Supplier from time to time by SCB.</span></p>
+<p><span class="font4">(d) &nbsp;&nbsp;&nbsp;Employer's Liability covering legal liability to make any payment in respect of</span></p>
+<p><span class="font4">death, injury or disability of employees under applicable law: $5,000,000SGD or such higher amount as is required by local legislation.</span></p>
+<p><span class="font4">(e) &nbsp;&nbsp;&nbsp;Number of years after completion 7.</span></p><div><img src="1.0 Thunderhead_Software Licence Agreement_files/1.0 Thunderhead_Software Licence Agreement-9.jpg" style="width:44pt;height:31pt;"/></div><br clear="all"/>
+<p><span class="font3" style="font-weight:bold;">Schedule 5</span></p>
+<p><span class="font3" style="font-weight:bold;">Audit Policies DRAFT</span></p>
+<p><span class="font15">1. </span><span class="font3" style="font-weight:bold;">Purpose</span></p>
+<p><span class="font3">The purpose of this Schedule </span><span class="font3" style="font-weight:bold;">(Audit Policies) </span><span class="font3">is to define the technical audit activities (and requirements associated therewith) which SCB or Supplier are entitled to carry&nbsp;out or to procure in respect of the provision of the services under this Agreement</span></p>
+<p><span class="font3" style="font-weight:bold;">('Services').</span></p>
+<p><span class="font3">2. </span><span class="font3" style="font-weight:bold;">Scope</span></p>
+<p><span class="font3">2.1 This Schedule </span><span class="font3" style="font-weight:bold;">(Audit Policies) </span><span class="font3">relates to the auditing of Supplier's use of computer&nbsp;hardware, software and other resources to deliver the Services.</span></p>
+<p><span class="font3">2.2 &nbsp;&nbsp;&nbsp;An audit of Supplier's use of computer hardware, software and other resources used to</span></p>
+<p><span class="font3">deliver the Services must be conducted annually by Supplier's internal auditors </span><span class="font3" style="font-weight:bold;">(Supplier IA) </span><span class="font3">to assess the risk and control environment and compliance with&nbsp;generally accepted standards for the operation of IT with specific focus on compliance&nbsp;with:</span></p>
+<p><span class="font3">(a) &nbsp;&nbsp;&nbsp;regulatory and legal requirements;</span></p>
+<p><span class="font3">(b) &nbsp;&nbsp;&nbsp;data protection legislation;</span></p>
+<p><span class="font3">(c) &nbsp;&nbsp;&nbsp;adherence to requirements stated in this Agreement;</span></p>
+<p><span class="font3">(d) &nbsp;&nbsp;&nbsp;accuracy of resource consumption data as used in billing;</span></p>
+<p><span class="font3">(e) &nbsp;&nbsp;&nbsp;achievement of Performance Standards;</span></p>
+<p><span class="font3">(<sub>f</sub>) &nbsp;&nbsp;&nbsp;Supplier's internal operating policies and procedures; and</span></p>
+<p><span class="font3">(g) &nbsp;&nbsp;&nbsp;any other SCB operating policies and procedures to the extent set out in this</span></p>
+<p><span class="font3">agreement or as may be notified from time to time by SCB in writing to Supplier.</span></p>
+<p><span class="font3">Any work which is required by SCB to be carried out by Supplier after the date of execution of this Agreement and which is necessary to ensure compliance with any&nbsp;changes to the requirements listed in paragraphs (a) to (g) </span><span class="font3" style="font-style:italic;">above</span><span class="font3"> must be processed&nbsp;and implemented in accordance with the agreed change control procedures, provided&nbsp;that if any such work would not result in Supplier incurring substantial additional cost&nbsp;then Supplier will undertake the work as directed by SCB at Supplier's own cost.</span></p>
+<p><span class="font3">2.3 Audits will also check that the agreed process for reporting regulatory and compliance&nbsp;problems has been adequately followed.</span></p>
+<p><span class="font3">3. </span><span class="font3" style="font-weight:bold;">Supplier's Internal Audit</span></p>
+<p><span class="font3">3.1 In order to comply with the operating policies and procedures under which SCB&nbsp;operates, Supplier must maintain an effective internal control environment. This will</span></p>
+<p><span class="font3">include the operation of an internal audit function. Supplier must ensure that:</span></p>
+<p><span class="font15">(a) </span><span class="font3">Supplier IA staff have suitable skills, qualifications and experience;</span></p>
+<p><span class="font15">(b) </span><span class="font3">Supplier IA staff have access to such Supplier personnel, documentation,&nbsp;relevant records and other information required for the purpose of completing&nbsp;the audits; and</span></p>
+<p><span class="font3">(c) &nbsp;&nbsp;&nbsp;Supplier IA team have the organisational status and the objectivity required to</span></p>
+<p><span class="font3">undertake independent audits.</span></p><img src="1.0 Thunderhead_Software Licence Agreement_files/1.0 Thunderhead_Software Licence Agreement-10.jpg" style="width:50pt;height:53pt;"/>
+<p><span class="font4">3.2 SCB will have the right to escalate issues to a committee of two or more&nbsp;representatives consisting of a minimum of one representative from each party to this</span></p>
+<p><span class="font4">Agreement, </span><span class="font3" style="font-weight:bold;">(the 'Joint Executive Committee'), </span><span class="font4">who will have the authority </span><span class="font4" style="font-style:italic;">to</span><span class="font4"> resolve any ongoing dispute SCB may have with the Supplier where:</span></p>
+<p><span class="font4">(a) evidence is found that the resource within Supplier IA is not sufficient to deliver&nbsp;the contractual obligations described in this Schedule </span><span class="font3" style="font-weight:bold;">(Audit Policies); </span><span class="font4">and</span></p>
+<p><span class="font4">(b) evidence and results, or subsequent feedback, indicate that Supplier IA staff&nbsp;are not suitably qualified, or if the audit carried out is not of appropriate quality.</span></p>
+<p><span class="font4">The Joint Executive Committee may require further actions to be performed including the re-conducting of an audit if either of (a) and (b) above is found to be the case.</span></p>
+<p><span class="font4">3.3 The Joint Executive Committee will initially comprise:</span></p>
+<p><span class="font4">(a) &nbsp;&nbsp;&nbsp;one representative from SCB; and</span></p>
+<p><span class="font4">(b) &nbsp;&nbsp;&nbsp;one representative from Supplier.</span></p>
+<p><span class="font4">3.4 &nbsp;&nbsp;&nbsp;Each party will notify the other of the name and contact details of their representative</span></p>
+<p><span class="font4">of the Joint Executive Committee on or before the date of this Agreement.</span></p>
+<p><span class="font4">3.5 If a party wishes to replace its representative on the Joint Executive Committee, both&nbsp;parties will consult with one another and use their best endeavours to agree on the&nbsp;individual to be the replacement member of the Joint Executive Committee.</span></p>
+<p><span class="font4">3.6 Supplier is not required to obtain a third party review or external audit as an obligation&nbsp;under this Schedule </span><span class="font3" style="font-weight:bold;">(Audit Policies).</span></p>
+<p><span class="font4">3.7 &nbsp;&nbsp;&nbsp;If SCB is dissatisfied with any aspect of an audit carried out by Supplier it will be</span></p>
+<p><span class="font4">entitled, at its own cost, to conduct an audit of the areas in relation to which it has concerns and Supplier must co-operate fully with SCB's audit.</span></p>
+<p><span class="font3" style="font-weight:bold;">4. Regulatory Requirements</span></p>
+<p><span class="font4">4.1 In the financial services industry it is common for regulatory bodies to impose new, or&nbsp;changes to existing, regulations or standards which impact the design of control&nbsp;systems and the application of internal control. Should such changes in regulations or&nbsp;standards be specified by the regulatory bodies, SCB must decide whether any&nbsp;consequential change to this Agreement is required.</span></p>
+<p><span class="font4">4.2 Any such change following the Effective Date must be processed and implemented by&nbsp;the application of the agreed change control procedures. Upon completion of the&nbsp;change control procedures, Supplier will work with SCB to implement any changes</span></p>
+<p><span class="font4">(approved as part of the change control procedures) within the agreed lime frames indicated by the regulatory bodies. Following the implementation of the change control&nbsp;procedures, Supplier must implement any systems changes necessary to meet these&nbsp;requirements and allow reasonable inspection of its services/premises used to provide&nbsp;the Services from time to time if legally required by such regulatory bodies.</span></p>
+<p><span class="font4">4.3 SCB must communicate to Supplier in writing such regulatory changes of which it&nbsp;becomes aware and which it requires to be implemented. A written communication, if&nbsp;sent to Supplier notifying Supplier of a regulatory change, shall be deemed to be a&nbsp;notification of a request by SCB for implementation of that regulatory change.</span></p>
+<p><span class="font3" style="font-weight:bold;">5. Costs</span></p>
+<p><span class="font3">5.1 &nbsp;&nbsp;&nbsp;The implementation of any audit findings relating to provision of the Services (including</span></p>
+<p><span class="font3">but not limited to any computer hardware, computer software, processes or services included within the scope of this Agreement) found by Supplier IA will be implemented&nbsp;at Supplier's own cost. Any audit findings and required changes which alter the scope&nbsp;of the Services will be processed and implemented by the application of the change&nbsp;control procedures.</span></p>
+<p><span class="font3">5.2 In respect of any audit findings by any third party, a report must be prepared of the&nbsp;findings of such audit and discussed with SCB's internal audit personnel (SCB </span><span class="font3" style="font-weight:bold;">IA). </span><span class="font3">If&nbsp;necessary, these findings must be submitted to the next meeting of the Joint Executive&nbsp;Committee. If the Joint Executive Committee considers that the findings highlight&nbsp;critical problems associated with Supplier's provision of the Services, the Joint&nbsp;Executive Committee must agree an action plan (including a timetable) for remedying&nbsp;defects found, and must agree the implementation costs to be borne by the parties.</span></p>
+<p><span class="font3">5.3 &nbsp;&nbsp;&nbsp;The costs of audits of the provision of the Services undertaken by Supplier IA must be</span></p>
+<p><span class="font3">borne by Supplier.</span></p>
+<p><span class="font3">6. </span><span class="font3" style="font-weight:bold;">External Audits</span></p>
+<p><span class="font3">6.1 Copies of extracts from any external audit reports showing all (non-commercially confidential) items directly relating to the Services or this Schedule </span><span class="font3" style="font-weight:bold;">(Audit Policies)&nbsp;</span><span class="font3">are to be provided to SCB IA within 30 days of receipt by Supplier.</span></p>
+<p><span class="font3">6.2 SCB IA will, at any time, on reasonable notice and not more than once in any twelve&nbsp;month period, also have the right to undertake an audit of Supplier's provision of the</span></p>
+<p><span class="font3">Services as described in this Schedule </span><span class="font3" style="font-weight:bold;">(Audit Policies). </span><span class="font3">Supplier must ensure that SCB IA have unrestricted access to Supplier staff, documentation, relevant records&nbsp;and other information required for the purpose of completing the audit (but excluding&nbsp;information and records relating to Supplier's internal costs and margins for the&nbsp;Services), provided that the SCB IA members are either personnel of SCB or are&nbsp;approved by Supplier, such approval not to be unreasonably withheld or delayed.&nbsp;Those SCB IA members requiring approval from Supplier and who have been so&nbsp;approved, must sign a non-disclosure agreement in a reasonable form approved by&nbsp;Supplier and must otherwise comply with Supplier's reasonable security requirements.&nbsp;Notwithstanding the notice and frequency restrictions contained within this paragraph,&nbsp;should SCB reasonably suspect that there is a material breach of system security then&nbsp;SCB may immediately notify Supplier of the grounds for its suspicion and, upon such&nbsp;notification having been given, SCB will have the right to undertake an immediate&nbsp;audit.</span></p>
+<p><span class="font3">6.3 Supplier's provision of the Services may also be subject to periodic audits by SCB's&nbsp;external auditors or regulators, including but not limited to the FSA, Hong Kong&nbsp;Monetary Authority, Monetary Authority of Singapore or any similar Government&nbsp;Agency and Supplier must procure that where necessary all subcontractors provide all&nbsp;necessary assistance and co-operation in connection with such audits. Each party will&nbsp;bear its own costs in relation to any such audit.</span></p>
+<p><span class="font3">6.4 SCB IA must not unduly interfere with Supplier's ability to comply with its obligations&nbsp;under this Agreement and, to the extent of any such undue interference, Supplier will</span></p>
+<p><span class="font3">be relieved from performing its corresponding obligations under this Agreement.</span></p>
+<p><span class="font3" style="font-weight:bold;">7. &nbsp;&nbsp;&nbsp;Supplier Audit Process</span></p>
+<p><span class="font3">7.1 &nbsp;&nbsp;&nbsp;</span><span class="font3" style="font-weight:bold;">Supplier Internal Audit Calendar</span></p>
+<p><span class="font3">Supplier will provide to SCB IA an internal audit calendar no later than [ </span><span class="font3" style="font-weight:bold;font-style:italic;">date]</span><span class="font3"> prior to the commencement of each audit year. The calendar will outline all the audit activities&nbsp;for the year.</span></p>
+<p><span class="font3">7.2 </span><span class="font3" style="font-weight:bold;">Supplier Audit Planning</span></p>
+<p><span class="font3">In respect of each audit, SCB IA must on a timely basis be provided with copies of, and reserves the right to provide input into, the following:</span></p>
+<p><span class="font3">(a) &nbsp;&nbsp;&nbsp;Risk identification and weighting assessment;</span></p>
+<p><span class="font3">(b) Terms of reference;</span></p>
+<p><span class="font3">(c) Scope and coverage;</span></p>
+<p><span class="font3">{d) Audit programme; and</span></p>
+<p><span class="font3">(e) Key dates, including:</span></p>
+<p><span class="font3">(i) &nbsp;&nbsp;&nbsp;Commencement of the audit;</span></p>
+<p><span class="font3">(ii) &nbsp;&nbsp;&nbsp;Commencement of fieldwork;</span></p>
+<p><span class="font3">(iii) &nbsp;&nbsp;&nbsp;Completion of fieldwork;</span></p>
+<p><span class="font3">(iv) Written audit findings;</span></p>
+<p><span class="font3">(v) &nbsp;&nbsp;&nbsp;Obtaining management responses;</span></p>
+<p><span class="font3">(vi) &nbsp;&nbsp;&nbsp;Issue of draft report; and</span></p>
+<p><span class="font3">(vii) Issue of completed report.</span></p>
+<p><span class="font3">The timing and location of these reviews will normally be agreed at the outset of the audit.</span></p>
+<p><span class="font3">7.3 </span><span class="font3" style="font-weight:bold;">Implementation of Recommendations</span></p>
+<p><span class="font3">Subject as stated below, Supplier will comply with any audit recommendations arising from:</span></p>
+<p><span class="font3">(a) &nbsp;&nbsp;&nbsp;any Supplier internal audit of Supplier's provision of the Services; and</span></p>
+<p><span class="font3">(b) &nbsp;&nbsp;&nbsp;any external audit of Supplier's provision of the Services; and</span></p>
+<p><span class="font3">(c) &nbsp;&nbsp;&nbsp;any SCB audit of Supplier's provision of the Services,</span></p>
+<p><span class="font3">applying, where required by this Schedule </span><span class="font3" style="font-weight:bold;">(Audit Policies) </span><span class="font3">or as is otherwise appropriate, the agreed change control procedures.</span></p>
+<p><span class="font3">7.4 </span><span class="font3" style="font-weight:bold;">Issues Tracking</span></p>
+<p><span class="font3">SCB IA will be provided with quarterly updates on the status of the implementation of recommendations. Supplier IA will establish an effective issue tracking process to&nbsp;ensure that recommendations are implemented in accordance with agreed time-scales.</span></p>
+<p><span class="font12" style="font-weight:bold;">Page 35 of35</span></p>
+<p><span class="font13">23/04/10</span></p>
+</body>
+</html>

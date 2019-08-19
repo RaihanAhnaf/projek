@@ -1,0 +1,46 @@
+package controllers
+
+import (
+	. "../models"
+
+	"github.com/eaciit/knot/knot.v1"
+
+	db "github.com/eaciit/dbox"
+	tk "github.com/eaciit/toolkit"
+)
+
+type ApiController struct {
+	*BaseController
+}
+
+func (c *ApiController) GetTrainData(k *knot.WebContext) interface{} {
+	k.Config.OutputType = knot.OutputJson
+	ret := ResultInfo{}
+	frm := struct {
+		Cluster    string
+		SubCluster string
+	}{}
+	err := k.GetPayload(&frm)
+	if err != nil {
+		return c.SetResultInfo(true, err.Error(), nil)
+	}
+	if frm.Cluster == "" || frm.SubCluster == "" {
+		return c.ErrorMessageOnly("Cluster and Subcluster must be defined.")
+	}
+	var dbFilter []*db.Filter
+	dbFilter = append(dbFilter, db.Eq("cluster", frm.Cluster))
+	dbFilter = append(dbFilter, db.Eq("subcluster", frm.SubCluster))
+	data := make([]FileUpload, 0)
+	query := tk.M{}.Set("where", db.And(dbFilter...))
+	csr, err := c.Ctx.Find(NewFileUpload(), query)
+	defer csr.Close()
+	if err != nil {
+		c.SetResultInfo(true, err.Error(), nil)
+	}
+	err = csr.Fetch(&data, 0, false)
+	if err != nil {
+		c.SetResultInfo(true, err.Error(), nil)
+	}
+	ret.Data = data
+	return ret
+}

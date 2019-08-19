@@ -1,0 +1,42 @@
+{
+   "word-count": 50572,
+   "effectivedate": [
+      {
+         "contentfromsystem": "\n    after the Effective Date (as defined in Clause 4) from time to time SCB directly\n   ",
+         "start-offset": "1342",
+         "data-eaciit-end": "179",
+         "data-eaciit-id": "179",
+         "confidence": 0.9,
+         "common-ancestor-id": "178",
+         "data-eaciit-start": "179",
+         "clause": "effectivedate",
+         "end-offset": "1357"
+      }
+   ],
+   "documenttitle": [
+      {
+         "contentfromsystem": "\n    This Statement of Work Number 1 forms part of the Software Licence Agreement with Implementation Services (the \"Agreement\") between Standard Chartered Bank Limited (for\n   ",
+         "start-offset": "14115",
+         "data-eaciit-end": "1537",
+         "data-eaciit-id": "1537",
+         "confidence": 0.75,
+         "common-ancestor-id": "1536",
+         "data-eaciit-start": "1537",
+         "clause": "documenttitle",
+         "end-offset": "14139"
+      }
+   ],
+   "governinglaw": [
+      {
+         "contentfromsystem": "\n    all in accordance with the provisions of this Agreement and applicable laws and re!;Jlllations\n    \n     ._\n    \n",
+         "start-offset": "2314",
+         "data-eaciit-end": "282",
+         "data-eaciit-id": "282",
+         "confidence": 0.51,
+         "common-ancestor-id": "281",
+         "data-eaciit-start": "282",
+         "clause": "governinglaw",
+         "end-offset": "2328"
+      }
+   ]
+}

@@ -1,0 +1,42 @@
+{
+   "word-count": 23546,
+   "governinglaw": [
+      {
+         "end-offset": "11245",
+         "data-eaciit-id": "1128",
+         "confidence": 0.55,
+         "contentfromsystem": "\n    (a) \u00a0\u00a0\u00a0This Agreement and any matters relating to this Agreement shall be governed\u00a0by and construed in accordance with the Jaws of England\n   ",
+         "start-offset": "11222",
+         "data-eaciit-end": "1128",
+         "data-eaciit-start": "1128",
+         "common-ancestor-id": "1127",
+         "clause": "governinglaw"
+      }
+   ],
+   "effectivedate": [
+      {
+         "end-offset": "666",
+         "data-eaciit-id": "147",
+         "confidence": 0.9,
+         "contentfromsystem": "\n    \"Effective Date\"\n   ",
+         "start-offset": "664",
+         "data-eaciit-end": "147",
+         "data-eaciit-start": "147",
+         "common-ancestor-id": "146",
+         "clause": "effectivedate"
+      }
+   ],
+   "documenttitle": [
+      {
+         "end-offset": "12419",
+         "data-eaciit-id": "1674",
+         "confidence": 0.69,
+         "contentfromsystem": "\n    4.2 Key Personnel from Gemalto Pte. Ltd. used to provide the Services to Standard\u00a0Chartered Bank will be those that are identified by Standard Chartered Bank as\u00a0having worked on the contract within six months of termination or expiry of the\n   ",
+         "start-offset": "12378",
+         "data-eaciit-end": "1674",
+         "data-eaciit-start": "1674",
+         "common-ancestor-id": "1673",
+         "clause": "documenttitle"
+      }
+   ]
+}

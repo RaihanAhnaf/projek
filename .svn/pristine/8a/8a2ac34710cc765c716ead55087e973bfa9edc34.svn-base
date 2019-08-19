@@ -1,0 +1,168 @@
+<script type="text/javascript">
+   var userinfo = {
+       usernameh: ko.observable('{{.Username}}'),
+       menunameh: ko.observable('{{.Menuname}}'),
+       rolenameh: ko.observable('{{.Rolename}}'),
+   }
+</script>
+
+<script src="{{BaseUrl}}res/main/js/transaction-order.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/transaction.css">
+<div class="page-bar">
+   <ul class="page-breadcrumb">
+      <li>
+         <a href="/transaction/transactionorder">Transaksi Order</a>
+      </li>
+   </ul>
+   <div class="page-toolbar">
+      <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+         <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+         <span class="thin uppercase hidden-xs font2" data-bind="text:transactionorder.DatePageBar"></span>&nbsp;
+      </div>
+   </div>
+</div>
+ <script type="text/html" id="tableRow">
+   <tr>
+        <td data-bind="" class="">
+            <select name="codeitem" style="width:200px" class="full-width formInput form-control input-md codeitem" data-bind="kendoDropDownList: { data: transactionorder.dataDropDownInventory, dataValueField: 'Kode', dataTextField: 'Name', value: CodeItem, optionLabel:'Select one', filter: 'contains', change: function(e){ transactionorder.onChangeCodeItem(e.sender._old, $index())}}"></select>
+       </td>
+
+       <td>
+           <input id="item" name="item" type="text" class="formInput form-control input-md item" data-bind="value:Item,attr: {id: 'item_' + $index(), name: 'item_' + $index() }" required/>
+       </td>
+       <td align="center">
+           <input id="qty" name="qty" type="number" minlength="3" class="formInput form-control input-md currency" data-bind="value:Qty,attr: {id: 'qty_' + $index(), name: 'Qty' + $index() }" required>
+       </td>      
+       <td>
+           <div class="align-center">
+               <button class="btn btn-danger btn-xs btnDelete" id="btnDeleteSummary" data-bind="click:transactionorder.removeRow"><i class="fa fa-times"></i></button>
+           </div>
+       </td>
+   </tr>
+</script>
+<div class="row">
+   <div class="col-md-12 panel-content">
+      <div class="portlet box twis">
+         <div class="portlet-title" style="padding-left: 8px;">
+            <div class="caption">
+               Transaksi Order &nbsp;
+            </div>
+         </div>
+         <div class="portlet-body">
+            <div class="row">
+               <div class="col-md-12">
+               </div>
+            </div>
+            <br>
+            <div class="row">
+               <div class="col-md-12" id="tabs">
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li role="presentation" id="gridForm" class="active tab1"><a href="#List" aria-controls="List" role="tab" data-toggle="tab" onclick="">List Transaksi Order <span data-bind="text:transactionorder.names"></span></a></li>
+                     <li role="presentation" id="createdform"><a href="#Create" class="" aria-controls="Create" role="tab" data-toggle="tab" data-bind="click:transactionorder.createdForm">Create Transaksi Order <span data-bind="text:transactionorder.names"></span></a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <!--panel list-->
+                     <div role="tabpanel" class="tab-pane active" id="List">
+                        <div class="tab-pane-content">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <label>From :</label>
+                                 <span class="k-widget k-datepicker k-header filter-space" style=""><span class="k-picker-wrap k-state-default"><input type="text" id="dateStart" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}" data-role="datepicker" class="k-input" role="combobox" aria-expanded="false" aria-owns="dateStart_dateview" aria-disabled="false" ><span unselectable="on" class="k-select filter-space" aria-label="select" role="button" aria-controls="dateStart_dateview" ><span class="k-icon k-i-calendar"></span></span></span></span>
+                                 <label>To :</label>
+                                 <span class="k-widget k-datepicker k-header filter-space" style=""><span class="k-picker-wrap k-state-default"><input type="text" id="dateEnd" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}" data-role="datepicker" class="k-input" role="combobox" aria-expanded="false" aria-owns="dateEnd_dateview" aria-disabled="false"><span unselectable="on" class="k-select filter-space" aria-label="select" role="button" aria-controls="dateEnd_dateview"><span class="k-icon k-i-calendar"></span></span></span></span>
+                                 <button type="button" onclick="transactionorder.search()" class="btn btn-sm btn-refresh" ><i class="fa fa-search"></i> Search</button>
+                              </div>
+                              <div class="col-md-12 no-padding" data-bind="visible: !model.Processing()">
+                                 <div id="gridListtransactionorder" class="margin15" style="margin-bottom: -15px;margin-left: 15px;margin-top: 15px;margin-right: 15px;">
+                                 </div>
+                              </div>
+                              {{template "_loader2.html"}}
+                           </div>
+                        </div>
+                     </div>
+                     <!--panel Create-->
+                     <div role="tabpanel" class="tab-pane " id="Create">
+                        <div class="tab-pane-content" data-bind="with:transactionorder.record">
+                           <div class="row">
+                              <div class="col-md-12" data-bind="visible: !model.Processing()" style="padding-left: 0px;">
+                                 <div class="row">
+                                    <div class="col-md-3">
+                                       <label class="col-md-12" style="padding-top: 15px">Store House From</label>
+                                       <div class="col-md-12">
+                                          <select id="storehousefrom" data-bind="kendoDropDownList: {data: transactionorder.warehouseFrom, dataValueField: 'value', dataTextField: 'text', value:StoreHouseFrom, optionLabel: 'Select ..'}" name="storehousefrom" class="select form-control">                                            
+                                          </select> 
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                       <label class="col-md-12" style="padding-top: 15px">Store House To</label>
+                                       <div class="col-md-12">
+                                          <select id="storehouseto" data-bind="kendoDropDownList: {data: transactionorder.warehouseTo, dataValueField: 'value', dataTextField: 'text', value:StoreHouseTo, optionLabel: 'Select ..'}" name="storehouseto" class="select form-control">                                            
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                       <label class="col-md-12" style="padding-top: 8px;">Date</label>
+                                       <div class="col-md-12">
+                                          <input type="text" class="formInput" name="date" id="datepurchase" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'},value:DatePosting" style="width: 192px;">
+                                       </div>
+                                    </div>           
+                                 </div>
+                                 </div>
+                                 <div class="row  padding-left-table">
+                                    <div class="col-md-12">
+                                       <div class="panel panel-default">
+                                          <div class="panel-heading align-right margin15">
+                                             <button type="button" class="btn btn-xs btn green-meadow btn-flat" id="buttonAdd" data-bind="click: transactionorder.addNewItem"><i class="fa fa-plus"></i></button>
+                                          </div>
+                                          <div class="panel-body">
+                                             <div class="table-responsive">
+                                                <table class="table table-bordered" data-bind="with:ListDetailOrder">
+                                                   <thead>
+                                                      <tr>                                                      
+                                                       <th class="invhide" width="200px" rowspan="2" style="vertical-align:middle;text-align:center ">Code</th>                                                       
+                                                         <th class="" width="200px" rowspan="2" style="vertical-align:middle;text-align:center ">Item</th>
+                                                         <th class="" width="50px" rowspan="2" style="vertical-align:middle;text-align:center">Quantity</th>
+                                                         
+                                                         <th class="" width="20px" rowspan="2" style="text-align: center;"></th>
+                                                      </tr>
+              
+                                                   </thead>
+                                                   <tbody data-bind="template:{name:'tableRow', foreach:transactionorder.record.ListDetail}"></tbody>
+                                                </table>
+                                                <table class="table borderless totaltext" border="0" data-bind="with:transactionorder.record">
+                                                   <tr>
+                                                      <td colspan="4" rowspan="6">
+                                                         <strong>Description</strong>
+                                                         <textarea style="width: 650px;height:150px" class="formInput form-control" data-bind="value:Description" required></textarea>
+                                                      </td>
+                                                   </tr>
+                                                   
+                                                </table>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row bottom-padding no-left-padding">
+                                          <div class="col-md-12 align-right">
+                                            <button style="padding: 4px; width: 75px" type="button" id="btnSave" class="btn btn-success btn-flat space" style="height: 30px;position: relative; padding-top: 3px" ><i class="fa fa-floppy-o"></i> Save</button>
+                                             <button type="button" id="btnReset" class="btn btn-danger btn-sm btn-danger btn-flat" ><i class="fa fa-repeat"></i> Reset</button>
+                                             <button type="button" id="btnPrint" class="btn btn-sm btn-color-posting btn-flat" ><i class="fa fa-print"></i> Print</button>
+                                             <button type="button" id="btnDelete"  class="btn btn-sm btn-danger btn-flat" ><i class="fa fa-times"></i> Delete</button>
+                                          </div>
+                                          <div class="col-md-12 align-right top-margin-10px" >
+                                             <button type="button"  id="btnBack" class="btn btn-sm btn-default btn-flat btn-backlist"><i class="fa fa-mail-reply"></i> Back To List</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--panel Draft-->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

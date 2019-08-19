@@ -1,0 +1,434 @@
+<script type="text/javascript">
+
+var userinfo ={
+    usernameh: ko.observable('{{.Username}}'),
+    menunameh: ko.observable('{{.Menuname}}'),
+}
+</script>
+<script src="{{BaseUrl}}res/main/js/dashboard.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/dashboard.css">
+
+<div class="panel" data-bind="visible: !model.Processing()">
+    <div class="page-bar">
+        <ul class="page-breadcrumb">
+            <li>
+            <a href="/dashboard/default" class="bar">Dashboard</a>
+            </li>
+        </ul>
+        <div class="page-toolbar">
+            <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+                <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+                <span class="thin hidden-xs font2" data-bind="text:dashboard.koDatePageBar"></span>&nbsp;
+            </div>
+        </div>
+    </div>
+<div class="row clearfix">
+    <div class="col-md-12">
+        <div class="portlet box twis">
+            <div class="portlet-title">
+                <div class="caption1" data-bind="text:dashboard.titleDashboard()"></div>
+                <div class="caption2" data-bind="visible: !dashboard.visibleDashboard()">
+                    <button type="button" onclick="dashboard.renderDashvbord2()" class="btnnew" data-toggle="tab" href="#dashboard2"><i class="fa fa-chevron-right"></i></button>
+                    <!-- <a class="btnnew" href="#"><i class="fa fa-share"></i></a> -->
+                </div>
+                <div class="caption2" data-bind="visible: dashboard.visibleDashboard()">
+                    <button type="button" onclick="dashboard.toDashbord1()" class="btnnew" data-toggle="tab" href="#dashboard1"><i class="fa fa-chevron-left"></i></button>
+                </div>
+            </div>
+            <div class="panel-body">
+               <!--  <div class="col-md-12" id="tabs">
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                      <li class="active"><a data-toggle="tab" href="#dashboard1">Dashboard 1</a></li>
+                      <li onclick="dashboard.renderDashvbord2()"><a data-toggle="tab" href="#dashboard2">Dashboard 2 </a></li>
+                    </ul>
+                </div> -->
+                <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade active in" id="dashboard1">
+                    <div class="tab-pane-content">
+                        <div class="row col-md-12">
+                            <div class="col-md-6">
+                                <div class="portlet light">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <span class="caption-subject font-dark bold uppercase">Monthly Revenue</span> 
+                                        </div>
+                                        <div class="caption pull-right">
+                                             <strong data-bind="text:dashboard.koMonthYear"></strong>
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="date">
+                                            <strong data-bind="text:dashboard.koDateMonthlyNow"> </strong>
+                                        </div>
+                                        <div class="panel-heading">
+                                            <div class="text-right monthlyrev"><strong>IDR <span data-bind="text:dashboard.koDataMonthlyRevenueVal"></span></strong></div>
+                                            <div id="monthlyRevenue"></div>
+                                            <div class="text-right revprev datecolor"><strong> IDR <span data-bind="text:dashboard.koDataMonthlyRevPrev"></span></strong></div>
+                                            <div class="row">
+                                                <div class="col-md-1 col-sm-1 col-xs-1">
+                                                    <div class="color3 margin20"><strong class="margin20">Previous</strong></div>
+                                                </div>
+                                                <div class="col-md-1 col-sm-1 col-xs-1">
+                                                      <div class="color1 margin75"><strong class="margin20">Current</strong></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portlet light">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <span class="caption-subject font-dark bold uppercase">Monthly Expenses</span>
+                                        </div>
+                                         <div class="caption pull-right">
+                                             <strong data-bind="text:dashboard.koMonthYear"></strong>
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="date">
+                                            <strong data-bind="text:dashboard.koDateMonthlyNow"> </strong>
+                                        </div>
+                                        <div class="panel-heading">
+                                            <div class="text-right monthlyrev"><strong>IDR <span data-bind="text:dashboard.koDataMonthlyExpensesVal"></span></strong></div>
+                                            <div id="monthlyExpenses"></div>
+                                            <div class="text-right revprev datecolor"><b>IDR <span data-bind="text:dashboard.koDataMonthlyExpPrev"></span> </b></div>
+                                            <div class="row">
+                                                <div class="col-md-1 col-sm-1 col-xs-1">
+                                                    <div class="color3 margin20"><strong class="margin20">Previous</strong></div>
+                                                </div>
+                                                <div class="col-md-1 col-sm-1 col-xs-1">
+                                                    <div class="color1 margin75"><strong class="margin20">Current</strong></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="col-md-6 top">
+                                <div class="portlet light">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <span class="caption-subject font-dark bold uppercase">Total Annual Income</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="date">
+                                            <strong data-bind="text:dashboard.koDateNow"> </strong>
+                                            <div class="datecolor">
+                                                <span data-bind="text:dashboard.koDatePrev"></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-md-7 col-xs-7 col-sm-7">
+                                                    <span class="font3"><b>Revenue</b></span>
+                                                    <div id="chartRev"></div>
+                                                </div>
+                                                <div class="col-md-5 col-xs-5 col-sm-5 text-right">
+                                                    <div class="font"><strong>IDR <span data-bind="text:dashboard.koDataTotRev"></span></strong></div>
+                                                    <div>
+                                                        <strong class="font2"><b><span data-bind="text:dashboard.koDataPercentRev"></span></b></strong>
+                                                        <i id="RevenueI" class="fa fa-caret-up fa-2x"></i>
+                                                    </div>
+                                                    <div class="font2 datecolor"> <strong> IDR <span data-bind="text:dashboard.koDataPrevRev"></span></strong> (Prev)</div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <hr class="line">
+
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-md-7 col-xs-7 col-sm-7">
+                                                    <span class="font3"><b>Expenses</b></span>
+                                                    <div id="chart1"></div>
+                                                </div>
+                                                <div class="col-md-5 col-xs-5 col-sm-5 text-right">
+                                                    <div class="font"><strong>IDR <span data-bind="text:dashboard.koDataTotExp"></span></strong></div>
+                                                    <div>
+                                                        <strong class="font2"><b><span data-bind="text:dashboard.koDataPercentExp"></span></b></strong>
+                                                        <i class="fa fa-caret-up fa-2x" id="ExpensesI"></i>
+                                                    </div>
+                                                    <div class="font2 datecolor"> <strong> IDR <span data-bind="text:dashboard.koDataPrevExp"></span></strong> (Prev)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr class="line">
+
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-md-7 col-xs-7 col-sm-7">
+                                                    <span class="font3"><b>Net Profit</b></span>
+                                                    <div id="chart2"></div>
+                                                </div>
+                                                <div class="col-md-5 col-xs-5 col-sm-5 text-right">
+                                                    <div class="font"><strong>IDR <span data-bind="text:dashboard.koDataTotNet"></span></strong></div>
+                                                    <div>
+                                                        <strong class="font2"><b><span data-bind="text:dashboard.koDataPercentNet"></span></b></strong>
+                                                        <i class="fa fa-caret-up fa-2x" id="NetProfitI"></i>
+                                                    </div>
+                                                    <div class="font2 datecolor"> <strong> IDR <span data-bind="text:dashboard.koDataPrevNet"></span></strong> (Prev)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- chart coulumn -->
+                            <div class="col-md-6 top">
+                                <div class="portlet light">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <span class="caption-subject font-dark bold uppercase">Income</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="panel-heading">
+
+                                            <div class="row">
+
+                                                <!-- isi -->
+                                                <div id="coulumn"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="dashboard2">
+                    <div class="tab-pane-content">
+                        <div class="row col-md-12">
+                            <div class="col-md-3 top">
+                                <div class="portlet light">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <span class="caption-subject font-dark bold uppercase sizeTopfive">Top Five Expenses Monthly</span>
+                                        </div>                                    
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div id="fiveTopExpenses"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 top">
+                                <div class="portlet light">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <span class="caption-subject font-dark bold uppercase sizeTopfive">Top Five Revenue Monthly</span>
+                                        </div>                                    
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div id="fiveTopRevenue"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 top">
+                                <div class="portlet light">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <span class="caption-subject font-dark bold uppercase sizeTopfive">Cash Flow Monthly</span>
+                                        </div>                                    
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div id="currentAsset"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 top">
+                                <div class="portlet light">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <span class="caption-subject font-dark bold uppercase sizeTopfive">Bank & Cash Account</span>
+                                        </div>                                    
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="dashboard-stat2 ">
+                                            <div class="display">
+                                                <div class="number">
+                                                    <h3 class="font-green-sharp">
+                                                        <span data-counter="counterup" data-bind="text:dashboard.koUSDamount()"></span>
+                                                        <small class="font-green-sharp">USD</small>
+                                                    </h3>
+                                                    <small>TOTAL BANK USD</small>
+                                                </div>
+                                                <div class="icon">
+                                                    <i class="icon-pie-chart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="progress-info">
+                                                <div class="progress">
+                                                    <span style="width: 100%;" class="progress-bar progress-bar-success blue-sharp">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard-stat2 ">
+                                            <div class="display">
+                                                <div class="number">
+                                                    <h3 class="font-green-sharp">
+                                                        <span data-counter="counterup" data-bind="text:dashboard.koIDRamount()"></span>
+                                                        <small class="font-green-sharp">IDR</small>
+                                                    </h3>
+                                                    <small>TOTAL BANK IDR </small>
+                                                </div>
+                                                <div class="icon">
+                                                    <i class="icon-pie-chart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="progress-info">
+                                                <div class="progress">
+                                                    <span style="width: 100%;" class="progress-bar progress-bar-success red-haze">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard-stat2">
+                                            <div class="display">
+                                                <div class="number">
+                                                    <h3 class="font-green-sharp">
+                                                        <span data-counter="counterup" data-bind="text:dashboard.koPTCamount()"></span>
+                                                        <small class="font-green-sharp">PTC</small>
+                                                    </h3>
+                                                    <small>TOTAL BANK PTC</small>
+                                                </div>
+                                                <div class="icon">
+                                                    <i class="icon-pie-chart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="progress-info">
+                                                <div class="progress">
+                                                    <span style="width: 100%;" class="progress-bar progress-bar-success orange-sharp">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portlet light" style="margin-bottom: 0px">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <span class="caption-subject font-dark bold uppercase sizeTopfive">Cash In Hand</span>
+                                        </div>                                    
+                                    </div>
+                                    <div class="portlet-body">
+                                        <!-- <div class="dashboard-stat2 ">
+                                            <div class="display">
+                                                <div class="number">
+                                                    <h3 class="font-green-sharp">
+                                                        <span data-counter="counterup" data-bind="text:dashboard.koPTCamount()"></span>
+                                                        <small class="font-green-sharp">IDR</small>
+                                                    </h3>
+                                                    <small>TOTAL PTC MANDIRI</small>
+                                                </div>
+                                                <div class="icon">
+                                                    <i class="icon-pie-chart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="progress-info">
+                                                <div class="progress">
+                                                    <span style="width: 100%;" class="progress-bar progress-bar-success orange-sharp">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <div class="dashboard-stat2 ">
+                                            <div class="display">
+                                                <div class="number">
+                                                    <h3 class="font-green-sharp">
+                                                        <span data-counter="counterup" data-bind="text:dashboard.koPETTYamount()"></span>
+                                                        <small class="font-green-sharp">IDR</small>
+                                                    </h3>
+                                                    <small>TOTAL CASH</small>
+                                                </div>
+                                                <div class="icon">
+                                                    <i class="icon-pie-chart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="progress-info">
+                                                <div class="progress">
+                                                    <span style="width: 100%;" class="progress-bar progress-bar-success green2-sharp">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="col-md-6 top">
+                                <div class="portlet light">
+                                    <div class="portlet-title">
+                                        <div class="col-sm-7 caption">
+                                                <span class="caption-subject font-dark bold uppercase sizeTopfive1">Outstanding Invoice:</span>
+                                                <span class="caption-subject font-dark bold uppercase sizeTopfive1" data-bind="text:dashboard.koLenOSInvoice()"></span>
+                                        </div>
+                                        <div class="col-sm-5 caption">
+                                            <span class="caption-subject font-dark bold uppercase sizeTopfive">Total: IDR</span>
+                                            <span class="caption-subject font-dark bold uppercase sizeTopfive" data-bind="text:dashboard.koTotalOSInvoice()"></span>
+                                        </div>                                    
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div id="gridInvoice"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 top">
+                                <div class="portlet light">
+                                    <div class="portlet-title">
+                                        <div class="col-sm-7 caption">
+                                                <span class="caption-subject font-dark bold uppercase sizeTopfive1">Outstanding Purchase Order:</span>
+                                                <span class="caption-subject font-dark bold uppercase sizeTopfive1" data-bind="text:dashboard.koLenOSPO()"></span>
+                                        </div>
+                                        <div class="col-sm-5 caption">
+                                            <span class="caption-subject font-dark bold uppercase sizeTopfive">Total: IDR</span>
+                                            <span class="caption-subject font-dark bold uppercase sizeTopfive" data-bind="text:dashboard.koTotalOSPO()"></span>
+                                        </div>                                    
+                                    </div>                                    
+                                    <div class="portlet-body">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div id="gridPO"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>      
+            </div>
+        </div>
+    </div>
+</div>
+<!-- bordered : css  -->

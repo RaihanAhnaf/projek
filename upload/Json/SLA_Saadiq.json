@@ -1,0 +1,42 @@
+{
+   "word-count": 35727,
+   "effectivedate": [
+      {
+         "clause": "effectivedate",
+         "data-eaciit-start": "263",
+         "end-offset": "1943",
+         "data-eaciit-end": "263",
+         "common-ancestor-id": "262",
+         "data-eaciit-id": "263",
+         "contentfromsystem": "\n    4.1 This Agreement shall take effect from the date of this Agreement (the \"Effective\u00a0Date\") and shall be valid for a term not exceeding Five (5) years unless terminated\u00a0earlier or extended in accordance with this Agreement. This Agreement may be\n   ",
+         "confidence": 0.83,
+         "start-offset": "1902"
+      }
+   ],
+   "documenttitle": [
+      {
+         "clause": "documenttitle",
+         "data-eaciit-start": "213",
+         "end-offset": "1511",
+         "data-eaciit-end": "213",
+         "common-ancestor-id": "212",
+         "data-eaciit-id": "213",
+         "contentfromsystem": "\n    indirectly has in or over Standard Chartered Bank the rights or powers listed in (a) above\n   ",
+         "confidence": 0.64,
+         "start-offset": "1495"
+      }
+   ],
+   "governinglaw": [
+      {
+         "clause": "governinglaw",
+         "data-eaciit-start": "578",
+         "end-offset": "6182",
+         "data-eaciit-end": "578",
+         "common-ancestor-id": "577",
+         "data-eaciit-id": "578",
+         "contentfromsystem": "\n    25.1 This Agreement shall be governed by the laws of Malaysia and the parties hereto\u00a0submit to the exclusive jurisdiction of the Courts of Malaysia.\n   ",
+         "confidence": 0.78,
+         "start-offset": "6157"
+      }
+   ]
+}

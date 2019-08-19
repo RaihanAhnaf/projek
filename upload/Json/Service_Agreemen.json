@@ -1,0 +1,42 @@
+{
+   "effectivedate": [
+      {
+         "data-eaciit-start": "143",
+         "data-eaciit-id": "143",
+         "confidence": 0.9,
+         "start-offset": "758",
+         "clause": "effectivedate",
+         "data-eaciit-end": "143",
+         "common-ancestor-id": "142",
+         "contentfromsystem": "\n    \"Effective Date\"\n   ",
+         "end-offset": "760"
+      }
+   ],
+   "word-count": 13278,
+   "governinglaw": [
+      {
+         "data-eaciit-start": "591",
+         "data-eaciit-id": "591",
+         "confidence": 0.5,
+         "start-offset": "4628",
+         "clause": "governinglaw",
+         "data-eaciit-end": "591",
+         "common-ancestor-id": "590",
+         "contentfromsystem": "\n    breach of any laws or regulatory requirements or guidance to which it is subject, SCB shall be entitled to terminate this Agreement immediately without entitling the\u00a0Supplier to receive any compensation in respect of the termination of this Agreement.\n   ",
+         "end-offset": "4667"
+      }
+   ],
+   "documenttitle": [
+      {
+         "data-eaciit-start": "17",
+         "data-eaciit-id": "17",
+         "confidence": 0.68,
+         "start-offset": "9",
+         "clause": "documenttitle",
+         "data-eaciit-end": "17",
+         "common-ancestor-id": "16",
+         "contentfromsystem": "\n    Standard Chartered Bank (Hong Kong) Limited\n   ",
+         "end-offset": "15"
+      }
+   ]
+}

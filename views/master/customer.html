@@ -1,0 +1,384 @@
+<script type="text/javascript">
+   var userinfo = {
+       usernameh: ko.observable('{{.Username}}'),
+       menunameh: ko.observable('{{.Menuname}}'),
+   }
+</script>
+<style>
+#griddetailbilling .k-grid-content
+{
+    min-height: 100px;
+    max-height: 360px;
+}
+li[role="presentation"] div {
+   color: white;
+}
+li[role="presentation"].active div {
+   color: black;
+}
+</style>
+<script src="{{BaseUrl}}res/main/js/master-customer.js" type="text/javascript"></script>
+<script src="{{BaseUrl}}res/main/js/basic.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/master.css">
+<div class="page-bar">
+   <ul class="page-breadcrumb">
+      <li >
+         <span class="bar">Master</span>
+         <i class="fa fa-circle"></i>
+      </li>
+      <li >
+         <a href="/master/customer">Customer & Supplier</a>
+      </li>
+   </ul>
+   <div class="page-toolbar">
+      <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+         <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+         <span class="thin uppercase hidden-xs font2" data-bind="text:customer.DatePageBar"></span>&nbsp;
+      </div>
+   </div>
+</div>
+<div class="row clearfix">
+   <div id="usersett">
+      <div class="col-md-12  panel-content">
+         <div class="portlet box twis">
+            <div class="portlet-title">
+               <div class="caption" data-bind="text:customer.textTitle"></div>
+               <div class="tools tool-padding">
+                  <button type="button" class="btn btn-sm btn-success btn-flat" onclick="customer.addNew()" data-toggle="modal" data-target="#AddNewCustomer" data-backdrop="static" data-keyboard="false"><i class="fa fa-plus"></i> Add New&nbsp;<span data-bind="text:customer.textTitle"></span></button>
+                  <button type="button" class="btn btn-sm btn-primary btn-flat" onclick="customer.back()" ><span data-bind="text:customer.TextBack"></span></button>
+                  <button onclick="customer.exportExcel()" type="button" class="btn btn-sm btn-outline green"><i class="fa fa-file-excel-o"></i>&nbsp;Export
+                     To Excel</button>
+             </div>
+            </div>
+            <div class="portlet-body">
+               <div class="col-md-16" data-bind="visible: !model.Processing()">
+                  <div class="row">
+                     <div class="col-md-12 bottom-margin">
+                        <div class="panel-heading">
+                           <div class="row">
+                              <div class="col-md-12 padding-left-right" >
+                                 <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active tab1"><a href="#Customer" aria-controls="Customer" role="tab" data-toggle="tab" onclick="customer.tabCustomer()"><div>Customer</div></a></li>
+                                    <li role="presentation"><a href="#Supplier" class="tabTitle" aria-controls="Supplier" role="tab" data-toggle="tab" onclick="customer.tabSupplier()"><div>Supplier</div></a></li>
+                                 </ul>
+                                 <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="Customer">
+                                       <div class="tab-pane-content">
+                                             <div class="row">
+                                                   <div class="col-md-12 col-sm-12 col-xs-12">
+                                                       <label>Code :</label>
+                                                       <input type="text" placeholder="Filter by code..." id="filterCodeCS" class="full-width filter-space" />
+                                                       <label>Name :</label>
+                                                       <input type="text" placeholder="Filter by name..." id="filterNameCS" class="full-width filter-space" />
+                                                       <button type="button" onclick="customer.init()" class="btn btn-sm btn-refresh"
+                                                           style="margin-bottom:4px;"><i class="fa fa-search"></i> Search</button>
+                                                   </div>
+                                               </div>
+                                          <div class="row">
+                                             <div class="col-md-12" data-bind="visible: !model.Processing()">
+                                                <!-- <div class="grid-customer padding-grid" id="gridcustomer"></div> -->
+                                                <div class="col-md-5">
+                                                   <h4 class="texttitle">List Customer</h4>
+                                                   <div class="grid-customer-list padding-grid" id="gridcustomerlist"></div>
+                                                </div>
+                                                <div class="col-md-7">
+                                                   <h4 class="texttitle">Detail Customer</h4>
+                                                    <div class="col-md-12" data-bind="with:customer.detailListRecord">
+                                                      <div class="row textcustsupp">
+                                                         <div class="col-md-3 texttitle">Customer Code</div>
+                                                         <div class="col-md-3">: <span data-bind="text:Kode"></span></div>
+                                                         <div class="col-md-3 texttitle">Transaction Code</div>
+                                                         <div class="col-md-3">: <span data-bind="text:TrxCode"></span></div>
+                                                      </div>
+                                                      <div class="row textcustsupp">
+                                                         <div class="col-md-3 texttitle">Supplier Name</div>
+                                                         <div class="col-md-3">: <span data-bind="text:Name"></span></div>
+                                                         <div class="col-md-3 texttitle">Balance</div>
+                                                         <div class="col-md-3">: <span data-bind="text:Balance"></span></div>
+                                                      </div>
+                                                      <div class="row textcustsupp">
+                                                         <div class="col-md-3 texttitle">Address</div>
+                                                         <div class="col-md-3">: <span data-bind="text:Address"></span></div>
+                                                         <div class="col-md-3 texttitle">Sales Code</div>
+                                                         <div class="col-md-3">: <span data-bind="text:SalesCode"></span></div>
+                                                      </div>
+                                                      <div class="row textcustsupp">
+                                                         <div class="col-md-3 texttitle">City</div>
+                                                         <div class="col-md-3">: <span data-bind="text:City"></span></div>
+                                                         <div class="col-md-3 texttitle">Departement Code</div>
+                                                         <div class="col-md-3">: <span data-bind="text:DepartmentCode"></span></div>
+                                                      </div>
+                                                      <div class="row textcustsupp">
+                                                         <div class="col-md-3 texttitle">Phone No.</div>
+                                                         <div class="col-md-3">: <span data-bind="text:NoTelp"></span></div>
+                                                         <div class="col-md-3 texttitle">Last Date Modified</div>
+                                                         <div class="col-md-3">: <span data-bind="text:LastDate"></span></div>
+                                                      </div>
+                                                      <div class="row textcustsupp">
+                                                         <div class="col-md-3 texttitle">Contact / Own</div>
+                                                         <div class="col-md-3">: <span data-bind="text:Owner"></span></div>
+                                                         <div class="col-md-3 texttitle">Bank</div>
+                                                         <div class="col-md-3">: <span data-bind="text:Bank"></span></div>
+                                                      </div>
+                                                      <div class="row textcustsupp">
+                                                         <div class="col-md-3 texttitle">Payment Term Code</div>
+                                                         <div class="col-md-3">: <span data-bind="text:PaymentTerm"></span></div>
+                                                         <div class="col-md-3 texttitle">Bank Account Number </div>
+                                                         <div class="col-md-3">: <span data-bind="text:AccountNo"></span></div>
+                                                      </div>
+                                                      <div class="row textcustsupp">
+                                                         <div class="col-md-3 texttitle">VAT Reg. No.</div>
+                                                         <div class="col-md-3">: <span data-bind="text:VATReg"></span></div>
+                                                         <div class="col-md-3 texttitle">Limit</div>
+                                                         <div class="col-md-3">: <span data-bind="text: Limit"></span></div>
+                                                      </div>
+                                                   </div>
+                                                   <!---->
+                                                </div>
+                                             </div>
+                                             {{template "_loader2.html"}}
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane " id="Supplier">
+                                       <div class="tab-pane-content">
+                                             <div class="row">
+                                                   <div class="col-md-12 col-sm-12 col-xs-12">
+                                                       <label>Code :</label>
+                                                       <input type="text" placeholder="Filter by code..." id="filterCodeSP" class="full-width filter-space " />
+                                                       <label>Name :</label>
+                                                       <input type="text" placeholder="Filter by name..." id="filterNameSP" class="full-width filter-space " />
+                                                       <button type="button" onclick="customer.init()" class="btn btn-sm btn-refresh"
+                                                           style="margin-bottom:4px;"><i class="fa fa-search"></i> Search</button>
+                                                   </div>
+                                               </div>
+                                          <div class="row">
+                                             <div class="col-md-12" data-bind="visible: !model.Processing()">
+                                                   <!-- <div class="col-md-4">
+                                                <div class="grid-supplier padding-grid" id="gridsupplier"></div>
+                                                   </div> -->
+                                               <div class="col-md-5">
+                                                   <h4 class="texttitle">List Supplier</h4>
+                                                   <div class="grid-customer-list padding-grid" id="gridsupplier"></div>
+                                                </div>
+                                                <div class="col-md-7">
+                                                   <h4 class="texttitle">Detail Supplier</h4>
+                                                   <div class="col-md-12" data-bind="with:customer.detailListRecord">
+                                                         <div class="row textcustsupp">
+                                                            <div class="col-md-3 texttitle">Supplier Code</div>
+                                                            <div class="col-md-3">: <span data-bind="text:Kode"></span></div>
+                                                            <div class="col-md-3 texttitle">Transaction Code</div>
+                                                            <div class="col-md-3">: <span data-bind="text:TrxCode"></span></div>
+                                                         </div>
+                                                         <div class="row textcustsupp">
+                                                            <div class="col-md-3 texttitle">Supplier Name</div>
+                                                            <div class="col-md-3">: <span data-bind="text:Name"></span></div>
+                                                            <div class="col-md-3 texttitle">Balance</div>
+                                                            <div class="col-md-3">: <span data-bind="text:Balance"></span></div>
+                                                         </div>
+                                                         <div class="row textcustsupp">
+                                                            <div class="col-md-3 texttitle">Address</div>
+                                                            <div class="col-md-3">: <span data-bind="text:Address"></span></div>
+                                                            <div class="col-md-3 texttitle">Sales Code</div>
+                                                            <div class="col-md-3">: <span data-bind="text:SalesCode"></span></div>
+                                                         </div>
+                                                         <div class="row textcustsupp">
+                                                            <div class="col-md-3 texttitle">City</div>
+                                                            <div class="col-md-3">: <span data-bind="text:City"></span></div>
+                                                            <div class="col-md-3 texttitle">Departement Code</div>
+                                                            <div class="col-md-3">: <span data-bind="text:DepartmentCode"></span></div>
+                                                         </div>
+                                                         <div class="row textcustsupp">
+                                                            <div class="col-md-3 texttitle">Phone No.</div>
+                                                            <div class="col-md-3">: <span data-bind="text:NoTelp"></span></div>
+                                                            <div class="col-md-3 texttitle">Last Date Modified</div>
+                                                            <div class="col-md-3">: <span data-bind="text:LastDate"></span></div>
+                                                         </div>
+                                                         <div class="row textcustsupp">
+                                                            <div class="col-md-3 texttitle">Contact / Own</div>
+                                                            <div class="col-md-3">: <span data-bind="text:Owner"></span></div>
+                                                            <div class="col-md-3 texttitle">Bank</div>
+                                                            <div class="col-md-3">: <span data-bind="text:Bank"></span></div>
+                                                         </div>
+                                                         <div class="row textcustsupp">
+                                                            <div class="col-md-3 texttitle">Payment Term Code</div>
+                                                            <div class="col-md-3">: <span data-bind="text:PaymentTerm"></span></div>
+                                                            <div class="col-md-3 texttitle">Bank Account Number </div>
+                                                            <div class="col-md-3">: <span data-bind="text:AccountNo"></span></div>
+                                                         </div>
+                                                         <div class="row textcustsupp">
+                                                            <div class="col-md-3 texttitle">VAT Reg. No.</div>
+                                                            <div class="col-md-3">: <span data-bind="text:VATReg"></span></div>
+                                                            <div class="col-md-3">&nbsp;</div>
+                                                            <div class="col-md-3">&nbsp;</div>
+                                                         </div>
+                                                      </div>                                     
+                                                </div> 
+                                             </div>
+                                             {{template "_loader2.html"}}
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               {{template "_loader2.html"}}
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Form Modal -->
+<div class="modal fade" id="AddNewCustomer" aria-hidden="true" aria-labelledby="modalTitle" role="dialog" tabindex="-1">
+   <div class="modal-dialog" data-bind="visible: !model.Processing()">
+      <div class="modal-content konten margin16" data-bind="with:customer.record">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+            </button>
+            <h4 class="modal-title">Add New <span data-bind="text:customer.textTitle"></span></h4>
+         </div>
+         <div class="modal-body">
+            <div class="form-input row" data-bind="visible: !model.Processing()">
+               <!-- <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">Code</label>
+                  <div class="control-input col-md-7 pads">
+                  <input type="text" name="kodepelanggan" id="kodepelanggan" class="input-sm form-control" placeholder="Type Kode Pelanggan" required validationMessage="Please Input Kode Pelanggan" data-bind="value: Kode" disabled />
+                      <span class="k-invalid-msg" data-for="KodePelanggan"></span>
+                  </div>
+                  </div> -->
+               <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">Company Name</label>
+                  <div class="control-input col-md-7 pads">
+                     <input type="text" name="name" id="name" class="input-sm form-control text-caps" placeholder="Type Name" required validationMessage="Please Input Name" data-bind="value: Name" />
+                     <span class="k-invalid-msg" data-for="Name"></span>
+                  </div>
+               </div>
+               <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">Address</label>
+                  <div class="control-input col-md-7 pads">
+                     <input type="text" name="address" id="address" class="input-sm form-control" placeholder="Type Address" required validationMessage="Please Input Address" data-bind="value: Address" />
+                     <span class="k-invalid-msg" data-for="Address"></span>
+                  </div>
+               </div>
+               <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">City</label>
+                  <div class="control-input col-md-7 pads">
+                     <input type="text" name="city" id="city" class="input-sm form-control" placeholder="Type City" required validationMessage="Please Input City" data-bind="value: City" />
+                     <span class="k-invalid-msg" data-for="City"></span>
+                  </div>
+               </div>
+               <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">Phone Number</label>
+                  <div class="control-input col-md-7 pads">
+                     <input type="text" name="telp" id="telp" class="input-sm form-control" placeholder="Type Your Telp/HP" required validationMessage="Please Input Your Telp/HP" data-bind="value: NoTelp" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                     <span class="k-invalid-msg" data-for="Telp" ></span>
+                  </div>
+               </div>
+               <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">Owner</label>
+                  <div class="control-input col-md-7 pads">
+                     <input type="text" name="owner" id="owner" class="input-sm form-control" placeholder="Type Owner" required validationMessage="Please Input Owner" data-bind="value: Owner" />
+                     <span class="k-invalid-msg" data-for="Owner"></span>
+                  </div>
+               </div>
+               <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">Bank</label>
+                  <div class="control-input col-md-7 pads">
+                     <input type="text" name="bank" id="bank" class="input-sm form-control" placeholder="Type Bank" required validationMessage="Please Input Bank" data-bind="value: Bank" />
+                     <span class="k-invalid-msg" data-for="Bank"></span>
+                  </div>
+               </div>
+               <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">Bank Account Number</label>
+                  <div class="control-input col-md-7 pads">
+                     <input type="text" name="account" id="account" class="input-sm form-control" placeholder="Type Account No" required validationMessage="Please Input Account No" data-bind="value: AccountNo" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                     <span class="k-invalid-msg" data-for="Account" ></span>
+                  </div>
+               </div>
+                <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">Sales Code</label>
+                  <input name="Site" style="width:200px; z-index:9000" data-bind="kendoDropDownList: { data: customer.codeSalesForDropDown, dataValueField: 'SalesCode', dataTextField: 'SalesName', value: SalesCode, optionLabel:'Select Sales'}"/>
+               </div>
+               <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">Departement Code</label>
+                  <input name="Site" style="width:200px; z-index:9000" data-bind="kendoDropDownList: { data: customer.codeDepartementForDropDown, dataValueField: 'DepartmentCode', dataTextField: 'DepartmentName', value: DepartmentCode, optionLabel:'Select Department'}"/>
+               </div>
+               <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">Transaction Code</label>
+                  <div class="control-input col-md-7 pads">
+                     <input type="text" name="trxcode" id="trxcode" class="input-sm form-control valnum" placeholder="Type Transaction Code" required validationMessage="Please Input Transaction Code" data-bind="value: TrxCode" />
+                     <span class="k-invalid-msg" data-for="TrxCode"></span>
+                  </div>
+               </div>
+               <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">VAT Reg. No.</label>
+                  <div class="control-input col-md-7 pads">
+                     <input type="text" name="vatreg" id="vatreg" class="input-sm form-control" required validationMessage="Please Input VAT Reg. No." data-bind="value: VATReg" placeholder="00.000.000.0-000.000" />
+                     <span class="k-invalid-msg" data-for="VATReg"></span> 
+                  </div>
+               </div>
+               <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">Payment Term Code</label>
+                  <div class="control-input col-md-7 pads">
+                     <input type="text" name="paymentterm" id="paymentterm" class="input-sm form-control" placeholder="Type Payment Term Code" required validationMessage="Please Input Payment Term Code" data-bind="value: PaymentTerm" />
+                     <span class="k-invalid-msg" data-for="PaymentTerm"></span>
+                  </div>
+               </div>
+               <div class="form-group col-md-11">
+                  <label class="control-labeltrx col-md-5 onlabel">Email</label>
+                  <div class="control-input col-md-7 pads">
+                     <input type="text" name="email" id="email" class="input-sm form-control" placeholder="Type Email" required validationMessage="Please Input Email" data-bind="value: Email" />
+                     <span class="k-invalid-msg" data-for="Email"></span>
+                  </div>
+               </div>
+               <div class="form-group col-md-11 custhide">
+                  <label class="control-labeltrx col-md-5 onlabel">Limit</label>
+                  <div class="control-input col-md-7 pads">
+                     <input type="text" name="limit" id="limit" class="input-sm form-control currency" placeholder="Type Limit" required validationMessage="Please Input Limit" data-bind="value: Limit" />
+                     <span class="k-invalid-msg" data-for="Limit"></span>
+                  </div>
+               </div>
+               <div class="form-group col-md-11 align-right">
+                  <button  type="button" class="btn btn-sm btn-success btn-flat" onclick="customer.saveData()"><i class="fa fa-floppy-o">&nbsp;</i><span data-bind="text: customer.button">Save</span></button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- End Form Modal -->
+
+<!-- Form Modal Detail Billing -->
+<div class="modal fade" id="DetailBilling" aria-hidden="true" aria-labelledby="modalTitle" role="dialog" tabindex="-1">
+   <div class="modal-dialog  modal-lg" data-bind="visible: !model.Processing()">
+      <div class="modal-content margin16" data-bind="with:customer.record">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+            </button>
+            <h4 id="titleBilling" class="modal-title">Detail Billing <span data-bind="text:customer.textTitleBilling"></span></h4>
+         </div>
+         <div class="modal-body">
+            <div class="row" id="inventoryradio" style="display: none">
+               <div class="col-md-6 col-sm-6 col-xs-6" style="text-align: right">
+                     <label style="font-size:1em"><input type="radio" name="gender" value="noninventory" onchange="customer.checkradio(value)" checked>&nbsp; Non Inventory</label>
+               </div>
+               <div class="col-md-6 col-sm-6 col-xs-6" style="text-align: left">
+                     <label style="font-size:1em"><input type="radio" name="gender" value="inventory" onchange="customer.checkradio(value)">&nbsp; Inventory</label>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                     <div class="grid-customer-list padding-grid" id="griddetailbilling"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- End Form Modal -->

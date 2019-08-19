@@ -1,0 +1,278 @@
+<script type="text/javascript">
+   var userinfo = {
+       usernameh: ko.observable('{{.Username}}'),
+       menunameh: ko.observable('{{.Menuname}}'),
+       rolenameh: ko.observable('{{.Rolename}}'),
+   }
+</script>
+<script src="{{BaseUrl}}res/switch-js/bootstrap-switch.js"></script>
+<script src="{{BaseUrl}}res/switch-js/highlight.js"></script>
+<script src="{{BaseUrl}}res/switch-js/main.js"></script>
+<link href="{{BaseUrl}}res/switch-css/bootstrap-switch.css" rel="stylesheet">
+<script src="{{BaseUrl}}res/main/js/basic.js" type="text/javascript"></script>
+<script src="{{BaseUrl}}res/main/js/transaction-purchasepayment.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/purchasepayment.css">
+<script type="text/html" id="tableRow">
+   <tr>
+       <td >
+           <input id="date" name="date" type="text" class="formInput form-control input-md centerText" data-bind="value:DatePayment" disabled>
+       </td>
+       <td align="center">
+           <input id="POnum" name="POnum" type="text" class="formInput form-control input-md " data-bind="value:PoNumber " disabled>
+       </td>
+       <td>
+           <input id="amount" name="amount" class="formInput form-control input-md input-md currency rightAlignText" data-bind="value:Amount" disabled>
+       </td>
+       <td>
+           <input id="alreadyPaid" name="alreadyPaid" class="formInput form-control input-md input-md currency rightAlignText" data-bind="value:AlreadyPaid" disabled>
+       </td>
+       <td>
+           <input id="payment" name="payment" class="formInput form-control input-md currency rightAlignText" data-bind="{value:Payment ,attr: {id: 'payment' + $index()}} " disabled>
+       </td>
+       <td>
+           <input id="balance" name="balance" class="formInput form-control input-md currency rightAlignText" data-bind="value:Balance" disabled>
+       </td>
+        <td style="text-align:center;vertical-align: middle;">
+           <input class="checkbox" type="checkbox" data-bind="attr: {id: 'pay' + $index()}" onclick="purchasepayment.onChangePaid(this)" name="pay"  data-on-text="Paid" data-off-text="Unpaid">
+           <!-- <span class="paytext"  data-bind="text:Pay" style="display:none"></span> -->
+       </td>
+   </tr>
+</script>
+<div class="page-bar">
+   <ul class="page-breadcrumb">
+      <li>
+         <span class="bar">Transaction</span>
+         <i class="fa fa-circle"></i>
+      </li>
+      <li>
+         <a href="">Purchase Payment</a>
+      </li>
+   </ul>
+   <div class="page-toolbar">
+      <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+         <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+         <span class="thin uppercase hidden-xs font2" data-bind="text:purchasepayment.DatePageBar"></span>&nbsp;
+      </div>
+   </div>
+</div>
+<div class="row">
+   <div class="col-md-12 panel-content">
+      <div class="portlet box twis">
+         <div class="portlet-title" style="padding-left: 8px;">
+            <div class="caption">
+               Purchase Payment &nbsp;
+            </div>
+            <div>
+              <button id="noninv" type="button" class="btn btn-sm btn-success btn-flat " onclick="purchasepayment.choose('ACTIVA'); purchasepayment.search(true)" data-toggle="modal" data-target="#"><i class="fa fa-plus"></i>&nbsp;Payment Non Inventory</button>
+              <button id="inv" type="button" class="btn btn-sm btn-success btn-flat " onclick="purchasepayment.choose('IVENTORY'); purchasepayment.search(true)" data-toggle="modal" data-target="#"><i class="fa fa-plus"></i>&nbsp;Payment Inventory</button>
+            </div>
+         </div>
+         <div class="portlet-body">
+            <div class="row">
+               <div class="col-md-12" id="tabs">
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li role="presentation" class="active tab1"><a href="#ListPurchasePayment" aria-controls="ListPurchasePayment" role="tab" data-toggle="tab" onclick="purchasepayment.search(true)">List Purchase Payment <span data-bind="text:purchasepayment.names"></span></a></li>
+                     <li role="presentation"><a href="#CreatePurchasePayment" class="" aria-controls="CreatePurchasePayment" role="tab" data-toggle="tab" data-bind="click:purchasepayment.createdForm">Create Purchase Payment <span data-bind="text:purchasepayment.names"></span></a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <!--panel list-->
+                     <div role="tabpanel" class="tab-pane active" id="ListPurchasePayment">
+                        <div class="tab-pane-content">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <label>Supplier :</label>
+                                 <select name="Site" style="width:200px" class="full-width filter-space" data-bind="kendoDropDownList: { data: purchasepayment.dataDropDownSupplierFilter, dataValueField: 'Kode', dataTextField: 'Name',optionLabel:'Select one',filter: 'contains'},value: purchasepayment.textSupplierSearch"></select>
+                                 <label>From :</label>
+                                 <input type="text" id="dateStart" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}" class="filter-space" />
+                                 <label >To :</label>
+                                 <input type="text" id="dateEnd" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}" class="filter-space" />
+                                 <button type="button" onclick="purchasepayment.search()" class="btn btn-sm btn-refresh"><i class="fa fa-search"></i> Search</button>
+                                 <button onclick="purchasepayment.exportExcel()" type="button" class="btn btn-sm btn-outline green"><i class="fa fa-file-excel-o"></i>&nbsp;Export
+                                    To Excel</button>
+                            </div>
+                              <div class="col-md-12 no-padding" data-bind="visible: !model.Processing()">
+                                 <div id="gridListPurchasePayment" class="margin15" style="margin-bottom: -15px;margin-left: 15px;margin-top: 15px;margin-right: 15px;">
+                                 </div>
+                              </div>
+                              {{template "_loader2.html"}}
+                           </div>
+                        </div>
+                     </div>
+                     <!--panel Create-->
+                     <div role="tabpanel" class="tab-pane " id="CreatePurchasePayment">
+                        <div class="tab-pane-content" data-bind="with:purchasepayment.record">
+                           <div class="row">
+                              <div class="col-md-12" data-bind="" style="padding-left: 0px;">
+                                 <div class="row">
+                                    <div class="col-md-12 titleformpo" ><span data-bind="text:purchasepayment.text"></span>&nbsp;<span data-bind="text:purchasepayment.names"></span></div>
+                                 </div>
+                                  <div class="row bottom-padding">
+                                    <div class="col-sm-3">
+                                      <label class="col-md-12" style="padding-top: 8px;">Department</label>
+                                      <div class="col-md-12">
+                                        <!-- <input id="departmenDropdown"/> -->
+                                        <!-- <select id="payment" data-bind="kendoDropDownList: {data: purchasepayment.payment, dataValueField: 'value', dataTextField: 'text', value:PaymentAccount, optionLabel: 'Select ..'}" class="form-control"></select> -->
+                                        <select id="departmenDropdown" data-bind="kendoDropDownList: {data: purchasepayment.dataDepartment, dataValueField: 'DepartmentName', dataTextField: 'DepartmentName', value:Department, optionLabel: 'Select Code..', filter: 'contains'}"></select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                 <div class="row">
+                        <!--             <div class="col-md-3">
+                                       <label class="col-md-12" style="padding-top: 8px;">Document Number</label>
+                                       <div class="col-md-12">
+                                          <input id="docnumber"  data-bind="value:DocumentNumber" name="docnumber" type="text" class="input-sm" disabled>
+                                       </div>
+                                    </div> -->
+                                    <div class="col-sm-3">
+                                       <label class="col-md-12" style="padding-top: 8px">Suplier Code</label>
+                                       <div class="col-md-12">
+                                          <select id="supliercode" data-bind="kendoDropDownList: {data: purchasepayment.dataDropDownSupplier, dataValueField: 'Kode', dataTextField: 'Name', value:SupplierCode, optionLabel: 'Select Code..', filter: 'contains', change: function(e){purchasepayment.onChangeSupplierCode(e.sender._old)}}">                                                
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                       <label class="col-md-12" style="padding-top: 8px">Suplier Name<br/></label>
+                                       <div class="col-md-12">
+                                          <input id="supliername" name="supliername" type="text" placeholder="Supplier Name" disabled="disabled" class="input-sm" data-bind="value:SupplierName">
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                       <label class="col-md-12" style="padding-top: 8px">Payment</label>
+                                       <div class="col-md-12">
+                                          <select id="payment" data-bind="kendoDropDownList: {data: purchasepayment.payment, dataValueField: 'value', dataTextField: 'text', value:PaymentAccount, optionLabel: 'Select ..', change: function(e){purchasepayment.onChangePayment(e.sender._old)}}" class="form-control">                                
+                                          </select>
+                                       </div>
+                                    </div>
+                                     <div class="col-sm-3">
+                                        <label class="col-md-12" style="padding-top: 8px;">Date</label>
+                                          <div class="col-md-12">
+                                          <input id="date" name="date" type="text" class="input-md" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'},value:DatePosting">
+                                          </div>
+                                      </div>
+
+                                  <!--   <div class="col-md-3">
+                                       <label class="col-md-12" style="padding-top: 8px;">Date</label>
+                                       <div class="col-md-12">
+                                          <input id="date" name="date" type="text" class="formInput form-control input-md" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'},value:DatePosting">
+                                       </div>
+                                    </div> -->
+                                 </div>
+                                 <div class="row bottom-padding">
+  
+                                 </div>
+                                 <!--tabel-->
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="panel panel-default ">
+                                         <div class="panel-body">
+                                             <div class="table-responsive">
+                                                <table id="tablePP" class="table table-bordered" data-bind="with:ListDetail">
+                                                   <thead>
+                                                      <tr class="table borderless" border="0">
+                                                      </tr>
+                                                      <tr>
+                                                         <th class="" width="150px" style="text-align:center">Date PO</th>
+                                                         <th class="" width="100px"  style="text-align:center">Purchase Number</th>
+                                                         <th class="" width="150px" style="text-align: center">Amount</th>
+                                                         <th class="" width="100px" style="text-align: center">Paid</th>
+                                                         <th class="" width="150px"  style="text-align: center">Payment</th>
+                                                         <th class="" width="150px"  style="text-align: center">Balance</th>
+                                                         <th class="" width="20px"  style="text-align: center">Status</th>
+                                                      </tr>
+                                                   </thead>
+                                                   <tbody data-bind="template:{name:'tableRow', foreach:purchasepayment.record.ListDetail}"></tbody>
+                                                </table>
+                                                <table class="table borderless totaltext" border="0" data-bind="with:purchasepayment.record">
+                                                </table>
+                                             </div>
+                                          </div>
+                                          <div data-bind="visible:purchasepayment.showAttachment()" class="attachmentDiv">
+                                                <div class="input-group">
+                                                    <label class="input-group-btn">
+                                                        <span class="btn btn-flat btn-primary">
+                                                            Browse&hellip; <input type="file" id="uploadFile" name="upload" style="display: none;">
+                                                        </span>
+                                                    </label>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                          </div>
+                                          <div data-bind="visible:!purchasepayment.showAttachment()" class="attachmentDiv">
+                                                <button type="button" class="btn btn-primary" id="downloadAttachment" onclick="purchasepayment.downloadAttachment()" ><i class="fa fa-download"> Download Attacment</i></button>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-12 align-right" style="left: 17px">
+                                          <button style="padding: 4px; width: 75px" type="button" id="btnSave" class="btn btn-success btn-flat space" style="height: 30px;position: relative; padding-top: 3px" data-bind="click:purchasepayment.saveData"><i class="fa fa-floppy-o"></i> Save</button>
+                                          <button style="padding: 4px; width: 75px" type="button" id="btnPrint" class="btn btn-sm blue-hoki btn-flat space" style="position: relative;" onclick="purchasepayment.printToPdf()"><i class="fa fa-print"></i> Print</button>
+                                          <button style="background: #54c8ce" type="button" id="btnSavePrint" class="btn btn-sm btn-color-posting btn-flat space" style="position: relative;" onclick="purchasepayment.savePrint()"><i class="glyphicon glyphicon-ok-sign"></i> Save And Print</button>
+                                       </div>
+                                       <div class="col-md-12 align-right">
+                                          <button type="button" id="btnPrint" data-bind="visible:purchasepayment.printPDFListView" class="btn btn-sm btn-color-posting btn-flat margin-right-btn" onclick="purchasepayment.printListToPdf()"><i class="fa fa-print"></i> Print</button>
+                                       </div>
+                                        <div class="col-md-12 align-right top-margin-10px" data-bind="visible:purchasepayment.backToList">
+                                          <button type="button" onclick="purchasepayment.backList()" id="btnBack" class="btn btn-sm btn-default btn-flat btn-backlist margin-right-btn"><i class="fa fa-mail-reply"></i> Back To List</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--panel Draft-->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<style type="text/css">
+   .portlet.box.twist {
+   background-color: #e5e5e5;
+   border: 1px solid #e5e5e5;
+   }
+   .k-grid td {
+   border-width: 0;
+   }
+   .portlet-title .caption {
+   color: #3d3d3d;
+   }
+   .portlet.box.twist.filter {
+   background-color: #e5e5e5;
+   border: 1px solid #e5e5e5;
+   margin-left: -40px;
+   }
+   body {
+   font-family: Helvetica;
+   }
+   h1 {
+   font-size: 18px;
+   }
+   .row {
+   margin-bottom: 10px;
+   }
+   .left,
+   .right {
+   display: inline-block;
+   margin-right: 20px;
+   position: relative;
+   }
+   .stylish-input-group .input-group-addon{
+   background: white !important;
+   margin-right: 10px;
+   }
+   .stylish-input-group .form-control{
+   border-right:0; 
+   box-shadow:0 0 0; 
+   border-color:#ccc;
+   }
+   .stylish-input-group button{
+   border:0;
+   background:transparent;
+   }
+   .space{
+   padding-left: 5px;
+   padding-right: 5px;
+   }
+   .btn-default.btn-on.active{background-color: #5BB75B;color: white;}
+  .btn-default.btn-off.active{background-color: #DA4F49;color: white;}
+</style>

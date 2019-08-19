@@ -1,0 +1,473 @@
+<script type="text/javascript">
+   var userinfo = {
+       usernameh: ko.observable('{{.Username}}'),
+       menunameh: ko.observable('{{.Menuname}}'),
+       rolenameh: ko.observable('{{.Rolename}}'),
+   }
+</script>
+<style type="text/css">
+   .portlet.box.twist {
+   background-color: #e5e5e5;
+   border: 1px solid #e5e5e5;
+   }
+   .portlet-title .caption {
+   color: #3d3d3d;
+   }
+   .portlet.box.twist.filter {
+   background-color: #e5e5e5;
+   border: 1px solid #e5e5e5;
+   margin-left: -40px;
+   }
+   body {
+   font-family: Helvetica;
+   }
+   h1 {
+   font-size: 18px;
+   }
+   .row {
+   margin-bottom: 10px;
+   }
+   .left,
+   .right {
+   display: inline-block;
+   margin-right: 20px;
+   position: relative;
+   }
+   .swatch {
+   display: inline-block;
+   width: 60px;
+   height: 50px;
+   }
+   .swatch.overlay {
+   position: absolute;
+   left: 60px;
+   }
+   .bottom-margin {
+   margin-bottom: 20px;
+   }
+   .attached {
+        margin-left: 15px;
+    }
+  .white-color{
+    color: white;
+  }
+  .social-box {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  
+  background-color: steelblue;
+  text-align: center;
+}
+.social-box:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.10em; 
+  margin-top: 0.10em; 
+  margin-left: 0.10em;
+  margin-bottom: 0.20em;
+  color:white;/* Adjusts for spacing */
+}
+ .social-box1 {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  
+  background-color: #f3565d;
+  text-align: center;
+}
+.social-box1:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.10em; 
+  margin-top: 0.10em; 
+  margin-left: 0.10em;
+  margin-bottom: 0.20em;
+  color:white;/* Adjusts for spacing */
+}
+
+</style>
+<script src="{{BaseUrl}}res/main/js/transaction-journal.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/transaction.css">
+<div class="page-bar">
+   <ul class="page-breadcrumb">
+      <li>
+         <span class="bar">Transaction</span>
+         <i class="fa fa-circle"></i>
+      </li>
+      <li>
+         <a href="/transaction/journal">Journal</a>
+      </li>
+   </ul>
+   <div class="page-toolbar">
+      <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+         <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+         <span class="thin uppercase hidden-xs font2" data-bind="text:journal.DatePageBar"></span>&nbsp;
+      </div>
+   </div>
+</div>
+<script id="noDataTemplate" type="text/x-kendo-tmpl">
+    <div>
+        No data found. Do you want to add new item - '#: instance.filterInput.val() #' ?
+    </div>
+    <br />
+    <button class="btn btn-sm btn green-meadow btn-flat" onclick="journal.addNewDepart('#: instance.element[0].id #', '#: instance.filterInput.val() #','#: instance #')"><i class="fa fa-plus"></i> Add new item</button>
+</script>
+<script id="tableRow" type="text/html">
+   <tr>
+       <td style="width: 20px;">
+           <input type="text" name="txtNo" class="form-control input-sm" data-bind="value:No" disabled>
+       </td>
+       <td>
+           <input type="text" name="txtPostingDate" class="form-control input-sm datePosting" data-bind="kendoDatePicker:{value: PostingDate, format:'dd-MMM-yyyy',min:journal.lastDate,change: function(e){ journal.onChangeDate(e.sender._old, $index())}}, attr: {id: 'date_' + $index() }" style="width: 115px;">
+       </td>
+       <td>
+           <input type="text" name="txtDocumentNo" class="form-control input-sm" data-bind="value:DocumentNumber" disabled>
+       </td>
+       <td>
+           <select name="Site" style="width:200px" class="full-width" data-bind="kendoDropDownList: { data: journal.dataMasterAccount, dataValueField: 'ACC_Code', dataTextField: 'CodeName', value: Acc_Code, optionLabel:'Select one', filter: 'contains', change: function(e){ journal.onChangeAccountNumber(e.sender._old, $index())}}"></select>
+       </td>
+       <td>
+           <input type="text" name="txtAccountName" class="form-control input-sm" data-bind="value:Acc_Name" disabled>
+       </td>
+       <td>
+           <input maxlength="22" style="text-align:right" name="txtDebet" class="form-control input-sm currency debit" data-bind="value:Debet,attr: {id: 'debit_' + $index() },event:{ change: journal.debitChange(Debet,$index())}">
+   
+       </td>
+       <td>
+           <input maxlength="22" id="credit" style="text-align:right" name="txtCredit" class="form-control input-sm currency credit" data-bind="value:Credit,attr: {id: 'credit_' + $index(),event:{ change: journal.creditChange(Credit,$index())} }">
+       </td>
+       <td>
+           <input type="text" name="txtDescription" class="form-control input-sm" data-bind="value:Description">
+       </td>
+       <td>
+           <div class="upload-btn-wrapper">
+               <button class="btn btn-sm"><span class="glyphicon glyphicon-upload"></span></button>
+               <input type="file" class="upload" data-bind="attr: {id: 'upload_' + $index() },value:Attachment" name="upload" />
+               <span class="glyphicon glyphicon-paperclip" data-bind="visible:Attachment"></span>
+   
+           </div>
+       </td>
+       <td><button class="btn btn-danger btn-sm " id="btnDeleteSummary" data-bind="click: journal.removeRow"><span class="glyphicon glyphicon-trash"></span></button></td>
+   </tr>
+</script>
+<!-- <div data-bind="visible: !journal.showListJournal()&&!journal.showListDraft()&&!journal.showPdf()"> -->
+<div class="row">
+<div class="col-md-12">
+   <div class="portlet box twis">
+      <div class="portlet-title" style="padding-left: 8px;">
+         <div class="caption">
+            <span data-bind="text:journal.cashNameJournal()"></span>
+         </div>
+      </div>
+      <div class="portlet-body">
+         <div class="row">
+            <div class="row bottom-padding filter-space" data-bind="visible:journal.ShowFilterJournal">
+               <label>Journal Type :</label>
+               <select name="journal type" id="selectTypeJournal" class="full-width filter-space" data-bind="kendoDropDownList: { data: journal.typeAllJournal, dataValueField: 'value', dataTextField: 'text', value: journal.typeFilterForJournal, optionLabel:'All'}" required></select>
+               <label>From :</label>
+               <input type="text" id="dateStartAllJournal" data-bind="kendoDatePicker:{value: journal.dateStart, format:'dd-MMM-yyyy', change: function(e){journal.onChangeDateStart(e.sender._old)}}" class="filter-space" />
+               <label>To :</label>
+               <input type="text" id="dateEndAllJournal" data-bind="kendoDatePicker:{value:journal.dateEnd,format:'dd-MMM-yyyy', min:journal.dateStart}" class="filter-space" />
+               <label>Description :</label>
+               <input type="text" id="filterDescription" class="full-width filter-space" />
+               <button type="button" onclick="journal.refreshall()" class="btn btn-sm btn-refresh"><i class="fa fa-search"></i> Search</button>
+            </div>
+               <div class="col-md-12" id="tabs">
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li>
+                        <a href="#JournalTable" onclick="{journal.changetoCashIn(),journal.checkActiveTab(0)}" data-toggle="tab" class="tabTitle" role="tab">
+                           <div> Cash In </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#JournalTable" onclick="{journal.changetoCashOut(),journal.checkActiveTab(1)}" data-toggle="tab" class="tabTitle" role="tab">
+                           <div> Cash Out </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#JournalTable" onclick="{journal.changetoGeneral(),journal.checkActiveTab(2)}" data-toggle="tab" class="tabTitle" role="tab">
+                           <div> General Journal </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#listofdraft" onclick="{journal.comeToListofDraft(),journal.checkActiveTab(3)}" data-toggle="tab" class="tabTitle" role="tab">
+                           <div> List of Draft </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#listofjournal" onclick="{journal.comeToListJournal(),journal.checkActiveTab(4)}" data-toggle="tab" class="tabTitle" role="tablist">
+                           <div> Posted Journal </div>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="tab-content">
+               <!--tab 3 menu-->
+               <div role="tabpanel" class="tab-pane active" id="JournalTable">
+                  <div class="tab-pane-content">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="col-md-9">
+                              <label>Department :</label>
+                              <input id="departmenDropdown"/>
+                              <div id="salesOption" style="display: inline">
+                                    <label> &nbsp; Sales :</label>
+                                    <input id="salesDropdown"/>
+                              </div>
+                           </div>
+                           <div class="tools col-md-3" style="margin-top: -4px; text-align:right; padding-bottom: 10px;">
+                              <button type="button" class="btn btn-sm btn green-meadow btn-flat" onclick="journal.addNewRow()"><i class="fa fa-plus"></i> Add New</button>
+                              <button type="button" class="btn btn-sm btn-danger btn-flat" onclick="journal.resetRow()"><i class="fa fa-repeat"></i> Reset</button>
+                           </div>
+                           <div class="col-md-12 col-sm-12 col-xs-12" style="overflow-x: scroll; margin-bottom: 10px;">
+                              <div class="table-responsive" data-bind="visible: !model.Processing()">
+                                 <table class="table table-bordered">
+                                    <thead>
+                                       <tr>
+                                          <th width="50">No.</th>
+                                          <th width="90">Date</th>
+                                          <th width="120">Document No.</th>
+                                          <th width="100">Acc. Code</th>
+                                          <th width="150">Acc. Name</th>
+                                          <th width="100">Debet</th>
+                                          <th width="100">Credit</th>
+                                          <th width="200">Description</th>
+                                          <th width="50" style="text-align: center;"><span class="glyphicon glyphicon-paperclip"></span></th>
+                                          <th width="10">Action</th>
+                                       </tr>
+                                    </thead>
+                                    <tfoot>
+                                       <tr style="text-align:right; font-weight:bold">
+                                          <td colspan="5">Total</td>
+                                          <td><span data-bind="text:journal.totalDebet" class="currency"></span></td>
+                                          <td><span data-bind="text:journal.totalCredit" class="currency"></span></td>
+                                          <td colspan="3">&nbsp;</td>
+                                       </tr>
+                                       <tr style="text-align:right; font-weight:bold">
+                                          <td colspan="5">Balance</td>
+                                          <td><span></span></td>
+                                          <td><span data-bind="text:journal.balance" class="currency"></span></td>
+                                          <td colspan="3">&nbsp;</td>
+                                       </tr>
+                                    </tfoot>
+                                    <tbody data-bind="template:{name:'tableRow', foreach:journal.record.ListDetail}"></tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           
+                           
+                           <div class=" text-right">
+                              <button type="button" class="btn btn-sm btn-color-posting btn-flat" data-bind="click:journal.saveData"><i class="fa fa-external-link"></i> Submit</button>
+                             <!--  <button type="button" data-bind="click: journal.postAndPrint" class="btn btn-sm btn-color-postandprint btn-flat"><i class="fa fa-send"></i> Submit And Print</button>
+                              <button type="button" data-bind="click: journal.printJournal" class="btn btn-sm blue-hoki btn-outline btn-flat"><i class="fa fa-print"></i> Print</button> -->
+                           </div>
+                        </div>
+                        {{template "_loader2.html"}}
+                     </div>
+                  </div>
+               </div>
+               <div role="tabpanel" class="tab-pane " id="listofdraft">
+                  <div class="tab-pane-content">
+                     <div class="row">
+                        <div data-bind="visible:journal.showListDraft">
+                           <div class="col-md-12" data-bind="visible:!model.Processing()">
+                              <div class="panel-heading">
+                                 <div class="row">
+                                    <div class="col-md-12" id="listofdraftjournal">
+                                       <div class="control-input col-sm-12 no-padding">
+                                          <label class="control-label">Journal Type :</label>
+                                          <select id="dropdownTypeDraft" name="journal type" class="full-width" data-bind="kendoDropDownList: { data: journal.typeAllJournal, dataValueField: 'value', dataTextField: 'text', value: journal.typeFilter, optionLabel:'All'}" required></select>
+                                          <label class="control-label">Period :</label>
+                                          <input type="text" id="dateStartJournal" data-bind="kendoDatePicker:{value: new Date, format:'dd-MMM-yyyy'}" /> &nbsp;to&nbsp;
+                                          <input type="text" id="dateEndJournal" data-bind="kendoDatePicker:{value:new Date,format:'dd-MMM-yyyy'}" />
+                                          <button type="button" onclick="journal.refreshDraft()" class="btn btn-sm btn-refresh"><i class="fa fa-refresh"></i>&nbsp;Refresh</button>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 no-padding">
+                                       <div class="labeljournal">List Draft</div>
+                                       <div id="listDraft"></div>
+                                    </div>
+                                    <div class="col-md-8">
+                                       <div class="labeljournal">List Draft Detail : <span data-bind="text:journal.textListDraftDetail"></span></div>
+                                       <div id="listDraftDetail"></div>
+                                       <div class="col-md-12 align-right no-padding">
+                                       <button type="button" data-bind="click: journal.printJournalDraft" class="btn btn-sm blue-hoki btn-outline btn-flat top-margin "><i class="fa fa-print"></i> Print Draft</button>
+                                        <button class="btn btn-sm btn-primary btn-flat top-margin " onclick="journal.saveToPosting()"><i class="fa fa-upload"></i> Posting</button>
+                                        <button type="button" data-bind="click: journal.postingAndPrint" class="btn btn-sm btn-color-postandprint btn-flat top-margin "><i class="fa fa-upload"></i> Posting And Print</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        {{template "_loader2.html"}}
+                     </div>
+                  </div>
+               </div>
+               <div role="tabpanel" class="tab-pane " id="listofjournal">
+                  <div class="tab-pane-content">
+                     <div class="row">
+                        <div data-bind="visible:journal.showListJournal">
+                           <div data-bind="visible:!journal.showPdf()">
+                              <div class="row">
+                                 <div class="col-md-12" data-bind="visible:!model.Processing()">
+                                 <div class="tools">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                         <div class="">
+                                            <div class="social-box"><i class="glyphicon glyphicon-paperclip white-color"></i></div>
+                                            <label>Attachment Available</label>
+                                             <div class="social-box1 attached"><i class="glyphicon glyphicon-paperclip white-color"></i></div>
+                                             <label>No Attachment</label>
+                                            </div>
+                                         <!--    <div class="">
+                                          
+                                              <a href="#" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-paperclip"></i></a>
+                                              <label>Attached</label>
+                                               <a href="#" class="btn btn-xs btn-danger attached"><i class="glyphicon glyphicon-paperclip"></i></a>
+                                             <label>Not Attached</label>
+                                            </div> -->
+                                        </div>
+                                        <div style="text-align:right;margin-right: 15px;margin-bottom: -8px;margin-top: -4px;">
+                                            <button class="btn btn-sm btn-primary btn-flat" data-bind="visible:journal.showUnApply()" onclick="journal.openModalUnapply()"><i class="fa fa-exclamation-triangle"></i> Unapply</button>
+                                            <button type="button" class="btn btn-sm green btn-outline btn-flat" data-toggle="modal" data-target="#ImportAllJournalModal"><i class="fa fa-download"></i>&nbsp;Import From Excel</button>
+                                            <button class="btn btn-sm btn-danger btn-flat" onclick="journal.exportToExcel()"><i class="fa fa-print"></i> Export To Excel</button>
+                                            <button class="btn btn-sm blue-hoki btn-flat" onclick="journal.printAllJournal()"><i class="fa fa-print"></i> Print</button>
+                                        </div>
+                                </div>
+                                    <div class="panel-heading" style="padding-top: 0px">
+                                       <div class="col-md-12 top-margin no-padding">
+                                          <!-- <h6><span data-bind="text:journal.titleListJournal"></span></h6> -->
+                                          <div id="listJournal"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="display: none;">
+         <table class="table table-bordered printPriview" id="JournalTable2" style="font-size: 70%;" border="1px">
+            <thead>
+               <tr style="border: 1px solid black;">
+                  <th width="20">No.</th>
+                  <th width="90">Date</th>
+                  <th width="90">Document No.</th>
+                  <th width="90">Acc. Code</th>
+                  <th width="90">Acc. Name</th>
+                  <th width="90">Debet</th>
+                  <th width="90">Credit</th>
+                  <th width="100">Description</th>
+                  <th width="50">Attachment</th>
+               </tr>
+            </thead>
+            <tfoot>
+               <tr style="text-align:right; font-weight:bold">
+                  <td colspan="5">Total</td>
+                  <td><span data-bind="text:journal.totalDebet" class="currency"></span></td>
+                  <td><span data-bind="text:journal.totalCredit" class="currency"></span></td>
+                  <td colspan="3">&nbsp;</td>
+               </tr>
+               <tr style="text-align:right; font-weight:bold">
+                  <td colspan="5">Balance</td>
+                  <td><span></span></td>
+                  <td><span data-bind="text:journal.balance" class="currency"></span></td>
+                  <td colspan="3">&nbsp;</td>
+               </tr>
+            </tfoot>
+            <tbody>
+            </tbody>
+         </table>
+      </div>
+      <div data-bind="visible: journal.showPdf()">
+         <div class="panel-heading">
+            <div class="row">
+               <div>
+                  <button style="margin-left: 10px" onclick="journal.backFromPrintDraft()" class="btn btn-sm btn-default btn-flat"><i class="fa fa-mail-reply"></i> Back to Journal</button>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div id="PrintDraftJournal">
+                  <iframe id="draftJournal" style="width:100%; height:800px; margin:auto; " frameborder="0"></iframe>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="row" data-bind="visible: model.Processing()">
+         {{template "_loader2.html"}}
+      </div>
+   </div>
+</div>
+<!-- MODAL IMPORT JOURNAL FROM EXCEL -->
+<div class="modal fade" id="ImportAllJournalModal" aria-hidden="true" aria-labelledby="modalTitle" role="dialog" tabindex="-1">
+   <div class="modal-dialog" data-bind="visible: !model.Processing()">
+      <div class="modal-content konten margin16">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">Import Data From Excel</h4>
+         </div>
+         <div class="modal-body">
+            <div class="row" >
+               <!-- <div class="form-group col-md-12"> -->
+               <label class="control-labeltrx col-md-3 onlabel">File</label>
+               <div class="col-md-8 control-input pads">
+                   <div class="input-group">
+                     <label class="input-group-btn ">
+                     <span class="btn btn-default btn-sm btn-flat">
+                     Please Select <input type="file" id="fDok" class="hide" multiple />
+                     </span>
+                     </label>
+                     <input type="text" id="fInfo1" class="form-control input-sm" readonly />
+                  </div>
+                  </div>
+         </div>
+         <div class="modal-footer">
+               <a type="button" href="{{BaseUrl}}res/docs/template/template-jurnal.xlsx" class="btn btn-sm btn-color-black btn-flat"><i class="fa fa-download"></i>&nbsp;Download Template</a>
+               <button type="button" class="btn btn-sm btn-color-bottlegreen btn-import-potition btn-flat" onclick="journal.ImportExcel()"><i class="fa fa-upload"></i>&nbsp;Import</button>
+          </div>
+         </div>
+      </div>
+      {{template "_loader2.html"}}
+   </div>
+</div>
+<div class="modal fade" id="unapplyJournal" aria-hidden="true" aria-labelledby="modalTitle" role="dialog" tabindex="-1">
+    <div class="modal-dialog" data-bind="visible: !model.Processing()">
+       <div class="modal-content konten margin16">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title">Unapply Journal</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="DateUnapply" class="col-sm-2 col-form-label"> Date</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control-plaintext" id="DateUnapply" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-color-bottlegreen btn-import-potition btn-flat" onclick="journal.unAplly()"><i class="fa fa-floppy-o"></i>&nbsp;Posting</button>
+            </div>
+       </div>
+       {{template "_loader2.html"}}
+    </div>
+ </div>

@@ -1,0 +1,72 @@
+.bar{
+  padding-left: 5px;
+}
+.page-bar .page-breadcrumb>li>i.fa-circle{
+  font-size: 5px;
+    margin: 0 5px;
+    position: relative;
+    top: -3px;
+    opacity: .4;
+} 
+.space{
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .portlet.box.twist {
+        background-color: #e5e5e5;
+        border: 1px solid #e5e5e5;
+    }
+
+    .k-grid td {
+        border-width: 0;
+    }
+
+    .portlet-title .caption {
+        color: #3d3d3d;
+    }
+
+    .portlet.box.twist.filter {
+        background-color: #e5e5e5;
+        border: 1px solid #e5e5e5;
+        margin-left: -40px;
+    }
+
+    body {
+        font-family: Helvetica;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .row {
+        margin-bottom: 10px;
+    }
+    .portlet > .portlet-title .padd-text{
+        padding-left: 5px;
+    }
+    .button-position{
+        position: relative;
+        right: 5px;
+    }
+
+    .left,
+    .right {
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    .swatch {
+        display: inline-block;
+        width: 60px;
+        height: 50px;
+    }
+
+    .swatch.overlay {
+        position: absolute;
+        left: 60px;
+    }.filter-space{
+    margin-left: 14px;
+    margin-right: 5px;
+}

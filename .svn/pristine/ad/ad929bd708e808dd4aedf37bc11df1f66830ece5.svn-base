@@ -1,0 +1,689 @@
+
+
+SOFTWARE LICENCE AGREEMENT
+AGREEMENT made the ^6 day of    , 1987, by and between
+SURECOMP INC., a corporation incorporated, organized and existing under the laws of the Province of Ontario (Canada) , having its head office at 1 Yorkdale Road, Suite 404, Toronto, Province of Ontario, Canada (hereinafter referred to as "the Licensor") of the first part, and STANDARD CHARTERED BANK, a bank incorporated, organized and existing under the laws of England, having its registered office at 38 Bishopsgate, London, England (hereinafter referred to as "the Customer"), of the second part.
+WHEREAS
+A.    The Licensor has the right to grant a licence with respect to the IMEX Software System.
+B.    The Customer is a financial institution which wishes to obtain from the Licensor the right to use the software referred to in Paragraph A of the Preamble above.
+c.    The Parties wish to set forth in this Agreement the
+terms and conditio:r;s upon which the Licensor shall grant to the Customer the right to use the said software.
+NOW, THEREFORE, in consideration of the covenants, agreements, representations and warranties hereinafter contained, the Parties hereto agree as follows:
+Section 1.0 DEFINITIONS
+In this Agreement, unless the context otherwise requires, the following terms shall have the meanings set forth below.
+1.1 "Acceptance Criteria" shall mean in respect of the First System the criteria £or acceptance of the System established in accordance with Section 3.3.
+?
+id!
+
+-2 -
+1.1.1 "Affiliate" means, in relation to the Customer, any company which from time to time during the period of this Agreement is directly or indirectly controlled by the Customer. For the purposes of this definition the Customer shall be deemed to control a company if it has power to secure by means of the holding of shares or the possession of voting power in or in relation to that
+company or any other company or by virtue of any powers conferred by the Artcles of Association or other statutes or byelaws of that company or any other company that the affairs of that companya re conducted in accordance with its wishes.
+1. 2 "Agreement" shall mean this Agreement and any Schedules attached hereto.
+1.3 "Dollars" and the sign "$" shall mean dollars in the lawful money of the United States of America.
+1.4 "First System" shall mean the System to be delivered and installed by the Licensor at the Customer's Location in
+Hong Kong in accordance with Section 3 hereof.
+1.5    "Technical Environment" shall mean the computer hardware
+and operating software set out in Schedule A hereto.
+1. 6 "Licence Fees" shall mean the amounts referred to in Section 7.1 hereof and set out in Schedule B hereto to be paid by the Customer to the Licensor for the use of
+the System.
+1. 7    "Locations" shall mean the Customer's computer centres
+in Hong Kong and elsewhere in the world.
+1.8 "Modifications and    Enhancements"    shall mean the
+modifications and enhancements to be made to the IMEX Software System    which was made available and
+demonstrated to the Customer by the Licensor prior to the date hereof, which modifications and enhancements are described in Schedule C hereto, and in the documents therein referred to.
+
+
+1.9 "Modification and Enhancement Fees" shall mean the fees which are referred to in Section 7.2 hereof and set out in Schedule D hereto payable by the Customer to the Licensor for the Modifications and Enhancements.
+1.10 "Notice of Installation" shall mean the notice referred to in Section 3.2 hereof to be sent by the Licensor to the Customer stating that the First System has been duly installed.
+1.11 "Second System" shall mean a second System to be delivered by the Licensor to the Customer in accordance with Section 4.2 hereof.
+1.12 "Subsequent Systems" shall mean the Systems, other than the First System.
+1.13 "System" shall mean the computer software programs known as the IMEX Software System, consisting of a series of instructions or statements (a) in machine readable form,
+(b) in object code form, and (c) in source code form, and all materials furnished by the Licensor for use in connection    with such programs including    operating
+instructions, program specifications, user manuals and guides including functional and technical manuals, and support and reference manuals and as set out in Schedule H (all of which shall be in the English language), and as enhanced and modified by the Modifications and
+Enhancements, which meet the requirements established by the Customer (which requirements are set out in Schedule F hereto).
+1.14 "Test Period" shall mean the sixty {60) day period immediately    following the establishment of the
+Acceptance Criteria and referred to in Section 3.4.
+1.15 "Third System" shall mean a third System to be delivered by the Licensor to the Customer in accordance with
+Section 4.3 hereof.
+
+
+1.16 "Updates and New Releases" shall mean the updates and
+new releases in connection with the System referred to in Section 6.1 hereof.
+1.17
+"Update
+and
+New Release Fees"
+shall mean
+the
+fees
+
+referred
+to
+in Section 7.3 hereof and set
+out
+in
+
+Schedule
+E
+hereto payable by
+the Customer
+to
+the
+
+Licensor
+for
+Updates and Releases.
+
+
+
+
+
+
+tr
+
+Section 2.0 LICENCE
+2.1    Licence of System. (a) Subject to the terms and conditions herein contained, the Licensor hereby grants to the Customer and the Customer hereby accepts from the Licensor a licence to use the System at the Locations, only for the purpose of processing on the Customer's Hardware at such Locations the Customer's data and information in connection with the Customer's banking transactions and the processing of data and information of third parties in connection with such third party's banking transactions.
+(b) Notwithstanding anything else herein contained the licence granted pursuant to this Agreement shall be limited to the Locations in Hong Kong, and two (2) other Locations, provided however that if the Customer notifies the Licensor in writing no later than twertty-three (23) months after the acceptance or the deemed acceptance of the First System, that the Licensor wishes to extend the licence to all or any other of the Customer's Locations throughout the world beside those in Hong Kong and the Locations of the Second and Third Systems and the Customer pays to the Licensor the Licence Fee set out in Paragraph 4 of Schedule B hereto, then the said licence shall be extended to all such additional Locations.
+2.2    Term of Licence. The term of the licence hereby granted shall terminate on the date twenty (20} years from the date hereof unless terminated earlier in accordance with the terms of this Agreement.
+ 
+5
+
+
+
+2.3
+
+3.1
+
+Copies. The Licensor will deliver one set of the System to the Customer for each Location. The Customer shall not have the right to copy the System for production purposes. The Customer may make copies of the System (a) for backup purposes to support the Customer's internal use of the System and (b) for purposes of further developing the System in connection with the Customer's own use thereof at the Locations permitted hereunder and (c) for the use of the System in connection with one or more central processing unit(s) at the said Locations. All developments (modules) to the System achieved by the Customer shall be the property of the Customer, however in the event the Licensor wishes to market such developments to third parties, the Customer shall afford the Licensor a right to undertake such marketing subject to a mutually satisfactory marketing agreement to be negotiated between them.
+Copies of the System, except as above-mentioned, shall be obtained only from the Licensor at its then current list prices. All codes and documentation in respect of the System are and shall remain the property of the
+Licensor and must be returned to the Licensor by the
+'Customer upon any termination of the licence hereby granted. The Customer agrees not to remove or destroy any proprieta!'Y legends, including copyright notices, placed upon or contained within the System including all printed materials; No right to use, print, copy, adapt, translate or display the System is granted in whole or in part except as expressly provided herein. No legal or eguitable title to or ownership of the System is transferred to the Customer and all copies of the System shall be and remain the property of the Licensor and shall be held in strict confidence by the Customer as trade secrets of the Licensor.
+Section 3.0 THE FIRST SYSTEM
+Facilities for Licensor. Prior to the delivery of the First System by the Licensor to the Customer, and'
+
+
+)1
+J
+)
+
+"n
+J
+
+i
+I
+?
+3
+I
+]
+l
+]
+l
+1
+J
+J
+
+throughout the period of installation of the First System and the Test Period, the Customer shall make available to the Licensor and the Licensor's personnel an office at the Customer's Location in Hong Kong which can reasonably acconunodate two (2) of Licensor's personnel and, which office shall have two (2) terminals and two (2) printers linked to the Customer's Technical
+Environment in Hong Kong.
+3.2 Delivery and Installation.    (a)    Inunediately upon the
+Modificiations and Enhancements being completed, and in any event no later than eight months following the
+execution of this agreement, the Licensor shall deliver the First System (which shall include the Modifications and Enhancements) to the Customer's Location in Hong Kong. The installation of the First System shall be the responsiblity of the Licensor except that at the appropriate time the Customer shall ensure that the Technical Environment at the Location in Hong Kong shall be in good working order and ready for the Licensor to install the First System thereon. The installation of the First System shall consist of (a) the Licensor loading the First System into the Customer's Technical Environment at the Customer's Location in Hong Kong; (b) the Licensor ensuring that the First System has been properly entered into the Customer's program library thereat and the First System functions in accordance with the specifications contained in the documentation in respect of the System delivered by the Licensor; and
+(c) the Licensor, using its own test data, then demonstrating that the First System is operable. Upon completion of its responsibilities to so install the First System, the Licensor shall give written Notice of Installation of such fact to the Customer, stating that the First System has been installed and is operable.
+(b) Should the Licensor
+fail to deliver the First System within eight months of the execution of this agreement, the Customer shall have the right to terminate the agreement forthwith. Upon giving written notice of its election to terminate the
+.,,.,
+.,
+
+.,,.,
+
+3.3
+
+ 
+7
+
+agreement under this clause, the Customer shall be entitled to the return of all sums paid under Schedule B and Schedule D hereof, (the "Funds"). Should the Licensor fail to return the Funds within thirty (30)
+days of receipt of written notice under Clause 3.2 (b) the Customer, in addition to the return of the Funds
+shall be entitled to claim interest on the Funds at the
+rate of 1%% per month compounded annually.
+
+JJ
+)11
+l]
+
+
+
+
+
+:J
+
+
+
+
+
+
+
+Acceptance Criteria. During the sixty (60) day period commencing the date of the Notice of Installation, the parties shall in good faith co-operate and work together to (a) design and agree upon a set of tests which will be used to test the System during the Test Period and (b) establish a set of criteria for the results of such tests against which acceptance or rejection of the First System (including Modifications and Enhancements) will be made by the Customer. The tests and the Acceptance Criteria must be mutually agreed upon between the parties during the said sixty (60) day period, failing which, the Licensor shall have the sole right to establish such tests and Acceptance Criteria no later than thirty (30) days following the end of the said sixty (60) day period.
+Testing and Acceptance. Within sixty (60) days of the establishment of the Acceptance Criteria pursuant to Section 3.3 above, the Licensor shall run no more than three (3) tests of the First System as installed by the Licensor to demonstrate that the First System so installed meets the Acceptance Criteria. In the event that a test carried out within the Test Period meets the Acceptance Criteria the Customer shall be deemed to be satisfied with and to have accepted the First System. In the event that none of the tests carried out by the Licensor during the Test Period meets the Acceptance Criteria, and the Customer within twenty (20) days after the end of the third test or the end of the Test Period, whichever is later, determines that it is dissatisfied with the First System and so notifies the Licensor in writing within such twenty (20) day period, the licence
+
+
+
+ 
+4.1
+4.2
+
+hereby granted shall terminate. In the event, however, that none of the tests carried out by the Licensor during the Test Period meets the Accepted Criteria, and the Customer does not within twenty (20) days after the end of the third test or the end of the Test Period, whichever is later, notify the Licensor in writing that the Customer is dissatisfied with the First System, the Customer shall be deemed to be satisfied with and to have accepted the First System.
+Section 4.0 SUBSEQUENT SYSTEMS
+Delivery of Subsequent Systems. The obligation of the Licensor with respect to all Systems other than the First System shall be to deliver one (1) copy of the System to the Customer for each Location, such delivery to be made at the Customer's Location in Hong Kong. In the event the Customer wishes to engage the Licensor to facilitate the installation of Systems other than the First System, the Licensor shall make itself available to provide such services and consultation.    The
+Licensor shall utilize the same fee schedule, set out in
+Schedule G hereto, for such services.
+Second System. No later than eleven (11) months after the acceptance or deemed acceptance of the First System, the Customer shall notify the Licensor in writing that the Customer wishes delivery of a System, i.e. the Second System, for a Location other than Hong Kong, such Location to be nominated in the said notice by the Customer. The Licensor shall deliver such System to the
+Customer in accordance with Section 4.1 above no later than thirty (30) days from the date of the said notice.
+In the event that the Customer does not so notify the Licensor, the Licensor shall deliver a System, i.e. the
+Second System, to the Customer for a Location nominated by the Licensor no later than twelve ( 12) months from the date of the acceptance or deemed acceptance of the First System, such delivery to be in accordance with Section 4.1 above.
+
+
+?..
+3 •"
+S3
+Ml
+_j]
+;]
+l]
+1
+lTI
+]
+]
+j
+3
+]
+]
+3
+3
+3
+3
+3
+:-J
+:-J
+3
+3
+
+4.3 Third System. No later than seventeen (17) months after the acceptance or deemed acceptance of the First System, the Customer shall notify the Licensor in writing that the Customer wishes delivery of a System, i.e. the Third System, for a Location other than Hong Kong and the Location nominated by the Customer or Licensor pursuant to Section 4. 2 above, and the Licensor shall deliver such System to the Customer in accordance with Section
+4.1 above no later than thirty (30) days from the date of the said notice. In the event that the Customer does not so notify the Licensor, the Licensor shall deliver a System, i.e. the Third System, to the Customer for a
+Location nominated by the Licensor no later than eighteen (18) months from the date of the acceptance or deemed acceptance of the First System, such delivery to be in accordance with Section 4.1 above.
+4.4 Other Systems. In the event that the Customer extends the licence hereby granted to a world-wide licence in accordance with Section 2.l(b) above, the Customer may during the term of this licence notify the Licensor that the Customer wishes to take delivery of the Systems for Locations other than Hong Kong, or territories in which the Second and Third Systems have been installed and the Licensor shall deliver such System to the Customer within thirty (30) days of such notice, such delivery to be in accordance:with Section 4.1 above.
+Section 5.0 WARRANTIES
+5.1 Warranties of Licensor. The Licensor warrants to the Customer that:
+( a) The Licensor has the full right and authority to enter into this Agreement and to grant to the Customer the licence hereby granted, and the
+Licensor is not aware of any claim that the System or any part thereof infringes the copyright, trade secret or any other intellectual property rights of any third party in the Locations.
+
+
+tl]
+' t
+?
+iZs,J
+g
+]
+J]
+]
+JJ
+J
+]
+]
+]
+J
+J
+J
+J
+J
+J
+J
+J
+J
+
+10
+.J
+
+(b) For the six (6) month period following the acceptance or deemed acceptance of the First System and thereafter so long as the Customer is current with its payments of the Update and Release Fees, the Licensor warrants that the System shall operate in the Customer's Technical Environment without material malfunction, and any costs and expenses involved with repairing the System in the event of a material malfunction shall be for the account of the Licensor, provided however that if the Licensor reasonably determines that an alleged malfunction of the System was not due to a defect in the System or such malfunction resulted from a modification or change in the System made by the Customer without the prior written consent of the Licensor all costs and expenses incurred by the Licensor in attending to such alleged malfunction shall be borne by the Customer, such costs and expenses to be calculated in accordance with the rates set out in Schedule G and the Consulting Agreement entered into as of the date hereof between the Customer and the Licensor.
+The Licensor agrees that so long as it is obliged to ensure that the System shall operate without material malfunction as set out above, the Licensor shall commence work on any alleged material malfunction in the System within two (2) business days of being notified in writing (which notice shall be in accordance with Section 11.2 hereof) by the Customer of an alleged material malfunction, and the Licensor will proceed thereafter diligently and with all deliberate speed to rectify the material malfunction complained of.
+( C) Upon the Customer's written request to the Licensor, the Licensor will defend and indemnify at its expense any action brought against the Customer to the extent that such action is based on a claim that a System, when used within the scope of this Agreement, infringes a patent, copyright, trade secret or other proprietary right of a third party
+
+
+
+
+
+
+
+
+L
+L:
+
+("Infringement") in the Locations where the Customer is using the System pursuant to the terms of this Agreement. Subject to Section 5.1 hereof, the Licensor will pay any costs, damages and reasonable legal fees (a) awarded against the
+Customer in such action or (b) which are incurred or suffered by the Customer as a result of its being prevented by injunction from using the System and which are, in both cases, attributable to such claim, provided that the Customer notifies the Licensor promptly in writing of such claim and the Licensor is given sole control of the defence and/or any settlement of such claim. In the event an injunction or order shall be obtained against the Customer's use of the System by reason of the allegations, or if in the Licensor's opinion any such System is likely to become a subject of a claim of infringement or violation of copyright, trade secret, patent or other proprietary right of
+a third party, the Licensor will, at its option and its expense:
+1. procure for the Customer the right to continue using the System; or
+2. replace or modify the System so that it becomes non-infringing (which modification or replacement shall not adversely affect the specifications for, or the use or operation by the Customer of the System); or
+3. if neither 1. or 2. above is possible, , repurchase the System for the amount of the Licence Fees then paid to the Licensor.
+( d) The Licensor shall have no liability for any claim of Infringement based on (1) use of other than the then current, unaltered release of the System available from the Licensor if such Infringement 1 would have been avoided by use of the then current, unaltered release of the System, or ( 2) use or
+
+
+
+
+r:
+
+r-:
+? ?
+r
+C:
+r:
+r-1
+-
+
+
+
+combination of the System with non-IMEX programs or data if such Infringement would have been avoided by the non-use or non-combination of the System with other programs or data.
+(e) The foregoing states the entire liability of the Licensor with respect to any claim of Infringement regarding the System or any part thereof.
+5.2 Warranty Limitation. (a) Except as expressly stated in this Agreement, the Licensor makes no warranties express or implied of any kind including, but not limited to any implied warranty of merchantibility or fitness for a particular purpose and/ or as to the timing, throughput or response time performance of the System in any environment.
+
+
+
+
+(b)    The Licensor shall not be liable to the Customer in warranty if the Customer makes any changes or modification to the System without the prior written consent of the Licensor.
+(c)    In no event shall the Licensor be liable for loss of profits or for indirect, special or consequential damages arising out of any breach of the Agreement or obligations under the Agreement. The Customer's exciusive remedy in the event of an alleged breach of warranty with respect to the System or any alleged defect in any services furnished by the Licensor under this Agreement is the correction by the Licensor of such defects, provided the Customer is then current with its payments of Update and Release Fees. If after repeated efforts, the Licensor is unable to cause the System to work as warranted or to correct any defect in such service, the Customer shall be entitled to recover only actual damages and the Licensor's liability for damages to the Customer for any cause whatsoever arising under the Agreement, regardless of the form of action, shall be limited to US$600,000.00 (U.S. Dollars Six Hundred Thousand).
+
+
+
+
+Section 6.0 UPDATES AND NEW RELEASES
+l
+J
+i
+,-1
+J
+3
+-,
+I
+.J
+J
+J
+J
+J
+J
+J
+~1
+J
+""lJ
+J
+J
+J
+J
+]
+J
+J
+1
+J
+
+6.1 Updates and New Releases. During the term of the Agreement the Licensor may from time to time at its sole
+discretion, elect to issue updates and/or new releases of the System. Any such update or new release shall be delivered to the Customer by the Licensor at the Customer's Location in Hong Kong, in the forms referred to in Section 1.14 for the first five (5) years of the term of this Agreement, and for the remainder of the term of this Agreement, the Licensor shall deliver such updates and new releases to the Customer, provided that the Customer is current with its payments of Update and New Release Fees.
+Section 7.0 PAYMENTS
+7.1 Licence Fees. The Customer agrees to pay the Licence Fees    for the System (excluding Modifications and
+Enhancements) as set out in Paragraphs A and B of
+Schedule B hereto.
+7.2 Modification and Enhancement Fees. The Customer agrees to pay the Licensor fees for the Modifications and
+Enhancements as set out in Schedule D hereto.
+7.3 Update and New Release Fees. The Customer shall pay to the Licensor on the date which is six (6) months from the date of the acceptance or deemed acceptance of the First System and on the four (4) subsequent anniversary date thereof the Update and New Release Fees set out in Paragraph A of Schedule E hereto. In the event the Customer wishes to receive the Updates and New Releases to the System in the sixth, seventh, eighth, ninth and/ or tenth years of the term of this Agreement the Customer shall pay the invoices for the Update and New
+Release Fees for each such year as submitted by the Licensor, which Update and New Release Fees sh.all be fifty percent (50%) of the list prices set out in Paragraph B of Schedule E hereof.
+.J
+J
+J
+J
+
+J
+J
+J
+J
+J
+J
+J
+J
+J
+J
+J
+J
+—}
+J
+]
+f
+1
+
+7.4    Taxes. All Licence Fees, Modification and Enhancement
+Fees, Update and New Release Fees and other sums payable by the Customer to the Licensor hereunder, shall be paid in full, without set-off or counter-claim, free of any deductions or withholdings whatsoever. In the event that the Customer is prohibited by law from making payments hereunder free of deductions or withholdings, then the Customer shall pay such additional amounts to the Licensor, as may be necessary in order that the actual amount received after deduction or withholding
+{ and after payment of any taxes, additional taxes or other charges payable as a consequence of the payment of such additional amount) shall equal the amount that
+would have been received if such deduction or withholding was not required.
+7.5    Currency.    All payments payable by the Customer to the
+Licensor hereunder shall be paid in Dollars to an address or bank account indicated in writing from time to time by the Licensor to the Customer.
+Section 8.0 CONFIDENTIALITY
+8.1 By the Licensor. In performance of its duties hereunder, the Customer may disclose to the Licensor confidential information relating to the Customer's business which is not publicly known or available from other sources. The Licensor agrees to hold in the strictest confidence all such confidential information and shall use reasonable efforts to confine knowledge of such confidential information only to its employees who
+require such knowledge and use in the ordinary course and scope of their employment by the Licensor.
+The Licensor shall not use the Customer's name or logo for any purpose without the Customer's prior written consent.
+8.2 By the Customer. The Customer agrees to utilize all information in connection with the System only for the purpose set out in this Agreement, and the Customer
+
+
+agrees to maintain such information in strict and complete confidence and shall not disclose same to any other person, except with the prior written consent of the Licensor. The Customer agrees that it will utilize the same degree of care in protecting the System and the information related thereto as the Customer normally takes to ensure the protection and confidentiality of
+its own proprietary information of a similar nature.
+The Customer agrees that a breach of the obligations of this Section 8.2 by the Customer shall cause irreparable harm to the Licensor, and, accordingly the Licensor shall be entitled to seek injunctive and/or other equitable relief, in order to restrain any such breach, in addition to any other remedies which may be available to the Licensor.
+Section 9.0 EMPLOYMENT OF PERSONNEL
+9.1 By the Licensor. The Licensor agrees that during the term of this Agreement, the Licensor shall not without the prior written consent of the Customer directly or indirectly engage, hire, employ or contract with any employee of the Customer who has worked with the Licensor in connection with the fulfillment by the Licensor of its obligations hereunder.
+9.2 By the Customer. Tbe Customer agrees that during the term of this Agreement, the Customer shall not, without the prior written consent of the Licensor, directly or indirectly engage, hire, employ or contract with any employee of the Licensor who has worked with the Customer in connection with the fulfillment by the Licensor of its obligations hereunder.
+Section 10.0 TERMINATION
+10.1 By the Customer. (a) In the event that the Customer determines in accordance with Section 3. 4 hereof that the First System does not meet the Acceptance Criteria and gives written notice of same to the Licensor within the period of time required therein, the licence hereby
+granted shall be terminated without further recourse or obligation of either party, subject to Section 10.3 below.
+(b) Notwithstanding    anything    else
+herein contained, the Customer may terminate the licence hereby granted by so notifying the Licensor in writing and accompanying such notice with full payment all fees and amounts called for in this Agreement and the
+Schedules hereto subject to Section 10.3 below.
+10.2 By the Licensor. Notwithstanding anything else herein contained the Licensor shall have the right to terminate the licence to the System hereby granted to the Customer without further obligation or liability to the Customer if (a) the Customer fails to make payment of any sums due to the Licensor within thirty (30) days following written notice of such failure by the Licensor to the Customer; (b) the Customer commits a material breach of
+this Agreement and fails to remedy such failure within thirty (30) days following the giving to the Customer of written notice thereof by the Licensor. Without prejudice to any other right or recourse to which the Licensor may be entitled to in the circumstances the Customer shall upon the termination set forth in this Section 10.2, cease and desist from using the System and return the System to the Licensor within five (5) days of such termination.
+10.3    Notwithstanding anything else herein contained upon the
+termination of the licence herein granted, the Customer shall be obliged within five (5) days of such termination to return all Systems to the Licensor, and the obligations set out in Section 8 hereof shall continue in full force and effect. In the event that the Customer terminates this agreement pursuant to Section
+10.1 (a) above, the Licensor shall be obliged to return to the Customer all sums paid under Schedule B and
+Schedule D hereof, however, the Customer shall be obliged to pay to the Licensor a sum (not exceeding US$200,000.00), in respect of any and all work and services carried out by the Licensor in respect
+of the Modifications and Enhancements, as per Schedule C, which have been developed by the Licensor for the use of the Customer. The Licensor agrees to keep accurate record of such work done and services provided and agrees the same shall be valued pursuant to the rates set out in Schedule G of this agreement. Should the Licensor, within thirty (30) days of the notice under Clause 10.1, fail to return all sums owed to the Customer, the Customer, in addition to the return of the sums owed shall be entitled to claim interest on the sums owed at the rate of 1^% per month compounded annually.
+Section 11.0 MISCELLANEOUS
+11.1    Non Waiver. Except as otherwise provided herein, no term or provision hereof shall be deemed waived and no breach consented to or excused unless such waiver, consent or excuse shall be in writing and signed by the party claimed to have waived, consented or excused. Any consent by any party to, or excuse or waiver by any party of, a breach by the other, whether expressed or implied, or failure of a party to insist upon strict performance of any provision of this Agreement, shall not constitute a consent to, or excuse or waiver of, any other different or subsequent breach of this Agreement.
+11.2    Notices. All notices required or permitted to be given hereunder shall be in writing and shall be (i) personally delivered, (ii) transmitted by postage prepaid mail (airmail if international), (iii) transmitted by telex, or (iv) transmitted by telecopy, to the parties as follows, as elected by the party giving such notice:
+To the Licensor:
+1 Yorkdale Road Suite 404, Toronto Province of Ontario Ca ada
+18
+To the Customer:
+38 Bishopsgate London, England United Kingdom
+Telex: 885951 Answerback: SCBLAG
+The date of any notice or other communication hereunder shall be deemed to be (i) the date of receipt if delivered personally, (ii) the date ten (10) days after posting if transmitted by international mail, two (2) days if by local mail, (iii) the date of transmission with confirmed answerback if transmitted by telex, or
+(iv)    the date of transmission if transmitted by
+telecopy, whichever shall first occur. Any party may change its address or telex number for purposes hereof by written notice to the other party.
+11. 3 Amendment. This Agreement may not be amended, modified or otherwise altered nor may any provision here be waived except pursuant to a written agreement signed by the parties hereto.
+11. 4    Effeet of Agreement. This Agreement constitutes the
+entire Agreement of the parties hereto with respect to the matters set forth herein and supersedes and cancels all previous written or oral agreements and understand
+ing of the parties with respect to such matters.
+11. 5 Assignment. (a) This Agreement shall be binding upon and shall be enforceable by either party and their respective successors and assigns except that neither party shall have the right to assign or transfer its rights or obligations hereunder without the prior written consent of the other. Without limiting the generality of the foregoing, none of the licences or rights granted under this Agreement with respect to the
+System or any of the materials relating thereto or copies thereof, may be sub-licenced, sold, mortgaged,
+pledged, assigned or transferred by the Customer, by
+?v 4- V-»
+consenr or rne Li.censor. Any attempt to sub.LJ..cence, sell, mortgage, pledge, assign or transfer is void. In the event of an assignment to which the Licensor has or does consent, this Agreement shall be binding upon and enure in favour of the assignee of such assignment.
+(b) Notwithstanding Section 11.S(a) above upon receipt of a Letter of Accession by the Licensor, at any time or from time to time, from an Affiliate
+(countersigned by the Customer) such Affiliate shall be deemed to be a party to this Agreement jointly with the Customer and references herein to "the Customer" shall be deemed to include references to such Affiliate. The parties shall take such further steps as may be necessary to procure that this Agreement shall be binding on such Affiliate and that such Affiliate shall
+enjoy the benefit of this Agreement.
+11. 6    Governing Law. This Agreement shall be governed by and
+interpreted in accordance with the laws of England.
+11. 7    English Language. Each document to be delivered
+hereunder shall be submitted in the English language.
+11. 8    Submission to Jurisdiction. Each party hereto consents
+that any legal action or proceeding against it or any of its properties or assets with respect to this Agreement may be brought only before the courts of England or the
+Province of Ontario (Canada).
+11. 9 Force Majeure. Notwithstanding anything else contained in this Agreement the Licensor shall not be liable to the Customer, nor the Customer to the Licensor for any loss or damage which may be suffered by the Customer or the Licensor as a direct or indirect result of the Licensor or the Customer being delayed, prevented or hindered in the performance of any of its obligations under this Agreement by reason of any circumstances
+beyond its control including (but not limited to) act of God, act of war, government act or regulation, riot, strike, lock-out, trade dispute or labour disturbance, accident, break-down of plant or machinery, fire or flood.
+11.10 Severance. This Agreement is severable and in the event that a term is held invalid or unenforceable by a final judgement of a court of competent jurisdiction, such
+term will be severed from the rest of the Agreement, however all other provisions shall nevertheless continue in full force and effect.
+11.11 Non-Exclusivity. The granting of this licence does not limit or restrain in any way, the Licensor's right to enter into agreements with others whether on equal, more
+or less favourable terms in respect of the System except that the Licensor shall not enter into any agreement for the licensing of the System, (whether under the "IMEX Software System" name or any other name) in Hong Kong prior to six ( 6) months from the acceptance or deemed acceptance of the First System, or termination of the licence herein granted, whichever is earlier, in Singapore or Malaysia prior to the date which is twelve
+(12) months from the date of the acceptance or deemed acceptance of the First System, or termination of the licence, whichever is earlier.
+11.12 Headings and Captions. The headings and captions of this Agreement are inserted for convenience and reference only and shall not control or affect the meaning, construction or interpretation of any of the provisions of this Agreement.
+IN WITNESS WHEREOF, the Parties have caused this Agreement to be executed by their duly authorized representatives as of the year and date first above written.
+
+
+
+
+O'
+
+SURECOMP INC.
+
+ 
+6-E.r~'6£ 4 c M-4-h^V^p*^
+
+1. Mainframe Operating System - MVS/XA
+2. On-Line Monitor - CICS
+3. Database Management System - IMS/DB and VSAM
+4. Storage - minimum 6 megabytes
+5. Processor Rating - minimum 2 MIPS
+PAYMENTS
+
+
+
+A.
+Licence Fees
+1.
+Hong Kong (First System)
+US$365,000
+
+
+
+
+2.
+Second System
+US$145,000
+
+
+
+
+3.
+Third System
+US$75,000
+
+
+
+
+4.
+World-hide
+US$30,000
+
+
+
+
+
+Extension
+
+
+
+
+
+B.
+Pavment Terms
+of Licence Fees
+
+
+
+l.
+Hong Kong
+- on date
+of
+contract signing
+- US$115
+,000
+
+(First System)
+- on date
+of
+Notice of Installation
+- US$1L0
+,000
+
+
+- on date
+of
+acceptance or
+
+
+
+
+deemed
+acceptance
+- US$150
+,000
+
+
+
+
+
+us$36i::
+,ooo
+2.
+Second System
+- on date
+of
+delivery
+- US$145
+,000
+3.
+Third System
+- on date
+of
+delivery
+- US$75,
+000
+4.
+World-hide
+- on date
+of
+the notice of
+- US$30,
+000
+
+Extension
+extension
+set out in
+
+
+
+
+Section 2.
+l(b)
+
+
+
+
+
+All Licence Fees shall be payable within ten (10) days of the issuance of an invoice therefor by the Licensor to the Customer. All payments shall be made as indicated on the invoices. Late payments shall bear interest at the rate of 1-1/2% per month compounded annually.
+
+C. List Price for Licence Fees
+Single Location
+Second Location Third Location Fourth Location Each Additional Location
+
+US$460,000
+US$345,000
+US$260,000
+US$225,000
+US$175,000
+
+, .. .,
+
+l
+.,
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+IL
+II
+II
+ll
+II
+II J I Ij
+
+MODIFICATIONS AND ENHANCEMENTS
+The following modifications and enhancements will be provided by the licensor:
+Limit control module
+Finance module
+Accounting interface
+Cats system interface
+Treasury system interface
+Communications system interface
+Letter of credit reimbursement
+Customs and other guarantee
+Commission calculation (tiered rates)
+Reporting requirements (excluding actual reports)
+Reference is made to the "Customers manual of Specifications for Enhancements/Modifications required to Imex System - July, 1987" and to the "Licensor's clarifications thereof - August 1987", both of which may be subsequently mutually elaborated on and or clarified.
+The Modifications and Enhancements will be provided by the Licensor after detailed functional specifications have been mutually agreed between the customer and licensor.
+f ?>
+
+Schedule D
+
+MODIFICATION AND ENHANCEMENT FEES
+1.
+On date of contract
+signing
+*—
+US$40,000
+2.
+On date of approval
+by Customer
+
+
+
+of Modification and
+Erillancement
+
+
+
+design specifications
+-
+uS$40,000
+3.
+On date of delivery
+of Notice of
+
+
+Installation of First System    US$40,000
+4. On date of acceptance or deemed acceptance of First System
+US$80,000
+
+US$200,000
+All Modification and Enhancement Fees are payable within ten (10) days of the issuance of an invoice therefor by the
+Licensor to the Customer. All payments shall be as indicated on the invoices. All late payments shall bear interest at the rate of 1-1/2% per month compounded annually.
+Schedule 1:
+UPDATE AND NEW RELEASE FEES
+A. Update and New Release Fees
+US$55,200 payable six (6) months after the date of the acceptance or deemed acceptance of the First Systerr, and on each of the four (4) anniversaries thereof dLring the term of the Agreement.
+B. List Price of Update and New Release Fees
+—
+Single Location
+US$82,800
+per
+annum
+-
+Second Location
+US$62,100
+per
+annum
+-
+Third Location
+US$46,800
+per
+annum
+-
+Fourth Location
+US$40,500
+per
+annum
+
+Each additional Location -
+US$31,500
+per
+annum
+All Update and Release Fees are payable within ten (10) days of the iss:1ance of an invoice therefor by the Licensor to the Cust.0::.e:::-. All payments shall be as indicated on the invoices. All :ate payments shall bear interest at the rate of 1-1/2% per month compounded annually.
+ 
+Schedule F
+
+
+
+CUSTOMER'S MANUAL FOR TRADE FINANCE SERVICES COMPUTER SOFTWARE PACKAGE - JUNE, 1987
+TO BE PROVIDED AND SHALL BE INITIALLED BY THE PARTIES HERETO FOR IDENTIFICATION]
+-I
+
+
+

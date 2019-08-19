@@ -1,0 +1,73 @@
+<script type="text/javascript">
+    var userinfo = {
+        usernameh: ko.observable('{{.Username}}'),
+        menunameh: ko.observable('{{.Menuname}}'),
+    }
+</script>
+<script src="{{BaseUrl}}res/main/js/financial-incomestatement-PeriodeVer.js" type="text/javascript"></script>
+<script src="{{BaseUrl}}res/main/js/financial-incomestatement.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/financial.css">
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <span class="bar">Financial Statement</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <a href="/financial/incomestatement">Income Statement</a>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+            <span class="thin uppercase hidden-xs font2" data-bind="text:income.DatePageBar"></span>&nbsp;
+        </div>
+    </div>
+</div>
+<div class="row" data-bind="visible:!model.Processing()">
+    <div class="col-md-12">
+        <div class="portlet box twis">
+            <div class="portlet-title">
+                <div class="caption">
+                    LABA RUGI
+                </div>
+                <div class="tools style-btn-export" data-bind="visible: !income2.buttonExportExcel()">
+                    <button type="button" onclick="income.ExportToPDF()" class="btn btn-sm red btn-outline btn-flat margin-pdf"><i
+                            class="fa fa-file-pdf-o"></i>&nbsp;Export To PDF</button>
+                </div>
+                <div class="tools style-btn-export" data-bind="visible: income2.buttonExportExcel()">
+                    <button onclick="income2.exportExcelPeriod()" value="Export to excel by Period" type="button" class="btn btn-sm btn-outline green btn-flat margin-pdf"
+                        data-toggle="modal" style="margin-right:10px;"><i class="fa fa-file-excel-o"></i>&nbsp;Export
+                        To Excel </button>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>From :</label>
+                        <input type="text" id="dateStart" data-bind="kendoDatePicker:{value:income.DateStart,format:'dd-MMM-yyyy',change: function(e){income.onChangeDateStart(e.sender._old)}}" class="filter-space" />
+                        <label>To :</label>
+                        <input type="text" id="dateEnd" data-bind="kendoDatePicker:{value:income.DateEnd,format:'dd-MMM-yyyy', min:income.DateStart}" class="filter-space" />
+                        <label>Filter By :</label>
+                        <input id="filterBy" />
+                        <button type="button" onclick="income.refreshGrid()" class="btn btn-sm btn-refresh"><i class="fa fa-search"></i>
+                            Search</button>
+                    </div>
+                </div>
+                <br>
+                <div class="portlet-body">
+                    <div class="">
+                        <div id="gridIncomeSales"></div>
+                        <div id="gridIncomeRetur"></div>
+                        <div id="gridIncomeStatement1_5"></div>
+                        <div id="gridIncomeOperatingExpenses"></div>
+                        <div id="gridIncomeOtherIncome"></div>
+                        <div id="gridIncomeOtherExpenses"></div>
+                        <div id="gridTAX"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>

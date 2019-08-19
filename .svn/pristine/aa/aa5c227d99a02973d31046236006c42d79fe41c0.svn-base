@@ -1,0 +1,109 @@
+/* here you can put your own css to customize and override the theme */
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+.brdcrumb {
+    display: flex;
+}
+.src-document {
+	background-color: #e5e5e5; 
+	border-radius: 15px !important;
+}
+.no-margin-breadcrumb {
+    margin: -8px 0px -8px -8px;
+}
+.pull-to-right {
+    right: 0;
+    position: absolute;
+}
+.btn-circle-sm {
+	border-radius: 20px !important;
+	border-width: 0;
+    padding: 7px 12px;
+    font-size: 14px;
+    outline: none !important;
+    background-image: none !important;
+    filter: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#formreview a {
+	border: none;
+}
+.confirmation-success {
+	background: #00d1aa;
+}
+.confirmation-success i {
+	color: #fff;
+}
+.confirmation-danger {
+	background: #ff6a66;
+}
+.confirmation-danger i {
+	color: #fff;
+}
+.confirmation-info {
+	padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #00d1aa;
+    text-align: center;
+    vertical-align: middle !important;
+    display: table-cell;
+}
+
+.tiles-pdf {
+	padding: 5px 0 0 0;
+}
+.tiles .tile {
+	height: 48px;
+	width: 100px !important;
+}
+.tiles .tile.green {
+	background: #00d1aa;
+}
+.tiles .tile.grey {
+	background: #8a8484;
+}
+.tiles .tile.green:hover {
+	border-color: red;
+}
+.tiles .tile .child {
+	text-align: center;
+}
+.tiles .tile .child .percent{
+	font-size: 12px;
+}
+.tiles .tile .child .details{
+	font-size: 12px
+}
+.tiles .tile .child-type-1{
+	text-align: center; 
+	padding-top: 8px;
+}
+.tiles .tile .child-type-1 span{
+	font-size: 13px;
+}
+#formreview a {
+	color: #fff;
+}
+#formreview a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.unslider-active .caption-tiles {
+	text-align: center; 
+    position: relative;
+    margin-top: -80px;
+    /* width: 100%; */
+    z-index: 1;
+}
+
+#chart.c3 g text{
+	color: pink;
+}

@@ -1,0 +1,260 @@
+.greyBackground {
+	background-color: #adafb2;
+	font-weight: bold;
+}
+
+.pull-left {
+	margin-left: 20px;
+}
+.padding-grid {
+margin:0px;
+}
+.right-align {
+	text-align: right;
+}
+.control-label.modalnewaccount{
+	width: 30%
+}
+.onclickCOA{
+      color: #000000;
+}
+.onclickCOA:hover{
+  color: white;
+}
+.control-label.boldleft{
+	text-align: left;
+	font-weight: bold;
+}
+.titleMaster{
+	margin-bottom: 25px;
+}
+.marginpanel{
+	margin-left: 20px;
+}
+.padding-det{
+	margin: 0px;
+}
+.margin15 {
+	margin-left: -15px;
+}
+.margin16 {
+    margin-left: 70px;
+}
+/*PANEL*/
+.portlet.box > .portlet-title {
+    margin-bottom: 0px;
+    padding: 10px 10px 4px 24px;
+    border-bottom: 1px solid #eee;
+    color: #fff;
+}
+.nav-tabs>li.active>a{
+	color: #fff;
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.nav-tabs>li.active>a:focus{
+	color: rgb(253, 253, 253);
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.nav-tabs>li.active>a:hover{
+	color: #fff;
+    background-color: #496f96;
+    border: 1px solid #b2b2b2;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.nav-tabs>li>a{
+	background-color: #375879;
+	border: 1px solid #b2b2b2;
+}
+.nav-tabs>li>a:focus{
+	background-color: #375879;
+	border: 1px solid #b2b2b2;
+}
+.nav-tabs>li>a:hover{
+	background-color: #489aec;
+    color: #fff;
+}
+.nav-tabs {
+	border-bottom: 1px solid #b2b2b2;
+}
+.page-bar .page-breadcrumb>li>i.fa-circle{
+	font-size: 5px;
+    margin: 0 5px;
+    position: relative;
+    top: -3px;
+    opacity: .4;
+}
+.bar{
+	padding-left: 5px;
+}
+ .portlet.box.twist {
+        background-color: #e5e5e5;
+        border: 1px solid #e5e5e5;
+    }
+
+    .portlet-title .caption {
+        color: #3d3d3d;
+    }
+
+    .portlet.box.twist.filter {
+        background-color: #e5e5e5;
+        border: 1px solid #e5e5e5;
+        margin-left: -40px;
+    }
+
+    body {
+        font-family: Helvetica;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .row {
+        margin-bottom: 10px;
+    }
+.left,
+    .right {
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+    }
+.swatch {
+   display: inline-block;
+   width: 60px;
+   height: 50px;
+}
+
+.swatch.overlay {
+   position: absolute;
+   left: 60px;
+}
+.length{
+  width: 170px;
+}
+    .onlabel::after{
+    content: " : ";
+    float: right;
+    }
+
+    .pads{
+    padding:0px ;
+    margin-top: -7px;
+    }
+    .space{
+      margin-left: -60px;
+    }
+.filter-space{
+    margin-left: 14px;
+    margin-right: 5px;
+}
+input {
+    height: 30px;
+    width: 170px
+}
+.konten-category{
+    width: 70%
+}
+.portlet.box > .portlet-title{
+    padding-left: 8px;
+}
+.button-clear{
+    background-color: #ba661d; 
+    width: 74px
+}
+.tool-padding{
+    margin-top: -4px
+}
+.bottom-margin{
+    margin-bottom: -40px;
+}
+.panel-padding{
+    padding-left: 0px;padding-right: 0px;
+}
+.padding-left-right{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.konten-coa{
+    width:80%;
+    padding: 0px;
+    }
+.space{
+    margin-left: -60px;
+    }
+.btn-transparant{
+    color: #000000;
+}
+.btn-import-potition{
+    padding: 4px; 
+    width: 75px; 
+    position: relative;
+    left: 53px;
+     margin-top: 10px
+}
+.hide{
+    display: none;
+}
+.input-select{
+    width: 231px;
+}
+.konten{
+    width:75%;
+}
+.k-grid td {
+     border-width: 0;
+    }
+body {
+        font-family: Helvetica;
+    }
+
+h1 {
+        font-size: 18px;
+    }
+.row {
+        margin-bottom: 10px;
+    }
+ .konten-inventory{
+    width:96%;
+    padding:0px;
+}
+.length-inv{
+    width: 238px;
+}
+.large-input{
+    width: 355px;
+
+}
+.length-med{
+    width: 272px;
+}
+.btn-backlist{
+    background-color: #d5dae2;
+}
+.onclickJurnal:hover{
+  color: white;
+}
+
+a {
+    color: black;
+}
+
+/*.modal {
+    width : auto;
+    position : relative;
+}*/
+
+.textcustsupp {
+    padding: 5px;
+    border-bottom: 2px solid #2f99cc;
+}
+
+.texttitle {
+    font-weight: bold
+}

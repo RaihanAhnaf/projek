@@ -1,0 +1,317 @@
+.erza .k-grid table tbody tr:nth-child(odd) td {
+    background-color: #fff1f1;
+}
+.erza .k-grid table tbody tr:nth-child(even) td {
+    background-color: #fad8d8;
+}
+.erza .k-grid table tbody tr:hover td {
+    background-color: #d16a6a;
+    color: #FFF;
+}
+.erza .k-grid table tbody tr:hover a:link {
+    color: #FFF;
+}
+.erza .k-grid table thead tr:hover a:link {
+    color: #000;
+}
+.erza .k-grid table td {
+    border-left: 1px solid #f1c3c3;
+}
+.erza .k-grid table td:first-child {
+    border-left: none;
+}
+
+.erza .nav-tabs>li {
+    border-bottom: 0px; 
+    margin-bottom: 0px;
+}
+.erza .nav-tabs>li:hover {
+    border-bottom: 0px; 
+    margin-bottom: 0px;
+}
+.erza .nav-tabs>li {
+    margin-right: 0px;
+}
+.erza .nav-tabs>li.active {
+    border-bottom-color: #e62626; 
+    border-bottom: 0px;
+}
+.erza .nav-tabs>li.active:first-child {
+    margin-left: 0px;
+}
+.erza .nav-tabs {
+    border-bottom-width: 4px;
+    border-color: #e62626;
+}
+.erza .nav-tabs>li>a, .erza .nav-tabs>li>a:focus {
+    background-color: #ffdada;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-color: #eec4c4;
+    border-bottom: 0px;
+    color: #555;
+}
+.erza .nav-tabs>li.active>a, .erza .nav-tabs>li.active>a:focus {
+    background-color: #e62626;
+    border-color: #e62626;
+    border-bottom: 0px;
+    color: #FFF;
+}
+.erza .nav-tabs>li>a:hover {
+    background-color: #f06666;
+    border-color: #f06666;
+    color: #FFF;
+    border-bottom: 0px;
+}
+.erza .nav-tabs>li.active>a:hover {
+    background-color: #e62626;
+    border-color: #e62626;
+    border-bottom: 0px;
+}
+.erza .panel-default>.panel-heading {
+    background-color: #fde0e0;
+}
+.erza .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default, 
+.erza .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
+    background: #dfc8c8;
+    color: #555;
+}
+.erza .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary, 
+.erza .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+    background-color: #e62626;
+    color: #FFF;
+}
+
+.erza .portlet > .portlet-title > .caption {
+    color: #971a1a;
+    font-weight: 500;
+}
+
+.erza .page-bar .page-breadcrumb>li span {
+    color: #a05555;
+}
+.erza .page-bar .page-breadcrumb>li a {
+    color: #db3232;
+}
+.erza li[role="presentation"].active div,
+.erza li[role="presentation"] div {
+    color: inherit;
+}
+/* ===== TITLE BUTTONS OVERRIDE ===== */
+.erza .portlet-title button.mode-choose {
+    padding-top: 8px !important;
+    padding-bottom: 11px !important;
+    margin-top: -10px;
+    margin-bottom: -4px;
+    border-color: #eec4c4 !important;
+    color: #916a6a !important;
+    background: #ffdada !important;
+}.erza .portlet-title button.mode-choose.active {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    margin-top: -10px;
+    margin-bottom: -4px;
+    border-color: #e62626 !important;
+    border-bottom-width: 4px !important;
+    color: #e62626 !important;
+    background: white !important;
+}
+.erza .portlet-title button:focus {
+    box-shadow: none !important;
+}
+
+/* ===== BUTTONS ===== */
+.erza .btn-success {
+    background: #21da74;
+    border-color: #82e4a8;
+}
+
+/* ===== ICON RELATED ===== */
+.erza .k-icon {
+    color: #b90d0d;
+}
+.erza .k-grid-filter.k-state-active {
+    background-color: #f3d2d2;
+}
+.erza .k-grid-filter.k-state-active .k-icon {
+    color: #e94747;
+}
+
+/* ==== BORDER ==== */
+.erza .k-grid th.k-header,
+.erza .k-grid tr,
+.erza .k-grid, 
+.erza .k-grid-header,
+.erza .k-grid-header-wrap,
+.erza .k-gantt-toolbar .k-state-default,
+.erza .k-grid .k-grouping-header,
+.erza .k-grid-header,
+.erza .k-grid-header-wrap,
+.erza .k-grouping-header .k-group-indicator,
+.erza .k-header,
+.erza .k-pager-wrap,
+.erza .k-pager-wrap .k-link,
+.erza .k-pager-wrap .k-textbox,
+.erza .k-autocomplete.k-state-default,
+.erza .k-dropdown-wrap.k-state-default,
+.erza .k-multiselect.k-header,
+.erza .k-numeric-wrap.k-state-default,
+.erza .k-picker-wrap.k-state-default,
+.erza .k-state-default>.k-select,
+.erza .bootstrap-switch,
+.erza .table-bordered,
+.erza .table-bordered tr,
+.erza .table-bordered td,
+.erza .table-bordered th,
+.erza .panel-default,
+.erza .panel-default>.panel-heading {
+    border-color: #f1c3c3;
+}
+
+.erza input,
+.erza textarea {
+    border: 1px solid #f1c3c3;
+}
+.erza input:disabled,
+.erza textarea:disabled,
+.erza .k-state-disabled {
+    background-color: #f3dfdf;
+    border-color: #996767;
+}
+.erza input:focus,
+.erza button:focus,
+.erza .k-input:focus,
+.erza textarea:focus,
+.erza .k-autocomplete.k-state-focused,
+.erza .k-dropdown-wrap.k-state-focused,
+.erza .k-multiselect.k-header.k-state-focused,
+.erza .k-numeric-wrap.k-state-focused,
+.erza .k-picker-wrap.k-state-focused,
+.erza .k-textbox:focus {
+    /*box-shadow: 0 0 7px 0 #76abd9;*/
+    box-shadow: 0 0 7px 0 #76d97b;
+    border-color: #76d97b;
+}
+.erza input:disabled:focus,
+.erza button:disabled:focus,
+.erza .k-input:disabled:focus,
+.erza textarea:disabled:focus {
+    box-shadow: 0 0 7px 0 #76d97b;
+    border-color: #76d97b;
+}
+
+/* ==== BORDER :disabled ==== */
+.erza .bootstrap-switch.bootstrap-switch-disabled,
+.erza .bootstrap-switch.bootstrap-switch-indeterminate,
+.erza .bootstrap-switch.bootstrap-switch-readonly {
+    border-color: #c99595;
+}
+
+/* ==== SCROLLBAR ==== */
+.erza ::-webkit-scrollbar-track {
+    background-color: #f1c3c3;
+    border-left: 1px solid #f1c3c3;
+}
+.erza ::-webkit-scrollbar-thumb {
+    background-color: #dd9a9a;
+}
+.erza ::-webkit-scrollbar-thumb:hover {
+    background-color: #c57777;
+}
+
+/* ==== OVERRIDE DEFAULT MENU ==== */
+.erza .page-header.navbar,
+.erza .page-header.navbar .top-menu .navbar-nav > li.dropdown-user .dropdown-toggle
+{
+    background-color: #810a0a;
+}
+.erza .page-sidebar .page-sidebar-menu,
+.erza .page-sidebar .page-sidebar-menu-closed,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar .page-sidebar-menu, 
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu-closed,
+.erza .page-sidebar .page-sidebar-menu .sub-menu li,
+.erza .slimScrollDiv,
+.erza #thisfooter {
+    background-color: #9e2222 !important;
+}
+
+.erza .page-sidebar.navbar-collapse.collapse {
+    background-color: #e95959;
+}
+
+.erza .sub-menu a i,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a > .arrow:before,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a > .arrow.open:before,
+.erza .page-sidebar .page-sidebar-menu li > a > .arrow:before,
+.erza .page-sidebar .page-sidebar-menu li > a > .arrow.open:before,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu-closed li > a > .arrow:before,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu-closed li > a > .arrow.open:before,
+.erza .page-sidebar .page-sidebar-menu-closed li > a > .arrow:before,
+.erza .page-sidebar .page-sidebar-menu-closed li > a > .arrow.open:before {
+    color: #f5f5f588 !important;
+}
+
+.erza .sub-menu a:hover i,
+.erza .sub-menu li.active > a i,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a:hover > .arrow:before,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a:hover > .arrow.open:before,
+.erza .page-sidebar .page-sidebar-menu li > a:hover > .arrow:before,
+.erza .page-sidebar .page-sidebar-menu li > a:hover > .arrow.open:before,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu-closed li > a:hover > .arrow:before,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu-closed li > a:hover > .arrow.open:before,
+.erza .page-sidebar .page-sidebar-menu-closed li > a:hover > .arrow:before,
+.erza .page-sidebar .page-sidebar-menu-closed li > a:hover > .arrow.open:before,
+.erza #thisfooter span{
+    color: #FFF !important;
+}
+
+.erza .page-sidebar .page-sidebar-menu .sub-menu > li.active > a,
+.erza .page-sidebar .page-sidebar-menu > li.active > a,
+.erza .page-sidebar .page-sidebar-menu .sub-menu > li.active > a:hover,
+.erza .page-sidebar .page-sidebar-menu > li.active > a:hover,
+.erza .page-sidebar .page-sidebar-menu-closed .sub-menu > li.active > a,
+.erza .page-sidebar .page-sidebar-menu-closed > li.active > a,
+.erza .page-sidebar .page-sidebar-menu-closed .sub-menu > li.active > a:hover,
+.erza .page-sidebar .page-sidebar-menu-closed > li.active > a:hover,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.open > a,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a,
+.erza .page-sidebar .page-sidebar-menu .sub-menu > li:hover > a,
+.erza .page-sidebar .page-sidebar-menu .sub-menu > li.open > a,
+.erza .page-sidebar .page-sidebar-menu .sub-menu > li.active > a {
+    background-color: #cf2929 !important;
+}
+.erza .page-sidebar .page-sidebar-menu > li.open > a,
+.erza .page-sidebar .page-sidebar-menu-closed > li.open > a {
+    background-color: #e74242 !important;
+}
+.erza .page-sidebar .page-sidebar-menu .sub-menu > li > a:hover,
+.erza .page-sidebar .page-sidebar-menu > li > a:hover,
+.erza .page-sidebar .page-sidebar-menu-closed .sub-menu > li > a:hover,
+.erza .page-sidebar .page-sidebar-menu-closed > li > a:hover {
+    background-color: #e74242 !important;
+}
+.erza .page-sidebar .page-sidebar-menu .sub-menu li,
+.erza .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li {
+    margin-top: 0px !important;
+}
+
+
+/* === THEME SELECTOR === */
+#themeselector {
+    float: right;
+    margin-right: 10px;
+    height: 16px;
+    margin-top: 0px;
+}
+
+#themeselector div {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin: 2px;
+    border-radius: 7px !important;
+    border: 1px solid #fff;
+    cursor: pointer;
+}

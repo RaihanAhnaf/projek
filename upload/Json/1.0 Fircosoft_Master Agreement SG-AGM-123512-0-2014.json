@@ -1,0 +1,42 @@
+{
+   "documenttitle": [
+      {
+         "common-ancestor-id": "28",
+         "data-eaciit-end": "30",
+         "confidence": 0.64,
+         "end-offset": "42",
+         "contentfromsystem": "\n    STANDARD CHARTERED BANK\n   ",
+         "data-eaciit-id": "30",
+         "data-eaciit-start": "30",
+         "start-offset": "39",
+         "clause": "documenttitle"
+      }
+   ],
+   "word-count": 41283,
+   "effectivedate": [
+      {
+         "common-ancestor-id": "1892",
+         "data-eaciit-end": "1893",
+         "confidence": 0.91,
+         "end-offset": "15301",
+         "contentfromsystem": "\n    Pricing are valid for 5 years from the Effective date.\n   ",
+         "data-eaciit-id": "1893",
+         "data-eaciit-start": "1893",
+         "start-offset": "15291",
+         "clause": "effectivedate"
+      }
+   ],
+   "governinglaw": [
+      {
+         "common-ancestor-id": "383",
+         "data-eaciit-end": "393",
+         "confidence": 0.6,
+         "end-offset": "1727",
+         "contentfromsystem": "\n     means any data, records or information (in any form) relating directly or indirectly to an individual (including but not limited\u00a0to past, present and/or future personnel, customers,\u00a0suppliers, third party guarantors or sureties of any member of\u00a0SCB Group) and from which it is practicable for the identity of\u00a0the individual to be directly or indirectly ascertained by\u00a0reference to other data, records or information and as may\u00a0be defined under applicable Data Protection Laws in the\u00a0relevant jurisdiction(s) relating to the origin of the Personal\u00a0Data Processed under the Agreement:\n    ",
+         "data-eaciit-id": "393",
+         "data-eaciit-start": "393",
+         "start-offset": "1636",
+         "clause": "governinglaw"
+      }
+   ]
+}

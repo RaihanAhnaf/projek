@@ -1,0 +1,104 @@
+<script src="{{BaseUrl}}res/main/js/master-accno.js"></script>
+<script type="text/javascript">
+    var userinfo = {
+        usernameh: ko.observable('{{.Username}}'),
+        menunameh: ko.observable('{{.Menuname}}'),
+    }
+</script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/master.css">
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <span class="bar">Administration</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <a href="/master/accno">Account Number</a>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+            <span class="thin uppercase hidden-xs font2" data-bind="text:master.DatePageBar"></span>&nbsp;
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet box twis">
+            <div class="portlet-title ">
+                <div class="caption title-padding">
+                    Account Number
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label> Type Account Number :</label>
+                        <input type="text" id="account-number" class="filter-space" />
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="button" onclick="master.Refresh()" class="btn btn-sm btn-refresh btn-flat"><i
+                                class="fa fa-search"></i> Search</button>
+                        <button type="button" onclick="master.Clear()" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-repeat"></i>
+                            Reset</button>
+                    </div>
+                </div>
+
+                <div class="portlet-body" data-bind="visible: !model.Processing()">
+                    <div class="grid-accno padding-grid"></div>
+                </div>
+                {{template "_loader2.html"}}
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Form Modal -->
+<div class="modal fade" id="EditNewModal" aria-hidden="true" aria-labelledby="modalTitle" role="dialog" tabindex="-1">
+    <div class="modal-dialog" data-bind="visible: !model.Processing()">
+       <div class="modal-content konten-coa margin16">
+          <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+             </button>
+             <h4 class="modal-title">Edit Chart of Account</h4>
+          </div>
+          <div class="modal-body">
+             <div class="form-input row" data-bind="visible: !model.Processing()">
+                <div class="form-group col-md-12">
+                   <label class="control-labeltrx col-md-5 onlabel">Account Code</label>
+                   <div class="control-input col-md-6 pads">
+                      <input type="text" name="acccode" id="acccode" class="input-sm form-control input-select"
+                         placeholder="Type Account Code" required validationMessage="Please Input Acc.Codes" data-bind="value: master.AccountCodeEdited()" disabled/>
+                      <span class="k-invalid-msg" data-for="acccode"></span>
+                   </div>
+                </div>
+                <div class="form-group col-md-12">
+                   <label class="control-labeltrx col-md-5 onlabel">Main Account Code</label>
+                   <div class="control-input col-md-6 pads">
+                      <input type="text" name="mainacccode" id="mainacccode" class="input-sm form-control input-select"
+                         placeholder="Type Main Account Code" required validationMessage="Please Input Main Account Code" data-bind="value: master.AccountMainCodeEdited()" disabled/>
+                      <span class="k-invalid-msg" data-for="mainacccode"></span>
+                   </div>
+                </div>
+                <div class="form-group col-md-12">
+                   <label class="control-labeltrx col-md-5 onlabel">Account Name</label>
+                   <div class="control-input col-md-6 pads">
+                      <input type="text" name="accname" id="accname" class="input-sm form-control input-select"
+                         placeholder="Type Account Name" data-bind="value: master.AccountNameEdited" required/>
+                      <span class="k-invalid-msg" data-for="accname"></span>
+                   </div>
+                </div>
+                <div class="form-group col-md-11 align-right">
+                   <button type="button" class="btn btn-sm btn-success btn-flat" onclick="master.SaveDataCOA()"><i class="fa fa-floppy-o"></i>&nbsp;Save</button>
+                </div>
+             </div>
+             {{template "_loader2.html"}}
+          </div>
+       </div>
+    </div>
+ </div>
+ <div class="clearfix"></div>
+ 
+ <!-- End Form Modal -->

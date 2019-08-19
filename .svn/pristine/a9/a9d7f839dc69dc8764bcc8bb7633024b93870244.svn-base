@@ -1,0 +1,137 @@
+.invoice-title h2, .invoice-title h3 {
+    display: inline-block;
+}
+
+.table > tbody > tr > .no-line {
+    border-top: none;
+}
+
+.table > thead > tr > .no-line {
+    border-bottom: none;
+}
+
+.table > tbody > tr > .thick-line {
+    border-top: 2px solid;
+}
+.bottom-padding {
+	padding-bottom: 20px;
+}
+
+.no-left-padding {
+	padding-left: 0px;
+}
+
+.panel-heading.right-align {
+	text-align: right;
+}
+.form-field .icon_before {
+    top: 0;
+    height: 28px;
+    width: 25px;
+    text-align: center;
+    border: none;
+    border-right: 1px solid #ddd;
+}
+.form-field .icon_before, .form-field .text-input {
+	padding-top: 3px;
+    float: left;
+    height: 28px;
+    font-size: 13px;
+    border: 1px solid #e5e5e5;
+    text-align: right;
+
+}
+.form-field .text-input {
+
+}
+.field3, .field4, .field6, .form-field .icon_before, .input-icon {
+    position: relative;
+}
+.icon_before {
+    border: 1px solid #e5e5e5;
+    color: #fff;
+    position: absolute;
+    background: #000000;
+    width: 50px;
+    height: 48px;
+    line-height: 20px;
+    text-align: center;
+    left: 1px;
+    top: 34px;
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.k-dropdown-wrap .k-state-default .k-state-focused {
+    width: 100px;
+}
+.bottom-padding {
+    padding-bottom: 10px;
+}
+div.checker{
+    display: none;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary{
+    background-color:  #2c3e50
+}
+.padding-left-table{
+  padding-left: 15px;
+}
+.padding-right{
+    padding-right: 45px;
+}
+.padding-top{
+    padding-top: 8px;
+}
+.padding-top-line2{
+    padding-top: 15px;
+}
+
+.table>thead>tr>th.style-th-center{
+    text-align: center;
+}
+
+.table>thead>tr>th.style-th{
+    vertical-align:middle;
+    text-align:center;
+}
+.margin-left{
+    left: 17px;
+}
+.style-button{
+    padding: 4px; 
+    width: 75px;
+}
+.style-backtolist{
+    margin-top:10px;
+    position: relative;
+    padding-right: 0px;
+}
+.style-button-save{
+    height: 30px;
+    position: relative; 
+    padding-top: 3px;
+}
+.right-padding{
+        padding-right: 0px;
+}
+.width-date{
+    width: 185px
+}
+.rightAction{
+    text-align: right;
+}
+.style-th-center {
+    text-align: center;
+}
+
+#invnumber {
+     
+    text-transform:uppercase;
+
+}

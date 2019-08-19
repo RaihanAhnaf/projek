@@ -1,0 +1,165 @@
+<script type="text/javascript">
+   var userinfo = {
+       usernameh: ko.observable('{{.Username}}'),
+       menunameh: ko.observable('{{.Menuname}}'),
+       rolenameh: ko.observable('{{.Rolename}}'),
+       locationid: ko.observable('{{.LocationId}}'), 
+       locationname: ko.observable('{{.LocationName}}'), 
+   }
+</script>
+<script src="{{BaseUrl}}res/main/js/master-inventory.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/master.css">
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/transaction.css">
+<div class="page-bar">
+   <ul class="page-breadcrumb">
+      <li>
+         <span class="bar">Master</span>
+         <i class="fa fa-circle"></i>
+      </li>
+      <li>
+         <a href="/master/inventory">Inventory</a>
+      </li>
+   </ul>
+   <div class="page-toolbar">
+      <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+         <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+         <span class="thin uppercase hidden-xs font2" data-bind="text:inventory.DatePageBar"></span>&nbsp;
+      </div>
+   </div>
+</div>
+<div class="row clearfix">
+<div id="usersett">
+   <div class="col-md-12  panel-content">
+      <div class="portlet box twis">
+         <div class="portlet-title">
+            <div class="caption ">
+               Inventory
+            </div>
+            <div class="tools tool-padding" >
+               </div>
+         </div>
+         <div class="portlet-body">
+            <div class="col-md-16" data-bind="visible: !model.Processing()">
+               <div class="row">
+                  <div class="col-md-12 bottom-margin">
+                     <div class="panel-heading ">
+                        <div class="row">
+                           <div class="col-md-12 padding-left-right">
+                              <div class="tab-content">
+                                 <div role="tabpanel" class="tab-pane active" id="List">
+                                    <div class="tab-pane-content">
+                                       <div class="row">
+                                          <div class="col-md-12 gridfilter">
+                                             <label>Location :</label>
+                                             <input id="locationname" name="Location" style="width:200px" class="full-width filter-space" data-bind="kendoDropDownList: { data: inventory.dataDropDownLocation, dataValueField: 'LocationID', dataTextField: 'LocationName',optionLabel:'Select All',filter: 'contains'},value: inventory.valueLocationSearch"></input>
+                                             <button type="button" onclick="inventory.searchData()" class="btn btn-sm btn-refresh" ><i class="fa fa-search"></i> Search</button>
+                                             <button type="button" class="btn btn-sm green btn-outline btn-flat" data-toggle="modal" data-target="#ImportModalInventory"><i class="fa fa-download"></i>&nbsp;Import From Excel</button>
+                                             <button onclick="inventory.exportExcel()" type="button" class="btn btn-sm btn-outline green"><i class="fa fa-file-excel-o"></i>&nbsp;Export To Excel</button>
+                                             <button  type="button" class="btn btn-sm btn-success btn-flat" onclick="inventory.addNew()" data-toggle="modal" data-target="#AddNewModal"><i class="fa fa-plus"></i>&nbsp;Add New Inventory</button>
+                                          </div>
+                                          <div class="col-md-12" data-bind="visible: !model.Processing()" >
+                                             <div class="grid-tp padding-grid" id="gridinventory"></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            {{template "_loader2.html"}}
+         </div>
+      </div>
+   </div>
+</div>
+<!--form modal-->
+<div class="modal fade" id="AddNewModal" aria-hidden="true" aria-labelledby="modalTitle" role="dialog">
+   <div class="modal-dialog" data-bind="visible: !model.Processing()">
+      <div class="modal-content konten margin16">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">Add Type Inventory</h4>
+         </div>
+         <div class="modal-body">
+            <div class="form-input row" data-bind="visible: !model.Processing(), with:inventory.record">
+               <div class="form-group col-md-10" style="display:none">
+                  <label class="control-labeltrx col-md-4 onlabel">Inventory ID</label>
+                  <div class="control-input col-md-6 pads">
+                     <input type="text" class="formInput form-control input-inline " name="invid" id="invid" placeholder="Type Invoice desc" data-bind="value: INVID">
+                  </div>
+               </div>
+               <div class="form-group col-md-10">
+                  <label class="control-labeltrx col-md-6 onlabel">Inventory description</label>
+                  <div class="control-input col-md-6 pads">
+                     <input type="text" class="formInput form-control input-inline" name="invdesc" id="invdesc" placeholder="Type Invoice desc" data-bind="value: INVDesc">
+                  </div>
+               </div>
+               <div class="form-group col-md-10">
+                  <label class="control-labeltrx col-md-6 onlabel">Unit </label>
+                  <div class="control-input col-md-6 pads">
+                     <input class="formInput form-control input-inline" id="unitDropdown" data-bind="value: Unit"/>
+                  </div>
+               </div>
+               <div class="form-group col-md-10">
+                  <label class="control-labeltrx col-md-6 onlabel">Type </label>
+                  <div class="control-input col-md-6 pads">
+                     <!-- <input class="formInput form-control input-inline" id="typeDropdown" data-bind="value: Type"/> -->
+                     <input name="Site" class="formInput form-control input-inline" data-bind="kendoDropDownList: { data: inventory.DataTypeStock, dataValueField: 'name', dataTextField: 'name', value: Type, optionLabel:'Select Type'}"/>
+                  </div>
+               </div>
+               <div class="form-group col-md-11 align-right">
+                  <button type="button"  class="btn btn-sm btn-success btn-flat" onclick="inventory.saveData()" ><i class="fa fa-floppy-o"></i>&nbsp;<span data-bind="text: inventory.text">Save</span></button>
+               </div>
+            </div>
+            {{template "_loader2.html"}}
+         </div>
+      </div>
+   </div>
+</div>
+<script id="noDataTemplate" type="text/x-kendo-tmpl">
+   <div>
+       No data found. Do you want to add new item - '#: instance.filterInput.val() #' ?
+   </div>
+   <br />
+   <button class="btn btn-sm btn green-meadow btn-flat" onclick="inventory.addNewUnit('#: instance.element[0].id #', '#: instance.filterInput.val() #','#: instance #')"><i class="fa fa-plus"></i> Add new item</button>
+</script>
+<div class="modal fade" id="ImportModalInventory" aria-hidden="true" aria-labelledby="modalTitle" role="dialog" tabindex="-1">
+   <div class="modal-dialog" data-bind="visible: !model.Processing()">
+      <div class="modal-content konten margin16">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">Import Data From Excel</h4>
+         </div>
+         <div class="modal-body">
+            <div class="row" >
+               <!-- <div class="form-group col-md-12"> -->
+               <!-- <label class="control-labeltrx col-md-3 col-sm-3 col-xs-12 onlabel">File</label> -->
+               <label class="col-md-3 col-sm-3 col-xs-12 onlabel" style="margin-bottom:3px">File</label>
+               <div class="col-md-9 col-sm-9 col-xs-12 control-input pads" style="margin-bottom:3px">
+                  <div class="input-group">
+                     <label class="input-group-btn ">
+                     <span class="btn btn-default btn-sm btn-flat">
+                     Please Select <input type="file" id="fDok" class="hide" multiple />
+                     </span>
+                     </label>
+                     <input type="text" id="fInfo" class="form-control input-sm" readonly />
+                  </div>
+               </div>
+               <div class="col-md-12 col-sm-12 col-xs-12 align-right" style="margin-top:5px;" data-bind="visible: !model.Processing()">
+                  <!-- <button type="button" class="btn btn-sm btn-color-bottlegreen btn-import-potition btn-flat" onclick="inventory.importExcel()"><i class="fa fa-upload"></i>&nbsp;Import</button> -->
+                  <a type="button" href="{{BaseUrl}}res/docs/template/template-inventory.xlsx" class="btn btn-sm btn-color-black btn-flat"><i class="fa fa-download"></i>&nbsp;Download Template</a>
+                  <button type="button" class="btn btn-sm btn-color-bottlegreen btn-flat" onclick="inventory.importExcel()"><i class="fa fa-upload"></i>&nbsp;Import</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{template "_loader2.html"}}
+   </div>
+</div>

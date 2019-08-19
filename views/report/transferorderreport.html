@@ -1,0 +1,83 @@
+<script type="text/javascript">
+    var userinfo = {
+        usernameh: ko.observable('{{.Username}}'),
+        menunameh: ko.observable('{{.Menuname}}'),
+    }
+</script>
+<script src="{{BaseUrl}}res/main/js/report-transferorderreport.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/report.css">
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <span class="bar">Report</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <a href="/report/transferorderreport">Transfer Order</a>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="pull-right tooltips btn" data-container="body" data-placement="bottom"
+            data-original-title="date now">
+            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+            <span class="thin hidden-xs font2" data-bind="text:report.DatePageBar"></span>&nbsp;
+        </div>
+    </div>
+</div>
+<div class="panel" data-bind="visible:!model.Processing()">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="portlet box twis">
+                <div class="portlet-title">
+                    <div class="caption">
+                        Transfer Order Report
+                    </div>
+                    <div class="tools tool-padding">
+                        <button type="button" onclick="report.ExportToPdf()"
+                            class="btn btn-sm red btn-outline btn-flat"><i class="fa fa-file-pdf-o"></i>&nbsp;Export to
+                            PDF</button>
+                        <button type="button" onclick="report.exportExcel()" class="btn btn-sm btn-outline green"><i
+                                class="fa fa-file-excel-o"></i>&nbsp;Export to Excel</button>
+                        <button type="button" onclick="report.detailReportPdf()" class="btn btn btn-danger btn-flat"><i
+                                class="fa fa-list-ul"></i>&nbsp;Detail Report</button>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>From :</label>
+                            <input type="text" id="dateStart"
+                                data-bind="kendoDatePicker:{value:report.DateStart,format:'dd-MMM-yyyy'}"
+                                class="filter-space" />
+                            <span class="k-invalid-msg" data-for="customercode"></span>
+                            <label>To :</label>
+                            <input type="text" id="dateEnd"
+                                data-bind="kendoDatePicker:{value:report.DateEnd,format:'dd-MMM-yyyy'}"
+                                class="filter-space" />
+                            <label>Tranfer Type :</label>
+                            <select name="reportType2" id="reportType2"
+                                data-bind="kendoDropDownList:{value:report.valueDDReportType2, data:report.dataDDReportType2, dataTextField: 'Text', dataValueField: 'Value',filter: 'contains', change: function(e){ report.onChangeSalesCode(e.sender._old)}}"></select>
+                            <span>&nbsp</span>
+                            <label data-bind="text:report.storeHouseLabel"> &nbsp Store House :</label>
+                            <select id="storehouse"
+                                data-bind="kendoDropDownList: {value: report.valueStorehouse, data: report.warehouse, dataValueField: 'value', dataTextField: 'text', optionLabel: 'Select ..'}"
+                                name="storehouse">
+                            </select>
+                            <button type="button" onclick="report.refreshGrid()"
+                                class="btn btn-sm btn-refresh refreshLedger btn-margin"><i class="fa fa-search"></i>
+                                Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portlet-body">
+                    <div class="col-md-12 no-padding" data-bind="visible: !model.Processing()">
+                        <div id="gridListTransferShipment">
+                        </div>
+                        {{template "_loader2.html"}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

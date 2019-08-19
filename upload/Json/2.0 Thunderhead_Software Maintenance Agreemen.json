@@ -1,0 +1,42 @@
+{
+   "effectivedate": [
+      {
+         "data-eaciit-start": "88",
+         "start-offset": "299",
+         "confidence": 0.91,
+         "data-eaciit-id": "88",
+         "end-offset": "337",
+         "common-ancestor-id": "86",
+         "clause": "effectivedate",
+         "data-eaciit-end": "88",
+         "contentfromsystem": "\n    means a request for a Change made in writing, the form of which if not agreed at the Effective Date shall be proposed by either party and approved by\u00a0the other such approval not to be unreasonably withheld;\n   "
+      }
+   ],
+   "governinglaw": [
+      {
+         "data-eaciit-start": "608",
+         "start-offset": "4868",
+         "confidence": 0.56,
+         "data-eaciit-id": "608",
+         "end-offset": "4891",
+         "common-ancestor-id": "605",
+         "clause": "governinglaw",
+         "data-eaciit-end": "608",
+         "contentfromsystem": "\n    SCB under this Agreement shall conform to the applicable regulations and statutes of any competent authority and laws of the United\u00a0Kingdom and\n   "
+      }
+   ],
+   "documenttitle": [
+      {
+         "data-eaciit-start": "19",
+         "start-offset": "9",
+         "confidence": 0.64,
+         "data-eaciit-id": "19",
+         "end-offset": "12",
+         "common-ancestor-id": "17",
+         "clause": "documenttitle",
+         "data-eaciit-end": "19",
+         "contentfromsystem": "\n    Standard Chartered Bank\n   "
+      }
+   ],
+   "word-count": 20295
+}

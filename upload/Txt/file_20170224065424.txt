@@ -1,0 +1,1109 @@
+Scope China Master Processing Services Agreement
+Variation Agreement No.1 of 2015 to Internal Sourcing - Master Processing Services Agreement
+dated 1 November 2012
+Effective Date of this Variation Agreement:    IS
+Parties:
+(1)    Standard Chartered Bank, UK Head Office, a company incorporated in England by Royal Charter whose principal office is located at 1 Basinghall
+Avenue, London EC2V 500, United Kingdom ("SCB UK");
+(2)    Standard Chartered Bank, Singapore Branch, a Singapore registered branch of SCB UK whose principal place of business in Singapore is located at 8 Marina
+Boulevard, MBFC Tower 1, Singapore 018981 ("SCB SG");
+(3)    The other Standard Chartered Bank branches and members of the SCB Group who become parties of this Agreement through the accession mechanism pursuant to clause 4.2 (the "Other SCB Entities" and collectively with SCB UK and SCB SG, the "SCB Entities"); and
+(4) Scope International (China) Co. Limited, a company (No. 797296581) incorporated in the People's Republic of China (PRC) whose registered office is located at No. 35, Xinhuanbei Road, TEDA, Tianjin, 300457, PRC ("Intra-Group Supplier'' or "IGS").
+each a "Party" and collectively the "Parties".
+Background
+A. The Parties have entered into the following agreement ("MSA"):
+Contract Name
+Internal Sourcing - Master Processing Services Agreement
+Contract Date
+1 November 2012
+B. The Parties now wish to amend certain provisions in the MSA on the terms set
+out below.
+1. Definitions Interpretation
+1.1 Definitions
+Unless expressly stated otherwise, capitalised terms in this Variation Agreement shall have the meaning given to it in the MSA.
+1.2 Interpretation
+Any rules of interpretation contained in the MSA shall apply equally and in the same way to this Variation Agreement.
+2. Variation
+3.1 In accordance with Clauses 6.1 and 6.3 of the MSA and in consideration of the mutual undertakings set out herein, the Parties hereby amend the MSA in the manner shown in the Schedule (which is a redlined version of the MSA detailing the amendments).
+3. General
+3.1 This Variation Agreement sets out the entire agreement and understanding between the Parties, and supersedes all proposals and prior agreements, arrangements and understandings between the Parties, relating to its subject matter. For clarity, this Variation Agreement supersedes and extinguishes Variation Agreement No.1 of 2014 to Internal Sourcing - Master Processing
+Services Agreement (dated 1 November 2012) executed by the Parties in 2014.
+3.2 Each party must promptly at its own cost do all things (including executing and if necessary delivering all documents) necessary or desirable to give full effect to this Variation Agreement.
+3.3 The Parties intend each provision of this Variation Agreement to be severable and distinct from the others. If a provision of this Variation Agreement is held to be illegal, invalid or unenforceable, in whole or in part, the Parties intend that the legality, validity and enforceability of the remainder of this Variation Agreement shall not be affected.
+3.4 This Variation Agreement may be entered into in any number of counterparts and by the Parties on separate counterparts, all of which taken together shall constitute one and the same instrument.
+3.5    Any dispute arising out of or in connection with this Variation Agreement, including
+any question regarding their existence, validity or termination, shall be referred to and finally resolved by arbitration under the LCIA Rules, which Rules are deemed to be incorporated by reference into this Clause.
+3.6 The number of arbitrators shall be three. Each party shall nominate an arbitrator and the third arbitrator, who shall be the chairman of the tribunal, shall be appointed by the LCIA.
+3. 7    The seat, or legal place, of arbitration shall be London.
+3.8 The language to be used in the arbitral proceedings shall be English.
+3.9 The governing law of this Variation Agreement shall be the substantive law of England.
+Signed for and on behalf of all SCB Entities by:
+Signature:
+ 
+(Authorised Signature)
+
+Name (Block Letters): Position:
+Date:
+
+
+ttl'.;.-Jl--f::, ,
+\ S3-- (.fe\- '1\l <'.) Cc) G- y
+\'.) 'f \3--rLA
+"\: L O v\:l S. , -
+C(}..-c'.) 4:--t--A ()    G:-- S
+2J4 . 3- • 1
+S
+
+tj-(\> \'J
+
+Signed for and on behalf of Scope International (China) Co. Limited by:
+Signature:
+(Authorised Signature)
+Name (Block Letters):
+Position:
+Date:
+3.7 The seat, or legal place, of arbitration shall be London.
+3.8 The language to be used in the arbitral proceedings shall be English.
+3.9 The governing law of this Variation Agreement shall be the substantive law of England.
+Signed for and on behalf of all SCB Entities by:
+Signature:
+(Authorised Signature)
+Name (Block Letters):
+Position:
+Date:
+Signed for and on behalf of Scope International (China) Co. Limited by:
+1"'" ;,,
+Signature:
+J ./'i"''tAuthorised Signature)
+Name (Block Letters):
+Position:
+Date:
+SCHEDULE
+DATED 1 November 2012
+(1) STANDARD CHARTERED BANK, UK HEAD OFFICE,
+(2) STANDARD CHARTERED BANK, SINGAPORE BRANCH,
+(3) The OTHER SCB ENTITIES who have acceded to this Agreement (see clause 4.2)
+and
+(4) SCOPE INTERNATIONAL (CHINA) CO. LIMITED
+INTERNAL SOURCING
+MASTER PROCESSING SERVICES AGREEMENT
+CONTENTS PAGE
+Index Page
+1.    DEFINITIONS AND INTERPRETATION...............................................................................7
+2.    COMMENCEMENT AND TERM OF AGREEMENT AND SLAS ••••••••••••....••....••••••••••••.•••••••••••. 13
+3.    SCOPE OF THE AGREEMENT •••••••.••.....•••.•.•••••••••••••••••.•••.••••.•••••••••••••••••••...••.••.••••••••••• 13
+4.    STRUCTURE OF THE AGREEMENT, SLAS AND ENTIRE AGREEMENT ••••••••••••••••.••.••••.•••••••14
+5.    REGULATORY APPROVAL ••••..•••••••.•••••••••..••••••..•••••••.••••••••••••••••••••.••••••••••••••••••••••••••••• 14
+6.    VARIATION AND PERMITTED CHANGE CONTROL •.•••••••••••••••••••.•••.•..•••.•••••••••••••••••••.•••••• 15
+7.    RESIDUAL RISK MANAGEMENT AND SUB-CONTRACTING •••.•••••••.••••••••••••••••••••••.•••.••••••••15
+8.    BANKING SECRECY AND COUNTRY REGULATORY REQUIREMENTS ••.•••••••••••.••••••.••••••••..• 16
+9.    PROVISION OF SERVICES ••••••..••••••••••••••••.•.••••••.••.•••••••••••••••••••••.••••.•••.•••••••••••••••.•••..••• 17
+10.    IGS OBLIGATIONS ••••••••••••••••••.••.••••••••••.••.••••••••••••••••••.•..•••••••••••••••••••••••.•..••••••••••••••••• 17
+11.    SCB ENTITY OBLIGATIONS •••••••••••..•••••••••.••••••••.••.••...••••••..•••••••••••••••••••••••••••••.•••••••••••• 18
+12.    WARRANTIES ••••.••••.••••••••••••••.••••••••••••••••.•••••••••••••••••••••.••••••••••••••.•••••••••••••••••••..•••••••• 18
+13.    LIABILITY •••••••••••••••••••.•••••••••.••••••••••••••••.•..•.••••••••••••••••••••••••••••.••••••••••••••••••.••.••••••••.•• 19
+14.    STAFF •••••••••••••••••••••••••••••••••••.••.••••••••••••••••••••••••••••••••••••••••••••••••••.•••••.••••••••••.•••••••••••• 19
+15.    FEES ••••••••••••••.••••.••••••••••••••••••••••••••••.•••.•••••••••••••••••••••.••...•••••••••.••••••••••••.•••.•.••••••••••. 20
+16.    EXCEPTION MONITORING AND PROCESS RISK ANALYSIS...............................................21
+17.    REPORTING SERVICE REVIEW MEETINGS AND ESCALATION...........................................21
+18.    ONGOING RISK ASSURANCE •••••••••••••••••••••••••••••••••••••••••••••••••••••••.••••.•••••••••••••••••••••••••• 22
+19.    CONTINGENCY PLANNING AND FORCE MAJEURE •••••••••••••.•••••••••••••••••••••••••••••••.••••.••..••• 22
+20.    TERMINATION ••••••••••.••••••••••.•••••••.••••••••••.•.••••••.••••••.••••••••••••••••••••••••••••••••••••••••••••••••••• 23
+21.    CONFIDENTIALITY ••••••••••••••••••.•••••••••••••••••••••••••••••••••••••••••••••••••••••••..•.•••••••••••••••••••••••• 24
+22.    DATA PROTECTION AND INFORMATION SECURITY.........................................................26
+23.    AUDIT •••••••••••••••••••••••••••••••••••••••.•••••••••••.•.•••••••••••••••••••••.••••••••••••••••••••••••.••.•••.•••••••••.• 27
+24.    DISPUTES..................................................................................................................28
+25.    OWNERSHIP OF SOFTWARE AND EQUIPMENT ••••••••••••••••••••••..•••••••••••••••••••••••••.•••••••••••••28
+26.    RECOVERY AND RESOLUTION PLANNING AND ASSIGNMENT •••••••••••••••••••••••••••.••.•••••.••.•• 28
+27.    NO PARTNERSHIP/ AGENCY •••••••••••••••••••••.•••.•••••••••••••••••••••••••••••••••.•••••••••••••••••••••••••••• 30
+28.    WAIVER ••••••••••••••••.••••.•••••••••••••••••••••••••••••••.••••.•••••••••••••••••••••••••••.•••••••••••••••••••••••••••••30
+29.    SEVERABILITY •••••••••••••••••••••.••••••.•••••••••••••••••••••••••••••.•••••.••••••••••••••••••••••••••••••.••••••••.•• 31
+30.    NO THIRD PARTY RIGHTS ••••••••••••••••••••••.••.•••••••••••••••••••••••••••••••••••••.•••••••••••••••••••••••••••• 31
+31.    COUNTERPARTS •••••••••••••••••••••••••••••••••••••.••••••••••••••••••••••••••••••••••••.•••••••••••••••••••••••••••.• 31
+32.    FURTHER ASSURANCE .••••••••.•••••••.•••••••••••••••••••••••••••••••••••••••••••••••••••.•••••••••••••.••••.•••••• 31
+33.    NOTICES •••••.•••••••.•••..••••••••••.•••••••••••••••••.•.••••••••••••••••••••••••••••••••••••.••••••.••••••••••••••••••••• 31
+34.    GOVERNING LAW AND JURISDICTION...........................................................................32
+35.    INSURANCE ••••••••••••.•••••••••••••••••••••••••••.•••.••••••••.••••••••••••••••••••••••••.••••••••••••••••••.••••••••••• 32
+SCHEDULE 1 .........................................................................................................................32
+PRO-FORMA SLA FOR PROCESSING SERVICES.............................................................32
+SCHEDULE 2 .........................................................................................................................43
+DETAILS OF DELEGATE ••••••••••••••••••••••••••••••••••••••••••.••.•••••.•••••••••••••••••••••••••••••.••••.••••••• 43
+SCHEDULE 3 .........................................................................................................................44
+FORM OF ACCESSION LETTER ••••••••••.••.•••.•.••••••••••••••••••••••••••..•••••••.•••••••••••••••••.•••••••.••• 44
+SCHEDULE 4 .........................................................................................................................45
+PERMITTED CHANGE PROCEDURE FOR SLAS ..•••..•.••••••••••••••••••••.•••••.••••••••••••••••••••••••••• 45
+SCHEDULE 5 .........................................................................................................................48
+COUNTRY REGULATORY REQUIREMENTS.....................................................................48
+SCOPE CHINA MASTER PROCESSING SERVICES AGREEMENT
+THIS AGREEMENT is made on 1 November 2012
+BETWEEN:
+(5) Standard Chartered Bank, UK Head Office, a company incorporated in England by Royal Charter whose principal office is located at 1 Basinghall, London EC2V 5DD, United Kingdom ("SCB UK");
+(6) Standard Chartered Bank, Singapore Branch, a Singapore registered branch of SCB UK whose principal place of business in Singapore is located at 8 Marina Boulevard, MBFC Tower 1, Singapore 018981 ("SCB SG");
+(7) The other Standard Chartered Bank branches and members of the SCB Group who become parties of this Agreement through the accession mechanism pursuant to clause 4.2 (the "Other SCB Entities" and collectively with SCB UK and SCB SG, the "SCB Entities"); and
+(8) Scope International (China) Co. Limited, a company (No. 797296581) incorporated in the People's Republic of China (PRC) whose registered office is located at No. 35, Xinhuanbei Road, TEDA, Tianjin, 300457, PRC ("Intra-Group Supplier" or "IGS").
+WHEREAS:
+(A) Each of the SCB Entities are members of the SCB Group and carries on banking, and other financial business or perform operations services on behalf of other SCB Entities in various locations around the world.
+(B) The IGS is a wholly owned subsidiary within the SCB Group and provides, among other things, operations processing services.
+(C) The SCB Entities (including Scope companies other than the IGS) wish to engage the IGS to provide operations processing services upon the terms set out in this Agreement.
+IT IS HEREBY AGREED as follows:
+DEFINITIONS AND INTERPRETATION
+1.1 Unless the context otherwise requires, the following capitalised words and expressions when used in this Agreement or any SLA shall have the following meanings:
+an "Approved Contract"
+
+"Auditor"
+
+"Billing Period"
+
+"Business Day"
+
+means an agreement as identified in the
+Internal Sourcing Procedures for engaging certain SCB Group companies to provide services to other SCB Group companies;
+means any person (whether an external adviser or employees within the SCB Group) appointed by the SCB Entity or a Regulatory Authority to conduct audits, assessments or inspections of any part the business or operations of that SCB Entity or any part of the SCB Group;
+means in relation to any type of Services provided by the IGS to a SCB Entity pursuant to the relevant SLA, a calendar month, or such other period as may be agreed by the IGS and the relevant SCB Entity;
+means a day on which banks in the relevant location are ordinarily open for business;
+
+"Commencement Date"
+
+means 15 September 2012;
+
+"Confidential Information" means all information or material (whether commercial, financial, technical or otherwise) in whatever form (whether oral, in writing, electronically recorded, machine readable or otherwise) which (1) by its nature should be treated as secret and confidential and which each SCB Entity desires to protect against unrestricted disclosure or competitive use, or (2) which is designated as such, including:
+a) Customer Data;
+b) information relating directly or indirectly to any SCB Entity's business or that of any other member of the SCB Group, including details of trade secrets, knowhow, strategies, ideas, operations, processes, methodologies and practices;
+c) information relating directly or indirectly to the any SCB Entity's plans, intentions, know-how, market opportunities and business affairs or those of any other
+Standard
+Chartered
+member of the SCB Group or its customers (including potential customers) and clients;
+d) works of authorship, products and materials written and prepared by any SCB Entity or of any other member of the SCB Group in relation to the subject matter of the SLAs including to computer
+programs, data, diagrams, charts, reports, specifications, sketches, inventions and working papers or similar materials of whatever nature or on whatever media relating thereto; and
+e) any information resulting directly or indirectly from the discussions or negotiations relating to the subject matter of the SLAs and all copies, notes, records and all related information (in
+any form) generated by the IGS, any SCB Entity or any other member of the SCB Group based on or arising from any disclosures in relation to the subject matter of the SLAs;
+"Contingency Event" means the occurrence of any event (whether within or beyond the reasonable control of the
+IGS and including any Force Majeure Event) which prevents or interferes in the provision of the Services in the normal manner or impairs the quality of the Services being performed by IGS;
+"Contingency Plan" means any plan, procedure or arrangement which is designed to be implemented following a Contingency Event including plans called Business Continuity Plans (or BCPs), Disaster Recovery (or DRs) or Business Recovery Plans;
+"Country Regulatory Requirements" means the specific and unique country laws and /or regulations pertaining to a SCB Entity that the IGS needs to comply with when performing the Services for that SCB Entity which are over and above the generic regulatory requirements like banking secrecy, data protection and privacy. The Country
+Regulatory Requirements are set out in Schedule 5;
+"Customer Data" means any information or data of any kind (whether held in paper, electronic or other form) relating to any customer of any SCB
+8
+"Data Protection Laws"
+
+"Delegate"
+
+"Force Majeure"
+
+"General Terms"
+
+"IGS Equipment"
+
+"IGS Representative"
+
+"IGS Software"
+
+"Internal Sourcing Arrangement"
+
+Entity and that customer's accounts or transactions;
+means all statutes, laws, secondary legislation, regulations, guidelines and industry standards applicable to SCB Group pertaining to privacy, confidentiality, and/or the protection of Personal Data or corporate data;
+has the meaning as set out in Schedule 2 (or such equivalent or successor role), or such
+other individual as notified by the Delegate as
+set out in clause 6.2Gteuse-Sr4;
+means any cause beyond the reasonable control of the IGS including any act of God, war, riots, acts of the public enemy, fires, strikes, labour disputes, accidents, or any act in consequence of compliance with any order of any government or governmental authority;
+means the general terms and conditions set out
+in the main body of this Agreement which apply
+to all SLAs:
+means any equipment owned or leased from time to time by the IGS which is utilised by the IGS in providing operations processing services;
+in relation to each Internal Sourcing Arrangement, means the person named in the SLA to authorise any Permitted Change under, and to act as the primary contact/liaison of the IGS at the Service Review Meetings in connection with, that SLA;
+means any software owned from time to time by the IGS which is utilised by the IGS in providing operations processing services;
+means any Service or activity to be performed and/or provided by an IGS to a SCB Entity;
+
+"Internal Sourcing Procedures" for the purposes of this Agreement means the Internal Sourcing Procedures for Processing
+Services and Processing Services Manual which are part of the SCB Group Outsourcing
+Policy and Procedures;
+"Key Employee" means any person employed or engaged by the IGS as may be notified to the IGS by any SCB Entity from time to time;
+"New Services" also referred to as means
+"New Internal Sourcing
+
+Arrangements" in the Sourcing Procedures
+Internal • a new/ different type of service provided by the IGS to the SCB Entity;
+• services provided to support a product/ service not already supported by the IGS for that SCB Entity;
+• an expansion of scope of a service the IGS is already providing. An "expansion of scope" means increase in data fields; increase in risks; or a change in technology;
+• the SCB Entity wishes to replace an entire existing SCB Entity function/ team with services to be provided by the IGS;
+"Parties"
+means the IGS and the SCB Entities;
+"Permitted Change"
+has the meaning given to it in Paragraph 1 of Schedule 4 - Permitted Change Control
+Procedure;
+"Personal Data"
+means any data, records or information (in any form):
+a) relating directly or indirectly to a person (including but not limited to past, present and/or future personnel, customers, suppliers and third party associate of any
+SCB Entity);
+b) from which it is practicable for the identity of the person to be directly or indirectly ascertained;
+"Regulatory Authority"
+in relation to a SCB Entity, means any central bank, government department or agency, or other authority in any part of the world which has the responsibility of supervising and/or
+regulating banks and other financial institutions generally;
+"Residual Risk Management" or means the transfer of Services from the IGS to "RRM" another Scope Company. The rules and
+"Resolution"
+conditions under which a RRM can take place are set out in the Internal Sourcing Procedures. For the purposes of this Agreement, RRM is not sub-contracting;
+means the implementation by a regulator of its
+resolution powers in relation to the SCB Entity
+or a SCB Entity successor under the United
+Kingdom ("UK") Banking Act 2009 (as
+amended) or any other future legislative
+measures extending to financial institutions or
+their affiliates, or equivalent resolution
+“Resolution Authority”
+
+"SCB Entity"
+
+"SCB Entity Representative"
+
+"SCB Group"
+
+legislation applicable to non-UK parties and
+having the aim of safely and effectively
+resolving a financial institution or its group in
+financial difficulties;
+in relation to the SCB Entity or a SCB Entity
+successor, means any resolution authority
+including but not limited to the Bank of England
+and the resolution administrator, or any central
+bank, government department or agency in any
+part of the world which has the responsibility for
+Resolution in its jurisdiction;
+means any member of the SCB Group (other than the Scope Companies) who is a party to this Agreement;
+in relation to each Internal Sourcing Arrangement, means the person named in the SLA to authorise any Permitted Change under, and to act as the primary contact/liaison of that SCB Entity at the Service Review Meetings in
+connection with, that SLA;
+at any point, means Standard Chartered PLC, a company Incorporated in England and Wales, and all its subsidiaries existing at that point;
+"SCB Group Information Security means the technical and organisational security Policy" standards, requirements and policies of SCB
+Group;
+"SCB Group Outsourcing Policy means the policies and procedures approved and Procedures" and adopted by the Group Operational Risk
+Committee (or its successor) of the SCB Group for the purposes of regulating and governing all Internal Sourcing Arrangements entered into by any member of the SCB Group. The Internal Sourcing Procedures is a part of the SCB Group Outsourcing Policy and Procedures;
+"Scope Company" means a wholly owned non-banking subsidiary of Standard Chartered PLC which is incorporated for the purposes of providing processing and IT services back to the SCB Group;
+"Services" means the operations processing services which constitute the Internal Sourcing Arrangements being outsourced from the relevant SCB Entity to IGS;
+"Service Fees"
+
+"Service Levels"
+
+is as defined in clause 15;
+means the performance and quality criteria (including those relating to volumes, turnaround
+time and error rates) as contained in any SLA;
+"SLA" means a service level agreement which may be entered into from time to time by the IGS and a SCB Entity documenting the specific type of operations processing services to be provided by the IGS to the relevant SCB Entity in accordance with clause 4;
+"Standard Chartered Equipment" means any equipment owned or leased by any SCB Entity which the IGS may be authorised from time to time by the relevant SCB Entityto use for the sole purpose of providing the Services;
+"Standard Chartered Software" means any software owned or licensed by any SCB Entity which the IGS may be authorised from time to time by the relevant SCB Entity to use for the sole purpose of providing the Services;
+"System" means the operation or configuration comprising all computer and other electronic equipment and software (including any Standard Chartered Equipment and any Standard Chartered Software) which is to be utilised by the IGS in providing the Services;
+"Third Party Software" means any software licensed from time to time by a third party to the IGS which is utilised by the IGS in providing operations processing
+services;
+"Transition Out Assistance"
+
+'Transition Out Period"
+
+"Transition Out Plan"
+
+means, in relation to a SLA, the assistance and related services to be provided by the IGS on termination of that SLA (including where such is due to termination of this Agreement), as set out in any Transition Out Plan, SLA or as required by the relevant SCB Entity;
+means the period from the termination date of a SLA during which Transition Out Assistance is to be provided by the IGS in relation to the Service in that SLA until such Service has been transitioned out, as specified in the relevant
+Transition Out Plan or as stipulated by the relevant SCB Entity;
+means the plan developed by the relevant SCB Entity (if any) detailing how a transition out is to be carried out, as set out in a SLA or as required by the relevant SCB Entity.
+
+1.2 Unless otherwise expressly provided, in this Agreement and any SLA:
+(a) references to this Agreement, any SLA or any other document shall include references to this Agreement, that SLA or such other document as amended, varied, supplemented, replaced and/or restated in any manner from time to
+time;
+(b)    references to clauses and schedules shall be construed as references to
+clauses of, and schedules to, this Agreement;
+(c) references to any enactment, statute or legislation shall be deemed to include references to such enactment, statute or legislation as re-enacted, amended or extended and any subordinate legislation made under it;
+(d)    headings and sub-headings are inserted for convenience only and shall be
+ignored in construing this Agreement and any SLA;
+(e)    references to "including" and "include" shall not be construed restrictively
+but shall mean "including without limitation" or "including without prejudice to the generality of the foregoing" and "include without limitation" respectively; and
+(f) any consent, approval or other permission required in this Agreement or any SLA to be given by any SCB Entity shall, unless otherwise specified, be given, delayed, withheld or refused in that SCB Entity's absolute discretion.
+1.3 In the event of a conflict between a term of this Agreement and a term of any other SLA, this Agreement shall prevail to the extent of the conflict, unless otherwise expressly agreed by the relevant Parties.
+2    COMMENCEMENT AND TERM OF AGREEMENT AND SLAS
+2.1 This Agreement shall come into effect on the Commencement Date and shall continue until terminated in accordance with clause 20.
+2.2 A SLA shall come into effect on the Effective Date of that SLA and continue for a period of 1 year (or for such longer period as otherwise agreed in the SLA) unless it is terminated earlier in accordance with clause 20 (vvhichever is the earlier). Upon the expiry of each SLA, the SCB Entity may renew the SLA for a further period of 1 year
+(or for such longer period as otherwise agreed in the SLA). Upon each anniversary of the Effective Date for that SLA, the SCB Entity shall carry out its annual review as required under the Internal Sourcing Procedures and may renew the SLA for a
+2.3 The SCB Entities agree that any Services which they wish the IGS to perform as of the Commencement Date must be documented through a SLA prescribed under this Agreement, and not under a SLA or SOW under any other agreements between the SCB Entities and the IGS or any other documentation whatsoever.
+3    SCOPE OF THE AGREEMENT
+3.1 This Agreement is the Approved Contract for engaging Scope International (China) Co. Limited to provide any operations processing services to a SCB Entity.
+3.2 This Agreement does not cover the provision of IT Services, contact centre services or data centre services, for which there are separate Approved Contracts.
+3.3 The Parties agree that they may not expand the scope, or vary the application, of this Agreement in such a way as to be inconsistent or conflict with the terms of the Internal Sourcing Procedures.
+4    STRUCTURE OF THE AGREEMENT, SLAS AND ENTIRE AGREEMENT
+4.1 This Agreement is a master agreement to which all SCB Entities who wishes to engage the IGS to provide any of the Services must be a party.
+4.2 A SCB Entity becomes a party to this Agreement either by being an original signatory to this Agreement or subsequently accedes to it by signing an Accession Letter (as set out in Schedule 3) and providing this to the IGS and the Delegate.
+4.3 In order to initiate any Services, a SCB Entity and the IGS must execute the appropriate SLA in the form prescribed in Schedule 1. Nothing in this Clause 4.3 shall operate to prevent any of the Parties from entering into other agreements
+(including other master services agreements) for services similar in nature to this
+Agreement or to prescribe other forms of SLAs to document the services under those
+agreements.
+4.4 Each category or bundle of Services or any New Services to be provided by the IGS to a SCB Entity must be documented in a separate SLA.
+4.5 SLAs are bilateral between the IGS and one SCB Entity. For these purposes, each Standard Chartered Bank branch is regarded as a SCB Entity.
+4.6    The Parties agree that ati-each SLAs between a SCB Entity and the IGS will constitute a_separate individual contracts between its signatories and incorporate the terms of this Agreement. TtiMs-Aareement-and-eash-SLA-and-any-dssaments-reterred
+te-4bereiar-and—constitute.........the.............enttfe-aoreement-between—as—between—therndhe
+retevant-Parties—and—supersede—ait-anv--nrevieus--anreemente—affanaement--or
+understandine-detweendhenn-reiatine-te-the-subteot-fnatter-thev-soverseives:—Eash
+Party-aotoowiedoes-and-aereesdhatdn-entennednto-this-AareernenPand/or-any-SbA;
+Itdwsnrot^efed-onerteen-induoeddo-eHtenintedbis-AgFeement-onany-StA-by-nnny
+i inHprofonHinn AA/HpfHpr in writinn nr>f\ of    A.A./hpthpr rtnrfvz tn
+HI IH”I OXCTl iMtriy4'"\ Wl IvStl I™l II I......Vvl Itll —VI I lUtj—vl II l™ vUi~rOOI ly p*”l Jvl i \VVl I 11 I™l .......|HCTt ty ta
+Arirppmpnt pr not\ rplntinn tn tHp eiiHipcj' ranttpr fhi^. An^pprupnt ^nH/nr nn\/ xi i io/a^4 i 111 ™ i ix........v! i m 17 i kZ? u tti 1x4.........tv/ u i™ jHUfvm 11 ict t tvi vt xitto /    ^^»11 i^rrt g 1 m/ aji cti 1 y
+SLA other than as expressly set out therein. Nothing in this Agreement shall affect a
+Party's liability in respect of any fraudulent misrepresentation. This Agreement and each SLA constitute the entire agreement between the relevant Parties relating to its
+subject matter and supersedes and extinguishes all previous drafts, agreements,
+arrangements and understanding or agreement between them, whether written or
+oral, relating to its subject matter. Each Party to the SLA acknowledges that, in
+entering into a SLA, it has not relied on, and shall have no right or remedy in respect
+of, any representation or warranty (whether made negligently or innocently) that is
+not set out in the SLA or this Agreement.
+4.7    No SCB Entity shall have obligations or liabilities in respect of any SLAs which it is not a party of.
+5 REGULATORY APPROVAL
+5.1 The SCB Entity agrees that all SLAs and Services to be provided shall only commence once the relevant SCB Entity has notified the relevant Regulatory Authority, received the relevant regulatory approval or non-objection and has otherwise fulfilled the necessary regulatory conditions to engage the IGS. It is not the responsibility of the IGS to ensure that regulatory approval or non-objection or any other regulatory conditions have been met before the commencement of the Services.
+5.2 The IGS shall co-operate and provide such information as is necessary to assist the SCB Entity to notify or seek approval from its Regulatory Authority.
+5.3 If a Regulatory Authority does not give its approval for, or objects to, the engagement of the IGS to provide any Services to a SCB Entity, the SCB Entity shall have the right to terminate the relevant SLA forthwith on written notice to the IGS.
+6 VARIATION AND PERMITTED CHANGE CONTROL
+6.1 In order to facilitate the smooth administering of this Agreement, SCB Entity+e-s hereby appoint§ the Delegate (together with the Delegate's delegates from
+time to time) identified in Clause 6.2 belovv to be its authorised representative and to act for and on its behalf in relation to variations to the General Terms of this Agreement and for Schedules 1 to 5.
+6.2
+a replacement delegate by notification in writing to the SCB Entities and the Chief
+Executive Officer (or equivalent) of the IGS.
+6.3 All variations to the General Terms of this Agreement and Schedules 1 to 5 must be signed by the Delegate (for and on behalf of the SCB Entities) and the Chief Executive Officer (or equivalent) of the IGS and shall (unless otherwise stated) apply to all SLAs in force at that point under the Agreement.
+6.4 Any Permitted Change to a SLA must comply with the procedure laid out in Schedule 4. Any Permitted Change to a SLA shall be executed by the SCB Entity who is a party to that SLA, and the IGS. The SLA identifies the representative for the SCB
+Entity and the IGS to act for and on its behalf respectively in relation to such Permitted Change.
+6.5 Any other change to the SLA other than a Permitted Change is deemed to be a New Service for which a new SLA needs to be entered into.
+6.6 Any other purported change to the SLA that is not a Permitted Change is null and void.
+7 RESIDUAL RISK MANAGEMENT AND SUB-CONTRACTING
+7.1 The Internal Sourcing Procedures sets out how Residual Risk Management (RRM) or sub-contracting can be undertaken by the IGS. The Parties agree to comply with such requirements and IGS agrees not to undertake any RRM or sub-contracting contrary to such requirements.
+7.2 The IGS may carry out RRM in respect of any Services in the manner permitted in the Internal Sourcing Procedures and the requirements of the relevant SLA.
+7.3 The IGS agrees that it may not sub-contract the performance of part of the Services unless it first obtains the written consent of the relevant SCB Entity. The SCB Entity shall be responsible for obtaining the requisite regulatory approval or non-objection for any such sub-contracting.
+7.4    If the SCB Entity permits the IGS to sub-contract,
+(a)    the IGS shall ensure that it is entitled to assign and transfer all its rights and
+obligations under any sub-contract to the relevant SCB Entity, that no conditions are attached to such entitlement and that, following any such assignment or transfer, the relevant SCB Entity shall be entitled to make reasonable use of the subject-matter of the sub-contract for their respective benefit;
+(b)    if, in the reasonable opinion of the SCB Entity, any of the obligations of the
+IGS which have been subcontracted are not being performed in accordance
+with the SLA, that relevant SCB Entity may withdraw its consent, and the IGS shall perform the relevant obligations itself immediately;
+(c)    the IGS shall remain responsible to the SCB Entity for the performance and
+observance of all its obligations under the relevant SLA,
+(d) the sub-contractor shall have no employment relationship with SCB Entity; and
+(e) the IGS' contract with the sub-contractors will:
+(i) contain terms at least as stringent as those set out in this Agreement and the relevant SLA; and
+(ii)    ensure that the relevant SCB Entity and its Regulatory Authority will
+have direct audit rights against the sub-contractor.
+7.5 Nothing in this clause 7 prevents or prohibits the IGS from engaging third party services providers for the provision of services which are incidental (but not core) to the IGS's business and operations provided that such third party service providers do not perform any aspects of the Services themselves or have access to any Customer Data.
+8    BANKING SECRECY AND COUNTRY REGULATORY REQUIREMENTS
+8.1 The IGS acknowledges and agrees that each SCB Entity is bound by banking secrecy laws in its respective jurisdiction. The IGS shall comply with such banking secrecy laws and shall not take any step which might cause any SCB Entity to contravene any such laws.
+8.2 Without prejudice to the requirements laid down in clause 22, the IGS agrees that it may only access, process and otherwise deal with any Customer Data and/or personal data in the manner allowed under each SLA and as directed by the SCB Entity from time to time. No other use or processing of Customer Data and/or personal data is allowed.
+8.3 Without prejudice to generality of clauses 8.1 to 8.3 the IGS undertakes to comply with the Country Regulatory Requirements.
+8.4 Schedule 5 sets out the Country Regulatory Requirements. The Country Regulatory Requirements comprises separate parts for each SCB Entity country ("Country Section").
+8.5 Each Country Section lists out the laws, regulations and other regulatory requirements that generally apply to Internal Sourcing Arrangements that the IGS needs to comply with when providing Services to the SCB Entity of that country.
+8.6 Each Party to this Agreement agrees that a Country Section may be amended unilaterally by the SCB Entity of that country by notifying the IGS. The changes to the requirements will be effective as of the date of such notification.
+8.7    For convenience, the Parties also agree that the Country Regulatory Requirements
+will be uploaded and maintained at a SCB Group Sharepoint site for Internal Sourcing.
+8.8 The IGS shall ensure that all Customer Data that is stored or archived by the IGS shall be segregated by country/territory and by SCB Entity.
+8.9 Nothing in this Agreement will operate to prevent a SCB Entity from disclosing any information concerning its operations and customers (including any Services provided to it hereunder) to its Regulatory Authority.
+9 PROVISION OF SERVICES
+9.1    The IGS shall provide the Services to the relevant SCB Entity in accordance with the
+terms, standards, Service Levels, processes and procedures of this Agreement, and the relevant SLA.
+10 IGS OBLIGATIONS
+10.1 The IGS shall at its own cost:
+(a) establish and maintain at all times during the term of this Agreement all premises, facilities, equipment, resources and technical expertise necessary for the effective conduct, management and fulfilment of its obligations under the SLAs;
+(b) provide all Services with all due skill and care and to at least as high a standard as that achieved by the relevant SCB Entity on handing over the Services to the IGS;
+(c) establish and maintain such safety and physical security equipment and procedures as are necessary to comply with any safety and security requirements contained in any SLA;
+(d) maintain at all times a register of contracts, whether current or expired, between it and any third parties relating in any way to the provision of the Services, and shall upon request make the register of contracts available to the relevant SCB Entity for inspection or copying;
+(e) comply in all respects with any policies, procedures or practices of the SCB Group in existence from time to time which may be relevant to the operation of its business or the performance of its obligations under the SLAs;
+(f)    take all reasonable measures to protect, to the extent that they are within the
+IGS' control, each SCB Entity's records, data, information and programs
+against loss, damage or corruption by making adequate and timely back-up of the records, data, information and programs and maintaining these in a safe and secure manner;
+(g)    take all steps to maintain its status and/or registration under any technology
+park or corridor (such as Software Technology Parks of India or Multimedia Super Corridor) and any other preferential or favourable corporate, tax or
+other status which it may currently enjoy;
+(h)    notwithstanding any other term of the SLAs, promptly and fully comply with
+any request or instruction made by any SCB Entity from time to time in relation to any aspect of the SLAs and/or the provision of the Services and/or otherwise in relation to any of the subject matter of the SLAs; and
+(i)    ensure the efficient use of resources and that the Services are provided in an
+efficient and timely fashion.
+10.2 The IGS shall also observe and maintain standards of professional ethics and conduct which would reasonably be expected from a member of the SCB Group including those which may be contained in any SCB Group code of conduct or other SCB Group policies from time to time.
+11 SCB ENTITY OBLIGATIONS
+11.1 Each SCB Entity shall give such assistance and support to the IGS as that SCB Entity reasonably considers necessary to enable the IGS to deliver the relevant
+Services.
+12 WARRANTIES
+12.1 The IGS represents and warrants to the SCB Entities that:
+(a) it is a company duly incorporated, validly existing and has the corporate power and necessary governmental and other consents, approvals, licences and authorities under the laws of the country in which it is operating to own its assets and carry on its business;
+(b) it has power to enter into, exercise its rights and perform and comply with its obligations contained in the SLAs, and no limits on its corporate powers will be exceeded by executing this Agreement;
+(c) all actions, conditions and things required to be taken, fulfilled and done (including the obtaining of any necessary consents but not the Regulatory Approvals under clause 5) in order to enable it lawfully to enter into, exercise its rights and perform and comply with its obligations contained in any SLA,
+and to ensure that those obligations are legally binding and enforceable, have been taken, fulfilled and done;
+(d) all contracts, licences, consents and authorisations (including licences of the appropriate governmental and other authorities in the country in which it is operating) necessary for the carrying on by the IGS of its business as the same is currently carried on have been obtained and all such contracts, licences, consents and authorisations are in full force and effect;
+(e) it has the necessary licences to use any Third Party Software for the purpose of providing the Services and for the benefit of the SCB Entities and ensure that the SCB Entities will not need any additional licences, permissions, authorisations or any consent to receive the Services which are performed using such Third Party Software; and
+(f) It will comply with all applicable local laws in the place of its incorporation and operation.
+13 LIABILITY
+13.1 Nothing in this Agreement excludes or limits the liability of a Party in respect of:
+(a) death or personal injury caused by its negligence;
+(b) fraudulent misrepresentation;
+(c) gross negligence, wilful misconduct or fraudulent act or omission of its staff;
+(d) any breaches of clauses 8 (Banking Secrecy and Country Regulatory Requirements), 21 (Confidentiality) and 22 (Data Protection); and
+(e) liability which may not otherwise be limited or excluded under applicable law.
+13.2 Subject to clause 13.1 above, in no event will either party be liable to the other for:
+(a)    any loss of business, profits, operational losses, goodwill, reputation, possible
+or expected investment or capital expenditure, or ability to write down assets;
+faf(b) any operational loss (unless to the extent arising out of a breach of the terms
+of this Agreement and/or any SLA by the IGS (but subject to the liability caps
+setout inclauses 13.3 and 13.4));and
+fe1(c) any indirect or consequential or special or punitive damages arising out of or
+in connection with this Agreement;
+13.3    Subject to clauses 13.1 and 13.2 above, the liability of the IGS to each SCB Entity arising out of or in connection with this Agreement and any SLA between them, whether arising from contract, tort, negligence or otherwise shall be limited to an amount equal to the Service Fees payable by the SCB Entity to the IGS under all SLAs between them for the relevant calendar year.
+13.4    Subject to clauses 13.1 and 13.2 above, the liability of a SCB Entity to the IGS arising out of or in connection with each SLA between them, whether arising from contract, tort, negligence or otherwise shall be limited to the Service Fees due and payable under such SLA.
+14 STAFF
+14.1    The IGS shall ensure that all of its staff shall be suitably qualified and skilled for the purposes of carrying out the Services.
+14.2    The IGS agrees and acknowledges that all staff of the IGS staff who are involved in the day-to-day provision of the Services to the SCB Entity:
+(a)
+
+ 
+Wfci
+
+_are employees or contractors engaged byof the IGS (which does not include employees or contractors engaged by an SCB Entity, who are, for clarity, the
+responsibility of the SCB Entity);
+(b) are primarily af!G-under the IGS’ s<s-e-1-e-management control;, and
+44.-2-[cj.such staff have no employment relationship with the SCB Entity.
+14.3 The IGS shall ensure that all its staff are informed that none of them has any claim whatsoever on any SCB Entity and that none of them is entitled to raise any industrial dispute, either directly or indirectly, with or against any SCB Entity in respect of work conditions or otherwise or otherwise claim to be employed by any SCB Entity.
+14.4 The IGS shall comply with all applicable labour or employment laws in its country of operations.
+14.5 The IGS shall, if required by any SCB Entity from time to time, cease with immediate effect the involvement of any staffemployee of the IGS in the provision of any Services as specified by that SCB Entity. The IGS shall as soon as practicable replace any staffindividual excluded from involvement in the provision of any Services under this clause with a suitably qualified and skilled substitute.
+15 FEES
+15.1    Each SCB Entity shall pay the IGS the Service Fees as set out in each SLA which must be ascertained in accordance with the principles laid out in the Internal Sourcing Procedures.
+15.2    Unless where:
+(a)    the IGS and SCB Entity are operating in the same country and are required to denominate the Service Fees in a local currency; or
+(b)    the local laws of the relevant SCB Entity mandate or require Service Fees to be denominated in a currency other than US dollar; or
+(c)    as agreed otherwise by the IGS and the relevant SCB Entity,
+all Service Fees and invoices shall be denominated in US dollars.
+15.3    The IGS shall within 30 days of each Billing Period deliver to the SCB Entity and the SCB Entity Representative an invoice for the relevant Service Fees and each invoice shall become due and payable one (1) month from the date of the invoice.
+15.4    The Internal Sourcing Procedures sets out the principles for dealing with any withholding tax that may be applicable on any Service Fees and the Parties agree to comply with this.
+15.5    Unless otherwise agreed between the Parties, if it is determined that payment of the Service Fees is subject by law to any withholding tax on the payee's income, the payer shall make payment to the payee of the amount owing, less a deduction for such withholding tax and shall account to the relevant tax authority for the withholding tax provided always that the payer has possession, as furnished by the payee, of declaration(s) of tax residence on the prescribed forms and certification of
+the relevant taxation authorities which are current and accurate in order to confirm the applicability and availability of any reduced rate of withholding tax under the provisions of the relevant double taxation convention and/or treaty. The amount of withholding tax deducted will be calculated by the payer in accordance with any appropriate double taxation convention and/or treaty between the states in which the
+payer and the payee respectively reside. The payee shall furnish declaration of tax residence on the prescribed forms and obtain the certification of the relevant taxation authorities in order that the payer may confirm the applicability and availability of any
+reduced rate of withholding tax under the provisions of the relevant double taxation convention and/or treaty as envisaged above.
+15.6 Each SCB Entity shall, in addition to the Service Fees, pay all taxes (including any goods and services tax) which may be levied from time to time on the Service Fees and/or in relation to any Services and which, as a matter of law, a SCB Entity is required to pay or the IGS is required to collect from a SCB Entity.
+16 EXCEPTION MONITORING AND PROCESS RISK ANALYSIS
+16.1 For the duration of each SLA, the IGS shall perform testing on key controls and exception monitoring in accordance with the mandate controls and exception monitoring requirements notified to it by the relevant SCB Entity and the Group's RMF.
+16.2 The IGS shall also carry out a Process Risk Analysis for each SLA within 6 months of the commencement of that SLA. Thereafter, the Process Risk Analysis must be repeated annually for any material Internal Sourcing Arrangements and biennially (once every 2 years) for non-material Internal Sourcing Arrangements.
+17    REPORTING SERVICE REVIEW MEETINGS AND ESCALATION
+17.1 The IGS shall provide the management information and reporting in accordance with the specific provisions of the relevant SLA.
+17.2 The Parties shall conduct the Service review meetings in the manner required under the relevant SLA. The Service review meetings must cover the entire scope of the Internal Sourcing Arrangement entered into between the relevant SCB Entity and the IGS including any that is the subject of a RRM transfer to a secondary IGS or subcontracted to a sub-contractor.
+17.3 Each of the SCB Entity's Representative and the IGS' Representative are permanent members of such Service review meetings.
+17.4 The IGS shall, as soon as practicable following a request by a SCB Entity, provide directly to such a Regulatory Authority any information requested by that Regulatory Authority including information relating to the performance by the IGS of its obligations under the SLA.
+17.5 The IGS shall immediately inform the SCB Entities upon it becoming aware of:
+(a)    any disclosure of any Confidential Information which has been made, or may
+have been made, in breach of the provisions of clause 21; or
+(b) any breach of security or any unauthorised access by any person to the IGS System, the Confidential Information or the IGS's premises.
+17.6 The IGS shall immediately inform the SCB Entities in the event that any person (including any governmental agency or department, regulatory authority, police or other criminal investigation agency, court, judge or other judicial officer) requests or
+requires the IGS to disclose any Confidential Information or other information to any person concerning its business or the provision of the Services, provided that no applicable law prohibits the IGS from so informing the SCB Entity. In such circumstances, the IGS shall provide full details on an ongoing basis of all contact with such person and information furnished, and comply with any instructions given
+by a SCB Entity in relation thereto. The IGS shall notify the relevant SCB Entity as soon as is practicable (and in any event within two Business Days) of any such request that is received and shall, to the extent reasonably practicable, withhold from any disclosure until that SCB Entity has responded to the IGS with its views. The IGS shall comply with any reasonable instructions given by that SCB Entity in this
+regard.
+17.7 The IGS shall promptly provide any information which any SCB Entity may at any time request including information in relation to the Services, and any aspect of the subject matter of the SLAs.
+18 ONGOING RISK ASSURANCE
+18.1 The IGS shall provide such information as is reasonably necessary to enable the SCB Entities to perform the Risk Reviews and Ongoing Supplier Management and Risk Assessment tasks under the SCB Group Outsourcing Policy and Procedures.
+18.2 The IGS shall perform testing on the key controls and exception monitoring requirements in relation to each SLA in accordance with the SCB Group Risk
+Management Framework.
+19 CONTINGENCY PLANNING AND FORCE MAJEURE
+19.1 The IGS undertakes and warrants to the SCB Entities that it has in place comprehensive Contingency Plans to deal with the relevant Contingency Event.
+19.2 Upon the occurrence of a Contingency Event, the IGS shall activate the relevant Contingency Plan to ensure minimal disruption of the Services to the SCB Entities.
+19.3 The IGS shall disclose and make available to the SCB Entities the details of such Contingency Plans to enable SCB Entities to evaluate the risk of such contingency planning by the IGS and to prepare their application for regulatory approvals/ notification. The IGS shall update the SCB Entities as and when these Contingency Plans are revised or amended.
+19.4 Notwithstanding clause 19.1, where a Force Majeure Event occurs which is not covered by a Contingency Plan, the IGS shall use its best endeavours to restore the Services to such level as may be agreed with the affected SCB Entities at that time. Upon such a Force Majeure Event occurring, the IGS shall inform the affected SCB Entities immediately.
+20 TERMINATION
+20.1 As between itself and the IGS, a SCB Entity may by giving written notice terminate (1) its participation of this Agreement and all SLAs between that SCB Entity and the IGS in their entirety, or (2) any SLA between that SCB Entity and the IGS in whole or
+in part, with immediate effect upon the occurrence of any of the following events:
+(a)    the IGS commits a material breach of any of its obligations under the SLA,
+provided that if in the reasonable opinion of that SCB Entity such a breach is capable of remedy the IGS shall be given 30 (thirty) days to remedy the
+breach to the reasonable satisfaction of that SCB Entity. Such grace period and any subsequent remedy of the relevant breach by the IGS shall be without prejudice to that SCB Entity's right to claim damages or other
+remedies in relation to any breach of contract by the IGS; or
+(b) the suspension or the threatened suspension of all or a substantial part of the IGS' operations; or
+(c)    a liquidator, receiver, trustee, administrator or a similar official is appointed or
+proposed to be appointed in respect of the IGS or over any of the IGS' assets;
+(d) the IGS enters into a composition, compromise or other voluntary or involuntary arrangement with its creditors;
+(e) a meeting is convened, a petition is presented or an order is made, or a resolution is passed for the winding-up of the IGS; or
+(f)    the IGS ceases or suspends generally payment of its debts (or announces an
+intention to do so) or is unable to pay its debts or is deemed unable to pay its debts;:
+(g)    it becomes unlawful for the IGS to perform any of its obligations under any
+SLA; or
+(h)    any SLA is not or ceases to be legal, valid and binding on the IGS; or
+(i)    if any Regulatory Authority so requires a SCB Entity to terminate part or all of
+any SLA or its participation in this Agreement; or
+U)    continuation of the fulfilment of this Agreement or any SLA would cause that
+SCB Entity to be in breach of any laws or regulatory requirements to which it is subject; or
+(k) the IGS ceases to be a member of the SCB Group; or
+(I)    any event occurs which, under the applicable law of any relevant jurisdiction,
+has an analogous or equivalent effect to any of the events mentioned in this clause 20.1.
+20.2 A SCB Entity may terminate (1) its participation of this Agreement and all SLAs between that SCB Entity and the IGS in their entirety, or (2) any SLA between that SCB Entity and the IGS in whole or in part at any time upon giving written notice to the IGS.
+20.3 The IGS may terminate any SLA between itself and a SCB Entity:
+(a)    upon giving the relevant SCB Entity twelve months prior written notice; or
+(b) on 90 days' written notice if the SCB Entity has failed to pay Service Fees for the relevant SLA by its due date.
+20.4 Termination of this Agreement and/or any SLA shall not affect those rights and obligations which may have accrued on or before the date of termination. On termination of this Agreement, howsoever arising, all SLAs then in force at the date
+of such termination shall automatically terminate. Termination of a SCB Entity's
+participation of this Agreement shall not affect other SCB Entities' participation of this
+Agreement. Termination of any SLA shall not affect any other SLA or this Agreement.
+^M20.5    _ On any termination of a SLA (howsoever caused, and whether due to
+termination of this Agreement or otherwise), the IGS shall supply the Transition Out Assistance for that SLA during the Transition Out Period.
+2G7B20.6 Notwithstanding any termination of a SLA, during the Transition Out Period, the IGS shall continue to provide the Service in that SLA, observe and perform that SLA, and the SCB Entity shall, subject to the terms and conditions of that SLA, continue to pay the Service Fees as set out in that SLA.
+2M20.7    Upon any notice of termination being served pursuant to clauses 20, the IGS
+shall (both before and after termination) but subject to the Transition Out Assistance:
+(a)    co-operate fully with the relevant SCB Entity or any replacement service provider to ensure the smooth, efficient and expedient transition to the SCB Entity and/or replacement service provider (as the case may be); and
+(b)    ensure that at the request of any SCB Entity any contract or other arrangement entered into by IGS with a third party is assigned to the relevant SCB Entity and/or any replacement service provider.
+j 20.720.8    Upon termination or where applicable at the end of the Transition Out Period,
+the IGS shall at the request of the SCB Entity:
+(d)    return all Confidential Information held by the IGS and/or destroy or permanently erase all of the copies of Confidential Information made or held by the IGS. The IGS shall provide upon request written confirmation to the SCB Entity that it no longer holds any such Confidential Information; and
+(e)    return all Standard Chartered Equipment and Standard Chartered Software.
+,2-Q-,.g20.9    Clauses 1, 4.6, 4.7, 8, 12, 13, 20.3 to 20.8, 21 to 24, and 27 to 34 shall
+continue in full force and effect notwithstanding termination of this Agreement.
+21 CONFIDENTIALITY
+21.1 The SCB Entities(on the one side) or the IGS (on the other side) shall keep secret and treat in strictest and utmost confidence any Confidential Information obtained by it (the "Recipient Party") from the other (the "Disclosing Party") in connection with this Agreement and will not use the Confidential Information other than for the purposes of:
+(a) the proper performance of its obligations under this Agreement and each SLA;
+(b) disclosing such Confidential Information to its Staff or professional advisers (which shall include, lawyers, accountants and auditors) who have a need to know such Confidential Information for the proper performance of their duties in connection with this Agreement.-;-
+21.2 The IGS shall additionally:
+(a) use and take utmost care and all necessary measures to protect the confidentiality of the Confidential Information using not less than the standard of care as it applies to its own Confidential Information
+(b) ensure that its Staff keep all Confidential Information secret and treated in strict and utmost confidentiality;
+(c) ensure that all of its Staff execute such confidentiality undertakings directly with the IGS or the relevant SCB Entity as the SCB Entity may require form time to time; and
+(d) ensure that any subcontractor which the IGS may engage pursuant to clause
+7.3 executes confidentiality undertakings in favour of the IGS similar in substance to the confidentiality undertakings imposed by this Agreement upon the IGS, and ensure that any such subcontractors shall keep all Confidential Information secret and treated with utmost confidence.
+21.3 The obligations in clause 21.1 shall not apply to any Confidential Information (other than Customer Data) which the Recipient Party can prove:
+(a) was already known to it prior to its receipt thereof from the Disclosing Party; or
+(b) was subsequently disclosed to it lawfully by a Third Party who did not obtain the same (whether directly or indirectly) from the Disclosing Party without
+confidentiality obligation; or
+(c) was in the public knowledge at the time of receipt by the Recipient Party or has subsequently entered into the public domain other than by reason of the breach of the provisions of this clause or any obligations of confidence owed by the Recipient Party to the Disclosing Party; or
+(d) in the case of the IGS, it is required to be disclosed by law, regulation, order or regulators provided that the IGS notifies the relevant SCB Entity of such disclosure as soon as it becomes aware of the same and is lawfully permitted to do so and provides the SCB Entity with all reasonable assistance in appealing against such a disclosure or seeking a redaction of the information to be so disclosed.
+21.4 IGS acknowledges that damages may not be an adequate remedy for any breach of clause 8.1 and this clause 21 and that the SCB Entities shall be entitled to seek injunctive or other equitable relief in connection with any such breach. The IGS waives any right to object or assert any defence in relation to any such claim, action or proceedings to obtain such relief.
+21.5 Notwithstanding any other provision in this Agreement, the IGS is not entitled to disclose Customer Data belonging to one SCB Entity to another SCB Entity or to
+another SCB Entity's Regulatory Authority.
+21.6 Nothing in this Agreement shall operate to prevent or limit a SCB Entity's right to disclose its own Confidential Information (including any Customer Data) to its own Regulatory Authority.
+22 DATA PROTECTION AND INFORMATION SECURITY
+22.1 The IGS shall in respect of Personal Data processed pursuant to this Agreement and each SLA:
+(a) take all appropriate technical and organisational security measures and observe good industry practice to ensure that Personal Data is protected against unauthorised or accidental loss, destruction, damage, access, processing, erasure, transfer, use, modification, disclosure or other misuse;
+(b) comply with the SCB Group Information Security Policy; and
+(c) permit the SCB Entity to monitor the IGS's compliance with its obligations under this clause and shall cooperate with any investigation relating to security of Personal Data related to this Agreement.
+22.2 The IGS shall in respect of Personal Data processed pursuant to this Agreement:
+(a) not process any Personal Data as part of the Services except in accordance with each SLA and/or acting on the express instructions of a SCB Entity; and
+(b) use Personal Data only for the purpose of fulfilling its obligations under this Agreement and each SLA; and
+(c) not retain Personal Data for any longer than is necessary for the purpose of fulfilling its obligations under this Agreement and each SLA; and
+(d) not disclose Personal Data without the written authority of the relevant SCB Entity (except for the purposes of fulfilling its obligations under this Agreement and each SLA or pursuant to a request by the Regulatory Authority after
+notifying the relevant SCB Entity); and
+(e) ensure that all reasonable steps are taken to ensure the reliability of the personnel which will have access to Personal Data and limit access to those personnel which have a need to know the Personal Data for the purposes of
+providing the Services under each SLA; and
+(f) not by any act or omission cause any SCB Entity to breach any Data Protection Laws; and
+(g) consider all recommendations by a SCB Entity to ensure that the level of protection provided for Personal Data is in accordance with this Agreement and to implement the changes suggested.
+22.3 The IGS shall immediately inform the relevant SCB Entity in writing when it becomes aware:
+(a)    of a breach of any provision of this clause 22;
+(b) of any breach or attempted breach of security relating to the Services and report on the cause of the breach and planned corrective action;
+(c) that a disclosure of Personal Data is required by applicable law.
+ 
+22.4 The IGS shall not without the relevant SCB Entity's prior written consent do or omit to do anything which would cause any Personal Data to be accessed from or to be transferred to another country (a "Third Country").
+22.5 The Supplier acknowledges that any unauthorised access, disclosure, destruction, alteration, addition or impediment to access or use of Personal Data when stored in any computer, or the publication or communication of any part or document by a person which has come to his knowledge or into his possession or custody by virtue of the performance of this Agreement (other than to a person to whom the Supplier is authorised to publish or disclose the fact or document) may be a criminal offence.
+22.6 On request by a SCB Entity, the IGS shall promptly provide information regarding or return to that SCB Entity Personal Data obtained from that SCB Entity.
+23 AUDIT
+23.1 The SCB Entities and their internal and external auditors, inspectors, Regulatory Authorities and such other representatives as SCB Entities may designate from time to time (the "Audit Representatives") will have, upon providing the IGS reasonable advance notice, the right to perform audits and inspections of the IGS to:
+(a)    verify the make up and accuracy of all charges and invoices; and
+(b) verify the IGS' compliance with the terms of this Agreement, the SLA and the Country Regulatory Requirements and examine the systems and controls which are used to ensure such compliance; and
+(c) examine the IGS' performance of the Services including verifying compliance with applicable Service Levels and performing audits of the IGS' practices and procedures, the IGS' systems, and the Contingency Plans.
+23.2 The IGS will (at no additional cost to the relevant SCB Entity) give the SCB Entity and its Audit Representatives reasonable access during working hours to the premises at which or from which the IGS supplies the Services, including those facilities where any Staff, equipment, software, data, records and systems relating to the Services are located.
+23.3 The IGS will provide full co-operation with the relevant Audit Representatives.
+23.4 Nothing in this clause 23 shall require (or permit) the audit, assessment or inspection by:
+(a)    a SCB Entity of Customer Data relating to customers who are not customers
+of that SCB Entity; or
+(b)    an Audit Representative of Customer Data relating to customers who are not
+customers of a SCB Entity of which it is the Auditor; or
+(c)    a Regulatory Authority of Customer Data relating to customers who are not
+customers of the SCB Entity which it supervises or regulates.
+23.5 If any such audit, assessment or inspection results in the IGS being notified that it is in breach of any audit requirement or Country Regulatory Requirement or any regulatory requirement or law applicable to the IGS and/or any SCB Entity in relation to the provision of the Services, the IGS shall, within the period of time specified in
+the relevant notice, take steps to comply with such requirements or law.
+24 DISPUTES
+24.1 If there is a dispute between a SCB Entity and the IGS in relation to any Services under a SLA, the matter shall be referred to the Outsourcing Owner identified in the SLA and the Head of the Unit in the IGS providing the Services.
+24.2 If the dispute cannot be resolved pursuant to clause 24.1 within 10 Business Days in the location of the IGS, the matter shall be referred to the CEO of the IGS and the
+Head of the Business Unit of the SCB Entity identified in the SLA.
+24.3 Nothing in this clause 24 shall prevent or restrict a Party's right and ability to obtain injunctive or other emergency relief or remedy from any competent court or tribunal.
+25    OWNERSHIP OF SOFTWARE AND EQUIPMENT
+25.1 The IGS acknowledges that no title or interest passes to the IGS in relation to the Standard Chartered Equipment. The IGS shall:
+(a)    keep the Standard Chartered Equipment in good working order (provided it
+was supplied to the IGS in good working order), subject to reasonable fair wear and tear;
+(b)    ensure that the Standard Chartered Equipment is not modified;
+(c)    comply with the reasonable instructions of the relevant SCB Entity in relation
+to the use and operation of the Standard Chartered Equipment.
+25.2 The IGS further acknowledges that no title or interest passes to the IGS in relation to any Standard Chartered Software or the System.
+25.3 The IGS shall ensure that the current source code and object code of the Standard Chartered Software, to the extent that it has been modified by the IGS, is made available to of the relevant SCB Entity at all times during the term of this Agreement and is delivered to the relevant SCB Entity forthwith when requested by the relevant SCB Entity. The IGS hereby assigns to Standard Chartered Bank or such other SCB Entity as nominated by Standard Chartered Bank with full title guarantee and free from all encumbrances and third party rights all intellectual property rights to any customisations, enhancements, changes, adaptations or other modifications to the Standard Chartered Software it makes in connection with the provision of the Services or performing its obligations under any SLA.
+I 26 RESOLUTION, OPERATIONAL CONTINUITYRECOVERY AND RESOLUTION PLANNING AND ASSIGNMENT
+26.1 Notwithstanding clause 20.3 of this Agreement, for the purposes of facilitating recovery action, Resolution, and post-Resolution restructuring, the IGS shall continue
+to perform the SLAs for the relevant SCB Entity on the same terms and conditions
+(subject to clause 26.3) as contained in this Agreement as long as the relevant SCB
+Entity continues to pay the Service Fees when due for the provision of such SLAs.
+26.2 At the request of the SCB Entity, the IGS shall:
+(a)    vary such existing SLAs, or enter into new SLAs as is desirable (in the opinion
+of the SCB Entity) so that the Services can be identified clearly; and/or
+(b)    remove or terminate any part of any SLA or to re-organise any SLA in any
+way that the SCB Entity sees fit; and/or
+(c)    enter into such novation/ transfer agreements as are required (in the opinion
+of the SCB Entity) to novate/ transfer the SLA or part thereof to an SCB Entity
+successor.
+26.3    If an SLA or part thereof is novated/ transferred to an SCB Entity successor that is
+outside of the SCB Group, the IGS shall only be obliged in accordance with clause
+26.1 of this Agreement to continue to perform the SLAs on the same terms and
+conditions for a maximum period of 36 months from the date of such novation/
+transfer unless otherwise agreed between the Parties. The ISG and the SCB Entity
+successor may agree to review such charges, billing methodology and rates if
+necessary to address any finance, tax and transfer pricing issues in accordance with
+clause 15 of this Agreement.
+26.4    The IGS shall endeavour to provide all such assistance and Services as are
+reasonably required by the SCB Entity and the SCB Entity successor as appropriate
+to give effect to and assist in the continuation of the supply of the SLA and any other
+benefit of this Agreement which the SCB Entity was receiving prior to the date of
+such novation/ transfer.
+26.5
+administrator, liquidator, official assignee, the Resolution Authority or analogous
+persons authorised by law, governmental authority, or court of competent jurisdiction.
+26.6 Clauses 26.1 to 26.5 of this Agreement shall supersede any sections of the SLAs relating to "Recovery & Resolution Plan (RRP)”, whether set out in section 14 of the
+SLAs or otherwise.
+2SA-Ea€h-SLA4baL4s-eheeked-a@atfisL-tbe-Gritteal-Fuft6ti©RS-seotten-4Seotion-44-©Mb<
+SLAps-aPResewed-StAA
+26.
+
+-Witheut^rei«di€e4e4be-geiwattty-©L4be-abever-eaGh-SGS-&:rtity-is-entitted7-aL-afly
+poM4n4imer4e^esigfiate4be-Sefvi6es4©r-any-^rti©fy4lw©©f)-«fl4eF-a-StA-asJiRinf
+26.3 The IGS shall continue to perform the Ring Fenced Services and any Reserved SLAs
+so long as the relevant SCB Entity (1.vhich shall include any administrator, liquidator,
+off j r» i n I n et et i n hpp nr nnnlnnrn 1^    .Kv.    novornni pnf nl nuthnrifw- nr
+official assignee or analogous persons authorised by lmv, governmental authority or
+nntiH’    npfpnt it irigtHinfinn\ nnnfinupQ+n nnv.thp_.^prv.icp_Pa.pg. ^p^^Hp nrnwiQinn
+a court of competent jurisdiction) continues to pay the Service Fees for the provision of such Ring Fenced Services or those Services under a Reserved SLA.
+ 
+fn PPV' fnr inh cpn/irpe;
+to pay for such services.
+
+26.5 Mot'.vithstanding any other prov1s1on under this Agreement, the IGS may not
+terminate or suspend, or purport to terminate or suspend:
+aftateg©us-eveftt)^A#t4©ytTOtifymg4he-SGB-Eflttty4mA«4tmg-^4te4nte^
+tem4nate-^f^u©peM^4Hhe-SG&-BRtity-4©es-n©t-4esi§fiate-a«y-Se{:viees-as
+Riag-^eHGed-SePideesaAdtbtta^-Budfless-Days^ffh^be-teGatten-Gbdbe-lGS^-of
+|Hq Anrppmp^^ nr tb<Q A nn q.i irb 11r>HQ
+Lite; mu i c; c; 111 c; i 11 vt ci icj vjcja kJi i oui?ii yi v'Ui iucj,
+(b)-Afly-Re®6iw4-SiA4oF-any4:eas©m-wtbewMbe-F6tevaflt~^GS-&rtttyVe©meflt7
+26t€—AHben^equest-eMbe-SGiMiifiUty-^wbtet^-sbalHn^^
+effiGiaba&sigRee-^-aftategous-^6fs©fts~autlwise4^byMawr-g©veFFHWHtal-autb©Hty-&F
+a court of
+(a)-vafy-sueb-existmQ-StJKsT-aF-eateNFrto^ew-StAs-as-is-destFafete^w^be-^piRioR
+©b#»-S€S-Erttty)-ae4tet4be-Rmg-Fefteed-Sewi€es-eaR-fee4det:rtffied-eteariyf
+aRdfer
+Res6Pt^4-StA4H-afiyaway4teMbe-SG0-Efitity-aees4iti-aftd/©F
+(e)-ente4Mnte-sycbaR©vati©nMFaRsfeFagFeemert-as4s-F6^wim44in4be-apiFHefi-Gf
+tbe-SGB-EFttttyHaawvateMFaftsfeMbe-Rmg-FeftGed-SeFviees-apany-ReseFved
+SLA or part thereof to such SCB Entity successor.
+26.7 The IGS may not assign or transfer, or purport to assign or transfer any of its rights or obligations under this Agreement or under a SLA without the prior written consent of all the SCB Entities in this relation to this Agreement or the relevant SCB entity in relation to a SLA.
+26.8 Each SCB Entity may assign its benefits under this Agreement and each Reserved SLA to such SCB Entity successor company on written notice to the IGS.
+27    NO PARTNERSHIP/ AGENCY
+27.1 Nothing in this Agreement shall be construed as constituting a partnership or joint venture between the Parties or as constituting any Party as the agent of any other for any purpose whatsoever except as expressly set out by the terms and conditions of any SLA.
+27.2 The Parties acknowledge and agree that this Agreement and any SLA do not create and shall not be deemed to create any employer-employee relationship.
+27.3 Neither the IGS nor any member of its Staff is entitled to, by act, word, deed or otherwise, make any statement on behalf of any SCB Entity or in any manner bind (or purport to bind) any SCB Entity or hold out or represent that the IGS or a member of its staff is representing or acting as an agent of any SCB Entity.
+28 WAIVER
+28.1 Failure by any Party to exercise or enforce any rights available to that Party or the giving of any forbearance, delay or indulgence by any Party shall not be construed as a waiver of that Party's rights under this Agreement.
+28.2 No provision of this Agreement shall be waived unless such waiver is made in writing and signed by an authorised representative of the Party against which enforcement
+of the waiver is sought. A waiver shall not constitute a consent to, or waiver of any subsequent breach of any provision of the same or different nature.
+29 SEVERABILITY
+29.1 If the provision of any Services under a SLA, or any clause in this Agreement, is held to be illegal, invalid or unenforceable in whole or in part that SLA or this Agreement (as the case may be) shall continue to be valid as to its other provisions and the
+remainder of the affected provision.
+30    No THIRD PARTY RIGHTS
+30.1 A person who is not a Party shall have no right under general law or otherwise to enforce or to enjoy the benefit of any term of this Agreement or any SLA.
+31 COUNTERPARTS
+31.1 This Agreement (but not an SLA) may be executed in any number of counterparts, each of which when executed and delivered shall be an original, but all of which when taken together shall constitute a single instrument and agreement between the Parties.
+32    FURTHER ASSURANCE
+32.1 Each Party shall to the extent that it is reasonably able to do so execute all documents and do all acts and things reasonably required by another Party to give effect to the terms of any SLA and/or this Agreement.
+33 NOTICES
+33.1 Any notice, consent, approval or other communication required or permitted to be given by any SCB Entity to the IGS (or vice versa) under this Agreement or any SLA must be signed by or on behalf of the Party giving it, addressed to the Party to whom it is given and
+(a) delivered to that Party's address; or;
+(b) transmitted by fax to that Party's fax number, with a transmission report retained.
+Each Party's address is as set out in the beginning of this Agreement or in the relevant Deed of Accession Letter.
+33.2 Any such notice, consent, approval or other communication shall be deemed to have been given and received:
+(a) if delivered to the recipient Party's address, on the day of delivery if a Business Day in location of such address, otherwise on the next Business Day; or
+(b) if transmitted by fax to the recipient Party's fax number and a correct and complete transmission report is obtained by the sending Party, on the day of transmission if a Business Day in location of such fax number, otherwise on the next Business Day.
+33.3 Without prejudice to the other provisions of this clause 33, the Parties recognise that their officers and employees will and may communicate on a day-to-day basis by means other than by post and fax, including by email.
+34 GOVERNING LAW AND JURISDICTION
+34.1 This Agreement and each SLA, and any matters relating to this Agreement and each SLA, shall be governed by and construed in accordance with the laws of England.
+34.2 Any dispute, proceedings or claim arising out of or in connection with this Agreement, and any SLA including any question regarding its existence, validity or termination, shall be referred to and finally resolved by arbitration in accordance with the Rules of the London Court of International Arbitration ("LCIA") for the time being in force, which Rules are deemed to be incorporated by reference into this Agreement.
+34.3 The number of arbitrators shall be three. Each party shall nominate an arbitrator and the third arbitrator, who shall be the chairman of the tribunal, shall be appointed by the LCIA.
+34.4 The seat, or legal place, of arbitration shall be London.
+34.5 The language to be used in the arbitral proceedings shall be English
+35 INSURANCE
+35.1 The IGS shall maintain appropriate fire or property damage, fidelity and public liability insurances for the duration of the Term.
+SCHEDULE 1
+PRO-FORMA SLA FOR PROCESSING SERVICES
+SERVICE LEVEL AGREEMENT FOR PROCESSING SERVICES FOR SCOPE CHINA
+SLA DETAILS
+Short description of Processing Service covered by this SLA
+
+Date of SLA
+
+SLA Reference Number
+
+Version
+
+Author
+
+SLA Revision Record
+* This section must be completed when varying an SLA
+* See paragraph 10.10 of Processing Services Manual for when an SLA can be varied.
+* See paragraph 10.11 of Processing Services Manual for the process of varying an SLA.
+Reference number of original SLA
+
+Date of original SLA
+
+Dates of Modification Notes under oriQinal SLAs (if any)
+
+Date of this revised SLA
+
+Author
+
+PART I: LEGAL REQUIREMENTS - PARTIES TO THE SLAJ SIGN-OFF
+LEGAL INFORMATION
+• This is a Service Level Agreement for Processing Services under the Approved Contract
+between Scope International (China) Co. Limited and members of the SCB Group dated 1 November 2012 ("Master Services Agreement"), and is governed by the terms and conditions of the Master Services Agreement.
+• This Service Level Agreement is made between SCOPE and the SCB Entity identified respectively in Part I paragraph 1.1 below.
+1.1 DETAILS OF BUSINESS UNIT WANTING TO USE SCOPE
+Legal Name of SCB Entity (e.g. Standard Chartered Bank Hong KonQ Limited)
+
+Name/ Designation of Internal SourcinQ Owner
+
+Name/ Designation of Head of Business Unit
+
+1.2 DETAILS OF /GS
+Name of IGS:
+Scope International (China) Co. Limited ("SCOPE")
+Name of contact person in SCOPE providinQ the services:
+
+Name and designation of Head of Unit in SCOPE providing the services:
+
+1.3 DETAILS OF AUTHORISED REPRESENTATIVES FOR AMENDING/ REVISING THIS SLA
+Name and Designation of SCB Entity authorised representative:
+
+Name and designation of SCOPE authorised representative:
+
+1.4 DISTRIBUTION LIST *SCB only*
+Name
+Designation
+
+[*choose* CORC, BORG, BOARD are per internal process for Internal Sourcing approval]
+
+Country Head of Compliance
+
+For multi-countries Internal Sourcing
+Arrangements - Group, WB or CB Heads of Compliance (as relevant)
+
+
+Note: For WB - Add additional sign-off requirement according to WB Project Management Office (PMO) matrix.
+For GTO initiated off-shoring projects, this document should be completed in
+addition to the    existing review/ process prior to country WB
+approval.
+Where outsourcing is initiated by in-country WBO functions, review and sign-off from relevant WB GTO Head (or designate) is also
+
+1.5 EFFECTIVE DATE
+State the date when the SCB business unit will start using the SCOPE. This should be a firm date and not just a proposal. This date can only be changed following the use of a Modification Note and the process set out in paragraph 10. 11 of the Processing Services Manual.
+1.6 DETAILS OF PRIMARY LOCATION WHERE SERVICES WILL BE PERFORMED
+State the primary location only; you need not list al/ locations.
+1. 7 SIGN-OFF (EXECUTION)
+
+Name/ Designation
+Signature
+Date
+[Insert name and designation of SCB Head in country Business Unit authorising the Internal Sourcing Arrangement]
+
+
+[Insert name and designation of head of unit in SCOPE agreeing to provide the services described in this SLA]
+
+
+PART II: BUSINESS REQUIREMENTS FOR PROCESSING SERVICES UNDER THIS SLA
+1. DESCRIPTION OF INTERNAL SOURCING ARRANGEMENT FOR PROCESSING SERVICES
+Explain the purpose of the Internal Sourcing Arrangement and how this changes the current status; and explain what the difference would be after the Internal Sourcing Arrangement is implemented. OR attach the business case you have prepared as part of the Project Approval Requirement (PAR) process.
+1.1 Glossary/ Definition
+Define the meanings of key terms and abbreviations used in this SLA. For instance, FMOCC means Financial Markets Operations - Client Coveraqe.
+1.2 Division of Roles and Responsibilities between SCB business unit and SCOPE
+When engaging SCOPE, sea business unit must remember that it will still be held responsible (by customers and regulators) if the supplier's performance is not up to mark. As such, the sea business unit must retain adequate oversight of the outsourced activity. Briefly describe the roles and responsibilities between the sea business unit and SCOPE after the engagement of SCOPE. Note that in the service level agreement, you will need to set out the role of SCOPE in a lot more detail.
+Roles & Responsibility of SCB Business unit
+Roles & Responsibility of SCOPE
+
+
+
+
+
+
+1.3 Division of Roles and Responsibilities between Group SCB business unit and In-Country SCB business unit
+* This must be completed only for Group-wide (multi country) Internal Sourcing Arrangement for Processing Service
+Group Internal Sourcing Owner to specify the roles of responsibility between itself and in-country business units/ Internal Sourcing owners.
+Roles & Responsibility of Group SCB business unit before commencement of Internal Sourcing Arrangement
+Roles & Responsibility of In-country SCB business unit before commencement of Internal Sourcing Arrangement
+
+
+
+
+Roles & Responsibility of Group SCB business unit after commencement of
+Roles & Responsibility of In-country SCB business unit after
+Internal Sourcing Arrangement
+commencement of Internal Sourcing Arrangement
+
+
+
+
+1.4 Delegation of (transaction not financial) SIGNING authority
+If relevant, briefly describe any document containing signing authority that the SCB
+business unit is delegating to SCOPE. Ensure that the SCB business unit (i) first has
+the delegated authority itself; and (ii) is allowed. to delegate it to SCOPE
+1.5 Duration of Outsourced Arrangement
+State whether the services are expected to be performed till the SLA is terminated OR
+the number of years services are needed for
+1.6 Service Levels
+State the service levels expected from SCOPE
+1.7 Management Information
+State the Ml reports required from SCOPE and the frequency at which such reports should be sent
+2. MATERIALITY OF INTERNAL SOURCING ARRANGEMENT
+The Internal Sourcing Procedures for Processing Services and Processing Services Manual require the Internal Sourcing Owner to undertake a materiality assessment at
+httg_:!Jteamsiteshk.zone1.scb.netlsiteslgto/GlobalSourcing/OPS/Tools%20and%20Temg/ates
+/OS%20MaterialitY..%20Assessment%20Temg_late%20v1. a.xis
+For multi-countries Internal Sourcing Arrangements, please insert the score from the country that scored the highest.
+Materiality score of Internal Sourcing Arrangement:
+3. SUPPLIER EVALUATION-BUSINESS SPECIFIC REVIEW BEFORE USING SCOPE
+Explain why SCOPE was selected. You could consider the following factors - Does SCOPE have the required expertise? Will the services provided be stable, scalable and have reasonable resilience & recoverability to foreseeable disruption scenarios? Do the cost savings justify the use of SCOPE?
+4. INTERNAL SOURCING RISK ASSESSMENT
+4. 1 Is there a current Process Risk Analysis for the Processing Se,vices to be migrated? If yes, please embed current process document.
+4.2 List the incremental key risks relating to the Internal Sourcing Arrangement and provide a summary of the risk mitigation plan. Internal Sourcing Risk Assessment must be revalidated annually on the Effective Date (set out in Part I, paragraph 1.5 above). Risks must be recorded and escalated according to the Operation Risk Management Framework.
+Key risks
+Mitigating Controls
+Risk of impairment or compromises in fulfilling the existing banking obligations imposed by the banking laws and statutory requirements
+
+Risk of not being able to protect SCB Entity's and its customer's interest due to unclear roles & responsibilities, problems with products, services, technology, processes or delivery channels used by SCOPE do not fit with SCB Entity's systems, internal controls and capacity requirements
+
+4.3 Internal Sourcing Owner to complete the following table to provide an ove,view of the current state of process risks and controls employed.
+* If SCOPE is carrying out a totally new process for the SCB business unit (that is, not a process that is being migrated from SCB to SCOPE), SCOPE to complete this section.
+Name KEY process step relating to Internal Sourcing Arrangement
+Identify points of failure relating to process step
+State effect of failure
+Describe
+current
+controls
+If available, state
+current Ops Risk
+assessment risk grading (very H, H, M, L)
+5. IMPLEMENTATION PLAN
+State the key milestone activity for the Internal Sourcing Arrangement and also the final implementation date. For example, UA T, MARs etc
+No.
+Activity
+Target Date
+Responsibility
+1
+
+
+
+2
+
+
+
+3
+
+
+
+4
+
+
+
+5
+
+
+
+6. COST P
+ROJECTIONS
+Provide details of costs relating to Internal Sourcing Arrangement. Such costs can be the details of current staff and/or related costs vs estimated Internal Sourcing costs. If cost-benefit analysis is available in a PAR or a business justification document please reproduce relevant portions.
+For other Internal Sourcing Arrangements, cost determination must be in line with Transfer Pricing Guideline for Provision of lntra-Grou12 Services.
+Under exceptional circumstances costs may be management reallocated as detailed in Guidelines on Position where Financial Recharge Cannot be Made.
+6.1 State the relevant cost recharge methodology: Volume (i.e. pay per transaction cost); FTE (i.e. pay per head count); Fixed cost (plus mark up)
+7. HUMAN RESOURCE
+State the HR impact of the Internal Sourcing Arrangement
+7.1 FTE Impact
+Current FTE in SCB business unit incountry
+Number of FTE in
+SCB business unit incountry after migration
+Number of FTE required in SCOPE supporting this Process Service
+(Where relevant) total number of FTE in SCOPE supporting this Processing Service
+7.2 Existing Organisation Structure In-country
+7.2.1 Future (after Internal Sourcing Arrangement) Organisation Structure In-country
+ 
+7.3 Current Organisation Structure in SCOPE
+7.3.1 Future (after Internal Sourcing Arrangement) Organisation Structure in SCOPE
+7.4 Skill Requirements Definition
+8. TRAINING
+As the Internal Sourcing Owner, you need to ensure that either (i) SCOPE can deliver your training requirements; or (ii) you deliver the necessary training to the staff of SCOPE
+8.1 Scope and objective of training
+8.2 Approach/ Environment of training
+8.3 Person/ entity responsible for deliverinQ the training
+8.4 Nature of training materials which Internal Sourcing Owner will be providing (if applicable)
+9. PRODUCTION VERIFICATION EXERCISE (PVE) (which includes data migration, applications acceptance & security testing, infrastructure integration testing, DR plan/Recovery Time Objective/Fail-over testing prior to the actual production launch)
+When PVE will be done:
+How PVE will be done:
+Who is signing off on PVE:
+How would you evaluate the success of the PVE:
+Insert Business Impact Analysis (if available)
+10. BUSINESS CONTINUITY PLAN
+Note: The BCP requirements for this section relates to the Business Unit's overall BCP framework which is over and above SCOPE's contingency planning (eg BCP, Disaster Recovery etc) that it has in place.
+10.1 BCP in instance where the main site for SCOPE fails but BCP site if functioning. Describe the specific premises and technology requirements (over and above the generic contingency planning already adopted by SCOPE) to execute this plan. Please attach plan,
+10.2 The SCOPE site and the designated BCP site fails. Describe the specific premises and technology requirements (over and above the generic contingency planning already
+adopted by SCOPE) to execute this plan. Please attach plan.
+10.3 Cross border BCP situation or 'meltdown scenario' where there is a complete Joss of processing capabilities at the primary SCOPE processing centre including 'Joss' of people'. The services are moved back to the SCB Business Unit in country PVM. Describe the specific premises and technology requirements (over and above the generic contingency planning already adopted by SCOPE) to execute this plan. Please attach plan.
+10.4 Has the BCP been tested by SCOPE? Yes or No?
+10.5 Residual Risk Management
+* Applicable to SCOPE Companies only. Refer to paragraphs 11.1 and 11.2 of the Processing Services Manual for when RRM is allowed and the pre-conditions for RRM.
+• Are the services to be provided by SCOPE capable of being provided for by another
+SCOPE Company (Secondary Intra-Group Supplier (/GS))? If yes, please state the name of the Secondary /GS.
+• List the conditions that must be met before services can be transferred from SCOPE to the Secondary /GS
+• List the responsibility of SCOPE in dealing with the Secondary /GS on behalf of the SCB business unit;
+• List the service levels expected of the Secondary /GS
+11. REGULATORY REQUIREMENTS
+11.1 List significant regulatory requirements that impact the services to be performed by SCOPE. For example: data will be used for regulatory reporting; issuance of remittance certificates; update of customer information (for periodic reviews)
+11. 2 Does the Business Unit require regulatory approval or just regulatory notification before migration? If yes, please embed letters to and from regulators.
+i
+iS
+
+12. SERVICE REVIEW MEETINGS
+Frequency:
+Mandatory attendees:
+Agenda items: [State additional agenda items. The following are mandatory]
+• Volumes • Productivity • SLA Performance
+• Changes to regulatory requirements and impact to the Internal Sourcing Agreement (if any)
+• Resourcing levels • Attrition • KCSA exceptions
+• Cross border capability metrics (if applicable)
+• Compliance breaches/ incidents/ issues
+• Risk reviews conducted since last meeting
+• Internal Sourcing Arrangement/ services risks (including results of project risk analysis)
+• Compliance with conditions imposed by regulators (if any)
+• Update on mandatory or necessary training conducted (if any)
+• Results of service review meetings with the Secondary IGS (where there is RRM) • Results of service review meetings with sub-contractor (where relevant)
+• Results of BCP test conducted.
+13. (ONLY IF REQUIRED) POST TERMINATION TASKS/ TRANSITION OUT STRATEGY
+State any additional post termination task that SCOPE is expected to perform
+«M DcrnycW « PFSOL'JTIOM P' AM ZPRP'
+
+
+
+
+{Plesse-^y^^-a§ainsi-rele¥&nt-&eti¥ities}
+smiicis»
+Corporate
+tending—and ?
+Corporate
+awioiioi
+Derivatives
+and-Ciearing
+:;8»aiaisBf
+Payments—and
+Settlements
+«©siies»
+jCjLSj£££XS3Li:
+9 it ly W < < ;    :
+'W"'di sCS at? <    ; :<
+Aeoount-&
+Savings Aoeeunts/ .
+
+
+
+
+?Owseewed
+
+
+
+
+
+Standard
+
+Chartered
+
+
+
+SCHEDULE 2
+DETAILS OF DELEGATE
+The Delegate for this Agreement is:
+Group Head, Technology & Operations, Geographies (or such equivalent or successor role)
+c/o Standard Chartered Bank Malaysia Berhad
+Menara Standard
+Chartered No. 30 Jalan
+Sultan Ismail, L 15
+Kuala Lumpur, Malaysia
+The person discharging this role at the date of Variation Agreement No. 1 of 2015 to this
+Agreement is Matthew Norris.
+GmupTtead-oTBanking-OpeFatiofts
+€/©-^eope4ntemafenaTPvt-ktd
+1/F Grindlays Garden
+N^rTy+taddews-Readv
+Chennai, India
+TTie-pefs©ft-4i&GhaFgmQ4Ws-F©te-at4he-date-©Ttlais-AgreeFneFrt4s-Edwtn--Nevis-7
+SCHEDULE 3
+FORM OF ACCESSION LETTER
+ACCESSION LETTER TO MASTER PROCESSING SERVICES AGREEMENT WITH SCOPE INTERNATIONAL (CHINA) CO. LIMITED
+From: [ • insert the name of the relevant sea Entity], a company incorporated in [ • ] whose registered office is located at [ • ]
+To: Scope International (China) Co. Limited, a company (No. 797296581) incorporated in the People's Republic of China (PRC) whose registered office is located at No. 35, Xinhuanbei Road, TEDA, Tianjin, 300457, PRC ("SCOPE")
+Date:
+We refer to the Master Processing Services Agreement dated 1 November made between
+Standard Chartered Bank, UK Head Office, Singapore Branch, certain other SCB Group members and SCOPE.
+Pursuant to clause 4.2 of the Master Processing Services Agreement, we hereby accede to the Master Processing Services Agreement with effect from the date above (the "Accession Date").
+Please acknowledge receipt of this letter by signing below.
+for and on behalf of
+[ • insert the name of the relevant sea Entity]
+Name:_
+Title:_
+We hereby acknowledge receipt of this accession letter.
+for and on behalf of
+Scope International (China) Co. Limited
+Name:
+TitIe: ---------
+SCHEDULE 4
+PERMITTED CHANGE PROCEDURE FOR SLAs
+1. This Permitted Change Procedure only allow Permitted Changes to be made to:
+a Change of Effective Date of SLA; b increase in volume;
+c Increase in the number of FTE (headcount) required; d revision in Service Levels; e change in any MIS requirements;
+f change in billing methodology; and g enhancement to an existing Service ("Permitted Changes").
+2. All other changes or variations to the SLA cannot be effected through this Permitted Change Procedure and must be effected through entering into a new SLA in compliance with the SCB Group Outsourcing Policy and Internal Sourcing Procedures for Processing Services. Any purported attempt to make any change or variation other than a Permitted Change to the SLA is null and void.
+3. In relation to any Permitted Change proposed by the IGS or any SCB Entity, the Parties shall follow the consultation procedures set out in this Schedule 4 using the Modification Note template in Appendix 1 of this Schedule 4.
+4. SCB Entity and IGS will use reasonable endeavours to agree any proposed Permitted Changes and the timeframe within which the Permitted Changes should be implemented
+5. Agreed Permitted Changes should be documented in the Modification Note which must be signed by the authorised representatives of the IGS and the SCB entity. The authorised representatives are named in the original SLA.
+6. Where the implementation of a Permitted Change is likely to require the IGS to increase the number of staff, the IGS shall be given a reasonable period to implement the Permitted Change in order to allow the IGS to recruit and train new staff.
+7. *Important* The Internal Sourcing Owner must ensure that the original SLA is amended to reflect the Permitted Changes in the Modification Note (the "Revised SLA"). The Revised SLA must state the date of the original SLA and will supersede all prior SLAs.
+APPENDIX 1
+MODIFICATION NOTE - PROCESSING SERVICES SLA
+SLA Revision Record
+Reference number of
+original SLA
+
+Date of original SLA
+
+Details of Modification Note
+
+Date
+
+Author
+
+Reasons for varying/ amending SLA
+Select one of the followino f)ermitted reasons for varying SLA.
+a) Change of Effective Date of SLA
+b) increase in volume
+c) increase in the number of FTE (headcount) required d) revision in Service Levels e) change MIS requirements f) change in billing methodology g) enhancement to an existing Service
+
+State Details of Permitted Change:
+State Reasons for Permitted Change:
+State Impact of Permitted Change:
+Describe Acceptance Procedures:
+Set out Timetable for implementing the Permitted Change:
+Set out the cost for implementing the Permitted Change
+Name/    designation    of
+person    originating    the
+Permitted Change
+* Must be authorised representative under SLA
+Signature of person originating the Permitted Change
+Name/ designation of person accepting the
+Permitted Change
+* Must be authorised representative under SLA
+Signature of person accepting the Permitted Change
+Embed Revised SLA updated to reflect the Permitted Changes made as a result of this Modification Note
+SCHEDULE 5
+COUNTRY REGULATORY REQUIREMENTS
+EXECUTION PAGE
+For and on behalf of Standard Chartered Bank UK Head Office
+Name:
+Position:
+Date:
+For and on behalf of Standard Chartered Bank Singapore Branch
+Name:
+Position:
+Date:
+For and on behalf of Scope International (China) Co. Limited
+Name:
+Position:
+Date:
+49

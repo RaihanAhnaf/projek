@@ -1,0 +1,666 @@
+Standard
+Chartered
+
+S.
+
+eBBS/eBranch - GM
+Service Level Agreement Version 2.2
+DOCUMENT TITLE SERVICE LEVEL AGREEMENT TEMPLATE VERSION 2.2
+LANGUAGE ENGLISH AUTHOR
+CLASSIFICATION
+Internal Use Only
+DOCUMENT OWNER
+
+DRAFT REVIEWERS
+t,I
+DOCUMENT APPROVER
+?aiiwutru'ii
+STATUS
+Draft
+CONFIDENTIALITY STRICTLY FOR INTERNAL USC ONLY All information in this document STATEMENT must not be disclosed to any party outside the Bank without prior consent and written approval from Domain Head for ITO's managed SLAs and CTM
+tor ,n country managed SLAs
+AGREEMENT START DATE (EFFECTIVE DATE)
+AGREEMENT END DATE
+Copyright    Standaid Chartered Bank, 201U. Alt lights reserved, Internal use only
+Document (Template) Amendment Record
+
+11
+
+r:r,
+2.0
+Draft
+17'" Feb
+2016
+Draft SLA for eBBS/eBranch - Gambia
+Cohn Jebasingh P
+2.1
+Draft
+21s' Mar 2016
+Africa Corebank1ng PSS review comments    I
+incorporated in this update
+Colin Jebasingh P
+r 2.2
+Draft
+1st Apr
+2016
+Corebanking TAM rework on Draft SLA
+Cohn Jebasingh P
+CONTENTS
+PAGE
+1    INTRODUCTION    4
+1.1    Purpose of this Agreement.............................................................................................................. 4
+1.2    Legal Information...............................................................................................................................4
+2    SCOPE OF AGREEMENT    5
+2.1    Stakeholders................................................v.......................................................,.............................5
+2.2    Period................................................................................................................................................5
+2.3    Renegotiation....................................................................................................................................5
+3    GENERAL SERVICE LEVEL    6
+3.1    Service Description...........................................................................................................................6
+3.2    SLA Dependencies............................................................................................................................6
+3.3    Failure Scenario...................................... 8
+4    INCIDENT PRIORITY TARGETS    9
+5    DATA BACKUP AND RETENTION    11
+5.1    Transaction Data Retention Period..................................................................................................11
+5.2    Data Restoration Activity Duration..................................................................................................11
+6    CONTACT LIST    12
+6.1    Technology Account Management and Technology Support Escalation Contact List.....................12
+7    DISASTER RECOVERY    13
+8    CAPACITY MANAGEMENT    14
+8.1    Capacity Management Report Distribution....................................................................................14
+9    ROLES/RESPONSIBILITIES AND    SERVICE REVIEWS    15
+9.1    Business Responsibilities................................................................... 15
+9.2    Production and Other Support Responsibilities...............................................................................15
+9.3    GSO Incident Management and Service Desk................................................................................15
+9.4    Service Review Report and Meetings.............................................................................................15
+10    SLA EXCEPTIONS AND LIMITATIONS    16
+10.1    SLA Exceptions.........................................................................................................................16
+10.2    Limitations..................................................................................................................................16
+10.3    Operational Risk Exceptions......................................................................................................16
+10.4    Actions to be Taken if SLA is not Met........................................................................................16
+11    TECHNOLOGY INCIDENT CLASSIFICATION GUIDELINE    17
+12    DISASTER RECOVERY REQUIREMENT    17
+12.1    Business Continuity Plan.................... 17
+12.2    Recovery Point Objective.........................................................................................................17
+12.3    Recovery Time Objective,..........................................................................................................17
+13    EXTERNAL REFERENCES    18
+14    AGREEMENT SIGNATORY PAGE    19
+This document is a Service Level Agreement (SLA) between Technology Account Management and Retail Clients, Banking Operations- Gambia. An SLA is an essential part of the Technology Account Management process and is designed to ensure that the minimum level of IT service needed to support the business:
+?    is clearly understood
+?    provides specific targets against which the performance of Technology services can be monitored, reported, and improved.
+This SLA, in conjunction with the Technology Account Management processes, is designed to deliver service quality through a cycle of agreeing, monitoring and reporting the minimum level of agreed service acceptable to the business for the delivery of technology services to support the operations ot globally.
+Please refer to Section 13 for more details on Glossary and Definitions of Terms
+!•    • •• ' i '? i '    : - :•)<    !. :':cn '• SI A t'v ::.i site Please refei to Section 13»
+The purpose of this SLA is to ensure proper elements and commitments are in place to provide consistent IT service support and delivery to the business.
+The objective of this SLA is to:
+•    Provide clear reference to service ownership on stated application / service
+?    Present a clear, concise and measurable description of service provision to SCB business.
+•    Match perceptions of expected service provision with actual service support & delivery.
+?    This SLA does not supersede dependent application's SLA.
+The SLA process is designed with the goal to improve Technology Service quality through a cycle of agreeing, monitoring and reporting Technology Service achievements and instigation of actions to eradicate poor service performance (if any).
+This is a SLA for IT Services under she Approved Contract between ITO (operating through the entities identified in the Master Services Agreement) and members of the SCB Group dated [1 August 2015] (“Master Services Agreement ) and is governed by the terms and conditions of the Master Services Agreement.
+ti.i ?    . ’    ' v i i. ?    '    '    v-; Sf <? Agrce-j.etr - refer to the SLA Portal site (link
+The following stakeholders are responsible lor the deployment and ongoing support of this SLA:
+Stakeholders
+•    The basis of the SLA and represent the primary stakeholders associated with this SLA:
+•    ITO:
+•    Stakeholder(s):
+•    The following stakeholders are responsible for the deployment and ongoing support of this SLA:
+
+2.2
+This SLA is effective from date    and will remain effective for the next    year
+unless a review of the SLA is organ,sea1 Changes in the amendments section of this SLA are effective
+upon mutual endorsement by the primary stakeholders
+This SLA outlines the parameters of all IT services covered as they are mutually understood by the primary stakeholders This SLA does not supersede current processes and procedures unless explicitly stated herein.
+This SLA will only terminate when the service is decommissioned from production.
+At the end of    year (i.e 01-JUN-2018), the SLA will be reviewed by stakeholders in view of any
+change to the SLA agreed. The review may not necessarily give rise to changes requiring a re-negotiation. The SLA will then be re-endorsed to take effect for another years.
+Note that during review/re-negotiation. the current SLA will continue to apply and will remain effective (not expired) via automatic rollover, if review/re-negotiation is not concluded by SLA renewal due date.
+Upon completion of the review/re-negotiation. the latest SLA will apply (superseding the ro(lover) and the renegotiated SLA will be endorsed to take effect for another two years.
+Besides scheduled reviews (every two years), request for revision of this SLA will be considered for appropriate reasons such as:
+» Following a major release or change of a service
+•    When business needs or processes change.
+•    When associated IT service requirements change.
+» Where lessons have been learnt from previous experience.
+•    When current investment is insufficient to meet the SLA demands, proven by service resumption achievements from past incidents.
+A minimum interval of 3 months is to be observed between requests for re-negofiafjons.
+3 G'.‘.'.;r:.u.’AL SERVICE !..£
+3.1
+... .
+
+
+
+Purpose
+
+
+
+Countries Covered
+1 t ' 6
+Hosted From
+
+Business Criticality
+' •    ,    i '    1 •
+Business Capacity
+Volumes
+118709
+
+
+User Volume
+
+?    f J . !? 1','d
+v.ii G/3 IL. :crilyi 669(Active) Users
+Service Level Reporting
+
+
+
+
+
+
+Online- ?
+
+
+
+
+'• ’5iir .s (Country Local Time)
+Ten rir/y Local Time)
+
+
+:? 1 ’• .. '    -A».,.’ A'. . .
+1 £... .CJlTHr- Ornviit'f/s
+Countiy Load Time)
+Targeted Operating Hours
+
+t *    p.Bran !• — GM
+
+
+?'    ; £-'.?/ it - ri t .y t... - 7.3 Ofl/irs (Counl/y Local Time).
+''•.i,'..,    ; i iKtiHrv, Cotrnf/y Local TtrneJ
+?'r</'. > Nor Available
+. ’? r.-:.-,    Is t’Obrs
+iV'in time or T sclnlu'^l
+
+
+Target Service Availability Aggregate availability per month expressed in %
+I
+Scheduled
+Downtime
+?    - rrwe (...) riiri.’ri'srinrice tvortt will f-e notified by
+1    •    ? .,    me! chanye maimgernent process. System
+•    ’? 'm 3olc)> Run 'me and scheduled
+3.2 e .A OLiPi£;MOL:. ;C!ES
+INTEF
+FsTArUSrONCT
+Incoming Interface Files from Other Services (Local Time)
+CRITICAL INTERFACES
+
+
+3- ?''tv-EOOafeBBS
+In the event of delays in receiving end of day input files listed above, IT will make necessary judgement in consultation with Systems & Processes and Business if necessary and notify
+Customer Contacts and users impacted by 09:00 hrs.
+Outgoing interface (Oowntoad from eBfa’SJ
+
+Start of Day files
+Post EOD Date change and before system online
+Reports (Users to confirm within 6hrs)
+08:00
+NB. EOD for eBBS begins @ 22:30 PM (Local time) and ends by 01:00 AM
+
+m the event of delays. IT will make necessary judgement in consultation with
+Business if necessary and notify Customer Contacts and users impacted by
+09:00 hrs.
+
+Dependency on other SLA. Underpinning Operational-Level Agreement (OLA) and/or
+Underpinning Contract (UC)
+_
+3.3 FAILURE SCENARIO
+.    ,i ? • ••,<. i!., n ?c©i,artos ara automatically detected and
+• '•    -yi " i ."Lr    i .    T«- •» 'ic .non to be restarted manually pest
+1 •    '< i •    l! ;?    ' ir..••••?•.)    ?') ' i, •    ...)......., ? ??.-, cf the application is estimated to take
+?t 1'.' '.s 1 • a n*'.''S uh ? i|, ? i . i    ,i id recovery (MOR) The scenarios below exclude
+ter «a    ' i, ? ..uient
+
+
+...
+
+1    it:, i ke DC
+dtsrupfions
+
+
+
+; Automated Detection &
+Recovery (Y/N)
+
+Mo
+
+Target Resumption
+f - • $    v ’ ••“i’lffij
+
+45 Minutes (Approximately)
+
+
+
+
+Critical Priority
+Target Resumption
+, ' • '!
+
+Standard Definition
+,li    y, c,.-, ,i    vi i/pov Incident Classification
+
+Service Level
+ii f'nciity r , tents to be resolved within 1
+
+RCA Report
+• '    ..vs Piob'am Management
+
+
+1 ;    ••    ??.?•ngem*nt Proc&ss is shared in
+.'?lOtV1--
+
+Exceptions for Critical priority incidents classification
+?    1    outside the reasonable
+•    <• i" ‘    by'fi'tis SLA This includes
+
+
+i- < vj. ? -i    IlSP) fa biiss
+? t and ot i -ill c t ''P failures which impact a
+? - .    • net to the bank anrl are not
+. ' ip,    not coveted by this SLA.
+I', .-I •. and Natural Disasters
+!•’ t, iiicrif v    i'.;,' .» v.jIi,rat tnsaslers causing
+•? 'p    i infr ii 'rnatuie failures in a country or
+e ::?? hy. cmr: urc-s ability tc connect to the
+- v. ?c ? ? h .nii ,raormsesare not covered
+
+
+, .'.i '    i-c    ? ? .-..th SCB technology or SCB
+High Priority
+Target Resumption
+
+
+Standard Definition
+'to// Incident Classilicatidh
+
+Service Level
+j . is to be resolved within 8
+
+RCA Report
+I - -    •.••port foi'ows Problem Management
+
+
+? ?’/ '    . watt Process is shared in
+
+Exceptions for High priority incidents classification
+in . r r -. i::n , i iors outside the reasonable , /    o, ' '    riivt ? ? d by this SLA This includes
+
+
+i i u; S. 'V":- , 'ovclei (ISP) failures i, ?' ?n. i :nb:.i iSP failures which impact a i:U u uiiT:;y tc ncri unt fo the bank and are not m ??? -«ted :-y SCE me not covered by this SLA
+SV, iff)    ' ? r .    .....
+'n,;,.1'v. thm o: aefuiaf disasters causing ? ? '.i.i j.'"'' . iiticiure failures in u countiy or
+ilp'ty to connect to the v , . asidr.ink prainisps are not covered
+
+
+, •. ? ,    •. .i (c ' •r'fffGh .. 'h SCS technology o/ SCti
+Medium Priority
+Target Resumption
+L. -i '    ?! store impact reaches high
+
+Standard Definition
+fniiifiieht Classification
+
+Service Level
+?m IT, iiy    id'.; !c to be resolved on best
+? m;: i ? ii. iiches high prioritv levels
+
+RCA Report
+Piotr'em Management
+
+
+'QC'SS
+i' l o te 1 i r > i
+—
+?- >\‘du ith.mun Process is shared in
+
+Exceptions for Medium
+/j /< • •: £F> ‘
+v ? ? >. Pride the. reasonable
+
+priority incidents classificatioi
+?.j ••    •
+?< •    Cl.-J. ??»<? r.-!;','irr,'r?s
+
+
+1 , ' ’ ’<
+•A-    •.vrrg
+
+
+>; v.' 5.
+t tv >v w'et (i.SP). failures
+
+
+
+?? .nr,1 l-.P 'oritr/e.'.' .v,1;,'di impact a
+.    • ccmoct (a the hank and arg nut
+' r.    < oven ;i by this SLA
+
+
+
+i Natural'disasters
+
+
+nV mrnenl .a
+? m nr ?ntiuat disasters causing
+
+
+• A?
+inf/as’cuctiire failures in a country or
+
+
+,<r /,• .
+i r u-ability lo connect to the
+
+
+• ' '.,6-5 Of
+..vests A-vnlt premises ore not covered
+
+
+by Whs SLA
+riiluios with SCB technology or SCB
+
+
+
+
+Low Priority
+Target Resumption
+
+'?-.iv ’s classified as Low priority
+
+Standard Definition
+?r". , 1 7i frti nlent Glassification
+
+Service Level
+
+•to if to bn resolved within 46
+
+
+
+
+
+RCA Report
+
+|V follows Problem Management
+
+
+Mote l.'ifk io prfiblc 3©'"’IQ ! ?i.
+,-,i Management Process is shared in
+Copyright'© Standard Chartered Bank, 2016. At( rights reserved. Strictly for Internal use only Page 10 of 19
+TRANSACTION DATA RETENY
+ION PERIOD
+Daily Backup of Transactions Database
+30 Days
+Weekly Backup Transactions Database
+TBD
+Monthly Backup Transactions Database-
+TBO
+Yearly Backup Transactions Database •
+7
+t; ;> ? <    ? ?    ? i-;-- i • :.n    In ;jii» nt
+,'??? <    • .    )    ?»    .    -    ?'    Please'ef.':o Section 13 for SLA
+5.2 DATA RESTORATION ACTIVITY DURATION
+? ; : .. rmd b'. minimum technology
+
+
+Accountable(A) Owner
+
+1 Week RMS Request
+
+1 Week Change Request
+
+1 Week
+
+Restoration
+
+Raise an RMS request and get the D8 Image from the UK GDC. The DB Image need to be restored from the Offline Tape by the UK GDC
+To raise a Change Request and move the Copied DB Image from the PRD Server to the UAT Server (Which needs to be done during the non business hours) without impacting other applications since the transfer is happening via Network with the required GNOC approval
+Development Database team to restore the DB Image to the UAT Server
+
+PSS & UK GDC Team
+
+PSS&GNOC Team.
+
+ISO DB2 team & UK GDC Team.
+
+TECHNOLOGY SUPPORT
+Technology Governance > IT Asset Mgmt > IT Asset Management Reports > ITAM Application Link (Refer to Section 13)
+Please refer to IT Asset Management Report for the latest contact for Technology Account Management (TAM) & Technology Support.
+ 
+Primary TAM
++91 97907 99006
+Senior TAM
+1160244
+Anand.V1@sc.com
++91 72999 34255
+
+14 56609    Coliri.JebasirirthP@sc.com
+1148200    Catalina.LP.Chan@sc.com
+
++852 63313180
+
+TAM Domain Head
+ 
+Primary
+Technology
+Support
+1238114
+
+Phone Number
+
+Maria-Arul-Rajan.Maria-Soosai@sc.com
+
++91 98415 60348
+
+Secondary
+Technology
+i Support
+
+115<J8S0
+
+Susegndran.Raiendran@sc.coin
+
++91 98412 71327
+
+Technology Support Domain
+
+1202600
+
+Murali Achuthan@sc.com
+
++91 98415 42314
+
+Head
+nl i-it. A.lfr'k'
+Phone Number
+
+
+.. ? ayMtfWrfg
+* Email address
+
+
+
+
+•    -i" n. b
+
+red
+Wit)
+
+
+
+. ir ) yes* ions .v
+
+
+
+>
+
+
+
+
+
+i
+
+
+
+
+
+
+
+
+
+
+
+
+•ice
+will
+
+j Business Technology must involved in the recovery process ? iveied lo lhal site'
+r. conducted twice every year test    will be available
+be discussed with the business
+
+The Business Criticality Rating for each application will determine the requirement for DR capability - refer to Section 12: DR Requirement.
+
+Recovery
+Time
+Objective (Refer to Section 13 for its URL)
+(Refer to Tiering Schedule3 of the Recovery Time Objective Link)
+PI ? This is how quickly business ,, ,i .    • ,    ,? >. . • ' «••(.•lnri. q .' system available tor use in
+i . da! ei nt: a§ a whole •>
+
+Exceptions
+?i    n: • ini, Any exceptions to this Policy for
+a F -i.irss Ci icalitv Rating Of 3 4 or 5 must be
+
+Data
+Currency
+? ."inr of data (;.• g business transactions) lhat v cling critical business functions
+
+
+t,rs uid minutes A Data Currency of ? i    ' . .    i -i    ..i    irate a maximum loss of 24
+
+
+ii'.'kt u.i "• prr.-vent toss cf data
+' ,i ;ow data to be restpied if F .’ .' -j '    n" ii.'l 'eiention must be
+u . ? .in- • n i. irements detailed m the Technology
+Note Should Disaster Recovery plan is unavailable, a Phoenix risk will be raised.
+Demand and Capacity Management monitoring is done in collaboration with Banks Capacity Management team. The capacity report will be provided to ousiness on request basis. Any capacity bottlenecks or hotspots will be reported in the service review report.
+8. i CAv*ACI i ' t/1 AI4 AGEDII-.r! T ItEr Cl!T DIS s i?E C rtON
+Banks Capacity Management team issues a monthly report on Capac,ty snapshot of the service The report will be shared with business on request basis
+Copyright L Standard Chartered Bank, 2016. All rights reserved. Strictly for Internal use only Pago 14 of 19
+ 
+1. To ensure and communicate regulatory and compliance requirement for data retention in markets where the service is used. This includes the type of data (for example transaction, customer signup forms, legal documents) to be retained and the retention period for the specific market.
+2    To communicate schedule downtime of services to the customer
+3    To communicate and provide clear understanding of regulatory and compliance requirements from different markets which may impact different aspects of technology services. For example, if there is a regulatory requirement to update the operating system patches every six months, it is business responsibility to communicate these requirements to technology via appropriate channels,
+4. BCP plan and invoking BCP in case of catastrophic failure where technology services are not available for prolong period
+9.2 PilOOUCTlOH AND OTHER SUPPORT RESPONSIBILITIES
+1. It is a joint responsibility of both Technology Solution Delivery and Production Support Teams to assess the impact of a technology change in production system
+2 Monitoring of network links and overall network state is the responsibility of Collective intelligence Centre (CnC)
+3. The Data Centre Service Management team is responsible to ensure the Data Centre Infrastructure Service availability target is met
+4 TAM is to own the Continuous Improvement Program (CIP). It is a set of activities designed to bring gradual, but continual improvement to the state of service through regular review Technology will run the Continuous Service Improvement programs as part of their Business As Usual (ESAU) and publish the CIP achievements in the forum advised by Business and Technology.
+9.
+The links below (shared in Section 13) contain the GSO Service Desk and Incident Management Bank wide standard SLA (known as common services).
+•    Problem Management Process Link.
+?    Incident Management Process Link.
+During the period of the agreement, service review meetings may be held on a regular basis < ency e g to be agreed between Technology Account Management and the
+Business.
+1.    Review of mator incidents that have occurred and their root causes
+2.    Serious problems that remain outstanding
+3.    Service Level reports with specific attention on trends
+4.    Future events that may affect the service
+5 Planned activities
+This SLA (partially or fully) and any applicable service levels do not apply to any performance or availability metric if the service issues or incidents are due to:
+1.    Force Majeure event (as defined in the Master Services Agreement)
+2.    Customers' errors or customers' setup errors by business teams.
+3.    Customer, business or operations non-conformance to minimum specification, requirements, agreed processes and procedures
+4.    During the approved downtime for Integrated Releases, the SLA for availability and supportability will not be applicable
+5.    All performance metrics of this SLA will be suspended if the primary data centre is completely lost as a result of Force Majeure. In this scenario, the recovery will be done in accordance to CRES (Corporate Real Estate Services) Disaster Recovery Group Tiering Procedure (B536) Tiering Schedule III RTO by Group Business Continuity Management.
+6.    No performance metric on this SLA is applicable to PTR (Production Trial Run) customers.
+7    This SLA does not supersede the interfacing application services SLA The interface application services
+availability, supportability and reliability service level will be managed by their own SLAs agreed with their respective business unit. This SLA is only for <service name> and do not supplement or compliment any interfacing applications service level.
+1.    This SLA does not cover service performance of interfacing systems and back office systems. OLAs (Operation Level Agreements) have been agreed between technology teams and critical back office interface teams to ensure appropriate level of required support from interfacing teams. The back office applications service availability, performance, supportability and reliability will be governed by their own respective business SLAs.
+2.    This SLA does not cover Business Team’s service level.
+3.    Complex application fixes require a release window to implement Application fixes which require integrated release to fix are not subject to incident management SLA specified in this document. These incidents will follow the appropriate release implementation schedule.
+If an operational risk is raised and approved by both technology and business in the Phoenix system against a specific key performance metric of this SLA, that metric will be suspended. Apart from Phoenix risk, Riskwise is also an acceptable register for run time or project risks
+If the SLA is not met for a month, Technology Account Management will instigate a number of actions such as:
+1.    Initiate RCA and review incident trends for any Critical, High, and Medium problems based on request.
+2.    Review the findings of all root causes that technology and production support team initiated for the problems leading to the breached or near-breached SLA.
+3.    Meet with business to provide specific, actionable recommendations on rectification and future prevention.
+1 • i l • 2 . .. v.* <u. v? V./ . u . , vj J ,    X, . . *. k?11 w>«. * L kx«X* uJ U f 4jL.ull4 L.
+Please refer to Section 13 for the link to the Technology Incident Classification Guideline Document.
+The Disaster Recovery of data centre will be done in accordance to Data Centre standards and group business continuity guidelines The CRES Disaster Recovery Group Tiering Procedure (B536) Tiering Schedule III RTO by corporate BCM (Group Business Continuity Management) will be the governing SLA for Disaster Recovery. (Refer to Tiering Schedule III). Data Centre DR SLA will be adopted when there is a total outage of primary data centre
+Please refer to Section 13 for the link to the Group Business Continuity Management Policy & Procedures and the Business Criticality Rating Table
+Note: Upon signing this document, the existing procedure is followed and any changes initial or dispute operation risk is expected to be raised
+Business Continuity Plan (BCP) will be owned, managed and executed by respective business units. It is a responsibility of business units to have an operational BCP in place
+Please refer to Section 13 for the link to the Group Business Continuity Guidelines For Business Criticality, please refer to Tiering Schedule III.
+Business Operations and Technology are to adhere to the following standard stipulated by Global Data Centre Management
+In the event of a major and physical site Data Centre disaster, this Service SLA will be suspended until the full restoration or another alternate site is made available
+2.    CRES RTO's (Recovery Time Objective) are linked to the Business Criticality (BC) rating of applications and infrastructure, as indicated in ITAM. Please refer to the link DR Standard Policy - Tiering Schedule III. Please refer to SharePoint Link of the Group Business Continuity Management Policy & Procedures in Section 13
+3.
+Note: Upon signing this document, the existing procedure is followed and any changes initial or dispute operation risk is expected to be raised
+No
+Reference
+Link
+1
+SLA Portal site
+http://teamsites.sc.com/sifes/sm/Paaes/SLA.aspx
+2
+Glossary and Definitions of Terms
+http://teamsites.sc.com/sitesZsm/Pages/SLA_Glossary_and_Definifion_of_Terms.aspx
+3
+SLA Signatory Requirement from Local Country CT M / CIO
+http://teamsites.sc.com/sites/sm/Pages/SLASignatoryRequirement,aspx
+4
+ITAM Application Link
+http://teamsites.sc.com/sites/LAVM/ITAM/horne.asDx/IT%20Asset%20Manaaement%20Reborts/Forms/ Allitems.aspx
+5
+Problem Management Process
+http://teamsites.sc.com/sites/TG/SP/PROC/TPF/pm/Pages/default.aspx
+6
+Incident Management Process
+h‘tp.7/teamsites.sc.com/sites/TG/SP/PROC/TPF/IM/Pages/default.aspx
+7
+Technology Incident Classification Guideline Document
+bliD.7/tesmsi}es.sc.com/sites/TG/SP/PRCCn'PF/im/Documents/lncident%20Classification%20Process.
+dpex
+8
+Business Criticality Rating Table
+http://iconnect.zone1.scb.net/cres/bc/Documents/Policy%20Refresh%202013/TIERlNG%20-
+%20FULL%20DR%20snd%20HA%20Policy%20V5.3.doc
+9
+Recovery Time Objective
+http://tconneel.zone1.seb.net/cres/bc/PaQes/Po5icvProcedure.aspx
+10
+Group Business Continuity Management Policy & Procedures
+http://iconnect.zone1.scb.net/cfes/bc/PeQes/PolicyProcedure.aspx
+ 
+
+4k
+—-
+I
+(Signature)
+
+(Date)
+
+«Representative from CIO/CTM*>>
+
+'........
+
+
+
+(Signature)
+'f    C.-vnuna to Prnq
+«Head. Technology Account Management»
+(Date)
+
+(Signature
+Arhittha: Mure.
+«Head, Technology Support Team»
+(Date)
+Copyright © Standard Chartered Bank 2016. All rights reserved. Strictly for Internal use only
+Page 19 of 19

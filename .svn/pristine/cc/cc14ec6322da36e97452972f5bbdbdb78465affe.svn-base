@@ -1,0 +1,179 @@
+<script type="text/javascript">
+    var userinfo = {
+        usernameh: ko.observable('{{.Username}}'),
+        menunameh: ko.observable('{{.Menuname}}'),
+        locationid: ko.observable('{{.LocationId}}'), 
+    }
+</script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/administration.css">
+<script src="{{BaseUrl}}res/core/js/usersetting.js"></script>
+<!--  Js switch  -->
+<script src="{{BaseUrl}}res/switch-js/bootstrap-switch.js"></script>
+<script src="{{BaseUrl}}res/switch-js/highlight.js"></script>
+<script src="{{BaseUrl}}res/switch-js/main.js"></script>
+<!-- Js switch  -->
+
+<!-- switch Bootstrap CSS  -->
+<link href="{{BaseUrl}}res/switch-css/bootstrap-switch.css" rel="stylesheet">
+<!-- switch Bootstrap CSS -->
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <span class="bar">Administration</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <a href="/usersetting/default">User</a>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+            <span class="thin uppercase hidden-xs font2" data-bind="text:usersett.DatePageBar"></span>&nbsp;
+        </div>
+    </div>
+</div>
+<div class="row clearfix">
+    <div id="usersett">
+        <div class="col-md-12">
+            <div class="portlet box twis">
+                <div class="portlet-title">
+                    <div class="caption">
+                        User Entry
+                    </div>
+                    <div class="tools" style="margin-top: -4px;">
+                        <button type="button" class="btn btn-sm btn-success btn-flat" data-bind="click:usersett.AddNew"><i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="row">
+                        <div class="col-sm-3" >
+                            <div class="form-group">
+                                <label>User Name</label>
+                                <select id="select-username" data-bind="kendoMultiSelect:{value: msUsernameVM.filterUser, data: msUsernameVM.listUserName,valuePrimitive: true,filter: 'startswith', dataTextField: 'text', dataValueField: 'value', change: function(e){usersett.onChangeUser(e.sender._old)}}" ></select></div>
+                            </div>
+                        <div class="col-sm-3">
+                            <label>Role</label>
+                            <select id="select-role" data-bind="kendoMultiSelect:{value: msRoleVM.filterRole, data: msRoleVM.listRole, valuePrimitive: true, filter: 'startswith', dataTextField: 'text', dataValueField: 'value', change: function(e){usersett.onChangerole(e.sender._old)}}"></select>
+                        </div>
+                        <div class="col-sm-6" >
+                            <label>Status</label><br>
+                            <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-on bootstrap-switch-animate">
+                                <div style="height:30px" class="bootstrap-switch-container">
+                                    <input id="StatusFilter" type="checkbox" class="make-switch" checked data-on-text="active" data-off-text="inactive">
+                                </div>
+                            </div>
+
+                            <!-- <button style="margin-left: 1px" type="button" class="btn btn-sm btn-refresh space2" data-bind="click:usersett.Search"><i class="fa fa-search"></i> Search</button> -->
+                            <button style="margin-left: 1px;background-color: #f13942" type="button" class="btn btn-sm red space2" data-bind="click:usersett.Reset"><i class="fa fa-repeat"></i> Reset</button>
+                        </div>
+                </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portlet-body">
+                                <div data-bind="visible: usersett.loading()">
+                                    <center class="align-center">
+                                        <h5>Please wait while processing your request</h5>
+                                        <img src="/static/img/loader.gif" alt="Loading..." />
+                                    </center>
+                                </div>
+                                <div data-bind="visible: !usersett.loading()">
+                                    <div id="MasterGridUser"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content konten-user margin16">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <button type="button" class="close btn btn-sm btn-flat" data-dismiss="modal" data-bind="click:usersett.Cancel"><i class="fa fa-times"></i> 
+                       <span class="sr-only">Close</span>
+                </button>
+                            <h4 class="modal-title" id="myModalLabel" data-bind="text: usersett.titleModel"></h4>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <form class="form-horizontal" id="AddUserSetting">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-5 form-control-label onlabel">User Name<span class="mandatory">*</span></label>
+                                    <div class="col-sm-6 pads">
+                                        <input type="text" class="form-control input-sm" name="userName" id="userName" placeholder="Type Name" validationMessage="User Name required" required data-bind="value:usersett.userName" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-5 form-control-label onlabel">Full Name<span class="mandatory">*</span></label>
+                                    <div class="col-sm-6 pads">
+                                        <input type="text" class="form-control input-sm" name="fullName" id="fullName" placeholder="Type Full Name" validationMessage="Full Name required" required="" data-bind="value:usersett.fullName" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-5 form-control-label  onlabel">Email<span class="mandatory">*</span></label>
+                                    <div class="col-sm-6 pads">
+                                        <input type="text" class="form-control input-sm" data-type="email" name="email" id="email" placeholder="Type Email" validationMessage="Email required" required="" data-bind="value:usersett.email" />
+                                    </div>
+                                </div>
+                                <div class="form-group" data-bind="visible: !usersett.edit()">
+                                    <label for="inputPassword3" class="col-sm-5 form-control-label onlabel">Password<span class="mandatory">*</span></label>
+                                    <div class="col-sm-6 pads">
+                                        <input type="password" style="height: 30px;" class="form-control input-sm" data-type="password" name="password" id="password" placeholder="Type Password" validationMessage="Password required" required="" data-bind="value:usersett.password" />
+                                    </div>
+                                </div>
+                                <div class="form-group" id="confirmPass" data-bind="visible: !usersett.edit()">
+                                    <label for="inputPassword3" class="col-sm-5 form-control-label onlabel">Confirm Password<span class="mandatory">*</span></label>
+                                    <div class="col-sm-6 pads">
+                                        <input type="password" style="height: 30px;" class="form-control" data-type="confirmPassword" name="confirmPassword" id="confirmPassword" placeholder="Type Confirm Password" validationMessage="Password required" required="" data-bind="value:usersett.confirmPassword" />
+                                    </div>
+                                </div>
+                               <!--  <div class="form-group" id="confirmPass">
+                                    <label for="" class="col-sm-5 form-control-label onlabel">Potition <span class="mandatory">*</span></label>
+                                    <div class="col-sm-6 pads">
+                                        <input type="text" style="height: 30px;" class="form-control" data-type="" name="potition" id="potition" placeholder="Type Potition" validationMessage="Potition required" required="" data-bind="value:usersett.potition" />
+                                    </div>
+                                </div> -->
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-5 form-control-label onlabel">Status</label>
+                                    <div class="col-sm-6 pads">
+                                        <div class="bootstrap-switch-container" style="width: 147px; margin-left: 0px;">
+                                            <input id="Status" type="checkbox" class="make-switch" checked data-on-text="active" data-off-text="inactive">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-5 form-control-label onlabel">Location</label>
+                                    <div class="col-sm-6 pads">
+                                        <input style="width: 233px" type="text" name="location" id="location" data-bind="kendoDropDownList:{value:msLocation.value, 
+                                        data: msLocation.data,
+                                        valuePrimitive: true,
+                                        dataTextField: 'Text',
+                                        dataValueField: 'LocationID',
+                                        optionLabel: 'select location'}" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-5 form-control-label onlabel">Role</label>
+                                    <div class="col-sm-6 pads">
+                                        <input style="width: 233px" type="text" name="role" id="role" data-bind="kendoDropDownList:{value: msRoleVM.role, 
+                      data: msRoleVM.listRole,
+                      valuePrimitive: true,
+                      dataTextField: 'text',
+                      dataValueField: 'value',
+                      optionLabel: 'select roles'}" />
+                                    </div>
+                            
+                        <div class="form-group col-md-12 align-right">
+                            <button type="button" class="btn btn-sm btn-success btn-bottom btn-flat" onclick="usersett.clickSave()"><i class="fa fa-floppy-o"></i>&nbsp;Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </form>
+            </div>
+            </div>

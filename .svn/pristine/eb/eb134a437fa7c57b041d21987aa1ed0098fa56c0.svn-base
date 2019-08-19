@@ -1,0 +1,45 @@
+package main
+
+import (
+	. "eaciit/proactive-inv/controllers"
+	_ "eaciit/proactive-inv/webext"
+	"net/http"
+	"strings"
+
+	"eaciit/proactive-inv/helpers"
+
+	knot "github.com/eaciit/knot/knot.v1"
+	tk "github.com/eaciit/toolkit"
+)
+
+func main() {
+
+	app := knot.GetApp("ecfinancial")
+	if app == nil {
+		tk.Println("App not found....")
+		return
+	}
+	routes := map[string]knot.FnContent{
+		"/": func(r *knot.WebContext) interface{} {
+			http.Redirect(r.Writer, r.Request, "/login/default", http.StatusTemporaryRedirect)
+			return true
+		},
+		"prerequest": func(r *knot.WebContext) interface{} {
+			url := r.Request.URL.String()
+			if strings.Index(url, "/login") < 0 &&
+				strings.Index(url, "/static") < 0 &&
+				strings.Index(url, "/appstatisticworker") < 0 &&
+				url != "/" {
+				new(BaseController).IsAuthenticate(r)
+				return nil
+			}
+			return nil
+		},
+		"postrequest": func(r *knot.WebContext) interface{} {
+			return nil
+		},
+	}
+	config := helpers.ReadConfig()
+	serverport := config["serveraddress"] + ":" + config["portlistener"]
+	knot.StartAppWithFn(app, serverport, routes)
+}

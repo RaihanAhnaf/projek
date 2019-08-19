@@ -1,0 +1,2140 @@
+
+
+
+
+CONFIDENTIAL
+Standard Chartered Contract Reference: SG / AGM / 123512 / 0 /2014
+FircoSoft Contract Reference: F1S/JCN/C2012-006
+SOFTWARE LICENCE, IMPLEMENTATION and MAINTENANCE
+MASTER AGREEMENT
+Relating to the provision, implementation and support of financial watch list screening software.
+Between:
+STANDARD CHARTERED BANK
+and
+FIRCOSOFT SAS
+
+
+CONTENTS
+1    Definitions .................................................................................................................................. 3
+2    Interpretation ..............................................................................................................................9
+3    Master Agreement and Statements ofWork............................................................................10
+4    New Agreement .......................................................................................................................10
+5    Precedence ..............................................................................................................................10
+6    Term of this Agreement............................................................................................................10
+7    Term of a Statement ofWork ...................................................................................................10
+8    Supplier's General Obligations.................................................................................................11
+9    Implementation Services.......................................................................................................... 11
+11    Software Licence......................................................................................................................12
+12    Operating Manuals and Training..............................................................................................13
+13    Acceptance Tests.....................................................................................................................13
+14    Software Maintenance and Support.........................................................................................13
+15    Maintenance and Support Failure and Performance Bonus....................................................14
+16    Deposit of Source Materials.....................................................................................................14
+17    Project Management................................................................................................................15
+18 Staff .........................................................................,..........................................................16
+19    Change Control........................................................................................................................17
+20    Charges and Payment .............................................................................................................17
+21    Service Credits.........................................................................................................................19
+22    Limitation of Liability.................................................................................................................19
+23    Intellectual Property Rights Indemnity .....................................................................................20
+24    Warranties Representations and Undertakings .......................................................................20
+25    Termination ..............................................................................................................................22
+26    Effect of Termination................................................................................................................23
+27    Post Termination Assistance ...................................................................................................23
+28    Confidentiality...........................................................................................................................24
+29    SCB Group Confidential Information Protection and Security .................................................25
+30    Record Keeping .......................................................................................................................27
+31    General Terms .........................................................................................................................28
+Schedule 1    Charges.......................................................................................................................33
+Schedule 2    Statement ofWork Template ......................................................................................35
+Schedule 3    Maintenance and Support Services ............................................................................38
+Schedule 3    Maintenance and Support Services ............................................................................38
+Schedule 4    SCB Group Information Security Requirements .........................................................48
+Schedule 5    Change Control Process.............................................................................................60
+Schedule 6    Volume Verification .....................................................................................................62
+
+
+
+
+This Agreement is made between:
+(1) Standard Chartered Bank, a company incorporated in England and Wales with limited liability by Royal Charter 1853, under reference ZC18 whose principal office in Singapore is situated at 8 Marina Boulevard, Marina Bay Finance Centre Tower 1, Singapore 018981
+("SCB");
+(2) FircoSoft SAS, a company registered in Paris, France, registered number 419 637 657 whose registered office is at 247 rue de Berey, 75012 Paris, France (the "Supplier");
+Together hereafter the "Parties",
+Background:
+(A) SCB wishes to procure from the Supplier certain software and services relating to financial watch list screening.
+(B)    The Supplier is able to provide such software and services to SCB.
+(C) The parties have therefore agreed that the Supplier shall supply SCB with software and services in accordance with the terms and conditions of this Agreement.
+IT IS AGREED:
+1 Definitions
+1.1 In this Agreement, unless inconsistent with the context or otherwise specified, the following capitalised terms shall have the following meanings:
+Acceptance Certificate
+
+Acceptance Criteria
+
+Acceptance Tests
+
+means a written certification in the form provided by SCB in which SCB accepts Software in accordance with the Acceptance Criteria for that Software;
+means the written criteria against which Software will be tested by SCB as referred to in the SOW to ensure that the Software and/or deliverables are in accordance with the
+requirements in this Agreement;
+means the testing of Software against Acceptance Criteria to be carried out by the parties in accordance with the process set out in the SOW;
+
+Agreement means this software licence, implementation services and maintenance master agreement as may be varied or amended from time to time in accordance with this Agreement including any Schedules attached;
+Authorised Representative means in respect of each party the person designated in writing to the other party as authorised from time to time to exercise any powers and/or undertake any activities of that party under and in accordance with this Agreement;
+Change
+
+means a change to the scope of the Services, Software, deliverables, Project Plan or SCB's Requirements;
+narcerea
+Change Request Form
+
+Charges
+
+Completion Date
+
+Concurrent User
+Confidential Information
+
+means a note substantially in the form set out in Schedule 5 to be completed in accordance with clause 19 when a Change is required;
+means the charges for the Software, Services or deliverables as set out the SOW as calculated by reference to the rate card in Schedule 1 or as agreed between the parties from time to time in a Change Request Form;
+means in relation to each Milestone or the Software (as the case may be), the date specified in the Project Plan by which such Milestone or Software (as the case may be) is to be completed, supplied, installed and accepted in accordance with this Agreement;
+means a User account that can be simultaneously logged-in with other Users;
+means all proprietary and confidential information of the parties and those of their customers, clients, personnel or suppliers whether commercial, financial, technical or otherwise (whether oral, in writing, machine readable or in any other form) and material (whether electronically recorded, in writing or otherwise) which by its very nature should obviously be treated as secret and confidential or which is designated as such and which the parties desire to protect against unrestricted disclosure or competitive use, including without limitation:
+(a) Customer Data and Personal Data;
+(b) information relating directly or indirectly to the Parties' business, including but not limited to details of trade secrets, know-how, strategies, ideas, operations, compliance information, processes, methodologies and practices;
+(c) information supplied to SCB Group by suppliers which
+SCB is authorised to disclose;
+information relating directly or indirectly to SCB Group's plans, intentions, know-how, market opportunities and business affairs or those of its suppliers, customers (including potential customers) and clients;
+(d) works of authorship, products and materials written and prepared by the Parties or a member of SCB Group in relation to this Agreement including but not limited to computer programs, data, diagrams, charts, reports, specifications, sketches, inventions and working papers or similar materials of whatever nature or on whatever media relating thereto;
+(e) any information resulting directly or indirectly from the discussions or negotiations relating to this Agreement and all copies, notes, records and all related information (in any form) generated by the Parties or a member of SCB Group based on or arising from any disclosures for this Agreement; and
+Customer Data
+Customer
+Data Breach
+Data Protection Laws
+Destructive Code
+Developments
+Development Services
+Documentation
+Effective Date
+Final Acceptance Certificate
+
+Chartered
+(f) the terms of any agreement reached by the parties or proposed by either party (whether agreed or not) in connection with the Agreement;
+means any data, records or information (in any form) relating directly or indirectly to a Person that is a customer or client of any SCB Group member (including but not limited to past, present and/or future customers or clients, third party guarantors or sureties of any member of SCB Group) and from which it is practicable for the identity of the Person to be directly or indirectly ascertained by reference to other data, records or information;
+means (for the purpose of the licence use parameters of the Software) a customer in the data provided to the Software for processing. A Customer is deemed unique based on their name (first name, surname, any middle names) and their unique identification number (namely a passport number, identification card number or otherwise);
+means any loss or destruction of, or unauthorised Processing, disclosure or misuse of, or damage or accidental or unauthorised access to, SCB Group Confidential Information, or failure of or failure to implement the
+Information Security Controls;
+means all statutes, laws, secondary legislation, regulations, guidelines and industry standards applicable to SCB Group pertaining to privacy, confidentiality, banking secrecy and/or the protection of Personal Data or Customer Data;
+means any software virus, Trojan horse, worm, logic bomb or other software routine or hardware components designed to permit unauthorized access, to deny authorized use, to disable, erase, or otherwise harm software, hardware or data, or to perform any unauthorized actions;
+means any customised software programs (other than the Standard Software), customisations and/or additions to the Standard Software including any interface programs which are developed and/or supplied by the Supplier pursuant to this Agreement (and more particularly described in the applicable SOW) to meet SCB's Requirements.
+means the professional seNices to develop and deliver the Developments to meet SCB's Requirements.
+means the information in documentary form relating to the use of the Software and/or documentation in relation to training seNices;
+the later date as of which Authorised Representatives of both parties executed a printed copy of this Agreement;
+means a written certification signed by SCB's Project Manager which will certify that all Acceptance Tests and Implementation SeNices have been successfully completed and accepted by SCB pursuant to this Agreement for the Site;
+Good Industry Practice
+
+Implementation Services
+
+Intellectual Property Rights
+
+Chartered
+means that degree of skill, diligence, care, prudence, foresight and operating systems and practice which would reasonably and ordinarily be expected of a skilled and experienced supplier engaged in the same or a similar type of business as that of the Supplier (within the financial services sector or otherwise) under similar circumstances;
+means those implementation, configuration and training services to be provided by the Supplier pursuant to this
+Agreement and more particularly described in the SOW;
+means all current and future copyright, patents, trade marks or rights in databases, inventions or trade secrets, knowhow, rights in designs, topographies, trade and business names, domain names, marks and devices (whether or not registered) and all other intellectual property rights and applications for any of those rights (where such applications can be made) capable of protection in any relevant country of the world;
+
+Maintenance and Support Services
+
+Milestone
+
+Old Agreement
+
+Person
+
+Personal Data
+
+Processing
+
+means the maintenance and support services as detailed at Schedule 3 to be provided by the Supplier pursuant to this Agreement;
+means an event or task which must be completed by the date set out in the Project Plan, Statement of Work, or other document agreed by the parties and as may be amended in accordance with the Change process in clause 19;
+means the General Supplier Agreement agreed between FircoSoft Singapore Private Ltd and SCB dated May 2012 with reference number FIS/FLI/C2012-105;
+means any individual including their personal representatives, sole proprietorship, partnership, corporation, limited liability company, unincorporated society or association, trust or other entity or organisation including the directors and officers of such entity or organisation;
+means any data, records or information (in any form) relating directly or indirectly to an individual (including but not limited to past, present and/or future personnel, customers, suppliers, third party guarantors or sureties of any member of SCB Group) and from which it is practicable for the identity of the individual to be directly or indirectly ascertained by reference to other data, records or information and as may be defined under applicable Data Protection Laws in the relevant jurisdiction(s) relating to the origin of the Personal Data Processed under the Agreement:
+means any processing operation(s) performed upon Confidential Information whether by automatic means or not, such as collecting, recording, using, accessing, copying, retaining, storing, handling, disclosing, modifying, altering, transferring, transmitting, deleting or destroying;
+
+Project
+
+means a SOW and all other SOWs which are referenced in such SOW to be part of the same project or are otherwise interdependent or inter-related;
+
+Standard Chartered .
+Project Manager
+
+means in respect of either party the person designated in writing by each party from time to time as a Project Manager responsible for project management of the SOW and/or Project on behalf of that party;
+Project Plan
+
+means the plan and timetable agreed between the parties and specified in the SOW which maps the timing for delivery and installation of all the Software, the timing of the provision of the Implementation Services by the Supplier and the timeframes and Milestone dates in respect of when the Software, Developments and/or Implementation Services are to be completed;
+Release
+
+means Updates, Upgrades and any other patches, fixes, workarounds or service packs provided as part of the Maintenance and Support Services;
+Regulatory Authority
+
+means in relation to SCB Group, any body (including without limitation any central bank, government department or agency, or other authority in any part of the world) which has the responsibility of supervising and/or regulating banks and other financial institutions generally including SCB Group and any branch or representative office of SCB Group;
+SCB Group
+
+means SCB and
+(a) any person, body corporate, partnership, firm or other entity in which on or after the Effective Date from time to time SCB directly or indirectly:
+(i) owns more than half the capital or business assets; or
+(ii)    has the power to exercise fifty percent (50%)
+or more of the voting rights in such entity; or
+(iii) has the legal power to direct or cause the direction or general management or affairs of the entity in question; or
+(iv) has the power to appoint more than half the members of the supervisory board, board of directors or bodies legally representing such entity; or
+(v) has the right to manage the business of such entity;
+(b) any person, body corporate, partnership, firm or other entity which directly or indirectly has in or over SCB the rights or powers listed in (a) above ("a Controller"); and
+(c) any person, body corporate, partnership, firm or other entity in which a Controller directly or indirectly has the rights or powers listed in (a) above;
+SCB Material
+
+means any information, documentation, programs, methodology, specifications, configuration details, system architecture plans, materials and data made available by SCB or a member of SCB Group to the Supplier in relation to this Agreement;
+
+
+SCB's Requirements
+SCB Service Provider
+Search
+
+means the written statements and specifications regarding the design, functionality and performance of the Software and other requirements as more particularly described and referred to in the SOW;
+means any service provider, contractor or other third party who is engaged by or who contracts with SCB or another member of SCB Group to provide, operate or otherwise manage services for the benefit of any member of SCB Group and/or third party customers of SCB Group;
+means a use of the functionality in the Software by which a User can interrogate the Software to find data records that the Software has filtered. Each use of this functionality constitutes a Search, regardless of whether (a) the Software finds a match against the search criteria provided by the User or (b) the exact same search criteria have been used previously;
+Services
+Service Credits
+
+means the Development Services, Implementation Services and the Maintenance and Support Services and other services agreed between the parties in writing from time to time pursuant to this Agreement;
+means the price adjustment for charges for Services intended to reflect where Services were not properly delivered in accordance with Service Levels, which are to be paid by Supplier to SCB as calculated in accordance with the scorecard detailed in Schedule 3 (in the case of the Maintenance and Support Services) and/or the scorecard detailed in the SOW (in the case of other Services);
+Service Levels
+Site
+
+means the levels of service performance for the Services as set out in Schedule 3 (in relation to the Maintenance and Support Services) or the SOW (in relation to other Services);
+means one or more machines in one single country that work together as a single instance in which the Software is used in live mode (machines designated as standby, backup and/or disaster recovery machines for a particular instance require no additional licence even if located in a different country. Machines designated as development, testing or staging (meaning the Software is not used in live mode) require no licence regardless of location;
+Software
+Software Licence
+Source Materials
+
+means the computer software program (including the
+Standard Software and Developments) in its latest version to be supplied by the Supplier pursuant to this Agreement as described in the applicable SOW, including Releases and/or additions to the Software provided or to be provided;
+has the meaning given in clause 11;
+means in relation to an item of software, all materials and documents necessary to enable a reasonably skilled programmer to understand, maintain, amend and enhance the software in question without reference to any other person or document and whether in eye-readable or machine readable form including, without limitation, the source code listing of such computer software and all normally available programmer's comments;
+
+
+Staff
+
+Standard Software
+
+Statement of Work / SOW
+
+Standard
+Chartered
+means in respect of either party any staff engaged by such party (including employees as well as any agents and subcontractors) in connection with this Agreement;
+means the Supplier's software product supplied under this Agreement and more particularly described in a SOW;
+means any written work order mutually executed and entered into by the Supplier and SCB, setting out Software and/or Services to be provided by the Supplier substantially in the form set out in the Statement of Work template at Schedule 2;
+
+Transaction
+
+means a unique message sent to the Software from a banking system. The volume of Transactions is measured on a daily basis and includes SWIFT and non-SWIFT messages. The software keeps a record of this number which can be viewed from the log file. There will be an alert generated when the number of transactions is close to the limit of the license volume;
+
+Update
+
+means all modifications, revisions, updates and upgrades to the Software for the purpose of corrections of faults and errors of the Software, which are developed during the term of this Agreement and/or SOW and shall be made available by the Supplier to SCB without charge in the form of new versions of the Software and/or fixes and corrections to the Software;
+
+Upgrade
+
+User
+
+means a major modified, revised, updated, upgraded or enhanced version of the Software (not being an Update), and shall be made available by the Supplier to SCB without charge; Use means install, load, execute, employ, utilize, store, access and/or display the Software;
+means an account configured in the system which allows access to the system with a specific user id and password. User Accounts can be viewed from the administrative console;
+
+Warranty Period
+Working Days
+Working Hours
+
+means for a period of 90 days from the date SCB issues and
+Acceptance Certificate for the Software and puts the
+Software into production use;
+means the days on which SCB's office in Singapore is open for business;
+means 9.00 a.m. to 5.00 p.m. local time on Working Days.
+
+2 Interpretation
+2.1 Clause headings are for ease of reference only and are not intended to be part of or to affect the meaning, interpretation or construction of any of the terms and conditions of this Agreement.
+
+2.2 References to any gender includes any other gender, the plural shall include the singular and bodies corporate shall include unincorporated bodies and (in each case) vice versa.
+2.3 Reference to any statute, enactment, ordinance, order, regulation or other similar instrument shall be construed to include a reference to the statute, enactment, ordinance, order,
+
+I» €3L i t €3? 1
+f /bartered
+regulation or instrument as from time to time amended, extended, re-enacted or consolidated; and all statutory instruments, orders, regulations or instruments made pursuant to it.
+2.4 Unless the context otherwise requires those provisions contained in this Agreement which relate to any subject matter of which there are more than one shall apply severally to each.
+2.5 Clauses, sections, pages and the Schedules referenced by name shall refer to the clause, section, page or the Schedule having the title referred to in this Agreement.
+2.6 References to currency in this Agreement denoted by "USD" are references to US Dollars.
+2.7 The words "other'', "includes", "including", "for example" and "in particular" do not limit the generality of any preceding words and any words which follow them shall not be construed as being limited in scope to the same class as the preceding words where a wider construction is possible.
+3    Master Agreement and Statements of Work
+3.1 This Agreement sets out a framework of the terms and conditions which will govern the ordering and supply of Software and Services between the Supplier and SCB.
+3.2 The Supplier and SCB may agree on the provision of Software and Services by agreeing and signing one or more Statements of Work from time to time.
+3.3 A Statement of Work shall set out the Software and/or Services to be provided and the applicable fees, and shall be substantially in the form as set out in the template Statement of Work at Schedule 2 of this Agreement.
+3.4 Each signed duly executed Statement of Work shall constitute a separate distinct contract and will be subject to and incorporate the terms and conditions of this Agreement (unless expressly varied in the Statement of Work).
+4 New Agreement
+4.1 The parties agree that (and the Supplier undertakes to ensure compliance by FircoSoft Singapore Private Ltd that) from the Effective Date of this Agreement orders for Software or Services shall not be made under the Old Agreement.
+4.2 All annexes, statements of work or other agreements made with reference to the Old Agreement prior to the Effective Date of this Agreement shall remain in full force and effect
+(unless otherwise expired or terminated) and shall continue to be subject to and incorporate the terms and conditions of the Old Agreement (unless otherwise agreed in writing by the parties).
+5 Precedence
+If there is any conflict in meaning between any provisions of this Agreement, its Schedules and the Statements of Work respectively, effect shall be given to the terms and conditions in clause 1 - 31 in the main body of this Agreement in preference to the Schedules or Statements of Work, and to the Statements of Work in preference to the Schedules.
+6 Term of this Agreement
+6.1    This Agreement shall take effect from the Effective Date and shall continue until terminated in
+accordance with the terms and conditions of this Agreement's Section 25 "Termination".
+7    Term of a Statement of Work
+7.1    A Statement of Work shall take effect from the later date as of which Authorised
+Representatives of both parties executed a printed copy of the Statement of Work and shall:
+
+
+Standard
+Chartered
+(a) in the case of a SOW for the provision of Software, continue unless terminated in accordance with the terms of this Agreement;
+(b) in the case of a SOW for the provision of Maintenance and Support Services, the Maintenance and Support Services shall continue unless terminated by SCB in
+accordance with clause 25.1 or otherwise in accordance with this Agreement; and
+(c) in the case of a SOW for Services (other than Maintenance and Support Services), shall continue until completion of the Services, unless terminated in accordance with this Agreement.
+8    Supplier's General Obligations
+On agreement to a relevant Statement of Work, the Supplier warrants, represents and undertakes to SCB that it will:
+(d) perform the Implementation Services and Development Services in accordance with clause 9;
+(e) grant (or procure the grant of) the Licences of the Software to SCB and members of SCB Group in accordance with clause 11;
+(f) provide the Maintenance and Support Services in accordance with clause 14;
+(g) provide the other Services,
+all in accordance with the provisions of this Agreement, the Statement of Work and applicable laws and regulations.
+9 Implementation Services
+Carry out Services
+9.1 The Supplier shall carry out the Implementation Services and Development Services in accordance with the Project Plan and SCB Requirements.
+9.2 The Supplier shall be responsible for the management, delivery and implementation of each
+Milestone of the Project Plan.
+Delivery
+9.3 Delivery dates shall be set out in the Project Plan. The Supplier shall deliver to the Site in accordance with the Project Plan:
+(a)    the Software in machine executable form on such medium or format specified by SCB;
+(b)    the Documentation in English in electronic format or such other format as SCB may
+reasonably request; and
+(c)    certified copies of any test data compiled by the Supplier and the results of tests
+carried out by the Supplier on all parts of the Software.
+Installation
+9.4 If specified in the SOW, the Supplier shall install the Software (and other specified deliverables) on the equipment designated by SCB at the Site(s) in accordance with the Project Plan by the relevant Milestone Date and in accordance with SCB's Requirements.
+Chartered ? ..
+10 Service Delay
+10.1 The Supplier shall provide each part of the Software installed, tested and accepted in accordance with this Agreement on or before the relevant Completion Date.
+10.2 Unless such delay is directly caused by the failure of SCB to meet its obligations under this Agreement, failure by the Supplier to complete any Milestone of the Services and/or provide the Software in accordance with this Agreement on or before the Completion Date in respect of such Milestone and/or the Software (as the case may be) shall be a material breach by the Supplier of a condition of this Agreement and shall entitle SCB without prejudice to its other rights and remedies at any time thereafter to:
+(a) claim Service Credits pursuant to clause 21; and/or
+(b) terminate the relevant SOW and/or any SOWs of a Project forthwith on 30 days written notice to the Supplier (and such SOWs shall terminate upon expiry of such notice period unless such breach, if capable of remedy, is remedied within such period) and claim damages in contract and/or tort for loss or damage which it has suffered or may incur. Service Credits paid by the Supplier pursuant to this Clause in respect of the breach concerned shall be taken into account in calculating any damages claimed by SCB.
+11 Software Licence
+11.1 The Supplier hereby grants or shall procure the grant to SCB and each other member of SCB Group and their Staff a non-exclusive, world-wide, perpetual, licence to Use the Software and Documentation subject to any express limitations or restrictions set out in the relevant SOW
+("Software Licence").
+11.2 SCB Group Staff may Use the Software and Documentation in performance or operation of services for or on behalf of SCB and/or a member of SCB Group.
+11.3 Notwithstanding clause 11.1, SCB and any other member of SCB Group may make as many copies of the Software and Use such copies as is necessary for test, archive, back-up and disaster recovery purposes.
+11.4 The location and Sites of the Software can be moved by SCB and each member of SCB Group at no additional fees.
+11.5 SCB and any other member of SCB Group may permit SCB Service Providers to Use the Software and Documentation within the scope of the Software Licence.
+11.6 If third party software and/or intellectual property is embedded in, contained in or forms part of the Software and/or Documentation, the Supplier shall be responsible for obtaining at the Supplier's own expense any third party licences or consents necessary for the Use of the Software and Documentation in accordance with the Software Licence.
+11.7 On request from SCB, the Supplier shall detail in writing to SCB the third party software and/or intellectual property embedded in, contained in or forming part of the Software and/or Documentation.
+11.8 All Intellectual Property Rights in the Developments shall remain with the Supplier or its licensors. If as an exception, Intellectual Property Rights in the Developments are to be transferred or assigned to SCB, such arrangement and its conditions shall be set out in writing in advance and Supplier shall then enter into such documentation and undertake such acts as may be necessary to vest ownership in SCB.
+11.9 All Intellectual Property Rights in SCB Materials or any other material provided by SCB shall remain with the relevant SCB Group member or its licensors.
+
+
+
+
+12 Operating Manuals and Training
+
+12.1 The Supplier shall provide training and Documentation in the Use and maintenance of the Software for SCB's (or any other members of SCB Group's) Staff as set out in the SOW.
+12.2 SCB and other members of SCB Group may copy the Documentation or parts or excerpts thereof as it may require for operational use and maintenance of the Software and may modify or adapt the whole or any part of the Documentation or copies thereof or combine the same with any other documentation for operational Use and maintenance of the Software.
+13 Acceptance Tests
+13.1 The following Acceptance Test procedure will apply to the testing of the Software including Upgrades licensed and delivered pursuant to this Agreement. The Acceptance Test procedures shall test whether the Software and Upgrades meet their relevant Acceptance Criteria.
+13.2 Upon delivery and installation and configuration of all the Software and notification to SCB by notice in writing that the same are ready for acceptance testing SCB shall use its reasonable endeavours to carry out acceptance tests in relation to the Software to ensure each and every part thereof is properly installed and in accordance with all applicable provisions of this Agreement and the SOW.
+13.3 When the Software successfully passes Acceptance Tests, SCB shall issue the Supplier with an Acceptance Certificate for that Software.
+13.4 The supply of the Software or the payment in whole or in part for any Software by SCB will not constitute acceptance of the Software, unless SCB has issued an Acceptance Certificate for such Software.
+13.5 In the event that Acceptance Tests during a subsequent phase in the Project Plan identifies faults or issues with Software that had previously been the subject of an Acceptance Certificate then such previously accepted Software shall be deemed to have failed Acceptance Tests and the relevant Acceptance Certificate for such Software will be revoked.
+13.6 If all or any part of the Software fail an Acceptance Test or are deemed to have failed an Acceptance Test pursuant to clause 13.4, then to the extent that such failure is not caused by a failure of SCB to meet its obligations under this Agreement, SCB may without prejudice to its other rights and remedies and at its sole option:
+(a) request that the Supplier remedy such failure promptly at its own cost and resubmit the Software for further Acceptance Tests;
+(b) conditionally accept the Software or any part thereof in its absolute discretion. The condition of acceptance shall be as SCB may reasonably determine for example, a reduction or refund of the charges payable. Once these conditions are agreed with the Supplier in writing and are met then SCB shall issue an Acceptance Certificate for the relevant Software;
+(c) reject the whole or any part of the Software that is the subject of an Acceptance Test failure. SCB shall be under no obligation or liability to make any further payment in respect of the Software which has been rejected and the Supplier shall refund to SCB on demand all charges which have been paid by SCB under the SOW or SOWs of a Project.
+14 Software Maintenance and Support
+14.1 Subject to the parties executing a SOW for Maintenance and Support Services, the Supplier shall provide to SCB Group the Maintenance and Support Services as required to ensure and cause the Software conforms in all material respects with SCB's Requirements and Documentation.
+14.2 The Supplier shall provide the Maintenance and Support Services in accordance with Schedule 3 and the Service Levels.
+ 
+14.3 Supplier shall supply to SCB Upgrades without charge and all associated documentation in English at least at the same time as Upgrades become generally available to Supplier's customers. SCB may evaluate and test such Upgrade in accordance with Clause 13 to determine whether such Upgrade should be put into production Use. Nothing shall require
+SCB to install or put into production Use an Upgrade.
+15 Maintenance and Support Failure and Performance Bonus
+Maintenance Service Level Failure
+15.1 If the Supplier fails to meet any of the Service Levels, the Supplier shall promptly:
+(a) investigate the underlying causes of the failure and preserve any data indicating the cause of failure;
+(b) take whatever action is necessary to minimise the impact of the Service Level failure and to prevent it from recurring;
+(c) correct the failure and resume Service performance and observance to the relevant service level; and
+(d) advise SCB of the status of remedial efforts being undertaken with respect to the underlying cause of the Service failure and regularly keep SCB so advised.
+Service Credits for Maintenance Service Level Failure
+15.2 If the Supplier fails to meet any of the relevant Service Levels, it shall pay to SCB the relevant Service Credits pursuant to clause 21.
+Maintenance Performance Bonus
+15.3    The Supplier shall be entitled to claim additional fees ("Performance Bonus") during the term
+of the Maintenance and Support Services subject to:
+(a) the Parties executing a SOW for Maintenance and Support Services and such SOW expressly stating that a Performance Bonus is applicable and may be obtainable pursuant to this clause.,
+(b) the Maintenance and Support Services scorecard in Schedule 3 of this Agreement expressly specifying the relevant conditions and service performance circumstances that must occur to give rise to such Performance Bonus; and
+(c)    such conditions and circumstances specified in the scorecard occurring.
+Such Performance Bonus shall be calculated in accordance with the score card in Schedule 3 of this Agreement. Performance Bonuses due pursuant to this Clause 15.3 shall be invoiced by Supplier in accordance with Clause 20 and within 45 days of the additional fee becoming available.
+16 Deposit of Source Materials Supplier's Standard Escrow Arrangement
+16.1 The Supplier shall keep and maintain current, at no additional cost to SCB, a copy of the
+Source Materials for the Software (including all Developments and Releases) in escrow with LOGITAS, (whose address is 47 Rue des Solets, 94533 RUNGIS, France, Tel +33 1 45 60 76 78, Fax +33 1 45 60 75 65, http://www.logitas.com) ( "Logitas").
+16.2 The Supplier shall authorise Logitas to release the Source Materials to SCB if any of the events specified in clause 16.7 shall occur.
+
+
+Standard
+Chartered !
+16.3 Each time the Supplier delivers the Software, a Development or a Release to SCB, the Supplier shall within nine (9) months update the Source Materials for the Software or the New
+Version in escrow with the Escrow Agent.
+New Escrow Agreement Option
+16.4 The Supplier acknowledges that it may become necessary for SCB to obtain possession and make Use of the Source Materials for the Software if any of the events specified in clause
+16.7 shall occur.
+16.5 If requested by SCB, the Supplier will at the same time as entering this Agreement or at any time during its term, enter into an arrangement to ensure that the Source Material for the Software are deposited and held in escrow with an escrow agent alternative to the arrangement at Clause 16.1 and acceptable to SCB ("Escrow Agreement"). The fees for the escrow agent pursuant to Escrow Agreement will be paid by SCB.
+16.6 The Supplier undertakes that for so long as this Agreement and any SOW remains in force the Source Materials deposited with the escrow agent under the Escrow Agreement will be kept fully up to date.
+16.7 The Parties agree that the escrow agent shall be authorized to release the Source Materials to SCB upon any of the following events:
+(a) the Supplier ceases to carry on business for whatever reason;
+(b) the Supplier goes into liquidation (other than voluntary liquidation for the purpose of a bona fide solvent reconstruction or amalgamation the terms of which have been approved in advance by SCB in writing), or is dissolved or struck off; or
+(c) the Supplier has failed to meet the Service Levels for a Severity Level 1 or 2 Error under the Maintenance and Support Services and has failed to remedy such failure within 30 days.
+16.8 If the Source Materials are released pursuant to clause 16.7, any use of the Source Materials shall be for the purposes of allowing SCB to:
+(a) continue enjoying the rights to use the Software granted to SCB Group under this Agreement; and
+(b) to perform any maintenance and support obligations which the Supplier has failed to perform.
+16.9 The Supplier shall remain the owner of the intellectual property in the Source Materials. SCB may not commercially exploit the Source Materials.
+17 Project Management
+17.1 The parties' Project Managers shall hold regular project review meetings to measure, track and evaluate the progress of the Implementation Services and/or Development Services against the Project Plan.
+17.2 The Supplier's and SCB's Project Managers shall each nominate in writing from time to time one or more representatives who shall be responsible for:
+(a) organising regular meetings which shall take place not less than every week (or as directed by the SCB Project Manager as per the project demands) during the continuance of the Project Plan at which they or any representative nominated in writing by them shall review the progress of the Implementation Services and/or
+Development Services; and
+(b)
+
+
+
+providing (subject to the provisions in respect of confidentiality set out in clause 28.1) all information and documentation reasonably required by the Supplier and/or SCB, as the case may be, for the performance of their respective duties under this Agreement or as otherwise expressly required under this Agreement.
+17.3 The Supplier shall on a weekly basis provide to SCB a full written report as to progress with the Implementation Services and/or Development Services and complete and accurate details of use of time and materials related to the specific activities referred to in the Project Plan.
+17.4 Any representative nominated by any party shall be subject to such reasonable security arrangements as are notified in writing to that representative whenever such representative attends at the other party's premises.
+17.5 The Supplier agrees to follow SCB's standards for project management and applicable codes of conduct as notified by SCB to the Supplier from time to time.
+18 Staff
+18.1 The Services shall only be performed by the Supplier's Staff. All such employees shall be properly trained and competent, fully supervised at all times and shall possess suitable skills and experience for the performance of the Services including meeting the skills requirements set out in the SOW.
+18.2 The Supplier shall at all times maintain the necessary number Staff to enable the timely and efficient provision of the Services.
+18.3 The Supplier shall ensure that its Staff comply with all reasonable security and other office procedures and regulations (including without limitation health and safety policies) implemented by SCB and/or any member of the SCB Group (as the case may be), at any of their premises at which Implementation Services are required to be carried out, which are notified to the Supplier from time to time.
+18.4 SCB shall permit the Supplier's Staff to gain such access on reasonable prior notice at all reasonable times during Working Hours to SCB's and/or any other member of SCB Group's premises as is reasonably necessary to enable the Implementation Services to be carried out in accordance with this Agreement, save that SCB may refuse entry to or eject any member of the Supplier's Staff who does not comply with SCB's site or security regulations or who otherwise appears unfit to undertake work for SCB in accordance with the provisions of this Agreement.
+18.5 The Supplier shall at the reasonable request of SCB replace any employees or consultants with another or others of equal status and knowledge approved in advance in writing by SCB. SCB shall under no circumstances be liable to the Supplier or to any employee or consultant referred to in this clause 18 in respect of any liability, loss or damage occasioned by such replacement and the Supplier shall indemnify SCB and keep SCB indemnified against any claim, demand or action made or brought by any such employee or consultant.
+18.6 The Supplier warrants, represents and undertakes that if any member of its Staff is subject to immigration control that:
+(a) the relevant member of Staff has valid and subsisting leave, permit or visa to enter or remain in the country where the services are to be provided and to undertake the Implementation Services there; and
+(b) the relevant member of Staff is not subject to any conditions (in relation to such leave, permit or visa) which may affect the Supplier's obligations under this Agreement.
+
+
+
+
+19 Change Control
+19.1 Where SCB or the Supplier, during the term of this Agreement wish to make a Change, SCB may at any time request and the Supplier may at any time recommend, such Change. Any Change shall be subject to the Change Control Process set out in Schedule 5.
+19.2 Any charges for Changes agreed in accordance with the Change Control Process set out in Schedule 5 shall be calculated in accordance with the rates set out in Schedule 1 or such other rates agreed between the parties in the Change Request Form.
+19.3 This clause 19 shall not apply to any amendment, modification or alteration which is required to the extent it arises in consequence of any failure or delay on the part of the Supplier in performing its obligations hereunder or any breach of any warranty, condition or term of this Agreement on the part of the Supplier and any such amendment, modification or alteration (as is referred to in this clause 19) shall be entirely at the Supplier's cost and shall not affect any obligation of the Supplier to comply with the Project Plan.
+19.4 If requested by SCB under the change control process set out in this clause 19 and agreed by the Supplier, the Supplier shall from time to time modify any deliverable and/or Services to ensure they conform to any change of legislation or new legal requirements or judicial or other governmental order, directive or notice of a Regulatory Authority.
+19.5 If either party considers there to have been any delay or failure by the other to perform its obligations hereunder it may notify the other of such contention and both parties shall meet to discuss whether a Change is required, the consequences of such Change and whether a Change Request Form should be issued.
+20 Charges and Payment
+20.1 Except as otherwise specified in this Agreement, SCB shall pay the Charges invoiced in accordance with the payment schedule and payment terms set out in a Statement of Work.
+Payment to FircoSoft Singapore
+20.2 The Supplier hereby agrees that and authorises:
+(a) its wholly owned subsidiary, FircoSoft Singapore Private Limited (a company registered in Singapore with company registration number 201134940H) ("FircoSoft Singapore") to invoice SCB for the Charges; and
+(b) SCB to pay the Charges to FircoSoft Singapore.
+20.3 The Supplier undertakes to ensure that invoices for Charges shall be sent to SCB from
+FircoSoft Singapore.
+20.4 The Supplier agrees that payment by SCB to FircoSoft Singapore of Charges or invoices received from FircoSoft Singapore shall be full and final settlement and discharge of Charges and sums due and payable from SCB.
+20.5 SCB shall have no liability, obligations or responsibility to FircoSoft Singapore pursuant to or otherwise in connection with this Agreement or a SOW.
+20.6 Notwithstanding Clause 20.2 the Supplier shall remain responsible for all its obligations under this Agreement and SOWs.
+20.7 The Supplier agrees that if FircoSoft Singapore is the subject of a takeover, merger, acquisition or other form of change in majority voting control (either at shareholder meetings or meetings of the board of directors), SCB may at any time and at SCB's discretion pay the Charges to the Supplier rather than FircoSoft Singapore and (a) the Supplier shall invoice SCB accordingly to enable such payment; and (b) the Supplier undertakes to ensure outstanding invoices from FircoSoft Singapore are withdrawn and cancelled.
+
+
+Payment for increased usage
+20.8 If the Software Licence is expressly stated in the SOW to be limited to a specific usage tier ("Tier''), SCB Group may use the Software in excess of such Tier subject to the following:
+(a) SCB shall use reasonable endeavours to monitor its usage of the Software. (Schedule 6 (Volume Verification) of this Agreement provides suggested guidance on the process to monitor such usage.); and
+(b) at the end of each calendar month, if SCB's aggregated monthly transactions volume exceeds twenty-six (26) times of the specified Tier in that calendar month, SCB shall inform the Supplier within 60 days from the start of the next calendar year and issue a purchase order (or other ordering documentation specified by SCB from time to time) for the increased usage tier required ("New Tier'') for the following year. (For example, if a Tier is exceeded in 2015, SCB will make payment within 60 days of 2016, and any relevant revised annual fees for Maintenance and Support Services shall apply for the New Tier from 2016 onward.)
+On receipt of the purchase order specified in (b) above, the Supplier shall instruct FircoSoft Singapore to issue an invoice representing additional Charges for Software (and if applicable, Maintenance and Support Services) for the New Tier of the Software. Such Charges shall be the difference between the Charges already paid by SCB and the fees due for the appropriate New Tier in accordance with the rates set out in Schedule 1.
+Tax
+20.9 All charges and expenses quoted in this Agreement and/or a SOW are exclusive of any taxes and fees including Value Added Tax or equivalent goods sales tax which shall also be paid by SCB but which shall only be paid if a receipt which is valid for such tax purposes is given to SCB. All invoices submitted will be marked clearly with SCB's contract reference and marked for the attention of the relevant Project Manager. Any withholding tax shall be paid in accordance with clause 31.7.
+20.10 Invoices shall describe the deliverables, Software, and Services supplied pursuant to this Agreement in sufficient detail so that tax (e.g. import or custom duties, sales tax or withholding tax) is not charged incorrectly.
+Late Payment
+20.11 If any sum due and payable under this Agreement is not paid by the party liable to make such payment within 45 days after receipt of the relevant invoice or demand, the party to whom such money is owed shall be entitled (without prejudice to any of its other rights) following receipt by the party in default, of written notice from it, to charge interest at the rate of 2 per cent above the base rate of Bank of England in London from time to time in force from the date of such notice until the date of actual payment. Such interest shall accrue from day-today and be payable after as well as before any judgment. Interest shall not accrue or be payable on any monies or payment withheld, deducted or suspended pursuant to clauses 20.12, 20.13 or 20.14 below. The parties agree that the right to claim interest under this clause 20.11 is a substantial remedy for late payment and is in substitution for any statutory or other right to claim interest and/or other remedy for late payment including under the U.K. Late Payment of Commercial Debts (Interest) Act 1998.
+Withholding and Suspension
+20.12 SCB may withhold payment against any invoice which is not submitted in accordance with this Agreement or which covers or relates to any goods or services which have not been provided in accordance with this Agreement and shall notify the Supplier in writing accordingly.
+20.13 SCB shall after giving notice to the Supplier have the right to deduct from any payment due under a valid invoice any sums owed to it by the Supplier.
+
+
+Standard Chartered 5
+20.14 SCB may suspend the payment of any sums due or falling due to the Supplier where the
+Supplier is in breach of its obligation(s) to SCB under this Agreement and such payment or sums relate to the obligation(s) in respect of which the Supplier is in breach.
+Expenses
+20.15 Any expenses (travel, hotel, or otherwise) shall only be incurred with the prior written approval of SCB and in accordance with SCB's then current travel and expenses policy. Expenses shall be invoiced in the month after they are incurred and relevant supporting receipts shall be submitted by the Supplier together with the invoice.
+21 Service Credits
+21.1 Service Credits shall be payable as follows:
+(a) if the Supplier fails to meet the Service Level, Service Credits shall be payable by the Supplier to SCB; and
+(b) any Service Credits due pursuant to this Agreement will be recoverable by SCB as a credit against the next invoice for fees, or if no invoice is due, as a debt due from the Supplier within 45 days of the Service Credit becoming due.
+21.2 Both Parties agree that the Service Credits are fair and reasonable in all the circumstances.
+21.3 Service Credits shall be without prejudice to any other rights and remedies of SCB arising from a Service Level failure including the right to remedy the defect itself, claim damages and to terminate the relevant SOW and/or Project. If SCB decides to pursue another remedy any Service Credits paid by the Supplier in respect of the breach concerned shall be taken into account in calculating any damages claimed by SCB.
+22 Limitation of Liability
+22.1 Nothing in this Agreement or a SOW excludes or limits the liability of either party in respect of:
+(a) death or personal injury caused by its negligence (including negligence by the Parties' staff);
+(b) any indemnity given in this Agreement;
+(c) dishonesty, or the tort of deceit, or wilful neglect by its employees, agents or contractors;
+(d) breach of clause 28 (Confidentiality) or 29 (SCB Group Confidential Information Protection and Security);
+(e) fraudulent misrepresentation; and
+(f) liability which may not otherwise be limited or excluded under applicable law.
+22.2 Subject to clause 22.1 above, in no event will either party be liable to the other for indirect or consequential damages arising out of or in connection with this Agreement and/or a SOW.
+22.3 Subject to clause 22.1 above, the liability of each party to the other arising out of or in connection with a SOW whether arising from contract, tort, negligence or otherwise shall be limited as follows:
+(a) for loss of or damage to physical property, the aggregate liability for all events within a calendar year shall be limited to USO 2,000,000 or if ascertainable and if greater, 300% of the total amount of the Charges paid and/or which would have been payable (had this Agreement been fully and properly performed) to the Supplier by SCB under all the SOWs in respect to the Project;
+(b)
+
+
+
+for any other liability, the aggregate liability for all events within a calendar year shall be limited to USO 2,000,000 or if ascertainable and if greater 300% of the total amount of the Charges paid and/or which would have been payable (had this Agreement been fully and properly performed) to the Supplier by SCB under all the SOWs in respect to the Project.
+22.4 Subject to the terms of 22.2 above, SCB may recover directly from the Supplier any damages suffered by other members of SCB Group as a result of any failure of the Supplier to comply with the terms of this Agreement or at SCB's election require that such damages be paid direct to the relevant member of SCB Group.
+23 Intellectual Property Rights Indemnity
+23.1 Notwithstanding any provision in this Agreement, the Supplier shall indemnify SCB and keep SCB fully and effectively indemnified on demand (and shall pay such sums to SCB as would indemnify and keep indemnified each member of SCB Group) against any and all loss, damage, claims, demands, actions, costs (including reasonable legal/attorney fees), charges, expenses and liabilities of whatsoever nature incurred by SCB and any member of SCB Group arising directly out of a deliverable, the Software, Documentation and/or Services provided by the Supplier to SCB or any other member of SCB Group pursuant to this Agreement containing material in respect of which any Intellectual Property Rights or proprietary rights belong to any third party or any claim that the possession or Use by SCB and/or any other member of SCB Group of the deliverable, Software, Documentation and/or Services and/or any other specification, information, goods, service or material produced or supplied by the Supplier under or pursuant to this Agreement infringes at any time the
+Intellectual Property Rights of any third party wheresoever and howsoever arising
+("Intellectual Property Infringement").
+23.2 In the event of any Intellectual Property Infringement the Supplier shall take the following actions: (i) secure for SCB the right to continue using the Software on the terms of this Agreement; or (ii) replace or modify the Software to make it non-infringing; provided, however, that such modification or replacement shall not degrade the operation or performance of the Software.
+23.3 The indemnity in the preceding prov1s1ons shall not extend to any claim of infringement resulting solely from SCB Group's unauthorized modification or use of the Software.
+23.4 Without prejudice to Clause 23.1, if the Supplier is unable to remedy the Intellectual Property Infringement pursuant to Clause 23.2 within 30 days, SCB shall be entitled to terminate this
+Agreement, a SOW and/or SOWs of a Project forthwith upon written notice to the Supplier.
+24    Warranties Representations and Undertakings
+24.1 Each party represents warrants and undertakes that it has full capacity, power and authority to enter into and perform its obligations under this Agreement.
+24.2 The Supplier represents, warrants and undertakes:
+(a)    to provide the Services in accordance with Good Industry Practice;
+(b) for the Warranty Period, the Software shall provide the facilities and functions and perform in accordance with the Documentation and SCB's Requirements;
+(c) the Documentation is a full and accurate description of the operation, features, functionality and performance of the Software;
+(d) any deliverable shall be in compliance with and provide the facilities and functions and perform in accordance with SCB's Requirements;
+Chartered
+(i)    the Software will be delivered free from Destructive Code and that for this purpose
+the Supplier warrants that it has prior to the installation of the Software used the most comprehensive and up to date virus checker available;
+(e) there are no disabling programs or devices in the Software and nor will the Supplier introduce any at any time;
+(f) tapes, diskettes or other media provided by the Supplier will be free of defects in workmanship and material during normal use;
+(g) it is authorised and has full right title and interest to grant or procure the grant of the licences at clause 11;
+(h) the Software, Documentation and/or other deliverable will, in so far as it does not comprise SCB Material, be an original work of authorship and the Use or possession thereof by SCB will not be subject or give rise to any claim for infringement of any Intellectual Property Rights of any third parties;
+(i)    the Source Materials in relation to the Software shall be sufficient to enable a
+reasonably skilled programmer to understand, amend, maintain and enhance the Software;
+U)    all Moral Rights in respect of the Documentation and deliverables are unconditionally
+and irrevocably waived by such persons who may be entitled to the same and no rights have been or shall be inserted against any person ("Moral Rights" means the moral rights under applicable law of the author of a copyright work (as distinguished from rights of ownership), which allows an author; a) the right to be identified as the author of the work; b) the right to object to derogatory treatment of the work; c) the right not to have the work falsely attributed; and/or d) to assert any other similar rights under applicable law);
+(k) the Services shall be performed in compliance with all applicable laws, enactments, orders, regulations and other similar instruments in force from time to time;
+(I)    it has not accepted work or entered into a contract or accepted an obligation which
+may prevent the Supplier from performing or in any material respect adversely affect the performance of its obligations under this Agreement and that it shall not do so during the period of the performance of the Services.
+24.3 If there is any failure to conform to any of the warranties and undertakings set out in clause
+24.2 above and the failure is not caused by any act or omission of SCB, SCB may elect
+(without prejudice to any other remedies it may have) one or more of the following:
+(a) the Supplier promptly rectifies any non-conformance of the Software at the Supplier's own expense;
+(b) the Supplier promptly replaces the non-conforming Software at the Supplier's own expense.
+(c) SCB or a third party remedies the non-conforming Service and the Supplier will pay all reasonable costs incurred by SCB in remedying such non-conformance.
+24.4 The Supplier represents, warrants and undertakes that:
+(a) It has not and shall not commit, procure, or encourage bribery in relation to this Agreement, the Services, or to obtain or retain business or any advantage in business for any member of the SCB Group, and has and shall ensure to the fullest
+extent possible that its employees and agents and others under its direction or control do not do so. For the purposes of this clause it doesn't matter if the bribery is (i) direct or through a third party; (ii) of a public official or a private sector person; (iii) financial or in some other form; or (iv) relates to past, present, or future performance
+
+
+or non-performance of a function or activity whether in an official capacity or not, and it doesn't matter whether or not the person being bribed is to perform the function or activity to which the bribe relates, or is the person who is to benefit from the bribe. A person is any individual, partnership, company or any other legal entity, public or private.
+(b) Where, if permitted under this Agreement, the Supplier subcontracts any Services to another person, or has another person perform any act, or not perform any act in relation to this Agreement or the Services, it shall require them to agree in writing to comply with clauses 24.4, 24.5, and 25.5. The Supplier shall also incorporate those clauses (so that the Supplier obliges that person not to commit bribery on behalf of any member of SCB Group or the Supplier) into any contract the Supplier has with the other person in relation to the Services and or the act. A person is any individual, partnership, company or any other legal entity, public or private.
+24.5 The Supplier shall, immediately upon becoming aware of them, give SCB all details of any non-compliance with clause 24.4, and of any non-compliance by any of other person envisaged by clause 24.4 (b).
+25 Termination
+Termination of Maintenance and Support
+25.1 On the provision of not less than 90 days prior notice, SCB may terminate for convenience the Maintenance and Support Services under a SOW without liability on the first annual anniversary of the effective date of the relevant SOW or any subsequent annual anniversary of such effective date. The Supplier shall refund to SCB all Maintenance and Support fees paid in advance relating to the period after such termination date.
+Termination of SOW for Services
+25.2 SCB may terminate a SOW for Services (not including Maintenance and Support Services) for convenience at any time (without liability and without entitling the Supplier to receive any compensation in respect of the termination except for pro-rata payment of the Charges for Services performed up to the date of termination) by giving at least thirty (30) days prior written notice to the Supplier.
+General Rights to Terminate Agreement or SOW
+25.3 This Agreement, a SOW and/or SOWs of a Project may be terminated with immediate effect by either party ("the first party") by written notice to the other in the event of one or more of the following:
+(a) if the other ceases to carry on business or goes into liquidation (other than voluntary liquidation for the purpose of a bona fide solvent reconstruction or amalgamation the terms of which have been approved in advance by the first party in writing) or is dissolved or struck off;
+(b) if the other is unable to pay its debts as they fall due or suffers the appointment of a receiver, administrative receiver or administrator (or any similar official or process under the law of its domicile or place of incorporation) of the whole or any part of its assets or is the subject of any bankruptcy proceedings;
+(c) if the other is in material breach of any provisions of this Agreement and fails to remedy such breach (where it is capable of being remedied) within 30 days of notice from the first party specifying such breach;
+(d) the other party is in material breach of any provision of this Agreement and such breach is incapable of being remedied.
+?    Standard
+Chartered
+25.4 SCB shall have the right to terminate this Agreement, a SOW and/or SOWs of a Project or any part with immediate effect by written notice to the Supplier (without entitling the Supplier to receive any compensation in respect of the termination of this Agreement) if without SCB's prior written consent the Supplier is the subject of a takeover, merger, acquisition or other form of change in majority voting control (either at shareholder meetings or meetings of the board of directors).
+25.5 It is a condition of this Agreement that the Supplier fully complies with clauses 24.4, 24.5. If it does not do so SCB shall have the right but not the obligation to terminate the whole of this Agreement, or at its absolute discretion, that part of this Agreement to which the bribery relates.
+25.6 In the event that a Regulatory Authority of SCB directs, instructs or gives guidance that SCB should terminate all or part of this Agreement or a SOW or continuation of this Agreement, or a SOW would cause SCB or any other member of SCB Group to be in breach of any laws or regulatory requirements or guidance to which it is subject, SCB shall be entitled to terminate this Agreement, a SOW and/or SOWs of a Project immediately and Supplier shall be entitled to receive all fees due and payable up to the date of termination including but not limited to pro-rata payment of the Charges for Services performed up to the date of termination.
+25.7 The Supplier shall immediately notify SCB if the Supplier is in breach of this Agreement, there is any material alteration to the ownership or control of the Supplier, the management of the Supplier is devolved to a third party company or any of the events referred to in clause 25.3(a) or 25.3(b)above occurs to it.
+26 Effect of Termination
+26.1 Termination of this Agreement and/or a SOW shall be without prejudice to any rights of either party which may have accrued up to the date of such termination and the rights to terminate this Agreement and/or a SOW are not intended to be exclusive but shall be in addition to every other remedy or right now or hereafter existing including the right to recover damages and to a decree requiring any appropriate performance required by this Agreement.
+26.2 Upon any termination of this Agreement and/or a SOW the Software Licence shall continue in respect of the Software and title to physical deliverables (other than Software) shall pass to SCB to the extent that SCB has paid for the same or shall elect to pay for the same in accordance with the charges set out in the relevant SOW within 30 Working Days of the date of such termination.
+26.3 On expiry or termination of this Agreement each SOW then in force at the date of expiry or termination shall nevertheless continue in full force and effect for the remainder of the term of the SOW unless such SOW is terminated in accordance with the terms of this Agreement.
+26.4 Termination of a SOW shall not terminate this Agreement which shall remain in full force and effect unless terminated in accordance with the terms of this Agreement.
+26.5 The provisions of clause 1, clause 2, clause 3, clause 5, clause 7, clause 11, clause 12.2, clause 20.14, clause 22, clause 23, clause 26, clause 27, clause 28, clause 29, and clause 31 shall survive any termination of this Agreement and/or a SOW and continue indefinitely.
+27 Post Termination Assistance
+27.1 Upon request by SCB, the Supplier shall following termination of this Agreement, a SOW and/or SOWs of a Project fully co-operate with and assist SCB in order to ensure that such termination and its consequences cause the minimum disruption to SCB's business and affairs and the performance of its responsibilities. The Supplier will take all reasonable steps to mitigate any costs which SCB Group may incur as a result of termination of this Agreement. Such co-operation and assistance by the Supplier shall be free of charge if such termination is due to a contractual breach by the Supplier or due to the occurrence of events referred to at clauses 25.3, 25.4, or 25.5, otherwise the Supplier may charge reasonable fees
+
+
+in accordance with the Supplier's standard rates as detailed in this Agreement or as otherwise agreed between the parties in writing.
+28
+28.1
+28.2
+28.3
+
+28.4
+
+28.5
+
+Confidentiality
+Except as otherwise expressly provided in this Agreement, a party shall (and shall ensure that its employees, agents, sub-contractors and professional advisers shall) not during the term of this Agreement or thereafter disclose to any person or use, copy, adapt or alter for any purpose any Confidential Information obtained by it (the "Recipient Party") from the other (the "Disclosing Party") without the prior written consent of the Disclosing Party.
+The Recipient Party shall treat and keep Confidential Information confidential and take all necessary precautions to ensure that all Confidential Information is held in confidence
+(whether communicated orally, in writing, electronic form or otherwise) and minimise the risk of unauthorised disclosure or use of such Confidential Information.
+No party will be under an obligation to keep Confidential Information confidential that it can demonstrate:
+(a) is publicly available or generally known to the public at the time of disclosure or has subsequently entered into the public domain, except as a result of a breach of this
+Agreement; or
+(b) was already in the Recipient Party's possession from another source prior to disclosure by the Disclosing Party and the Recipient Party was not under any obligation of confidentiality in respect of the Confidential Information when it was received from the other source not connected to a party under this Agreement.
+The following circumstances shall not constitute a breach of the obligations of confidence set out in this Clause 28 by the Recipient Party where Confidential Information is disclosed:
+(a) to the Recipient Party's employees, agents, sub-contractors and professional advisers to the extent necessary to enable the Recipient Party to exercise its rights and perform its obligations under the Agreement, provided that prior to disclosure such employees, agents, sub-contractors and professional advisers have entered into an appropriate written confidentiality undertaking or non disclosure agreement with the Recipient Party to treat and keep such Confidential Information confidential on terms no less onerous than contained in this Agreement;
+(b) where necessary to members of SCB Group:
+(i) for the purposes of the Agreement; and
+(ii) for the proper exercise of any licences granted to SCB and any member of SCB Group under the Agreement.
+(c) if and to the extent it is required to do so by any law or regulation or by any court, Regulatory Authority or government agency or authority provided that to the extent that it is permitted to do so, the Recipient Party:
+(i)    provides the Disclosing Party(s) with prompt notice of such request; and
+(ii)    co-operates with the Disclosing Party(s) and uses all reasonable endeavours
+to avoid or limit disclosure and to obtain any necessary confidentiality undertakings relating to the onward disclosure from the intended recipient.
+Where required by a Regulatory Authority, the Supplier shall obtain from its employees, agents, sub-contractors and professional advisers a written confidentiality agreement in favour of SCB in a form containing confidentiality obligations no less onerous than those contained in this Agreement prior to receiving or accessing any SCB Group Confidential Information.
+
+
+
+
+Standard '
+1    __ s _    i
+1 ICXi l»vzl vzV4
+28.6 Where SCB makes Confidential Information belonging to a third party available to the Supplier, the Supplier shall, if requested to do so by SCB, enter into a confidentiality agreement with that third party prior to receipt of such information.
+28.7 Without prejudice to any other rights or remedies that the parties may have, the parties agree that damages may not be an adequate remedy for any breach of this Clause 28 and that the parties shall be entitled to seek the remedies of injunction, specific performance and/or other equitable relief for any threatened or actual breach of this Clause 28.
+28.8 This Clause 28 shall survive termination or expiry of the Agreement.
+29 SCB Group Confidential Information Protection and Security
+29.1 The Supplier acknowledges that SCB Group is subject to laws and regulations in jurisdictions which impose strict obligations relating to the protection of Confidential Information (including but not limited to Personal Data and Customer Data). The Supplier shall comply (and shall ensure that its employees, agents and sub-contractors and professional advisers shall comply) with the requirements set out in this Clause 29 relating to Processing SCB Group Confidential Information.
+29.2 SCB shall retain all rights in, title to and interest in and to SCB Group Confidential Information and Supplier agrees not to Process such SCB Group Confidential Information other than in relation to the performance of its obligations under this Agreement.
+SCB Group Information Security Requirements
+29.3 The Supplier shall in respect of SCB Group Confidential Information take all appropriate physical, technical and organisational security measures and observe Good Industry Practice to protect SCB Group Confidential Information against unauthorised or accidental, loss, destruction, damage, access, processing, erasure, transfer, use, modification, disclosure or misuse (the "Information Security Controls").
+29.4 The Supplier shall at the request of SCB at any time provide any relevant information and documentation requested by SCB in relation to how the Supplier operates in compliance with the Information Security Controls including any certifications.
+29.5 In the event of a Data Breach caused by the Services or the Software or by acts or omissions of the Supplier, the Supplier shall assist SCB in conducting any investigations and analysis that SCB may require. The Supplier shall take all necessary steps consistent with Good Industry Practice, taking in to account the severity of the risk, to resolve such Data Breach as quickly as possible and to prevent its recurrence.
+29.6 If software application development, testing and support services are being provided by the Supplier under the Agreement, the Supplier shall implement the Information Security Controls for software development, testing and support set out in Standard Chartered Group Information Security (GIS) Requirements for Suppliers as set out in Schedule 4 and coordinate with SCB to address software development security risks in accordance with the software security risk analysis procedures established by SCB and made available to the Supplier.
+Processing of SCB Group Confidential Information
+29.7 The Supplier shall in respect of SCB Group Confidential Information Processed pursuant to the Agreement:
+(a) only Process SCB Group Confidential Information in compliance with SCB's instructions and the terms of the Agreement;
+otancjciFCj
+C* O    '
+/I Id! Lt?I wU
+(b) comply with any instruction given by SCB in connection with the requirements of any Data Protection Laws which relate to the jurisdiction(s) from which and for which the relevant obligations of the Supplier under the Agreement are to be performed;
+(c) not disclose or provide access to SCB Group Confidential Information without the written authority of SCB (except for the purposes of fulfilling its obligations under the Agreement);
+(d) ensure that all reasonable steps are taken to ensure the reliability of the Supplier personnel, agents, sub-contractors and professional advisers) which will Process SCB Group Confidential Information (in particular, performing appropriate background screening checks, staff training and disciplinary measures in case of non-compliance) and limit such Processing to those personnel who have a need to know the SCB Group Confidential Information for the purposes of providing services under or in relation to the Agreement; and
+(e) ensure that any Supplier personnel, agents, sub-contractors and professional advisers which Process SCB Group Confidential Information are under a written legal duty or obligation not to Process SCB Group Confidential Information except in performing their duties pursuant to the Agreement.
+Segregation and Deletion of SCB Group Confidential Information
+29.8 The Supplier shall in respect of SCB Group Confidential Information Processed pursuant to the Agreement:
+(a) segregate SCB Group Confidential Information held and Processed pursuant to this Agreement from its own data and from any data of its other customers;
+(b) not retain SCB Group Confidential Information for any longer than is necessary for the purpose of fulfilling its obligations under this Agreement; and
+(c) upon SCB's request, or as soon as such retention is no longer required for the performance of the Supplier's obligations under the Agreement, delete, destroy or return SCB Group Confidential Information. Upon SCB's request, the Supplier shall certify that deletion or destruction has taken place. Such deletion or destruction must be carried out in an appropriate and auditable manner that ensures that the SCB Group Confidential Information cannot be re-created, accessed or read, including:
+(i)    for electronic media that will be redeployed, a sanitation process that deletes
+data before redeployment, which destroys boot partitions, file pointers, and user data, and prevents all data from being reconstructed and read, in accordance with Good Industry Practice guidelines for example, as set out in National Institute of Standards Technology (NIST) SP800-88 or US Department of Defence (DoD) 5220.22-M Directives; and
+(ii) for disposal of documents, by cross shredding or using a secure waste disposal process designated for SCB Group Confidential Information.
+Subcontracting
+29.9 The Supplier shall not subcontract any of its Processing operations or obligations relating to SCB Group Confidential Information under this Agreement (including to its affiliates) without the prior written consent of SCB.
+29.10 Where the Supplier subcontracts its obligations under this Agreement, the Supplier shall be fully responsible and liable for the performance of the sub-contractor's obligations and shall ensure that the sub-contractor is subject to a written agreement with the Supplier which imposes the same obligations on the sub-contractor as are imposed on the Supplier under this Agreement in relation to SCB Group Confidential Information.
+Standard . Chartered
+29.11 The Supplier shall keep and maintain an up to date list of the name of its sub-contractors Processing SCB Group Confidential Information relating to the Agreement. The list shall be provided to SCB upon request.
+Reporting
+29.12 The Supplier shall inform SCB as soon as reasonably possible and in any event not later than 24 hours from when it first becomes aware of:
+(a) any legally binding request for disclosure of SCB Group Confidential Information by a Regulatory Authority or a law enforcement authority unless the Supplier is otherwise prohibited by law, such as a prohibition under criminal law to preserve the confidentiality of a law enforcement investigation;
+(b) any accidental or unauthorised disclosure or access to SCB Group Confidential Information;
+(c) any security incident affecting the operations of the Supplier, or any breach or attempted breach of security, security incident or Data Breach relating to SCB Group
+Confidential Information and report to SCB on the cause of the breach, attempted breach, incident or Data Breach and planned corrective action;
+(d) any material changes to be made to Supplier systems retaining SCB Group Confidential Information, which must be risk reviewed and communicated to SCB prior to implementing the change;
+(e) any request received directly from individuals relating to their Personal Data Processed under the Agreement and shall not respond to that request without the written consent of SCB;
+(f)    any change to be made by the Supplier to the country location(s) or data centres
+where SCB Group Confidential Information is retained, hosted or accessed from;
+(g) any change to be made by the Supplier in relation to its sub-contractors Processing SCB Group Confidential Information under the Agreement; and
+(h) any relevant change of laws or regulations applicable to the Supplier affecting the Supplier's ability to comply with the terms of this Agreement in relation to Processing
+SCB Group Confidential Information.
+29.13 This Clause 29 shall survive termination or expiry of the Agreement.
+30 Record Keeping
+30.1 The Supplier will maintain a complete audit trail and maintain records and supporting documentation of all financial and non-financial transactions relating to this Agreement and strictly relating to the Services, performance, Charges and/or relationship between the Supplier and SCB.
+30.2 In the event that any member of the SCB Group is required by law, a court or tribunal of competent jurisdiction or a governmental or regulatory authority to conduct an audit on
+Services provided under this Agreement, the Supplier shall give SCB and its audit representatives reasonable access to the premises where Services are performed at reasonable times on reasonable notice and lend all reasonable assistance for the purposes of such audit.
+31
+
+General Terms
+
+
+
+31.1 Publicity
+The Supplier shall not publicise (for example by making press statements or by issuing press releases) or release any information in relation to or about this Agreement except with SCB's prior written consent.
+31.2 Insurance
+31.3 The Supplier warrants that it has in effect and shall maintain in effect, for the duration of the Agreement and 6 years thereafter, insurance with a reputable insurance company as follows:
+(a) Public and product liability covering legal liability in respect of any bodily injury and property damage claims arising from or related to this Agreement: equivalent to USO 2,000,000 or if ascertainable and if greater, 300% of the total amount of the Charges paid and/or which would have been payable pursuant to all SOWs entered into under this Agreement;
+(b) Professional Indemnity covering SCB Group's potential financial loss and damage as a result of any breach, error or omission by the Supplier under this Agreement: equivalent to USO 2,000,000 or if ascertainable and if greater, 300% of the total amount of the Charges paid and/or which would have been payable pursuant to all SOWs entered into under this Agreement;
+(c) All risks insurance (including but not limited to fire liability) for any of SCB's on loan goods, tools, equipment or other property whilst they are in the Supplier's possession for their full replacement "as new" value as notified to the Supplier from time to time by SCB.
+(d) Employer's Liability covering legal liability to make any payment in respect of death, injury or disability of employees under applicable law: USO 2,000,000 or if ascertainable and if greater, 300% of the total amount of the Charges paid and/or which would have been payable pursuant to all SOWs entered into under this Agreement or such higher amount as is required by local legislation.
+31.4 If the insurance cover is procured by the Supplier's ultimate parent company, the Supplier hereby warrants that such cover is procured for the benefit of the Supplier as part of group policies and that the Supplier is a beneficiary under those policies.
+31.5 Upon request from SCB the Supplier will produce to SCB adequate proof of insurance cover in respect of its entire liability under this Agreement which shall include copies of current certificates of the Supplier's policies of insurance and/or the receipt for the last premium.
+31.6 If during the term of this Agreement, there is a reduction in the Supplier's insurance coverage or an increase in risk, the Supplier shall promptly notify SCB in writing of such reduction or risk.
+31.7 Withholding Tax
+(a) In the event that any payment to be made in respect of any invoice is subject by law to any withholding tax, the payer shall make payment to the payee of the amount owing, less a deduction for such withholding tax and shall account to the relevant tax authority for the withholding tax. Provided always that the payer has possession, as furnished by the payee, of declaration(s) of tax residence on the prescribed forms and certification of the UK (or other as relevant) taxation authorities which are current and accurate in order to confirm the applicability and availability of any reduced rate of withholding tax under the provisions of the relevant double taxation convention and/or treaty, the amount of withholding tax deducted will be calculated by the payer in accordance with any appropriate double taxation convention and/or treaty between the states in which the payer and the payee respectively reside. The payee shall
+ 
+furnish declaration(s) of tax residence on the prescribed forms and obtain certification of the UK (or other as relevant) taxation authorities in order that the payer may confirm the applicability and availability of any reduced rate of withholding tax under the provisions of the relevant double taxation convention and/or treaty as envisaged above. Payment of such net sum to the payee and to the relevant tax authority of the said withholding tax shall, for the purposes of this Agreement, constitute full settlement of the sums owing under the relevant invoice.
+(b)    Without prejudice to payment in accordance with clause 20 constituting full settlement
+of the sums owing under the relevant invoice, the payer shall use reasonable endeavours to obtain and provide to the payee evidence from the relevant local tax authority of the payment of the said withholding tax (including, where available, tax deduction certificates or the equivalent thereof). Where the payer is not able to obtain such evidence (having used reasonable endeavours), the payer will provide written confirmation itself to the payee of the payment of said withholding tax.
+31.8 Force Majeure
+If either party fails to perform its obligations under this Agreement due to causes beyond its reasonable control including but not limited to war, fire, blockade, strikes (excluding strikes by its own personnel) or natural catastrophe, then that party shall not be held responsible for any
+loss or damage which may be incurred by the other party as a result of such failure provided that, if the performance by the Supplier of its duties is substantially prevented for a continuous period of fifteen days (or more than fifteen separate days in any period of thirty days), SCB may, on thirty days written notice, terminate this Agreement or any part affected by such cause. Each party will give notice to the other as soon as possible upon becoming aware of an event that may lead to the invocation of this clause.
+31.9 Relationship
+Nothing in this Agreement creates a joint venture, relationship of partnership or agency between the parties. Accordingly, except as expressly authorised under this Agreement neither party has authority to pledge the credit of or make any representation or give any authority to contract on behalf of another party. No Supplier Staff shall be construed as being an employee of SCB by virtue only of this Agreement or the performance of the Supplier's obligations under this Agreement.
+31.10 Waivers
+No forbearance, delay or indulgence by either party in enforcing the prov1s1ons of this Agreement shall prejudice or restrict the rights of that party nor shall any waiver of its rights in relation to a breach of this Agreement operate as a waiver of any subsequent breach and no right, power or remedy given to or reserved to either party under this Agreement is exclusive of any other right, power or remedy available to that party and each such right, power or remedy shall be cumulative.
+31.11 Assignment and Sub-Contracting
+(a)    Subject to clause 31.11(b) below, no party may assign, transfer or sub-contract any of
+its rights or obligations under this Agreement to any other third party without first obtaining the express written consent of the other party.
+(b) SCB may on written notice, without prior consent from the Supplier, transfer, assign or sub-contract the benefit of the whole or any part of its obligations and rights under this Agreement to any member of SCB Group or any successor of all or part of SCB or SCB Group's business.
+(c) In the event that SCB permits the Supplier to sub-contract any of its obligations under this Agreement, the Supplier shall remain fully responsible for the performance of its obligations under this Agreement and the Supplier shall procure that the subcontractor complies with the obligations of the Supplier under this Agreement as if it
+Standard
+CjU*| |«
+I self Lfc;i cu
+were a party to this Agreement. The Supplier shall contractually impose no less onerous terms, than those contained in this Agreement, in its agreement with its permitted sub-contractor(s).
+31.12 Severability
+Notwithstanding that the whole or any part of any provision of this Agreement may prove to be illegal or unenforceable the other provisions of this Agreement and the remainder of the provision in question shall remain in full force and effect.
+31.13 Variations
+(a) Any terms of the Parties or any third party purporting to vary this Agreement shall be of no effect unless the provisions of this clause have been followed.
+(b)    This Agreement may only be changed or added to by a written variation referencing
+this Agreement, agreed and signed by both parties' Authorised Representatives.
+31.14 Notices
+(a) Addresses for notices or other communications under this Agreement are set out in the table below in clause 31.14 (c).
+(b) Any notice required under this Agreement shall be given in writing and in the English language and sent to the address of the party for which it is intended to be given, or such other address as shall have been notified to the other party in accordance with this clause and be sent by registered post or equivalent, facsimile, courier or other electronic transmission; and
+(i)    if posted, shall be deemed to have been received three Working Days after
+the date of posting or, in the case of a notice to an addressee not in the country of the sender, ten Working Days after the date of posting; or
+(ii)    in the case of facsimile or other electronic transmission, upon confirmation of
+complete receipt being given by the intended recipient party; or
+(iii) if couriered, on delivery.
+(c) All notices to or by the respective parties shall be addressed as follows:
+SCB Group Le!:!al .
+Title:
+Head of Group Legal
+Address:
+Standard Chartered Bank
+Group Legal, ih Floor,
+1 Basin!=)hall Avenue London EC2V 5DD
+With a copy to SCB Global Sourcing
+Title:
+SCB Head of Global Sourcing
+Address:
+Standard Chartered Bank
+7 Changi Business Park Crescent, Level 5, Singapore 486028
+Supplier
+Title:
+Head of FircoSoft Asia Pacific
+Address:
+FircoSoft Singapore Private Limited
+3 Church Street, Samsun Hub, #23-03, Sin a ore 049483
+
+
+
+
+31.15 Third Party Rights
+(a) This Agreement does not create or confer any rights or benefits enforceable by any person not a party to it (within the meaning of the U.K. Contracts (Rights of Third Parties) Act 1999 except:
+(i) a member of SCB Group shall have the right to enforce any rights or benefits in this Agreement;
+(ii) a person who is a permitted successor or assignee under clause 31.11 of the rights or benefits of this Agreement may enforce such rights or benefits.
+(b) No consent from any third party is required for the parties to vary or terminate this Agreement (whether or not in a way that varies or extinguishes rights or benefits in favour of such third parties).
+31.16 Contingency Planning
+The Supplier certifies that it maintains adequate disaster recovery and back-up procedures and continge(Jcy plans to ensure the Supplier's business continuity and that the Supplier is able to perform this Agreement without interruption.
+31.17 Entire Agreement
+This Agreement constitutes the entire agreement and understanding between the parties relating to the subject matter. Except as may be expressly stated in this Agreement, it supersedes and cancels all prior agreements, statements, representations, understandings, negotiations and discussions, whether oral or written, between the parties. Each of the parties acknowledges and agrees that in entering into this Agreement it does not rely on any statement, representation, warranty or understanding made prior to this Agreement save to the extent that such statement, representation, warranty or understanding is incorporated into this Agreement. Each of the parties acknowledges and agrees that in entering into this
+Agreement it has not relied on (or has been induced to enter into this Agreement by) any statement, representation, warranty or understanding made prior to this Agreement.
+31.18 Dispute Resolution
+(a) A party shall not commence court proceedings (except proceedings seeking interlocutory relief) in respect of a dispute arising out of this Agreement unless it has complied with this clause 31.18.
+(b)    A party claiming that a dispute has arisen in relation to this Agreement shall notify the
+Authorised Representative of the other party to the dispute giving details of the dispute.
+(c) If any dispute under this Agreement remains unresolved for 10 Working Days from the date on which notice setting out the nature of the dispute is served by one party on the other, then either party may request in writing a meeting within a further 5 Working Days between senior personnel (as notified by each party to the other for this purpose) who shall have power to resolve the dispute. In the event that the dispute is not resolved within a further 5 Working Days from the date of such meeting or if such meeting is not requested within the relevant timescale, then unless otherwise agreed between the parties in writing, either party shall be free to commence court proceedings in respect of that dispute.
+31.19 Applicable Law and Jurisdiction
+(a)    This Agreement and any matters relating to this Agreement shall be governed by and
+construed in accordance with the laws of England.
+
+
+Standard Chartered
+(b) The parties submit and agree to the non-exclusive jurisdiction of the English Courts.
+(c)    Notwithstanding any provision to the contrary, nothing in this Agreement shall at any
+time restrict any party's freedom to commence legal proceedings in any jurisdiction to preserve any legal right or remedy or to prevent or stay a breach of any provision of this Agreement including injunctive or equitable relief in respect of breach of confidentiality and Intellectual Property Rights.
+31.20 Counterparts
+This Agreement may be executed in counterparts, all of which shall constitute one agreement between the parties.
+We accept the terms and conditions set out in this Agreement.
+Signed for and on behalf of Standard Chartere
+Signature:
+Name (Block Letters Position:
+Date:
+c H\    o^-
+ApnC
+
+Signed for and on behalf of FircoSoft SAS by:
+
+Signature:
+Name (Block Letters): Position:
+Date:
+
+
+
+(Author sed Signature)
+- ___ tJ LOS GO___________
+C...E.0
+/27    W^A
+
+:'. :. . .    FlrcoSoft SAS
+247 rue de Berey
+75012 PARIS
+T6f: 01 534413 00« Fax; 01 53441321 448 au llEIJlitel 0@ 91 S 9§S t Siret 41 e en @§7 OOelift
+
+ 
+Schedule 1 Charges
+1. Software
+Product
+License
+Tvpe
+License Metrics
+Description of Product
+Firco Continuity which includes the following features:
+• FMF SeNer
+• FML Rules
+• Advanced workflow (for FMF verify web)
+• Advanced reporting (for FMF verify web)
+• FircoContinuity front-end (formerly known as FMF Verify Web)
+• Decision reapplication module (FircoContinuity front-end required)
+• Resubmission Detection also known as FircoStripping detection (FircoContinuity front-end required)
+• Pairing feature (FircoContinuity front-end required)
+• Workflow Accelerator (FircoContinuity front-end required)
+Perpetual
+• Transaction • Concurrent User • Site
+Firco Continuity is a watch list filtering solution designed to ensure compliance and detect and
+block transactions including listed parties. The solution accepts any
+transaction format and will determine in milliseconds if there are names, companies, vessels, addresses or
+specific codes that match the blocked-parties lists
+selected.
+2. Pricing
+2.1. Software
+Volume
+Price (USO)
+200,000 Transactions per day, unlimited Concurrent Users and unlimited Sites
+800,000
+400,000 Transactions per day, unlimited Concurrent Users and unlimited Sites
+1,200,000
+1,000,000 Transactions per day, unlimited Concurrent Users and unlimited Sites
+1,600,000
+5,000,000 Transactions per day, unlimited Concurrent Users and unlimited Sites
+2,000,000
+10,000,000 Transactions per day, unlimited Concurrent Users and unlimited Sites
+2,200,000
+Above 10,000,000 Transactions per day, unlimited Concurrent Users and unlimited Sites
+0.22 per Transaction
+Pricing are valid for 5 years from the Effective date.
+Pricing increase beyond Year 5 will be based on UK Consumer Price Index, cap at 5%.
+
+
+2.2. Software Maintenance
+Volume
+Annual Maintenance Price (USO)
+200,000 Transactions per day, unlimited Concurrent Users and unlimited Sites
+315,000
+400,000 Transactions per day, unlimited Concurrent Users and unlimited Sites
+360,000
+1,000,000 Transactions per day, unlimited Concurrent Users and unlimited Sites
+420,000
+5,000,000 Transactions per day, unlimited Concurrent Users and unlimited Sites
+700,000
+10,000,000 Transactions per day, unlimited Concurrent Users and unlimited Sites
+750,000
+Pricing are valid for 5 years from the Effective Date.
+Pricing increase beyond Year 5 will be based on UK Consumer Price Index, cap at 5%.
+2.3. Professional Services
+2.3.1 Business Hours On-site
+Mondays to Fridays 09:00 to 18:00 hours, excluding Singapore and Site-local public and bank holidays; inclusive of one (1) hour allowance for meals.
+
+
+Consultant
+Senior Consultant
+PM
+
+Rates er man da s USO
+$ 1,000
+$ 1,100
+$ 1,200
+Pricing are valid for 5 years from the Effective Date.
+If the services provided on the day exceeded eight (8) hours but less than twelve (12) hours, an additional half a day will be charged.
+If the services provided on the day exceeded twelve (12) hours but less than sixteen (16) hours, an additional day will be charged.
+2.3.2 Weekends and Holidays On-site
+Saturdays, Sundays, Singapore public holidays and Site-local public and bank holidays
+09:00 to 18:00 hours; inclusive of one (1) hour allowance for meals. Including: First and subsequent days, per day or part thereof There is an additional charge of USO 200 per man days for each band.
+
+
+
+
+Schedule 2 Statement of Work Template
+Statement of work
+Pursuant to the Software Licence, Implementation and Maintenance Master Agreement
+Statement of Work number: [ ]
+This Statement of Work ("SOW") is made between:
+(A) STANDARD CHARTERED BANK, a company incorporated in England and Wales with limited liability by Royal Charter 1853, under reference ZC18 whose principal office in Singapore is situated at 8 Marina Boulevard, Marina Bay Finance Centre Tower 1, Singapore 018981 ("SCB"); and
+(B) FIRCOSOFT SAS, a company registered in Paris, France, registered number 419 637 657 whose registered office is at 247 rue de Berey, 75012 Paris, France (the"Supplier").
+Together hereafter the"Parties".
+1. This SOW is governed by the terms of the Software Licence, Implementation and Maintenance Master Agreement dated [ ] with contract reference SG/AGM/123512/0/2014 ("Master Agreement") between SCB and Supplier.
+2. This SOW shall constitute a separate distinct contract and will be subject to and incorporate the terms and conditions of the Agreement (unless expressly varied in this SOW).
+3. If there is any conflict in meaning between any provisions of the Agreement, it's Schedules and the SOW respectively, effect shall be given to the terms and conditions in the main body of the Agreement in preference to the Schedules or SOW, and to this SOW in preference to the Schedules.
+4. Unless the context otherwise requires, capitalized terms in this SOW will have the meaning set out in the Master Agreement. All terms and conditions stipulated under this SOW including Software, Services and delivery timescales shall be binding between the Parties on the execution of this SOW by both Parties.
+5. This SOW may be executed in counterparts, all of which shall constitute one agreement between the Parties.
+I SUMMARY
+SOW No:
+[insert sequential SOW number]
+SOW Effective Date:
+[insert date this SOW is to become effective]
+Project name:
+[Insert name of Project - this should match the project name of other related / interconnected sows.]
+SOW Summary:
+[Insert summary of the purpose of this SOW.]
+I PROJECT PLAN
+Project Plan:
+[Insert plan and timetable which maps (as relevant to this SOW) the timing for delivery and installation of all the Software, the timing of the provision of the Implementation Services by the Supplier and the timeframes and Milestone dates in respect of when the Software, Developments and/or Implementation Services are to be completed]
+I SCB REQUIREMENTS
+SCB Requirements:
+[Insert statements and specifications regarding the design, functionality and performance of the Software and Services and other requirements]
+I SOFTWARE
+[Delete if not applicable]
+Software:
+The Software to be delivered by Supplier and licensed pursuant to the Agreement is specified below:
+[insert Software and licence limitations]
+Ownership of
+[delete if not applicable]
+Developments:
+Pursuant to clause 11 of the Agreement, Intellectual Property Rights in the Developments shall be owned by SCB.
+[ ACCEPTANCE
+Acceptance Criteria:
+[Insert the criteria against which Software will be tested by SCB to ensure that the Software and/or deliverables are in accordance with the requirements of this SOW and the Agreement]
+Acceptance Tests:
+[Insert the Acceptance Test procedures to test the Software against the Acceptance Criteria]
+I MAINTENANCE AND SUPPORT SERVICES
+[Delete if not applicable]
+Maintenance and Support:
+The Supplier shall provide the Maintenance and Support Services in accordance with Schedule 3 and the Service Levels.
+I SERVICES
+[Delete if not applicable]
+The Services to be performed by the Supplier are specified below:
+Implementation
+Services:
+[Insert the implementation and configuration services to be provided by the Supplier]
+Training Services:
+[Insert the training services to be provided by the Supplier]
+Standard
+Cl'"*/'"*    /‘“4
+I Idi txff feU
+Development
+[Insert the services to be provided by the Supplier to develop and deliver
+Services:
+Developments]
+Performance Score Card:
+[Insert Service performance Scorecard]
+STAFF
+SCB Project
+Manager:
+[Insert name of SCB Project Manager]
+Supplier Project Manager:
+[Insert name of Supplier Project Manager]
+Key Staff:
+[delete if not applicable]
+The following Supplier Staff shall perform the Services:
+[Insert name and position of Key Suoolier Staffl
+I STEERING COMMITTEE
+(Delete if not applicable]
+Steering Committee:
+Supplier and SCB shall establish a steering committee with appropriate representation and regular meetings to review the progress of the work under this SOW and to resolve any issues escalated by the Project Managers. The details for any such steering committee are set out below:
+[Insert details of steerinq committee.]
+I CHARGES
+Charges:
+[Insert the charges for the Software, Services or deliverables as calculated by reference to the rate card in the Agreement]
+Payment Schedule:
+[Insert schedule for payment of Charges]
+By the signatures of their duly authorized representatives below, Supplier and SCB, intending to be legally bound, agree to all of the provisions of the Agreement and this SOW.
+FircoSoft SAS
+Standard Chartered Bank
+By:
+By:
+Print Name
+Print Name
+Print Title:
+Print Title:
+Date
+Date
+Schedule 3
+
+
+
+Maintenance and Support Services
+
+Contents:
+Part A: Maintenance and Support Services
+Part B: Service Levels and Score Card.
+Part C: Support Request Form
+Part A - Maintenance and Support Services
+1. Definitions
+1.1. In this Schedule, capitalised terms shall have the meanings given to them in Clause 1 of this Agreement and as supplemented by the following definitions unless inconsistent with the context or otherwise specified:
+"Approved Support Contact" means a designated team or person employed and nominated by SCB as an approved representative who has the authority to contact the Supplier Helpdesk on behalf of SCB. Support requests from SCB's multiple Sites must be coordinated and only submitted via the Approved Support Contact. SCB should designate no more than five (5) Approved Support Contact at any time.
+"Error" means any issues or non-compliance in the operation, running or functionality of the Licensed Software with the Software Documentation;
+"Fix Time" is the total elapsed time, not inclusive of the time taken for SCB to provide the Supplier requested information to reproduce the incident, from the point where the problem is reported to the Helpdesk by phone, fax, or email (opening ticket for an Incident) to the point when Supplier' technical support engineer implements a fix, replace or communicates to (as appropriate) SCB a solution correcting the Error in question to the satisfaction of SCB;
+"Helpdesk" the technical support and Error reporting helpdesk that is run and operated by Supplier and which is to function as the primary contact point for all queries and Error reporting by SCB in relation to the Maintenance Services. Supplier will only accept support requests from the Approved Support Contact. SCB must process all requests from end users and escalate only Licensed Software issues to the Supplier's Helpdesk.
+"Incident' has the meaning given to it in Section 4.2 of this Schedule;
+"Licensed Software" means the Software licensed to the SCB pursuant to the Agreement; "Normal Maintenance Hours" means Singapore time 9am to 6pm;
+"Normal Maintenance Days" means Monday to Friday excluding Singapore public holidays;
+"Response Time" is the total elapsed time from the point where the problem is reported to the Helpdesk by phone, fax or email to the point when the Supplier technical engineer responds to SCB;
+"Severity Levels" means the severity of an Error as set out in Part B of this Schedule;
+"Scorecard" means the scorecard set out in Part B of this Schedule; and
+"Workaround Time" is the total elapsed time, not inclusive of the time taken for SCB to provide the Supplier requested information to reproduce the incident, from the point where the problem is reported to the Helpdesk by phone or email to the point when the Supplier's
+ 
+technical support Engineer communicates to SCB a solution providing a means of temporarily bypassing the Error in questions with reasonable effort to allow SCB to comply with regulatory requirements and any limitations of the workaround will be identified. The solution could either be a recommendation from Supplier to use the Software in a way that bypasses the Error or the provision of a workaround.
+2. Maintenance and Support Services
+2.1. SCB is responsible for setting up subscriptions for all relevant personnel to the Suppllier Newsletter via the website: www.fircosoft.com/newsletter . Supplier will inform SCB through the Newsletter about:
+• important news events " release of new releases • release of patches
+• release of resource files.
+Failure by SCB to subscribe to the Newsletter will release Supplier from the duty to inform SCB of any of the above items. SCB is responsible for ensuring the subscriptions remain current.
+2.2. For Severity 1 and 2 Errors, the Supplier agrees to provide the Maintenance and Support Services 24 hours per day, seven days a week in accordance with the Service Levels in order to maintain the Software in good working order and functioning in accordance with the terms of this Agreement.
+2.3. For Severity 3 Errors, the Supplier agrees to provide the Maintenance and Support Services during the Normal Maintenance Hours in accordance with the Service Levels in order to maintain the Software in good working order and functioning in accordance with the terms of this Agreement.
+2.4. The Maintenance and Support Services shall be provided for up to 4 different software environments; the Production use environment, the Disaster Recovery environment, the software test environment and the Acceptance Tests environment except for 24x7 support, which covers the Production use and Disaster Recovery environments only.
+2.5. The scope of the Maintenance and Support Services shall cover
+(a) the Licensed Software
+(b) provision of technical advice and assistance by • By phone: HelpDesk Singapore: +65 6908 0828 • By email, using the electronic version of Support Request Form in Part C:
+support@ fircosoft.com
+• By Internet www.fircosoft.com/support; for follow up of the Incidents only.
+(b) the remedying of all Errors whether remotely (by phone, email) or onsite;
+(c) the provision of Releases of the Licensed Software in accordance with section 5 of this Schedule.
+2.6. Supplier shall provide everything necessary for the provision of the Maintenance and Support Services except that when Supplier is on SCB's premises SCB shall make available to Supplier a supply of electircity and such other utilities as are reasonably necessary in
+order for the Supplier to perform the Maintenance and Support Services. Supplier shall be permitted to use these facilities at its own risk and shall at its own expense provide any apparatus necessary for utilising such utilities.
+2.7. Any remote access by the Supplier to SCB's servers or systems required to enable the Supplier to provide the Maintenance Services shall be granted only on an "as needed" basis subject to the agreed process for request and access to such servers and systems and in
+Standard
+Chartered
+accordance with SCB Group policies (including the SCB Group Information Security Requirements), SCB Group legal and regulatory obligations and the Supplier's obligations in
+this Agreement. If such access is refused, the Supplier shall use all reaonable endevours to carry out the Maintenance and Support Services without such access and where this is not possible the Supplier shall provide all necessary assistance and informaction to SCB for
+SCB to carry out such maintenance or support.
+3. Technical Advice and Assistance and Helpdesk Support
+3.1. There is no limit to the number of information requests related to Software or Incident notifications that SCB Approved Support Contact can submit to Supplier through the
+Helpdesk for the duration of the Term.
+3.2. Supplier will use suitably qualified personnel (with relevant and suitable qualifications, platform knowledge, application experience and application data model knowledge) relating to day to day enquiries by SCB in respect of the Use of the Software and to correct any
+Errors in the Software.
+4. Corrective Maintenance
+4.1. The purpose of the corrective maintenance is to correct the Errors detected by SCB in connection with the use of the Software.
+4.2 All Errors will be logged by SCB on the SCB issue tracking system known as Remedy (each an "Incident").
+4.2 SCB shall inform the Helpdesk if any Severity1/Severity2 Incident is logged via Email within 5 minutes of logging such Incidents. For the purpose of the Service Levels, the time of logging the Incident when Supplier assigns SCB an Incident number shall be taken as the start time of that Incident.
+4.3 The Severity Levels are defined in Part B.
+4.4 In the event of an Error, SCB shall use reasonable endeavours to send the following information to Supplier; (i) a description of the commands and procedures that trigger the Error; (ii) a reasonably detailed description of the Error; (iii) examples of data inputs and outputs; (iv) any other specific information of use in the search for the Error allowing Supplier to try to reproduce it in similar environment; (v) screenshots of the application (if avialable and applicable); and (vi) Software and other related software component log files that have been requested by Supplier.
+4.5 Supplier shall then:
+(a) ensure that an appropriately qualified and experienced member of its Staff commences investigative and corrective work within the relevant Response Time according to the Severity Level of the reported Error; and
+(b) if the reported Error is of Severity Level 1 or 2 category, diligently continue investigative and remedial work 24 hours per day, seven days a week as is necessary to resolve the Error as quickly as possible and in any event within the Severity Levels 1 and 2 Workaround and Fix Times respectively; and
+(c) if the reported Error is of Severity Level 3 or lower diligently continue investigative and remedial work in accordance to the Service Level defined in Part B
+4.6 Upon the Error being rectified by Supplier, Supplier will:
+(a) promptly inform SCB of the rectification and promptly t provide the Release of the Software on its availability for SCB to test and install; and
+F o n o fv Old! lUclf U
+Chartered
+(b) if relevant, as soon as possible supply SCB with appropriate amendments to the Documentation specifying the nature of the correction and providing instructions for the Use
+of the corrected Release of the Software; and
+(c) if requested by SCB in writing, as soon as possible, provide suitable instructions (at no additional cost to SCB) for the SCB users in the Use of the Software in order to prevent a similar Error from arising.
+4.7 Supplier will provide to SCB the fixes, patches and othere releases which it provides to its other customers to fix Errors encountered by such customers together with technical documentation on the components effected and the dependencies thereof and also the details of any material effects which such patches or fixes may be expected to have.
+4.8 Supplier agrees that if it could not remedy a Severity Levels 1 or 2 Error remotely (subject to Section 2.5 of this schedule), it shall (at no additional cost to SCB) attend on site to remedy the Error at the request of SCB. The cost for Supplier to attend on site shall be borne by
+Supplier unless it is demonstrated by Supplier that the Error was not caused by the Supplier or the Software, in which case SCB shall reimburse such cost to Supplier in accordance with SCB's expenses policy as made known to the Supplier. Response time for On-Site support is one (1) business day or within 3 hours if the Supplier has engineers in country.
+5    Provision of Updates, Upgrades, New Releases etc
+5.1 The Supplier shall supply SCB with Releases (which include, Updates, Upgrades, Service
+Packs and Patchess for the Licensed Software) (together "Releases") which is generally provided by Supplier in accordance with the updated core product roadmap at no additional charge and such Updates may be deployed by SCB accordingly. SCB may test such Releases pursuant to the clause 13 (Acceptance Tests) of the Agreement.
+5.2 "Service Pack" means code provided by Supplier to its customers generally as a new service pack which corrects errors in the Software or includes functional enhancements.
+5.3 'Patch" means code provided by Supplier to its customers generally as a new patch which corrects errors in the Software that Supplier has determined to deliver in an expedited manner.
+5.4 Supplier shall make reasonable effort to ensure that all regulatory changes required by Regulatory Authorities are incorporated in Releases and provide these to SCB.
+5.5 Supplier shall ensure that all Releases to the Software are compatible with all Developments and/or deliverables delivered and/or implemented by the Supplier in accordance with this Agreement.
+5.6 Any Update, Upgrade, Service Pack and/or Patch will be accompanied by release notes which will give the required information to allow SCB to install the Update, Upgrade, Service
+Packs and/or Patches.
+6 SCB Responsibilities
+6.1 Supplier shall only be relieved of its liability with respect to any failure to provide the Maintenance and Support Services to the Service Levels to the extent it is directly and wholly attributable to any of the following:
+• SCB failing to observe any of its obligations under this Agreement which have a direct and material negative impact upon Supplier's ability to provide the Maintenance Services;
+• scheduled downtime for maintenance, modification or enhancement of the Licensed Software or other purposes, in each case as agreed in writing between the parties;
+• failures or faults caused by third party suppliers to SCB for whom Supplier has no direct or management responsibility, although Supplier will use reasonable measures to ensure that faults of this type are resolved within the target timescales set out in Part B;
+• SCB failing to implement changes and fixes in a timely manner;
+
+
+• Failure of SCB to provide Supplier confirmation of intention to relocate an existing site to a new site, before such a relocation;
+• Failure of SCB to provide specific information or assistance to reproduce the reported incident.
+provided in each case that Supplier is able to demonstrate to SCB's reasonable satisfaction that Supplier used all reasonable measures to avoid or rectify the failure in a timely manner (including, where relevant, notifying SCB at the earliest possible opportunity).
+7 Exclusions
+7 .1    Not included under the Maintenance and Support Services are:
+• interventions following an error not due to the Licensed Software;
+• interventions following incorrect use of the Licensed Software or use of the Licensed Software
+that does not conform to the documentation and/or Supplier instructions;
+• interventions following modification of the Licensed Software by SCB or by a third party without
+Supplier's prior written consent. The same applies in case of an attempt at modification;
+• Professional Services for functional or technical enhancements of Licensed Software • assistance with Incidents and information requests for a non-supported Release of the Licensed
+Software. All Maintenance and Support Services will only cover for up to 2 prior major Upgrades of the Software, between 12 to 18 months cycle for each major Upgrades. The Supplier will provide a 12 month prior notice period to inform SCB if the Software is no longer Supported.
+• weekend support for Disaster Recovery testing.
+8 24x7 Support
+SCB is entitled to 24x7 Support which includes:
+• Only for Severity 1 and Severity 2 incidents from the Approved Support Contact
+• Any Severity 3 incidents are not included in 24 x7 support and will be follow up during the Normal Maintenance Hours
+
+
+
+
+Part B - Service Levels and Score Card
+
+1. Service Levels
+1.1 The following Response Times, Workaround Times and Fix Times shall apply to the Maintenance and Support Services, for the Severity assigned to the incident.
+1.2 The following Response Times, Workaround Time and Fix Times excludes time needed for SCB to provide the Supplier requested information for the reproduction of the incident.
+1.3 The Response and Workaround Times are based on the severity the problem, as detailed below:
+
+Definition
+Response Time
+Workaround Time
+Severity 1
+Software cannot be accessed and/or Used and is completely down i.e. total system outage.
+Examples:
+a) More than 50% of the total message could not be
+sent/received for less than 1 hour before country cut off time with no workaround solution provided which may result in (d).
+b) All users in multiple countries could not access Software for more than 1 hour before country cut off time with no
+workaround solution provided which may result in (d).
+c) System is down for more than 1 hour and there is no
+workaround solution provided which may result in (d).
+d) Missing country cut off time with known financial loss to the
+Bank with amount greater than USD 1 million.
+e) Clear reputation damage or critical breach of regulatory requirements such that it could cause a run on
+1 hour
+2 hours
+the Bank.
+a)
+
+
+Customer experience or business operations are degraded but not significantly enough to qualify for Severity 1.
+Examples:
+a) More than 20% of the total message could not be
+senUreceived for less than 30 min before
+country cut off time with no workaround solution
+provided which may result in Severity 2 (e).
+b) All users in one country could not access
+Software for more than 30 min before
+country cut off time with no workaround solution
+provided which may result in (e).
+c) System is down for more than 30 min and there is no workaround solution
+provided which may result in
+2hours
+4 hours
+
+
+
+
+
+
+(e).
+d) Support team
+
+cannot be reached within 30 min when LT is unstable and it is less than 1 hour from
+country cutoff time of affected countries which may result in
+(e).
+e) Missing country cut off time with known financial loss to the Bank with amount
+greater than 250K USD.
+Low impact on business operations or customer
+(e.g. a component or sub-application of the Software fails but has minimum business impact for customers or users)
+Examples:
+Severity 3
+
+a) Single user unable to access
+
+Software.
+
+b) 1 sub-
+
+component of application not working.
+
+1 Business Day
+
+Provide update to SCB on correction action plan within 5 Business
+Days
+
+c) A non-critical function not available.
+d) Slow response related incident for processing specific
+transactions
+(sweeping,
+pooling,
+payments, user enquiries etc) on the Software.
+ 
+
+
+
+
+2.
+
+Score Card
+
+The Service Levels shall be measured and monitored as per the scorecard below. The amount of Charges due for Maintenance and Support Services will be subject to this scorecard, the relevant Statement of Work which purchased Maintenance and Support Services and the terms of the
+Agreement.
+
+
+Maintenance Scorecard - SCB 27M,
+Standard
+Chartered
+Part C - Support Request Form
+FircoSoft
+Issue Re uest Form
+REQUEST DETAILS
+Submission Date
+D
+Requestor
+Vour name
+Client Name
+Client company name
+Phone Requester
+Phone number
+Site (location)
+Site company name
+Email Requester
+Email address
+Priority
+Critical/High/Medium/Low
+Client Reference
+ID Client
+Environment
+Production / UAT
+Site Reference
+ID Site
+Description
+One line 'nigh level summary for reporting purposes, e.g. Reports generated
+
+in FMt- Verify Web
+
+
+
+PRODUCT
+DETAILS
+
+Name
+OS
+Release
+e.g. 4.4.3.0
+
+OS release
+e.g. 5.2
+DETAILS OF THE ISSUE t-lease provide in DETAIL the behavior encountered. This part traces step by step the action undertake to reproduce the issue.
+Example: OFIDREP in batch mode generates report with weird character instead of Cyrillic character
+CURRENT SITUATION
+Please describe the current situation about this issue.
+Example: Messages including Cyrillic Name Synonyms from European List are not property displayed.
+ENVIRONMENT SPECIFICATIONS
+Please trace the architecture details around the FircoSoft component impacted by this issue. Example: Data Base vendor, Release. OS....
+FILES PROVIDED FOR INVESTIGATION
+ 
+ADDITIONAL INFORMATION
+Please provide any additional information that you feel would help FircoSoft Support to understand your case and its context as comprehensively as possible.
+Example: The issue occurs since a patch on WebSphere was installed.
+FircoSoft Issue Request Form V2
+
+
+Schedule 4 SCB Group Information Security Requirements
+
+Standard Chartered Group Information Security (GIS)
+Requirements for Suppliers
+
+
+
+
+of this Document
+This Document sets out the technical and organisational information security control requirements that SCB Group's Suppliers must adopt, as applicable, when:
+(a)    the Supplier is Processing SCB Group Confidential Information outside SCB Group premises
+or via remote access to SCB Systems;
+(b)    the Supplier has access to SCB Group Systems from outside SCB Group premises or via
+remote access; or
+(c)    the Supplier is developing software for members of SCB Group,
+in addition to any requirements relating to information security practices and standards set out in the Agreement between the Supplier and any member of SCB Group.
+2 Information Security Policy
+2.1    The Supplier shall designate a single point of contact for all information security related activities and
+notify SCB of the contact details.
+2.2 The Supplier shall have in place and maintain, operate, communicate and enforce its own Supplier Information Security Policy relating to the secure handling of information and access to facilities, networks and environments within its organisation.
+2.3    The Supplier Information Security Policy must as a minimum:
+(a)    address and be consistent with the requirements set out in this Document to provide
+safeguards for the security of Supplier Systems, SCB Group Confidential Information and SCB Systems;
+(b) detail change management procedures for significant changes, alterations or upgrades to Supplier Systems and network infrastructure that may be used to provide Services and/or that
+may access or store SCB Group Confidential Information. The procedures shall detail the requirements for identification, assessment of the potential impact of such changes and formal managerial approval for changes; and
+(c)    be enforced with respect to all Supplier Systems for example, notebooks, palmtops, laptops,
+PDAs, mobile phones and any other device that provides access to Supplier Systems or SCB Group Confidential Information, including without limitation, requirements for physical
+protection, access controls, encryption of SCB Group Confidential Information stored thereon and protection from Malicious Software.
+2.4 The Supplier shall ensure that Supplier Staff review, are familiar with and comply with its Supplier
+Information Security Policy.
+
+
+2.5 The Supplier shall provide SCB with at least thirty (30) days notice prior to making any updates or modifications to information security controls that may reasonably cause an adverse impact on the security of SCB Group Confidential Information or SCB Group Systems.
+3 Staff Security
+3.1 The Supplier shall ensure that all potential and new Supplier Staff undertaking duties that will involve access to SCB Group Confidential Information and that are critical to the security of such information in the provision of the Services are subject to appropriate background screening checks (" Screening
+Checks") in accordance with Good Industry Practice and any express requirements on Screening Checks set out in the terms of the Agreement. The Supplier shall ensure that any Supplier Staff who fail such Screening Checks do not have access to SCB Group Confidential Information.
+3.2    Prior to providing access to SCB Group Confidential Information and/or SCB Group Systems, the
+Supplier shall ensure that adequate training is provided to Supplier Staff concerning the implementation of, compliance with and enforcement of its Supplier Information Security Policy.
+3.3    The Supplier shall ensure that Supplier Staff comply with SCB's physical and information security
+requirements when working at SCB premises. Supplier Staff may not photograph or record SCB Group asset details, facilities, SCB Group Systems or SCB Group Confidential Information unless otherwise agreed in writing in the Agreement.
+3.4 The Supplier must define Supplier Staff roles and responsibilities in a manner that allows for appropriate segregation of duties, to prevent fraud and potential malicious or accidental misuse of Supplier Systems, applications and networks that are used to provide Services to SCB.
+4 Supplier Staff Physical and Logical Access Control
+4.1 The Supplier shall ensure that Supplier Staff will operate all systems and applications in a way that preserves the security of SCB Group Confidential Information stored in Supplier Systems and SCB Group Systems.
+4.2    The Supplier shall identify and designate appropriate Supplier Staff who are authorised to access SCB
+Group Confidential Information to fulfil the Supplier's obligations under the Agreement, and shall grant access and use rights only to such authorised designated Supplier Staff. With respect to each such
+individual identified and their access and use rights, the Supplier shall:
+(a)    limit access to only those items of SCB Group Confidential Information necessary to fulfil the
+Supplier's obligations under the Agreement; and
+(b)    limit the use of SCB Group Confidential Information to only those
+necessary to fulfil the Supplier's obligations under the Agreement.
+4.3 The Supplier shall implement, maintain, comply with and enforce a secure log-on process as agreed with SCB for authorised users to access Supplier Systems and SCB Group Systems in order to ensure
+ 
+that any user accessing SCB Group Confidential Information and SCB Group Systems are properly identified and authenticated.
+4.4    The Supplier shall ensure all Supplier Staff accessing SCB Systems:
+(a) protect all passwords, smartcards or tokens provided by SCB to such member of Supplier Staff;
+(b)    do not transmit, write down, copy or disclose such passwords to any third party;
+(c)    do not use passwords for SCB Group Systems that are different from any personal passwords
+provided;
+(d)    do not allow anyone else to use the unique user identifier or password provided by SCB; and
+(e)    protect and maintain the security of any equipment, computers (laptop or desktop) and mobile
+devices provided by SCB to Supplier Staff and immediately inform SCB upon becoming aware of any loss or theft.
+4.5 The Supplier shall implement and monitor the secure log-on process and generate audit trail logs
+(including CCTV recordings where required by SCB) that track any physical or electronic access to SCB Group Confidential Information by Supplier Staff in Supplier Facilities and Supplier Systems and shall enforce investigation and remedies over violations of access and use rights.
+4.6    The Supplier shall review Supplier Staff access and use rights regularly in order to reconfirm the identity
+of those individuals with access and to ensure that such rights are authorised and still necessary for the Supplier to fulfil its obligations under the Agreement.
+4.7    In the event that a member of Supplier Staff no longer has a reasonable need for access and use of
+Supplier Systems that store or process SCB Group Confidential Information, SCB Systems, and/or SCB Group Confidential Information, the Supplier shall within 24 hours remove all associated accounts and
+terminate access and user rights of such Supplier Staff member.
+4.8    In the event that a Supplier Staff member's contract of service or employment is terminated or
+suspended or there is a breach of Information Security Controls, the Supplier shall immediately:
+(a) revoke access to SCB Group Confidential Information including access to applicable facilities. Supplier Systems, SCB Group Systems and/or networks; and
+(b)    ensure that the Supplier Staff member returns all of the Supplier's computers and other assets
+with access to or containing SCB Group Confidential Information.
+5 Storage of SCB Group Confidential Information
+
+
+Otdti r/ii, ~
+nhnrWpi
+10,1 i.Cl W’
+5.1    The Supplier shall not store or maintain any SCB Group Confidential Information except as necessary
+for the performance of the Services under the Agreement.
+5.2    The Supplier shall ensure that SCB Group Confidential Information on Supplier Systems is segregated
+on a physical and/or logical basis from any other client data in accordance with SCB's requirements and as required by any Regulatory Authority.
+5.3    The Supplier shall implement and maintain physical security controls that protect SCB Group
+Confidential Information and storage devices for that information.
+5.4 Unless removal is specifically authorised by SCB, the Supplier shall not and shall ensure Supplier Staff shall not:
+(a)    remove any SCB Group Confidential Information from the Supplier Systems and/or SCB Group
+Systems; or
+(b)    remove any part of the Supplier Systems and/or SCB Group Systems containing SCB Group
+Confidential Information from any facility.
+5.5    The Supplier shall at all times safeguard the physical security of the SCB Group Confidential Information
+and shall record any authorised removal of SCB Group Confidential Information.
+5.6    The Supplier shall highly restrict access to Supplier Facilities with logged authentication processes for
+authorised Supplier Staff only.
+5.7 Visitors to Supplier Facilities shall be clearly identified and their access limited only to areas they need access to in order to fulfil their functions.
+5.8    The Supplier shall not make or allow to be made any modifications to any SCB Group Confidential
+Information.
+5.9    The Supplier shall store SCB Group Confidential Information in a secure location at Supplier's Facilities
+or (if authorised by SCB) at secure off-site locations in accordance with the requirements set out in this
+Document and Good Industry Practice. The Supplier shall secure Personal Data and Customer Data in encrypted format and other SCB Group Confidential Information shall be secured using appropriate measures in accordance with Good Industry Practice if stored electronically or, if secured physically, the Supplier shall secure it appropriately to ensure there is no unauthorised access.
+5.10    Where SCB Group Confidential Information has to be stored in Supplier computing devices such as
+laptops in accordance with the Agreement, the Supplier shall encrypt such laptops.
+5.11    The Supplier shall also secure SCB Group Confidential Information when not in use.
+5.12 The Supplier shall not store SCB Group Confidential Information in mobile phones, personal devices and removable media other than laptops in accordance with section 5.10 of this Document.
+5.13    The Supplier shall put in place appropriate physical security controls for SCB Group Confidential
+
+
+
+
+Information contained in printed material to ensure that Supplier Staff do not mishandle or lose the printed materials. Where printing is permitted for the purposes of the Services, the Supplier shall ensure that separate segregated printing facilities are used by Supplier Staff providing the Services.
+5.14    If the Supplier is authorised in writing by SCB to use third party vendors for transporting or storing
+backup media, the Supplier must assess all vendors used in order to verify the confidentiality, integrity and availability of backup media e.g. tapes. The Supplier shall encrypt all back-up media that leaves Supplier's facility using industry standard encryption techniques with a minimum 128-bit or higher
+encryption.
+5.15 The Supplier shall ensure an appropriate level of continuity for system operations and availability of information through resilient design of the Supplier Systems and information backup.
+Transfer of SCB Confidential Information
+6.1    The Supplier shall ensure that SCB Group Confidential Information on Supplier Systems is not
+transmitted, transferred or removed from the Supplier Systems without prior written consent of SCB.
+6.2 Unless authorised by SCB under an Agreement, the Supplier shall ensure that SCB Group Confidential Information is not transferred to or accessible from another jurisdiction, State or country whether or not it is within the Supplier Systems.
+6.3 If authorised to transfer SCB Group Confidential Information under an Agreement, the Supplier shall not transfer or remove SCB Group Confidential Information outside Supplier Systems or SCB Group Systems using physical storage media of any kind or via courier or postal mail without the prior written consent of SCB.
+6.4 Where the Supplier is authorised by SCB to transmit SCB Group Confidential Information over the internet, the Supplier shall do so using only encrypted mechanisms (e.g., HTIPS, SSL, SFTP, and
+TLS). The Supplier shall use Good Industry Practice standard encryption practices with at least 128-bit long cryptographic keys to protect any SCB Group Confidential Information prior to any transfer or transmittal outside Supplier Systems or SCB Group Systems, including without limitation, electronic transfer or physical transfer in storage media.
+6.5 If e-mail is the primary method of exchanging SCB Group Confidential Information, then secure e-mail must be implemented or SCB Group Confidential Information must be encrypted using industry standard 128 bit encryption method or higher.
+6.6 The Supplier shall employ industry standard encryption techniques, integrity checksums, logging mechanisms and other methods that are consistent with the industry best practice that ensures the
+confidentiality and integrity of any SCB Group Confidential Information exchanged with SCB.
+7 Netv,,iork Access Control
+7.1    The Supplier must receive prior written consent from SCB to connect Supplier Systems and SCB Group
+Systems to any wireless infrastructure.
+
+
+7.2
+
+The Supplier shall not utilise wireless networking technology in such a manner as to allow access to SCB Group Confidential Information or to transmit or process SCB Group Confidential Information unless:
+(a) such wireless technology is subject to access and use controls, including without limitation, strong user authentication; and
+(b) prior to transmitting any SCB Group Confidential Information wirelessly, the SCB Group Confidential Information is encrypted utilising at least 128-bit long cryptographic keys. The Supplier shall provide details of such wireless controls to SCB on request.
+7.3    The Supplier shall provide controls in accordance with Good Industry Practice protecting any Internet or
+third-party network connection to Supplier Systems and SCB Group Systems, such as firewalls and intrusion detection and prevention systems, and in a manner that maintains the security of any SCB
+Group Confidential Information within the Supplier Systems and SCB Group Systems.
+7.4 The Supplier shall only provide for SCB connection to and use of the Supplier Systems using the designated, authorised SCB Internet or third-party connectivity facilities, including its firewalls and other security mechanisms identified by SCB, unless the Supplier receives prior written consent from SCB to connect in another manner.
+7.5    When accessing SCB Group Systems or SCB Group Confidential Information on Supplier Systems over
+the Internet, the Supplier shall use only (i) encrypted network traffic via industry Standard Virtual Private Network (VPN), SSL VPN or equivalent technology, or other methods of remote access connectivity,
+approved in writing by SCB, unless otherwise specified in the Agreement.
+7.6 The Supplier shall implement and maintain controls that detect, prevent, remove and remedy threats from Malicious Software. The Supplier shall ensure that such controls are maintained in accordance with Good Industry Practice. These controls include but are not limited to IT system hardening, vulnerability
+management, patching and anti-virus initiatives.
+8 Software Development, Testing and Support
+8.1    The Supplier shall follow security practices and requirements in accordance with Good Industry Practice
+including those set out in this Document during its Software development lifecycle phases thereby demonstrating secure development practices when providing application development services under an Agreement.
+8.2 The Supplier shall ensure that only authorised codes are allowed in the Code Library and ensure there is proper version control within the Code Library to enable roll-back if required during the development stages.
+8.3 The Supplier shall disclose to SCB the development origin of all software components used in the Software.
+8.4    The Supplier shall ensure that its Software development environment is segregated from testing and
+production environments to ensure Source Material confidentiality and integrity protection.
+
+
+
+
+
+
+8.5 The Supplier shall not use SCB production data for testing unless authorised by SCB in writing under an Agreement.
+8.6 The Supplier shall review and test its Software, systems and Source Materials (using methods including source code security review, application vulnerability testing and penetration test) for security vulnerabilities and ensure the code is free of obvious bugs, Malicious Software malware and well known security vulnerabilities before delivery of the Software and/or Source Materials to SCB. The security review shall cover all aspects of the Software, including third party components and libraries.
+8.7 The Supplier shall track all security issues uncovered during the term of the Agreement that could impact SCB systems and SCB Group Confidential Information. The risk associated with each security issue shall be evaluated, documented and reported to SCB as soon as possible after discovery.
+8.8 After acceptance of the Software by SCB, if security issues are discovered or reasonably suspected, the Supplier shall assist SCB in performing an investigation to determine the nature of the issue.
+8.9    The Supplier shall coordinate with SCB to address Software security risks in accordance with the
+Software security risk analysis procedures established by SCB. The Supplier shall use all commercially reasonable efforts consistent with Good Industry Practice, taking in to account the severity of the risk, to resolve security issues as quickly as possible.
+8.10    Any material changes to Supplier Systems containing SCB Group Confidential information must be risk
+reviewed and communicated to SCB prior to implementing the change.
+3 Monitoring and Reporting
+9.1 The Supplier shall
+(a)    collect and record information and maintain logs that track physical and electronic access,
+planning documents, audit trails, records and reports with respect to information security controls and information security incidents insofar as they affect SCB Group Confidential Information and SCB Group Systems;
+(b) on a regular basis test the effectiveness of the controls set out in this Document and continuously monitor the security of Supplier Systems, Supplier Facilities and SCB Group Confidential Information; and
+(c)    at least once per year, perform internal or external vulnerability assessments and audits carried
+out by independent auditors with respect to the Supplier's information security controls affecting Supplier Systems, Supplier Facilities and SCB Group Confidential Information,
+together 9.1 (a)-(c) defined as the "Information Security Audit".
+9.2 The Supplier shall ensure that the Information Security Audits are appropriate based on risk and in accordance with (a) with recognised industry best practices; and (b) relevant regulatory and legal requirements.
+9.3    Upon SCB's written request, the Supplier shall make available to SCB (a) evidence that Information
+Standard
+Chartered
+Security Audits have been carried out; and (b) copies of the reports and materials from all Information Security Audits for SCB's review e.g. Standards for Attestation Engagements (SSAE) and ISO/ICE certifications. SCB shall treat such audit reports as Supplier's Confidential Information under the Agreement.
+9.4    The Supplier shall provide SCB with information regarding any high risk findings arising from Information
+Security Audit that affect the security of SCB Group Confidential Information or SCB Group Systems.
+9.5 The Supplier shall cooperate with Regulatory Authorities, SCB and any third party appointed by SCB to conduct audits and security testing on Supplier Systems and Supplier Facilities used to provide Services.
+1 Breach and Incident
+10.1 The Supplier shall provide SCB the following information as notice of any security incident that does actually or might now or in future affect the security of SCB Group Confidential Information and/or SCB Group Systems as soon as reasonably possible within 24 hours (or such other shorter time period
+agreed in the Agreement) of such an incident being realised by the Supplier:
+(a) when the incident began, was discovered and is expected to end;
+(b)    a description of the cause and nature of the incident;
+(c)    the actual or potential impact of the incident on SCB Group Confidential Information and SCB
+Group Systems;
+(d) the remedial actions taken, anticipated or recommended by the Supplier; and
+(e)    the date the last backup of SCB Group Confidential Information occurred and the nature of any
+information that was not backed-up.
+10.2    The Supplier shall treat all security issues relating to Software, SCB Group Confidential Information,
+Supplier Systems or SCB Systems as confidential. The Supplier shall protect information and associated documentation regarding security issues to prevent the exposure of the vulnerabilities in Software, SCB Group Confidential Information, Supplier Systems or SCB Systems.
+11 Glossary of Terms
+For the purpose of this Document the following capitalised words shall have the following meanings:
+Agreement means an agreement entered into or to be entered into between the Supplier and a member of SCB Group for the provision of goods or services.
+Code Library means the repository of the Source Materials of the software and program code provided by the Supplier to SCB under an Agreement.
+Confidential Information means all proprietary and confidential information of the parties and those of their customers, clients, personnel or suppliers whether commercial, financial, technical or otherwise (whether oral, in writing, machine readable or in any other form) and material (whether electronically recorded, in writing or otherwise) which by its very nature should obviously be treated as secret and confidential or which is designated as such and which the parties desire to protect against unrestricted disclosure or competitive use, including without limitation:
+(a) Customer Data and Personal Data;
+(b)    information relating directly or indirectly to SCB Group's business, including but not limited to
+details of trade secrets, know-how, strategies, ideas, operations, compliance information, processes, methodologies and practices;
+(c)    information supplied to SCB Group by suppliers which SCB is authorised to disclose;
+(d)    information relating directly or indirectly to SCB Group's plans, intentions, know-how, market
+opportunities and business affairs or those of its suppliers, customers (including potential customers) and clients;
+(e)    works of authorship, products and materials written and prepared by SCB or another member
+of SCB Group in relation to this Agreement including but not limited to computer programs, data, diagrams, charts, reports, specifications, sketches, inventions and working papers or similar materials of whatever nature or on whatever media relating thereto;
+(f)    any information resulting directly or indirectly from the discussions or negotiations relating to
+this Agreement and all copies, notes, records and all related information (in any form) generated by SCB or another member of SCB Group based on or arising from any disclosures for this Agreement; and
+(g)    the terms of any agreement reached by the parties or proposed by either party (whether
+agreed or not) in connection with the Agreement.
+Customer Data means any data, records or information (in any form) relating directly or indirectly to a Person that is a customer or client of any SCB Group member (including but not limited to past, present and/or future customers or clients, third party guarantors or sureties of any member of SCB Group) and from which it is practicable for the identity of the Person to be directly or indirectly ascertained by reference to other data, records or information.
+Data Protection Laws means all statutes, laws, secondary legislation, regulations, guidelines and industry standards applicable to SCB Group pertaining to privacy, confidentiality, banking secrecy and/or the protection of Personal Data or Customer Data.
+Document means this document as updated from time to time.
+Good Industry Practice means that degree of skill, diligence, care, prudence, foresight and systems and practice which would reasonably and ordinarily be expected of a skilled and experienced supplier engaged in the same or a similar type of business as that of the Supplier (within the financial services sector or otherwise) under similar circumstances.
+Malicious Software means (i) program code, programming instruction or set of instructions intentionally constructed with the ability to damage, destroy, disable, interfere with or otherwise adversely affect computer programs, data files or operations; or (ii) other malware code typically designated to be hostile, intrusive or disruptive including viruses, worms, Trojans, backdoors, spyware, key loggers, time lock or time bomb or anything similar.
+Standard U;. ,
+1*10 F’ F £21S'O f’"'- v Km/I la i JLfeJ f vskJI
+Person means any individual including their personal representatives, sole proprietorship, partnership, corporation, limited liability company, unincorporated society or association, trust or other entity or organisation including the directors and officers of such entity or organisation.
+Personal Data means any data, records or information (in any form) relating directly or indirectly to an individual (including but not limited to past, present and/or future personnel, customers, suppliers, third party guarantors or sureties of any member of SCB Group) and from which it is practicable for the identity of the individual to be directly or indirectly ascertained by reference to other data, records or information and as may be defined under applicable Data Protection Laws in the relevant jurisdiction(s) relating to the origin of the Personal Data Processed under the Agreement.
+Processing means any processing operation(s) performed upon Confidential Information whether by automatic means or not, such as collecting, recording, using, accessing, copying, retaining, storing, handling, disclosing, modifying, altering, transferring, transmitting, deleting or destroying.
+Regulatory Authority means in relation to SCB Group, a body (including without limitation any central bank, government department or agency, or other authority in any part of the world) which has the responsibility of supervising and/or regulating banks and other financial institutions generally including any member of SCB
+Group and any branch or representative office of SCB Group.
+SCB means the member of SCB Group which the Supplier has or will enter into an Agreement with.
+SCB Group means Standard Chartered Bank; and
+(a)    any person, body corporate, partnership, firm or other entity in which on or after the date of an
+Agreement from time to time Standard Chartered Bank directly or indirectly:
+(i)    owns more than half the capital, income, business assets or any other comparable
+equity or ownership interest; or
+(ii)    has the power to exercise fifty percent (50%) or more of the voting rights in such
+entity; or
+(iii)    has the legal power to direct or cause the direction or general management or affairs
+of the entity in question; or
+(iv)    has the power to appoint or remove more than half the members of the supervisory
+board, board of directors or bodies legally representing such entity; or
+(v)    has the right to manage the business of such entity;
+(b)    any person, body corporate, partnership, firm or other entity which directly or indirectly has in or
+over Standard Chartered Bank the rights or powers listed in (a) above ("a Controller"); and
+(c)    any person, body corporate, partnership, firm or other entity in which a Controller directly or
+indirectly has the rights or powers listed in (a) above.
+Services mean the services provided by the Supplier under or in relation to an Agreement.
+Software means the software to be delivered, installed, implemented, maintained, supported, hosted, licensed, and made available, customised and/or developed or otherwise as the case may be by the Supplier for the benefit of SCB, a member of SCB Group and/or customers of SCB Group pursuant to the Agreement.
+Source Materials means in relation to an item of software, all materials and documents necessary to enable a reasonably skilled programmer to understand, maintain, amend and enhance the software without reference to any other person or document and whether in eye-readable or machine readable form including,
+
+
+
+without limitation, the source code listing of such software and all normally available programmer's comments.
+Standard Chartered Bank means Standard Chartered Bank incorporated in England and Wales with limited liability by Royal Charter 1853 reference number ZC 18.
+Supplier means the party providing Services and/or deliverables to SCB and/or other members of SCB Group under or in relation to an Agreement.
+Supplier Facilities means the Supplier's operation centres, server rooms, wiring closets and other critical infrastructure areas used to provide the Services under the Supplier's or its authorised sub-contractors' control and where SCB Group Confidential Information may be accessed from.
+Supplier Information Security Policy means the information security policy developed and maintained by the Supplier relating to the secure handling of information and access to facilities, networks and environments within its organisation.
+Supplier Systems means any and all information technology and communications systems used by the Supplier or made available by the Supplier to members of SCB Group in the provision of the Services and/or that may access or store SCB Group Confidential Information, including but not limited to software, databases, firewalls, servers, networks, hardware, middleware and CPUs.
+SCB Group Systems means any and all information technology and communications systems and networks used by SCB Group or made available by SCB Group to the Supplier and Supplier Staff including but not limited to software, databases, firewalls, servers, hardware, middleware and CPUs.
+Supplier Staff means in the Supplier's personnel (including employees, agents and sub-contractors) engaged to provide the Services pursuant to an Agreement.
+
+
+Schedule 5 Change Control Process
+Part 1 - Change Control Procedure 1 General
+• The Supplier shall not unreasonably withhold its agreement to any Change.
+• There shall be no presumption that the obligations undertaken by either party in connection with the Agreement are in any way changed until an amendment has been effected in writing signed by Authorised Representatives.
+• No amendments to the Agreement shall be valid and no Change shall be effective unless and until they have been agreed in writing by the Authorised Representative of each party.
+2 Process
+• SCB and the Supplier shall discuss any Change proposed by either party and such discussion shall result in either:
+(a)    agreement in writing not to proceed further with the Change;
+(b) a written request for a Change by SCB;
+(c) a recommendation for a Change by the Supplier.
+• Where a written request for a Change is received from SCB, the Supplier shall, unless otherwise agreed, submit a Change Request Form to SCB within fifteen (15) days (or such other time as the parties may agree in writing) containing the information set out in Part 2 of this Schedule and any other relevant information.
+• A recommendation for a Change by the Supplier shall be submitted as a Change Request Form at the time of such recommendation.
+• For each Change Request Form submitted SCB shall, within the period of the validity of the Change Request Form:
+(a)    allocate a sequential number to the Change Request Form;
+(b) evaluate the Change Request Form and either:
+(i) request further information, which the Supplier shall promptly provide; or
+(ii)    discuss the terms of the Change Request Form with the Supplier and request
+amendments thereto; or
+(iii) approve the Change Request Form, as submitted by the Supplier or as amended pursuant to section 2.4(b) (ii) above; or
+(iv) reject the Change Request Form.
+• SCB shall notify the Supplier of its approval or rejection of the Change Request Form by notice in writing to the Supplier. No such notice shall be valid unless signed by a duly authorised officer of SCB.
+• If SCB and the Supplier agree a Change and the relevant Change Request Form then signature of the Change Request Form and any supplement or amendment thereto by both parties shall
+constitute a formal amendment to the Agreement to the extent only specified in the Change Request Form and any such supplement or amendment.
+• Any charges specified in a Change Request Form shall, unless expressly stated otherwise in the Change Request Form, be the maximum cost of the Change.
+• If the Supplier modifies the whole or any part of the Software in accordance with any Change it shall make all appropriate related modifications to SCB's Requirements, the Project Plan, the Documentation and any other deliverables, the cost of which (if any) shall be included within the
+charges specified in the Change Request Form, and such amended documents when approved in writing by SCB shall be the applicable documents for the purpose of this Agreement.
+Part 2 - Change Request Form
+Change Request Form
+Ref:
+Date:
+Project Name:
+Title of Change:
+Change Originator
+SECTION 1-CHANGE DETAILS
+Change description :
+Reason for Change:
+SECTION 2 -IMPACT ASSESSMENT
+Impact of the Change (e.g., impact to project plans, services, milestone dates, critical path and dependencies):
+Impact on cost/ expenditure (internal and/or external) :
+Impact on resources (additional/ reduced effort required to implement the change) :
+Impact of not implementing the change :
+II SECTION 3 - SIGN-OFF
+Name :
+Position:
+Accept/Reject/:
+Name:
+Signature:
+
+
+Name:
+Signature:
+
+
+
+
+Schedule 6 Volume Verification
+1 Purpose
+The purpose of this Schedule is to provide the instructions to obtain a statistics report on a daily basis, such that said daily statistics figures may be compiled into a monthly report to be delivered to the Supplier. The procedures and instructions provided herein assume a level of IT proficiency with command shells and basic file copy/move operations of the financial institution's chosen operating system.
+Any further details of the FircoSoft filter engine component may be obtained directly from the user manual.
+2 Details
+The procedures may be split into two sections, namely the "daily" procedure, and the "monthly" procedure. Any automation on the part of the financial institution is up to the financial institution and is out of scope of this Schedule.
+The commands herein are based off version 4.4 of the FircoSoft filter engine, and should be, but is not guaranteed to be, forward-compatible with future versions. The commands could be updated and could differ for each version of the FircoSoft filter engine.
+2.1 Daily Statistics
+As part of the daily procedure, the following commands should be run at 2359HRS:
+• FOFSTAT-FILEOUT=YYYYMMDD-FOFSTAT-OUT.TXT • FOFSTAT-SUM-FILEOUT=YYYYMMDD-FOFSTAT-SUM-OUT.TXT
+The following provides the break-down of the command and parameters:
+• FOFSTAT
+o the actual executable to be run
+o must be run from the path where the FircoSoft filter engine has been installed to
+• -SUM
+o Display sum of days information
+• -FILEOUT
+o the actual output file name, whereby" YYYYMMDD" should be the four-digit year, followed by a 2-digit month, followed by a 2-digit date
+The above process could be executed by a script. All the daily produced file(s) should be safe-stored and accumulated for monthly reporting.
+2.2 Monthly Reporting
+Simply compress the past month's stored YYYYMMDD-FOFSTAT-OUT.TXT files and send them to support@fircosoft.com.
+In addition of the reporting the following lines from the FOF.log file are of interest:
+FOFSERV 2012/04/13 10:42:12 -1- *** Licensed to: STANDARD CHARTERED FOFSERV 2012/04/13 10:42:12 -1- *** Expiration: 20131206
+If the expiration date of the licence is approaching signal it to you FircoSoft contact in order to obtain a renewed licence.
+If the usage seen in the document is reaching the limit from the licence, please contact FircoSoft to obtain to acquire licence which allows more usage.
+Maintenance Services Scorecard    Period:
+Scorecard will be reviewed every quarter against the previous quarter's Maintenance Services
+(A) Service Assessment
+No
+I KPI
+I Metric
+IConsideration/Descripti
+on
+I Month 1
+Month 2
+Month 3
+Reference &
+Justification
+Points
+Variance
+Weighting for this Metric
+I    Scoring    I
+
+
+
+
+Num
+!Total
+Num
+Total
+INum
+!Total
+
+
+
+
+Rating
+Score
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+Responsiveness
+1
+Number of Severity 1
+and Severity 2 Problem
+Recoveries within Service Levels
+0
+1
+0
+1
+0
+0
+0
+0
+
+5
+4
+3
+2
+1
+0
+-1
+-2
+-3
+-4
+-SI
+There are no Sev 1 or Sev 2
+issues reported
+All Sev 1 and Sev 2 issues are resolved within the Service
+Levels.
+1 Sev 1/ Sev2 issue not resolved such that services are not resumed within Service Levels.
+>/ , 't, %///,%>, i''/s/#'2#
+/ S /s S//f'/A    , /z %/y
+More than 1 Sev 1/ Sev2 issues not resolved such that services
+are not resumed within Service
+Levels.
+20.0%
+
+0.00
+
+
+2
+Number of Severity 3
+Problem Recoveries within Service Levels
+0
+0
+1
+1
+0
+o
+E.g.. Not resolved within Service Levels
+I s
+4
+3
+2
+1
+0
+-1
+-2
+-3
+-4
+-5
+All Sev 3 issues resolved within
+Service Levels.
+1 i' /number of Sev    " ?
+not resolved within Service
+Level s.
+.'.z    '
+3 or 4 number of Sev 3 issues
+not resolved within Service
+Levels.
+5 or more number of Sev 3
+issues notres olved within
+Service Levels
+10.0%
+
+0.00
+Scorecard will be reviewed every quarter against the previous quarter's Maintenance Services
+
+(A)Service Assessment
+
+No
+
+KPI
+
+Metric
+
+Consideration/Descripti
+on
+
+Month l
+
+Num
+
+Total
+
+Month 2
+
+Num
+
+Total
+
+Month 3
+
+Num
+
+Total
+
+(B) Product Assessment
+
+Stability
+
+Reference & Justification
+
+Points
+
+Variance
+
+Weighting for
+this Metric
+
+Scoring
+
+Rating
+
+Score
+
+Number ofSeverity l & 2 Permanent Fixes Delivered Within
+Service Levels
+
+All Sev 1 & Sev 2 Permanent fixes delivered withinService Levels
+
+0.00
+
+-1
+
+-2
+
+
+
+Any Sev 1 or Sev 2 Permanent Fixes not delivered within Service Levels
+
+Number ofSeverity 1 & Sev 2 issues reported
+Number of Severity 3 issues reported
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5
+No Sev 1 or Sev 2 issues
+
+
+
+
+
+
+
+4
+
+
+
+
+
+
+
+
+3
+
+
+
+
+
+
+
+
+2
+9^KKK9,
+
+
+
+
+
+
+
+1
+
+
+
+
+
+
+
+
+0
+wSxiSai
+
+
+
+
+
+
+
+-1
+
+
+
+
+
+
+
+
+-2
+
+
+
+
+
+
+
+
+-3
+
+
+
+
+
+
+
+
+-4
+
+
+
+
+
+
+
+
+-5
+Any Sev 1 or Sev 2 issues
+
+
+
+
+
+
+
+t---5--b
+NoSev 3 issues
+
+
+
+
+
+
+
+4
+= ""
+
+
+
+
+
+
+
+3
+> ' J t ''s/'/"    "
+
+
+
+
+
+
+
+2
+1-3 Sev 3 issues
+
+
+
+
+
+
+
+1
+
+
+
+
+
+
+
+
+01
+4Sev 3 issues
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-215 Sev 3 issues
+
+
+
+
+
+
+
+-3
+' /y, "#/ J'cZ/'
+
+
+
+
+
+
+
+-41
+6 or moreSev 3 issues
+
+
+
+
+
+
+
+-5
+
+40.0%
+20.0%
+
+Total
+
+100%
+
+0.00
+
+0.00
+
+0.00
+
+Scorecard wifi be reviewed every quarter against the previous quarter's Maintenance Services
+{A) Service Assessment
+No
+KPI
+Metric
+Consideration/Descripti
+on
+Month 1
+Month 2
+Month 3
+
+
+
+
+Num
+Total
+Num
+Total
+Num
+Total
+
+
+
+
+
+
+
+
+
+
+Material Breach
+Material Breach will have occurred if a score of
+(a)    less than or equal to -3 for each of any four consecutive quarters is obtained or;
+(b)    less than orequal to-4foreach of any 3 consecutive quarters is obtained; or
+(c)    a total score of less than orequal to -12 in a calendar year is obtained,
+| Pe riod:
+
+
+
+Reference &
+Points
+Variance
+Weighting for
+Scoring
+
+Justification
+
+
+this Metric
+Rating
+Score
+
+
+
+
+
+
+
+Score & Resulting Payment
+Average quarterly score for the year
+Resulting additional %to annual Subscription payment
+
+
+5.0
+
+
+20.0%
+
+
+From 4.0 to 4.99
+
+
+15.0%
+
+
+From 3.0 to 3.99
+
+
+10.0%
+
+
+From 2.0 to 2.99
+
+
+5.0%
+
+
+From -1.0 to 2.0
+
+
+0.0%
+
+
+From -2.0 to -1.01
+
+
+-5.0%
+
+
+From -3.0 to -2.01
+
+
+-10.0%
+
+
+From -4.0 to -3.01
+
+
+-15.0%
+
+
+From -5.0 to -4.01
+
+
+-20.0%
+
+
+Below -5.01
+
+
+-30.0%
+
+
+Example 1_
+Assume quarterly scores for the year are QTR 1 =3.90, QTR 2 = 2.20, QTR 3 = 2.20 & QTR 4 =5. Average score for the year of Subscription = 3.325. Therefore assuming yearly Subscription amount = USD 726,000 the resultant additional amount due to Supplier = +10% of USD 726,000 = USD 72,600.
+Scorecard will be reviewed every quarter against the previous quarter's Maintenance Services
+(A) Service Assessment
+No
+KPI
+Metric
+Consideration/Descripti on
+Month 1
+Month 2
+Month 3
+
+
+
+
+Num
+Total
+Num
+Total
+Num
+Tota
+
+
+
+
+
+
+
+
+
+
+
+Reference & Justification
+Points
+Variance
+Weighting for this Metric
+Scoring
+
+
+
+
+
+Rating
+Score
+
+
+
+
+
+
+
+Example 2
+Assume quarterly scores for the year are QTR 1 = -2.30, QTR 2 =-3.0, QTR 3 = -3.0 & QTR 4 =-2.30 Average score for the year of Subscription = -2.65. Therefore assuming yearly Subscription amount = USD 726,000 the resultant additional amount due to Supplier —10% of USD 726,000 = USD-72,600 i.e. Supplier needs to refund SCB USD72,600.1139
+Refund Mechanism
+For refunds due to SCB as a result of this scorecard, (a) the monies should be set off against future payments (not restricted to payments for this Service); and (b) in the eve nt that there is no future payment, i.e. contract has been terminated, Supplier would have to refund the monies back to SCB in cash within 30 days.

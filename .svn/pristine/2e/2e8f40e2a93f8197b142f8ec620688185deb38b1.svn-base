@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var viewModel = new Object()
+    </script>
+    <script src="{{BaseUrl}}res/js/knockout-3.1.0.js"></script>
+    <script src="{{BaseUrl}}res/js/knockout.mapping-latest.js"></script>
+    <script src="{{BaseUrl}}res/js/linq.js"></script>
+    <script src="{{BaseUrl}}res/js/ecis_config.js"></script>
+    <script src="{{BaseUrl}}res/js/ecis_start.js"></script>
+    <!-- Sweetalert -->
+    <script src="{{BaseUrl}}res/swal/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="{{BaseUrl}}res/swal/sweetalert.css">
+    <!-- Sweetalert -->
+    <!-- FROM METRONIC FOR LOGIN-->
+    <title>ProAcctife</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="{{BaseUrl}}res/metronic/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{BaseUrl}}res/metronic/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{BaseUrl}}res/metronic/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link href="{{BaseUrl}}res/metronic/admin/pages/css/login-soft.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="{{BaseUrl}}res/metronic/global/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="{{BaseUrl}}res/metronic/global/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="{{BaseUrl}}res/metronic/admin/layout/css/layout.css" rel="stylesheet" type="text/css" />
+    <link id="style_color" href="{{BaseUrl}}res/metronic/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css" />
+    <link href="{{BaseUrl}}res/metronic/admin/layout/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="{{BaseUrl}}res/img/favicon.ico" type="image/x-icon" />
+    <!-- END FROM METRONIC FOR LOGIN -->
+    <script src="{{BaseUrl}}res/jquery/jquery-2.1.0.min.js"></script>
+    <script src="{{BaseUrl}}res/metronic/global/plugins/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="{{BaseUrl}}res/metronic/global/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="{{BaseUrl}}res/metronic/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="{{BaseUrl}}res/metronic/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+    <script src="{{BaseUrl}}res/metronic/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="{{BaseUrl}}res/metronic/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="{{BaseUrl}}res/metronic/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+    <script src="{{BaseUrl}}res/metronic/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script src="{{BaseUrl}}res/metronic/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="{{BaseUrl}}res/metronic/global/plugins/backstretch/jquery.backstretch.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="{{BaseUrl}}res/metronic/global/plugins/select2/select2.min.js"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="{{BaseUrl}}res/metronic/global/scripts/metronic.js" type="text/javascript"></script>
+    <script src="{{BaseUrl}}res/metronic/admin/layout/scripts/layout.js" type="text/javascript"></script>
+    <script src="{{BaseUrl}}res/metronic/admin/pages/scripts/login-soft.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="{{BaseUrl}}res/core/css/loader1.css">
+    <!-- END PAGE LEVEL SCRIPTS -->
+</head>
+
+<body class="login">
+    <!-- BEGIN LOGO -->
+    <!-- <div class="logo">
+         <a href="index.html">
+         <img src="../../assets/admin/layout/img/logo-big.png" alt=""/>
+         </a>
+         </div> -->
+    <!-- END LOGO -->
+    <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+    <div class="menu-toggler sidebar-toggler">
+    </div>
+    <!-- END SIDEBAR TOGGLER BUTTON -->
+    <!-- BEGIN LOGIN -->
+    <div class="loginformparent">
+        <div id="boxlogin"  class="content">
+            <!-- BEGIN LOGIN FORM -->
+            <div id="login-form" class="login-form" method="post" style="height: 95%">
+                <!-- <h3 class="form-title">Login to your account</h3> -->
+                <div style="text-align: center;">
+                    <img src="{{BaseUrl}}res/metronic/admin/pages/media/bg/Proacctife01.png" / style="width: 200px; padding-bottom: 5px;"><br>
+                    <div style="text-align: center;margin-bottom: 27px;" data-bind="visible:!model.Processing()">
+                        Professional Accounting & Finance
+                    </div>
+                    <div>
+                        {{template "_loader2.html"}}
+                    </div>
+                    <div class="alert alert-danger display-hide">
+                        <button class="close" data-close="alert"></button>
+                        <span>
+                     Enter any username and password. </span>
+                    </div>
+                    <div class="form-group" data-bind="visible:!model.Processing()">
+                        <label class="control-label visible-ie8 visible-ie9">Username</label>
+                        <div class="input-icon">
+                            <i class="fa fa-user"></i>
+                            <input id="username" class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username" />
+                        </div>
+                    </div>
+                    <div class="form-group" data-bind="visible:!model.Processing()">
+                        <label class="control-label visible-ie8 visible-ie9">Password</label>
+                        <div class="input-icon">
+                            <i class="fa fa-lock"></i>
+                            <input id="password" class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password" />
+                        </div>
+                    </div>
+                    <div class="form-group login-group-checkbox pull-left" data-bind="visible:!model.Processing()">
+                        <input type="checkbox" id="lg_remember" name="lg_remember">
+                        <label for="lg_remember">remember me</label>
+                    </div>
+                    <div class="form-actions pull-right">
+                        
+                        <button onclick="DoLogin();" type="submit" class="btn btn-sm blue pull-right">
+                     Log In <i class="m-icon-swapright m-icon-white"> </i>
+                     </button>
+                    </div>
+                    <div class="etc-login-form pull-left">
+                        <p>Can't acces your account? <a href="#" data-toggle="modal" data-target="#modalForgetPassword" data-backdrop="false">click here</a></p>
+                    </div>
+                    <div class="modal fade myModal" id="modalForgetPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close btn btn-sm btn-default btn-flat" data-dismiss="modal"><i class="fa fa-times"></i><span class="sr-only">Close</span></button>
+                                    <h5 class="modal-title" id="myModalLabel" data-bind="">Reset Password</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="resetPasswordForm" data-bind="visible:!model.modalProcessing()">
+                                        <div class="row">
+                                            <label class="col-md-4" id="registeredEmailInput">
+                                    Your Registered Email
+                                    </label>
+                                            <div class="col-md-8">
+                                                <input type="email" id="email" name="email" class="form-control input-sm" placeholder="e.g. yourmail@email.com" required data-email-msg="Email format is not valid" />
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="loader" data-bind="visible:model.modalProcessing()" style="margin-left: 30px">
+                                        <div class="kart-loader">
+                                            <div class="sheath">
+                                                    <div class="segment"></div>
+                                            </div>
+                                            <div class="sheath">
+                                                    <div class="segment"></div>
+                                            </div>
+                                            <div class="sheath">
+                                                    <div class="segment"></div>
+                                            </div>
+                                            <div class="sheath">
+                                                    <div class="segment"></div>
+                                            </div>
+                                            <div class="sheath">
+                                                    <div class="segment"></div>
+                                            </div>
+                                            <div class="sheath">
+                                                    <div class="segment"></div>
+                                            </div>
+                                            <div class="sheath">
+                                                    <div class="segment"></div>
+                                            </div>
+                                            <div class="sheath">
+                                                    <div class="segment"></div>
+                                            </div>
+                                            <div class="sheath">
+                                                    <div class="segment"></div>
+                                            </div>
+                                            <div class="sheath">
+                                                    <div class="segment"></div>
+                                            </div>
+                                            <div class="sheath">
+                                                    <div class="segment"></div>
+                                            </div>
+                                            <div class="sheath">
+                                                    <div class="segment"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success btn-sm" onclick="resetPassword();">Send Email</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END LOGIN FORM -->
+                    <!-- BEGIN FORGOT PASSWORD FORM -->
+                    <form class="forget-form" action="index.html" method="post">
+                        <h3>Forget Password ?</h3>
+                        <p>
+                            Enter your e-mail address below to reset your password.
+                        </p>
+                        <div class="form-group">
+                            <div class="input-icon">
+                                <i class="fa fa-envelope"></i>
+                                <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" />
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" id="back-btn" class="btn">
+                        <i class="m-icon-swapleft"></i> Back </button>
+                            <button type="submit" class="btn blue pull-right">
+                        Submit <i class="m-icon-swapright m-icon-white"></i>
+                        </button>
+                        </div>
+                    </form>
+                    <!-- END FORGOT PASSWORD FORM -->
+                </div>
+            </div>
+            <div style="clear:both" ></div>
+            <div class="row">
+                <div class="col-sm-12" style="margin-bottom:5px;margin-top: 15px; text-align: center" >
+                    <label>&copy; EACIIT Pte Ltd 2017</label>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        var model = {}
+        model.Processing = ko.observable(false)
+        model.modalProcessing = ko.observable(false)
+        var DoLogin = function() {
+            var url = "/login/do";
+            var param = {
+                UserName: $("#username").val(),
+                Password: $("#password").val(),
+            }
+            model.Processing(true)
+            ajaxPost(url, param, function(data) {
+                console.log(data)
+                if (data.IsError == false) {
+                    if (data.Data.Roles.length == 0) {
+                        swal({
+                            title:"Sorry..!",
+                            text: data.Message,
+                            type: "error",
+                            confirmButtonColor:"#3da09a"})
+                        $("#lg_remember").parent().removeClass('checked')
+                    } else {
+                        location.href = data.Data.Roles[0].Url
+                    }
+                    model.Processing(false)
+                } else { 
+                    swal({
+                        title:"Sorry..!",
+                        text: data.Message, 
+                        type:"error",
+                        confirmButtonColor:"#3da09a"})
+                    $("#lg_remember").parent().removeClass('checked')
+                    $('#username').val("")
+                    $('#password').val("")
+
+                    model.Processing(false)
+                }
+            });
+        }
+
+        var resetPassword = function() {
+            if ($("#email").val() == "") {
+                return swal({
+                    title:"Error!",
+                    text: "Email Empty Please Fill It !!!",
+                    type: "error",
+                    confirmButtonColor:"#3da09a"});
+            }
+            var url = "/login/forgetpassword";
+            var param = {
+                UserEmail: $("#email").val(),
+                UrlString : window.location.origin
+            };
+            model.modalProcessing(true)
+            // model.Processing(true)
+            ajaxPost(url, param, function(data) {
+               
+                if (data.Data.length === 0) {
+                    setTimeout(function(){
+                        model.modalProcessing(false)
+                        swal({
+                    title:"Error!",
+                    text: "Email is not correct!!!",
+                    type: "error",
+                    confirmButtonColor:"#3da09a"});  
+                    }, 1000);
+                    
+                }else{
+                    swal({
+                    title:"Success !",
+                    text: "Please check your email.",
+                    type:   "success",
+                    confirmButtonColor:"#3da09a"});
+                    $('#modalForgetPassword').modal("hide");
+                    model.modalProcessing(false)
+                }
+               
+                
+            });
+        }
+
+        jQuery(document).ready(function() {
+            $("#login-form input").keypress(function(event) {
+                if (event.which == 13) {
+                    event.preventDefault();
+                    DoLogin();
+                }
+            });
+            Metronic.init(); // init metronic core components
+            Layout.init(); // init current layout
+            
+
+            $.backstretch([
+                "../res/metronic/admin/pages/media/bg/Accgo4.jpg",
+                "../res/metronic/admin/pages/media/bg/Accgo1.jpg",
+                "../res/metronic/admin/pages/media/bg/Accgo2.jpg"
+            ], {
+                fade: 1000,
+                duration: 8000
+            });
+
+            $("#username").focus();
+        });
+        ko.applyBindings(model);
+    </script>
+    <!-- END JAVASCRIPTS -->
+</body>
+
+</html>
+<style type="text/css">
+        #boxlogin {
+            min-height: 360px;
+            margin-left: 170px;
+            margin-top: 25px;
+            background-color: #fafafa;
+        }
+</style>
+<style type="text/css">
+    .login .content .form-actions .btn {
+        margin-top: 0px;
+    }
+    .login .content p,
+    .login .content label {
+        color: #161e88;
+        margin-top: 5px;
+    }
+    a {
+        color: #07a7a0;
+    }
+
+    .login .content p,
+    .login .content label {
+        color: #161e88;
+    }
+    .loader{
+        height: 130px !important;
+    }
+    .loginformparent{
+        height: 70% !important;
+        display: inline !important;
+        position: fixed;
+    }
+    @media (max-width: 480px){
+        .loginformparent{
+            position: relative;
+        }
+        #boxlogin{
+            min-height: 400px;
+            margin: auto;
+            background-color: #fafafa;
+            margin-top: 25px;
+        }
+        .login .content {
+            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            width: 262px;
+        }
+    }
+</style>

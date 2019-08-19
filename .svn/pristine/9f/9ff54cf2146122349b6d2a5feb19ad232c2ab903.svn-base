@@ -1,0 +1,42 @@
+{
+   "governinglaw": [
+      {
+         "common-ancestor-id": "321",
+         "start-offset": "3695",
+         "data-eaciit-start": "322",
+         "confidence": 0.53,
+         "data-eaciit-id": "322",
+         "contentfromsystem": "\n    shall be interpreted and construed in a=rdance with the laws of England and Wales, without regard to the conflicts of law\n   ",
+         "clause": "governinglaw",
+         "end-offset": "3716",
+         "data-eaciit-end": "322"
+      }
+   ],
+   "word-count": 14565,
+   "effectivedate": [
+      {
+         "common-ancestor-id": "204",
+         "start-offset": "1924",
+         "data-eaciit-start": "205",
+         "confidence": 0.85,
+         "data-eaciit-id": "205",
+         "contentfromsystem": "\n    which have accrued through the effective date of termination. Where the Customer gives! notice to terminate this Agreement\u00a0pursuant to clause 8{b), (c) or (e), Traiana shall provide a pro-rata\u00a0refund to the Customer of any fees or charges paid in advance for\u00a0the period from the date of termfnalion.\n   ",
+         "clause": "effectivedate",
+         "end-offset": "1974",
+         "data-eaciit-end": "205"
+      }
+   ],
+   "documenttitle": [
+      {
+         "common-ancestor-id": "660",
+         "start-offset": "5356",
+         "data-eaciit-start": "661",
+         "confidence": 0.64,
+         "data-eaciit-id": "661",
+         "contentfromsystem": "\n    Senior Business Manager Standard Chartered Bank\u00a0Global Markets\n   ",
+         "clause": "documenttitle",
+         "end-offset": "5364",
+         "data-eaciit-end": "661"
+      }
+   ]
+}

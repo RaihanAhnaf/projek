@@ -1,0 +1,234 @@
+.top-margin {
+	margin-top: 20px;
+}
+.colorText a{
+	color: #000000;
+	cursor: pointer;
+}
+.gridModalReff .modal-content{
+width: 1000px;
+}
+h4 {
+	margin-bottom: 25px;
+}
+.control-label.left{
+	text-align: left;
+
+}
+.control-label.boldleft{
+	text-align: left;
+	font-weight: bold;
+}
+.form-group.no-marginbottom{
+	margin-bottom: 0px;
+}
+.labelFilterLedger{
+	width: 30%;
+}
+..k-grid-footer {
+	font-size: 20px;
+}
+.ledgerFilterLabel{
+	text-align: left;
+	font-weight: bold;
+	margin-top: 6px;
+    /*width: 5%;*/
+}
+.ledgerFilterLabel.Acc{
+	margin-left: 18px;
+	width: 9%;
+}
+.refreshLedger{
+	margin-left: 20px;
+}
+.spanAccountName{
+	margin-top: 6px;
+}
+@media (min-width: 992px){
+	.col-md-2.colmdnew2 {
+	    width: 10.666667%;
+}
+.marginrow {
+	margin-top: 3px;
+}
+.k-grid .k-hierarchy-col {
+  width: 10px;
+}
+
+/*PANEL*/
+.portlet.box > .portlet-title {
+    margin-bottom: 0px;
+    padding: 10px 10px 4px 24px;
+    border-bottom: 1px solid #eee;
+    color: #fff;
+}
+.nav-tabs>li.active>a{
+	color: #555;
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.nav-tabs>li.active>a:focus{
+	color: #555;
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.nav-tabs>li.active>a:hover{
+	color: #fff;
+    background-color: #496f96;
+    border: 1px solid #b2b2b2;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.nav-tabs>li>a{
+	background-color: #375879;
+	border: 1px solid #b2b2b2;
+}
+.nav-tabs>li>a:focus{
+	background-color: #375879;
+	border: 1px solid #b2b2b2;
+}
+.nav-tabs>li>a:hover{
+	background-color: #489aec;
+    color: #fff;
+}
+.nav-tabs {
+	border-bottom: 1px solid #b2b2b2;
+}
+.bar{
+	padding-left: 5px;
+}
+.page-bar .page-breadcrumb>li>i.fa-circle{
+	font-size: 5px;
+    margin: 0 5px;
+    position: relative;
+    top: -3px;
+    opacity: .4;
+}
+.filter-space{
+    margin-left: 14px;
+    margin-right: 5px;
+}
+.portlet.box.twist{
+    background-color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+  }
+.portlet-title .caption{
+    color: #3d3d3d;
+  }
+
+.portlet.box.twist.filter{
+    background-color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+    margin-left:-40px;
+  }
+body { font-family: Helvetica; }
+h1 { font-size: 18px; }
+ .row { margin-bottom: 10px; }
+ .left, .right { display: inline-block; margin-right: 20px; position: relative; }
+ .swatch { display: inline-block; width: 60px; height: 50px; }
+ .swatch.overlay { position: absolute; left: 60px; }
+.portlet.box > .portlet-title{
+	padding-left: 8px;
+}
+.tool-padding{
+	margin-top: -4px; 
+	padding-top: 0px
+}
+.btn-export{
+	text-align: right;padding-right: 15px;
+}
+.btn-margin{
+	margin-left: 0px
+}
+.top-margin{
+	margin-top:5px
+}
+.space{
+	margin-left:-80px
+}
+.btnnew {
+  display:block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50% !important;
+  border: 1px solid white;
+  background-color: white;
+}
+.portlet > .portlet-title > .caption1 {
+    float: left;
+    display: inline-block;
+    font-size: 40px;
+    line-height: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    color: #3d3d3d;
+}
+.portlet > .portlet-title > .caption2 {
+    float: left;
+    display: inline-block;
+    font-size: 40px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #3d3d3d;
+    padding-left: 20px;
+    margin-top: -15px;
+}
+.portlet.light>.portlet-title>.caption>.caption-subject.sizeTopTen{
+    font-size: 15px
+}
+.font-dark {
+    color: #2f353b!important;
+}
+.uppercase {
+    text-transform: uppercase!important;
+}
+.bold {
+    font-weight: 700!important;
+}
+.btn.btn-outline.orange {
+    border-color: #f35800;
+    color: #f35800;
+    background: 0 0;
+}
+
+.btn.btn-outline.orange.active, .btn.btn-outline.orange:active, .btn.btn-outline.orange:active:focus, .btn.btn-outline.orange:active:hover, .btn.btn-outline.orange:focus, .btn.btn-outline.orange:hover {
+    border-color: #f35800;
+    color: #FFF;
+    background-color: #f35800;
+}
+.k-widget.k-multiselect{
+    vertical-align: middle;
+    display: inline-block;
+}
+.page-template {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.page-template .header {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+
+    border-bottom: 1px solid #888;
+
+    text-align: center;
+    font-size: 18px;
+}
+
+.page-template .footer {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+}

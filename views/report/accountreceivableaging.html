@@ -1,0 +1,71 @@
+<script type="text/javascript">
+var userinfo ={
+    usernameh: ko.observable('{{.Username}}'),
+    menunameh: ko.observable('{{.Menuname}}'),
+}
+</script>
+<script src="{{BaseUrl}}res/main/js/report-accountreceivable.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/report.css">
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <span class="bar">Report</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <a href="/report/accountreceivableaging">Account Receivable Aging</a>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+            <span class="thin hidden-xs font2" data-bind="text:ar.DatePageBar"></span>&nbsp;
+        </div>
+    </div>
+</div>
+<div class="panel">
+    <div class="row" data-bind="visible:!model.Processing()">
+        <div class="col-md-12">
+            <div class="portlet box twis">
+                <div class="portlet-title">
+                    <div class="caption">Account Receivable Aging</div>
+                    <div class="tools tool-padding">
+                        <button type="button" onclick="ar.ExportToPdf()" class="btn btn-sm red btn-outline btn-flat"><i class="fa fa-file-pdf-o"></i>&nbsp;Export To PDF</button>
+                        <button onclick="ar.downloadExcel()" value="Export to excel" type="button" id="#grid" class="btn btn-sm btn-outline green" data-toggle="modal"><i class="fa fa-file-excel-o"></i>&nbsp;Export To Excel </button>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Date :</label>
+                            <input type="text" id="dateAr" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}" class="filter-space" />
+                            <label>Customer :</label>
+                            <select id="customercode" data-bind="kendoDropDownList: {data: ar.dataCustomer, dataValueField: 'Kode', dataTextField: 'Name',optionLabel: 'All', filter: 'contains',value:ar.customerCode}" name="customercode"></select>
+                            <label>Type Report:</label>
+                            <select id="typeReport" data-bind="kendoDropDownList: {data: ar.dataTypeReport, dataValueField: 'value', dataTextField: 'text',optionLabel: 'Select one...', filter: 'contains',value:ar.typeReportValue}" name="typeReport"></select>
+                            <button type="button" onclick="ar.generate()" class="btn btn-sm btn-refresh"><i class="fa fa-search"></i> Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="gridAr"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{template "_loader2.html"}}
+</div>
+<script type="x/kendo-template" id="page-template">
+    <div class="page-template">
+        <div class="header">
+            Acme Inc.
+        </div>
+        <div class="footer">
+            <div style="float: right">Page #: pageNum # of #: totalPages #</div>
+        </div>
+    </div>
+</script>

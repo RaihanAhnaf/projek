@@ -1,0 +1,42 @@
+{
+   "effectivedate": [
+      {
+         "start-offset": "1981",
+         "clause": "effectivedate",
+         "common-ancestor-id": "265",
+         "end-offset": "1983",
+         "data-eaciit-id": "267",
+         "data-eaciit-start": "267",
+         "data-eaciit-end": "267",
+         "contentfromsystem": "\n    \"Effective Date\")\n   ",
+         "confidence": 0.9
+      }
+   ],
+   "documenttitle": [
+      {
+         "start-offset": "13088",
+         "clause": "documenttitle",
+         "common-ancestor-id": "1049",
+         "end-offset": "13103",
+         "data-eaciit-id": "1051",
+         "data-eaciit-start": "1051",
+         "data-eaciit-end": "1051",
+         "contentfromsystem": "\n     Signed for and on behalf of Standard Chartered Bank Malaysia Berhad (Company No. 115793-P) by:\n    ",
+         "confidence": 0.66
+      }
+   ],
+   "governinglaw": [
+      {
+         "start-offset": "6182",
+         "clause": "governinglaw",
+         "common-ancestor-id": "605",
+         "end-offset": "6207",
+         "data-eaciit-id": "606",
+         "data-eaciit-start": "606",
+         "data-eaciit-end": "606",
+         "contentfromsystem": "\n    25.1 This Agreement shall be governed by the laws of Malaysia and the parties hereto submit\u00a0to the exclusive jurisdiction of the Courts of Malaysia.\n   ",
+         "confidence": 0.78
+      }
+   ],
+   "word-count": 35966
+}

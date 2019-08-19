@@ -1,0 +1,42 @@
+{
+   "documenttitle": [
+      {
+         "common-ancestor-id": "52",
+         "data-eaciit-id": "53",
+         "data-eaciit-start": "53",
+         "confidence": 0.67,
+         "clause": "documenttitle",
+         "start-offset": "70",
+         "end-offset": "95",
+         "contentfromsystem": "\n    (1) STANDARD CHARTERED BANK incorporated in England and Wales with limited liability by Royal Charter 1853 reference number ZC 18 and whose principal office in\n   ",
+         "data-eaciit-end": "53"
+      }
+   ],
+   "effectivedate": [
+      {
+         "common-ancestor-id": "121",
+         "data-eaciit-id": "122",
+         "data-eaciit-start": "122",
+         "confidence": 0.9,
+         "clause": "effectivedate",
+         "start-offset": "613",
+         "end-offset": "615",
+         "contentfromsystem": "\n    \"Effective Date\"\n   ",
+         "data-eaciit-end": "122"
+      }
+   ],
+   "governinglaw": [
+      {
+         "common-ancestor-id": "869",
+         "data-eaciit-id": "870",
+         "data-eaciit-start": "870",
+         "confidence": 0.71,
+         "clause": "governinglaw",
+         "start-offset": "9216",
+         "end-offset": "9239",
+         "contentfromsystem": "\n    (a) This Agreement and any matters relating to this Agreement shall be governed by and construed in accordance with the laws of England.\n   ",
+         "data-eaciit-end": "870"
+      }
+   ],
+   "word-count": 19372
+}

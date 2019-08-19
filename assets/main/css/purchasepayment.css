@@ -1,0 +1,203 @@
+
+.no-padding {
+padding-left: 0px;
+}
+
+.top-margin {
+    margin-top: 10px;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.k-dropdown-wrap .k-state-default .k-state-focused {
+    width: 100px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.top-margin {
+    margin-top: 20px;
+}
+.colorText a{
+    color: #000000;
+    cursor: pointer;
+}
+.k-grid-header .center-header {
+  text-align: center;
+}
+.padding-left {
+    padding-left: 15px;
+}
+.align-right {
+    text-align: right;
+}
+.centerAction{
+    text-align: center;
+}
+.titleformpo {
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+td.details-control {
+    background: url('../resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+/*.k-grid-header .wrap-header {
+  height: auto;
+  overflow: visible;
+  white-space: normal;
+}*/
+.bottom-padding {
+    padding-bottom: 15px;
+}
+
+.k-dropdown {
+     width: 192px;
+}
+.panel {
+  margin-left: 15px;
+}
+
+.table > tbody > tr > .lessborder {
+   border: 0;
+}
+
+.table.totaltext>tbody>tr>td {
+    border-top: 0px solid #ddd !important;
+}
+
+.pointer-disable {
+   cursor:not-allowed;
+}
+
+/*PANEL*/
+.portlet.box > .portlet-title {
+    margin-bottom: 0px;
+    padding: 10px 10px 4px 24px;
+    border-bottom: 1px solid #eee;
+    color: #fff;
+}
+.nav-tabs>li.active>a{
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.nav-tabs>li.active>a:focus{
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.nav-tabs>li.active>a:hover{
+    color: #fff;
+    background-color: #496f96;
+    border: 1px solid #b2b2b2;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.nav-tabs>li>a{
+    background-color: #375879;
+    border: 1px solid #b2b2b2;
+}
+.nav-tabs>li>a:focus{
+    background-color: #375879;
+    border: 1px solid #b2b2b2;
+}
+.nav-tabs>li>a:hover{
+    background-color: #489aec;
+    color: #fff;
+}
+.nav-tabs {
+    border-bottom: 1px solid #b2b2b2;
+}
+.page-bar .page-breadcrumb>li>i.fa-circle{
+    font-size: 5px;
+    margin: 0 5px;
+    position: relative;
+    top: -3px;
+    opacity: .4;
+}
+.bar{
+    padding-left: 5px;
+}
+.rightAlignText
+{
+   text-align:right;
+   cursor: text;
+}
+.centerText
+{
+   text-align:center;
+   cursor: text;
+}
+div.checker {
+        display: none;
+    }
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default{
+    background-color: #f13942;
+    color: white;
+}
+input {
+    width: 192px;
+}
+.filter-space{
+    margin-left: 14px;
+    margin-right: 5px;
+}
+.top-margin-10px{
+    margin-top:10px
+}
+.padding-right-0px{
+     padding-right: 0px;
+}
+.btn-backlist{
+    background-color: #d5dae2;
+}
+.rightAction{
+    text-align: right;
+}
+.margin-right-btn{
+    margin-right: -15px;
+}
+#tablePP {
+    margin-bottom: 0px;
+}
+#tableSP {
+    margin-bottom: 0px;
+}
+.attachmentDiv{
+    padding: 0px 15px 15px;
+    width: 300px;
+}

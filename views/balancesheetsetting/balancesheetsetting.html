@@ -1,0 +1,67 @@
+<script type="text/javascript">
+
+var userinfo ={
+    usernameh: ko.observable('{{.Username}}'),
+    menunameh: ko.observable('{{.Menuname}}'),
+}
+</script>
+<script src="{{BaseUrl}}res/main/js/administration-balancesheetsetting.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/administration.css">
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+          <span class="bar">Administration</span>
+          <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <a href="/balancesheetsetting/balancesheetsetting" class="bar">Balance Sheet Setting</a>
+    </ul>
+    <div class="page-toolbar">
+        <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+            <span class="thin uppercase hidden-xs font2" data-bind="text:balset.DatePageBar"></span>&nbsp;
+        </div>
+    </div>
+</div>
+<div id="balancesetting">
+	<div data-bind="visible: !model.Processing()">
+		<div class="row">
+			<div class="col-md-6 panel-content">
+	   			<div class="portlet box twis">
+	   				<div class="portlet-title">
+			   			<div class="caption">
+		            		Aktiva Setting 
+		            	</div>
+		            	
+		            	<div class="tools style-edit" >
+			                  <button data-bind="visible:balset.visibleEditAktiva()" type="button" onclick="balset.editAktiva()" class="btn btn-sm btn-primary btn-style-edit"><i class="fa fa-pencil-square-o" ></i>&nbsp;Edit </button>
+			                  <button data-bind="visible:!balset.visibleEditAktiva()" type="button" onclick="balset.cancelEditAktiva()" class="btn red btn-flat btn-style-cancel"><i class="fa fa-times"></i> Cancel</button>
+			                  <button data-bind="visible:!balset.visibleEditAktiva()" type="button" onclick="balset.SaveDataAktiva()" class="btn btn-sm btn-success btn-style-save"><i class="fa fa-floppy-o"></i> Save</button>
+			            </div> 		
+          			</div>
+          			<div class="portlet-body">
+          				<div id="listOfAktiva"></div>
+          			</div>
+	   			</div>
+	   		</div>
+	   		<div class="col-md-6 panel-content">
+	   			<div class="portlet box twist">
+	   				<div class="portlet-title">
+			   			<div class="caption">
+		            		Passiva Setting 
+		            	</div>
+		            	<div class="tools style-edit">
+			                  <button data-bind="visible:balset.visibleEditPassiva()" type="button" onclick="balset.editPassiva()" class="btn btn-sm btn-primary btn-style-edit"><i class="fa fa-pencil-square-o"></i>&nbsp;Edit </button>
+			                  <button data-bind="visible:!balset.visibleEditPassiva()" type="button" onclick="balset.cancelEditPassiva()" class="btn btn-sm btn-danger btn-style-cancel"><i class="fa fa-times"></i>&nbsp;Cancel</button>
+			                  <button data-bind="visible:!balset.visibleEditPassiva()" type="button" onclick="balset.SaveDataPassiva()" class="btn btn-sm btn-success btn-style-save"><i class="fa fa-floppy-o"></i>&nbsp;Save</button>
+			            </div> 	
+          			</div>
+          			<div class="portlet-body">
+          				<div id="listOfPassiva"></div>
+          			</div>
+	   			</div>
+	   		</div>
+		</div>
+	</div>
+	{{template "_loader2.html"}}	
+</div>

@@ -1,0 +1,135 @@
+<script type="text/javascript">
+var userinfo ={
+    usernameh: ko.observable('{{.Username}}'),
+    menunameh: ko.observable('{{.Menuname}}'),
+}
+</script>
+<script src="{{BaseUrl}}res/core/js/sysroles.js"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/administration.css">
+<!--  Js switch  -->
+<script src="{{BaseUrl}}res/switch-js/bootstrap-switch.js"></script>
+<script src="{{BaseUrl}}res/switch-js/highlight.js"></script>
+<script src="{{BaseUrl}}res/switch-js/main.js"></script>
+<!-- Js switch  -->
+
+<!-- switch Bootstrap CSS  -->
+<!-- <link href="{{BaseUrl}}res/switch-css/bootstrap-switch.min.css" rel="stylesheet"> -->
+<link href="{{BaseUrl}}res/switch-css/bootstrap-switch.css" rel="stylesheet">
+<!-- switch Bootstrap CSS -->
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+          <span class="bar">Administration</span>
+          <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <a href="/sysroles/default">Roles</a>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+            <span class="thin uppercase hidden-xs font2" data-bind="text:rolesett.DatePageBar"></span>&nbsp;
+        </div>
+    </div>
+</div>
+<div class="row clearfix">
+    <div id="rolesett">
+        <div class="col-md-12">
+          <div class="portlet box twis">
+            <div class="portlet-title">
+              <div class="caption">
+                Role Entry
+              </div>
+              <div class="tools style-edit" >
+                <button  type="button" class="btn btn-sm btn-success btn-flat" data-bind="click:rolesett.AddNew"><i class="fa fa-plus"></i> Add New</button>
+              </div>
+            </div>
+            <div class="portlet-body">
+                <div class="row">
+                  <div class="col-sm-4">
+                        <label>Role:</label>
+                        <select class="select-width" type="text" id="filterRole" data-bind="kendoMultiSelect: { data: msFilterRoleVM.listRole, value: msFilterRoleVM.filterRole,
+                        dataValueField: 'value', 
+                        dataTextField: 'text',
+                        valuePrimitive: true,
+                        optionLabel: 'Select role...'}"></select>
+                  </div>
+                  <div class="col-sm-6 left-margin">
+                        <label>Status:</label></br>
+                        <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-on bootstrap-switch-animate">
+                          <div class="bootstrap-switch-container">
+                            <input id="filterStatus" type="checkbox" class="make-switch" checked data-on-text="Active" data-off-text="Inactive">
+                          </div>
+                        </div>
+                        <button type="button" btn-sm class="btn btn-sm btn-refresh space2 btn-left" data-bind="click:rolesett.Search"><i class="fa fa-search"></i> Search</button>
+                        <button type="button" class="btn btn-sm red space2 btn-left btn-reset" data-bind="click:rolesett.Reset"><i class="fa fa-repeat"></i> Reset</button>
+                  </div>
+                
+                </div>
+
+            <div class="portlet-body" style="width: 50%;">
+              <div data-bind="visible:rolesett.loading()">
+                <center class="align-center">
+                  <h5>Please wait while processing your request</h5>
+                  <img src="/static/img/loader.gif" alt="Loading..." />
+                </center>
+              </div>
+              <div data-bind="visible: !rolesett.loading()">
+                <!-- <div class="col-md-8"> -->
+                    <div id="MasterGridRole"></div>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="roleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <button type="button" class="close btn btn-sm btn-flat" data-dismiss="modal" data-bind="click:rolesett.Cancel"><i class="fa fa-times"></i>
+                    <span class="sr-only">Close</span>
+                </button> 
+                    <h4 class="modal-title" id="myModalLabel" data-bind="text:rolesett.titleModel">New Role</h4>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form class="form-horizontal" id ="AddRole">
+                          <div class="form-group">
+                            <label for="inputEmail3" class="col-md-3 form-control-label onlabel">Role Name<span class="mandatory">*</span></label>
+                            <div class="col-md-3 pads">
+                              <input type="text" class="form-control input-sm" name="roleName" id="roleName" placeholder="Type Role Name" validationMessage="Role Name required" required data-bind="value: rolesett.roleName, enabled: disableRolename"/>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputPassword3" class="col-md-3 form-control-label onlabel">Status</label>
+                            <div class="col-sm-8 pads">
+                              <div class="bootstrap-switch-container btn-switch">
+                                <input id="Status" type="checkbox" class="make-switch" checked data-on-text="active" data-off-text="inactive">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputPassword3" class="col-md-3 form-control-label onlabel">Landing Page</label>
+                            <div class="col-sm-8 pads">
+                              <input class="k-width" type="text" name="page" id="role" data-bind="kendoDropDownList: {value: ddRoleVM.filterPage}" />
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-md-12">
+                                <div id="MasterGridMenu"></div>
+                            </div>
+                                </div>
+                              </div>
+                               <div class="modal-footer">
+                              <button type="button" class="btn btn-sm btn-success btn-flat" data-bind="click: rolesett.clickSave"><i class="fa fa-floppy-o"></i>&nbsp;Save</button>
+                          </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+           </div>
+      </div>
+</div>
+

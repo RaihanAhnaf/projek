@@ -1,0 +1,321 @@
+<script type="text/javascript">
+   var userinfo = {
+       usernameh: ko.observable('{{.Username}}'),
+       menunameh: ko.observable('{{.Menuname}}'),
+   }
+</script>
+<script src="{{BaseUrl}}res/main/js/financial-balancesheet.js"></script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/financial.css">
+<script id="tableAsset" type="text/html">
+   <tr>
+       <!-- <td class="align-left codepadding paddingcode" data-bind="text: ACC_Code"></td> -->
+       <td data-bind="text: Account_Name"></td>
+       <td class="align-right amounttext paddingammount"  data-bind="text: ChangeToRupiah(Saldo)"></td>
+   </tr>
+</script>
+<script id="tableAktivaLain" type="text/html">
+   <tr>
+       <!-- <td class="align-left codepadding paddingcode" data-bind="text: ACC_Code"></td> -->
+       <td data-bind="text: Account_Name"></td>
+       <td class="align-right amounttext paddingammount"  data-bind="text: ChangeToRupiah(Saldo)"></td>
+   </tr>
+</script>
+<script id="tableAssetCredit" type="text/html">
+   <tr>
+       <!-- <td class="align-left codepadding paddingcode"  data-bind="text: ACC_Code"></td> -->
+       <td data-bind="text: Account_Name"></td>
+       <td class="align-right amounttext paddingamount" data-bind="text: ChangeToRupiah(Saldo)"></td>
+   </tr>
+</script>
+<script id="tablerowempty" type="text/html">
+   <tr>
+    <!-- <td>&nbsp;</td> -->
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+</script>
+<div class="page-bar">
+   <ul class="page-breadcrumb">
+      <li>
+         <span class="bar">Financial Statement</span>
+         <i class="fa fa-circle"></i>
+      </li>
+      <li>
+         <a href="/financial/balancesheet">Balance Sheet</a>
+      </li>
+   </ul>
+   <div class="page-toolbar">
+      <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+         <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+         <span class="thin uppercase hidden-xs font2" data-bind="text:balancesheet.DatePageBar"></span>&nbsp;
+      </div>
+   </div>
+</div>
+<div class="row clearfix" style="">
+<div class="col-md-12">
+   <div class="portlet box twis">
+      <div class="portlet-title" >
+         <div class="caption">
+            NERACA
+         </div>
+         <div class="tools style-btn-export">
+            <button type="button" onclick="balancesheet.ExportToPdfBalanceSheet()" class="btn btn-sm red btn-outline btn-flat"><i class="fa fa-file-pdf-o"></i>&nbsp;Export To PDF</button>
+         </div>
+      </div>
+      <div class="portlet-body">
+         <div class="row">
+            <div class="col-md-12">
+               <!-- <label>From :</label>
+               <input type="text" id="dateStartBalance" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}" class="filter-space" />
+               <label >To :</label>
+               <input type="text" id="dateEndBalance" data-bind="kendoDatePicker:{value:new Date(),format:'dd-MMM-yyyy'}" class="filter-space" /> -->
+
+               <label>From :</label>
+               <input type="text" id="dateStartBalance" data-bind="kendoDatePicker:{value:balancesheet.DateStart,format:'dd-MMM-yyyy',change: function(e){balancesheet.onChangeDateStart(e.sender._old)}}" class="filter-space" />
+               <label>To :</label>
+               <input type="text" id="dateEndBalance" data-bind="kendoDatePicker:{value:balancesheet.DateEnd,format:'dd-MMM-yyyy', min:balancesheet.DateStart}" class="filter-space" />
+
+               <button type="button" id="refresh" onclick="balancesheet.refresh()" class="btn btn-sm btn-refresh"><i class="fa fa-search"></i> Search</button>
+            </div>
+         </div>
+         <div class="col-md-12 month">
+               <center data-bind="text:balancesheet.ShowMonthFilter"></center>
+            </div>
+         <br>
+         <div class="portlet-body">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="color">
+                     <div class="portlet-title">
+                        <div class="colorcaption">
+                           ASSETS
+                        </div>
+                     </div>
+                  </div>
+                  <table class="tableizer-table">
+                     <tbody>
+                        <tr>
+                           <!-- <td>&nbsp;</td> -->
+                           <td>AKTIVA LANCAR</td>
+                           <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                           <!-- <td class="paddingcode texttotal">ACC CODE</td> -->
+                           <td class="texttotal">ACC NAME</td>
+                           <td class="align-right texttotal">AMOUNT</td>
+                        </tr>
+                     <tbody data-bind="template:{name:'tableAsset', foreach:balancesheet.dataCurrentAsset}"></tbody>
+                     <tbody data-bind="template:{name:'tablerowempty', foreach:balancesheet.resultsactiva}"></tbody>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tr class="texttotal">
+                        <!-- <td>&nbsp;</td> -->
+                        <td>JUMLAH AKTIVA LANCAR</td>
+                        <td class="align-right amounttext" data-bind="text: ChangeToRupiah(balancesheet.sumDataCurrentAsset())"></td>
+                     </tr>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>AKTIVA TETAP</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tbody id="fix-asset-tbody" data-bind="template:{name:'tableAsset', foreach:balancesheet.activaTetap()}"></tbody>
+                     <!--<tbody id="fix-asset-tbody">
+                         <tr id="balancesheet-building" style="display:none">
+                           <td data-bind="text:balancesheet.building().Account_Name"></td>
+                           <td class="align-right amounttext padding-table-accountname" data-bind="text:ChangeToRupiah(balancesheet.building().Saldo)"></td>
+                        </tr>
+                        <tr id="balancesheet-accDepBuilding" style="display:none">
+                           <td data-bind="text:balancesheet.accDepBuilding().Account_Name"></td>
+                           <td class="align-right amounttext padding-table-accountname" >
+                              <span data-bind="text:ChangeToRupiah(balancesheet.accDepBuilding().Saldo)"></span>
+                           </td>
+                        </tr>
+                        <tr id="balancesheet-vehicle" style="display:none">
+                           <td data-bind="text:balancesheet.vehicle().Account_Name"></td>
+                           <td class="align-right amounttext padding-table-accountname" data-bind="text:ChangeToRupiah(balancesheet.vehicle().Saldo)" ></td>
+                        </tr>
+                        <tr id="balancesheet-accDepVehicle" style="display:none">
+                           <td data-bind="text:balancesheet.accDepVehicle().Account_Name"></td>
+                           <td class="align-right amounttext padding-table-accountname" >
+                              <span data-bind="text:ChangeToRupiah(balancesheet.accDepVehicle().Saldo)"></span>
+                           </td>
+                        </tr>
+                        <tr id="balancesheet-officeEquipment" style="display:none">
+                           <td data-bind="text:balancesheet.officeEquipment().Account_Name"></td>
+                           <td class="align-right amounttext padding-table-accountname" data-bind="text:ChangeToRupiah(balancesheet.officeEquipment().Saldo)"></td>
+                        </tr>
+                        <tr id="balancesheet-accDepOfficeEquipment" style="display:none">
+                           <td data-bind="text:balancesheet.accDepOfficeEquipment().Account_Name"></td>
+                           <td class="align-right amounttext padding-table-accountname" >
+                              <span data-bind="text:ChangeToRupiah(balancesheet.accDepOfficeEquipment().Saldo)"></span>
+                           </td>
+                        </tr>
+                        <tr id="balancesheet-aktivaLainnya" style="display:none">
+                           <td data-bind="text:balancesheet.aktivaLainnya().Account_Name"></td>
+                           <td class="align-right amounttext padding-table-accountname" >
+                              <span data-bind="text:ChangeToRupiah(balancesheet.aktivaLainnya().Saldo)"></span>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>&nbsp;</td>
+                           <td>&nbsp;</td>
+                        </tr>
+                     </tbody> -->
+                     <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tbody data-bind="template:{name:'tablerowempty', foreach:balancesheet.fixAssetRow}"></tbody>
+                     <tr class="texttotal">
+                        <!-- <td>&nbsp;</td> -->
+                        <td>JUMLAH AKTIVA TETAP</td>
+                        <td class="align-right amounttext padding-table-accountname" data-bind="text:ChangeToRupiah(balancesheet.sumDataFixAssets())"></td>
+                     </tr>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>AKTIVA LAIN - LAIN</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tbody data-bind="template:{name:'tableAsset', foreach:balancesheet.dataAktivaLain}"></tbody>
+                     <!-- <tbody data-bind="template:{name:'tablerowempty', foreach:balancesheet.resultsactiva}"></tbody> -->
+                     <tr class="texttotal">
+                        <!-- <td>&nbsp;</td> -->
+                        <td>JUMLAH AKTIVA LAIN - LAIN</td>
+                        <td class="align-right amounttext" data-bind="text: ChangeToRupiah(balancesheet.sumdataAktivaLain())"></td>
+                     </tr>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tr class="texttotal">
+                        <!-- <th >&nbsp;</th> -->
+                        <th >TOTAL AKTIVA</th>
+                        <th class="align-right amounttext padding-table-accountname" data-bind="text:ChangeToRupiah(balancesheet.totalAssets())"></th>
+                     </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="col-md-6">
+                  <div class="color">
+                     <div class="portlet-title">
+                        <div class="colorcaption">
+                           PASSIVA
+                        </div>
+                     </div>
+                  </div>
+                  <table class="tableizer-table">
+                     <tbody>
+                        <tr>
+                           <!-- <td>&nbsp;</td> -->
+                           <td>KEWAJIBAN LANCAR</td>
+                           <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                           <!-- <td class="paddingcode texttotal">ACC CODE</td> -->
+                           <td class="texttotal">ACC NAME</td>
+                           <td class="align-right texttotal">AMOUNT</td>
+                        </tr>
+                     <tbody data-bind="template:{name:'tableAssetCredit', foreach:balancesheet.dataCurrentLiabilities}"></tbody>
+                     <tbody data-bind="template:{name:'tablerowempty', foreach:balancesheet.resultspasiva}"></tbody>
+                     <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tr class="texttotal">
+                        <!-- <td>&nbsp;</td> -->
+                        <td>JUMLAH KEWAJIBAN LANCAR</td>
+                        <td class="align-right amounttext padding-table-accountname" data-bind="text:ChangeToRupiah(balancesheet.sumDataCurrentLiabilities())"></td>
+                     </tr>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>MODAL</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tbody style="text-align: left;" id="capital-and-earning">
+                        <tr id="balancesheet-dataCapital" style="display:none">
+                           <!-- <td class="align-left codepadding paddingcode">4100</td> -->
+                           <td>MODAL DISETOR</td>
+                           <td class="align-right amounttext padding-table-accountname" > <span data-bind="text:ChangeToRupiah(balancesheet.dataCapital())"></span> </td>
+                        </tr>
+                        <tr id="balancesheet-dataRetained" style="display:none">
+                           <!-- <td class="align-left codepadding paddingcode">4200</td> -->
+                           <td>LABA DITAHAN</td>
+                           <td class="align-right amounttext padding-table-accountname" > <span data-bind="text:ChangeToRupiah(balancesheet.dataRetained())"></span></td>
+                        </tr>
+                        <tr id="balancesheet-dataDeviden" style="display:none">
+                           <!-- <td class="align-left codepadding paddingcode">4300</td> -->
+                           <td>DEVIDEN</td>
+                           <td class="align-right amounttext padding-table-accountname" > <span data-bind="text:ChangeToRupiah(balancesheet.dataDeviden())"></span></td>
+                        </tr>
+                        <tr id="balancesheet-dataCurrentEarning" style="display:none">
+                           <!-- <td class="align-left codepadding paddingcode">4400</td> -->
+                           <td>LABA (RUGI)  BERJALAN</td>
+                           <td class="align-right amounttext padding-table-accountname" > <span data-bind="text:ChangeToRupiah(balancesheet.dataCurrentEarning())"></span></td>
+                        </tr>
+                     </tbody>
+                     <tbody data-bind="template:{name:'tablerowempty', foreach:balancesheet.capitalAndEarningRow}"></tbody>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tr class="texttotal">
+                        <!-- <td>&nbsp;</td> -->
+                        <td>JUMLAH MODAL USAHA</td>
+                        <td class="align-right amounttext padding-table-accountname"  data-bind="text:ChangeToRupiah(balancesheet.sumCapitalandEarning())"> </td>
+                     </tr>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tbody data-bind="template:{name:'tablerowempty', foreach:balancesheet.dataAktivaLain}"></tbody>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <!-- <td>&nbsp;</td> -->
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tr class="texttotal">
+                        <!-- <th  >&nbsp;</th> -->
+                        <th >TOTAL HUTANG DAN MODAL</th>
+                        <th class="align-right amounttext padding-table-accountname"  data-bind="text:ChangeToRupiah(balancesheet.totalpassiva())"></th>
+                     </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="clearfix"></div>

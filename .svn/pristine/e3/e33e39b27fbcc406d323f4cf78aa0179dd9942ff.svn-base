@@ -1,0 +1,108 @@
+<script src="{{BaseUrl}}res/main/js/poinvoicesummary.js"></script> 
+<script type="text/javascript">
+   var userinfo ={
+      usernameh: ko.observable('{{.Username}}'),
+      menunameh: ko.observable('{{.Menuname}}'),
+      rolenameh: ko.observable('{{.Rolename}}'),
+   }
+</script>
+<link rel="stylesheet" href="{{BaseUrl}}res/main/css/poinvoicesummary.css">
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+        <a href="/poinvoicesummary/default" class="bar">PO/Invoice Summary</a>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="pull-right tooltips btn" data-container="body" data-placement="bottom" data-original-title="date now">
+            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+            <span class="thin uppercase hidden-xs font2" data-bind="text:summary.koDatePageBar"></span>&nbsp;
+        </div>
+    </div>
+</div>
+<div class="row">
+   	<div class="col-md-12 panel-content">
+      	<div class="portlet box twis">
+         	<div class="portlet-title" style="padding-left: 8px;">
+            	<div class="caption">
+               		PO/Invoice Summary
+            	</div>
+         	</div>
+         	<div class="portlet-body">
+            	<div class="row" data-bind="visible:!model.Processing()">
+               		<div class="col-md-12" id="tabs">
+                  		<ul class="nav nav-tabs" role="tablist">
+                     		<li role="presentation" class="active tab1"><a href="#ListPO" aria-controls="ListPO" role="tab" data-toggle="tab" onclick="summary.changeTab(0)">List Purchase Order</a></li>
+                     		<li role="presentation" class="tab2"><a href="#ListPOINV" aria-controls="ListPOINV" role="tab" data-toggle="tab" onclick="summary.changeTab(1)">List Purchase Order Inventory</a></li>
+                     		<li role="presentation"><a href="#ListInvoice" class="" aria-controls="ListInvoice" role="tab" data-toggle="tab" onclick="summary.changeTab(2)">List Invoice</a></li>
+                  		</ul>
+	                 	<div class="tab-content">
+	                     <!--panel list-->
+	                     	<div role="tabpanel" class="tab-pane active" id="ListPO">
+	                        	<div class="tab-pane-content">
+	                        		<div class="row">
+						                <div class="col-md-12">
+						                    <label>Supplier :</label>
+						                    <select name="Site" style="width:200px" class="full-width filter-space" data-bind="kendoDropDownList: { data: summary.dataDropDownSupplierFilter, dataValueField: 'Kode', dataTextField: 'Name',optionLabel:'Select one',filter: 'contains'},value: summary.textSupplierSearch"></select>
+						                    <label>From :</label>
+						                    <input type="text" id="dateStartPO" data-bind="kendoDatePicker:{value:summary.DateStart,format:'dd-MMM-yyyy',change: function(e){summary.onChangeDateStart(e.sender._old)}}" class="filter-space" />
+						                    <label >To :</label>
+						                    <input type="text" id="dateEndPO" data-bind="kendoDatePicker:{value:summary.DateEnd,format:'dd-MMM-yyyy', min:summary.DateStart}" class="filter-space" />
+						                    <button type="button" onclick="summary.search('PO')" class="btn btn-sm btn-refresh"><i class="fa fa-search"></i> Search</button>
+											<button onclick="summary.exportExcel('PO')" type="button" class="btn btn-sm btn-outline green"><i class="fa fa-file-excel-o"></i>&nbsp;Export
+												To Excel</button>
+										</div>
+                              			<div class="col-md-12 no-padding" data-bind="visible: !model.Processing()">
+						                	<div id="gridListPO"  class="margin15" style="margin-bottom: -15px;margin-left: 15px;margin-top: 15px;margin-right: 15px;"></div>
+						                </div>
+					               	</div>
+	                        	</div>
+	                        </div>
+	                        <div role="tabpanel" class="tab-pane" id="ListPOINV">
+	                        	<div class="tab-pane-content">
+	                        		<div class="row">
+						                <div class="col-md-12">
+						                    <label>Supplier :</label>
+						                    <select name="Site" style="width:200px" class="full-width filter-space" data-bind="kendoDropDownList: { data: summary.dataDropDownSupplierFilter, dataValueField: 'Kode', dataTextField: 'Name',optionLabel:'Select one',filter: 'contains'},value: summary.textSupplierSearch"></select>
+						                    <label>From :</label>
+						                    <input type="text" id="dateStartPOINV" data-bind="kendoDatePicker:{value:summary.DateStart,format:'dd-MMM-yyyy',change: function(e){summary.onChangeDateStart(e.sender._old)}}" class="filter-space" />
+						                    <label >To :</label>
+						                    <input type="text" id="dateEndPOINV" data-bind="kendoDatePicker:{value:summary.DateEnd,format:'dd-MMM-yyyy', min:summary.DateStart}" class="filter-space" />
+						                    <button type="button" onclick="summary.search('POINV')" class="btn btn-sm btn-refresh"><i class="fa fa-search"></i> Search</button>
+											<button onclick="summary.exportExcel('POINV')" type="button" class="btn btn-sm btn-outline green"><i class="fa fa-file-excel-o"></i>&nbsp;Export
+												To Excel</button>
+										</div>
+                              			<div class="col-md-12 no-padding" data-bind="visible: !model.Processing()">
+						                	<div id="gridListPOINV"  class="margin15" style="margin-bottom: -15px;margin-left: 15px;margin-top: 15px;margin-right: 15px;"></div>
+						                </div>
+					               	</div>
+	                        	</div>
+	                        </div>
+	                        <div role="tabpanel" class="tab-pane" id="ListInvoice">
+	                        	<div class="tab-pane-content">
+	                        		<div class="row">
+						                <div class="col-md-12">
+						                    <label>Customer :</label>
+						                    <select name="Site" style="width:200px" class="full-width filter-space" data-bind="kendoDropDownList: { data: summary.dataDropDownCustomerFilter, dataValueField: 'Kode', dataTextField: 'Name',optionLabel:'Select one',filter: 'contains'},value: summary.textCustomerSearch"></select>
+						                    <label>From :</label>
+						                    <input type="text" id="dateStartInv" data-bind="kendoDatePicker:{value:summary.DateStart,format:'dd-MMM-yyyy',change: function(e){summary.onChangeDateStart(e.sender._old)}}" class="filter-space" />
+						                    <label >To :</label>
+						                    <input type="text" id="dateEndInv" data-bind="kendoDatePicker:{value:summary.DateEnd,format:'dd-MMM-yyyy', min:summary.DateStart}" class="filter-space" />
+						                    <button type="button" onclick="summary.search('INV')" class="btn btn-sm btn-refresh"><i class="fa fa-search"></i> Search</button>
+											<button onclick="summary.exportExcel('INV')" type="button" class="btn btn-sm btn-outline green"><i class="fa fa-file-excel-o"></i>&nbsp;Export
+												To Excel</button>
+										</div>
+						                <div class="col-md-12 no-padding" data-bind="visible: !model.Processing()">
+						                	<div id="gridListInvoice"  class="margin15" style="margin-bottom: -15px;margin-left: 15px;margin-top: 15px;margin-right: 15px;"></div>
+						                </div>
+					               	</div>
+	                        	</div>
+	                        </div>
+	                    </div>
+                	</div>
+                </div>
+                {{template "_loader2.html"}}
+            </div>
+        </div>
+    </div>
+</div>
